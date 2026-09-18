@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+
+// function Fn(){ 
+//     return (function(){
+//         var obj = {};
+//         obj.name = 'admin';
+//         return obj
+//     })()
+// }
+// var fn1 = new Fn()
+// var fn2 = new Fn();
+// console.log(fn1);
+// console.log(fn1.name)
+// console.log(fn1 == fn2)
+
+//多次new 但是能得到同一个对象
+document.onclick = function(){
+    var f1 = new Fn()
+    var f2 = new Fn()
+    var f3 = new Fn()
+    var f4 = new Fn()
+    var f5 = new Fn()
+    
+    // console.log(f1)
+    // console.log(f2)
+    // console.log(f3)
+    // console.log(f4)
+    // console.log(f5)
+    // console.log(f3 == f5)
+    console.log(Fn.obj)
+    console.log(new Fn())
+} 
+function Fn(){
+    if(!Fn.obj){
+        Fn.obj = {};
+    }
+    if(!Fn.obj.ele){
+        Fn.obj.ele = document.createElement('dialog');
+        Fn.obj.ele.innerHTML = '这里是模态框'
+    }
+    document.body.appendChild(Fn.obj.ele);
+    clearTimeout(Fn.obj.timer)
+    Fn.obj.timer = setTimeout(() => {
+        Fn.obj.ele.style.display = 'none';
+    }, 2000);
+    Fn.obj.ele.style.display = 'block';
+    Fn.obj.name = 'admin';
+    this.init();
+    return Fn.obj;
+}
+Fn.prototype.init = function(){
+    document.body.style.background = 'red'
+}
+
+
+// 单例模式,我需要多次new出来对象,还要对象中,有对象是同一个对象;
+</script>
+</html>

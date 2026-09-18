@@ -1,0 +1,452 @@
+# Actions
+
+## 目录
+
+- [使用 actions 更新 state](#使用-actions-更新-state)
+  - [例子](#例子)
+  - [使用 action 包装函数](#使用-action-包装函数)
+    - [注意： actions 不会被追踪](#注意-actions-不会被追踪)
+  - [action.bound](#actionbound)
+    - [提示： 使用 makeAutoObservable(o, {'{}'}, {'{ autoBind: true }'}) 自动绑定所有的 actions 和 flows](#提示-使用-makeAutoObservableo---autoBind-true--自动绑定所有的-actions-和-flows)
+  - [runInAction](#runInAction)
+  - [Actions 和继承](#Actions-和继承)
+  - [异步 actions](#异步-actions)
+  - [使用 flow 代替 async / await](#使用-flow-代替-async--await)
+    - [{🚀} 注意： 将 flow 用于对象字段](#-注意-将-flow-用于对象字段)
+  - [flow.bound](#flowbound)
+  - [取消 flows {🚀}](#取消-flows-)
+  - [禁用强制性 action {🚀}](#禁用强制性-action-)
+
+# 使用 actions 更新 state
+
+用法：
+
+- `action` *（注解）*
+- `action(fn)`
+- `action(name, fn)`
+
+所有的应用程序都有 actions。**action 就是任意一段修改 state 的代码**。原则上，actions 总会为了对一个事件做出响应而发生。例如，点击了一个按钮，一些输入被改变了，一个 websocket 消息被送达了，等等。
+
+尽管 [makeAutoObservable](https://www.mobxjs.com/observable-state#makeautoobservable "makeAutoObservable") 可以自动帮你声明一部分 actions，但是 MobX 还是要求你声明你的 actions。Actions 可以帮助你更好的组织你的代码并提供以下性能优势：
+
+1. 它们在 [transactions](https://www.mobxjs.com/api#transaction "transactions") 内部运行。**任何可观察对象在最外层的 action 完成之前都不会被更新，这一点保证了在 action 完成之前，action 执行期间生成的中间值或不完整的值对应用程序的其余部分都是不可见的。**
+2. 默认情况下，不允许在 actions 之外改变 state。这有助于在代码中清楚地对状态更新发生的位置进行定位。
+
+`action` 注解应该**仅用于会\_修改\_ state 的函数**。派生其他信息（执行查询或者过滤数据）的函数\_不应该\_被标记为 actions，以便 MobX 可以对它们的调用进行跟踪。 带有 `action` **注解的成员是不可枚举的。**
+
+## 例子
+
+```typescript 
+import { makeObservable, observable, action } from "mobx"
+
+class Doubler {
+    value = 0
+
+    constructor(value) {
+        makeObservable(this, {
+            value: observable,
+            increment: action
+        })
+    }
+
+    increment() {
+        // 观察者不会看到中间状态.
+        this.value++
+        this.value++
+    }
+}
+```
+
+
+```typescript 
+import { makeAutoObservable } from "mobx"
+
+class Doubler {
+    value = 0
+
+    constructor(value) {
+        makeAutoObservable(this)
+    }
+
+    increment() {
+        this.value++
+        this.value++
+    }
+}
+```
+
+
+```typescript 
+import { makeObservable, observable, action } from "mobx"
+
+class Doubler {
+    value = 0
+
+    constructor(value) {
+        makeObservable(this, {
+            value: observable,
+            increment: action.bound
+        })
+    }
+
+    increment() {
+        this.value++
+        this.value++
+    }
+}
+
+const doubler = new Doubler()
+
+// 这样调用 increment 是安全的, 因为它已经被绑定了。
+setInterval(doubler.increment, 1000)
+
+```
+
+
+```typescript 
+import { observable, action } from "mobx"
+
+const state = observable({ value: 0 })
+
+const increment = action(state => {
+    state.value++
+    state.value++
+})
+
+increment(state)
+```
+
+
+```typescript 
+import { observable, runInAction } from "mobx"
+
+const state = observable({ value: 0 })
+
+runInAction(() => {
+    state.value++
+    state.value++
+})
+```
+
+
+## 使用 `action` 包装函数
+
+为了尽可能地利用 MobX 的事务性，actions 应该尽可能被传到外围。如果一个类方法会修改 state，可以将其标记为 action。**把事件处理函数标记为 actions 就更好了**，因为最外层的事务起着决定性作用 **。一个未被标记的、会接着调用两个 actions 的事件处理函数仍然将会生成两个事务。**
+
+为了帮助创建基于 action 的事件处理函数，`action` 不仅仅是一个注解，更是一个高阶函数。可以使用函数将它作为一个参数来调用，在这种情况下它将会返回一个有着相同签名的使用 `action` 包装过的函数。
+
+例如在 React 中，可以按照下面的方式包装 `onClick` 事件处理函数。
+
+```typescript 
+const ResetButton = ({ formState }) => (
+    <button
+        onClick={action(e => {
+            formState.resetPendingUploads()
+            formState.resetValues()
+            e.stopPropagation()
+        })}
+    >
+        Reset form
+    </button>
+)
+```
+
+
+##### **注意：** **actions 不会被追踪**
+
+actions 的另一个特征是它们是 [不可追踪](https://www.mobxjs.com/api#untracked "不可追踪") 的。当从副作用或者计算值（非常罕见）中调用 action 时，**该 action 读取的可观察对象将不会算作该 derivation 的依赖项。**
+
+`makeAutoObservable`，`extendObservable` 和 `observable` 使用一种特殊的 `action`， 叫做 `autoAction`， 它会在运行时确定函数是 derivation 还是 action。
+
+## `action.bound`
+
+用法：
+
+- `action.bound` *（注解）*
+
+`action.bound` 注解可用于**将方法自动绑定到正确的实例**，这样 `this` **会始终被正确绑定在函数内部。**
+
+##### **提示：** 使用 `makeAutoObservable(o, {'{}'}, {'{ autoBind: true }'})` 自动绑定所有的 actions 和 flows
+
+```typescript 
+import { makeAutoObservable } from "mobx"
+
+class Doubler {
+    value = 0
+
+    constructor(value) {
+        makeAutoObservable(this, {}, { autoBind: true })
+    }
+
+    increment() {
+        this.value++
+        this.value++
+    }
+    
+    *flow() {
+        const response = yield fetch("http://example.com/value")
+        this.value = yield response.json()
+    }
+}
+```
+
+
+## `runInAction`
+
+用法：
+
+- `runInAction(fn)`
+
+使用这个工具函数来创建一个会被立即调用的临时 action。在异步进程中非常有用。 请查看 [上面代码块](https://www.mobxjs.com/actions#例子 "上面代码块") 中的实例。
+
+## Actions 和继承
+
+只有定义在**原型**上的函数可以被子类**覆盖**：
+
+```typescript 
+class Parent {
+    // on instance
+    arrowAction = () => {}
+
+    // on prototype
+    action() {}
+    boundAction() {}
+
+    constructor() {
+        makeObservable(this, {
+            arrowAction: action
+            action: action,
+            boundAction: action.bound,
+        })
+    }
+}
+class Child extends Parent {
+    // THROWS: TypeError: Cannot redefine property: arrowAction
+    arrowAction = () => {}
+
+    // OK
+    action() {}
+    boundAction() {}
+
+    constructor() {
+        super()
+        makeObservable(this, {
+            arrowAction: override,
+            action: override,
+            boundAction: override,
+        })
+    }
+}
+```
+
+
+想要将单个的 *action* **绑定** 到 `this`，可以使用 `action.bound` 代替箭头函数。
+查看 [**subclassing**](https://www.mobxjs.com/subclassing "subclassing") 获取更多信息。
+
+## 异步 actions
+
+**从本质上讲，异步进程在 MobX 中不需要任何特殊处理，因为不论是何时引发的所有 reactions 都将会自动更新**。 而且因为可观察对象是可变的，因此在 action 执行过程中保持对它们的引用一般是安全的。\*\* 然而，在异步进程中更新可观察对象的每个步骤（tick）都应该被标识为`action`\*\*。 我们可以通过利用上述的 API 以多种方式实现这一点，如下所示。
+
+例如，在处理 Promise 时，更新 state 的处理程序应该被 `action` 包装起来，或者被标记为 actions，如下所示。
+
+Promise 的决议处理程序是我们以内联的方式处理的，但是会在一开始的 action 执行完成之后运行，因此需要使用 `action` 对它们进行包装：
+
+```typescript 
+import { action, makeAutoObservable } from "mobx"
+
+class Store {
+    githubProjects = []
+    state = "pending" // "pending", "done" or "error"
+
+    constructor() {
+        makeAutoObservable(this)
+    }
+
+    fetchProjects() {
+        this.githubProjects = []
+        this.state = "pending"
+        fetchGithubProjectsSomehow().then(
+            action("fetchSuccess", projects => {
+                const filteredProjects = somePreprocessing(projects)
+                this.githubProjects = filteredProjects
+                this.state = "done"
+            }),
+            action("fetchError", error => {
+                this.state = "error"
+            })
+        )
+    }
+}
+```
+
+
+如果 Promise 的**处理函数是类的字段，** 它们将由`makeAutoObservable` 自动包装为 `action`：
+
+```typescript 
+import { makeAutoObservable } from "mobx"
+
+class Store {
+    githubProjects = []
+    state = "pending" // "pending", "done" or "error"
+
+    constructor() {
+        makeAutoObservable(this)
+    }
+
+    fetchProjects() {
+        this.githubProjects = []
+        this.state = "pending"
+        fetchGithubProjectsSomehow().then(this.projectsFetchSuccess, this.projectsFetchFailure)
+    }
+
+    projectsFetchSuccess = projects => {
+        const filteredProjects = somePreprocessing(projects)
+        this.githubProjects = filteredProjects
+        this.state = "done"
+    }
+
+    projectsFetchFailure = error => {
+        this.state = "error"
+    }
+}
+```
+
+
+`await` 之后的**任何操作都不与其同在一个 tick 中，因此它们需要使用 action 包装。** 在这里，我们可以利用 `runInAction`：
+
+```typescript 
+import { runInAction, makeAutoObservable } from "mobx"
+
+class Store {
+    githubProjects = []
+    state = "pending" // "pending", "done" or "error"
+
+    constructor() {
+        makeAutoObservable(this)
+    }
+
+    async fetchProjects() {
+        this.githubProjects = []
+        this.state = "pending"
+        try {
+            const projects = await fetchGithubProjectsSomehow()
+            const filteredProjects = somePreprocessing(projects)
+            runInAction(() => {
+                this.githubProjects = filteredProjects
+                this.state = "done"
+            })
+        } catch (e) {
+            runInAction(() => {
+                this.state = "error"
+            })
+        }
+    }
+}
+```
+
+
+```typescript 
+import { flow, makeAutoObservable, flowResult } from "mobx"
+
+class Store {
+    githubProjects = []
+    state = "pending"
+
+    constructor() {
+        makeAutoObservable(this, {
+            fetchProjects: flow
+        })
+    }
+
+    // 注意星号, 这是一个 generator 函数!
+    *fetchProjects() {
+        this.githubProjects = []
+        this.state = "pending"
+        try {
+            // Yield 代替 await.
+            const projects = yield fetchGithubProjectsSomehow()
+            const filteredProjects = somePreprocessing(projects)
+            this.state = "done"
+            this.githubProjects = filteredProjects
+        } catch (error) {
+            this.state = "error"
+        }
+    }
+}
+
+const store = new Store()
+const projects = await flowResult(store.fetchProjects())
+```
+
+
+## 使用 flow 代替 async / await
+
+用法：
+
+- `flow` *（注解）*
+- `flow(function* (args) { })`
+
+`flow` **包装器是一个可选的** `async` / `await` 替代方案，它让 MobX action 使用起来更加容易。
+
+`flow` 将一个 [generator 函数](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Generator "generator 函数") 作为唯一输入。 在 generator 内部，你可以使用 yield 串联 Promise（使用 `yield somePromise` 代替 `await somePromise`）。 flow 机制将会确保 generator 在 Promise resolve 之后继续运行或者抛出错误。
+
+所以 `flow` 是 `async` / `await` 的一个替代方案，不需要再用 `action` 进行包装。它可以按照下面的方式使用：
+
+1. 使用 `flow` 包装你的异步函数。
+2. 使用 `function *` 代替 `async`。
+3. 使用 `yield` 代替 `await`。
+
+以上 [flow](https://www.mobxjs.com/actions#异步-actions "flow")[ + generator function](https://www.mobxjs.com/actions#异步-actions " + generator function") 的示例展示了实际情况中的用法。
+
+注意，**使用 TypeScript 时才会需要** `flowResult` 函数。 它会因为使用 `flow` 装饰了一个方法而把返回的 generator 包裹在 Promise 中。 然而，TypeScript 并不会意识到这种转换，因此 `flowResult` 会确保 TypeScript 意识到这种类型的改变。
+
+`makeAutoObservable` 和它的小伙伴**们会把 generators 自动推断成** `flow`。带有 `flow` **注解的成员是不可枚举的**
+
+##### {🚀} **注意：** 将 flow 用于对象字段
+
+像 `action` 一样，`flow` 也可以直接用来包装函数。上面的例子本来还可以改写成下面的样子：
+
+```typescript 
+import { flow } from "mobx"
+
+class Store {
+    githubProjects = []
+    state = "pending"
+
+    fetchProjects = flow(function* (this: Store) {
+        this.githubProjects = []
+        this.state = "pending"
+        try {
+            // yield 代替 await.
+            const projects = yield fetchGithubProjectsSomehow()
+            const filteredProjects = somePreprocessing(projects)
+            this.state = "done"
+            this.githubProjects = filteredProjects
+        } catch (error) {
+            this.state = "error"
+        }
+    })
+}
+
+const store = new Store()
+const projects = await store.fetchProjects()
+```
+
+
+这样做的好处是我们不再需要 `flowResult` 了，**坏处是需要指定 ****`this`**** 的类型，以便确保它的类型会被正确推断出来。**
+
+## `flow.bound`
+
+用法：
+
+- `flow.bound` *（注解）*
+
+`flow.bound` 注解可用于**将方法自动绑定到正确的实例**，这样 `this` 会始终被正确绑定在函数内部。 与 actions 一样，flows 默认可以使用 [autoBind](https://www.mobxjs.com/actions#auto-bind "autoBind")[ 选项](https://www.mobxjs.com/actions#auto-bind " 选项")。
+
+## 取消 flows {🚀}
+
+flow 的另一个好处就是它可以被取消。 `flow` 的返回值是一个 Promise，在 generator 函数运行完成时它将会被 resolve。\*\* 返回的 Promise 中还有一个 ****`cancel()`**** 方法，**该方法可以**打断正在运行的 generator 并取消它。 所有 ****`try`**** / ****`finally`**** 语句仍然会被运行。\*\*
+
+## 禁用强制性 action {🚀}
+
+默认情况下，MobX 6 和更高版本会要求**您使用 action 来更改 state**。 然而，你可以配置 MobX 来禁用这个行为。查看 [enforceActions](https://www.mobxjs.com/configuration#enforceactions "enforceActions")。 例如，这在单元测试场景中非常有用，因为警告并不总是很有价值。

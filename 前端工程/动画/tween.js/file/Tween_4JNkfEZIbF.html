@@ -1,0 +1,299 @@
+<!DOCTYPE html >
+<html >
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Tween</title>
+</head>
+<body>
+<div style="padding-left:50px;">
+  <div style="position:relative; border:1px solid #000000; width:550px; height:50px;">
+    <div id="idMove" style="width:50px; height:50px; background:#930; position:absolute;"></div>
+  </div>
+  <div style="position:relative;width:550px;height:200px; margin-top:50px;">
+    <div id="idChart" style="border:1px solid #000;height:200px;"> </div>
+    <div id="idLine" style="position:absolute;top:0;left:0;height:200px;width:1px;background:#000;"></div>
+  </div>
+</div>
+<div>
+  <p> Tween类型 <br />
+    <label>
+      <input name="vTween" type="radio" value="Linear" checked="checked" />
+      Linear </label>
+    <label>
+      <input name="vTween" type="radio" value="Quad" />
+      Quadratic </label>
+    <label>
+      <input name="vTween" type="radio" value="Cubic" />
+      Cubic </label>
+    <label>
+      <input name="vTween" type="radio" value="Quart" />
+      Quartic </label>
+    <label>
+      <input name="vTween" type="radio" value="Quint" />
+      Quintic </label>
+    <label>
+      <input name="vTween" type="radio" value="Sine" />
+      Sinusoidal </label>
+    <br />
+    <label>
+      <input name="vTween" type="radio" value="Expo" />
+      Exponential </label>
+    <label>
+      <input name="vTween" type="radio" value="Circ" />
+      Circular </label>
+    <label>
+      <input name="vTween" type="radio" value="Elastic" />
+      Elastic </label>
+    <label>
+      <input name="vTween" type="radio" value="Back" />
+      Back </label>
+    <label>
+      <input name="vTween" type="radio" value="Bounce" />
+      Bounce </label>
+  </p>
+  <p> ease类型： <br />
+    <label>
+      <input name="vEase" type="radio" value="easeIn" checked="checked" />
+      easeIn </label>
+    <label>
+      <input name="vEase" type="radio" value="easeOut" />
+      easeOut </label>
+    <label>
+      <input name="vEase" type="radio" value="easeInOut" />
+      easeInOut </label>
+  </p>
+  <input id="idSpeed" type="button" value="减慢速度" />
+  <input id="idRun" type="button" value=" Run " />
+</div>
+<script>
+/*
+t:当前时间
+b:初始值  
+c:变化量
+d：持续时间
+
+接下来就可以利用这个js的Tween来做一些缓动效果了。
+先通过上面的坐标实例说一下算法原理：
+x轴是时间，y轴是当前值，b是y轴的初始值，x轴的初始值是0，t是当前时间。当t（x轴）逐渐增加到达d时，当前值（y轴）会到达目标值（b+c）。
+想详细理解的话可以找资料看看吧（貌似跟数学关系比较大）。
+
+下面就介绍如何使用这个Tween了，首先b、c、d三个参数（即初始值，变化量，持续时间）在缓动开始前，是需要先确定好的。
+举一个简单的例子，一个div要向右缓动，left初始值是50，那么b就是50，要向右移动100，那c就是100，如果知道的是目标值，例如要向右移动到150，那就把目标值150减初始值b就是变化量c了。
+至于d的设置就比较灵活，只要符合t是从0向d递增（或递减）就可以了。
+d跟步长配合使用来设置持续时间，例如d设置为100，如果设置步长是1，那么从0到100就有100步，即分100次来完成这个过程，步数越多那么持续时间就越长。
+至于t的变化相当于时间的变化，一般是均匀变化的，每次变化都增加一个步长，当t从0递增（或递减）到d时，缓动就结束了。
+要注意的是t是从0开始的，设置步长时必须确定t确实能到达d，如果上面的步长是3，那么t就永远都到不了d了。更好的处理是当t等于或超过d之后，就停止定时器并设置当前值为目标值。
+*/
+var Tween = {
+	Linear: function(t,b,c,d){ return c*t/d + b; },
+	Quad: {
+		easeIn: function(t,b,c,d){
+			return c*(t/=d)*t + b;
+		},
+		easeOut: function(t,b,c,d){
+			return -c *(t/=d)*(t-2) + b;
+		},
+		easeInOut: function(t,b,c,d){
+			if ((t/=d/2) < 1) return c/2*t*t + b;
+			return -c/2 * ((--t)*(t-2) - 1) + b;
+		}
+	},
+	Cubic: {
+		easeIn: function(t,b,c,d){
+			return c*(t/=d)*t*t + b;
+		},
+		easeOut: function(t,b,c,d){
+			return c*((t=t/d-1)*t*t + 1) + b;
+		},
+		easeInOut: function(t,b,c,d){
+			if ((t/=d/2) < 1) return c/2*t*t*t + b;
+			return c/2*((t-=2)*t*t + 2) + b;
+		}
+	},
+	Quart: {
+		easeIn: function(t,b,c,d){
+			return c*(t/=d)*t*t*t + b;
+		},
+		easeOut: function(t,b,c,d){
+			return -c * ((t=t/d-1)*t*t*t - 1) + b;
+		},
+		easeInOut: function(t,b,c,d){
+			if ((t/=d/2) < 1) return c/2*t*t*t*t + b;
+			return -c/2 * ((t-=2)*t*t*t - 2) + b;
+		}
+	},
+	Quint: {
+		easeIn: function(t,b,c,d){
+			return c*(t/=d)*t*t*t*t + b;
+		},
+		easeOut: function(t,b,c,d){
+			return c*((t=t/d-1)*t*t*t*t + 1) + b;
+		},
+		easeInOut: function(t,b,c,d){
+			if ((t/=d/2) < 1) return c/2*t*t*t*t*t + b;
+			return c/2*((t-=2)*t*t*t*t + 2) + b;
+		}
+	},
+	Sine: {
+		easeIn: function(t,b,c,d){
+			return -c * Math.cos(t/d * (Math.PI/2)) + c + b;
+		},
+		easeOut: function(t,b,c,d){
+			return c * Math.sin(t/d * (Math.PI/2)) + b;
+		},
+		easeInOut: function(t,b,c,d){
+			return -c/2 * (Math.cos(Math.PI*t/d) - 1) + b;
+		}
+	},
+	Expo: {
+		easeIn: function(t,b,c,d){
+			return (t==0) ? b : c * Math.pow(2, 10 * (t/d - 1)) + b;
+		},
+		easeOut: function(t,b,c,d){
+			return (t==d) ? b+c : c * (-Math.pow(2, -10 * t/d) + 1) + b;
+		},
+		easeInOut: function(t,b,c,d){
+			if (t==0) return b;
+			if (t==d) return b+c;
+			if ((t/=d/2) < 1) return c/2 * Math.pow(2, 10 * (t - 1)) + b;
+			return c/2 * (-Math.pow(2, -10 * --t) + 2) + b;
+		}
+	},
+	Circ: {
+		easeIn: function(t,b,c,d){
+			return -c * (Math.sqrt(1 - (t/=d)*t) - 1) + b;
+		},
+		easeOut: function(t,b,c,d){
+			return c * Math.sqrt(1 - (t=t/d-1)*t) + b;
+		},
+		easeInOut: function(t,b,c,d){
+			if ((t/=d/2) < 1) return -c/2 * (Math.sqrt(1 - t*t) - 1) + b;
+			return c/2 * (Math.sqrt(1 - (t-=2)*t) + 1) + b;
+		}
+	},
+	Elastic: {
+		easeIn: function(t,b,c,d,a,p){
+			if (t==0) return b;  if ((t/=d)==1) return b+c;  if (!p) p=d*.3;
+			if (!a || a < Math.abs(c)) { a=c; var s=p/4; }
+			else var s = p/(2*Math.PI) * Math.asin (c/a);
+			return -(a*Math.pow(2,10*(t-=1)) * Math.sin( (t*d-s)*(2*Math.PI)/p )) + b;
+		},
+		easeOut: function(t,b,c,d,a,p){
+			if (t==0) return b;  if ((t/=d)==1) return b+c;  if (!p) p=d*.3;
+			if (!a || a < Math.abs(c)) { a=c; var s=p/4; }
+			else var s = p/(2*Math.PI) * Math.asin (c/a);
+			return (a*Math.pow(2,-10*t) * Math.sin( (t*d-s)*(2*Math.PI)/p ) + c + b);
+		},
+		easeInOut: function(t,b,c,d,a,p){
+			if (t==0) return b;  if ((t/=d/2)==2) return b+c;  if (!p) p=d*(.3*1.5);
+			if (!a || a < Math.abs(c)) { a=c; var s=p/4; }
+			else var s = p/(2*Math.PI) * Math.asin (c/a);
+			if (t < 1) return -.5*(a*Math.pow(2,10*(t-=1)) * Math.sin( (t*d-s)*(2*Math.PI)/p )) + b;
+			return a*Math.pow(2,-10*(t-=1)) * Math.sin( (t*d-s)*(2*Math.PI)/p )*.5 + c + b;
+		}
+	},
+	Back: {
+		easeIn: function(t,b,c,d,s){
+			if (s == undefined) s = 1.70158;
+			return c*(t/=d)*t*((s+1)*t - s) + b;
+		},
+		easeOut: function(t,b,c,d,s){
+			if (s == undefined) s = 1.70158;
+			return c*((t=t/d-1)*t*((s+1)*t + s) + 1) + b;
+		},
+		easeInOut: function(t,b,c,d,s){
+			if (s == undefined) s = 1.70158; 
+			if ((t/=d/2) < 1) return c/2*(t*t*(((s*=(1.525))+1)*t - s)) + b;
+			return c/2*((t-=2)*t*(((s*=(1.525))+1)*t + s) + 2) + b;
+		}
+	},
+	Bounce: {
+		easeIn: function(t,b,c,d){
+			return c - Tween.Bounce.easeOut(d-t, 0, c, d) + b;
+		},
+		easeOut: function(t,b,c,d){
+			if ((t/=d) < (1/2.75)) {
+				return c*(7.5625*t*t) + b;
+			} else if (t < (2/2.75)) {
+				return c*(7.5625*(t-=(1.5/2.75))*t + .75) + b;
+			} else if (t < (2.5/2.75)) {
+				return c*(7.5625*(t-=(2.25/2.75))*t + .9375) + b;
+			} else {
+				return c*(7.5625*(t-=(2.625/2.75))*t + .984375) + b;
+			}
+		},
+		easeInOut: function(t,b,c,d){
+			if (t < d/2) return Tween.Bounce.easeIn(t*2, 0, c, d) * .5 + b;
+			else return Tween.Bounce.easeOut(t*2-d, 0, c, d) * .5 + c*.5 + b;
+		}
+	}
+}
+
+//////////////////////////////////////////////////////////
+
+var $ = function (id) {
+	return "string" == typeof id ? document.getElementById(id) : id;
+};
+
+var Each = function(list, fun){
+	for (var i = 0, len = list.length; i < len; i++) { fun(list[i], i); }
+};
+
+//////////////////////////////////////////////////////////
+
+var fun, iChart = 550, iDuration = 100;
+
+function Move(){
+	var oM = $("idMove").style, oL = $("idLine").style, t=0, c=500, d=iDuration;
+	oM.left=oL.left="0px"; clearTimeout(Move._t);
+	function _run(){
+		if(t<d){
+			t++;
+			oM.left = Math.ceil(fun(t,0,c,d)) + "px";
+			oL.left = Math.ceil(Tween.Linear(t,0,iChart,d)) + "px";
+			Move._t = setTimeout(_run, 10);
+		}else{
+			oM.left = c + "px";
+			oL.left = iChart + "px";
+		}
+	}
+	_run();
+}
+
+////////////////////////////////////////////////////////
+
+function Chart(){
+	var a = [];
+	for (var i = 0; i < iChart; i++) {
+		a.push('<div style="background-color:#f60;font-size:0;width:3px;height:3px;position:absolute;left:' + (i-1) + 'px;top:' + (Math.ceil(fun(i,200,-200,iChart))) + 'px;"><\/div>');
+	}
+	$("idChart").innerHTML = a.join("");
+}
+
+////////////////////////////////////////////////////////
+
+var arrTween = document.getElementsByName("vTween");
+var arrEase = document.getElementsByName("vEase");
+
+Each(arrTween, function(o){ o.onclick = function(){ SetFun(); Chart(); } })
+Each(arrEase, function(o){ o.onclick = function(){ SetFun(); Chart(); } })
+
+function SetFun(){
+	var sTween, sEase;
+	Each(arrTween, function(o){ if(o.checked){ sTween = o.value; } })
+	Each(arrEase, function(o){ if(o.checked){ sEase = o.value; } })
+	fun = sTween == "Linear" ? Tween.Linear : Tween[sTween][sEase];
+}
+  
+$("idRun").onclick = function(){ SetFun(); Chart(); Move(); }
+
+$("idSpeed").onclick = function(){
+	if(iDuration == 100){
+		iDuration = 500; this.value = "减慢速度";
+	}else{
+		iDuration = 100; this.value = "加快速度";
+	}
+}
+</script>
+</body>
+</html>

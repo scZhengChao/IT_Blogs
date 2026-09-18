@@ -1,0 +1,3 @@
+# reflect-metadata
+
+[ reflect-metadata - npm Polyfill for Metadata Reflection API. Latest version: 0.2.2, last published: a year ago. Start using reflect-metadata in your project by running \`npm i reflect-metadata\`. There are 21654 other project https://www.npmjs.com/package/reflect-metadata](https://www.npmjs.com/package/reflect-metadata " reflect-metadata - npm Polyfill for Metadata Reflection API. Latest version: 0.2.2, last published: a year ago. Start using reflect-metadata in your project by running `npm i reflect-metadata`. There are 21654 other project https://www.npmjs.com/package/reflect-metadata")

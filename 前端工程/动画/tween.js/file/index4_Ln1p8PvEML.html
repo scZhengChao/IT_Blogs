@@ -1,0 +1,83 @@
+<!--
+ * @Descripttion: 
+ * @version: 
+ * @Author: zhengChao
+ * @Date: 2019-09-27 15:20:50
+ * @LastEditors: zhengChao
+ * @LastEditTime: 2019-09-27 17:37:36
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+  .circle{
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      background-color: orange;
+      position: absolute;
+  }
+  </style>
+</head>
+<body>
+  <div class="circle" style="top: 0px;left: 0px;"></div>
+</body>
+<script src="https://lib.baomitu.com/tween.js/2/Tween.min.js"></script>
+<script>
+console.log(TWEEN)
+const position = { x: 0 } // position 对应初始位置 也就是left 是0px
+const div = document.querySelector('.circle'); // 获取dom元素
+const tweenA = new TWEEN.Tween(position). // new TWEEN.Tween里面放置初始位置，也就是left 是0px
+to({ x: 500 }, 1000) // to函数第一个参数里面放置要到哪里 也就是left:500px的地方 to函数第二个参数是要花多少时间，也就是1000毫秒
+.easing(TWEEN.Easing.Bounce.EaseIn) // 缓动方法名
+. onUpdate(function(){ // onUpdate函数放置这段时间我们做什么，也就是div的left值不断变化，
+    div.style.left = position.x +'px' // position.x就是上面说的不断变化的left值，
+});
+
+// 动起来，固定写法
+
+tweenA.start() // 启动这个动画
+ 
+function animate(){ 
+    requestAnimationFrame(animate); // requestAnimationFrame可以看成setTimeout(animate, 17)
+    TWEEN.update(); // 每隔一段时间，update方法会调用上面的onUpdate函数，这样让left变化，小球位置也变化
+ }
+animate();
+
+// ------------------------------------------------------------进阶-----------------------
+// tweenjs的链式调用，例如
+// let position = { x: 0 }
+// const tweenA = new TWEEN.Tween(position).to({ x: 500 }, 1000).onUpdate(function(){
+//     div.style.left = position.x +'px'
+// })
+ 
+// const tweenB = new TWEEN.Tween(position).to({ x: 0}, 1000).onUpdate(function(){
+//     div.style.left = position.x +'px'
+// });
+//我们想让tweenA调用完，接着调用tweenB
+
+//这就是需要用到chain方法 链式循环
+// tweenA.chain(tweenB)
+// tweenB.chain(tweenA)
+
+
+
+// tweenA.delay(2000);
+// 固定写法
+// tweenA.start() // 启动这个动画
+// function animate(){ 
+//     requestAnimationFrame(animate); // requestAnimationFrame可以看成setTimeout(animate, 17)
+//     TWEEN.update(); // 每隔一段时间，update方法会调用上面的onUpdate函数，这样让left变化，小球位置也变化
+//  }
+// animate();
+
+
+// tweenA.repeat(10); // repeats 10 times and stops
+// tween.repeat(Infinity); // repeats forever
+
+</script>
+</html>

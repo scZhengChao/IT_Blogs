@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+    <div id="test" draggable="true"  style="height:30px;width:100px;background:pink;display:inline-block;">拖放源</div>
+    <br>
+    <div id="target1" style="margin-top:20px;height: 100px;width:150px;background:lightblue;display:inline-block;">(none)拖放目标</div>
+    <div id="target2" style="margin-top:20px;height: 100px;width:150px;background:lightblue;display:inline-block;">(move)拖放目标</div>
+    <div id="target3" style="margin-top:20px;height: 100px;width:150px;background:lightblue;display:inline-block;">(copy)拖放目标</div>
+    <div id="target4" style="margin-top:20px;height: 100px;width:150px;background:lightblue;display:inline-block;">(link)拖放目标</div>
+    <div id="result"></div>
+</body>
+</html>
+<script>
+    //兼容IE8-浏览器
+    test.onmousedown =function(){
+        if(this.dragDrop){
+            this.dragDrop();
+        }
+    }
+    test.ondragstart = function(e){
+        e = e || event;
+        //兼容firefox浏览器
+        e.dataTransfer.setData('text','');
+          e.dataTransfer.effectAllowed = 'all';
+    }
+    target1.ondragenter = target2.ondragenter =target3.ondragenter =target4.ondragenter =function(e){
+        e = e || event;
+        if(e.preventDefault){
+            e.preventDefault();
+        }else{
+            e.returnValue = false;
+        }
+        this.style.background = 'red';
+    }
+    target1.ondragover = function(e){
+        e = e || event;
+        if(e.preventDefault){
+            e.preventDefault();
+        }else{
+            e.returnValue = false;
+        }
+        e.dataTransfer.dropEffect = 'none';
+    }
+    target2.ondragover = function(e){
+        e = e || event;
+        if(e.preventDefault){
+            e.preventDefault();
+        }else{
+            e.returnValue = false;
+        }
+       
+        e.dataTransfer.dropEffect = 'move';
+    }
+    target3.ondragover = function(e){
+        e = e || event;
+        if(e.preventDefault){
+            e.preventDefault();
+        }else{
+            e.returnValue = false;
+        }
+        e.dataTransfer.dropEffect = 'copy';
+    }
+    target4.ondragover = function(e){
+        e = e || event;
+        if(e.preventDefault){
+            e.preventDefault();
+        }else{
+            e.returnValue = false;
+        }
+        e.dataTransfer.dropEffect = 'link';
+    }
+    target1.ondragleave = target2.ondragleave =target3.ondragleave =target4.ondragleave =function(e){
+        e = e || event;    this.style.backgroundColor = 'lightblue';
+    }
+    target1.ondrop = target2.ondrop =target3.ondrop =target4.ondrop =function(e){
+        e = e || event;
+        if(e.preventDefault){
+            e.preventDefault();
+        }else{
+            e.returnValue = false;
+        }
+        this.appendChild(test)
+        this.style.backgroundColor = 'orange';    
+    }
+    </script>

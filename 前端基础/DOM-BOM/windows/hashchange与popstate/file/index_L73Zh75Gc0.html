@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <a class="push">click for push</a>
+  <a class="replace"> click for replace</a>
+  <a href='#foo'>Click me foo</a>
+  <a href='#bar'>Click me bar</a>
+  <a href="http://localhost:80/Ecma/index.html">go me </a>
+</body>
+<script>
+  
+    var push = document.querySelector('.push')
+    var replace = document.querySelector('.replace')
+    // 改写
+    function handleHistoryState(type) {
+        var historyState = window.history[type]
+        return  function () {
+            var rv = historyState.apply(this, arguments)
+            // var e = new Event(type.toLowerCase())  // 自定义事件
+            // e.arguments = arguments  // 赋值
+            // window.dispatchEvent(e)  // 触发事件
+            // window.onpopstate(arguments)
+            const event = new Event('popstate')
+            window.dispatchEvent(event);
+            return rv
+        }
+    };
+        console.log(window)
+    window.history.pushState = handleHistoryState('pushState')
+    window.history.replaceState = handleHistoryState('replaceState')
+    // handleRouterChange()
+    // window.onpopstate = function(event) {
+    //         alert("location: " + document.location + ", state: " + JSON.stringify(event.state));
+    //         }
+    // Object.freeze(window.onpopstate) //这个只能冻结 oppopstate本身 而不能阻止 window.onpopstate 完全被重写
+    // Object.defineProperty(window, 'onpopstate', {
+    //     configurable: false,
+    //     writable: false, // 是否可以改变
+    //     value:function(){
+    //         console.log('ll')
+    //     }
+    // });
+    // window.onpopstate = function(){
+    //     console.log('hha')
+    // }
+
+    window.addEventListener('popstate',function(){
+        console.log('addEventListener: popstate')
+    })
+    window.addEventListener('hashchange',function(){
+      console.log('hashchange')
+    },false)
+    push.addEventListener('click',function(){
+      window.history.pushState({a:1},null,'http://localhost/a')
+    },false)
+    replace.addEventListener('click',function(){
+      window.history.replaceState({a:2},null,'http://localhost/b')
+    },false)
+    // 监听自定义事件  非原生
+    // window.addEventListener('pushstate',function(){
+    //   console.log('push state')
+    // })
+    // window.addEventListener('replacestate',function(){
+    //   console.log('replace State')
+    // })
+    
+    // class Father{
+    //     constructor(){
+    //         this.a = 10
+    //     }
+       
+    //     commit(){
+    //         console.log(this)
+    //         console.log(this.a)
+    //     }
+    // }
+    // let {commit} = new Father()
+    // commit()
+    // let n = new Father()
+    // console.log(n)
+    // n.commit()
+   
+</script>
+</html>

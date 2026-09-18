@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+	.item img {
+		width:200px;
+		height:200px;
+		float: left;
+	}
+	.item{
+        float: left;
+        margin: 20px;
+	}
+	.drop-left,.drop-right {
+		width: 50px;
+		height: 200px;
+		float: left;
+	}
+</style>
+</head>
+<body>
+
+<div id="drag-wrap">
+	<div class="item" id="wrap1">
+		<img src="http://photos.tuchong.com/38538/f/6864556.jpg" id="img1" draggable="true">
+	</div>
+	<div class="item" id="wrap2">
+		<img src="http://photos.tuchong.com/349669/f/6695960.jpg" id="img2" draggable="true">
+	</div>
+	<div  class="item" id="wrap3">
+		<img src="http://photos.tuchong.com/349669/f/6683901.jpg" id="img3"  draggable="true">
+	</div>
+	<div  class="item" id="wrap4">
+		<img src="http://photos.tuchong.com/349669/f/5121337.jpg" id="img4"  draggable="true">
+    </div>
+</div>
+</body>
+</html>
+<script>
+const dragCon = document.getElementById('drag-wrap');
+dragCon.addEventListener('dragstart', startDrag, false);
+/**
+*  这里一定要阻止dragover的默认行为，不然触发不了drop
+*/
+dragCon.addEventListener('dragover', function (e) {
+    e.preventDefault();
+}, false);
+dragCon.addEventListener('drop', exchangeElement, false);
+
+function startDrag(e) {
+
+    e.dataTransfer.setData('Text', e.target.id + ';' + e.target.parentElement.id);
+   
+}
+function exchangeElement(e) {
+    e.preventDefault();
+    const el = e.target;
+    let PE, //要插入位置的父元素
+        CE; //需要交换的元素
+    if (el.tagName.toLowerCase() !== 'div') {                     
+        PE = el.parentElement;
+        CE = el;
+    } else {
+        PE = el;
+        CE = el.querySelector('img');
+    }
+    /**
+        * 判断不在控制范围内
+        */
+    if (!PE.classList.contains('item')) {
+        return;
+    }
+    const data = e.dataTransfer.getData('Text').split(';');
+    console.log(data)
+    //交换元素
+    document.getElementById(data[1]).appendChild(CE);
+    PE.appendChild(document.getElementById(data[0]));
+}
+</script>

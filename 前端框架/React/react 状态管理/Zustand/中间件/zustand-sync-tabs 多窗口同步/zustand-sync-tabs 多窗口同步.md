@@ -1,0 +1,3 @@
+# zustand-sync-tabs 多窗口同步
+
+[ GitHub - react18-tools/zustand-sync-tabs: Zustand middleware to easily sync Zustand state between tabs / windows / iframes (Same Origin) Zustand middleware to easily sync Zustand state between tabs / windows / iframes (Same Origin) - react18-tools/zustand-sync-tabs https://github.com/react18-tools/zustand-sync-tabs](https://github.com/react18-tools/zustand-sync-tabs " GitHub - react18-tools/zustand-sync-tabs: Zustand middleware to easily sync Zustand state between tabs / windows / iframes (Same Origin) Zustand middleware to easily sync Zustand state between tabs / windows / iframes (Same Origin) - react18-tools/zustand-sync-tabs https://github.com/react18-tools/zustand-sync-tabs")

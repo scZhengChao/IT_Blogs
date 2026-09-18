@@ -1,0 +1,88 @@
+# SVG 在 HTML 页面
+
+## 目录
+
+- [使用 < img> 标签](#使用--img-标签)
+- [使用 \<object> 标签](#使用-object-标签)
+- [使用 \<iframe> 标签](#使用-iframe-标签)
+- [直接在 HTML 嵌入 SVG 代码](#直接在-HTML-嵌入-SVG-代码)
+- [链接到 SVG 文件](#链接到-SVG-文件)
+- [使用 CSS 背景图](#使用-CSS-背景图)
+
+SVG 文件可通过以下标签嵌入 HTML 文档：\<img>、\<object> 或者 \<iframe>。
+
+SVG 的代码可以直接嵌入到 HTML 页面中，或您可以直接链接到 SVG 文件。
+
+***
+
+## 使用 < img> 标签
+
+通过\<img>标签可以将 SVG 图像作为图片嵌入到 HTML 页面中，可以使用 src 属性指定 SVG 文件的路径，也可以设置 width 和 height 属性来指定图片的宽度和高度。
+
+**语法:**
+
+```html 
+<img src="example.svg" alt="SVG Image" width="200" height="200">
+```
+
+
+## 使用 \<object> 标签
+
+`<object>`标签用于将外部资源嵌入到HTML页面中，可以使用`data`属性指定 SVG 文件的路径，`type`属性指定资源的 MIME 类型。
+
+支持 SVG 的浏览器会直接显示 SVG 图像，不支持的浏览器会显示替代内容。
+
+**语法:**
+
+```html 
+<object data="example.svg" type="image/svg+xml" width="200" height="200">
+  Your browser does not support SVG
+</object>
+```
+
+
+## 使用 \<iframe> 标签
+
+`<iframe>`标签用于在 HTML 页面中嵌入另一个HTML文档。可以使用`src`属性指定 SVG 文件的路径，并设置`width`和`height`属性来指定 iframe 的宽度和高度。
+
+**语法:**
+
+```html 
+<iframe src="example.svg" width="200" height="200"></iframe>
+```
+
+
+## 直接在 HTML 嵌入 SVG 代码
+
+在 HTML 页面中直接嵌入 SVG 代码，SVG 代码可以放置在`<body>`标签中或其他合适的位置。
+
+这种方式使得 SVG 图像与 HTML 内容混合在一起，可以直接在 HTML 页面中编辑和调整 SVG 图像。
+
+```svg 
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+   <circle cx="100" cy="50" r="40" stroke="black" stroke-width="2" fill="red" />
+</svg>
+```
+
+
+## 链接到 SVG 文件
+
+您还可以用\<a>标签链接到一个 SVG 文件：
+
+```html 
+<a href="circle1.svg">查看 SVG 文件</a>
+```
+
+
+## 使用 CSS 背景图
+
+通过 CSS 的`background-image`属性，可以将 SVG 图像作为背景图嵌入到 HTML 元素中。这种方法适用于需要在 CSS 中控制背景图样式的情况。
+
+```css 
+.svg-bg {
+  width: 200px;
+  height: 200px;
+  background-image: url('circle1.svg');
+  background-size: cover;
+}
+```

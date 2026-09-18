@@ -1,0 +1,137 @@
+<!--
+ * @Descripttion: 
+ * @version: 
+ * @Author: zhengChao
+ * @Date: 2019-09-20 15:52:31
+ * @LastEditors: zhengChao
+ * @LastEditTime: 2019-09-23 17:46:12
+ -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>6位数字验证码</title>
+</head>
+
+<body>
+  <style>
+    .securityCode {
+      width: 245px;
+      margin: 0 auto;
+      height: 38px;
+      border: 1px solid #cccccc;
+      font-size: 0px;
+      border-radius: 3px;
+    }
+    .securityCode>span {
+      border-right: 1px solid #cccccc;
+      float: left;
+      height: 100%;
+      width: 40px;
+      font-size: 18px;
+      text-align: center;
+      line-height: 38px;
+    }
+    .securityCode>span:last-child {
+      border-right: 0px;
+    }
+  </style>
+
+  <div id="securityCode" class="securityCode">
+    <span contenteditable="true"></span>
+    <span contenteditable="false"></span>
+    <span contenteditable="false"></span>
+    <span contenteditable="false"></span>
+    <span contenteditable="false"></span>
+    <span contenteditable="false"></span>
+  </div>
+
+  <script>
+
+    var vCode = new VerifyCode()
+    vCode.init(() => {
+      console.log(vCode.passWord.join(''))
+    })
+
+    function VerifyCode() {
+      this.domCont = null
+      this.spans = []
+      this.passWord = []
+      this.activeIndex = 0
+
+      this.initDomSpans = () => {
+        this.domCont = document.querySelector('#securityCode')
+        this.spans = this.domCont.getElementsByTagName('span')
+        return this
+      }
+      this.clear = function () {
+        this.passWord.length = 0
+        this.activeIndex = 0
+        let { spans } = this
+        for (var i = 0, len = spans.length; i < len; i++) {
+          spans[i].setAttribute('contenteditable', i == 0 ? true : false)
+          spans[i].innerHTML = ''
+        }
+      }
+      this.init = function (cb) {
+        let { spans, passWord, domCont } = this.initDomSpans()
+        spans[0].focus()
+        domCont.addEventListener('click', e => {
+          let acIndex = this.activeIndex !== 6 ? this.activeIndex : 5
+          spans[acIndex].focus()
+        })
+        domCont.addEventListener('keypress', e => {
+          if (e.target.tagName.toLowerCase() === 'span') {
+            e.preventDefault()
+            if (e.target.innerHTML.length === 0 && this.activeIndex < spans.length && e.keyCode !== 8) {
+              var k = String.fromCharCode(e.charCode)
+              if (/\d/.test(k)) {
+                spans[this.activeIndex].innerHTML = k
+                passWord.push(k)
+                if (this.activeIndex !== spans.length - 1) {
+                  this.go(this.activeIndex + 1)
+                }
+                this.activeIndex++
+                cb()
+              } else {
+                alert('请输入数字密码')
+              }
+            }
+          }
+        }, false)
+        domCont.addEventListener('keyup', e => {
+          e = e || window.event
+          if (e.keyCode === 8) {
+            if (this.activeIndex > 0) {
+              this.activeIndex--
+              this.back(this.activeIndex)
+            }
+          }
+        }, false)
+      }
+      this.go = function (index) {
+        let { spans } = this
+        for (var i = 0, len = spans.length; i < len; i++) {
+          spans[i].setAttribute('contenteditable', i == index ? true : false)
+        }
+        spans[index].focus()
+      }
+      this.back = index => {
+        let { spans, passWord } = this
+        if (index >= 0 && index < spans.length) {
+          for (var i = 0, len = spans.length; i < len; i++) {
+            spans[i].setAttribute('contenteditable', i == index ? true : false)
+          }
+          spans[index].innerHTML = ''
+          spans[index].focus()
+          passWord.pop()
+        }
+      }
+    }
+  </script>
+</body>
+
+</html>

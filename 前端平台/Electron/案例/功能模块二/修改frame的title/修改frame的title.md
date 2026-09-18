@@ -1,0 +1,3 @@
+# 修改frame的title
+
+[ Vue设置document.title浏览器标题名字处理方案\_搬砖的前端的博客-CSDN博客 Vue单页面，设置下根据路由变化，自动显示对应页面名字。配置路由文件中 meta.titleimport Vue from 'vue'import VueRouter from 'vue-router'Vue.use(VueRouter)const routes = \[  {    path: '/',    name: 'Home',    component: () =\&gt; import( https://blog.csdn.net/weixin\_44461275/article/details/123096735](https://blog.csdn.net/weixin_44461275/article/details/123096735 " Vue设置document.title浏览器标题名字处理方案_搬砖的前端的博客-CSDN博客 Vue单页面，设置下根据路由变化，自动显示对应页面名字。配置路由文件中 meta.titleimport Vue from 'vue'import VueRouter from 'vue-router'Vue.use(VueRouter)const routes = \[  {    path: '/',    name: 'Home',    component: () =\&gt; import( https://blog.csdn.net/weixin_44461275/article/details/123096735")

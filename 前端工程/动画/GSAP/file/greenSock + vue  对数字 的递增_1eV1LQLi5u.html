@@ -1,0 +1,63 @@
+<!--
+ * @Descripttion: 
+ * @version: 
+ * @Author: zhengChao
+ * @Date: 2019-08-04 15:58:51
+ * @LastEditors: zhengChao
+ * @LastEditTime: 2019-09-27 13:40:32
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    body,html{
+      width: 100%;
+      height: 100%;
+    }
+    .box{
+      width: 100px;
+      height: 100px;
+      background: #399;
+      position: absolute;
+      top: 50px;
+      left: 0;
+    }
+  </style>
+  <script src="./vue.js"></script>
+</head>
+<body>
+  <div id="animated-number-demo">
+    <input v-model.number="number" type="number" step="20">
+    <p>{{ animatedNumber }}</p>
+  </div>
+
+
+</body>
+<script src="./jquery.js"></script>
+<script src="./tween.js"></script>
+<script src="./lodash.js"></script>
+<script src="./TweenMax.min.js"></script>
+<script>
+new Vue({
+  el: '#animated-number-demo',
+  data: {
+    number: 0,
+    tweenedNumber: 0
+  },
+  computed: {
+    animatedNumber: function() {
+      return this.tweenedNumber.toFixed(0);
+    }
+  },
+  watch: {
+    number: function(newValue) {
+      TweenLite.to(this.$data, 0.8, { tweenedNumber: newValue });
+    }
+  }
+})
+</script>
+</html>

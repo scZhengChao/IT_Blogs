@@ -1,0 +1,101 @@
+# tab 切换
+
+```html 
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+   <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        li {
+            list-style-type: none;
+        }
+        
+        .tab {
+            width: 978px;
+            margin: 100px auto;
+        }
+        
+        .tab_list {
+            height: 39px;
+            border: 1px solid #ccc;
+            background-color: #f1f1f1;
+        }
+        
+        .tab_list li {
+            float: left;
+            height: 39px;
+            line-height: 39px;
+            padding: 0 20px;
+            text-align: center;
+            cursor: pointer;
+        }
+        
+        .tab_list .current {
+            background-color: #c81623;
+            color: #fff;
+        }
+        
+        .item_info {
+            padding: 20px 0 0 20px;
+        }
+        
+        .item {
+            display: none;
+        }
+    </style>
+  <script  src="jquery-1.12.4.js"></script>
+</head>
+ 
+<body>
+    <div class="tab">
+        <div class="tab_list">
+            <ul>
+                <li class="current" index='0'>商品介绍</li>
+                <li>规格与包装</li>
+                <li>售后保障</li>
+                <li>商品评价（50000）</li>
+                <li>手机社区</li>
+            </ul>
+        </div>
+        <div class="tab_con">
+            <div class="item" style="display: block;">
+                商品介绍模块内容
+            </div>
+            <div class="item">
+                规格与包装模块内容
+            </div>
+            <div class="item">
+                售后保障模块内容
+            </div>
+            <div class="item">
+                商品评价（50000）模块内容
+            </div>
+            <div class="item">
+                手机社区模块内容
+            </div>
+ 
+        </div>
+    </div>
+  
+  <script>
+      $(function(){
+      $(".tab_list  li").click(function(){
+        $(this).addClass("current").siblings().removeClass("current");
+        var  index=$(this).index();
+        $(".tab_con   .item").eq(index).show().siblings().hide();
+      });
+    })
+  
+  </script>
+</body>
+</html>
+```
+
+
+![](image_qoG0Mcb1qe.png)

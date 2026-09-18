@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <button id="btn">click</button>
+</body>
+<script src="./jquery.js"></script>
+<script src="./lodash.js"></script>
+<script>
+function test(data){
+  try{
+    if(data == 1)
+    return data
+  }catch(err){
+
+  }finally{
+    data = 10
+    // return data
+  }
+}
+$("#btn").on('click',function(){
+  console.log(test(1))
+})
+</script>
+
+</html>

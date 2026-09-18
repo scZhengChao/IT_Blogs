@@ -1,0 +1,3 @@
+# steps深入使用
+
+[ CSS3 animation属性中的steps功能符深入介绍 «  张鑫旭-鑫空间-鑫生活 steps()有一定的学习难度，很多概念总是搞不清楚，所以本文算是个自我挑战，看看能不能说清楚steps()中的相关概念，方便大家理解与学习。本文有些篇幅，有些深入，如果您时间较紧，可以先马后看。总之，希望本文的内容能够对您的学习有所帮助。  https://www.zhangxinxu.com/wordpress/2018/06/css3-animation-steps-step-start-end/](https://www.zhangxinxu.com/wordpress/2018/06/css3-animation-steps-step-start-end/ " CSS3 animation属性中的steps功能符深入介绍 «  张鑫旭-鑫空间-鑫生活 steps()有一定的学习难度，很多概念总是搞不清楚，所以本文算是个自我挑战，看看能不能说清楚steps()中的相关概念，方便大家理解与学习。本文有些篇幅，有些深入，如果您时间较紧，可以先马后看。总之，希望本文的内容能够对您的学习有所帮助。  https://www.zhangxinxu.com/wordpress/2018/06/css3-animation-steps-step-start-end/")

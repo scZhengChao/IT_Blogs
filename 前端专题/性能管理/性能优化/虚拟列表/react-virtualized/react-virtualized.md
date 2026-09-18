@@ -1,0 +1,3 @@
+# react-virtualized
+
+[ react-virtualized - npm React components for efficiently rendering large, scrollable lists and tabular data. Latest version: 9.22.5, last published: 2 years ago. Start using react-virtualized in your project by running \`npm  https://www.npmjs.com/package/react-virtualized](https://www.npmjs.com/package/react-virtualized " react-virtualized - npm React components for efficiently rendering large, scrollable lists and tabular data. Latest version: 9.22.5, last published: 2 years ago. Start using react-virtualized in your project by running `npm  https://www.npmjs.com/package/react-virtualized")
