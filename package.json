@@ -24,6 +24,7 @@
     "@rspress/core": "^2.0.22"
   },
   "devDependencies": {
-    "@types/node": "^26.6.2"
+    "@types/node": "^26.6.2",
+    "fs-extra": "^11.4.0"
   }
 }

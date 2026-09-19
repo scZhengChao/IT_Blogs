@@ -8,47 +8,72 @@ interface SameNamePage {
     relativePath: string;
 }
 
-function scanSameNamePages(rootDir: string): SameNamePage[] {
+function scanSameNamePages(
+    rootDir: string,
+): SameNamePage[] {
     const result: SameNamePage[] = [];
 
     function walk(currentDir: string) {
-        const entries = fs.readdirSync(currentDir, {
-            withFileTypes: true,
-        });
+        const entries = fs.readdirSync(
+            currentDir,
+            {
+                withFileTypes: true,
+            },
+        );
 
         for (const entry of entries) {
-            if (entry.name.startsWith('.')) continue;
+            if (entry.name.startsWith('.')) {
+                continue;
+            }
 
-            const fullPath = path.join(currentDir, entry.name);
+            const fullPath = path.join(
+                currentDir,
+                entry.name,
+            );
 
             if (entry.isDirectory()) {
                 walk(fullPath);
                 continue;
             }
 
-            if (!entry.isFile()) continue;
-            if (!entry.name.toLowerCase().endsWith('.md')) continue;
+            if (!entry.isFile()) {
+                continue;
+            }
 
-            const fileName = path.basename(entry.name, '.md');
-            const parentName = path.basename(currentDir);
+            if (
+                !entry.name
+                    .toLowerCase()
+                    .endsWith('.md')
+            ) {
+                continue;
+            }
 
-            // 只处理：
-            //
-            // foo/
-            //   foo.md
-            //
-            if (fileName !== parentName) continue;
+            const fileName = path.basename(
+                entry.name,
+                '.md',
+            );
+
+            const parentName =
+                path.basename(currentDir);
+
+            if (fileName !== parentName) {
+                continue;
+            }
 
             const relativePath = path
                 .relative(rootDir, fullPath)
                 .split(path.sep)
                 .join('/');
 
-            const routeParts = relativePath.split('/');
+            const routeParts =
+                relativePath.split('/');
+
             routeParts.pop();
 
             const routePath =
-                '/' + routeParts.join('/') + '/';
+                '/' +
+                routeParts.join('/') +
+                '/';
 
             result.push({
                 routePath,
@@ -70,7 +95,8 @@ export function sameNameRoutePlugin(): RspressPlugin {
         name: 'same-name-route',
 
         config(config) {
-            const root = config.root || 'docs';
+            const root =
+                config.root || 'docs';
 
             const rootDir = path.resolve(
                 process.cwd(),
@@ -83,23 +109,13 @@ export function sameNameRoutePlugin(): RspressPlugin {
                 );
             }
 
-            pages = scanSameNamePages(rootDir);
+            pages =
+                scanSameNamePages(rootDir);
 
             console.log(
                 `[same-name-route] 找到 ${pages.length} 个同名 Markdown 页面`,
             );
 
-            /*
-             * 排除原本的：
-             *
-             * rust学习/rust学习.md
-             *          ↓
-             * /rust学习/rust学习
-             *
-             * 改由 addPages 注册：
-             *
-             * /rust学习/
-             */
             return {
                 ...config,
 
@@ -108,24 +124,21 @@ export function sameNameRoutePlugin(): RspressPlugin {
 
                     exclude: [
                         ...(config.route?.exclude || []),
-                        ...pages.map(page => page.relativePath),
+
+                        ...pages.map(
+                            page => page.relativePath,
+                        ),
                     ],
                 },
             };
         },
 
         addPages() {
-            return pages.map(page => {
-                const content = fs.readFileSync(
-                    page.filepath,
-                    'utf8',
-                );
+            return pages.map(page => ({
+                routePath: page.routePath,
 
-                return {
-                    routePath: page.routePath,
-                    content,
-                };
-            });
+                filepath: page.filepath,
+            }));
         },
     };
 }

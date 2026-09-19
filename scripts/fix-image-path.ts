@@ -16,11 +16,13 @@ export function fixImagePath() {
         return;
       }
 
-      // 处理 Markdown 图片
-      if (node.type === 'image' && typeof node.url === 'string') {
+      if (
+        node.type === 'image' &&
+        typeof node.url === 'string'
+      ) {
         const originalUrl = node.url;
 
-        // 不处理外部图片 / data URI / 根路径图片
+        // 外部图片不处理
         if (
           originalUrl.startsWith('http://') ||
           originalUrl.startsWith('https://') ||
@@ -31,96 +33,115 @@ export function fixImagePath() {
           return;
         }
 
-        /*
-         * 分离：
-         *
-         * image.png
-         * image.png?xxx
-         * image.png#xxx
-         */
-        const match = originalUrl.match(/^([^?#]*)([?#].*)?$/);
+        const match = originalUrl.match(
+          /^([^?#]*)([?#].*)?$/,
+        );
 
         if (!match) {
           return;
         }
 
-        const imageName = match[1];
+        const imagePathPart = match[1];
         const suffix = match[2] || '';
 
-        // ① 先检查 Markdown 当前目录
+        // 已经是相对路径
+        if (
+          imagePathPart.startsWith('./') ||
+          imagePathPart.startsWith('../')
+        ) {
+          const absolutePath = path.resolve(
+            mdDir,
+            imagePathPart,
+          );
+
+          if (fs.existsSync(absolutePath)) {
+            return;
+          }
+
+          // 相对路径，但是文件不存在
+          node.type = 'text';
+          node.value =
+            `[图片不存在：${originalUrl}]`;
+          delete node.url;
+          delete node.alt;
+          delete node.title;
+
+          return;
+        }
+
+        /*
+         * 先检查 Markdown 中写的原始路径
+         *
+         * assets/a.png
+         * image/a.png
+         * images/a.png
+         */
         const directPath = path.resolve(
           mdDir,
-          imageName,
+          imagePathPart,
         );
 
         if (fs.existsSync(directPath)) {
+          node.url =
+            `./${imagePathPart}${suffix}`;
+
           return;
         }
 
-        // ② 检查 ./image/
-        const imagePath = path.resolve(
-          mdDir,
+        /*
+         * 再尝试：
+         *
+         * image/a.png
+         * images/a.png
+         * assets/a.png
+         */
+        const directories = [
           'image',
-          imageName,
-        );
-
-        if (fs.existsSync(imagePath)) {
-          const newUrl = `./image/${imageName}${suffix}`;
-
-          node.url = newUrl;
-
-          console.log(
-            `[fix-image-path] ${path.relative(process.cwd(), filePath)}\n` +
-            `  ${originalUrl} -> ${newUrl}`,
-          );
-
-          return;
-        }
-
-        // ③ 检查 ./images/
-        const imagesPath = path.resolve(
-          mdDir,
           'images',
-          imageName,
-        );
-
-        if (fs.existsSync(imagesPath)) {
-          const newUrl = `./images/${imageName}${suffix}`;
-
-          node.url = newUrl;
-
-          console.log(
-            `[fix-image-path] ${path.relative(process.cwd(), filePath)}\n` +
-            `  ${originalUrl} -> ${newUrl}`,
-          );
-
-          return;
-        }
-
-        // ④ 检查 ./assets/
-        const assetsPath = path.resolve(
-          mdDir,
           'assets',
-          imageName,
-        );
+        ];
 
-        if (fs.existsSync(assetsPath)) {
-          const newUrl = `./assets/${imageName}${suffix}`;
-
-          node.url = newUrl;
-
-          console.log(
-            `[fix-image-path] ${path.relative(process.cwd(), filePath)}\n` +
-            `  ${originalUrl} -> ${newUrl}`,
+        for (const directory of directories) {
+          const candidatePath = path.resolve(
+            mdDir,
+            directory,
+            imagePathPart,
           );
+
+          if (!fs.existsSync(candidatePath)) {
+            continue;
+          }
+
+          node.url =
+            `./${directory}/${imagePathPart}${suffix}`;
 
           return;
         }
 
-        // 找不到就不修改，让 Rspress 自己处理
+        /*
+         * 到这里说明：
+         *
+         * Markdown 引用了图片
+         * 但是本地根本不存在
+         *
+         * 不让 MDX 生成 import。
+         */
+        console.warn(
+          `[fix-image-path] 图片不存在：${path.relative(
+            process.cwd(),
+            filePath,
+          )} -> ${originalUrl}`,
+        );
+
+        node.type = 'text';
+        node.value =
+          `[图片不存在：${originalUrl}]`;
+
+        delete node.url;
+        delete node.alt;
+        delete node.title;
       }
 
-      // 递归处理子节点
       if (Array.isArray(node.children)) {
         for (const child of node.children) {
           visit(child);

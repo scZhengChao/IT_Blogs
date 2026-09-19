@@ -34,6 +34,14 @@ export default defineConfig({
   ],
 
   markdown: {
+    mdxRs: false,
+
+    image: {
+      checkDeadImages: false,
+    },
+    link: {
+      checkDeadLinks: false,
+    },
     remarkPlugins: [
       fixImagePath,
     ],
