@@ -32,7 +32,7 @@
 
 1. 打开一个新终端，下拉选择JavaScript Debug Terminal
 
-![](../../../assets/技术杂谈/利其器/image/image_XYocA7L1II.png)
+![](./assets/image/image_XYocA7L1II.png)
 
 1. 运行程序命令 node index.js
 

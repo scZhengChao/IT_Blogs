@@ -25,7 +25,7 @@
 
 ## mark as plain text
 
-![](../../../assets/技术杂谈/利其器/image/image_MmLYAldbLD.png)
+![](./assets/image/image_MmLYAldbLD.png)
 
 [2021.zip](file/2021_R-kIuSAuv0.zip "2021.zip")
 
@@ -35,7 +35,7 @@
 
 ## 点击源文件自动展开对应目录
 
-![  ](../../../assets/技术杂谈/利其器/image/1ef832f152bbe5d5bd03cb1e27a4e217_a2qaZz-LER.png "  ")
+![  ](./assets/image/1ef832f152bbe5d5bd03cb1e27a4e217_a2qaZz-LER.png "  ")
 
 - Always Select Opened File
 
@@ -63,7 +63,7 @@
 ```
 
 
-![](../../../assets/技术杂谈/利其器/image/image_0-kVV89nDr.png)
+![](./assets/image/image_0-kVV89nDr.png)
 
 ## 常用插件
 

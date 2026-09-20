@@ -15,13 +15,13 @@ java的开发工具；前端也可以用
 
 - `node_modules` 文件夹右键，`Mark Directory as`，`Excluded`。
 
-![](../../assets/技术杂谈/利其器/image/image__jD8nriFPp.png)
+![](./assets/image/image__jD8nriFPp.png)
 
 #### 1.2 忽略文件夹
 
 - `File`，`Settings`，`Editor`，`File Types`，`node_modules`设置为忽略文件夹。
 
-![](../../assets/技术杂谈/利其器/image/image_mzVHweLnBb.png)
+![](./assets/image/image_mzVHweLnBb.png)
 
 #### 1.3 修改项目.iml 文件
 

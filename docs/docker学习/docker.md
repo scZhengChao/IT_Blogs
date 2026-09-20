@@ -7,7 +7,7 @@
 - [docker-ce](#docker-ce)
 - [卸载docker](#卸载docker)
 
-[10\_部署\_nginx\_cluster\_pm2\_docker【瑞客论坛 www.ruike1.com】.pdf](<../assets/docker学习/file/10_部署_nginx_cluster_pm2_docker【瑞客论坛 www.ruike1.com.pdf> "10_部署_nginx_cluster_pm2_docker【瑞客论坛 www.ruike1.com】.pdf")
+[10\_部署\_nginx\_cluster\_pm2\_docker【瑞客论坛 www.ruike1.com】.pdf](<./assets/file/10_部署_nginx_cluster_pm2_docker【瑞客论坛 www.ruike1.com.pdf> "10_部署_nginx_cluster_pm2_docker【瑞客论坛 www.ruike1.com】.pdf")
 
 [ Docker Hub  https://hub.docker.com/](https://hub.docker.com/ " Docker Hub  https://hub.docker.com/")
 
@@ -66,13 +66,13 @@
 
 # 卸载docker
 
-[Dockerfile](../assets/docker学习/file/Dockerfile_ghbsyn-u9K " Dockerfile")
+[Dockerfile](./assets/file/Dockerfile_ghbsyn-u9K " Dockerfile")
 
-[docker-compose.yaml](../assets/docker学习/file/docker-compose_xHbePD0Oz7.yaml " docker-compose.yaml")
+[docker-compose.yaml](./assets/file/docker-compose_xHbePD0Oz7.yaml " docker-compose.yaml")
 
-[nginx.conf](../assets/docker学习/file/nginx_0sR2N-ia5e.conf " nginx.conf")
+[nginx.conf](./assets/file/nginx_0sR2N-ia5e.conf " nginx.conf")
 
-[.gitlab-ci.yml](../assets/docker学习/file/-gitlab-ci_bTLEoylUx9.yml " .gitlab-ci.yml")
+[.gitlab-ci.yml](./assets/file/-gitlab-ci_bTLEoylUx9.yml " .gitlab-ci.yml")
 
 [api](IT/docker/api/api.md "api")
 
