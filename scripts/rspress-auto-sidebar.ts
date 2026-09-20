@@ -224,11 +224,18 @@ function buildSidebar(rootDirectory: string): Sidebar {
     const routePath = relativeDirectory
       ? `/${relativeDirectory}/`
       : '/';
-
-    sidebar[routePath] = buildGroups(
+    const groups = buildGroups(
       directory,
       relativeDirectory,
     );
+
+    /*
+     * Leaf pages have no useful local navigation. Omitting their empty entry
+     * lets Rspress' longest-prefix matching reuse the nearest parent sidebar.
+     */
+    if (groups.length > 0) {
+      sidebar[routePath] = groups;
+    }
 
     for (const entry of getEntries(directory)) {
       if (!entry.isDirectory()) {

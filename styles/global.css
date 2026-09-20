@@ -27,6 +27,16 @@
     "Segoe UI", sans-serif;
 }
 
+html:root {
+  --rp-nav-height: 60px;
+  --rp-sidebar-width: 288px;
+  --rp-outline-width: 260px;
+  --rp-sidebar-padding: 14px;
+  --rp-content-padding-x: 48px;
+  --rp-content-padding-y: 36px;
+  --rp-content-max-width: 1120px;
+}
+
 *,
 *::before,
 *::after {
@@ -176,8 +186,90 @@ body {
   box-shadow: none;
 }
 
+.rp-doc-layout__outline:not(:has(.page-context, .rp-toc-item)) {
+  display: none;
+}
+
 .rp-doc-layout__doc-container {
+  width: 100%;
+  max-width: 1120px;
+  margin-right: auto;
+  margin-left: auto;
   min-width: 0;
+}
+
+.rp-outline {
+  padding-right: 18px;
+  padding-left: 18px;
+}
+
+.rp-outline__title {
+  color: var(--rp-c-text-3);
+  font-size: 11px;
+  font-weight: 750;
+  letter-spacing: 0;
+}
+
+.rp-outline:not(:has(.rp-toc-item)) > .rp-outline__title,
+.rp-outline:not(:has(.rp-toc-item)) > .rp-outline__toc,
+.rp-outline:not(:has(.rp-toc-item)) > .rp-outline__divider {
+  display: none;
+}
+
+.page-context {
+  margin: 0 18px 20px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid var(--rp-c-divider-light);
+}
+
+.page-context h2 {
+  margin: 0 0 10px;
+  color: var(--rp-c-text-3);
+  font-size: 11px;
+  font-weight: 750;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+.page-context__links {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.page-context__links a {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 14px;
+  align-items: center;
+  gap: 8px;
+  min-height: 32px;
+  padding: 5px 7px;
+  border-radius: 5px;
+  color: var(--rp-c-text-2);
+  font-size: 12px;
+  line-height: 1.45;
+  text-decoration: none;
+}
+
+.page-context__links a:hover {
+  color: var(--rp-c-text-1);
+  background: var(--rp-c-bg-mute);
+}
+
+.page-context__links a span:first-child {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.page-context__links a span:last-child {
+  color: var(--rp-c-text-3);
+  transition: transform 160ms ease;
+}
+
+.page-context__links a:hover span:last-child {
+  color: var(--rp-c-brand);
+  transform: translateX(2px);
 }
 
 .rp-doc {
@@ -298,6 +390,77 @@ body {
   color: var(--rp-c-text-1);
   font-weight: 600;
   text-overflow: ellipsis;
+}
+
+.global-breadcrumb__copy {
+  display: inline-grid;
+  flex: 0 0 32px;
+  width: 32px;
+  height: 32px;
+  margin-left: auto;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  color: var(--rp-c-text-3);
+  background: transparent;
+  cursor: pointer;
+  place-items: center;
+  transition:
+    color 160ms ease,
+    border-color 160ms ease,
+    background-color 160ms ease;
+}
+
+.global-breadcrumb__copy:hover {
+  border-color: var(--rp-c-divider);
+  color: var(--rp-c-brand);
+  background: var(--rp-c-bg-mute);
+}
+
+.global-breadcrumb__copy svg {
+  width: 16px;
+  height: 16px;
+}
+
+.reading-progress {
+  position: fixed;
+  top: var(--rp-nav-height);
+  right: 0;
+  left: 0;
+  z-index: 59;
+  height: 2px;
+  background: var(--rp-c-brand);
+  pointer-events: none;
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: reading-progress linear;
+  animation-timeline: scroll(root block);
+}
+
+@keyframes reading-progress {
+  to {
+    transform: scaleX(1);
+  }
+}
+
+.rp-doc-footer {
+  margin-top: 56px;
+}
+
+.rp-doc-footer__prev,
+.rp-doc-footer__next {
+  min-height: 76px;
+  padding: 14px 16px;
+  border: 1px solid var(--rp-c-divider-light);
+  border-radius: 8px;
+  transition:
+    border-color 160ms ease,
+    background-color 160ms ease;
+}
+
+.rp-doc-footer__prev:hover,
+.rp-doc-footer__next:hover {
+  border-color: var(--rp-c-brand);
+  background: var(--rp-c-bg-soft);
 }
 
 .library-home {
@@ -452,8 +615,22 @@ body {
   display: none;
 }
 
+@media (width >= 1280px) {
+  .rp-doc-layout__sidebar {
+    margin-left: 0;
+  }
+
+  .rp-doc-layout__outline {
+    margin-right: 0;
+  }
+
+  .rp-doc-layout__doc {
+    max-width: none;
+  }
+}
+
 @media (width <= 1100px) {
-  :root {
+  html:root {
     --rp-content-padding-x: 36px;
   }
 
@@ -463,7 +640,7 @@ body {
 }
 
 @media (width <= 768px) {
-  :root {
+  html:root {
     --rp-nav-height: 56px;
     --rp-content-padding-x: 20px;
     --rp-content-padding-y: 28px;

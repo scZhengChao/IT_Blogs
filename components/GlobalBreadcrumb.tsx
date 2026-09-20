@@ -1,6 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { usePageData } from '@rspress/core/runtime';
-import { Link } from '@rspress/core/theme-original';
+import {
+  IconLink,
+  IconSuccess,
+  Link,
+  SvgWrapper,
+} from '@rspress/core/theme-original';
 
 interface LibrarySection {
   title: string;
@@ -174,6 +179,8 @@ function LibraryHome() {
  */
 export default function GlobalBreadcrumb() {
   const { page } = usePageData();
+  // Tracks clipboard feedback locally without changing route or page data.
+  const [hasCopied, setHasCopied] = useState(false);
   const routePath = page.routePath || '/';
 
   if (routePath === '/' || routePath === '/index.html') {
@@ -207,6 +214,16 @@ export default function GlobalBreadcrumb() {
   const parentName = parentParts.length
     ? decodeRouteSegment(parentParts[parentParts.length - 1])
     : 'Library';
+
+  /**
+   * Copies the canonical browser URL for sharing. Clipboard access only runs
+   * after a user gesture, so server rendering remains deterministic.
+   */
+  async function handleCopyLink() {
+    await navigator.clipboard.writeText(window.location.href);
+    setHasCopied(true);
+    window.setTimeout(() => setHasCopied(false), 1600);
+  }
 
   return (
     <nav className="global-breadcrumb" aria-label="Breadcrumb">
@@ -248,6 +265,18 @@ export default function GlobalBreadcrumb() {
           </React.Fragment>
         ))}
       </div>
+
+      <button
+        type="button"
+        className="global-breadcrumb__copy"
+        onClick={handleCopyLink}
+        title={hasCopied ? 'Copied' : 'Copy link'}
+        aria-label={hasCopied ? 'Link copied' : 'Copy page link'}
+      >
+        <SvgWrapper
+          icon={hasCopied ? IconSuccess : IconLink}
+        />
+      </button>
     </nav>
   );
 }
