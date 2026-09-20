@@ -43,7 +43,7 @@
 
 **对于持续运行的服务进程（daemon），必须及时释放不再用到的内存**。否则，内存占用越来越高，轻则影响系统性能，重则导致进程崩溃。
 
-![  ](./image/ed46508a6de34928916e902c0b6721e5__typuOqPFE.png "  ")
+![  ](./assets/image/ed46508a6de34928916e902c0b6721e5__typuOqPFE.png "  ")
 
 **不再用到的内存，没有及时释放，就叫做内存泄漏（memory leak）。**
 
@@ -72,7 +72,7 @@ free(buffer);
 
 **如果一个值的引用次数是0，就表示这个值不再**用到了，因此可以将这块内存释放。
 
-![  ](./image/b086cfbfb7cf47e884b33c588c26f513_9lM15TpZa9.png "  ")
+![  ](./assets/image/b086cfbfb7cf47e884b33c588c26f513_9lM15TpZa9.png "  ")
 
 上图中，左下角的两个值，没有任何引用，所以可以释放。
 
@@ -119,7 +119,7 @@ let dog.a = new Array(1)
 
 当 JavaScript 执行这段代码的时候，会先在全局作用域中添加一个dog属性，并在堆中创建了一个空对象，将该对象的地址指向了 dog。随后又创建一个大小为 1 的数组，并将属性地址指向了 dog.a。此时的内存布局图如下所示:
 
-![  ](./image/640_R2TZzHE7pE.png "  ")
+![  ](./assets/image/640_R2TZzHE7pE.png "  ")
 
 如果此时，我将另外一个对象赋给了 a属性，代码如下所示:
 
@@ -130,7 +130,7 @@ let dog.a = new Array(1)
 
 此时的内存布局图：
 
-![  ](./image/640_s0buScQEC1.png "  ")
+![  ](./assets/image/640_s0buScQEC1.png "  ")
 
        a的指向改变了， 此时堆**中的数组对象就成为了不被使用的数据，专业名词叫「不可达」的数据。**
 
@@ -215,30 +215,30 @@ V8 采用的是**可达性 (reachability) 算法**来判断堆中的对象应**�
    - 在这个遍历过程中，**能到达的元素称为活动对象，没有到达的元素就可以判断为垃圾数据。**
 2. 然后是垃圾清除。
 
-![  ](./image/640_SP2ktcJfUQ.png "  ")
+![  ](./assets/image/640_SP2ktcJfUQ.png "  ")
 
 1. 直接将标记为垃圾的数据清理掉。
 2. 多次标记-清除后，会产生大量不连续的内存碎片，**需要进行内存整理。**
 
-![  ](./image/640_ZBvmqyEFUK.png "  ")
+![  ](./assets/image/640_ZBvmqyEFUK.png "  ")
 
 ### **副垃圾回收器**负责**新生代的垃圾回收，通常只支持 1\~8 M 的容量**。
 
 新生代被分为两个区域：一**般是对象区域，一半是空闲区域**。
 
-![  ](./image/640_hJkDCUEC11.png "  ")
+![  ](./assets/image/640_hJkDCUEC11.png "  ")
 
 **新加入的对象都被放入对象区域**，**等对象区域快满的时候，会执行一次垃圾清理**。
 
 1. **先给对象区域所有垃圾做标记。**
 2. **标记完成后，存活的对象被复制到空闲区域，并且将他们有序的排列一遍**。
 
-![  ](./image/640_rnXYsLynKZ.png "  ")
+![  ](./assets/image/640_rnXYsLynKZ.png "  ")
 
 1. 这就回到我们前面留下的问题 -- 副垃圾回收器没有碎片整理。因为空闲区域里此时是有序的，没有碎片，也就不需要整理了。
 2. **复制完成后，对象区域会和空闲区域进行对调。将空闲区域中存活的对象放入对象区域里**。
 
-![  ](./image/640_xQZxxva6V2.png "  ")
+![  ](./assets/image/640_xQZxxva6V2.png "  ")
 
 1. 这样，就完成了垃圾回收。
 
@@ -250,7 +250,7 @@ V8 采用的是**可达性 (reachability) 算法**来判断堆中的对象应**�
 
 **将堆分为新生代与老生代，多回收新生代，少回收老生代**。这样就**减少了每次需遍历的对象，从而减少每次垃圾回收的耗时。**
 
-![  ](./image/640_MZHjqJkK4w.png "  ")
+![  ](./assets/image/640_MZHjqJkK4w.png "  ")
 
 ### **增量收集**
 
@@ -260,7 +260,7 @@ V8 采用的是**可达性 (reachability) 算法**来判断堆中的对象应**�
 
 这样就解决了长时间停顿的问题。
 
-![  ](./image/640_6XUHBVoBj-.png "  ")
+![  ](./assets/image/640_6XUHBVoBj-.png "  ")
 
 ### **闲时收集**
 
@@ -276,7 +276,7 @@ V8 采用的是**可达性 (reachability) 算法**来判断堆中的对象应**�
 
 Chrome 浏览器查看内存占用，按照以下步骤操作。
 
-![  ](./image/e6118b1f270b4e59aa46d9dc42191ea1_j0dN1ABR6s.png "  ")
+![  ](./assets/image/e6118b1f270b4e59aa46d9dc42191ea1_j0dN1ABR6s.png "  ")
 
 1\. 打开开发者工具，选择 Timeline 面板
 
@@ -290,11 +290,11 @@ Chrome 浏览器查看内存占用，按照以下步骤操作。
 
 如果内存占用基本平稳，接近水平，就说明不存在内存泄漏。
 
-![  ](./image/3526a27e1a8144b0b64a916f3a3baa7a_t78DO3eNmp.png "  ")
+![  ](./assets/image/3526a27e1a8144b0b64a916f3a3baa7a_t78DO3eNmp.png "  ")
 
 反之，就是内存泄漏了。
 
-![  ](./image/734c2e6128db4b95889001dbd1e073d6_KamIrThNr9.png "  ")
+![  ](./assets/image/734c2e6128db4b95889001dbd1e073d6_KamIrThNr9.png "  ")
 
 ## **3.2 命令行**
 
@@ -308,7 +308,7 @@ console.log(process.memoryUsage());
 
 process.memoryUsage返回一个对象，**包含了 Node 进程的内存占用信息。该对象包含四个字**段，单位是字节，含义如下。
 
-![  ](./image/6c473b09d52748608d4ad0d1babda6ce_HNY_zDJcoI.png "  ")
+![  ](./assets/image/6c473b09d52748608d4ad0d1babda6ce_HNY_zDJcoI.png "  ")
 
 · rss（resident set size）：所有内存占用，包括指令区和堆栈。
 
@@ -334,7 +334,7 @@ JavaScript 是一个有**垃圾回收机制的语言，我们不需要手动回�
 
 &#x20;       在 Linux 和 Windows 上按**Shift+Esc 来访问 Chrome 的任务管理器**；**Firefox 则在地址栏中键入 about:performanc**e。我们能用它查看每个选项卡的 JavaScript 内存占用量。如果发现异常的**内存使用量持续增长**，就很可能出现了泄漏。**开发工具**提供了更高级的内存管理方法。通过 Chrome 的性能工具，我们可以直观地分析页面在运行时的性能。像下面这种模式就是内存泄漏的典型表现：
 
-![  ](./image/27a800207681ab3550c74a2e10171d40_ZMH6fO6kiC.png "  ")
+![  ](./assets/image/27a800207681ab3550c74a2e10171d40_ZMH6fO6kiC.png "  ")
 
 ## JS 代码中常见的几个内存泄漏源
 
@@ -669,7 +669,7 @@ deleteElement();
 
 ES6 考虑到了这一点，推出了两种新的数据结构 **：WeakSet 和 WeakMap。它们对于值的引用都是不计入垃圾回收机制的，所以名字里面才会有一个"Weak"，表示这是弱引用。**
 
-![  ](./image/0348b492a1594413abf17a923f4542d4_8BvSywSejv.jpeg "  ")
+![  ](./assets/image/0348b492a1594413abf17a923f4542d4_8BvSywSejv.jpeg "  ")
 
 下面以 WeakMap 为例，看看它是怎么解决内存泄漏的。
 

@@ -8,4 +8,4 @@ client发生数据A,B给server，使用的TCP传输，client发送毫无疑问�
 
 下面这张就是网络的传输图
 
-![](./image/image_Ckyhni7HEQ.png)
+![](./assets/image/image_Ckyhni7HEQ.png)

@@ -263,7 +263,7 @@ var sortable = Sortable.create(el,{});
 
 ## 原生js：
 
-[resize.js](./file/resize_FsVRqc8ETM.js "resize.js")
+[resize.js](./assets/file/resize_FsVRqc8ETM.js "resize.js")
 
 使用
 
@@ -296,9 +296,9 @@ var rs = new Resize("dragDiv", {
 
 效果图：
 
-![](./image/image_B33_qIO4-X.png)
+![](./assets/image/image_B33_qIO4-X.png)
 
-[resize.html](./file/resize_DbVd6pZayK.html "resize.html")
+[resize.html](./assets/file/resize_DbVd6pZayK.html "resize.html")
 
 # [interact.js ](https://github.com/taye/interact.js "interact.js ")拖拽、缩放、多点触控手势
 

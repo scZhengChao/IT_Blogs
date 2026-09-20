@@ -48,7 +48,7 @@
 
 效果如下：
 
-![](./image/image_RiRRsXMEx_.png)
+![](./assets/image/image_RiRRsXMEx_.png)
 
 2，当页面中多层flex布局**嵌套的**时候，设置其中**子元素的width：100%会不起作用**。
 
@@ -117,7 +117,7 @@
 
 效果如下
 
-![](./image/image_ZPaV8uKkDw.png)
+![](./assets/image/image_ZPaV8uKkDw.png)
 
 3，**把元素设置为绝对定位：**
 
@@ -189,4 +189,4 @@
 
 效果如下图：
 
-![](./image/image_utkF135gVk.png)
+![](./assets/image/image_utkF135gVk.png)

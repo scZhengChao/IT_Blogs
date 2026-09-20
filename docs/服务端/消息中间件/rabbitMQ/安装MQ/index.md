@@ -78,15 +78,15 @@ docker run \
 >
 > 5672端口：程序与mq交互的访问端口；发消息和收消息的端口
 
-![](./image/image_DaVwR_6A6j.png)
+![](./assets/image/image_DaVwR_6A6j.png)
 
 访问路径：[http://192.168.200.128:15672/](http://192.168.200.128:15672/ "http://192.168.200.128:15672/")
 
 > 注意:[192.168.200.128](http://tnm2.oa.com/host/home/192.168.200.128 "192.168.200.128")是你的linux系统的ip地址。
 
-![](./image/image_UXrX_za68E.png)
+![](./assets/image/image_UXrX_za68E.png)
 
-![](./image/image_ubo-MbDGMJ.png)
+![](./assets/image/image_ubo-MbDGMJ.png)
 
 > 注意：访问阻塞，则尝试重启mq服务 或者重启docker服务；
 >

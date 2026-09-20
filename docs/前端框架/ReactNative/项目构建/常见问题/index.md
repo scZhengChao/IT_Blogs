@@ -61,7 +61,7 @@ metro 默认的缓存机制是 FileStore，这也是我们目前使用的缓存�
 
 当执行转换的时候，如果发现文件的 hash 值存在，那么就说明文件内容没有发生变化，就不会去执行转换操作， 大大节省了编译时间。FileStore 为了避免 hash 碰撞，采用了分表存储，具体可以查看 FileStore.js 的源代码来了解更多。&#x20;
 
-![  ](./image/a546fc29a65b76c521f66c0eb5969221_ci0bxMIQeh.png "  ")
+![  ](./assets/image/a546fc29a65b76c521f66c0eb5969221_ci0bxMIQeh.png "  ")
 
 ## 二、metro 缓存到哪里去了&#x20;
 

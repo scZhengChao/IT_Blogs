@@ -83,7 +83,7 @@ const App = () => {
 
 好了，天不早了，干点正事哇。
 
-![](./image/image_gFZOof85gt.png)
+![](./assets/image/image_gFZOof85gt.png)
 
 ### 我们能所学到的知识点
 
@@ -149,15 +149,15 @@ const App = () => {
 
 在`svg`的语言体系中，**有一个定义图形模板的方式,那就是使用symbol,然后我们可以使用**`<use>`来引入该块的信息
 
-![](./image/image_QcxEwPzmu8.png)
+![](./assets/image/image_QcxEwPzmu8.png)
 
 我们在举一个例子，现在有如下的一个`svg`
 
-![](./image/image_3XslFbeip3.png)
+![](./assets/image/image_3XslFbeip3.png)
 
 此时，我们对齐进行改造
 
-![](./image/image_cfHc1MrkUl.png)
+![](./assets/image/image_cfHc1MrkUl.png)
 
 1. 首先我们用`<symbol>`替换`<svg>`并且在`symbol`的属性上`id`用于和其他的`svg`做区分。
 2. 我们在`<symbol>`外部又嵌套了一个`<svg>`，此时这个`<svg>`就是我们项目中唯一的`svg`文件，而其他的文件都被变为`<symbol>`内嵌到它下面
@@ -349,7 +349,7 @@ fs.writeFileSync('public/all.svg', allSvg);
 2. `symbol`中的`id`对应`svg`的文件名称
 3. `symbol`中属性和源`svg`一模一样
 
-![](./image/image_BH9Gwlc2KE.png)
+![](./assets/image/image_BH9Gwlc2KE.png)
 
 ### 最终代码
 
@@ -397,7 +397,7 @@ fs.writeFileSync('public/all.svg', allSvg);
 
 还记得之前我们在前端项目里都有啥？\[11]
 
-![](./image/image_ZxY5UvvRad.png)
+![](./assets/image/image_ZxY5UvvRad.png)
 
 它不仅能帮助我们优化`svg`而且还可以修正指定的属性，而`currentColor`就在其中。
 
@@ -536,7 +536,7 @@ defineConfig({
 
 之前我们已经介绍过了，`vite`在处理文件资源的时候，是要区分`开发环境`和`生产环境`的。
 
-![](./image/image_nJmclBWzi5.png)
+![](./assets/image/image_nJmclBWzi5.png)
 
 由于，我们的场景是处理文件资源，那就意味着在`开发环境`和`生产环境`中都要执行，但是他们的执行逻辑不同。所以我们需要在我们的插件中处理这两种情况。那么我们可以返回一个插件数组。
 
@@ -575,7 +575,7 @@ function myPlugin(): Plugin[] {
 
 之前，我们就介绍过`vite build`的大致流程。
 
-![](./image/image_frhfjVGWXV.png)
+![](./assets/image/image_frhfjVGWXV.png)
 
 这个图，大家可以仔细看一下，因为下面的代码中会涉及一些阶段。
 
@@ -622,7 +622,7 @@ export function svgMerge({
 1. 在代码中我们使用了从`mergeSvgToSprite.ts`导出的`getSpriteContent`，其实这部分内容就是我们之前的`Node处理资源`部分，只不过我们需要对其做一下简单改造，这个我们后面再做
 2. 我们使用了configResolved来接收`vite`的配置信息
 
-![](./image/image_XFlJLo3bA7.png)
+![](./assets/image/image_XFlJLo3bA7.png)
 
 1. writeBundle\[18]是`Rollup`的一个钩子，它是在`bundle.write()`完成后才会被触发。
 2. 我们使用`fs-extra`和`path`进行文件操作
@@ -635,7 +635,7 @@ export function svgMerge({
 
 那也就意味着，如果要写针对开发环境的插件时候，我们是利用和服务器相关的`hook`。而`Vite`为我们提供了一个`configureServer`用于处理资源请求相关的逻辑。
 
-![](./image/image_EOkfm1brep.png)
+![](./assets/image/image_EOkfm1brep.png)
 
 ```javascript 
 import { Plugin,ResolvedConfig } from 'vite';
@@ -829,7 +829,7 @@ export function getSpriteContent({
 
 针对一个插件的处理或者库的打包，我们可以选择microbundle\[22]。
 
-![](./image/image_EDr4h6kcLd.png)
+![](./assets/image/image_EDr4h6kcLd.png)
 
 在官网，已经为我们介绍了很详细的配置步骤了。
 
@@ -883,7 +883,7 @@ export function getSpriteContent({
 
 随后，我们就在项目的`dist`中看到这些文件了。
 
-![](./image/image_pZBY9bUcj3.png)
+![](./assets/image/image_pZBY9bUcj3.png)
 
 然后，我们就可以发布到`npm`或者私有仓了。
 

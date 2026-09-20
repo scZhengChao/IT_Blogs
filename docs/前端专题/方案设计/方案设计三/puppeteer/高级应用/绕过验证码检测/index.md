@@ -4,7 +4,7 @@
 
 *Tips: 知识需要付费哦*
 
-![](./image/image_msUsuRMFon.png)
+![](./assets/image/image_msUsuRMFon.png)
 
 实例代码如下：
 

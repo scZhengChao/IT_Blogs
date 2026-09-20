@@ -7,11 +7,11 @@
   - [2.在jvm执行某个类时，如果该类是第一次被执行：](#2在jvm执行某个类时如果该类是第一次被执行)
   - [3.Class对象中存储的是.class文件中的内容：构造方法、成员变量、成员方法](#3Class对象中存储的是class文件中的内容构造方法成员变量成员方法)
 
-![](./image/image_4C-eKGWTe6.png)
+![](./assets/image/image_4C-eKGWTe6.png)
 
 当程序在运行后，**第一次使用某个类的时候，会将此类的class文件读取到内存，并**将此类的所有信息**存储到一个Class对象中**
 
-![](./image/image_v4ntDdjuHh.png)
+![](./assets/image/image_v4ntDdjuHh.png)
 
 > 说明：**Class对象是指java.lang.Class类的对象，此类由Java类库提供，专门用于存储类型的信息**
 

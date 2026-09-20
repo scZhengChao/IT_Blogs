@@ -4,7 +4,7 @@ Providers 是 `Nest` 的**一个基本概念**。**许多基本**的 `Nest` 类�
 
 **Provider 只是一个用 ****`@Injectable()`**** 装饰器注释的类。**
 
-![](./image/image_Wjgsr13rwx.png)
+![](./assets/image/image_Wjgsr13rwx.png)
 
 在前面的章节中，我们已经创建了一个简单的控制器 `CatsController` 。**控制器应处理 ****`HTTP`**** 请求并将更复杂的任务委托**给 **providers**。`Providers` 是**纯粹的** `JavaScript` 类，在其**类声明之前带有** `@Injectable()`装饰器。
 

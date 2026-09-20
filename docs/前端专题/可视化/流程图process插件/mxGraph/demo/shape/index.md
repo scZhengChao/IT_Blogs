@@ -2,7 +2,7 @@
 
 > 修改全局的shape
 
-![](./image/image_MYALH3QuFR.png)
+![](./assets/image/image_MYALH3QuFR.png)
 
 ```html 
 <!--

@@ -31,15 +31,15 @@ commit 都提交了，为什么还要复制新的出来？
 复制单个
 现在有一条feature分支，commit 记录如下：
 
-![](./image/image_PsU8s6Q61R.png)
+![](./assets/image/image_PsU8s6Q61R.png)
 
 需要把 b 复制到另一个分支，首先把 commitHash 复制下来，然后切到 master 分支。
 
-![](./image/image_APfKnyprNc.png)
+![](./assets/image/image_APfKnyprNc.png)
 
 当前 master 最新的记录是 a，使用 `cherry-pick` 把 b 应用到当前分支。
 
-![](./image/image_Yeg-1GKuJB.png)
+![](./assets/image/image_Yeg-1GKuJB.png)
 
 完成后看下最新的 log，b 已经应用到 master，作为最新的 commit 了。可以看到 commitHash 和之前的不一样，但是提交时间还是保留之前的。
 
@@ -70,15 +70,15 @@ git cherry-pick commit1^..commit2
 
 在 `cherry-pick` 多个commit时，可能会遇到代码冲突，这时 `cherry-pick` 会停下来，让用户决定如何继续操作。下面看看怎么解决这种场景。
 
-![](./image/image_M83hKhdkXu.png)
+![](./assets/image/image_M83hKhdkXu.png)
 
 还是 feature 分支，现在需要把 c、d、e 都复制到 master 分支上。先把起点c和终点e的 commitHash 记下来。
 
-![](./image/image_SQ44JkcD0h.png)
+![](./assets/image/image_SQ44JkcD0h.png)
 
 切到 master 分支，使用区间的 `cherry-pick`。可以看到 c 被成功复制，当进行到 d 时，发现代码冲突，`cherry-pick` 中断了。**这时需要解决代码冲突，重新提交到暂存区。**
 
-![](./image/image_9nuTcMJ3Sg.png)
+![](./assets/image/image_9nuTcMJ3Sg.png)
 
 然后使用 `cherry-pick --continue` 让 `cherry-pick` 继续进行下去。最后 e 也被复制进来，整个流程就完成了。
 

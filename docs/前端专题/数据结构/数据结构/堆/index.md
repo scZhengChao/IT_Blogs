@@ -17,15 +17,15 @@
 
 满二叉树：除了叶子节点，所有的节点的左右孩子都不为空，就是一棵满二叉树，如下图。
 
-![  ](./image/2fe7c105a24a6ad54f7725b8b69bc485_VimsbXMyld.webp "  ")
+![  ](./assets/image/2fe7c105a24a6ad54f7725b8b69bc485_VimsbXMyld.webp "  ")
 
 可以看出：满二叉树所有的节点都拥有左孩子，又拥有右孩子。 完全二叉树：不一定是一个满二叉树，但它不满的那部分一定在右下侧，如下图
 
-![  ](./image/16cc8558bc603d96b72d0fb953b575ed__hJAMlErlX.png "  ")
+![  ](./assets/image/16cc8558bc603d96b72d0fb953b575ed__hJAMlErlX.png "  ")
 
 将将根节点最大的堆叫做最大堆或大根堆，根节点最小的堆叫做最小堆或小根堆。常见的堆有二叉堆、斐波那契堆等。
 
-![  ](./image/38d706ab45c66ab4430747c2c0b1a7fc_Von-7_S1ta.png "  ")
+![  ](./assets/image/38d706ab45c66ab4430747c2c0b1a7fc_Von-7_S1ta.png "  ")
 
 - **特点**
 

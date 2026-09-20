@@ -21,7 +21,7 @@
 
 我们将利用 **fetch API 和 TextDecoder 解码器来实现分片接收网络数据，并将数据分片显示在页面上。**
 
-![](./image/image_69BCKsEIB_.png)
+![](./assets/image/image_69BCKsEIB_.png)
 
 # 思考
 
@@ -43,7 +43,7 @@ loadNovel();
 
 那么这么大的文件，一旦在网络不好的情况下，就会加载很久：
 
-![](./image/image_jqwOTMQ9QN.png)
+![](./assets/image/image_jqwOTMQ9QN.png)
 
 我们将网络限制后会发现，等待了 30 多秒才拿到服务器响应的结果。
 
@@ -51,7 +51,7 @@ loadNovel();
 
 那么你有没有一个疑问：我们为什么要等待两次呢？我们来看一个图：
 
-![](./image/image_1aq2HLcDn7.png)
+![](./assets/image/image_1aq2HLcDn7.png)
 
 如图所示，响应头传输完成时 `await fetch(url)` 的 Promise 完成，响应体的传输完成时 `await resp.text()` 的 Promise 完成。
 
@@ -69,7 +69,7 @@ loadNovel();
 
 首先我们知道 resp 对象中有一个 body，它代表的是响应体，只不过这个响应体还未完成。
 
-![](./image/image_eftF0HilXo.png)
+![](./assets/image/image_eftF0HilXo.png)
 
 通过上图我们可以看到 body 的类型是\*\* ReadableStream\*\*，其实是一个可读流，那么我们可以利用 body 里的一个属性 `body.getReader` 拿到这个**流的读取器。**
 
@@ -166,13 +166,13 @@ loadNovel();
 
 当然，在分片加载时还有**一个小问题需要注意：**
 
-![](./image/image_MbaPfVLLgt.png)
+![](./assets/image/image_MbaPfVLLgt.png)
 
 上图所示，由于文字编码方式不同（英文字符通常为一个字节，而中文字符通常为多个字节），可**能会出现某个文字被切割成两半而导致乱码问题。**
 比如说有一个文字由两个字节组成。而它刚好被切割在两个切片之间：第一个字节在切片 1 的末尾，第二个字节在切片 2 的开头。
 这样在分别解码两个切片时就会出现乱码问题：
 
-![](./image/image_1MGJ5SZA7-.png)
+![](./assets/image/image_1MGJ5SZA7-.png)
 
 可以看到，在两个切片之间有两个乱码字符，这就是因为**文字被切割成两半造成的。**
 

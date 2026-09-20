@@ -7,7 +7,7 @@
 
 ### 2.2 Linux发展历史
 
-![](./image/image_hMuB_EZzuj.png)
+![](./assets/image/image_hMuB_EZzuj.png)
 
 时间：1991年
 
@@ -39,6 +39,6 @@ Linux系统的版本分为两种，分别是： 内核版 和 发行版。
 
 我们使用Linux操作系统，实际上选择的是Linux的发行版本。在linux系统中，有各种各样的发行版本，具体如下：
 
-![](./image/image_4r7Z4xoIJl.png)
+![](./assets/image/image_4r7Z4xoIJl.png)
 
 除了上述罗列出来的发行版，还有很多Linux发行版，这里，我们就不再一一列举了。&#x20;

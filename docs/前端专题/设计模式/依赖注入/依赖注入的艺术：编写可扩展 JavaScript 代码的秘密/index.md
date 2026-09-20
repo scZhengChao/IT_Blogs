@@ -39,7 +39,7 @@
 
 结论先行，先看下相关的三个概念：DIP，DI，IoC：
 
-![](./image/image_-2J9Y6uv2A.png)
+![](./assets/image/image_-2J9Y6uv2A.png)
 
 ### 2.1 DIP
 
@@ -299,7 +299,7 @@ console.log(db1 === db2); // 输出: false，因为每次解析都会创建新�
 
 ## 4. 使用 reflect-metadata
 
-![](./image/image_JYGUd-jDQ0.png)
+![](./assets/image/image_JYGUd-jDQ0.png)
 
 `reflect-metadata` 是一个 `JavaScript` 库，它提供了一个**基于反射的 API**，允许在**运行时**对**类的元数据进行读取和操作**。它是一个实现了 `ECMAScript` **装饰器提案中反射元数据部分的**库。
 
@@ -417,7 +417,7 @@ app.logger.log('This is a test message.'); // 此时应该能正常工作
 
 ## 6. inversify 库
 
-![](./image/image_OheGsD872H.png)
+![](./assets/image/image_OheGsD872H.png)
 
 `InversifyJS` 是**一个轻量级的、强大的依赖注入（DI）容器**，用于 `JavaScript` 和 `TypeScript` 应用程序。它使用了 `TypeScript` 的类型系统和装饰器来提供类型安全的依赖注入，并且在 `JavaScript` 中也可以通过具体的配置使用。`InversifyJS` 让开发者能够编写更低耦合、更可测试和更可管理的代码。
 

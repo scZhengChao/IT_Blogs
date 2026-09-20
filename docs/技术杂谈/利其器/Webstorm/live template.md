@@ -51,22 +51,22 @@ export default Index;
 
 此处的 Template Group 用作创建 Live Template 分组（理解为文件夹)。
 
-![](../image/image_E5ASC2PEKC.png)
+![](../../../assets/技术杂谈/利其器/image/image_E5ASC2PEKC.png)
 
 1. 填入 Abbreviation 快捷键 Tab 触发的关键字，如示例为tsx，则实际使用时，用tsx作为触发关键字。（【划重点】)
 2. 粘贴 Template text，想要在 Tab 触发时自动生成的代码。（【划重点】)
 
-![](../image/image_9UZwY-bHdF.png)
+![](../../../assets/技术杂谈/利其器/image/image_9UZwY-bHdF.png)
 
 1. 配置live template生效文件。**点击 Define 展开中勾选 JavaScript and TypeScript、TypeScript。（【划重点】)**
 
-![](../image/image_6L1TTU_n1Q.png)
+![](../../../assets/技术杂谈/利其器/image/image_6L1TTU_n1Q.png)
 
 1. 点击 Apply 保存并应用，我们就能开心的在 tsx 文件中使用 *tsx* 关键字快速取得想要的代码块。
 
-![](../image/image_tY2L_t56r4.png)
+![](../../../assets/技术杂谈/利其器/image/image_tY2L_t56r4.png)
 
-![](../image/image_CLWkBt5k7d.png)
+![](../../../assets/技术杂谈/利其器/image/image_CLWkBt5k7d.png)
 
 ### **进阶使用 - 变量**
 
@@ -74,7 +74,7 @@ export default Index;
 
 **变量语法：\$**$变量名$**\$**
 
-![](../image/image_Yith4Adf8s.png)
+![](../../../assets/技术杂谈/利其器/image/image_Yith4Adf8s.png)
 
 使用变量语法申明变量，点击 Edit variables 进入变量编辑界面。
 

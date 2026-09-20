@@ -20,7 +20,7 @@
 
 响应式编程的思路大概如下：你可以用包括 `Click` 和 `Hover` 事件在内的任何东西创建 `Data stream`（也称“流”，后续章节详述）。`Stream` 廉价且常见，任何东西都可以是一个 `Stream`：变量、用户输入、属性、`Cache`、数据结构等等。举个例子，想像一下你的 `Twitter feed` 就像是 `Click events` 那样的 `Data stream`，你可以监听它并相应的作出响应。
 
-![](./image/image_bUJZQym2DU.png)
+![](./assets/image/image_bUJZQym2DU.png)
 
 响应式编程
 

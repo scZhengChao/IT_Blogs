@@ -37,23 +37,23 @@ console.log('xxx');
 
 使用 `optimization.sideEffects=true` 和 `stats.optimizationBailout=true` 编译：
 
-![](./image/image_JQlAQ2an4o.png)
+![](./assets/image/image_JQlAQ2an4o.png)
 
 `Webpack` 的日志清晰显示，`util.js` 中第7行的 `console.log('xxx')` 导致 SideEffect 优化失败，使得该模块被包含在最终的包中。
 
 如果我们在 `package.json` 中进一步设置 `sideEffects: false`，这个警告就会消失，因为一旦设置了 `SideEffect` 属性，`Webpack` 将停止副作用分析，而是直接基于 `sideEffects` 字段进行 `SideEffect` 优化。
 
-![](./image/image_eeeUmtGQyz.png)
+![](./assets/image/image_eeeUmtGQyz.png)
 
 ### **usedExports 优化失败**
 
 **当一个未被使用的导出变量仍然生成导出属性时，表示 usedExports 优化失败。**
 
-![](./image/image_01m7zM7-Yc.png)
+![](./assets/image/image_01m7zM7-Yc.png)
 
 在这种情况下，识别这些导出属性的使用位置是必要的：
 
-![](./image/image_T1Gz3i59tW.png)
+![](./assets/image/image_T1Gz3i59tW.png)
 
 然而，确定变量的使用原因和具体位置可能并不明确，因为 Webpack 并不提供这方面的详细记录。对于 Webpack 来说，一个可能的改进方向是跟踪并报告在模块树中特定导出变量的使用情况。这将极大地帮助分析和排查 usedExports 优化的问题。
 

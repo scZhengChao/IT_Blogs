@@ -4,9 +4,9 @@ SpringAMQP是基于RabbitMQ封装的一套模板，并且还利用SpringBoot对�
 
 SpringAmqp的官方地址：[https://spring.io/projects/spring-amqp](https://spring.io/projects/spring-amqp "https://spring.io/projects/spring-amqp")
 
-![](./image/image_C8iovLvxJ2.png)
+![](./assets/image/image_C8iovLvxJ2.png)
 
-![](./image/image_w_7FJhpu0P.png)
+![](./assets/image/image_w_7FJhpu0P.png)
 
 说明：
 

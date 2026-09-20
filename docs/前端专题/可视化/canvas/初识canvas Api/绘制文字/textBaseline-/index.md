@@ -123,7 +123,7 @@ ctx.textBaseline = "top" | "hanging" | "middle" | "alphabetic" | "ideographic" |
 
 ### 1. 创建数据表格
 
-![](./image/image_KXny-3Oqgl.png)
+![](./assets/image/image_KXny-3Oqgl.png)
 
 ```javascript 
 <canvas id="dataTableCanvas" width="600" height="400"></canvas>

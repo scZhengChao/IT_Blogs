@@ -10,4 +10,4 @@
 
 例如：老师和学生，学生和课程，用户和角色
 
-![](./image/image_s-IzPeYs1T.png)
+![](./assets/image/image_s-IzPeYs1T.png)

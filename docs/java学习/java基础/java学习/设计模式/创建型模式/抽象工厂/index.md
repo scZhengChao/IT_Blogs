@@ -10,7 +10,7 @@
 
 抽象工厂模式和工厂方法不太一样，它要解决的问题比较复杂，**不但工厂是抽象的，产品是抽象的，而且有多个产品需要创建**，因此，这个**抽象工厂会对应到多个实际工厂，每个实际工厂负责创建多个实际产品：**
 
-![](./image/image_35IgW-Is7R.png)
+![](./assets/image/image_35IgW-Is7R.png)
 
 这种模式有点类似于多个供应商负责提供一系列类型的产品。我们举个例子：
 
@@ -145,7 +145,7 @@ public interface AbstractFactory {
 
 我们来看看`FastFactory`和`GoodFactory`创建的`WordDocument`的实际效果：
 
-![](./image/image_nOByYPSNtw.png)
+![](./assets/image/image_nOByYPSNtw.png)
 
 注意：出于简化代码的目的，我们只支持两种Markdown语法：以`#`开头的标题以及普通正文。
 

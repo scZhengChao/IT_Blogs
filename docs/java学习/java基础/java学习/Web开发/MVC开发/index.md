@@ -86,11 +86,11 @@ public class UserServlet extends HttpServlet {
 
 我们在浏览器访问`http://localhost:8080/user`，请求首先由`UserServlet`处理，然后交给`user.jsp`渲染：
 
-![](./image/image_wi24nv__Rq.png)
+![](./assets/image/image_wi24nv__Rq.png)
 
 我们把`UserServlet`看作业务逻辑处理，把`User`看作模型，把`user.jsp`看作渲染，这种设计模式通常被称为MVC：Model-View-Controller，即`UserServlet`作为控制器（Controller），`User`作为模型（Model），`user.jsp`作为视图（View），整个MVC架构如下：
 
-![](./image/image_txdCKmJcVw.png)
+![](./assets/image/image_txdCKmJcVw.png)
 
 使用MVC模式的好处是，**Controller专注于业务处理**，它的处理结果就是Model。Model可以是一个JavaBean，也可以是一个包含多个对象的Map，Controller只负责把Model传递给View，View只负责把Model给“渲染”出来，这样，三者职责明确，且开发更简单，因为开发Controller时无需关注页面，开发View时无需关心如何创建Model。
 

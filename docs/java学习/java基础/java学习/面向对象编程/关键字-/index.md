@@ -1,6 +1,6 @@
 # 关键字&#x20;
 
-![](./image/image_qmt0qjJa4E.png)
+![](./assets/image/image_qmt0qjJa4E.png)
 
 [final](IT/服务端/java学习/java基础/java学习/面向对象编程/关键字-/final/final.md "final")
 

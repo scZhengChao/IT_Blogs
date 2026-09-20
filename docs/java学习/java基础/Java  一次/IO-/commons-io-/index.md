@@ -11,7 +11,7 @@
 
 导入；&#x20;
 
-![](./image/image_6Feo9xzL9o.png)
+![](./assets/image/image_6Feo9xzL9o.png)
 
 [IOUtils](./IOUtils/index.md "IOUtils")
 

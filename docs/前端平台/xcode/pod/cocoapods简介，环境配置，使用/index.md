@@ -67,7 +67,7 @@ cocopos是用ruby实现的，并划分成了若干个Gem包。如果要使用coc
 
 `更新ruby版本：rvm install 3.0.3(版本号)`
 
-![](./image/image_L7FYHZY8MM.png)
+![](./assets/image/image_L7FYHZY8MM.png)
 
 ## **三、作用（解决什么问题）**
 
@@ -85,7 +85,7 @@ cocopos是用ruby实现的，并划分成了若干个Gem包。如果要使用coc
 
 `pod setup：` 将所有第三方的podspec索引文件更新到本地的.\~/cocoapods/repos目录下；
 
-![](./image/image_rRoIBvzXoG.png)
+![](./assets/image/image_rRoIBvzXoG.png)
 
 `pod repo update：` 执行 pod repo update更新本地仓库，本地仓库完成后，能够搜索到指定的第三方库，作用类似pod setup。不过���个命令经常不会单独使用。比如执行pod setup、pod search、pod install、pod update会默认执行pod repo update。
 
@@ -132,7 +132,7 @@ cocopos是用ruby实现的，并划分成了若干个Gem包。如果要使用coc
 
 ##### 生成podfile，在项目的根目录下按照如下操作，执行pod init
 
-![](./image/image_S4Pu9AZyk_.png)
+![](./assets/image/image_S4Pu9AZyk_.png)
 
 ##### podfile的默认内容
 
@@ -206,4 +206,4 @@ end
 
 如下是生成的podfile.lock文件内容：
 
-![](./image/image_c8Xeam-diM.png)
+![](./assets/image/image_c8Xeam-diM.png)

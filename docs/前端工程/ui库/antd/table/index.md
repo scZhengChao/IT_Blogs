@@ -8,7 +8,7 @@
 
 ## antd table表格可展开单元格按需展开
 
-![](./image/image_bDfGxrCw63.png)
+![](./assets/image/image_bDfGxrCw63.png)
 
 ```typescript 
   <Table

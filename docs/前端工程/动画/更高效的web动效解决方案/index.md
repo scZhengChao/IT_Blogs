@@ -12,7 +12,7 @@
 - [游戏引擎](#游戏引擎)
 - [总结](#总结)
 
-![](./image/image_fWAxagDfre.png)
+![](./assets/image/image_fWAxagDfre.png)
 
 &#x20;          To C 业务场景下的 Web 页面，经常**会有炫酷复杂的动效需求**。在一个有限的项目排期下，选择合适的动效解决方案：既可以符合设计师的动效要求，又可以用最少的时间完成任务，但往往对前端工程师来说是一个巨大的挑战。
 
@@ -95,7 +95,7 @@ WebP 是一种由谷歌开发的现代图像格式，旨在提供更高的压缩
 
 设计师提供一系列的序列帧图片，前端通过连续循环切换这些图片，实现动画的播放。
 
-![](./image/image_OgvUYyv5-a.png)
+![](./assets/image/image_OgvUYyv5-a.png)
 
 实现帧动画的方式有很多，可以详细参考[《CSS3动画之逐帧动画》](https://link.juejin.cn/?target=https://jelly.jd.com/article/6006b1035b6c6a01506c87a7 "《CSS3动画之逐帧动画》")文章。
 
@@ -151,7 +151,7 @@ WebP 是一种由谷歌开发的现代图像格式，旨在提供更高的压缩
 
 **jsmpeg 播放视频** 首先我们将设计师给我们的 MP4 格式视频转码成 MPEG1 编码的 TS 格式。 可以通过网站 [Convertio](https://link.juejin.cn?target=https://convertio.co/zh/mp4-ts/ "Convertio") 进行转码（注意编解码器一定要选择 `MPEG1` ）：
 
-![](./image/image_JmuPnlikvZ.png)
+![](./assets/image/image_JmuPnlikvZ.png)
 
 当然，我们也可以通过 [FFmpeg](https://link.juejin.cn/?target=https://ffmpeg.org/ "FFmpeg") 自行转码：
 

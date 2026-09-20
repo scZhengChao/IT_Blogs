@@ -15,7 +15,7 @@
 
 用一个状态转移图表示如下：
 
-![](./image/image_O0ioEFlvRX.png)
+![](./assets/image/image_O0ioEFlvRX.png)
 
 当线程启动后，它可以在`Runnable`、`Blocked`、`Waiting`和`Timed Waiting`这几个状态之间切换，直到最后变成`Terminated`状态，线程终止。
 

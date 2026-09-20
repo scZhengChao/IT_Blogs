@@ -26,7 +26,7 @@ buffer是一个像Array的对象
 
 buffer对象类似数组，他的元素是为16 进制的两位数，即0\~\~255之间；
 
-![  ](./image/774a4598253ebe5439118b59e3b2bf3b_-bhWXhbF9y.png "  ")
+![  ](./assets/image/774a4598253ebe5439118b59e3b2bf3b_-bhWXhbF9y.png "  ")
 
 ```typescript 
 
@@ -115,25 +115,25 @@ console.log(buf1)   <Buffer 00 00 00 00 00 00 00 00 00 00>
 ```
 
 
-![  ](./image/7b3669819eb49c9f9fec345a0d0c15cb_IeXvFVpoK_.png "  ")
+![  ](./assets/image/7b3669819eb49c9f9fec345a0d0c15cb_IeXvFVpoK_.png "  ")
 
-![  ](./image/22c78bb65a73ed619a18d68e435033e7_U7Ekj0mYOi.png "  ")
+![  ](./assets/image/22c78bb65a73ed619a18d68e435033e7_U7Ekj0mYOi.png "  ")
 
-![  ](./image/1dc184cd22ec17a007a78a6a68644d01_t7u8uUeJ87.png "  ")
+![  ](./assets/image/1dc184cd22ec17a007a78a6a68644d01_t7u8uUeJ87.png "  ")
 
 **9.乱码的产生**
 
-![  ](./image/5497574f4492deec2969180f5902ba53_g49_2HVZM3.png "  ")
+![  ](./assets/image/5497574f4492deec2969180f5902ba53_g49_2HVZM3.png "  ")
 
 **10.解决乱码问题**
 
-![  ](./image/9ed5c5379c0b7b217892dd5fc3b8ace2_nFTQQvzjTv.png "  ")
+![  ](./assets/image/9ed5c5379c0b7b217892dd5fc3b8ace2_nFTQQvzjTv.png "  ")
 
-![  ](./image/8d09002d4c14f6ec579e8cef027a0004_eYn6VyE5NN.png "  ")
+![  ](./assets/image/8d09002d4c14f6ec579e8cef027a0004_eYn6VyE5NN.png "  ")
 
     根本上解决乱码问题：正确的拼接buffer
 
-![  ](./image/944e92f5b2d5895a493be056f5996414_T17RT6vunC.png "  ")
+![  ](./assets/image/944e92f5b2d5895a493be056f5996414_T17RT6vunC.png "  ")
 
 ```typescript 
  var chunks = []; 
@@ -150,7 +150,7 @@ console.log(buf1)   <Buffer 00 00 00 00 00 00 00 00 00 00>
 ```
 
 
-![  ](./image/94be0bb0415faffc06e4501e485f7276_Cqd0emQVf0.png "  ")
+![  ](./assets/image/94be0bb0415faffc06e4501e485f7276_Cqd0emQVf0.png "  ")
 
 ```typescript 
  Buffer.concat = function(list, length) { 

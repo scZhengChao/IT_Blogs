@@ -18,7 +18,7 @@
 
 先来看引用图片背景，其他背景属性都为默认值时的效果：
 
-![](./image/image_zMSfjfWUE6.png)
+![](./assets/image/image_zMSfjfWUE6.png)
 
 从效果图上可以看到背景图片的**起始位置是pading区域**，但是border的top边框和left边框被反向填充了，这是由repead的重复填充形成的效果。因为repeat的默认值是repeat。`background-origin`的默认值是：`padding-box`;而background-clip的默认值是border-box;但是border-right和border-bottom的区域是由内区域延申填充。
 
@@ -39,13 +39,13 @@ background-repeat: repeat;
 
 接着将background-clip(背景图片结束位置)设置为padding-box:
 
-![](./image/image_F8c52cEM4v.png)
+![](./assets/image/image_F8c52cEM4v.png)
 
 当`background-origin`和`background-clip`的值都为`padding-box`时，`border`上就**都没有了背景图片**。
 
 继续来看结束位置的变化影响，**当起始位置为padding-box，而结束位置为content-box时的效果图：**
 
-![](./image/image_QMjMVwe875.png)
+![](./assets/image/image_QMjMVwe875.png)
 
 由此可见`background-origin`的**起始位置实质上**是为`background-position`**设定参考位置**，而background-clip是设定**实质可见背景区域(向外的部分被修剪)。**
 
@@ -61,7 +61,7 @@ background-repeat: repeat;
 
 - background-clip的text表示使用文本裁剪图片，文字最终以裁剪的图片内容填充，
 
-  ![](./image/image_D1sGDnaZGk.png)
+  ![](./assets/image/image_D1sGDnaZGk.png)
 
 ```typescript 
 div{

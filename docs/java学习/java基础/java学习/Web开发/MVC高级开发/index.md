@@ -94,7 +94,7 @@ public class ModelAndView {
 
 这个MVC的架构如下：
 
-![](./image/image_UclWFGNu_Z.png)
+![](./assets/image/image_UclWFGNu_Z.png)
 
 其中，`DispatcherServlet`以及如何渲染均由MVC框架实现，在MVC框架之上只需要编写每一个Controller。
 
@@ -374,7 +374,7 @@ public class ViewEngine {
 
 最后我们来看看整个工程的结构：
 
-![](./image/image_2qhnYLCGCs.png)
+![](./assets/image/image_2qhnYLCGCs.png)
 
 其中，`framework`包是MVC的框架，完全可以单独编译后作为一个Maven依赖引入，`controller`包才是我们需要编写的业务逻辑。
 
@@ -420,7 +420,7 @@ public class FileServlet extends HttpServlet {
 
 运行代码，在浏览器中输入URL`http://localhost:8080/hello?name=Bob`可以看到如下页面：
 
-![](./image/image_rOqwZ9P-D8.png)
+![](./assets/image/image_rOqwZ9P-D8.png)
 
 为了把方法参数的名称编译到class文件中，以便处理`@GetMapping`时使用，我们需要打开编译器的一个参数，在Eclipse中勾选`Preferences`-`Java`-`Compiler`-`Store information about method parameters (usable via reflection)`；在Idea中选择`Preferences`-`Build, Execution, Deployment`-`Compiler`-`Java Compiler`-`Additional command line parameters`，填入`-parameters`；在Maven的`pom.xml`添加一段配置如下：
 

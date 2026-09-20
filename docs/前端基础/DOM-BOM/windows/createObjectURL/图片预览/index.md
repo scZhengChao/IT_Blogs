@@ -20,4 +20,4 @@
 ```
 
 
-![](./image/image_-0HjaSdXHT.png)
+![](./assets/image/image_-0HjaSdXHT.png)

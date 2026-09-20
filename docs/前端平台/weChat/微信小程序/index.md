@@ -181,4 +181,4 @@
 
 demo
 
-[小程序.rar](./file/小程序_2KotjDBL7r.rar "小程序.rar")
+[小程序.rar](./assets/file/小程序_2KotjDBL7r.rar "小程序.rar")

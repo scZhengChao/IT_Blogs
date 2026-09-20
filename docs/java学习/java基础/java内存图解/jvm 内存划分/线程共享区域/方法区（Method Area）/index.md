@@ -9,4 +9,4 @@
 - 静态内容**不会存在堆里**；自始至终都存在栈**的方法区里的静态区域**
 - **私有静态成员属性不能访问**
 
-![](./image/image_SoXIbC9kn_.png)
+![](./assets/image/image_SoXIbC9kn_.png)

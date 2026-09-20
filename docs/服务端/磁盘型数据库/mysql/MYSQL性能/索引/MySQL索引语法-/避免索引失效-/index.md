@@ -28,7 +28,7 @@ explain select * from tb_seller where name='小米科技有限公司' and status
 
 注意：如果条件中包含了复合索引的全部字段，那么可以不考虑前后顺序。
 
-![](./image/image_19_9V_miA2.png)
+![](./assets/image/image_19_9V_miA2.png)
 
 匹配最左前缀法则，走索引：
 
@@ -164,4 +164,4 @@ select * from tb_seller where substring(name,3,2)='科技';
 ```
 
 
-![](./image/image_YNJbMPSw3m.png)
+![](./assets/image/image_YNJbMPSw3m.png)

@@ -2,7 +2,7 @@
 
 下面以[codashop](https://link.juejin.cn/?target=https://www.codashop.com/en-my/pubg-mobile-uc-redeem-code "codashop") 为例，通过解析HTML的方式把相关DOM节点元素进行筛选和过滤，抽离出SKU(商品)的「价格、商品名称」等数据
 
-![](./image/image_UeiLpNovka.png)
+![](./assets/image/image_UeiLpNovka.png)
 
 **实例代码如下：**
 

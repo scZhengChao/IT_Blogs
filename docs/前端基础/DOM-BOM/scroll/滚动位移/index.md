@@ -145,7 +145,7 @@ element.scrollIntoView({block: "end", behavior: "smooth"});
 
 [codepen](https://codepen.io/Chokcoco/pen/ZEYzyeK "codepen")
 
-[index.html](./file/index_SdK9AvHHjw.html "index.html")
+[index.html](./assets/file/index_SdK9AvHHjw.html "index.html")
 
 效果非常好；但是要注意兼容不好：
 

@@ -22,4 +22,4 @@ JDBC 好处：
 各**数据库厂商使用相同的接口，Java代码不需要针对不同数据库分别开发
 **可随时**替换底层数据库，访问数据库的Java代码基本不变**
 
-![](./image/image_B0if-L37Hr.png)
+![](./assets/image/image_B0if-L37Hr.png)

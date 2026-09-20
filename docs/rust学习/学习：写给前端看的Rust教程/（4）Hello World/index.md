@@ -90,7 +90,7 @@ fn main() {
 
 此时，如果你的`VS Code`按照上一篇文章所介绍的那样做好了配置的话，此时你已经能在`VS Code`中看到错误提示了
 
-![](./image/image_vNFTjHoeDx.png)
+![](./assets/image/image_vNFTjHoeDx.png)
 
 忽略这个提示，试着执行下`cargo run`试试看：
 

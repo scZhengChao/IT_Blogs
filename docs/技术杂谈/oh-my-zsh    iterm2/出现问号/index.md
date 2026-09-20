@@ -33,7 +33,7 @@ rm -rf fonts
 然后按照下面的设置 &#x20;
 iterm2 ➡️ preferences ➡️ profiles ➡️ text ➡️ font
 
-![](./image/image_rd56RhDvHI.png)
+![](./assets/image/image_rd56RhDvHI.png)
 
 ## 问题解决
 

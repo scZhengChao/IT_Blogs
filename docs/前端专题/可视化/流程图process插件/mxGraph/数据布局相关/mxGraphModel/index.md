@@ -20,7 +20,7 @@
 
 `mxGraph`和`mxGraphModal`、`mxCell`**关系如下图:**
 
-![](./image/image_Hod2Ia0tX6.png)
+![](./assets/image/image_Hod2Ia0tX6.png)
 
 [setGeometry](./setGeometry/index.md "setGeometry")
 

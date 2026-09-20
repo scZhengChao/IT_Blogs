@@ -8,24 +8,24 @@
 - [注入Map对象（重点）  ](#注入Map对象重点)
 - [注入Properties对象  ](#注入Properties对象)
 
-![](./image/image_Yrr1n0D5pX.png)
+![](./assets/image/image_Yrr1n0D5pX.png)
 
 注入数组对象
 
-![](./image/image__aSyjgkzsn.png)
+![](./assets/image/image__aSyjgkzsn.png)
 
 注入List对象（重点）
 
-![](./image/image_5Il5n-Fd7V.png)
+![](./assets/image/image_5Il5n-Fd7V.png)
 
 注入Set对象
 
-![](./image/image_UlqchNaXTS.png)
+![](./assets/image/image_UlqchNaXTS.png)
 
 注入Map对象（重点）
 
-![](./image/image_oDVcWMAwhQ.png)
+![](./assets/image/image_oDVcWMAwhQ.png)
 
 注入Properties对象
 
-![](./image/image_l8F7LN2r1A.png)
+![](./assets/image/image_l8F7LN2r1A.png)

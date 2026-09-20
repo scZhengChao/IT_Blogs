@@ -8,7 +8,7 @@
 
 你只需要传入一个函数，那么函数的第一个参数就是数据源的每个数据，第二个参数就是该数据的索引值，你只需要返回一个计算或者其他操作之后的返回值即可作为订阅者实际获取到的值。
 
-![](./image/image_LL5qc4_Z1y.png)
+![](./assets/image/image_LL5qc4_Z1y.png)
 
 ```javascript 
 const source = Rx.Observable.interval(1000).take(3);

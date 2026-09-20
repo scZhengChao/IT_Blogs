@@ -138,7 +138,7 @@ System.out.println(pay3);
 
 上述完整的策略模式如下图所示：
 
-![](./image/image_8KrMTVe7uU.png)
+![](./assets/image/image_8KrMTVe7uU.png)
 
 策略模式的核心思想是在**一个计算方法中把容易变化的算法抽出来作为“策略”参数传进去**，从而使得**新增策略不必修改原有逻辑**。
 

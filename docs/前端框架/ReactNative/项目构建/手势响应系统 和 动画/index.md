@@ -547,7 +547,7 @@ Animated提供了三种动画类型。每种动画类型都提供了特定的函
 
 ### event&#x20;
 
-![  ](./image/5e25d1223ce17b9d36859eb0b8694a8c_OAiThWA3A7.png "  ")
+![  ](./assets/image/5e25d1223ce17b9d36859eb0b8694a8c_OAiThWA3A7.png "  ")
 
 \*\*event接受一个映射的数组，对应的解开每个值，然后调用所有对应的输出的 \*\*
 

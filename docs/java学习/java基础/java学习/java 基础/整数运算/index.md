@@ -62,7 +62,7 @@ public class Main {
 
 要解释上述结果，我们把整数`2147483640`和`15`换成二进制做加法：
 
-![](./image/image_8qpP2KLyu3.png)
+![](./assets/image/image_8qpP2KLyu3.png)
 
 由于最高位计算结果为`1`，因此，加法结果变成了一个负数。
 
@@ -236,7 +236,7 @@ public class Main {
 
 在Java的计算表达式中，运算优先级从高到低依次是：
 
-![](./image/image_kFUq14wMTF.png)
+![](./assets/image/image_kFUq14wMTF.png)
 
 记不住也没关系，只需要**加括号就可以保证运算的优先级正确。**
 

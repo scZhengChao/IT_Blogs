@@ -82,7 +82,7 @@ console.log(process.env.VUE_APP_SECRET)
 
 我们在项目中的package.json经常能看见以下这样的指令
 
-![  ](./image/f2bf5e24edd2dbe08cb4eb85fa77e2fc_unZ2nsKvHU.png "  ")
+![  ](./assets/image/f2bf5e24edd2dbe08cb4eb85fa77e2fc_unZ2nsKvHU.png "  ")
 
 在一个 Vue CLI 项目中，@vue/cli-service 安装了一个名为 vue-cli-service 的命令。你可以在 npm scripts 中以 vue-cli-service、或者从终端中以 ./node\_modules/.bin/vue-cli-service 访问这个命令。
 

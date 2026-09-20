@@ -148,7 +148,7 @@ export const useUsersStore = defineStore("users", {
 
 使用store很简单，直接引入我们声明的useUsersStore 方法即可，我们可以先看一下执行该方法输出的是什
 
-![](./image/image_E8FRaAO22j.png)
+![](./assets/image/image_E8FRaAO22j.png)
 
 **利用pinia的storeToRefs函数，将state中的数据变为了响应式的**。
 
@@ -536,7 +536,7 @@ export const useDictStore = defineStore({
 
 默认，持久化的数据放在 `localStorage` 中，`key` 就是该 `store` 的 `id`，存储的结构就是 `state` 的类型：
 
-![](./image/image_tGcXrq9fJo.png)
+![](./assets/image/image_tGcXrq9fJo.png)
 
 ## 高级用法
 

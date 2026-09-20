@@ -64,4 +64,4 @@ class IntPair extends Pair<Integer> {
 
 因为`Java`引入了泛型，所以，只用`Class`来标识类型已经不够了。实际上，`Java`的类型系统结构如下：
 
-![](./image/image_-MGkKig40G.png)
+![](./assets/image/image_-MGkKig40G.png)

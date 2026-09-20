@@ -168,7 +168,7 @@ function setTextContent(text) {
 
 最终实现的效果如下：
 
-![](./image/image_439ZH_NLMP.png)
+![](./assets/image/image_439ZH_NLMP.png)
 
 上面就是此功能的所有代码了，如果想要在本地试验的话，可以在本地新建一个html文件，复制上面代码就可以了。
 

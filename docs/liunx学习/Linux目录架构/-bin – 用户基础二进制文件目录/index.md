@@ -6,6 +6,6 @@
 
 如果你使用的桌面版的操作系统，可以通过GUI看到该目录下的内容。下面这张图是一个具体的例子。
 
-![  ](./image/635503ebe2694c32b04008b90e12d9c1_0yQOnvBc8I.jpeg "  ")
+![  ](./assets/image/635503ebe2694c32b04008b90e12d9c1_0yQOnvBc8I.jpeg "  ")
 
 图4 二进制目录

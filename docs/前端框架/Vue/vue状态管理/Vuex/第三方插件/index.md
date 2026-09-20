@@ -18,13 +18,13 @@ vuex-persistedstate 使用浏览器的本地存储（ local storage ）对状态
 
 一个很好的例子就是购物车：如果用户不小心关闭了一个标签，他们可以重新打开并回到之前页面的状态。
 
-![  ](./image/201711281108352_y2kchB4gAx.gif "  ")
+![  ](./assets/image/201711281108352_y2kchB4gAx.gif "  ")
 
 # **2. 同步标签页、窗口**
 
 vuex-shared-mutations 可在不同的标签页之间同步状态。它通过mutation将状态储存到本地存储（local storage）来实现。选项卡、窗口中的内容更新时触发储存事件，重新调用mutation，从而保持状态同步。
 
-![  ](./image/201711281108363_Ue2lmdIeZQ.gif "  ")
+![  ](./assets/image/201711281108363_Ue2lmdIeZQ.gif "  ")
 
 # **3. 语言本地化**
 
@@ -32,18 +32,18 @@ vuex-i18n 允许你轻松地用多种语言存储内容。让你的应用切换�
 
 "Hello {name}, this is your Vue.js app."。所有的翻译版本都会在标记的地方使用相同的字符串。
 
-![  ](./image/201711281108374_neyHf7yEQM.gif "  ")
+![  ](./assets/image/201711281108374_neyHf7yEQM.gif "  ")
 
 # **4. 管理多个加载状态**
 
 vuex-loading 有助于你管理应用中的多个加载状态。这个插件适用于状态变化频繁且复杂的实时应用程序。
 
-![  ](./image/201711281108375_snL0THoT-R.gif "  ")
+![  ](./assets/image/201711281108375_snL0THoT-R.gif "  ")
 
 # **5. 缓存操作**
 
 vuex-cache 可以缓存 Vuex 的action。例如，如果你从服务器检索数据，这个插件将在第一次调用该action时缓存结果，然后在之后的dispatch中，直接返回缓存的值。必要时清除缓存也很简单。
 
-![  ](./image/201711281108386_WYZAjOO9Bg.gif "  ")
+![  ](./assets/image/201711281108386_WYZAjOO9Bg.gif "  ")
 
 .

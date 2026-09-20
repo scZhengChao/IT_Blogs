@@ -29,7 +29,7 @@
 - read
 - write
 
-![](./image/image_ukKpbb9v2Q.png)
+![](./assets/image/image_ukKpbb9v2Q.png)
 
 ```java title="OutputStreamDemo1"
 package com.os;
@@ -78,7 +78,7 @@ public class OutputStreamDemo2  {
 
 - close()
 
-![](./image/image_Po4uul-xj7.png)
+![](./assets/image/image_Po4uul-xj7.png)
 
 # 追加写入
 

@@ -2,7 +2,7 @@
 
 以[razer](https://link.juejin.cn/?target=https://gold.razer.com/my/en/gold/catalog/pubgm "razer")为例，找到网页的商品的锚点的DOM元素进行模拟点击操作，根据不同商品请求对应的价格的通道数据
 
-![](./image/image_r58rVa8g3t.png)
+![](./assets/image/image_r58rVa8g3t.png)
 
 **实例代码如下：**
 

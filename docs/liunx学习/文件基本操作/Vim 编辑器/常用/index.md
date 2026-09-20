@@ -17,11 +17,11 @@
 1\). 在使用vim**命令编辑文件时，如果指定的文件存在则直接打开此文件。如果指定的文件不存在则新建文件。** &#x20;
 2\). vim在进行文本编辑时共分为三种模式，分别是 **命令模式（Command mode），编辑模式（Insert mode）和底行模式（Last line mode）**。这三种模式之间可以相互切换。我们在使用vim时一定要注意我们当前所处的是哪种模式。
 
-![](./image/image_adq1LXyf67.png)
+![](./assets/image/image_adq1LXyf67.png)
 
 #### 【2】vim三种模式的切换
 
-![](./image/image_T3obB-zHqy.png)
+![](./assets/image/image_T3obB-zHqy.png)
 
 #### 【3】vim操作语法
 

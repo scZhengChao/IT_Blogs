@@ -31,7 +31,7 @@ mvn wrapper:wrapper -Dmaven=3.9.0
 
 安装后，查看项目结构：
 
-![](./image/image_ku7g7ClJc-.png)
+![](./assets/image/image_ku7g7ClJc-.png)
 
 发现多了`mvnw`、`mvnw.cmd`和`.mvn`目录，**我们只需要把**\*\*`mvn`****命令改成****`mvnw`\*\***就可以使用跟项目关联的Maven**。例如：
 

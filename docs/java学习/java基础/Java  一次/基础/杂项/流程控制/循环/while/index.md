@@ -1,11 +1,11 @@
 # while
 
-![](./image/image_OJggJDb-W8.png)
+![](./assets/image/image_OJggJDb-W8.png)
 
-![](./image/image_11N-uomAvG.png)
+![](./assets/image/image_11N-uomAvG.png)
 
-![](./image/image_Z30lr6C3Uj.png)
+![](./assets/image/image_Z30lr6C3Uj.png)
 
 **必须初始化**
 
-![](./image/image_tZYFf-fqqA.png)
+![](./assets/image/image_tZYFf-fqqA.png)

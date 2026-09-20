@@ -222,7 +222,7 @@ requestMusicData(item,index){
 
 控制台打印如下：
 
-![  ](./image/5470ffb26008355af2b4922e17fa7129_a3RmXRnxKp.png "  ")
+![  ](./assets/image/5470ffb26008355af2b4922e17fa7129_a3RmXRnxKp.png "  ")
 
 - 接口方法
 
@@ -333,7 +333,7 @@ Fetch API 的 Response 接口用于表示对请求的响应。  您可以使用
 
 响应相关的属性参数和方法，前面也有部分罗列，比较简单，所以就不做搬运工了，附上目录和官方文档的地址：
 
-![  ](./image/5a1ddbc39d7d0e1d14898a96fa17c791_r8JY5Upm7O.png "  ")
+![  ](./assets/image/5a1ddbc39d7d0e1d14898a96fa17c791_r8JY5Upm7O.png "  ")
 
 - **response**官方文档详细地址：[https://www.w3cschool.cn/fetch\_api/fetch\_api-phz72lrr.html](https://www.w3cschool.cn/fetch_api/fetch_api-phz72lrr.html "https://www.w3cschool.cn/fetch_api/fetch_api-phz72lrr.html")
 
@@ -347,7 +347,7 @@ Fetch API 的 Response 接口用于表示对请求的响应。  您可以使用
 
         一个 Headers 对象的实现可以直接用在一个 for…of 结构中，而不是 entries()：for (var p of myHeaders)，相当于 for (var p of myHeaders.entries())。
 
-![  ](./image/aff340a0a95119359ecaa68e01b7ac65_cLzCn993ah.png "  ")
+![  ](./assets/image/aff340a0a95119359ecaa68e01b7ac65_cLzCn993ah.png "  ")
 
 - **headers接口** 官方文档详细地址：[https://www.w3cschool.cn/fetch\_api/fetch\_api-ufns2m83.html](https://www.w3cschool.cn/fetch_api/fetch_api-ufns2m83.html "https://www.w3cschool.cn/fetch_api/fetch_api-ufns2m83.html")
 

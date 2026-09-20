@@ -1,6 +1,6 @@
 # 公众号服务端
 
-[01\_公众号\_服务器端【瑞客论坛 www.ruike1.com】.pdf](<./file/01_公众号_服务器端【瑞客论坛 www.ruike1.com】_Z2JY5xKk7r.pdf> "01_公众号_服务器端【瑞客论坛 www.ruike1.com】.pdf")
+[01\_公众号\_服务器端【瑞客论坛 www.ruike1.com】.pdf](<./assets/file/01_公众号_服务器端【瑞客论坛 www.ruike1.com】_Z2JY5xKk7r.pdf> "01_公众号_服务器端【瑞客论坛 www.ruike1.com】.pdf")
 
 ```纯文本 
  //index.js 

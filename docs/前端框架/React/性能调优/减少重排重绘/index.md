@@ -220,7 +220,7 @@ function App() {
 
 可以借助chrome devtools performance来验证一下页面的情况&#x20;
 
-![  ](./image/2dd94698ffe49638f189a11bb0577d1d_NmSm4z4SAC.gif "  ")
+![  ](./assets/image/2dd94698ffe49638f189a11bb0577d1d_NmSm4z4SAC.gif "  ")
 
 小小的一个进度条触发了那么那么多次重排和重绘，那么它到底有什么影响呢？来简单回顾一下重排和重绘的影响&#x20;
 
@@ -234,7 +234,7 @@ function App() {
 
 先来看看一个非常常见的图
 
-![  ](./image/d28503772de2b6a6e9300c3c2c229751_HLCo4iiFVF.webp "  ")
+![  ](./assets/image/d28503772de2b6a6e9300c3c2c229751_HLCo4iiFVF.webp "  ")
 
 页面的渲染，大体上走的就是这5个流程。当然也有办法跳过中间某些步骤，例如避免Layout和Paint
 
@@ -299,7 +299,7 @@ function App() {
 
 这么做了以后，我们再次用performance检验一下&#x20;
 
-![  ](./image/058527d8ae95bdf36c0622662f49b62a_1tfq6TWABm.gif "  ")
+![  ](./assets/image/058527d8ae95bdf36c0622662f49b62a_1tfq6TWABm.gif "  ")
 
 可以很明显地看到页面重排重绘的次数减少了很多很多，剩余的基本都是页面最基本的重排和重绘了。&#x20;
 
@@ -307,13 +307,13 @@ function App() {
 
 先用刚极致优化完的跑一下performance
 
-![  ](./image/1cbddbcb61e58b7a7b1a65dd1b2c0ba3_CANP7zNV2Z.webp "  ")
+![  ](./assets/image/1cbddbcb61e58b7a7b1a65dd1b2c0ba3_CANP7zNV2Z.webp "  ")
 
 看图中右侧，FPS基本是稳定在55 \~ 70之间&#x20;
 
 再来看看文章开头第一种方案的performance跑分&#x20;
 
-![  ](./image/43861686999065e174b22cd825f8c056_Ve8IrzQySP.webp "  ")
+![  ](./assets/image/43861686999065e174b22cd825f8c056_Ve8IrzQySP.webp "  ")
 
 看图中右侧，FPS基本是稳定在32 \~ 50之间&#x20;
 
@@ -327,19 +327,19 @@ function App() {
 
 启用GPU加速会将元素提升到单独的一个图层中，我们可以通过chrome devtools layers来查看&#x20;
 
-![  ](./image/9da5544e130bc56b99367308365e3a4b_KDRyAd79iO.webp "  ")
+![  ](./assets/image/9da5544e130bc56b99367308365e3a4b_KDRyAd79iO.webp "  ")
 
 这里就分别展示一下我们优化前和优化后的页面分层情况吧&#x20;
 
 **「优化前」**
 
-![  ](./image/5555dad027e73e6bd7d97af78537bb9e_4I8JivH84R.webp "  ")
+![  ](./assets/image/5555dad027e73e6bd7d97af78537bb9e_4I8JivH84R.webp "  ")
 
 很明显地看到，整个页面就只有document层，即进度条没有被分层出来  &#x20;
 
 **「优化后」**
 
-![  ](./image/808b20c487156d9fd42833e1270f4668_6KxAn7w0H1.webp "  ")
+![  ](./assets/image/808b20c487156d9fd42833e1270f4668_6KxAn7w0H1.webp "  ")
 
 同样也很明显地可以看到，进度条被单独分出来一个图层了 &#x20;
 
@@ -347,8 +347,8 @@ function App() {
 
 当你理解这4个条件后，对于React组件更新会有全新的认识。&#x20;
 
-![  ](./image/0390282af4876f1d9a5e84d4cbf809a2_5n45oJySG4.webp "  ")
+![  ](./assets/image/0390282af4876f1d9a5e84d4cbf809a2_5n45oJySG4.webp "  ")
 
-![  ](./image/454ab448fa9ac24e5b11d47e2dc2347d_vUOgXEUTRO.gif "  ")
+![  ](./assets/image/454ab448fa9ac24e5b11d47e2dc2347d_vUOgXEUTRO.gif "  ")
 
-![  ](./image/454ab448fa9ac24e5b11d47e2dc2347d_vUOgXEUTRO.gif "  ")
+![  ](./assets/image/454ab448fa9ac24e5b11d47e2dc2347d_vUOgXEUTRO.gif "  ")

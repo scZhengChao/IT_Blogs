@@ -6,4 +6,4 @@ import { isNumber } from 'ahooks/es/utils';
 ```
 
 
-![](./image/image_vj-bLucGJ0.png)
+![](./assets/image/image_vj-bLucGJ0.png)

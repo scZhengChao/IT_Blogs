@@ -885,7 +885,7 @@ E-R
 
 结构如下：
 
-![  ](./image/bd8ebcb84b40a95b6dc1696f6b24c8dc_fhswXmYU0h.png "  ")
+![  ](./assets/image/bd8ebcb84b40a95b6dc1696f6b24c8dc_fhswXmYU0h.png "  ")
 
 定义
 
@@ -1743,7 +1743,7 @@ UPDATE \`user\` SET \`deleted\_at\`='2016-07-07 14:46:01' WHERE \`deleted\_at\` 
 
 下面demo用import（）导入模型 而我是用 define 定义模型
 
-[sequlize\_model\_relation\_demo-master.zip](./file/sequlize_model_relation_demo-master_FwavFgMY5_.zip "sequlize_model_relation_demo-master.zip")
+[sequlize\_model\_relation\_demo-master.zip](./assets/file/sequlize_model_relation_demo-master_FwavFgMY5_.zip "sequlize_model_relation_demo-master.zip")
 
 \*\*连接池设定： \*\*​
 
@@ -1765,9 +1765,9 @@ UPDATE \`user\` SET \`deleted\_at\`='2016-07-07 14:46:01' WHERE \`deleted\_at\` 
 
     则：&#x20;
 
-![  ](./image/40acb2577fcb65cc19d769b9f2a83632_Fbb4QiIo7M.jpeg "  ")
+![  ](./assets/image/40acb2577fcb65cc19d769b9f2a83632_Fbb4QiIo7M.jpeg "  ")
 
-![  ](./image/edb2920d81ffa84e0cfe60697c304801_Dj6kRDWYOK.jpeg "  ")
+![  ](./assets/image/edb2920d81ffa84e0cfe60697c304801_Dj6kRDWYOK.jpeg "  ")
 
     如果： queryTime = 200ms（从发起查询到最终获得数据释放连接资源的时间），connNum = 10（线上的连接池数量），则 sqlCapacityRate = 50
 

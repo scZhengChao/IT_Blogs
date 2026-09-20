@@ -48,7 +48,7 @@
 
 Android开发专用的IDE是Android Studio，在下载安装Android Studio的过程中，会`自行下载sdk`，sdk中会`包含adb环境`，具体是在`sdk文件路径/platform-tools/adb`，如下图所示。
 
-![](./image/image_s-efsl4QtZ.png)
+![](./assets/image/image_s-efsl4QtZ.png)
 
 android sdk下载完毕之后，还需要配置对应的环境变量，以zsh为例，
 
@@ -87,7 +87,7 @@ brew install --cask android-platform-tools
 
 在这里下载对应的版本即可：
 
-![](./image/image_FILU2yIBSC.png)
+![](./assets/image/image_FILU2yIBSC.png)
 
 下载完成后解压（将文件放置到一个不常改动的目录下，避免误删），然后给文件配置环境变量，还是以我的zsh配置为例:这个`platform-tools`文件夹我是放在`Downloads`目录下的。
 

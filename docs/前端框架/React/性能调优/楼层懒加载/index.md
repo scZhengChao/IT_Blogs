@@ -22,7 +22,7 @@
 
 为了更好的用户体验，我们需要考虑在用户滚动到下一屏时，渲染下一屏的组件。&#x20;
 
-![  ](./image/a92d93ae729a58e37b82a5381c29e470_HOpetp-yNU.webp "  ")
+![  ](./assets/image/a92d93ae729a58e37b82a5381c29e470_HOpetp-yNU.webp "  ")
 
 ## 设计思路
 
@@ -31,7 +31,7 @@
 - 渲染下一屏组件的时机应该如何判断？
 - 在数据反复更新的过程中，如何让组件不重复发起数据请求？
 
-![  ](./image/523eef89806188a317e571e4062e02ae_7r-6Mrx5_k.webp "  ")
+![  ](./assets/image/523eef89806188a317e571e4062e02ae_7r-6Mrx5_k.webp "  ")
 
 ### 一、渲染下一屏的时机
 
@@ -139,7 +139,7 @@ const scrollRenderHandler = ():void => {
 
 假设一屏展示 3 个组件，类似常见分页逻辑中的 pageSize = 3，我们可以将 n 个组件分割成每 3 个 1 组，对每组依次进行渲染，并用 compGroups 保存分割的组，同时使用 groupIdx 指针来指向下一个需要渲染的组序列。&#x20;
 
-![  ](./image/32bab42291af9963fa4041494cfffa3b_QUlMmQfBye.png "  ")
+![  ](./assets/image/32bab42291af9963fa4041494cfffa3b_QUlMmQfBye.png "  ")
 
 ```javascript 
  export const splitGroups = (homeList: any[], pageSize: number): any[] => {
@@ -218,9 +218,9 @@ const [groupIdx, setGroupIdx] = useState(0);
 
 至此，随着屏幕滚动，我们基本完成了组件动态渲染的要求。但还有另外一个问题：随着滚动，相同的数据接口请求了多次。&#x20;
 
-![  ](./image/f70dd9500cd2b0eb00e3bd5e8f386653_PCtpG1wNYA.gif "  ")
+![  ](./assets/image/f70dd9500cd2b0eb00e3bd5e8f386653_PCtpG1wNYA.gif "  ")
 
-![  ](./image/e6eb976739e5b3f9ef9046b2b604d4e2_17Z1RAnXHa.webp "  ")
+![  ](./assets/image/e6eb976739e5b3f9ef9046b2b604d4e2_17Z1RAnXHa.webp "  ")
 
 如上图，同一楼层的接口被请求了两遍。这意味着，在窗口滚动的过程中，我们反复更新了 compList 数据，从而导致了楼层组件重新渲染，而每个楼层组件的数据请求，是放在组件内部的，这与该楼层的唯一标识 uuid 相关，因此导致数据接口的重复请求。&#x20;
 
@@ -280,9 +280,9 @@ export default memo(GoodsRecommed, isEqual);
 
 最后看一下效果，确实没有重复的数据请求了。
 
-![  ](./image/cf8e21b3093a068ad978ee3ed47bb083_QKYsRVzZcN.gif "  ")
+![  ](./assets/image/cf8e21b3093a068ad978ee3ed47bb083_QKYsRVzZcN.gif "  ")
 
-![  ](./image/c4f6123fa878370fe99e890d2f77a092_teT-PlrUwy.webp "  ")
+![  ](./assets/image/c4f6123fa878370fe99e890d2f77a092_teT-PlrUwy.webp "  ")
 
 ## 总结
 

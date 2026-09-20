@@ -186,7 +186,7 @@ tail cloud-init.log
 
 > 1.使用more命令查看 /etc/profile 文件内容
 
-![](./image/image_KOqtYtpkhK.png)
+![](./assets/image/image_KOqtYtpkhK.png)
 
 当我们在查看一些比较大的文件时，我们可能需要经常查询文件尾部的数据信息，那这个时候如果文件很大，我们要一直向下翻页，直到最后一页，去看最新添加的数据，这种方式就比较繁琐了，此时，我们可以借助于tail指令。
 

@@ -20,7 +20,7 @@
 
 web网站中常见字体格式
 
-![](./image/image_XmrShBrva-.png)
+![](./assets/image/image_XmrShBrva-.png)
 
 由于我司物料部门提供的为TTF格式，所以这里通过思源黑体给一个直观的对比：
 

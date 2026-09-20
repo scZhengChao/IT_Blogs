@@ -1,6 +1,6 @@
 # 缓冲流
 
-![](./image/image_5QzfWowQiT.png)
+![](./assets/image/image_5QzfWowQiT.png)
 
 [字节流缓冲流](./字节流缓冲流/index.md "字节流缓冲流")
 

@@ -14,17 +14,17 @@
 
 # 使用反射技术获取构造器对象并使用
 
-![](./image/image_oahwNndj8B.png)
+![](./assets/image/image_oahwNndj8B.png)
 
 **反射的第一步是**先**得到类对象**，然后从**类对象中获取类的成分对象。**Class类中用于获取构造器的方法
 
-![](./image/image_2TcovCIWWe.png)
+![](./assets/image/image_2TcovCIWWe.png)
 
 获取构造器的作用依然是初始化一个对象返回。
 
 - 获取构造器的**作用依然是初始化一个对象返回。**
 
-![](./image/image_cShy1TcFjJ.png)
+![](./assets/image/image_cShy1TcFjJ.png)
 
 # 构造方法调用案例
 

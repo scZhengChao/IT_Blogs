@@ -163,15 +163,15 @@ docker exec -it gitlab grep 'Password:' /etc/gitlab/initial_root_password
 
 在主页上点击创建项目，可以新建一个本地的项目：
 
-![](./image/image_H9giyNkiVz.png)
+![](./assets/image/image_H9giyNkiVz.png)
 
 创建好项目后的项目主页如下：
 
-![](./image/image_epr862ActT.png)
+![](./assets/image/image_epr862ActT.png)
 
 这里因为我们略过了一个步骤，在第一次使用Gitlab平台的时候，需要使用RSA加密生成密钥对，点击刚才界面上的添加ssh key进入添加密钥对的界面：
 
-![](./image/image__mx8tKEdGx.png)
+![](./assets/image/image__mx8tKEdGx.png)
 
 此时我们需要在本地终端窗口中执行如下的指令来产生密钥对：**(注意：在当前路径下；注意你的路径)**
 
@@ -218,13 +218,13 @@ ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDt6VXrvTPhWr5iUy3KpIzRryX3SGBUAYietTMSqEOu
 
 一般是以`ssh-rsa`开头的字符串，输入完成后点击`Add Key`，即可完成密钥对的配置：
 
-![](./image/image_lx5cozdV6L.png)
+![](./assets/image/image_lx5cozdV6L.png)
 
 # 代码仓基本操作
 
 在完成前面章节的基本配置之后，就可以使用https的方式将需要托管的代码仓库clone下来同步操作，首先复制仓库链接：
 
-![](./image/image_tvD7Hz7poF.png)
+![](./assets/image/image_tvD7Hz7poF.png)
 
 **注意：ssh 没法克隆；用http；第一次回让你输入账号密码**
 

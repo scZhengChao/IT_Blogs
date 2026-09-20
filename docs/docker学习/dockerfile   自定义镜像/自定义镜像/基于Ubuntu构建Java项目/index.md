@@ -4,19 +4,19 @@
 
 - 步骤1：新建一个空文件夹docker-demo
 
-![](./image/image_M14egJWeCe.png)
+![](./assets/image/image_M14egJWeCe.png)
 
 步骤2：拷贝课前资料中的docker-demo.jar文件到docker-demo这个目录
 
-![](./image/image_GuAg-kDhNR.png)
+![](./assets/image/image_GuAg-kDhNR.png)
 
 步骤3：拷贝课前资料中的jdk8.tar.gz文件到docker-demo这个目录
 
-![](./image/image_zJmRiHniCB.png)
+![](./assets/image/image_zJmRiHniCB.png)
 
 步骤4：拷贝课前资料提供的Dockerfile到docker-demo这个目录
 
-![](./image/image_SAzsya_URo.png)
+![](./assets/image/image_SAzsya_URo.png)
 
 其中的内容如下：
 
@@ -51,7 +51,7 @@
 
   将准备好的docker-demo上传到虚拟机任意目录，然后进入docker-demo目录下
 
-![](./image/image_CCksidS1mJ.png)
+![](./assets/image/image_CCksidS1mJ.png)
 
 步骤6：运行命令：
 
@@ -66,11 +66,11 @@ docker build -t javaweb:1.0 .
 ```
 
 
-![](./image/image_GbNBnUzv-7.png)
+![](./assets/image/image_GbNBnUzv-7.png)
 
 - 查看镜像
 
-![](./image/image_M1MMALzSkm.png)
+![](./assets/image/image_M1MMALzSkm.png)
 
 - 构建容器：
 
@@ -80,10 +80,10 @@ docker run --name myWeb1.0 -p 8090:8090 -d javaweb:1.0
 ```
 
 
-![](./image/image_lt02wm84sB.png)
+![](./assets/image/image_lt02wm84sB.png)
 
 - 查看启动的容器
 
-![](./image/image_Zs8qlxxSX0.png)
+![](./assets/image/image_Zs8qlxxSX0.png)
 
 - 最后访问[http://192.168.200.128:8090/hello/count，其中的ip改成你的虚拟机ip](http://192.168.200.128:8090/hello/count，其中的ip改成你的虚拟机ip "http://192.168.200.128:8090/hello/count，其中的ip改成你的虚拟机ip")

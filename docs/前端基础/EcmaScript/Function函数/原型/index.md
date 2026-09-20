@@ -96,7 +96,7 @@ const obj = {};
 ```
 
 
-![](./image/image_1xe-AbKIaP.png)
+![](./assets/image/image_1xe-AbKIaP.png)
 
 ### 总结
 

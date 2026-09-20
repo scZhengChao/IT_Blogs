@@ -93,11 +93,11 @@ cat ~/.ssh/id_rsa.pub
 ```
 
 
-![](./image/image_5ZUJIIIi1d.png)
+![](./assets/image/image_5ZUJIIIi1d.png)
 
 ***将公钥添加到GitHub或其他代码库的SSH Keys***
 
-![](./image/image_8__u7RinTJ.png)
+![](./assets/image/image_8__u7RinTJ.png)
 
 ### **Docker安装**
 
@@ -141,7 +141,7 @@ rpm -qa |grep docker
 
 **示例输出**
 
-![](./image/image_wLofu79Otx.png)
+![](./assets/image/image_wLofu79Otx.png)
 
 **启动Docker服务**：
 

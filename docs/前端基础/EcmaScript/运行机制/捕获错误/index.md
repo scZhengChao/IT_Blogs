@@ -38,7 +38,7 @@ $("#btn").on('click',function(){
 ```
 
 
-[index.html](./file/index_YoMAFxyZY9.html "index.html")
+[index.html](./assets/file/index_YoMAFxyZY9.html "index.html")
 
 ## 省略错误信息
 

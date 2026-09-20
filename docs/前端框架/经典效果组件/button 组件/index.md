@@ -1,6 +1,6 @@
 # button 组件
 
-![  ](./image/20250518_135032_UTudRexPW6.gif "  ")
+![  ](./assets/image/20250518_135032_UTudRexPW6.gif "  ")
 
 ```typescript 
 import { memo } from 'react';

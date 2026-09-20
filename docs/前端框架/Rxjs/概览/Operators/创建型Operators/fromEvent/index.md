@@ -6,7 +6,7 @@
 
 创建一个 `Observable`，该 `Observable` 发出来自给**定事件对象的指定类型事件**。可用于**浏览器环境**中的`Dom`事件或`Node`环境中的`EventEmitter`事件等。
 
-![](./image/image_k8Owgq0MmH.png)
+![](./assets/image/image_k8Owgq0MmH.png)
 
 fromEvent
 

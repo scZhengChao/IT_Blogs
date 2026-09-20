@@ -8,8 +8,8 @@
 
 # umi 不支持ecma 的 装饰器
 
-![](./image/image_HzHy6LSbcO.png)
+![](./assets/image/image_HzHy6LSbcO.png)
 
-![](./image/image_lMLA4ydtlR.png)
+![](./assets/image/image_lMLA4ydtlR.png)
 
-![](./image/image_CR0NNQhkxA.png)
+![](./assets/image/image_CR0NNQhkxA.png)

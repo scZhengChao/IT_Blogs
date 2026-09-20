@@ -11,7 +11,7 @@
 
 超市的收银台就是一个队列：
 
-![](./image/image_MiKD73wLXL.png)
+![](./assets/image/image_MiKD73wLXL.png)
 
 在Java的标准库中，队列接口`Queue`定义了以下几个方法：
 

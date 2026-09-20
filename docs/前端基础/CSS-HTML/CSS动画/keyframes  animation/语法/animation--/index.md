@@ -18,9 +18,9 @@ CSS 动画通常使用 `animation` 属性来定义，它是 **animation-name**
   - `none`：当动画未执行时，动画将不会将任何样式应用于目标，而是已经赋予给该元素的 CSS 规则来显示该元素。这是默认值
   - `both`：动画将遵循 `forwards` 和 `backwards` 的规则，从而在两个方向上扩展动画属性
   - `forwards`：**目标将保留由执行期间遇到的最后一个关键帧计算值**。最后关键帧取决于 `animation-direction` 和 `animation-iteration-count`：
-    ![](./image/image_MMTTfcnmkK.png)
+    ![](./assets/image/image_MMTTfcnmkK.png)
   - `backwards`：**动画将在应用于目标时立即应用第一个关键帧中定义的值**，并在 `delay` 期间保留此值。第一个关键帧取决于 `animation-direction` 值：
-    ![](./image/image_3mt3j1DPFM.png)
+    ![](./assets/image/image_3mt3j1DPFM.png)
 - `animation-timing-function`：设置动画在每个周期的持续时间内如何进行，主要是如下两种函数：
   - `cubic-bezier` 三次贝塞尔曲线 ( `cubic-bezier(<x1>, <y1>, <x2>, <y2>)` )，以实现 **补间动画** 效果。
     1. **linear**：`cubic-bezier(0.0, 0.0, 1.0, 1.0)`

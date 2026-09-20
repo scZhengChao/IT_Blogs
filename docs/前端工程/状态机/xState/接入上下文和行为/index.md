@@ -62,7 +62,7 @@ service.stop();
 ```
 
 
-![](./image/image_fwFeJe0p6w.png)
+![](./assets/image/image_fwFeJe0p6w.png)
 
 - context是状态机声明的，与states同级，因此所有状态共享，context更接近Redux的store；
 - XState的行为实际就是Side Effect，可以最大限度的为XState赋能，Effect的类型较多，适用于不同的场景，具体使用可以参考官方文档，本文介绍Action的用法，Activities类似，Promise等则有自己的规则；

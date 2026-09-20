@@ -11,12 +11,12 @@
 - 左右两**颗子树的高度差不超过1**
 - **任意节点的左右两颗子树都是一颗平衡二叉树**
 
-![](./image/image_G_lQCHuGX1.png)
+![](./assets/image/image_G_lQCHuGX1.png)
 
 # 旋转
 
 > 一种算法规则
 
-![](./image/image_zh-qzneoH3.png)
+![](./assets/image/image_zh-qzneoH3.png)
 
-![](./image/image_sQTkpbEi-6.png)
+![](./assets/image/image_sQTkpbEi-6.png)

@@ -5,7 +5,7 @@
 
 - [依赖自动装配特征  ](#依赖自动装配特征)
 
-![](./image/image_Q-YXnvqz_e.png)
+![](./assets/image/image_Q-YXnvqz_e.png)
 
 - 配置中使用`bean`标签**autowire**属性设置自动装配的类型
 

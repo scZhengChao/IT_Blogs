@@ -1,10 +1,10 @@
 # JDBC
 
-![](./image/image_7uqSGRSCax.png)
+![](./assets/image/image_7uqSGRSCax.png)
 
 `JDBC` 就是使用`Java`语言操作**关系型数据库的一套API**
 
-![](./image/image_BaMhRrI-zy.png)
+![](./assets/image/image_BaMhRrI-zy.png)
 
 [](./JDBC 简介 -/index.md)
 

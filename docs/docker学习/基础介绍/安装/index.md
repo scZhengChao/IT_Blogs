@@ -2,8 +2,8 @@
 
 企业部署一般都是采用Linux操作系统，而其中又数CentOS发行版占比最多，因此我们在CentOS下安装Docker。参考课前资料中的文档：
 
-![](./image/image_Qgc_qAOdiS.png)
+![](./assets/image/image_Qgc_qAOdiS.png)
 
-[Centos7安装Docker.md](./file/Centos7安装Docker_0ydzAWK594.md "Centos7安装Docker.md")
+[Centos7安装Docker.md](./assets/file/Centos7安装Docker_0ydzAWK594.md "Centos7安装Docker.md")
 
 [换源](IT/docker/基础介绍/安装/换源/换源.md "换源")

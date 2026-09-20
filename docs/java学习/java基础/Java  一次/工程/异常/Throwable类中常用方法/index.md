@@ -13,7 +13,7 @@
 
 **所以；它的成员方法大家都可以用；**
 
-![](./image/image_Hpr9_vXX4O.png)
+![](./assets/image/image_Hpr9_vXX4O.png)
 
 # 两种处理异常方式的小结
 

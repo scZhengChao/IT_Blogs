@@ -23,7 +23,7 @@ const blob = new Blob(["Hello, world!"], { type: "text/plain" });
 ```
 
 
-![](./image/image_q91_iDMCME.png)
+![](./assets/image/image_q91_iDMCME.png)
 
 Blob 对象主要有以下几个属性：
 
@@ -69,7 +69,7 @@ blob.text().then((text) => {
 ```
 
 
-![](./image/image_unddiZQGaK.png)
+![](./assets/image/image_unddiZQGaK.png)
 
 1. `arrayBuffer()`
 
@@ -85,7 +85,7 @@ blob.arrayBuffer().then((buffer) => {
 ```
 
 
-![](./image/image_mwXpftdOj8.png)
+![](./assets/image/image_mwXpftdOj8.png)
 
 1. `stream()`
 
@@ -113,7 +113,7 @@ URL.revokeObjectURL(url); // 释放 URL 对象
 
 当我们刷新浏览器的时候发现是可以自动给我们下载图片了：
 
-![](./image/image_NgwbQzwGKu.png)
+![](./assets/image/image_NgwbQzwGKu.png)
 
 1. 上传文件
 
@@ -181,7 +181,7 @@ fetch("/upload", {
 ```
 
 
-![](./image/image_0JPUMcWZKm.png)
+![](./assets/image/image_0JPUMcWZKm.png)
 
 1. Blob 和 Base64
 
@@ -199,4 +199,4 @@ reader.readAsDataURL(blob); // 将 Blob 读取为 base64
 ```
 
 
-![](./image/image_Qif_8av618.png)
+![](./assets/image/image_Qif_8av618.png)

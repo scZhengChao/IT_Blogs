@@ -33,4 +33,4 @@ build_job:
 
 artifacts最终会被打包成一个压缩文件，这里的path表示要添加到压缩文件的文件或文件夹，name表示生成的压缩文件的名字。然后在对应的任务详情特面就可以下载：
 
-![](./image/image_E13pfDc8Ke.png)
+![](./assets/image/image_E13pfDc8Ke.png)

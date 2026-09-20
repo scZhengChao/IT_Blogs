@@ -49,7 +49,7 @@ observer.disconnect();
 
 也就是说，当你使用observer监听多个DOM变化时，并且这若干个DOM发生了变化，那么observer会将变化记录到变化数组中，等待一起都结束了，然后一次性的从变化数组中执行其对应的回调函数。
 
-![  ](./image/3b6916d0e7758721558eed9ffbdffcfd_QTxXcy10B7.png "  ")
+![  ](./assets/image/3b6916d0e7758721558eed9ffbdffcfd_QTxXcy10B7.png "  ")
 
 [https://developer.mozilla.org/zh-CN/docs/Web/API/MutationObserver](https://developer.mozilla.org/zh-CN/docs/Web/API/MutationObserver "https://developer.mozilla.org/zh-CN/docs/Web/API/MutationObserver"). mdn 地址
 

@@ -11,7 +11,7 @@ equals 等价于 == ； 比较的是地址值；
 ```
 
 
-![](./image/image_COQ6cOspIg.png)
+![](./assets/image/image_COQ6cOspIg.png)
 
 # 想比较属性
 
@@ -24,8 +24,8 @@ equals 等价于 == ； 比较的是地址值；
 
 # Objects.equals() 和 字符串的equals 比较
 
-![](./image/image_-ZTcAhMxkh.png)
+![](./assets/image/image_-ZTcAhMxkh.png)
 
 源码： 避免空指针
 
-![](./image/image_CRyh-4trmu.png)
+![](./assets/image/image_CRyh-4trmu.png)

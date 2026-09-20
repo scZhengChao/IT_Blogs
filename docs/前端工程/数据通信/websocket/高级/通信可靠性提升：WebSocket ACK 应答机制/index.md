@@ -12,7 +12,7 @@
 
 [**WebSocket**](https://link.segmentfault.com/?enc=CpUpqWnzjRv8+y91uP05AA==.ToZscVJ/d6JVlx003bnrNUi1xP19mjGjV4ItSuiDMwOthaHudquarDfyrygX/YWu "WebSocket")，作为一种在单一TCP连接上实现全双工通讯的协议，**允许客户端与服务器之间自由地进行双向数据流动。一旦建立连接，数据可以无限制地在两者之间传输**。但是，由于网络环境不总是完美无缺，讯息有时可能会在传递过程中丢失。这可能是因为**网络拥堵、硬件故障或其他多种因素导致**的。为此，WebSocket **提供了一个确认机制来确保发送的数据包每次都能准确到达目的地，这就是“WebSocket ACK”应答机制。**
 
-![](./image/image_B9HK8GDwH8.png)
+![](./assets/image/image_B9HK8GDwH8.png)
 
 ## WebSocket ACK 的必要性
 
@@ -29,7 +29,7 @@
 3. 发送端在收到应答后，会**对比应答中的序号与最初的序号。如果相符**，数据包就被视为成功送达。\*\*如果在设定的时间内没有收到反馈，\*\***则重发数据。**
 4. 如果接收端收到了重复数据包，它会**忽略该数据包而仅发送ACK**。这样，数据包的传输就可以被保证，通信可靠性得到强化。
 
-![](./image/image_A2Y6J0u6Y_.png)
+![](./assets/image/image_A2Y6J0u6Y_.png)
 
 ## 超时与重传的重要性
 

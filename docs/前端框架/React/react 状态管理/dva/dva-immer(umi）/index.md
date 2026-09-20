@@ -210,7 +210,7 @@ const nextState = produce(baseState, draftState => {
 ```
 
 
-![](./image/image_lHFhCmV6GK.png)
+![](./assets/image/image_lHFhCmV6GK.png)
 
 简单的理解就是，我们通过produce传入baseState，然后用draftState来修改我们的属性值，然后返回最新的值给nextState。（如下图）
 

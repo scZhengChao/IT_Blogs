@@ -49,21 +49,21 @@
 
 ## border
 
-![  ](./image/24e22327890aed5acafd781ed3d1279e_D5IMY9aHCs.png "  ")
+![  ](./assets/image/24e22327890aed5acafd781ed3d1279e_D5IMY9aHCs.png "  ")
 
 ## loading
 
-![  ](./image/aac463a459776d4a1b37e9f2be69f4c2_7_RWrQ0qMJ.png "  ")
+![  ](./assets/image/aac463a459776d4a1b37e9f2be69f4c2_7_RWrQ0qMJ.png "  ")
 
 ## decoration
 
-![  ](./image/e93d2c07c5ffd4f938e1825d0f21a67b_WNIpqu7a3o.png "  ")
+![  ](./assets/image/e93d2c07c5ffd4f938e1825d0f21a67b_WNIpqu7a3o.png "  ")
 
 ## 图表Charts
 
-![  ](./image/bae38d998b474ec51df80b1f1e086249_BWeSEgLmwD.png "  ")
+![  ](./assets/image/bae38d998b474ec51df80b1f1e086249_BWeSEgLmwD.png "  ")
 
-![  ](./image/5586cf071fcd5c61d74ed2744c61a0e2_EG6OnGXqkk.png "  ")
+![  ](./assets/image/5586cf071fcd5c61d74ed2744c61a0e2_EG6OnGXqkk.png "  ")
 
 # bizcharts
 

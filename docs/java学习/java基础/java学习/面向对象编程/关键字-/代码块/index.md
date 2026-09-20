@@ -6,7 +6,7 @@
 
 **静态代码块无论实例化多少次；都只执行一次；构造代码块是实例化多少次就执行多少次**
 
-![](./image/image_NB7r1Pev9l.png)
+![](./assets/image/image_NB7r1Pev9l.png)
 
 [构造代码块](./构造代码块/index.md "构造代码块")
 

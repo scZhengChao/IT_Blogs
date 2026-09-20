@@ -6,7 +6,7 @@
 
 将数据源重复`n`次，`n`为你传入的数字类型参数。
 
-![](./image/image_2W_8LJubAh.png)
+![](./assets/image/image_2W_8LJubAh.png)
 
 ```javascript 
 const source = Rx.Observable.of(1, 2, 3).repeat(3);

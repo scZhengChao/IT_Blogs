@@ -45,7 +45,7 @@ ERA=1,YEAR=2024,MONTH=8,WEEK_OF_YEAR=38,WEEK_OF_MONTH=3,DAY_OF_MONTH=16,DAY_OF_Y
 
 # 成员方法
 
-![](./image/image_lHvpSs7Fut.png)
+![](./assets/image/image_lHvpSs7Fut.png)
 
 ####
 

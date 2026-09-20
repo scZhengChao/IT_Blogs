@@ -1,6 +1,6 @@
 # 流程控制
 
-![](./image/image_ycaoM5qq9c.png)
+![](./assets/image/image_ycaoM5qq9c.png)
 
 [顺序](./顺序/index.md "顺序")
 

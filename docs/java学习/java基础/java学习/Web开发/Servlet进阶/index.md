@@ -66,7 +66,7 @@ public class IndexServlet extends HttpServlet {
 
 浏览器发出的HTTP请求总是由Web Server先接收，然后，根据Servlet配置的映射，不同的路径转发到不同的Servlet：
 
-![](./image/image_wwe-K6Q78O.png)
+![](./assets/image/image_wwe-K6Q78O.png)
 
 这种根据路径转发的功能我们一般称为dispatch。映射到`/`的`IndexServlet`比较特殊，它实际上会接收所有未匹配的路径，相当于`/*`，因为Dispatcher的逻辑可以用伪代码实现如
 

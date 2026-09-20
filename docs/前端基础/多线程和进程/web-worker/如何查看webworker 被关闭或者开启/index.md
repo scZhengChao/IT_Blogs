@@ -4,13 +4,13 @@
 
 此时，在 Chrome 的开发者工具的 Sources 标签下的 Page 树是这个样子的：
 
-![](./image/image_zGsiu2BbR5.png)
+![](./assets/image/image_zGsiu2BbR5.png)
 
 这个红框就是我们创建的 Worker。
 
 多次调用后我们发现
 
-![](./image/image_rwI5diUNMY.png)
+![](./assets/image/image_rwI5diUNMY.png)
 
 新的 Worker 在不断创建，旧的 Worker 也不会自动关闭。这样会造成资源的浪费。那么，就需要我们手动关闭 Worker。
 

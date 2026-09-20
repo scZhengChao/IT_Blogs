@@ -154,9 +154,9 @@ config.plugin('CleanUnusedFile').use(CleanUnusedFile,[{
 
 实际体验中发现：
 
-![](./image/image_Stj3C3MLv2.png)
+![](./assets/image/image_Stj3C3MLv2.png)
 
-![](./image/image_l_ogsFx-pk.png)
+![](./assets/image/image_l_ogsFx-pk.png)
 
 `tree shaking` 在网速越来越快的情况下；已经不是那么重要了；
 
@@ -438,7 +438,7 @@ const usedExports = compilation.chunkGraph.moduleGraph.getUsedExports(module, ch
 
 # 代码
 
-[Demo.zip](./file/Demo_f3PeA6pjTV.zip " Demo.zip")
+[Demo.zip](./assets/file/Demo_f3PeA6pjTV.zip " Demo.zip")
 
 [在源码中去除dead code\_副本](<./在源码中去除dead code_副本/index.md> "在源码中去除dead code_副本")
 

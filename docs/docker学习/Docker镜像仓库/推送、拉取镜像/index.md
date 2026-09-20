@@ -18,7 +18,7 @@ docker tag nginx:latest 192.168.200.128:5000/nginx:1.0
 >
 > 3.nginx:1.0 ：新的镜像和版本
 
-![](./image/image_JkFztElnbP.png)
+![](./assets/image/image_JkFztElnbP.png)
 
 ② 推送镜像
 
@@ -28,9 +28,9 @@ docker push 192.168.200.128:5000/nginx:1.0
 ```
 
 
-![](./image/image_Kc7zr6IcO8.png)
+![](./assets/image/image_Kc7zr6IcO8.png)
 
-![](./image/image_p6QPBF3OH7.png)
+![](./assets/image/image_p6QPBF3OH7.png)
 
 ③ 拉取镜像
 
@@ -49,6 +49,6 @@ docker pull 192.168.200.128:5000/nginx:1.0
 ```
 
 
-![](./image/image_ox41JcxRYt.png)
+![](./assets/image/image_ox41JcxRYt.png)
 
-![](./image/image_sU7ikJisv1.png)
+![](./assets/image/image_sU7ikJisv1.png)

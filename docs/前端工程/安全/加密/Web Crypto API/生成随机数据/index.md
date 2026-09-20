@@ -23,7 +23,7 @@ console.log("Random 32 Bytes (Hex):", bytesToHex(randomBytes));
 
 执行后的打印结果：
 
-![](./image/image_5ttsqEDug2.png)
+![](./assets/image/image_5ttsqEDug2.png)
 
 **解释**
 

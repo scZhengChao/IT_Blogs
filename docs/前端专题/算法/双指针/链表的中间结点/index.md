@@ -44,7 +44,7 @@ ans.val = 3, ans.next.val = 4, ans.next.next.val = 5, 以及 ans.next.next.next 
 
 废话不多说，直接先来看动画演示！
 
-![  ](./image/1669689757-ff2fd6c6dc508f5_Pc3nzYMwwB.gif "  ")
+![  ](./assets/image/1669689757-ff2fd6c6dc508f5_Pc3nzYMwwB.gif "  ")
 
 根据这个动画，不难理解整体的思路如下：
 

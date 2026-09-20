@@ -194,7 +194,7 @@ public class Main {
 
 上述逻辑实现的异步查询规则实际上是：
 
-![](./image/image_6HCaGO7Fh3.png)
+![](./assets/image/image_6HCaGO7Fh3.png)
 
 除了`anyOf()`**可以实现“任意个**`CompletableFuture`**只要一个成功**”，`allOf()`**可以实现“所有**`CompletableFuture`**都必须成功”，这些组合操作可以实现非常复杂的异步流程控制。**
 

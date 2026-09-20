@@ -12,9 +12,9 @@
 
 > packages/form/src/layouts/QueryFilter/index.tsx
 
-![](./image/image_OkRWS0IUc_.png)
+![](./assets/image/image_OkRWS0IUc_.png)
 
-![](./image/image_8MJsJuQMCS.png)
+![](./assets/image/image_8MJsJuQMCS.png)
 
 ```javascript 
   return (
@@ -59,9 +59,9 @@
 
 # 高级搜索
 
-![](./image/image_XKAWc4Root.png)
+![](./assets/image/image_XKAWc4Root.png)
 
-![](./image/image_O9tdFj5K5v.png)
+![](./assets/image/image_O9tdFj5K5v.png)
 
 > packages/table/src/components/Form/FormRender.tsx
 

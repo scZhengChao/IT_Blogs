@@ -64,7 +64,7 @@ export const Default: Story = {
 
 Storybook 是一个包含你的 UI 组件及其 stories 的交互式目录。过去，你必须启动应用，导航到某个页面，然后将 UI 调整到正确状态。这**极大地浪费时间**并阻碍了前端开发。有了 Storybook，你可以跳过所有这些步骤，直接在特定状态下处理 UI 组件。
 
-![](./image/image_WrWHg2MPny.png)
+![](./assets/image/image_WrWHg2MPny.png)
 
 ## [优点](https://storybook.org.cn/docs/get-started/why-storybook#benefits "优点")
 

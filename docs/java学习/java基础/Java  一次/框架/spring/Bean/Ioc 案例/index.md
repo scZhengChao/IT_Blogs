@@ -4,14 +4,14 @@
 
 - [导入Spring坐标](#导入Spring坐标)
 
-![](./image/image_NmQ8XzeA-p.png)
+![](./assets/image/image_NmQ8XzeA-p.png)
 
 # 导入Spring坐标
 
-![](./image/image_Lu-FN_4SoY.png)
+![](./assets/image/image_Lu-FN_4SoY.png)
 
-![](./image/image__57oxtrG6M.png)
+![](./assets/image/image__57oxtrG6M.png)
 
-![](./image/image_3GVwLhkYXj.png)
+![](./assets/image/image_3GVwLhkYXj.png)
 
-![](./image/image_l8OiN0_e0H.png)
+![](./assets/image/image_l8OiN0_e0H.png)

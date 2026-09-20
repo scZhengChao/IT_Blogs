@@ -38,7 +38,7 @@
 
 常规的目标客户完全可以采用webp去替代png和jpg（具体根据目标客户不同采用不同的格式，比如如果目标客户是政府外包的旧网站，使用很旧的浏览器，那可能就不是很适合使用webp）。
 
-![](./image/image_umPUSuAzwo.png)
+![](./assets/image/image_umPUSuAzwo.png)
 
 ## **Demo1：最简单的样列**
 

@@ -7,4 +7,4 @@
 
 我们一方面可以将自己的镜像共享到DockerHub，另一方面也可以从DockerHub拉取镜像：
 
-![](./image/image_qK-wUQzi4W.png)
+![](./assets/image/image_qK-wUQzi4W.png)

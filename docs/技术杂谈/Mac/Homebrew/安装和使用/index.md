@@ -46,7 +46,7 @@ xcode-select --install&#x20;
 ```
 
 
-![  ](./image/1b492381443dd1e28719152c1cd0205e_D-fLlnr9rh.png "  ")
+![  ](./assets/image/1b492381443dd1e28719152c1cd0205e_D-fLlnr9rh.png "  ")
 
 ## 国内安装实践
 

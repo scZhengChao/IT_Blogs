@@ -72,4 +72,4 @@ const stream = file.stream();
 ```
 
 
-![](./image/image_9IWzxWXi4V.png)
+![](./assets/image/image_9IWzxWXi4V.png)

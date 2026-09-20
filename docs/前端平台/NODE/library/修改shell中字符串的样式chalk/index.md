@@ -220,4 +220,4 @@ hello chalk
 - \$ `--demo` 把 chalk 所有支持的命令都显示出来, 如下
   - 这些都是它支持的用法，包括前景色，背景色等
 
-![](./image/image_QOxIqerYHY.png)
+![](./assets/image/image_QOxIqerYHY.png)

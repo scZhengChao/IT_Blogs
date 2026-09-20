@@ -6,11 +6,11 @@
 
 `String` 会在常量池中**产生很多废弃的数据；**
 
-![](./image/image_B8MDDNNFlf.png)
+![](./assets/image/image_B8MDDNNFlf.png)
 
 ##### StringBuffer 和 StringBuilder
 
-![](./image/image_UjpmPKauZb.png)
+![](./assets/image/image_UjpmPKauZb.png)
 
 > &#x20;
 
@@ -26,4 +26,4 @@ str1.replace(4,8,"asfas");
 ```
 
 
-![](./image/image__hc_J6Utk_.png)
+![](./assets/image/image__hc_J6Utk_.png)

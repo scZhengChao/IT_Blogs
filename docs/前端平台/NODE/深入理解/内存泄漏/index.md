@@ -108,7 +108,7 @@
 
 **3.内存泄漏排查**
 
-![  ](./image/5b22c304c370695d0cf64717b1e4874c_NDDi7L21xY.png "  ")
+![  ](./assets/image/5b22c304c370695d0cf64717b1e4874c_NDDi7L21xY.png "  ")
 
 **4.node-heapdump**
 
@@ -126,13 +126,13 @@
 
 [https://blog.csdn.net/zdhsoft/article/details/56671395](https://blog.csdn.net/zdhsoft/article/details/56671395 "https://blog.csdn.net/zdhsoft/article/details/56671395")
 
-[heapdump.js](./file/heapdump_YTy_4pElUX.js "heapdump.js")
+[heapdump.js](./assets/file/heapdump_YTy_4pElUX.js "heapdump.js")
 
-![  ](./image/4cbac19fa93b01fa37ce1ed485d1eef7_IUg1M7YqGL.png "  ")
+![  ](./assets/image/4cbac19fa93b01fa37ce1ed485d1eef7_IUg1M7YqGL.png "  ")
 
 **5. node-memwatch**
 
-![  ](./image/66cd4031dd00baf010bb523092fb82a1_cAj_SasTW4.png "  ")
+![  ](./assets/image/66cd4031dd00baf010bb523092fb82a1_cAj_SasTW4.png "  ")
 
 ```纯文本 
  var memwatch = require('memwatch'); 
@@ -158,11 +158,11 @@
 ```
 
 
-![  ](./image/b8671853a0afbbcf3e3d38ca97583c53_Gx4T28_L8b.png "  ")
+![  ](./assets/image/b8671853a0afbbcf3e3d38ca97583c53_Gx4T28_L8b.png "  ")
 
-![  ](./image/ed5612a35e6119acac72960dfa75b499_zj_A8R_I-T.png "  ")
+![  ](./assets/image/ed5612a35e6119acac72960dfa75b499_zj_A8R_I-T.png "  ")
 
-![  ](./image/4d2c884fda1218f5f8d299b5d6ff39ab_I4QecZQIDv.png "  ")
+![  ](./assets/image/4d2c884fda1218f5f8d299b5d6ff39ab_I4QecZQIDv.png "  ")
 
 ```纯文本 
  var memwatch = require('memwatch'); 
@@ -181,7 +181,7 @@
 ```
 
 
-![  ](./image/4d77a01b9e48d8daf2eac04e36794942_VCa8QpbTu-.png "  ")
+![  ](./assets/image/4d77a01b9e48d8daf2eac04e36794942_VCa8QpbTu-.png "  ")
 
 ```纯文本 
  node diff.js 
@@ -230,7 +230,7 @@
 ```
 
 
-![  ](./image/0255cb1d3d4f4f87c33e1cb82e5c9431_UArzYs4lD2.png "  ")
+![  ](./assets/image/0255cb1d3d4f4f87c33e1cb82e5c9431_UArzYs4lD2.png "  ")
 
 ```纯文本 
  { 
@@ -243,7 +243,7 @@
 ```
 
 
-![  ](./image/859b19a3fd5dedcca769fc2fc19c1a76_QPNzGkF_SI.png "  ")
+![  ](./assets/image/859b19a3fd5dedcca769fc2fc19c1a76_QPNzGkF_SI.png "  ")
 
 **6.大内存应用**
 

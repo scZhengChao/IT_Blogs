@@ -9,7 +9,7 @@
 - [perspective-origin ](#perspective-origin-)
 - [backface-visibility ](#backface-visibility-)
 
-![](./image/image_tgRrwWhTMO.png)
+![](./assets/image/image_tgRrwWhTMO.png)
 
 # transform-origin
 

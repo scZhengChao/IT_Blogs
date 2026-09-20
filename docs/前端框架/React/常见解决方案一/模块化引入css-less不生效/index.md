@@ -58,4 +58,4 @@
 ```
 
 
-![](./image/image_Zo74Agp4EF.png)
+![](./assets/image/image_Zo74Agp4EF.png)

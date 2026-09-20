@@ -203,7 +203,7 @@ class RoutingDataSource extends AbstractRoutingDataSource {
 
 我们用一个图来表示创建的DataSource以及相关Bean的关系：
 
-![](./image/image_EkfSDBqoxK.png)
+![](./assets/image/image_EkfSDBqoxK.png)
 
 注意到`DataSourceTransactionManager`和`JdbcTemplate`引用的都是`RoutingDataSource`，所以，这种设计的一个限制就是：**在一个请求中，一旦切换了内部数据源，在同一个事务中，不能再切到另一个，** 否则，`DataSourceTransactionManager`和`JdbcTemplate`操作的就不是同一个数据库连接。
 

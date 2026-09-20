@@ -119,4 +119,4 @@ class CarFactory {
 
 # 配置文件
 
-![](./image/image_AejVzEphqZ.png)
+![](./assets/image/image_AejVzEphqZ.png)

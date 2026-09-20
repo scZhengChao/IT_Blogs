@@ -6,7 +6,7 @@
 - [二、长按触发事件](#二长按触发事件)
 - [三、轮播和暂停](#三轮播和暂停)
 
-![](./image/image_ImHpJ1QwU8.png)
+![](./assets/image/image_ImHpJ1QwU8.png)
 
 平时工作中很多场合都要用到定时器，比如延迟加载、定时查询等等，但定时器的控制有时候会有些许麻烦，比如鼠标移入停止、移出再重新开始。这次介绍几个借助 CSS 来更好的控制定时器的方法，一起了解一下吧，相信可以带来不一样的体验
 
@@ -56,7 +56,7 @@ el.addEventListener('transitionend', () => {
 
 下面是一个小实例，在`hover`一段时间后触发`alert`
 
-![](./image/image_ctYM36zgK_.png)
+![](./assets/image/image_ctYM36zgK_.png)
 
 ```html 
 <!doctype html>

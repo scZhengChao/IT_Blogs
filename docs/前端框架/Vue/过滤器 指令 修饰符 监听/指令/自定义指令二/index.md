@@ -76,7 +76,7 @@
 
 效果和代码如下
 
-![](./image/image_ybbwJiJI6P.png)
+![](./assets/image/image_ybbwJiJI6P.png)
 
 ```typescript 
 
@@ -210,7 +210,7 @@ export default {
 
 基于 `Canvas` 实现方式的优点就在于能够动态的设置水印内容，相比于上一种基于固定背景图片的方式更灵活，这种方式也是 **语雀** 在使用的方式，具体效果如下：
 
-![](./image/image_wx2uzJ-EL8.png)
+![](./assets/image/image_wx2uzJ-EL8.png)
 
 **核心步骤**
 
@@ -305,7 +305,7 @@ export default {
 - 删除对应 `dom` 节点
 - 设置对应 `dom` 节点的 `css` 样式
 
-![  ](./image/640_iFtuiix27o.gif "  ")
+![  ](./assets/image/640_iFtuiix27o.gif "  ")
 
 **MutationObserver**\[7] 接口提供对 `DOM` 树监听的能力，它能够监听 `DOM` 树属性、节点本身、子节点等的变化，于是优化的思路就是使用 **MutationObserver** 去监听外部对应 `water-mark` 节点的操作，只要监听到了就重新渲染水印效果即可。
 
@@ -313,7 +313,7 @@ export default {
 
 > 【**注意**】这里最容易踩坑的点就是 **MutationObserver** 中的条件写得不正确的话会导致死循环.
 
-![  ](./image/640__MqqoqaFS-.gif "  ")
+![  ](./assets/image/640__MqqoqaFS-.gif "  ")
 
 ```typescript 
 /********* src/directives/waterMark.ts  ***********/ 

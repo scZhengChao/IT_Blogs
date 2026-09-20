@@ -140,10 +140,10 @@
 ```
 
 
-[04\_Mysql\_Shop【瑞客论坛 www.ruike1.com】.pdf](<./file/04_Mysql_Shop【瑞客论坛 www.ruike1.com】_jAfuboNheO.pdf> "04_Mysql_Shop【瑞客论坛 www.ruike1.com】.pdf")
+[04\_Mysql\_Shop【瑞客论坛 www.ruike1.com】.pdf](<./assets/file/04_Mysql_Shop【瑞客论坛 www.ruike1.com】_jAfuboNheO.pdf> "04_Mysql_Shop【瑞客论坛 www.ruike1.com】.pdf")
 
-[04\_持久化\_mysql【瑞客论坛 www.ruike1.com】.pdf](<./file/04_持久化_mysql【瑞客论坛 www.ruike1.com】_OKZOou7JNf.pdf> "04_持久化_mysql【瑞客论坛 www.ruike1.com】.pdf")
+[04\_持久化\_mysql【瑞客论坛 www.ruike1.com】.pdf](<./assets/file/04_持久化_mysql【瑞客论坛 www.ruike1.com】_OKZOou7JNf.pdf> "04_持久化_mysql【瑞客论坛 www.ruike1.com】.pdf")
 
-[mysql安装文档\_mac【瑞客论坛 www.ruike1.com】.pdf](<./file/mysql安装文档_mac【瑞客论坛 www.ruike1.com】_3Kdr1Xr-Ia.pdf> "mysql安装文档_mac【瑞客论坛 www.ruike1.com】.pdf")
+[mysql安装文档\_mac【瑞客论坛 www.ruike1.com】.pdf](<./assets/file/mysql安装文档_mac【瑞客论坛 www.ruike1.com】_3Kdr1Xr-Ia.pdf> "mysql安装文档_mac【瑞客论坛 www.ruike1.com】.pdf")
 
-[mysql安装文档\_windows【瑞客论坛 www.ruike1.com】.pdf](<./file/mysql安装文档_windows【瑞客论坛 www.ruike1.com】_fmWFxtM4qb.pdf> "mysql安装文档_windows【瑞客论坛 www.ruike1.com】.pdf")
+[mysql安装文档\_windows【瑞客论坛 www.ruike1.com】.pdf](<./assets/file/mysql安装文档_windows【瑞客论坛 www.ruike1.com】_fmWFxtM4qb.pdf> "mysql安装文档_windows【瑞客论坛 www.ruike1.com】.pdf")

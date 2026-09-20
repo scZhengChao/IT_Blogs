@@ -5,7 +5,7 @@
 
 其中**SM1、SM4、SM7、祖冲之密码（ZUC）是对称算法**；**SM2、SM9是非对称算法**；**SM3是**[**哈希算法**](https://so.csdn.net/so/search?q=哈希算法\&spm=1001.2101.3001.7020 "哈希算法")。目前，这些算法已广泛应用于各个领域中，期待有一天会有采用国密算法的区块链应用出现。
 
-![](./image/image_Oxmw1sPqGE.png)
+![](./assets/image/image_Oxmw1sPqGE.png)
 
 其中SM1、SM7算法不公开，调用该算法时，需要通过加密芯片的接口进行调用；比较少人了解这些算法，在这里对这些国密算法做简单的科普 &#x20;
 
@@ -31,7 +31,7 @@ SM2算法主要考虑素域Fp和F2m上的椭圆曲线，分别介绍了这两类
 
 SM2算法在很多方面都优于RSA算法（RSA发展得早应用普遍，SM2领先也很自然），与RSA安全性对比如下图
 
-![](./image/image_0QuEuStiH4.png)
+![](./assets/image/image_0QuEuStiH4.png)
 
 **3 SM3杂凑算法** &#x20;
 

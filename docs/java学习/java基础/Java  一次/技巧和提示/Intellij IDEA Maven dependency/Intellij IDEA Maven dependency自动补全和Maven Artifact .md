@@ -11,9 +11,9 @@ DEA 使用Maven开发过程中遇到两种问题：
 
 2、代码编写过程中，写新的类但是没有在pom.xml中添加依赖，可以ALT+Enter组合件选择 Add Maven Dependency (添加maven依赖)
 
-![](./image/image_9D_B2wchrz.png)
+![](<../assets/Intellij IDEA Maven dependency/image/image_9D_B2wchrz.png>)
 
-![](./image/image_QfVISsU-s2.png)
+![](<../assets/Intellij IDEA Maven dependency/image/image_QfVISsU-s2.png>)
 
 发现搜索的结果总是为空 (No results)
 
@@ -23,9 +23,9 @@ DEA 使用Maven开发过程中遇到两种问题：
 
 这也有一个曲线救国的方案，直接在  maven仓库中搜索：[https://mvnrepository.com](https://mvnrepository.com "https://mvnrepository.com") 并复制对应的依赖配置。
 
-![](./image/image_AF1DUXR2WR.png)
+![](<../assets/Intellij IDEA Maven dependency/image/image_AF1DUXR2WR.png>)
 
-![](./image/image_y7HDZD0jrp.png)
+![](<../assets/Intellij IDEA Maven dependency/image/image_y7HDZD0jrp.png>)
 
 直接复制就可以在pom.xml里面粘贴
 
@@ -33,7 +33,7 @@ DEA 使用Maven开发过程中遇到两种问题：
 
 在settings ->Build ->Build Tools-->Maven -->Repositories
 
-![](./image/image_Ca4gMoV8o-.png)
+![](<../assets/Intellij IDEA Maven dependency/image/image_Ca4gMoV8o-.png>)
 
 没有更新过的Updated对应的值为Never
 
@@ -67,4 +67,4 @@ Maven依赖就可以自动提示补全了
 
 ![](https://i-blog.csdnimg.cn/blog_migrate/694255d730b24402e6660dec35bb66c8.png)
 
-![](./image/image_MVb4cgoVlj.png)
+![](<../assets/Intellij IDEA Maven dependency/image/image_MVb4cgoVlj.png>)

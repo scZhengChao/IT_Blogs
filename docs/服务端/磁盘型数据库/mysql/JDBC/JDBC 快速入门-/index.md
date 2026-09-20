@@ -15,7 +15,7 @@ JDBC 快速入门
 
 # 0创建工程，导入驱动jar包
 
-![](./image/image_FSP3h5FynI.png)
+![](./assets/image/image_FSP3h5FynI.png)
 
 # 1.注册驱动
 

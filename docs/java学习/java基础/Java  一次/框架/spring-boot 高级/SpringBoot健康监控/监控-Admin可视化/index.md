@@ -132,4 +132,4 @@ management:
 
 3、启动服务，访问admin Server [http://localhost:9999/](http://localhost:9999/ "http://localhost:9999/")
 
-![](./image/image_GX-1vfjedH.png)
+![](./assets/image/image_GX-1vfjedH.png)

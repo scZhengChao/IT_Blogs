@@ -29,13 +29,13 @@ ssh -XY root@192.168.4.21
 
 ping 命令用于检测主机。执行 ping 指令会使用 ICMP 传输协议，发出要求回应的信息，若远端主机的网络功能没有问题，就会回应该信息，因而得知该主机运作正常。
 
-![](./image/image_I_367_0OHC.png)
+![](./assets/image/image_I_367_0OHC.png)
 
 ### 5. man
 
 man 命令用来查看Linux命令的使用手册，例如执行 man clear：
 
-![](./image/image_4amUKcFO4l.png)
+![](./assets/image/image_4amUKcFO4l.png)
 
 ### 6. wc
 

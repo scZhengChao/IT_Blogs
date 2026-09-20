@@ -200,4 +200,4 @@ useCallback 第二个参数必须写，
 
 不敢苟同；官网也明确说了；对于传给经过优化，并使用引用相等性的子组件非常有效memo
 
-![  ](./image/e7170eb3df06830e8986ef438a63d772_2opnaPr6UH.png "  ")
+![  ](./assets/image/e7170eb3df06830e8986ef438a63d772_2opnaPr6UH.png "  ")

@@ -27,7 +27,7 @@ var w io.Writer
 
 在Go语言中，变量总是被一个定义明确的值初始化，**即使接口类型也不例外。对于一个接口的零值就是它的类型和值的部分都是nil（图7.1）。**
 
-![](./image/image_FDh16AtXaH.png)
+![](./assets/image/image_FDh16AtXaH.png)
 
 一个接口值基于它的动态类型被描述为空或非空，所以这是一个空的接口值。你可以通过使用w==nil或者w!=nil来判断接口值是否为空。调用一个空接口值上的任意方法都会产生panic:
 
@@ -47,7 +47,7 @@ w = os.Stdout
 
 **这个赋值过程调用了一个具体类型到接口类型的隐式转换**，这和显式的使用io.Writer(os.Stdout)是等价的。这类转换不管是显式的还是隐式的，**都会刻画出操作到的类型和值**。这个接口值的动态类型被设为`*os.File`指针的类型描述符，**它的动态值持有os.Stdout的拷贝；** 这是一个代表处理标准输出的os.File类型变量的指针（图7.2）。
 
-![](./image/image_MRNQMD0AGD.png)
+![](./assets/image/image_MRNQMD0AGD.png)
 
 调用一个包含`*os.File`类型指针的接口值的Write方法，使得`(*os.File).Write`方法被调用。这个调用输出“hello”。
 
@@ -75,7 +75,7 @@ w = new(bytes.Buffer)
 
 现在动态类型是\*bytes.Buffer并且动态值是一个指向新分配的缓冲区的指针（图7.3）。
 
-![](./image/image_IixMsTeKLO.png)
+![](./assets/image/image_IixMsTeKLO.png)
 
 Write方法的调用也使用了和之前一样的机制：
 
@@ -107,7 +107,7 @@ var x interface{} = time.Now()
 
 结果可能和图7.4相似。从概念上讲，**不论接口值多大，动态值总是可以容下它。**（这只是一个概念上的模型；具体的实现可能会非常不同）
 
-![](./image/image_7og0MB0tNS.png)
+![](./assets/image/image_7og0MB0tNS.png)
 
 **接口值可以使用==和!＝来进行比较。** ​**两个接口值相等仅当它们都是nil值**，**或者它们的动态类型相同并且动态值也根据这个动态类型的==操作相等**。因为接口值是可比较的，所以它们可以用在map的键或者作为switch语句的操作数。
 
@@ -180,7 +180,7 @@ if out != nil {
 
 当main函数调用函数f时，它给f函数的out参数赋了一个*bytes.Buffer的空指针* *，* \***所以out的动态值是nil。然而，它的动态类型是\*****bytes.Buffer**，**意思就是out变量是一个包含空指针值的非空接口**（如图7.5）**，所以防御性检查out!=nil的结果依然是true。**
 
-![](./image/image_qkBgyPc1vg.png)
+![](./assets/image/image_qkBgyPc1vg.png)
 
 \*\*动态分配机制依然决定(*****bytes.Buffer).Write的方法会被调用，但是这次的接收者的值是nil****。\*\*对于一些如*os.File的类型，nil是一个有效的接收者（§6.2.1），但是\*bytes.Buffer类型不在这些种类中。这个方法会被调用，但是当它尝试去获取缓冲区时会发生panic。
 

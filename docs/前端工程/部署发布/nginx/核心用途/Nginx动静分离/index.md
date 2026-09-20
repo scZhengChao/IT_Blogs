@@ -2,7 +2,7 @@
 
 动静分离应该是听的次数较多的性能优化方案，那先思考一个问题：**「「为什么需要做动静分离呢？它带来的好处是什么？」」** 其实这个问题也并不难回答，当你搞懂了网站的本质后，自然就理解了动静分离的重要性。先来以淘宝为例分析看看：
 
-![](./image/image_KTlpih6Q18.png)
+![](./assets/image/image_KTlpih6Q18.png)
 
 当浏览器输入`www.taobao.com`访问淘宝首页时，打开开发者调试工具可以很明显的看到，首页加载会出现`100+`的请求数，而正常项目开发时，静态资源一般会放入到`resources/static/`目录下：
 
@@ -42,7 +42,7 @@ location ~ .*\.(html|htm|gif|jpg|jpeg|bmp|png|ico|txt|js|css){
 
 然后照常启动nginx和移除了静态资源的WEB服务，你会发现原本的样式、js效果、图片等依旧有效，如下：
 
-![](./image/image_FYv30W3XQo.png)
+![](./assets/image/image_FYv30W3XQo.png)
 
 其中`static`目录下的`nginx_style.css`文件已被移除，但效果依旧存在（绿色字体+蓝色大边框)：
 

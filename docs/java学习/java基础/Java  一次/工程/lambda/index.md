@@ -10,13 +10,13 @@
 
 > 作用：**简化程序中匿名内部类的书写**
 
-![](./image/image_vHcDV5AQAQ.png)
+![](./assets/image/image_vHcDV5AQAQ.png)
 
 # 函数式编程
 
 在数学中 \*\*，函数就是有输入量、输出量的一套计算方案，也就是“拿数据做操作”\*\*面向对象思想强调“必须通过对象的形式来做事情”函数式思想则尽量忽略面向对象的复杂语法：“强调做什么，而不是以什么形式去做”而我们要学习的Lambda表达式就是函数式思想的体现
 
-![](./image/image_wXNGuwTYOw.png)
+![](./assets/image/image_wXNGuwTYOw.png)
 
 [函数式接口](./函数式接口/index.md "函数式接口")
 

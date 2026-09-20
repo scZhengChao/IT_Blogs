@@ -4,11 +4,11 @@
 
 - [配置](#配置)
 
-[09\_ts项目架构【瑞客论坛 www.ruike1.com】.pdf](<./file/09_ts项目架构【瑞客论坛 www.ruike1.com】_5FqrkD5e-l.pdf> "09_ts项目架构【瑞客论坛 www.ruike1.com】.pdf")
+[09\_ts项目架构【瑞客论坛 www.ruike1.com】.pdf](<./assets/file/09_ts项目架构【瑞客论坛 www.ruike1.com】_5FqrkD5e-l.pdf> "09_ts项目架构【瑞客论坛 www.ruike1.com】.pdf")
 
-[09\_装饰器【瑞客论坛 www.ruike1.com】.pdf](<./file/09_装饰器【瑞客论坛 www.ruike1.com】_qN604xbDMD.pdf> "09_装饰器【瑞客论坛 www.ruike1.com】.pdf")
+[09\_装饰器【瑞客论坛 www.ruike1.com】.pdf](<./assets/file/09_装饰器【瑞客论坛 www.ruike1.com】_qN604xbDMD.pdf> "09_装饰器【瑞客论坛 www.ruike1.com】.pdf")
 
-[补充材料【瑞客论坛 www.ruike1.com】.pdf](<./file/补充材料【瑞客论坛 www.ruike1.com】_ZdRZOFfx1-.pdf> "补充材料【瑞客论坛 www.ruike1.com】.pdf")
+[补充材料【瑞客论坛 www.ruike1.com】.pdf](<./assets/file/补充材料【瑞客论坛 www.ruike1.com】_ZdRZOFfx1-.pdf> "补充材料【瑞客论坛 www.ruike1.com】.pdf")
 
 类   class
 
@@ -191,6 +191,6 @@ demo  重点理解思想 ； 理解装饰器的作用；极大的简化了开�
 
 实战：
 
-[09.7z](./file/09_6MOxG03j95.7z "09.7z")
+[09.7z](./assets/file/09_6MOxG03j95.7z "09.7z")
 
-[ts-decorate.7z](./file/ts-decorate_ap7priO2u9.7z "ts-decorate.7z")
+[ts-decorate.7z](./assets/file/ts-decorate_ap7priO2u9.7z "ts-decorate.7z")

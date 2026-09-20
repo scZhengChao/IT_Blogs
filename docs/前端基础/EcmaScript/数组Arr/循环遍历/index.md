@@ -151,7 +151,7 @@ ary.map(function(elem) {
 
 > array.map(function(currentValue,index,arr), thisValue)
 
-![](./image/image_NnYj_6Vthp.png)
+![](./assets/image/image_NnYj_6Vthp.png)
 
 # **filter**
 

@@ -30,7 +30,7 @@
 ```
 
 
-![](<./image/640 (2)_LPKrDyasJ9.gif>)
+![](<./assets/image/640 (2)_LPKrDyasJ9.gif>)
 
 # position
 

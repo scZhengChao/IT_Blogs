@@ -12,7 +12,7 @@
 
 图是由若干个顶点和边组成&#x20;
 
-![  ](./image/b3ec79a1e5312dc4174927e6658ef893_xedK_GwLch.webp "  ")
+![  ](./assets/image/b3ec79a1e5312dc4174927e6658ef893_xedK_GwLch.webp "  ")
 
 ## 分类&#x20;
 
@@ -38,11 +38,11 @@
 
 ### 邻接矩阵
 
-![  ](./image/70174a93e3c4fa039bdcf130e11b65bc_qvUlIFPkgz.webp "  ")
+![  ](./assets/image/70174a93e3c4fa039bdcf130e11b65bc_qvUlIFPkgz.webp "  ")
 
 ### 邻接链表
 
-![  ](./image/e4e31a003a4f89a03a699467817ceb72_13VPKJiobc.webp "  ")
+![  ](./assets/image/e4e31a003a4f89a03a699467817ceb72_13VPKJiobc.webp "  ")
 
 ## 遍历&#x20;
 

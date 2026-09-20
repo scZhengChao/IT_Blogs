@@ -48,7 +48,7 @@
 
 这里重绘参考来源中的一张图：（参考来源第一篇）
 
-![](./image/image_Jn_JhA4LJW.png)
+![](./assets/image/image_Jn_JhA4LJW.png)
 
 ### load事件与DOMContentLoaded事件的先后
 
@@ -99,7 +99,7 @@
 
 如下图。可以验证上述的说法
 
-![](./image/image_W3WOMyUHRB.png)
+![](./assets/image/image_W3WOMyUHRB.png)
 
 #### 如何变成复合图层（硬件加速）
 

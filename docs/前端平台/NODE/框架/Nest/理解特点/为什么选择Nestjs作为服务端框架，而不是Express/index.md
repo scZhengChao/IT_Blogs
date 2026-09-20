@@ -63,7 +63,7 @@ NestJS 采用了 AOP 的概念，尤其是通过其提供的**拦截器（Interc
 
 我们先从一个大的概念来开始讲起，我们在前端发起一个 HTTP 网络请求，它首先会经过 Controller（控制器）、Services（服务）、Repository（数据接入） 的逻辑，它的主要流程如下图所示：
 
-![](./image/image_181bpASKjD.png)
+![](./assets/image/image_181bpASKjD.png)
 
 当获取到数据库中的数据之后，我们又通过了 Services 返回数据到 Controller 并最终返回到前端。在这里如果你想在这个调用链路里加入一些通用逻辑，我们可以在这个执行流程中加入不同的逻辑，这个就是 AOP 给我们带来的好处。
 

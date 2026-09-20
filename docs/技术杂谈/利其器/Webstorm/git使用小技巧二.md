@@ -54,7 +54,7 @@
 
 在弹出框中输入新的分支名，点`CREATE`即可，如下图所示，我们给新分支起名为`AddMenu`
 
-![](../image/image_rAs3dqyowj.png)
+![](../../../assets/技术杂谈/利其器/image/image_rAs3dqyowj.png)
 
 按照上述步骤操作即可完成一个新分支的创建。
 
@@ -62,7 +62,7 @@
 
 创建完车后，我们可能还需要将这个分支推到远程仓库，我们在创建好的分支上右键选择`Push...`即可。
 
-![](../image/image_6GJKuUTGsY.png)
+![](../../../assets/技术杂谈/利其器/image/image_6GJKuUTGsY.png)
 
 ### 拉取分支
 
@@ -70,7 +70,7 @@
 
 例如，我们想选中`github_page`分支：
 
-![](../image/image_kz0trr4xnJ.png)
+![](../../../assets/技术杂谈/利其器/image/image_kz0trr4xnJ.png)
 
 选择后，你会看到如下图所示的提示。
 
@@ -80,7 +80,7 @@
 
 当我们将需求开发完成，测试通过后，就需要将分支合并到dev去了，在这套内置工具中，我们**只需要切换分支到dev**，然后**再需要合并的分支上右键**选择`Merge into Current`即可。
 
-![](../image/image_9fXlz4H3UH.png)
+![](../../../assets/技术杂谈/利其器/image/image_9fXlz4H3UH.png)
 
 如果有冲突的文件，则需要解决下冲突，如下所示：
 
@@ -89,7 +89,7 @@
   - 序号2标注 使用合并分支的文件
   - 序号3标注 比对两个版本的文件差异，解决冲突
 
-![](../image/image_DjTv_k2LUv.png)
+![](../../../assets/技术杂谈/利其器/image/image_DjTv_k2LUv.png)
 
 如果你选择了序号3标注的按钮，将看到如下所示的界面：
 
@@ -142,7 +142,7 @@
 
 我们只需在项目树上右键，选择`Git - Stash Changes...`即可将更改暂存，如下图所示：
 
-![](../image/image_6ivUtpUaW2.png)
+![](../../../assets/技术杂谈/利其器/image/image_6ivUtpUaW2.png)
 
 在弹出的窗口中填写保存信息。
 
@@ -158,7 +158,7 @@
 
 我们只需在`Git`面板中，选中要回退的git版本，右键选择`Reset Current Branch to Here...`即可
 
-![](../image/image_xe1Zdahq41.png)
+![](../../../assets/技术杂谈/利其器/image/image_xe1Zdahq41.png)
 
 在弹出的菜单中选择`Hard`选项即可。
 
@@ -176,8 +176,8 @@
 
 如下所示，我们需要将`AddMenu`分支的两个提交合并到`dev`分支：
 
-![](../image/image_o9Q7Yq13-C.png)
+![](../../../assets/技术杂谈/利其器/image/image_o9Q7Yq13-C.png)
 
 最后，我们切换到dev分支即可看到合并过来的两个提交，如下所示：
 
-![](../image/image_sVUPlaMlCJ.png)
+![](../../../assets/技术杂谈/利其器/image/image_sVUPlaMlCJ.png)

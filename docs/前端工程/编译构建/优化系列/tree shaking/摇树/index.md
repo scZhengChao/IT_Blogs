@@ -173,11 +173,11 @@ if (this.state.sortBy === "model") {
 
 现在，我们已经完成了摇树所需的工作。以下是进行摇树优化之前的 webpack 输出：
 
-![](./image/image_NI8E2ZQpY1.png)
+![](./assets/image/image_NI8E2ZQpY1.png)
 
 **下面是进行摇树优化后的输出：**
 
-![](./image/image_jjZkalwg2D.png)
+![](./assets/image/image_jjZkalwg2D.png)
 
 \*\*两个捆绑包都缩小了，不过 ****`main`**** 捆绑包的缩小幅度更大。通过去掉 ****`utils`**** 模块的未使用部分，我们已经设法从这个****捆绑中砍掉****了大约`60％`\*\***的代码。这不仅可以缩短脚本下载所需的时间，还可以缩短处理脚本的时间。**
 

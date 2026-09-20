@@ -18,7 +18,7 @@ npm install @wangeditor/editor --save
 
 [   https://www.wangeditor.com/](https://www.wangeditor.com/ "   https://www.wangeditor.com/")
 
-![](./image/image_7qGQ7eE6TG.png)
+![](./assets/image/image_7qGQ7eE6TG.png)
 
 ## React
 

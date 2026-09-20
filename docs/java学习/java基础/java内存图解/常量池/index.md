@@ -127,7 +127,7 @@ Java常量池通过**享元模式实现了高效的内存管理**，这是Java�
 
 **除了float 和 double。；**其余的都可**以应用对象常量池的概念**
 
-![](./image/image_eNLeZpfDDs.png)
+![](./assets/image/image_eNLeZpfDDs.png)
 
 ```java 
 Double d1 = Double.valueOf(100);

@@ -17,17 +17,17 @@ MyBatis&#x20;
 
 # 资料
 
-[MyBatis.pptx](./file/MyBatis_EVpaD550HO.pptx "MyBatis.pptx")
+[MyBatis.pptx](./assets/file/MyBatis_EVpaD550HO.pptx "MyBatis.pptx")
 
-[MyBatis配置文件和映射文件笔记.md](./file/MyBatis配置文件和映射文件笔记_SbTCqFqdIU.md "MyBatis配置文件和映射文件笔记.md")
+[MyBatis配置文件和映射文件笔记.md](./assets/file/MyBatis配置文件和映射文件笔记_SbTCqFqdIU.md "MyBatis配置文件和映射文件笔记.md")
 
-[MyBatis-1.pptx](./file/MyBatis-1_TMYedP6jZ4.pptx "MyBatis-1.pptx")
+[MyBatis-1.pptx](./assets/file/MyBatis-1_TMYedP6jZ4.pptx "MyBatis-1.pptx")
 
-[Mybatis-2.pptx](./file/Mybatis-2_dleKj8UrPN.pptx "Mybatis-2.pptx")
+[Mybatis-2.pptx](./assets/file/Mybatis-2_dleKj8UrPN.pptx "Mybatis-2.pptx")
 
 # 案例代码
 
-[mybatis\_day01.zip](./file/mybatis_day01_3kZniyo1_N.zip "mybatis_day01.zip")
+[mybatis\_day01.zip](./assets/file/mybatis_day01_3kZniyo1_N.zip "mybatis_day01.zip")
 
 ```markdown 
 Mybatis项目工程：

@@ -8,7 +8,7 @@
 
 这个操作符光从简介来看不太好理解，我们来结合实例进行讲解吧。
 
-![](./image/image_lwvslHaJKy.png)
+![](./assets/image/image_lwvslHaJKy.png)
 
 ```javascript 
 const s1 = Rx.Observable.interval(2000).take(3);

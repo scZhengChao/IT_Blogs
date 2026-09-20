@@ -23,7 +23,7 @@ shouldComponentUpdate方法
 
 是否可以不用调用呢？通过合理地规划组件粒度，可以做到：
 
-![  ](./image/1356058faca64d0d05fb8b36180090b7_k3S-SrG1bk.png "  ")
+![  ](./assets/image/1356058faca64d0d05fb8b36180090b7_k3S-SrG1bk.png "  ")
 
 输入信息时触发变化的text这个state值，被下放到AddItem组件来管理，因此不会导致兄弟组件（TodoItem）的重新渲染。&#x20;
 
@@ -48,7 +48,7 @@ Immutable 实现的原理是 Persistent Data Structure（持久化数据结构
 
 一图胜千言：
 
-![  ](./image/2b4c801a7b40eefcd4ee6767fb984fdf_ypttyWSqex.gif "  ")
+![  ](./assets/image/2b4c801a7b40eefcd4ee6767fb984fdf_ypttyWSqex.gif "  ")
 
 ## 二、如何使用
 

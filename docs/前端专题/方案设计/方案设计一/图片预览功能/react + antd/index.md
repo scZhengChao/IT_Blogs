@@ -167,4 +167,4 @@ multimediaPreview({
 ```
 
 
-![](./image/image_Vo78YE4VWu.png)
+![](./assets/image/image_Vo78YE4VWu.png)

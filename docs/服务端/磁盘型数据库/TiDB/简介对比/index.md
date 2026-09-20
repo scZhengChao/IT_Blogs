@@ -18,7 +18,7 @@ TiDB
 
 在系统设计之初，基于对数据量的预估以及简化实现方案考虑，我们选用了高可用的 MySQL RDS 存储方案，当时的匹配逻辑主要通过 SQL 语句来实现，包含了很多联表查询和聚合操作。当数据量在千万级别左右，系统运行良好，基本响应还在一分钟内。
 
-![  ](./image/5f9a7b98e0e37f4e5477eaa50b9ae159_btkzCeuZER.png "  ")
+![  ](./assets/image/5f9a7b98e0e37f4e5477eaa50b9ae159_btkzCeuZER.png "  ")
 
 ## **遭遇瓶颈，寻找解决方案**
 
@@ -46,11 +46,11 @@ GaeaAD 系统从 2016 年 10 月上线以来，已经稳定运行了一季度多
 
 ：
 
-![  ](./image/777caaeb4386ed671cfe761e895340e6_EJgx9bD_cO.png "  ")
+![  ](./assets/image/777caaeb4386ed671cfe761e895340e6_EJgx9bD_cO.png "  ")
 
 用 3 个节点组成的 TiDB 集群替换了原先的高可用 MySQL RDS 后，同样数据量级下，单次匹配平均耗时从 2 分钟以上降到了 30 秒左右，后续随着 TiDB 工程师的持续优化，达到了10 秒左右。另外，我们发现，TiDB 在数据规模越大的情况下，对比 MySQL 的优势就越明显，应该是 TiDB 自研的分布式 SQL 优化器带来的优势。不过在数据量比较轻量的情况下，因内部通信成本，优势相比 MySQL 并不明显。
 
-![  ](./image/e20a57ba4d4d2a5fabdd194ff4185e93_WHUpW31BN8.png "  ")
+![  ](./assets/image/e20a57ba4d4d2a5fabdd194ff4185e93_WHUpW31BN8.png "  ")
 
 TiDB 与 MySQL 在不同数据量下的查询时间对比
 

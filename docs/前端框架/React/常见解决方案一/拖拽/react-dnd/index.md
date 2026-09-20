@@ -217,11 +217,11 @@ export default TargetBox;
 
 1. drag上的monitor上的方法
 
-![](./image/image_tI22TRmJkF.png)
+![](./assets/image/image_tI22TRmJkF.png)
 
 1. drop上的monitor上的方法
 
-![](./image/image_F-NJ1IDYN6.png)
+![](./assets/image/image_F-NJ1IDYN6.png)
 
 ## 三、效果图
 

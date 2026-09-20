@@ -38,4 +38,4 @@
 
 \*\* 注意看报错信息这个很重要；把node.binding 放在他的指定位置\*\*​
 
-![  ](./image/9272ed9a24f70a0e1990646247bf68f4_HPK7brdFta.png "  ")
+![  ](./assets/image/9272ed9a24f70a0e1990646247bf68f4_HPK7brdFta.png "  ")

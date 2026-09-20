@@ -15,7 +15,7 @@ Rsbuild 是由[**Rspack**](https://rspack.rs/zh/ "Rspack")驱动的高性能构�
 
 Rsbuild 提供[**丰富的构建功能**](https://rsbuild.rs/zh/guide/start/features "丰富的构建功能")，包括编译 TypeScript、JSX、Sass、Less、CSS Modules、Wasm，以及其他资源，也支持模块联邦、图片压缩、类型检查、PostCSS、Lightning CSS 等功能。
 
-![](./image/image_o-9U2CWny0.png)
+![](./assets/image/image_o-9U2CWny0.png)
 
 ## 对比其他工具
 

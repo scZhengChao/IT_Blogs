@@ -2,7 +2,7 @@
 
 > 磁盘： **是一块连续存储的介质**;  分盘只是逻辑上的处理；其实也还是一块磁盘；
 
-![](./image/image_M4L_IDkBsc.png)
+![](./assets/image/image_M4L_IDkBsc.png)
 
 [File](IT/服务端/java学习/java基础/Java%20%20一次/IO-/File/File.md "File")
 

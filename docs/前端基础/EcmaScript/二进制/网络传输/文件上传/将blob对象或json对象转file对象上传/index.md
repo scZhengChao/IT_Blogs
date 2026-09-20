@@ -60,7 +60,7 @@ let data = {
 
 获取json文件返回的数据
 
-![](./image/image_Ruu9inbRsE.png)
+![](./assets/image/image_Ruu9inbRsE.png)
 
 #### 以下为项目实际封装需求：
 

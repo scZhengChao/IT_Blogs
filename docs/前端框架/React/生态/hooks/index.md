@@ -1,6 +1,6 @@
 # hooks
 
-![](./image/image_OdELe-wUm8.png)
+![](./assets/image/image_OdELe-wUm8.png)
 
 [方案](IT/前端框架/React/生态/hooks/方案/方案.md "方案")
 

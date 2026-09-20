@@ -23,7 +23,7 @@
 
 底层网络 `Underlay Network` 顾名思义是指**网络设备基础设施**，如交换机，路由器, `DWDM` 使用**网络介质**将其链接成的**物理网络拓扑**，**负责网络之间的数据包传输。**
 
-![](./image/image_arSQInwUEG.png)
+![](./assets/image/image_arSQInwUEG.png)
 
 Underlay network topology
 
@@ -35,7 +35,7 @@ Underlay network topology
 
 在 kubernetes 中，`underlay network` 中比较典型的例子是通过将**宿主机作为路由器设备**，Pod 的网络则通过**学习路由条目**从而实现**跨节点通讯。**
 
-![](./image/image_zJ1rBxYUx9.png)
+![](./assets/image/image_zJ1rBxYUx9.png)
 
 underlay network topology in kubernetes
 
@@ -45,7 +45,7 @@ underlay network topology in kubernetes
 
 `flannel host-gw` 模式中每个 Node 需要在同一个二层网络中，并将\*\* Node 作为一个路由器\*\*，跨节点通讯将通过**路由表方式**进行，这样方式下将网络模拟成一个`underlay network`。
 
-![](./image/image_Ceidkwr9qE.png)
+![](./assets/image/image_Ceidkwr9qE.png)
 
 layer2 ethernet topology
 
@@ -55,13 +55,13 @@ layer2 ethernet topology
 
 BGP（`Border Gateway Protocol`）是去中心化**自治路由协议**。它是通过维护\*\* IP 路由表**或`前缀`表来实现 AS （`Autonomous System`）之间的可访问性，属于**向量路由协议 \*\*。
 
-![](./image/image_NFKuoi3xgL.png)
+![](./assets/image/image_NFKuoi3xgL.png)
 
 与 `flannel` 不同的是，`Calico` 提供了的 `BGP` 网络解决方案，在网络模型上，`Calico` 与 `Flannel host-gw` 是近似的，但在软件架构的实现上，`flannel` 使用 `flanneld` 进程来维护路由信息；而 `Calico` 是包含多个守护进程的，其中 `Brid` 进程是一个 `BGP` 客户端与路由反射器(`Router Reflector`)，`BGP` 客户端负责从 `Felix` 中获取路由并分发到其他 `BGP Peer`，而反射器在 BGP 中起了优化的作用。
 
 在同一个 IBGP 中，BGP 客户端仅需要和一个 `RR` 相连，这样减少了`AS`内部维护的大量的 BGP 连接。通常情况下，`RR` 是真实的路由设备，而 `Bird` 作为 `BGP` 客户端工作。
 
-![](./image/image_JHVThivWDf.png)
+![](./assets/image/image_JHVThivWDf.png)
 
 ### IPVLAN & MACVLAN
 
@@ -69,7 +69,7 @@ BGP（`Border Gateway Protocol`）是去中心化**自治路由协议**。它是
 
 &#x20;    因为是网卡虚拟化技术，而不是网络虚拟化技术，本质上来说属于 `Overlay network`，这种方式在虚拟化环境中与 `Overlay network` 相比最大的特点就是可以将 Pod 的网络拉平到 Node 网络同级，从而提供更高的性能、低延迟的网络接口。本质上来说其网络模型属于下图中第二个。
 
-![](./image/image_icaz1PLcOT.png)
+![](./assets/image/image_icaz1PLcOT.png)
 
 - 虚拟网桥：创建一个虚拟网卡对(veth pair)，一头在容器内，一头在宿主机的 root namespaces 内。这样一来容器内发出的数据包可以通过网桥直接进入宿主机网络栈，而发往容器的数据包也可以经过网桥进入容器。
 - 多路复用：使用一个中间网络设备，暴露多个虚拟网卡接口，容器网卡都可以介入这个中间设备，并通过 MAC/IP 地址来区分 packet 应该发往哪个容器设备。
@@ -89,7 +89,7 @@ BGP（`Border Gateway Protocol`）是去中心化**自治路由协议**。它是
 - VF 是主机的物理端口 `ens2f0` 的实例化。这是英特尔 X710-DA4 上的一个端口。在 Pod 端的 VF 接口名称为 `south0` 。
 - 这个 VF 使用了 DPDK 驱动程序，此 VF 是从主机的物理端口 `ens2f1` 实例化出的。这个是英特尔 ® X710-DA4 上另外一个端口。Pod 内的 VF 接口名称为 `north0`。该接口绑定到 DPDK 驱动程序 `vfio-pci` 。
 
-![](./image/image_zxzr5GSsph.png)
+![](./assets/image/image_zxzr5GSsph.png)
 
 Mutus networking Architecture overlay and SR-IOV
 
@@ -102,7 +102,7 @@ Mutus networking Architecture overlay and SR-IOV
 
 于此同时，也可以将主机接口直接移动到 Pod 的网络名称空间，当然这个接口是必须存在，并且不能是与默认网络使用同一个接口。这种情况下，在普通网卡的环境中，就直接将 Pod 网络与 Node 网络处于同一个平面内了。
 
-![](./image/image_o9mGd1YyKh.png)
+![](./assets/image/image_o9mGd1YyKh.png)
 
 Mutus networking Architecture overlay and ipvlan
 
@@ -116,7 +116,7 @@ DANM 是诺基亚开源的 CNI 项目，目的是将电信级网络引入 kubern
 
 叠加网络是使用网络虚拟化技术，在 `underlay` 网络上构建出的虚拟逻辑网络，而无需对物理网络架构进行更改。本质上来说，`overlay network` 使用的是一种或多种隧道协议 (`tunneling`)，通过将数据包封装，实现一个网络到另一个网络中的传输，具体来说隧道协议关注的是数据包（帧）。
 
-![](./image/image_Lyytth6834.png)
+![](./assets/image/image_Lyytth6834.png)
 
 ### 常见的网络隧道技术
 
@@ -129,15 +129,15 @@ DANM 是诺基亚开源的 CNI 项目，目的是将电信级网络引入 kubern
 
 `IP in IP` 也是一种隧道协议，与 `VxLAN` 类似的是，`IPIP` 的实现也是通过 Linux 内核功能进行的封装。`IPIP` 需要内核模块 `ipip.ko` 使用命令查看内核是否加载 IPIP 模块`lsmod | grep ipip` ；使用命令`modprobe ipip` 加载。
 
-![](./image/image_HqtTcrFL52.png)
+![](./assets/image/image_HqtTcrFL52.png)
 
 Kubernetes 中 `IPIP` 与 `VxLAN` 类似，也是通过网络隧道技术实现的。与 `VxLAN` 差别就是，`VxLAN` 本质上是一个 UDP 包，而 `IPIP` 则是将包封装在本身的报文包上。
 
-![](./image/image_Q62gmHPNBL.png)
+![](./assets/image/image_Q62gmHPNBL.png)
 
 IPIP in kubernetes
 
-![](./image/image_YwyZm5SB6M.png)
+![](./assets/image/image_YwyZm5SB6M.png)
 
 IPIP packet with wireshark unpack
 

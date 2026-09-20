@@ -42,31 +42,31 @@
 
 )
 
-![  ](./image/webp_7ZL4NSkuOE.webp "  ")
+![  ](./assets/image/webp_7ZL4NSkuOE.webp "  ")
 
-![  ](./image/9e74e7e3de210d3aaf0a6e87e158fdbc_9hBfUUywAb.png "  ")
+![  ](./assets/image/9e74e7e3de210d3aaf0a6e87e158fdbc_9hBfUUywAb.png "  ")
 
 将所必填的信息填写完整，应用名称以及中英文（英文是选填的）的信息，移动应用图标分别为28x28何108x108的png格式图标。
 
-![  ](./image/10fbdacd177370ecdde67609459e85bb_vGWqUMQUDa.png "  ")
+![  ](./assets/image/10fbdacd177370ecdde67609459e85bb_vGWqUMQUDa.png "  ")
 
 继续点击下一步填写iOS项目的bundle ID以及android项目的包名和应用签名。请注意应用签名获取需要安装一下获取签名信息的APK包，同时你的android应用也需要打包以后安装在手机上面，这样再去获取。具体获取方式见下面的图
 
-![  ](./image/79b4176902f5db8f70d0ea66e0458944_Myle4D7ebU.png "  ")
+![  ](./assets/image/79b4176902f5db8f70d0ea66e0458944_Myle4D7ebU.png "  ")
 
 下载获取第三方应用的签名信息apk
 
-![  ](./image/7f2247d7c33cf75b15731e5daba3433b_-j2iuEJTmy.png "  ")
+![  ](./assets/image/7f2247d7c33cf75b15731e5daba3433b_-j2iuEJTmy.png "  ")
 
 下载安装上面的签名信息包apk,然后在上面输入android项目的包名，点击获取签名信息
 
 android项目的包名路径:android/app/build.gradle中的applicationId标签数据。
 
-![  ](./image/webp_hKPO9i7J9k.webp "  ")
+![  ](./assets/image/webp_hKPO9i7J9k.webp "  ")
 
 把上面的签名信息填写到下面的网页上面,点击提交审核即可。然后就是等待吧，官方说是7个工作日，不过一般也就是几个小时就可以通过审核了吧。
 
-![  ](./image/b6b59fc58a9ebe3aee31c78761842c5e_QxiGTYPD4Q.png "  ")
+![  ](./assets/image/b6b59fc58a9ebe3aee31c78761842c5e_QxiGTYPD4Q.png "  ")
 
 # 安装配置
 
@@ -116,7 +116,7 @@ new WeChatPackage()
 
 如下图所示：
 
-![  ](./image/webp_6o_V1tJRQG.webp "  ")
+![  ](./assets/image/webp_6o_V1tJRQG.webp "  ")
 
 创建名为'wxapi'的文件夹，并在文件夹内创建WXEntryActivity.java，用于获得微信的授权和分享权限。
 
@@ -222,25 +222,25 @@ react-native-wechat ios dependency
 
 本人不推荐自动配置，因为会报以下错误：
 
-![  ](./image/webp_FlGnzSjc0O.webp "  ")
+![  ](./assets/image/webp_FlGnzSjc0O.webp "  ")
 
 ## 接下来看手动配置方法：
 
 ### 1.点击Libraries右侧的ADD Files to
 
-![  ](./image/webp_qiregEfXQI.webp "  ")
+![  ](./assets/image/webp_qiregEfXQI.webp "  ")
 
 选择如下内容：
 
-![  ](./image/webp_pqcrHlOOC4.webp "  ")
+![  ](./assets/image/webp_pqcrHlOOC4.webp "  ")
 
 ### 2.在工程Build Phases ➜ Link Binary With Libraries中添加libRCTWeChat.a
 
-![  ](./image/webp_LEWtUYOWKt.webp "  ")
+![  ](./assets/image/webp_LEWtUYOWKt.webp "  ")
 
 ### 3.在工程target的Build Phases->Link Binary with Libraries中加入下面库文件：
 
-![  ](./image/webp_CvF0u4D5Zw.webp "  ")
+![  ](./assets/image/webp_CvF0u4D5Zw.webp "  ")
 
 SystemConfiguration.framework
 
@@ -254,11 +254,11 @@ libz
 
 ### 4.在TARGETS 下项目名 -> info ,添加我们申请得到的微信 AppId填写在 "URL type"的"URL Schema"处，ldentifier填写为：weixin
 
-![  ](./image/webp_NSBfj3XrP8.webp "  ")
+![  ](./assets/image/webp_NSBfj3XrP8.webp "  ")
 
 ### 5.iOS9 以上，添加 微信白名单
 
-![  ](./image/webp_00VQX4QGLW.webp "  ")
+![  ](./assets/image/webp_00VQX4QGLW.webp "  ")
 
 ### 6.在项目的AppDelegate.m添加以下代码，启动\[LinkingIOS]
 

@@ -4,7 +4,7 @@
 
 - [⼯作节点 - Node 架构](#作节点---Node-架构)
 
-![](./image/image_shR1Wt0AX8.png)
+![](./assets/image/image_shR1Wt0AX8.png)
 
 **每⼀个 Kubernetes 集群都是由⼀组 Master 节点和⼀系列的 Worker节点组成**
 

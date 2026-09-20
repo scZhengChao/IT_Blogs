@@ -1,6 +1,6 @@
 # 容器
 
-![](./image/image_A9LftLl0P7.png)
+![](./assets/image/image_A9LftLl0P7.png)
 
 容器保护三个状态：
 

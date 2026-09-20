@@ -1,8 +1,8 @@
 # STOMP
 
-[sockjs.js](./file/sockjs_l7mGR44k_a.js "sockjs.js")
+[sockjs.js](./assets/file/sockjs_l7mGR44k_a.js "sockjs.js")
 
-[stomp.js](./file/stomp_ex4vmElrDg.js "stomp.js")
+[stomp.js](./assets/file/stomp_ex4vmElrDg.js "stomp.js")
 
 ```纯文本 
  STOMP帧由命令， 一个或多个头信息、一个空行及负载（文本或字节）所组成；支持json，而底层websocket 是二进制：
@@ -70,4 +70,4 @@
 ```
 
 
-[testLib.rar](./file/testLib_pXiQAFYOhY.rar "testLib.rar")
+[testLib.rar](./assets/file/testLib_pXiQAFYOhY.rar "testLib.rar")

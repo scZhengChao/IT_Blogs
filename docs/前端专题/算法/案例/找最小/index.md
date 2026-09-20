@@ -9,7 +9,7 @@
 
 例如：下图中A，B，C三个矩形构成的矩形区域用黑线表示，需要计算黑线框矩形的位置和大小。
 
-![](./image/image_2iNvw6Uc7y.png)
+![](./assets/image/image_2iNvw6Uc7y.png)
 
 # 解法一
 

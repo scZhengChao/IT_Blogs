@@ -16,7 +16,7 @@ JMX是Java Management Extensions，它是一个Java平台的管理和监控接�
 
 因为JMX是一个标准接口，不但可以用于管理JVM，还可以管理应用程序自身。下图是JMX的架构：
 
-![](./image/image_jDzN7pDrFC.png)
+![](./assets/image/image_jDzN7pDrFC.png)
 
 JMX把**所有被管理的资源都称为MBean（Managed Bean），这些MBean全部由MBeanServer管理，如果要访问MBean，可以通过MBeanServer对外提供的访问接口，例如通过RMI或HTTP访问。**
 
@@ -214,7 +214,7 @@ public class BlacklistInterceptor implements HandlerInterceptor {
 
 在实际项目中，**通过JMX实现配置的实时更新其实并不常用，JMX更多地用于收集JVM的运行状态和应用程序的性能数据，然后通过监控服务器汇总数据后实现监控与报警。一个典型的监控系统架构如下：**
 
-![](./image/image_JsTli2hsYI.png)
+![](./assets/image/image_JsTli2hsYI.png)
 
 其中，**App自身和JVM的的统计数据都通过JMX收集并发送给本机的一个Agent**，Agent**再将数据发送至监控服务器，最后以可视化的形式将监控数据通过Web等形式展示给用户**。常用的监控**系统有开源的Prometheus和以云服务方式提供的DataDog等。**
 

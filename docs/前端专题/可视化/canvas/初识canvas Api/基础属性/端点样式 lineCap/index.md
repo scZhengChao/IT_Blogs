@@ -20,7 +20,7 @@
 
 下面的代码演示了三种`lineCap`值的效果：
 
-![](./image/image_t62qFpJCWR.png)
+![](./assets/image/image_t62qFpJCWR.png)
 
 ```html 
 <canvas id="canvas" width="400" height="150"></canvas>

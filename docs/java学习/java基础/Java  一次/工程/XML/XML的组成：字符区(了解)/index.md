@@ -27,7 +27,7 @@ CDATA (Character Data)字符数据区，格式如下：
 
 快捷模板：CD 回车
 
-![](./image/image_z4fRZkzoZs.png)
+![](./assets/image/image_z4fRZkzoZs.png)
 
 *注意：*
 

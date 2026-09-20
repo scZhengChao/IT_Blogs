@@ -29,7 +29,7 @@ FileWriter类 : 用来写入字符文件的便捷类
 - `public FileWriter(File file) `: 往指定的File路径中写入数据
 - `public FileWriter(String fileName`) : 往指定的String路径中写入数据
 
-![](./image/image_r5QOlTLMLe.png)
+![](./assets/image/image_r5QOlTLMLe.png)
 
 ```java 
 package com.China;
@@ -62,7 +62,7 @@ public class WriteDemo1 {
 
 `flush ;刷新流；把缓冲区的数据写入到文件`
 
-![](./image/image_FyqSkfgWY8.png)
+![](./assets/image/image_FyqSkfgWY8.png)
 
 # 字符输入流
 
@@ -77,7 +77,7 @@ public class WriteDemo1 {
 - `public FileReader(File file)` : 从指定的File路径中读取数据
 - &#x20; : 从指定的String路径中读取数据
 
-![](./image/image_Z58MHmIEf-.png)
+![](./assets/image/image_Z58MHmIEf-.png)
 
 ```java 
 

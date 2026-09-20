@@ -36,4 +36,4 @@ useMount(() => {
 
 效果：
 
-![](./image/image_Oz7lLjCX9z.png)
+![](./assets/image/image_Oz7lLjCX9z.png)

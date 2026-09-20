@@ -10,7 +10,7 @@
 
 ## 终端连接阿里云服务器
 
-![](./image/image__5tvnmCueq.png)
+![](./assets/image/image__5tvnmCueq.png)
 
 通过执行 `ssh root@121.42.11.34` 命令，然后输入服务器连接密码就可以顺利登陆远程服务器。从现在开始我们就可以在本地电脑操作远程服务器。
 

@@ -9,7 +9,7 @@
 
 ⽤**来控制 Pod 的具体状态和⾏为的，我们称为 Pod 控制器**。在 Kubernetes 中内建控制器有如下⼏种，它们的功能和特点各不相同。
 
-![](./image/image_RB7FWgTty1.png)
+![](./assets/image/image_RB7FWgTty1.png)
 
 ## 简单介绍
 
@@ -32,4 +32,4 @@ Kubernetes 建议使⽤ ReplicaSet 来取代 ReplicationController 来管理 Pod
 ReplicaSet简洁的管理pod，** 即：**Deployment管理ReplicaSet，ReplicaSet管理Pod。所以Deployment
 ⽐ReplicaSet功能更加强⼤。**
 
-![](./image/image_G7doK1NBSZ.png)
+![](./assets/image/image_G7doK1NBSZ.png)

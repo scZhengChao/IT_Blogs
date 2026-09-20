@@ -9,7 +9,7 @@
 
 我们来看一个具体的用户注册登录的例子。整个工程的结构如下：
 
-![](./image/image_vd5MLKvXh6.png)
+![](./assets/image/image_vd5MLKvXh6.png)
 
 首先，我们用Maven创建工程并引入`spring-context`依赖：
 

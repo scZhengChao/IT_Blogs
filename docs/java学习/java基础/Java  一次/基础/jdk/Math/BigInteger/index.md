@@ -23,4 +23,4 @@ public static void main(String[] args) {
 ```
 
 
-![](./image/image_CWRJkjlKQo.png)
+![](./assets/image/image_CWRJkjlKQo.png)

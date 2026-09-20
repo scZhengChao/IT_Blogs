@@ -49,7 +49,7 @@ export default SortableComponnet
 ```
 
 
-![](./image/image_MCcn4qxLqS.png)
+![](./assets/image/image_MCcn4qxLqS.png)
 
 ```react 
 

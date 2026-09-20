@@ -23,7 +23,7 @@ map.get("x"); // null
 
 `HashMap`之所以能根据`key`直接拿到`value`，原因是它内部通过空间换时间的方法，用一个大数组存储所有`value`，并根据key直接计算出`value`应该存储在哪个索引：
 
-![](./image/image_VAzkWxVY7F.png)
+![](./assets/image/image_VAzkWxVY7F.png)
 
 如果`key`的值为`"a"`，计算得到的索引总是`1`，因此返回`value`为`Person("Xiao Ming")`，如果`key`的值为`"b"`，计算得到的索引总是`5`，因此返回`value`为`Person("Xiao Hong")`，这样，就不必遍历整个数组，即可直接读取`key`对应的`value`。
 
@@ -189,7 +189,7 @@ map.put("b", new Person("Xiao Hong"));
 
 我们就假设`"a"`和`"b"`这两个`key`最终计算出的索引都是5，那么，在`HashMap`的数组中，**实际存储的不是一个**\*\*`Person`****实例，而是一个****`List`****，它包含两个****`Entry`****，一个是****`"a"`****的映射，一个是****`"b"`\*\***的映射：**
 
-![](./image/image_L0kQ43fxqH.png)
+![](./assets/image/image_L0kQ43fxqH.png)
 
 在查找的时候，例如：
 

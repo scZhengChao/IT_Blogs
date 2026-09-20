@@ -36,7 +36,7 @@
 
      版本（node）：
 
-![  ](./image/824226-20170904144658585-1875149549__guRAq_o1f.png "  ")
+![  ](<../assets/nodeJS（2）深了解： nodeJS 项目架构详解（ap/image/824226-20170904144658585-1875149549__guRAq_o1f.png> "  ")
 
 ## **新建 nodeJS 项目：**
 
@@ -45,7 +45,7 @@
 - 模板： EJS （2.5.5）
 - 获得文件目录如下：
 
-![  ](./image/824226-20170904145218585-1038173021_54tUsDIx7l.png "  ")
+![  ](<../assets/nodeJS（2）深了解： nodeJS 项目架构详解（ap/image/824226-20170904145218585-1038173021_54tUsDIx7l.png> "  ")
 
 其中重点文件/文件夹说明：
 
@@ -106,7 +106,7 @@ techNode：
 
 因为我的自生成的 package.json 文件在上面截图中已显示，此处不再重复，下面看下具体的 app.js， 以下是自生成的 app.js 文件，我添加了说明：
 
-![  ](./image/copycode_x792Et6H_K.gif "  ")
+![  ](<../assets/nodeJS（2）深了解： nodeJS 项目架构详解（ap/image/copycode_x792Et6H_K.gif> "  ")
 
 ```纯文本 
  var  express = require( ' express ' );     /* 重要： 不可少 */  var  path = require( ' path ' );   /*  重要：目录设置时，可使用其方法引用根目录， 不可少  */ var  favicon = require( ' serve-favicon ' );
@@ -150,11 +150,11 @@ module.exports  = app;  /* 抛出 app 变量方法， 为 bin/www 中端口设�
 ```
 
 
-![  ](./image/copycode_x792Et6H_K.gif "  ")
+![  ](<../assets/nodeJS（2）深了解： nodeJS 项目架构详解（ap/image/copycode_x792Et6H_K.gif> "  ")
 
 接着 看看 自生成的 bin/www 文件：
 
-![  ](./image/copycode_x792Et6H_K.gif "  ")
+![  ](<../assets/nodeJS（2）深了解： nodeJS 项目架构详解（ap/image/copycode_x792Et6H_K.gif> "  ")
 
 ```纯文本 
  #!/usr/bin/ env node
@@ -233,7 +233,7 @@ function onListening() {
 ```
 
 
-![  ](./image/copycode_x792Et6H_K.gif "  ")
+![  ](<../assets/nodeJS（2）深了解： nodeJS 项目架构详解（ap/image/copycode_x792Et6H_K.gif> "  ")
 
 ## \*\*  Express  和 Http 模块：\*\* ​
 
@@ -302,7 +302,7 @@ function onListening() {
 
   现在你可以访问 <http://127.0.0.1:8081> 并查看终端信息的输出，如下演示：
 
-  ![  ](./image/copycode_x792Et6H_K.gif "  ")
+  ![  ](<../assets/nodeJS（2）深了解： nodeJS 项目架构详解（ap/image/copycode_x792Et6H_K.gif> "  ")
   ```纯文本 
    引入了 express 模块，并在客户端发起请求后，响应  " Hello World "  字符串。
   创建 express_demo.js 文件，代码如下所示：
@@ -327,7 +327,7 @@ function onListening() {
   应用实例，访问地址为 http: // 0.0.0.0:8081 ， 会看到 Hello world  字样
   ```
 
-  ![  ](./image/copycode_x792Et6H_K.gif "  ")
+  ![  ](<../assets/nodeJS（2）深了解： nodeJS 项目架构详解（ap/image/copycode_x792Et6H_K.gif> "  ")
   ***
   ## **请求和响应**
   ```纯文本 
@@ -370,7 +370,7 @@ function onListening() {
   33. res.type()：设置Content-Type的MIME类型
   ***
   ## **路由**
-  ![  ](./image/copycode_x792Et6H_K.gif "  ")
+  ![  ](<../assets/nodeJS（2）深了解： nodeJS 项目架构详解（ap/image/copycode_x792Et6H_K.gif> "  ")
   ```纯文本 
    扩展 Hello World，添加一些功能来处理更多类型的 HTTP 请求。
   创建 express_demo2.js 文件，代码如下所示：
@@ -423,7 +423,7 @@ function onListening() {
   应用实例，访问地址为 http: // 0.0.0.0:8081, 可以尝试访问  http://127.0.0.1 :8081 不同的地址，查看效果。
   ```
 
-  ![  ](./image/copycode_x792Et6H_K.gif "  ")
+  ![  ](<../assets/nodeJS（2）深了解： nodeJS 项目架构详解（ap/image/copycode_x792Et6H_K.gif> "  ")
   ***
   ## **静态文件**
   ```纯文本 
@@ -437,7 +437,7 @@ function onListening() {
    public / images / logo . png
   ```
 
-  ![  ](./image/copycode_x792Et6H_K.gif "  ")
+  ![  ](<../assets/nodeJS（2）深了解： nodeJS 项目架构详解（ap/image/copycode_x792Et6H_K.gif> "  ")
   ```纯文本 
    创建 express_demo3.js 文件，代码如下所示：
    var  express = require( ' express ' );
@@ -463,15 +463,15 @@ function onListening() {
   应用实例，访问地址为 http: // 0.0.0.0:8081/imgaes/logo.png (前提有该文件)，则可显示图片
   ```
 
-  ![  ](./image/copycode_x792Et6H_K.gif "  ")
+  ![  ](<../assets/nodeJS（2）深了解： nodeJS 项目架构详解（ap/image/copycode_x792Et6H_K.gif> "  ")
   ***
   ## **GET 方法**
-  ![  ](./image/copycode_x792Et6H_K.gif "  ")
+  ![  ](<../assets/nodeJS（2）深了解： nodeJS 项目架构详解（ap/image/copycode_x792Et6H_K.gif> "  ")
   ```纯文本 
    index.htm 文件代码：
   ```
 
-  ![  ](./image/copycode_x792Et6H_K.gif "  ")
+  ![  ](<../assets/nodeJS（2）深了解： nodeJS 项目架构详解（ap/image/copycode_x792Et6H_K.gif> "  ")
   ```纯文本 
    <html>
   <body>
@@ -485,16 +485,16 @@ function onListening() {
   </html>
   ```
 
-  ![  ](./image/copycode_x792Et6H_K.gif "  ")
+  ![  ](<../assets/nodeJS（2）深了解： nodeJS 项目架构详解（ap/image/copycode_x792Et6H_K.gif> "  ")
 
-  ![  ](./image/copycode_x792Et6H_K.gif "  ")
+  ![  ](<../assets/nodeJS（2）深了解： nodeJS 项目架构详解（ap/image/copycode_x792Et6H_K.gif> "  ")
 
-  ![  ](./image/copycode_x792Et6H_K.gif "  ")
+  ![  ](<../assets/nodeJS（2）深了解： nodeJS 项目架构详解（ap/image/copycode_x792Et6H_K.gif> "  ")
   ```纯文本 
    server.js 文件代码：
   ```
 
-  ![  ](./image/copycode_x792Et6H_K.gif "  ")
+  ![  ](<../assets/nodeJS（2）深了解： nodeJS 项目架构详解（ap/image/copycode_x792Et6H_K.gif> "  ")
   ```纯文本 
    var  express = require( ' express ' );
    var  app =  express();
@@ -525,23 +525,23 @@ function onListening() {
   })
   ```
 
-  ![  ](./image/copycode_x792Et6H_K.gif "  ")
+  ![  ](<../assets/nodeJS（2）深了解： nodeJS 项目架构详解（ap/image/copycode_x792Et6H_K.gif> "  ")
   ```纯文本 
    node server . js 
    应用实例，访问地址为  http : //0.0.0.0:8081
   ```
 
-  ![  ](./image/copycode_x792Et6H_K.gif "  ")
+  ![  ](<../assets/nodeJS（2）深了解： nodeJS 项目架构详解（ap/image/copycode_x792Et6H_K.gif> "  ")
 
-  ![  ](./image/nodejs-gif6_WQSiqh001d.gif "  ")
+  ![  ](<../assets/nodeJS（2）深了解： nodeJS 项目架构详解（ap/image/nodejs-gif6_WQSiqh001d.gif> "  ")
   ***
   ## **POST 方法**
-  ![  ](./image/copycode_x792Et6H_K.gif "  ")
+  ![  ](<../assets/nodeJS（2）深了解： nodeJS 项目架构详解（ap/image/copycode_x792Et6H_K.gif> "  ")
   ```纯文本 
    index.htm 文件代码：
   ```
 
-  ![  ](./image/copycode_x792Et6H_K.gif "  ")
+  ![  ](<../assets/nodeJS（2）深了解： nodeJS 项目架构详解（ap/image/copycode_x792Et6H_K.gif> "  ")
   ```纯文本 
    <html>
   <body>
@@ -555,16 +555,16 @@ function onListening() {
   </html>
   ```
 
-  ![  ](./image/copycode_x792Et6H_K.gif "  ")
+  ![  ](<../assets/nodeJS（2）深了解： nodeJS 项目架构详解（ap/image/copycode_x792Et6H_K.gif> "  ")
 
-  ![  ](./image/copycode_x792Et6H_K.gif "  ")
+  ![  ](<../assets/nodeJS（2）深了解： nodeJS 项目架构详解（ap/image/copycode_x792Et6H_K.gif> "  ")
 
-  ![  ](./image/copycode_x792Et6H_K.gif "  ")
+  ![  ](<../assets/nodeJS（2）深了解： nodeJS 项目架构详解（ap/image/copycode_x792Et6H_K.gif> "  ")
   ```纯文本 
    server.js 文件代码:
   ```
 
-  ![  ](./image/copycode_x792Et6H_K.gif "  ")
+  ![  ](<../assets/nodeJS（2）深了解： nodeJS 项目架构详解（ap/image/copycode_x792Et6H_K.gif> "  ")
   ```纯文本 
    var  express = require( ' express ' );
    var  app =  express();
@@ -599,23 +599,23 @@ function onListening() {
   })
   ```
 
-  ![  ](./image/copycode_x792Et6H_K.gif "  ")
+  ![  ](<../assets/nodeJS（2）深了解： nodeJS 项目架构详解（ap/image/copycode_x792Et6H_K.gif> "  ")
   ```纯文本 
    $ node server . js
    应用实例，访问地址为  http : //0.0.0.0:8081
   ```
 
-  ![  ](./image/copycode_x792Et6H_K.gif "  ")
+  ![  ](<../assets/nodeJS（2）深了解： nodeJS 项目架构详解（ap/image/copycode_x792Et6H_K.gif> "  ")
 
-  ![  ](./image/nodejs-gif7_a6qrMQXlcj.gif "  ")
+  ![  ](<../assets/nodeJS（2）深了解： nodeJS 项目架构详解（ap/image/nodejs-gif7_a6qrMQXlcj.gif> "  ")
   ***
   ## **文件上传**
-  ![  ](./image/copycode_x792Et6H_K.gif "  ")
+  ![  ](<../assets/nodeJS（2）深了解： nodeJS 项目架构详解（ap/image/copycode_x792Et6H_K.gif> "  ")
   ```纯文本 
    index.htm 文件代码：
   ```
 
-  ![  ](./image/copycode_x792Et6H_K.gif "  ")
+  ![  ](<../assets/nodeJS（2）深了解： nodeJS 项目架构详解（ap/image/copycode_x792Et6H_K.gif> "  ")
   ```纯文本 
    <html>
   <head>
@@ -633,16 +633,16 @@ function onListening() {
   </html>
   ```
 
-  ![  ](./image/copycode_x792Et6H_K.gif "  ")
+  ![  ](<../assets/nodeJS（2）深了解： nodeJS 项目架构详解（ap/image/copycode_x792Et6H_K.gif> "  ")
 
-  ![  ](./image/copycode_x792Et6H_K.gif "  ")
+  ![  ](<../assets/nodeJS（2）深了解： nodeJS 项目架构详解（ap/image/copycode_x792Et6H_K.gif> "  ")
 
-  ![  ](./image/copycode_x792Et6H_K.gif "  ")
+  ![  ](<../assets/nodeJS（2）深了解： nodeJS 项目架构详解（ap/image/copycode_x792Et6H_K.gif> "  ")
   ```纯文本 
    server.js 文件代码：
   ```
 
-  ![  ](./image/copycode_x792Et6H_K.gif "  ")
+  ![  ](<../assets/nodeJS（2）深了解： nodeJS 项目架构详解（ap/image/copycode_x792Et6H_K.gif> "  ")
   ```纯文本 
    <pre>
    var  express = require( ' express ' );
@@ -691,25 +691,25 @@ function onListening() {
   })
   ```
 
-  ![  ](./image/copycode_x792Et6H_K.gif "  ")
+  ![  ](<../assets/nodeJS（2）深了解： nodeJS 项目架构详解（ap/image/copycode_x792Et6H_K.gif> "  ")
   ```纯文本 
    $ node server . js 
    应用实例，访问地址为  http : //0.0.0.0:8081
   ```
 
-  ![  ](./image/copycode_x792Et6H_K.gif "  ")
+  ![  ](<../assets/nodeJS（2）深了解： nodeJS 项目架构详解（ap/image/copycode_x792Et6H_K.gif> "  ")
 
-  ![  ](./image/express6_mY9cakusPD.jpg "  ")
+  ![  ](<../assets/nodeJS（2）深了解： nodeJS 项目架构详解（ap/image/express6_mY9cakusPD.jpg> "  ")
 
-  ![  ](./image/nodejs-gif8_7oxsbUCatV.gif "  ")
+  ![  ](<../assets/nodeJS（2）深了解： nodeJS 项目架构详解（ap/image/nodejs-gif8_7oxsbUCatV.gif> "  ")
   ***
   ## **Cookie 管理**
-  ![  ](./image/copycode_x792Et6H_K.gif "  ")
+  ![  ](<../assets/nodeJS（2）深了解： nodeJS 项目架构详解（ap/image/copycode_x792Et6H_K.gif> "  ")
   ```纯文本 
    express_cookie.js 文件代码：
   ```
 
-  ![  ](./image/copycode_x792Et6H_K.gif "  ")
+  ![  ](<../assets/nodeJS（2）深了解： nodeJS 项目架构详解（ap/image/copycode_x792Et6H_K.gif> "  ")
   ```纯文本 
    var  express      = require( ' express ' )
    var  cookieParser = require( ' cookie-parser ' )
@@ -724,14 +724,14 @@ function onListening() {
   app.listen( 8081 )
   ```
 
-  ![  ](./image/copycode_x792Et6H_K.gif "  ")
+  ![  ](<../assets/nodeJS（2）深了解： nodeJS 项目架构详解（ap/image/copycode_x792Et6H_K.gif> "  ")
   ```纯文本 
    $ node express_cookie . js 
   ```
 
-  ![  ](./image/copycode_x792Et6H_K.gif "  ")
+  ![  ](<../assets/nodeJS（2）深了解： nodeJS 项目架构详解（ap/image/copycode_x792Et6H_K.gif> "  ")
 
-  ![  ](./image/nodejs-gif9_9rtHj6Evyj.gif "  ")
+  ![  ](<../assets/nodeJS（2）深了解： nodeJS 项目架构详解（ap/image/nodejs-gif9_9rtHj6Evyj.gif> "  ")
   ***
   ## **相关资料**
   - Express官网： [http://expressjs.com/](http://expressjs.com/ "http://expressjs.com/")
@@ -754,7 +754,7 @@ Web服务器一般指网站服务器，是指驻留于因特网上某种类型�
 
 #### **Web 应用架构**
 
-![  ](./image/web_architecture_T6jxV7DC1S.jpg "  ")
+![  ](<../assets/nodeJS（2）深了解： nodeJS 项目架构详解（ap/image/web_architecture_T6jxV7DC1S.jpg> "  ")
 
 - - **Client** - 客户端，一般指浏览器，浏览器可以通过 HTTP 协议向服务器请求数据。
   - **Server** - 服务端，一般指 Web 服务器，可以接收客户端请求，并向客户端发送响应数据。
@@ -778,14 +778,14 @@ http 模块主要用于搭建 HTTP 服务端 和 客户端
 
 以下是演示一个最基本的 HTTP 服务器架构(使用8081端口)，创建 server.js 文件，代码如下所示：
 
-![  ](./image/copycode_x792Et6H_K.gif "  ")
+![  ](<../assets/nodeJS（2）深了解： nodeJS 项目架构详解（ap/image/copycode_x792Et6H_K.gif> "  ")
 
 ```纯文本 
  server.js 文件代码：
 ```
 
 
-![  ](./image/copycode_x792Et6H_K.gif "  ")
+![  ](<../assets/nodeJS（2）深了解： nodeJS 项目架构详解（ap/image/copycode_x792Et6H_K.gif> "  ")
 
 ```纯文本 
  var  http = require( ' http ' );
@@ -823,20 +823,20 @@ console.log( ' Server running at http://127.0.0.1:8081/ ' );
 ```
 
 
-![  ](./image/copycode_x792Et6H_K.gif "  ")
+![  ](<../assets/nodeJS（2）深了解： nodeJS 项目架构详解（ap/image/copycode_x792Et6H_K.gif> "  ")
 
-![  ](./image/copycode_x792Et6H_K.gif "  ")
+![  ](<../assets/nodeJS（2）深了解： nodeJS 项目架构详解（ap/image/copycode_x792Et6H_K.gif> "  ")
 
 　　接下来我们在该目录下创建一个 index.htm 文件，代码如下：
 
-![  ](./image/copycode_x792Et6H_K.gif "  ")
+![  ](<../assets/nodeJS（2）深了解： nodeJS 项目架构详解（ap/image/copycode_x792Et6H_K.gif> "  ")
 
 ```纯文本 
  index.html 文件：
 ```
 
 
-![  ](./image/copycode_x792Et6H_K.gif "  ")
+![  ](<../assets/nodeJS（2）深了解： nodeJS 项目架构详解（ap/image/copycode_x792Et6H_K.gif> "  ")
 
 ```纯文本 
  <html>
@@ -850,9 +850,9 @@ console.log( ' Server running at http://127.0.0.1:8081/ ' );
 ```
 
 
-![  ](./image/copycode_x792Et6H_K.gif "  ")
+![  ](<../assets/nodeJS（2）深了解： nodeJS 项目架构详解（ap/image/copycode_x792Et6H_K.gif> "  ")
 
-![  ](./image/copycode_x792Et6H_K.gif "  ")
+![  ](<../assets/nodeJS（2）深了解： nodeJS 项目架构详解（ap/image/copycode_x792Et6H_K.gif> "  ")
 
 执行 server.js 文件：
 
@@ -864,7 +864,7 @@ console.log( ' Server running at http://127.0.0.1:8081/ ' );
 
 接着我们在浏览器中打开地址：<http://127.0.0.1:8081/index.htm，显示如下图所示>:
 
-![  ](./image/nodejs_sample1_XOqejp4rVt.jpg "  ")
+![  ](<../assets/nodeJS（2）深了解： nodeJS 项目架构详解（ap/image/nodejs_sample1_XOqejp4rVt.jpg> "  ")
 
 执行 server.js 的控制台输出信息如下：
 
@@ -875,7 +875,7 @@ console.log( ' Server running at http://127.0.0.1:8081/ ' );
 
 ### **Gif 实例演示**
 
-![  ](./image/nodejs-gif4_5cEthV0ZWj.gif "  ")
+![  ](<../assets/nodeJS（2）深了解： nodeJS 项目架构详解（ap/image/nodejs-gif4_5cEthV0ZWj.gif> "  ")
 
 ***
 
@@ -883,14 +883,14 @@ console.log( ' Server running at http://127.0.0.1:8081/ ' );
 
 Node 创建 Web 客户端需要引入 http 模块，创建 client.js 文件，代码如下所示：
 
-![  ](./image/copycode_x792Et6H_K.gif "  ")
+![  ](<../assets/nodeJS（2）深了解： nodeJS 项目架构详解（ap/image/copycode_x792Et6H_K.gif> "  ")
 
 ```纯文本 
   client.js 文件：
 ```
 
 
-![  ](./image/copycode_x792Et6H_K.gif "  ")
+![  ](<../assets/nodeJS（2）深了解： nodeJS 项目架构详解（ap/image/copycode_x792Et6H_K.gif> "  ")
 
 ```纯文本 
  var  http = require( ' http ' );
@@ -917,7 +917,7 @@ req.end();
 ```
 
 
-![  ](./image/copycode_x792Et6H_K.gif "  ")
+![  ](<../assets/nodeJS（2）深了解： nodeJS 项目架构详解（ap/image/copycode_x792Et6H_K.gif> "  ")
 
  新开一个终端，执行 client.js 文件，输出结果如下：
 
@@ -927,7 +927,7 @@ req.end();
 ```
 
 
-![  ](./image/copycode_x792Et6H_K.gif "  ")
+![  ](<../assets/nodeJS（2）深了解： nodeJS 项目架构详解（ap/image/copycode_x792Et6H_K.gif> "  ")
 
 执行 server.js 的控制台输出信息如下：
 
@@ -938,7 +938,7 @@ req.end();
 
 ### **Gif 实例演示**
 
-![  ](./image/nodejs-gif5_KpyESZ_KT8.gif "  ")
+![  ](<../assets/nodeJS（2）深了解： nodeJS 项目架构详解（ap/image/nodejs-gif5_KpyESZ_KT8.gif> "  ")
 
 ```纯文本 
  此节完成！
@@ -956,11 +956,11 @@ req.end();
 
 [**收藏该文**](# "收藏该文")
 
-![  ](./image/icon_weibo_24_Ur4NzmNdA-.png "  ")
+![  ](<../assets/nodeJS（2）深了解： nodeJS 项目架构详解（ap/image/icon_weibo_24_Ur4NzmNdA-.png> "  ")
 
-![  ](./image/wechat_RQenS5l3Fo.png "  ")
+![  ](<../assets/nodeJS（2）深了解： nodeJS 项目架构详解（ap/image/wechat_RQenS5l3Fo.png> "  ")
 
-![  ](./image/20160314220828_RXKu6AxVg8.png "  ")
+![  ](<../assets/nodeJS（2）深了解： nodeJS 项目架构详解（ap/image/20160314220828_RXKu6AxVg8.png> "  ")
 
 [云雀sunshine](https://home.cnblogs.com/u/ostrich-sunshine/ "云雀sunshine")
 

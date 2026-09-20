@@ -124,4 +124,4 @@ container-type: unset;/* 将 container-type 属性重置为其自然值，如果
 这个属性再开发的过程中是完全兼容所有的浏览器的 所以不需要有兼容性方面的顾虑
 下面是MDN平台的原图
 
-![](./image/image_wUqIz2-0DP.png)
+![](./assets/image/image_wUqIz2-0DP.png)

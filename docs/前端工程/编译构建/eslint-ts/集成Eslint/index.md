@@ -252,6 +252,6 @@ console.log('jump', age);
 然后运行`npm run lint
 `就会发现终端报如下错误
 
-![](./image/image_266F5yhS_u.png)
+![](./assets/image/image_266F5yhS_u.png)
 
 这就说明,我们的`Eslint`配置成功了

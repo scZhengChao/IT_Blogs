@@ -2,7 +2,7 @@
 
 发布订阅的模型如图：
 
-![](./image/image_UMBILuwYGZ.png)
+![](./assets/image/image_UMBILuwYGZ.png)
 
 可以看到，在订阅模型中，多了一个exchange角色，而且过程略有变化：
 

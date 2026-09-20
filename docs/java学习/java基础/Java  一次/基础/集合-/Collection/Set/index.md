@@ -15,7 +15,7 @@
 
 没有任何特有方法；都是来自`collection`
 
-![](./image/image_6kTTXVeg8q.png)
+![](./assets/image/image_6kTTXVeg8q.png)
 
 # 常用子类
 
@@ -23,7 +23,7 @@
 - LinkedHashSet
 - TresSet
 
-![](./image/image_zcKHf5jo3Z.png)
+![](./assets/image/image_zcKHf5jo3Z.png)
 
 [HashSet](./HashSet/index.md "HashSet")
 

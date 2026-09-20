@@ -1,10 +1,10 @@
 # yaml
 
-![](./image/image_ARXz4AiN9M.png)
+![](./assets/image/image_ARXz4AiN9M.png)
 
-![](./image/image_QBQSj8Ryit.png)
+![](./assets/image/image_QBQSj8Ryit.png)
 
-![](./image/image_Hk5jG63ceT.png)
+![](./assets/image/image_Hk5jG63ceT.png)
 
 [](./yaml数据读取-/index.md)
 

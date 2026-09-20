@@ -83,4 +83,4 @@ git stash drop
 
 drop
 
-![](./image/image_6bys8S07-y.png)
+![](./assets/image/image_6bys8S07-y.png)

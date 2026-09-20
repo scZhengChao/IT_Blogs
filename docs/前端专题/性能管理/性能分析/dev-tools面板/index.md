@@ -4,7 +4,7 @@
 
 - [三、分析步骤说明](#三分析步骤说明)
 
-![](./image/image__PZoKnqpT7.png)
+![](./assets/image/image__PZoKnqpT7.png)
 
 上图是 Chrome Dev Tools 的一个截图，其中，我认为能用于进行页面性能快速分析的主要是图中圈出来的几个模块功能，这里简单介绍一下：
 
@@ -16,7 +16,7 @@
 
 ### 三、分析步骤说明
 
-![](./image/image_kso1zZOpPA.png)
+![](./assets/image/image_kso1zZOpPA.png)
 
 上图，从左到右分别代表的是：
 

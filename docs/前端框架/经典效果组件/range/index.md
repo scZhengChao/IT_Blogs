@@ -1,6 +1,6 @@
 # range
 
-![](./image/image_Af2ulfXPs5.png)
+![](./assets/image/image_Af2ulfXPs5.png)
 
 ```typescript 
 import {memo, useEffect, useRef} from 'react';

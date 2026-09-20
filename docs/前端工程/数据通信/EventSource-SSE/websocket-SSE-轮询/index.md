@@ -77,7 +77,7 @@ SSE的优点是，它是一个轻量级的协议，相对于websockte来说，�
 
 SSE对于各大浏览器的兼容性↓
 
-![](./image/image_hqCamt4rq1.png)
+![](./assets/image/image_hqCamt4rq1.png)
 
 注意哦，上图是SSE对于浏览器的兼容不是对于服务端的兼容。
 

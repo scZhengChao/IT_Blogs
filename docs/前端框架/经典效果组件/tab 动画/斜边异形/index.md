@@ -1,6 +1,6 @@
 # 斜边异形
 
-![](./image/image_7ykVl6q3Co.png)
+![](./assets/image/image_7ykVl6q3Co.png)
 
 ```javascript 
 <!doctype html>

@@ -18,4 +18,4 @@ function getOrientation() {
 ```
 
 
-![](./image/image_qcGCqkpEc3.png)
+![](./assets/image/image_qcGCqkpEc3.png)

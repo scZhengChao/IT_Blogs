@@ -1,6 +1,6 @@
 # Arrays
 
-![](./image/image_DRaAzZneTC.png)
+![](./assets/image/image_DRaAzZneTC.png)
 
 ```java 
 public static void main(String[] args) {

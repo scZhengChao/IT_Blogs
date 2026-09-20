@@ -32,7 +32,7 @@ let arr = [86, 24, 64, 48, 15, 30, 90, 49]
 ```
 
 
-![](./image/image_1PzE9qTR1q.png)
+![](./assets/image/image_1PzE9qTR1q.png)
 
 ## **执行**
 

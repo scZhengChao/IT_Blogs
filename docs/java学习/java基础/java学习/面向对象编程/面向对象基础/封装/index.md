@@ -24,7 +24,7 @@
 
 # 实现步骤
 
-![](./image/image_D1o2N3egrn.png)
+![](./assets/image/image_D1o2N3egrn.png)
 
 - `private` 限定**只能在当前类内**访问；
 

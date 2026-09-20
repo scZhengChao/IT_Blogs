@@ -8,7 +8,7 @@
 
 合理组织文件结构非常重要。我们以一个具体的Web应用程序为例：
 
-![](./image/image_wOhrEfqGAG.png)
+![](./assets/image/image_wOhrEfqGAG.png)
 
 我们把所有的静态资源文件放入`/static/`目录，在开发阶段，有些Web服务器会自动为我们加一个专门负责处理静态文件的Servlet，但如果`IndexServlet`映射路径为`/`，会屏蔽掉处理静态文件的Servlet映射。因此，我们需要自己编写一个处理静态文件的`FileServlet`：
 
@@ -54,7 +54,7 @@ public class FileServlet extends HttpServlet {
 
 **类似Tomcat这样的Web服务器，运行的Web应用程序通常都是业务系统，**因此，这类服务器也被称为**应用服务器。**应用服务器并不擅长处理静态文件，也不适合直接暴露给用户。通常，我们在生产环境部署时，总是**使用类似Nginx这样的服务器充当反向代理和静态服务器**，只有**动态请求才会放行给应用服务器，所以，部署架构如下：**
 
-![](./image/image_DjtrwYfXtb.png)
+![](./assets/image/image_DjtrwYfXtb.png)
 
 实现上述功能的Nginx配置文件如下：
 

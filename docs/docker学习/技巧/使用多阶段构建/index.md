@@ -35,7 +35,7 @@ docker build -t dockerfile-test:second .
 ```
 
 
-![](./image/image_xDmO7U9ZTH.png)
+![](./assets/image/image_xDmO7U9ZTH.png)
 
 现在我们改下 [README.md](http://README.md "README.md")：
 

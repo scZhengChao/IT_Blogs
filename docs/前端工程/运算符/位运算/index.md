@@ -27,11 +27,11 @@
 
 ### **转化为32进制一一对齐**
 
-![  ](./image/2016071410404110_9DuaC8A-0T.gif "  ")
+![  ](./assets/image/2016071410404110_9DuaC8A-0T.gif "  ")
 
-![  ](./image/2016071410404111_EVTs7nO4Qg.gif "  ")
+![  ](./assets/image/2016071410404111_EVTs7nO4Qg.gif "  ")
 
-![  ](./image/2016071410404112_m2kP3pBsfd.gif "  ")
+![  ](./assets/image/2016071410404112_m2kP3pBsfd.gif "  ")
 
 .
 

@@ -44,7 +44,7 @@ from([1, 2, 3, 4,5])
 
 javascript中数组也有一个方法叫做[concat](https://so.csdn.net/so/search?q=concat\&spm=1001.2101.3001.7020 "concat")，实现的效果类似吧。
 
-![](./image/image_Res02j3AuL.png)
+![](./assets/image/image_Res02j3AuL.png)
 
 ```typescript 
 const getData = (param) => {
@@ -145,7 +145,7 @@ map和mergeAll也可以和成一个操作符，就是下面这个了
 
 **喜新厌旧**
 
-![](./image/image_IoElnoSQI0.png)
+![](./assets/image/image_IoElnoSQI0.png)
 
 ```javascript 
 from([1,2,3,4,5]).pipe(

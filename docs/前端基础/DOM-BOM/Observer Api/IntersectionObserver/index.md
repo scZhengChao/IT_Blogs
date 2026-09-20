@@ -24,7 +24,7 @@
 
 **`<script src="https://polyfill.io/v2/polyfill.min.js?features=IntersectionObserver"></script>`**\*\*  ie11 是没问题的\*\*​
 
-![  ](./image/e5e0e162c88b942e7c7ea30d448a34c5_6LV4eCPlnU.png "  ")
+![  ](./assets/image/e5e0e162c88b942e7c7ea30d448a34c5_6LV4eCPlnU.png "  ")
 
 &#x20;       一直以来，**检测元素的可视状态或者两个元素的相对可视状态**都不是件容易事。传统的各种方案不但复杂，而且性能成本很高，比如需要监听滚动事件，然后查询 DOM , 获取元素高度、位置，计算距离视窗高度等等。
 

@@ -18,7 +18,7 @@
 
 [vite-plugin-progress](https://link.juejin.cn/?target=https://github.com/jeddygong/vite-plugin-progress "vite-plugin-progress") 插件是一个在打包时展示进度条的插件，如果您觉得该插件对您的项目有帮助，欢迎 **star ⭐️ 支持一下**，感谢！
 
-![  ](./image/0ac6b929475c4e28954b8e7f61148790_tplv-k3u1fbpfcp-z.webp "  ")
+![  ](./assets/image/0ac6b929475c4e28954b8e7f61148790_tplv-k3u1fbpfcp-z.webp "  ")
 
 # 用法
 
@@ -134,7 +134,7 @@ export default {
 
 借用 vite 其中某位作者的原话：
 
-![](./image/image_t7WXjuxvF9.png)
+![](./assets/image/image_t7WXjuxvF9.png)
 
 `简单理解意思就是说在 vite 打包时，是没法知道进度条的 0%-100%，因为您必须先确定要构建的模块的总数`
 
@@ -330,7 +330,7 @@ function runCachedData() {
 
 ## 实现架构图
 
-![](./image/image_v-en5RQ6uI.png)
+![](./assets/image/image_v-en5RQ6uI.png)
 
 # 源码
 

@@ -33,11 +33,11 @@ mkdir test
 
 下面是创建的结果，使用ls命令就可以看到刚创建的名为test的文件夹：
 
-![](./image/image_JhLJrID96v.png)
+![](./assets/image/image_JhLJrID96v.png)
 
 我们还可以同时创建多个文件夹，只需在多个文件夹之间添加空格即可。如果**一个文件夹名称中包含空格，就需要使用双引号来写这个**文件夹名字：
 
-![](./image/image_GIswnVkVgb.png)
+![](./assets/image/image_GIswnVkVgb.png)
 
 # rmdir
 
@@ -68,13 +68,13 @@ rmdir *itcast : 删除以itcast结尾的目录
 ```
 
 
-![](./image/image_KQJ_uhCM3D.png)
+![](./assets/image/image_KQJ_uhCM3D.png)
 
 # rm
 
 rm 命令用于删除一个文件或者目录。
 
-![](./image/image_vxxDczTpGO.png)
+![](./assets/image/image_vxxDczTpGO.png)
 
 我们还可以使用 rm -rf 命令来快速删除文件夹/目录及其内容。
 

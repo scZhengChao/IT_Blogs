@@ -8,7 +8,7 @@ JMS即Java Message Service，是JavaEE的消息服务接口。JMS主要有两个
 
 所谓消息服务，**就是两个进程之间，通过消息服务器传递消息**
 
-![](./image/image_9xn2pJGGSW.png)
+![](./assets/image/image_9xn2pJGGSW.png)
 
 使用消息服务，而不是直接调用对方的API，它的好处是：
 
@@ -93,11 +93,11 @@ $ ./artemis run
 
 在编写JMS代码之前，我们**首先得理解JMS的消息模型**。JMS把**生产消息的一方**称为Producer，处理消息的一方称为Consumer。有两种类型的消息通道，一种是Queue：
 
-![](./image/image_qfz8FX5h5h.png)
+![](./assets/image/image_qfz8FX5h5h.png)
 
 **一种是Topic：**
 
-![](./image/image_D0NbR1TmHN.png)
+![](./assets/image/image_D0NbR1TmHN.png)
 
 它们的区别在于，**Queue是一种一对一的通道，如果Consumer离线无法处理消息时，Queue会把消息存起来，等Consumer再次连接的时候发给它。**设定了持久化机制的Queue不会丢失消息**。如果有多个Consumer接入同一个Queue，那么它们等效于以集群方式处理消息**，例如，发送方发送的消息是A，B，C，D，E，F，两个Consumer可能分别收到A，C，E和B，D，F，**即每个消息只会交给其中一个Consumer处理。**
 

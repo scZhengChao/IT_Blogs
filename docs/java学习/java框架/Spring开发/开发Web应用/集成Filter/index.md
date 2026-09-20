@@ -119,7 +119,7 @@ public class DelegatingFilterProxy implements Filter {
 
 这就是一个代理模式的简单应用。我们画个图表示它们之间的引用关系如下：
 
-![](./image/image_7veQ0hf0mO.png)
+![](./assets/image/image_7veQ0hf0mO.png)
 
 如果在`web.xml`中配置**的Filter名字和Spring容器的Bean的名字不一致**，那么需要指定Bean的名字：
 

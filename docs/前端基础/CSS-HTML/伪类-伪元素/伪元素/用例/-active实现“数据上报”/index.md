@@ -8,7 +8,7 @@
 
 **这个伪类不是一般只用来改变链接的颜色什么的？单单只有这个元素当然不行，但是不知道你有没有想到【判断点击次数】这个经典demo！**
 
-![  ](./image/781504105ca362587dd5320106a9ffe6_4JbmubHqwn.png "  ")
+![  ](./assets/image/781504105ca362587dd5320106a9ffe6_4JbmubHqwn.png "  ")
 
 我们通常会将active和after结合使用：
 

@@ -74,6 +74,6 @@ sha1.arrayBuffer(''); // ArrayBuffer
 
     rsa  加密 解密  最重要是公钥和密钥有后端生成    非对称的  公钥交给前端 密钥保存在后端（安全)
 
-[AES.rar](./file/AES_kMkUJ8UCtQ.rar "AES.rar")
+[AES.rar](./assets/file/AES_kMkUJ8UCtQ.rar "AES.rar")
 
-[RSA.rar](./file/RSA_ShAP-6G4pE.rar "RSA.rar")
+[RSA.rar](./assets/file/RSA_ShAP-6G4pE.rar "RSA.rar")

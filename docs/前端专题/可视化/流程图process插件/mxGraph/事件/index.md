@@ -8,7 +8,7 @@
 
 本项目监听事件写在[AppCanvas.vue](https://link.segmentfault.com/?enc=Uy2jhAcORd1C4NYjr/YhkQ==.NoiZ/T6Lhu2ZQ06o4YDF/MhLpxzxOPsqQeNv1NFRD5o12HoA8k8DknSHdXui+cO47zd1swMrGhSifSVIzo369DpL7TMgFhMcWmqIKimL1r0= "AppCanvas.vue")的 `_listenEvent` 方法，可以在这个方法**了解一些常用的事件**。下图来自[mxGraph](https://link.segmentfault.com/?enc=1hZwUu3oms4Mf3kaYQSMQQ==.vCtwo5J6jD4FNPO0PWkKlwgCMgx56mPgVlA+eIRkS7BGvTTZzdEBp7pc42AuzEQA1gHh+2aj0lyP/JAJwWaZY5HtPvTkOul41x/Hx57zwno= "mxGraph")类的方法调用依赖图，我们可以从这里**看出整个框架的事件流动**。
 
-![](./image/image_YEJD0vyiHg.png)
+![](./assets/image/image_YEJD0vyiHg.png)
 
 #### 监听事件
 

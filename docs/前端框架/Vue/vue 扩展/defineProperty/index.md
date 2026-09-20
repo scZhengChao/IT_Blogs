@@ -84,9 +84,9 @@ object.defineProperty(data,key,{
 ```
 
 
-[vue的双向绑定.rar](./file/vue的双向绑定_Sr_AKCLSNl.rar "vue的双向绑定.rar")
+[vue的双向绑定.rar](./assets/file/vue的双向绑定_Sr_AKCLSNl.rar "vue的双向绑定.rar")
 
-[testLib.rar](./file/testLib_ArCWdSNERN.rar "testLib.rar")
+[testLib.rar](./assets/file/testLib_ArCWdSNERN.rar "testLib.rar")
 
 ```纯文本 
 
@@ -99,7 +99,7 @@ watcher 的作用是 配合 Dep ，进行一个添加并更新，执行跟新后
 
 ### 目录结构
 
-![](./image/image_DbcGxXaPMm.png)
+![](./assets/image/image_DbcGxXaPMm.png)
 
 ### 代码
 

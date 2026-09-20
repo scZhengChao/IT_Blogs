@@ -26,11 +26,11 @@
 
 默认情况下，React中的所有更新都被认为是紧急的。当**快速更新被重度更新拖慢**时，这可能会产生一个问题。
 
-![](./image/image_C2bs6p0wUU.png)
+![](./assets/image/image_C2bs6p0wUU.png)
 
 然而，从React 18和新的并发功能开始，你可以将一些**更新标记**为**可中断**的和**非紧急**的--所谓的过渡期。这对**繁重的UI更新**特别有用，比如过滤一个大列表。
 
-![](./image/image_odXfC5UlCq.png)
+![](./assets/image/image_odXfC5UlCq.png)
 
 `useTransition()` 是让你在React组件内部访问并发模式功能的钩子。
 

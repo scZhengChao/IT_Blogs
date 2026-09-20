@@ -13,7 +13,7 @@
 5. 通过右边“call stack”来查看当前的调用栈的情况
 6. 栈的最底部是 anonymous，也就是全局的函数入口
 
-![](./image/image_BpyNllA1aj.png)
+![](./assets/image/image_BpyNllA1aj.png)
 
 除了通过断点来查看调用栈，还可以使用 `console.trace()` 来输出当前的函数调用关系
 

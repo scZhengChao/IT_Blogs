@@ -4,7 +4,7 @@
 
      express  原班人马打造
 
-[02\_koa2源码解读【瑞客论坛 www.ruike1.com】.pdf](<./file/02_koa2源码解读【瑞客论坛 www.ruike1.com】_qK1e2U3lws.pdf> "02_koa2源码解读【瑞客论坛 www.ruike1.com】.pdf")
+[02\_koa2源码解读【瑞客论坛 www.ruike1.com】.pdf](<./assets/file/02_koa2源码解读【瑞客论坛 www.ruike1.com】_qK1e2U3lws.pdf> "02_koa2源码解读【瑞客论坛 www.ruike1.com】.pdf")
 
 致力于成为 web 应用和 API 开发领域中的一个更小、更富有表现力、更健壮的基石。 通过利用 async 函数，Koa 帮你丢弃回调函数，并有力地增强错误处理。 Koa 并没有捆绑任何中间件， 而是提供了一套优雅的方法，帮助您快速而愉快地编写服务端应用程序
 
@@ -92,7 +92,7 @@
 
 **图解：**
 
-![  ](./image/afdceb9aac0c3d76e3fdf5532ed2fb0d_6EBP3VjtOz.png "  ")
+![  ](./assets/image/afdceb9aac0c3d76e3fdf5532ed2fb0d_6EBP3VjtOz.png "  ")
 
 **3.洋葱圈的实现**
 
@@ -213,7 +213,7 @@
 
 **图解：**
 
-![  ](./image/d26dfe7a92433b9bba9ed845638eca29_UZGxqvOxIS.png "  ")
+![  ](./assets/image/d26dfe7a92433b9bba9ed845638eca29_UZGxqvOxIS.png "  ")
 
 ```纯文本 
  //生成一个路由表 

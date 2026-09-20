@@ -22,7 +22,7 @@
 
 下面的代码演示了三种`lineJoin`值的效果：
 
-![](./image/image_6hklWMHC-M.png)
+![](./assets/image/image_6hklWMHC-M.png)
 
 ```html 
 <canvas id="canvas" width="400" height="200"></canvas>
@@ -84,7 +84,7 @@
 2. **`miterLimit`**：控制`miter`连接的最大长度。当尖角过长（超过`miterLimit`× 线宽）时，会自动转换为`bevel`效果。
 3. **`lineCap`**：控制线条端点的样式，与`lineJoin`共同影响线条的整体外观。
 
-![](./image/image_JGUTfHhNe7.png)
+![](./assets/image/image_JGUTfHhNe7.png)
 
 ```javascript 
 <canvas id="canvas" width="600" height="300"></canvas>

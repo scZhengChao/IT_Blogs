@@ -36,7 +36,7 @@
 
 DOM中的核心概念就是节点，在XML文档中的元素、属性、文本，在DOM中都是节点！所有的节点都封装到了Document对象中。
 
-![](./image/image_wJgFTVaU6s.png)
+![](./assets/image/image_wJgFTVaU6s.png)
 
 结论：使用Document对象，就可以去访问DOM树中的每一个节点
 
@@ -44,7 +44,7 @@ DOM中的核心概念就是节点，在XML文档中的元素、属性、文本�
 
 去官网下载 zip 包。[http://www.dom4j.org/](http://www.dom4j.org/ "http://www.dom4j.org/")
 
-![](./image/image_aBcBre0eJv.png)
+![](./assets/image/image_aBcBre0eJv.png)
 
 **通常我们会在项目中创建lib文件夹，将需要依赖的库放在这里。**
 
@@ -53,7 +53,7 @@ DOM中的核心概念就是节点，在XML文档中的元素、属性、文本�
 1. 在IDEA中，选择项目鼠标右键--->弹出菜单-->open Module settings”-->Dependencies-->+-->JARs or directories... 找到dom4j-1.6.1.jar,成功添加之后点击"OK" 即可。
 2. **直接右键选择：Add as Library**
 
-![](./image/image_ZxwYI9NEEU.png)
+![](./assets/image/image_ZxwYI9NEEU.png)
 
 **小结**
 

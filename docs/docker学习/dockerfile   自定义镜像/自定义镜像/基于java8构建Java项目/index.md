@@ -4,7 +4,7 @@
 
 例如，构建java项目的镜像，可以在已经准备了JDK的基础镜像基础上构建。
 
-![](./image/image_EJDtWBrAMu.png)
+![](./assets/image/image_EJDtWBrAMu.png)
 
 **需求：** 基于java:8-alpine镜像，将一个Java项目构建为镜像
 
@@ -12,7 +12,7 @@
 
 - ① 在tmp目录下在新建一个空的目录docker-demo02
 
-![](./image/image_WRlM7yfzap.png)
+![](./assets/image/image_WRlM7yfzap.png)
 
 - ② 拷贝课前资料提供的docker-demo.jar到这个目录中
 - ③ 然后在目录中新建一个文件，命名为Dockerfile，编写Dockerfile文件：
@@ -34,9 +34,9 @@ ENTRYPOINT java -jar /tmp/app.jar
 ```
 
 
-![](./image/image_TvvOao7b_r.png)
+![](./assets/image/image_TvvOao7b_r.png)
 
-![](./image/image_wSlf1tylpz.png)
+![](./assets/image/image_wSlf1tylpz.png)
 
 ④ 使用docker build命令构建镜像
 

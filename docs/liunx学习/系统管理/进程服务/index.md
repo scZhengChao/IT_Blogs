@@ -11,7 +11,7 @@
 
 ps 命令用于显示当前进程的状态，类似于 windows 的任务管理器。
 
-![](./image/image_Kzt0zv6CNw.png)
+![](./assets/image/image_Kzt0zv6CNw.png)
 
 ```bash 
 ps -aux | grep tomcat

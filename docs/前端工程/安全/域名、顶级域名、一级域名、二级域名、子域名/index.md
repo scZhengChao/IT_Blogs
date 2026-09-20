@@ -54,7 +54,7 @@ Top-level domains，first-level domains（TLDs），也翻译为\*\*国际顶级
 
 # 五、准确理解一级域名
 
-![](./image/image_DpamPg0287.png)
+![](./assets/image/image_DpamPg0287.png)
 
 通常**我们把.com成为一级域名**，但严格意义上这样讲不太准确，真正的一级域名是由一个合法的字符串+域名后缀组成，所以，**guanghe.com这种形式的域名才是一级域名**，`guanghe`是域名主体，`.com`是域名后缀，我们也可\*\*以把`.com`\*\***也称为顶级域。**
 
@@ -66,7 +66,7 @@ Top-level domains，first-level domains（TLDs），也翻译为\*\*国际顶级
 
 域名有顶级域名和二级，三级之分，一般网站只用到顶级域名即可，有时候一个网站系统比较庞大，那么就可能使用多个域名，如果去申请多个域名肯定不划算，这个时候，使用已申请的一个域名的二级域名的处理方式就应运而生。**比如百度买下了baidu.com这一顶级域名，将baidu.com绑定了一个地址，**[**map.baicu.com**](http://map.baicu.com "map.baicu.com")**、music.baicu.com也绑定到了各个地址，不用单独花钱，只是购买了baidu.com这一个顶级域名而已。**
 
-![](./image/image_H1mEiAecY1.png)
+![](./assets/image/image_H1mEiAecY1.png)
 
 如上图所示，在百度云购买了一个云虚拟主机之后，[会得到一个免费域名guanghebch.gz01.bdysite.com](http://xn--guanghebch-pf2pyps4hj9khqdfsk9prdy6a1g5p.gz01.bdysite.com "会得到一个免费域名guanghebch.gz01.bdysite.com")，**这个域名就是一个多级域名，可无需备案直接使用，因为百度云已经买下了bdysite.com这个一级域名并进行了备案**，旗下的子域名完全可以直接使用，这样就省去了开发者再去申请域名、备案的麻烦。当然，小编当时为了弄清域名申请备案整个流程，还是自己申请了一个一级域名guanghe.site，其实直接使用guanghebch.gz01.bdysite.com就完全可以满足开发要求了。
 

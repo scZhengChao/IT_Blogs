@@ -71,7 +71,7 @@ JSP页面内置了几个变量：
 
 访问JSP页面时，直接指定完整路径。例如，`http://localhost:8080/hello.jsp`，浏览器显示如下：
 
-![](./image/image_YnXnBjD9Is.png)
+![](./assets/image/image_YnXnBjD9Is.png)
 
 **JSP和Servlet有什么区别**？其实它们没有任何区别，**因为JSP在执行前首先被编译成一个Servlet**。在Tomcat的临时目录下，可以找到一个`hello_jsp.java`的源文件，**这个文件就是Tomcat把JSP自动转换成的Servlet源码：**
 

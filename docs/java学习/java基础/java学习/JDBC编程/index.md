@@ -4,7 +4,7 @@
 
 Java为关系数据库定义了一套标准的访问接口：**JDBC（Java Database Connectivity）**，本章我们介绍如何在Java程序中使用JDBC。
 
-![](./image/image_T7MXmt8kFl.png)
+![](./assets/image/image_T7MXmt8kFl.png)
 
 [JDBC简介](./JDBC简介/index.md "JDBC简介")
 

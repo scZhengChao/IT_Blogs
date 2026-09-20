@@ -75,7 +75,7 @@ Connection: close
 
 参考如下示意图（来源：维基百科）：
 
-![](./image/image_EzfblsQzye.png)
+![](./assets/image/image_EzfblsQzye.png)
 
 然而天下没有免费的午餐，如果客户端在接收完所有的信息之后还**没有关闭连接**，**则服务端相应的资源还在被占用（尽管已经没用了）**。
 
@@ -101,7 +101,7 @@ Connection: close
 
 例如，在`tomcat`中，我们可以`server.xml`中配置以下属性：
 
-![](./image/image_89_9svOd_f.png)
+![](./assets/image/image_89_9svOd_f.png)
 
 说明如下：
 
@@ -112,7 +112,7 @@ Connection: close
 
 org.apache.coyote.http11.Http11Processor#statusDropsConnection
 
-![](./image/image_h-oiGsO7Zw.png)
+![](./assets/image/image_h-oiGsO7Zw.png)
 
 ## **1.6 客户端如何开启？**
 

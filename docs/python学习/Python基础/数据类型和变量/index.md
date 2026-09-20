@@ -91,7 +91,7 @@ line3
 
 上面是在交互式命令行内输入，注意在输入多行内容时，提示符由`>>>`变为`...`，提示你可以接着上一行输入，注意`...`是提示符，不是代码的一部分：
 
-![](./image/image_O5PQct363V.png)
+![](./assets/image/image_O5PQct363V.png)
 
 当输入完结束符` ``` `和括号`)`后，执行该语句并打印结果。
 
@@ -284,15 +284,15 @@ print(b)
 
 执行`a = 'ABC'`，解释器创建了字符串`'ABC'`和变量`a`，并把`a`指向`'ABC'`：
 
-![](./image/image_K6VgtujrIi.png)
+![](./assets/image/image_K6VgtujrIi.png)
 
 执行`b = a`，解释器创建了变量`b`，并把`b`指向`a`指向的字符串`'ABC'`：
 
-![](./image/image_fTRmYtxH9U.png)
+![](./assets/image/image_fTRmYtxH9U.png)
 
 执行`a = 'XYZ'`，解释器创建了字符串'XYZ'，并把`a`的指向改为`'XYZ'`，但`b`并没有更改：
 
-![](./image/image_tuMBd4dGdR.png)
+![](./assets/image/image_tuMBd4dGdR.png)
 
 所以，最后打印变量`b`的结果自然是`'ABC'`了。
 

@@ -9,15 +9,15 @@ AOP案例
 
 测量业务层接口万次执行效率
 
-![](./image/image_i0i_MkJB01.png)
+![](./assets/image/image_i0i_MkJB01.png)
 
-![](./image/image_WPIT_D0I3D.png)
+![](./assets/image/image_WPIT_D0I3D.png)
 
-![](./image/image_P1OhfEnQrI.png)
+![](./assets/image/image_P1OhfEnQrI.png)
 
 AOP通知获取数据
 
-![](./image/image_mlr-6cke2B.png)
+![](./assets/image/image_mlr-6cke2B.png)
 
 获取切入点方法的参数
 
@@ -31,16 +31,16 @@ AOP通知获取数据
 抛出异常后通知
 环绕通知
 
-![](./image/image_fMXejuO1qV.png)
+![](./assets/image/image_fMXejuO1qV.png)
 
-![](./image/image_ipU2S7I_ex.png)
+![](./assets/image/image_ipU2S7I_ex.png)
 
 AOP通知获取异常数据（了解）
 
-![](./image/image_4aN6LZN7nV.png)
+![](./assets/image/image_4aN6LZN7nV.png)
 
-![](./image/image_Pb8U17Gi6y.png)
+![](./assets/image/image_Pb8U17Gi6y.png)
 
 案例：百度网盘密码数据兼容处理
 
-![](./image/image_p8tZTWHHLC.png)
+![](./assets/image/image_p8tZTWHHLC.png)

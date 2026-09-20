@@ -13,13 +13,13 @@
 
 date 命令用来查看当前系统的日期和时间，我们还可以格式化当前的时间：
 
-![](./image/image_wYGsavmXDB.png)
+![](./assets/image/image_wYGsavmXDB.png)
 
 ### 4. top
 
 top 命令用于实时显示 process 的动态。
 
-![](./image/image_-K1HdjQlaL.png)
+![](./assets/image/image_-K1HdjQlaL.png)
 
 ### 5. who
 
@@ -42,7 +42,7 @@ sudo 命令会以系统管理员的身份执行指令，也就是说，经由 su
 
 history 命令用来查看历史记录。它显示了在终端中所执行过的所有命令的历史。
 
-![](./image/image_QE8Er0LJXI.png)
+![](./assets/image/image_QE8Er0LJXI.png)
 
 ### 8. exit
 

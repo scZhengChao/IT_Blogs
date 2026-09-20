@@ -15,12 +15,12 @@ k8s的Service定义了一个服务的访问入口地址，前端的应用通过�
 
 **简单来说前端请求不是直接发送给Pod，而是发送到Service，Service再将请求转发给pod。**
 
-![](./image/image_1ujnPpNgcM.png)
+![](./assets/image/image_1ujnPpNgcM.png)
 
 上图可能太抽象，我们可以看看下面这张图。 &#x20;
 假设我们把一个服务做了高可用，这个服务分别部署在了两个节点上，当我们想访问该服务时，则此时访问的不是pod而是service，service会再给我们做负载均衡。
 
-![](./image/image_EoEYFCPSWL.png)
+![](./assets/image/image_EoEYFCPSWL.png)
 
 **k8s中的service中有三种类型：**
 

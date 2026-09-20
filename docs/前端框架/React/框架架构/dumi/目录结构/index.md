@@ -17,7 +17,7 @@
 
 如果你是通过`create-dumi`创建的 React 脚手架（`React`选项），那么生成的目录结构大致如下：
 
-![](./image/image_rSriq6v8IE.png)
+![](./assets/image/image_rSriq6v8IE.png)
 
 如果你创建**的是静态站点**（`Static Site`选项），那么忽略上面的`src`目录结构即可。
 

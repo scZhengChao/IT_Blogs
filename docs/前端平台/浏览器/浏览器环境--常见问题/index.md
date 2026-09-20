@@ -20,7 +20,7 @@
 
 **3.【IE11请求中止】 XMLHttpRequest: 网络错误 0x2ef3的意外出现**
 
-![  ](./image/dc46a6b747fa856efe71fd9ce9313ea2_ouXIHf59v0.png "  ")
+![  ](./assets/image/dc46a6b747fa856efe71fd9ce9313ea2_ouXIHf59v0.png "  ")
 
 **这个问题的原因是keep-alive机制引起。**
 

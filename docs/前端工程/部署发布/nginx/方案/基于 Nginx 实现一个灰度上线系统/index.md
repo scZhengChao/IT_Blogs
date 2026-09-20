@@ -12,7 +12,7 @@
 
 **灰度系统可以把流量划分成多份，一份走新版本代码，一份走老版本代码。**
 
-![](./image/image_3Va2zzoR6a.png)
+![](./assets/image/image_3Va2zzoR6a.png)
 
 而且**灰度系统支持设置流量的比例，比如可以把走新版本代码的流程设置为 5%，没啥问题再放到 10%，50%，最后放到 100% 全量。**
 
@@ -28,7 +28,7 @@
 
 **nginx 是一个反向代理的服务，用户请求发给它，由它转发给具体的应用服务器。**（见docker下面的动态资源反向代理）
 
-![](./image/image_VwQ3B5ok5B.png)
+![](./assets/image/image_VwQ3B5ok5B.png)
 
 这**一层也叫做网关层。**
 
@@ -46,7 +46,7 @@ npx nest new gray_test -p npm
 ```
 
 
-![](./image/image_IXLS1Y_Ehg.png)
+![](./assets/image/image_IXLS1Y_Ehg.png)
 
 把 nest 服务跑起来：
 
@@ -56,7 +56,7 @@ npm run start
 ```
 
 
-![](./image/image_B41tfZH84e.png)
+![](./assets/image/image_B41tfZH84e.png)
 
 浏览器访问下：
 
@@ -66,7 +66,7 @@ npm run start
 
 然后改下 AppService：
 
-![](./image/image_ohvEcKmUjP.png)
+![](./assets/image/image_ohvEcKmUjP.png)
 
 修改下端口：
 
@@ -74,7 +74,7 @@ npm run start
 
 然后再 npm run start：
 
-![](./image/image_8R8n0RsUX_.png)
+![](./assets/image/image_8R8n0RsUX_.png)
 
 浏览器访问下：
 
@@ -88,11 +88,11 @@ npm run start
 
 docker desktop 搜索 nginx 镜像（这步需要科学上网），点击 run：
 
-![](./image/image_x_3G2RuH53.png)
+![](./assets/image/image_x_3G2RuH53.png)
 
 设置容器名为 gray1，端口映射宿主机的 82 到容器内的 80
 
-![](./image/image_1KNFJOoXGE.png)
+![](./assets/image/image_1KNFJOoXGE.png)
 
 现在访问 [http://localhost:82](https://link.juejin.cn/?target=http://localhost:82 "http://localhost:82") 就可以看到 nginx 页面了：
 
@@ -106,7 +106,7 @@ docker cp gray1:/etc/nginx/conf.d ~/nginx-config
 ```
 
 
-![](./image/image_h_HxMwLpGb.png)
+![](./assets/image/image_h_HxMwLpGb.png)
 
 然后编辑下这个 default.conf
 
@@ -127,7 +127,7 @@ location ^~ /api {
 
 然后我们重新跑个 nginx 容器：
 
-![](./image/image_gX5C9VcxKB.png)
+![](./assets/image/image_gX5C9VcxKB.png)
 
 容器名为 gray2，端口映射 83 到容器内的 80。
 
@@ -139,21 +139,21 @@ location ^~ /api {
 
 可以看到容器内的 /etc/nginx/conf.d 目录标识为了 mounted。
 
-![](./image/image_jq3Z016-4F.png)
+![](./assets/image/image_jq3Z016-4F.png)
 
 点开看看：
 
-![](./image/image_9PIHEzEu9x.png)
+![](./assets/image/image_9PIHEzEu9x.png)
 
 这就是本地的那个文件。
 
 我们在本地改一下试试：
 
-![](./image/image_82mhlTI4Ea.png)
+![](./assets/image/image_82mhlTI4Ea.png)
 
 容器内也同样修改了。
 
-![](./image/image_XkouUKY1G2.png)
+![](./assets/image/image_XkouUKY1G2.png)
 
 **在容器内修改这个文件，本地同样也会修改。**
 
@@ -161,19 +161,19 @@ location ^~ /api {
 
 然后我们访问下 [http://localhost:83/api/](https://link.juejin.cn/?target=http://localhost:83/api/ "http://localhost:83/api/") 看看：
 
-![](./image/image_dsdrFKR2mV.png)
+![](./assets/image/image_dsdrFKR2mV.png)
 
 nest 服务访问成功了。
 
 现在我们不**是直接访问 nest 服务了，而是经历了一层 nginx 反向代理或者说网关层。**
 
-![](./image/image_gjXymBd057.png)
+![](./assets/image/image_gjXymBd057.png)
 
 自然，我们可以在这一层实现流量控制的功能。
 
 前面我们讲负载均衡的时候，是这么配的：
 
-![](./image/image_RzkXNWpcHi.png)
+![](./assets/image/image_RzkXNWpcHi.png)
 
 默认会轮询把请求发给 upstream 下的 server。
 
@@ -221,13 +221,13 @@ location ^~ /api {
 
 如果**包含 version=1.0 的 cookie，那就走 version1.0\_server 的服务，有 version=2.0 的 cookie 就走 version2.0\_server 的服务，否则，走默认的。**
 
-![](./image/image_7vn0FFAzYy.png)
+![](./assets/image/image_7vn0FFAzYy.png)
 
 这样就实现了流量的划分，也就是灰度的功能。
 
 然后我们重新跑下容器：
 
-![](./image/image_M48b-MAoUa.png)
+![](./assets/image/image_M48b-MAoUa.png)
 
 这时候 \*\*，你访问**[**http://localhost:83/api/**](https://link.juejin.cn/?target=http://localhost:83/api/ "http://localhost:83/api/")** 走到的就是默认的版本。\*\*
 
@@ -248,7 +248,7 @@ location ^~ /api {
 这也叫做流量染色。
 完整的灰度流程是这样的：
 
-![](./image/image_bubJA_mwwV.png)
+![](./assets/image/image_bubJA_mwwV.png)
 
 第一次请求的时候，会按照设定的比例随机对流量染色，也就是设置不同 cookie。
 

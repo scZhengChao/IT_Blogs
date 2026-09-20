@@ -66,7 +66,7 @@
 ```
 
 
-![  ](./image/fcbdea408c3b9b7d5bcbdc2f77ecfa55_cqd1scUnm_.png "  ")
+![  ](./assets/image/fcbdea408c3b9b7d5bcbdc2f77ecfa55_cqd1scUnm_.png "  ")
 
 ```纯文本 
  发送邮件 

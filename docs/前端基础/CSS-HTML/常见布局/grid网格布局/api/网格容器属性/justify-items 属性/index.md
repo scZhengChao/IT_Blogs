@@ -53,7 +53,7 @@
 
 页面效果：
 
-![](./image/image_PWZkXQ35vL.png)
+![](./assets/image/image_PWZkXQ35vL.png)
 
 将 justify-items 属性分别修改为 end、center可以分别看到单元格内容在水平方向右对齐、居中对齐，此处限于篇幅不再一一展示。
 
@@ -61,6 +61,6 @@
 
 那么当我们不添加宽高属性时， justify-items 取 start 时页面效果又是怎么样呢，答案是如下图所示：
 
-![](./image/image_QG9MPgd7jM.png)
+![](./assets/image/image_QG9MPgd7jM.png)
 
 我们发现子元素在水平方向上表现出了宽度的“包裹性”，即由文本内容的宽度决定。

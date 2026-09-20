@@ -1,3 +1,3 @@
 # 关系运算符
 
-![](./image/image_4QXP7csDvL.png)
+![](./assets/image/image_4QXP7csDvL.png)

@@ -48,7 +48,7 @@ npx create-react-app zustand-test
 ```
 
 
-![](./image/image_fFVnNVxhpK.png)
+![](./assets/image/image_fFVnNVxhpK.png)
 
 用 cra 创建个 react 项目。
 
@@ -62,7 +62,7 @@ npm run start
 
 浏览器访问下：
 
-![](./image/image_oReLOAmdm9.png)
+![](./assets/image/image_oReLOAmdm9.png)
 
 没啥问题。
 
@@ -175,7 +175,7 @@ persist 就是同步 store 数据到 localStorage 的。
 
 我们试一下：
 
-![](./image/image_4og9yH2mol.png)
+![](./assets/image/image_4og9yH2mol.png)
 
 效果如下：
 
@@ -270,7 +270,7 @@ export const create = (createState) => {
 
 把 create 函数换成我们自己的，其余代码不变：
 
-![](./image/image_GevJlXbIIy.png)
+![](./assets/image/image_GevJlXbIIy.png)
 
 可以看到，功能依然正常：
 
@@ -362,7 +362,7 @@ react 有一个 hook 就是用来定义外部 store 的，store 变化以后会�
 
 有了这个 useSyncExternalStore 的 hook，我们就不用自己监听 store 变化触发 rerender 了：
 
-![](./image/image_v8G_xUsgqr.png)
+![](./assets/image/image_v8G_xUsgqr.png)
 
 可以简化成这样：
 

@@ -10,17 +10,17 @@
 
 #### 接口配置信息修改
 
-![  ](./image/ef50672df37ffbf08f8cb1d4bc03a774_G9jgMSxszP.png "  ")
+![  ](./assets/image/ef50672df37ffbf08f8cb1d4bc03a774_G9jgMSxszP.png "  ")
 
-![  ](./image/66ca10b6f10146dc802521625269b91a_CA_F3Gh0PC.png "  ")
+![  ](./assets/image/66ca10b6f10146dc802521625269b91a_CA_F3Gh0PC.png "  ")
 
-![  ](./image/e7437a79ccf01006f7dd6df591c467c7_ez3bKE7k4r.png "  ")
+![  ](./assets/image/e7437a79ccf01006f7dd6df591c467c7_ez3bKE7k4r.png "  ")
 
-![  ](./image/5ea8569442b2c093865f83a76e37936f_LLKIOJwBEd.png "  ")
+![  ](./assets/image/5ea8569442b2c093865f83a76e37936f_LLKIOJwBEd.png "  ")
 
-[ngrok使用【瑞客论坛 www.ruike1.com】.pdf](<./file/ngrok使用【瑞客论坛 www.ruike1.com】_ZHky11NrKQ.pdf> "ngrok使用【瑞客论坛 www.ruike1.com】.pdf")
+[ngrok使用【瑞客论坛 www.ruike1.com】.pdf](<./assets/file/ngrok使用【瑞客论坛 www.ruike1.com】_ZHky11NrKQ.pdf> "ngrok使用【瑞客论坛 www.ruike1.com】.pdf")
 
-[公众号简介与开发者申请【瑞客论坛 www.ruike1.com】.pdf](<./file/公众号简介与开发者申请【瑞客论坛 www.ruike1.com】_hs4jhECL2v.pdf> "公众号简介与开发者申请【瑞客论坛 www.ruike1.com】.pdf")
+[公众号简介与开发者申请【瑞客论坛 www.ruike1.com】.pdf](<./assets/file/公众号简介与开发者申请【瑞客论坛 www.ruike1.com】_hs4jhECL2v.pdf> "公众号简介与开发者申请【瑞客论坛 www.ruike1.com】.pdf")
 
 [ 微信测试账号和本地开发调试 - 掘金 第一步先找个代理工具，这里我用的是Natapp，他有免费的,我的是付费的，可能有点不同，你要配置本地地址和项目端口号，本地127.0.0.1或者你的内网ip应该都是可以的。端口号和你的项目端口号一致。 执行命令natapp -authtoken=隧道authtoken参数，这里… https://juejin.im/post/5d0351c96fb9a07eeb13a463](https://juejin.im/post/5d0351c96fb9a07eeb13a463 " 微信测试账号和本地开发调试 - 掘金 第一步先找个代理工具，这里我用的是Natapp，他有免费的,我的是付费的，可能有点不同，你要配置本地地址和项目端口号，本地127.0.0.1或者你的内网ip应该都是可以的。端口号和你的项目端口号一致。 执行命令natapp -authtoken=隧道authtoken参数，这里… https://juejin.im/post/5d0351c96fb9a07eeb13a463")
 

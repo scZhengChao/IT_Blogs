@@ -1,6 +1,6 @@
 # spring-mvc 高级
 
-![](./image/image_lq_UPxaCaw.png)
+![](./assets/image/image_lq_UPxaCaw.png)
 
 [](./Spring整合MyBatis-/index.md)
 

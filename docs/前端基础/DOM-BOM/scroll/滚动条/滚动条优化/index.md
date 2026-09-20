@@ -4,7 +4,7 @@
 
 谷歌
 
-![  ](./image/4ee82a36b0b0ab9f2e221ee289447bb3_AL-bJzbwWd.png "  ")
+![  ](./assets/image/4ee82a36b0b0ab9f2e221ee289447bb3_AL-bJzbwWd.png "  ")
 
 \* ::-webkit-scrollbar 滚动条整体部分
 
@@ -24,7 +24,7 @@
 
 IE 的写法和上面不太一样
 
-![  ](./image/664403b1fcc5d562ae9a3cd1247163b5_4gj0LAD8PR.png "  ")
+![  ](./assets/image/664403b1fcc5d562ae9a3cd1247163b5_4gj0LAD8PR.png "  ")
 
 1\. scrollbar-arrow-color: color; /\*三角箭头的颜色\*/
 
@@ -174,4 +174,4 @@ IE 的写法和上面不太一样
 ```
 
 
-![  ](./image/af4ba501a635cce4dbaff897a9e9b617_GtaEb3auZc.png "  ")
+![  ](./assets/image/af4ba501a635cce4dbaff897a9e9b617_GtaEb3auZc.png "  ")

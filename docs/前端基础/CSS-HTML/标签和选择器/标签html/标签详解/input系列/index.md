@@ -24,21 +24,21 @@
 
 ## **第一类：控制系（Input Control States）**
 
-![  ](./image/4a325a6322302cd446c516affdc5e87a_o1R1uvQy8F.jpeg "  ")
+![  ](./assets/image/4a325a6322302cd446c516affdc5e87a_o1R1uvQy8F.jpeg "  ")
 
 ## **第二类：输出系（Input Value States）**
 
-![  ](./image/0144deb6d41d55aad64595da68aa509b_At10XE_iCj.jpeg "  ")
+![  ](./assets/image/0144deb6d41d55aad64595da68aa509b_At10XE_iCj.jpeg "  ")
 
 ## **第三类：侦查系（Input Value-checking）**
 
-![  ](./image/4c2f1199a7ac075159444994fe2f0cb9_AAKhzwOaef.jpeg "  ")
+![  ](./assets/image/4c2f1199a7ac075159444994fe2f0cb9_AAKhzwOaef.jpeg "  ")
 
 ## **type属性**
 
 \<input> 除了有很多相关的选择器，结合不同的type还有不同的属性可以供使用。他们的作用如下
 
-![  ](./image/a2175dd31e84039df78f242445ff9d41_Ch1TyrZ3x9.jpeg "  ")
+![  ](./assets/image/a2175dd31e84039df78f242445ff9d41_Ch1TyrZ3x9.jpeg "  ")
 
 ## output
 
@@ -53,7 +53,7 @@
 ```
 
 
-![  ](./image/75f29cffe4c6467e153426365d544237_7Q7lbXBJJe.gif "  ")
+![  ](./assets/image/75f29cffe4c6467e153426365d544237_7Q7lbXBJJe.gif "  ")
 
 &#x20;   如果要在客户端 JS 中执行任何计算，并且希望结果反映在页面上，可以使用\<output>,这样就无需使用getElementById()获取元素的额外步骤。
 
@@ -79,7 +79,7 @@ range是一种 input 类型，给定一个滑块类型的范围选择器。
 ```
 
 
-![  ](./image/ec8b34a1193c6684bcd9fd9c1c54bb15_AC9A0hcw7x.gif "  ")
+![  ](./assets/image/ec8b34a1193c6684bcd9fd9c1c54bb15_AC9A0hcw7x.gif "  ")
 
 ## **Color picker**
 
@@ -96,7 +96,7 @@ range是一种 input 类型，给定一个滑块类型的范围选择器。
 
 ### **1.表单验证invalid**
 
-![  ](./image/e9e668c82cd97f4ee88f0882989f2a11_jjupIwrzgd.jpeg "  ")
+![  ](./assets/image/e9e668c82cd97f4ee88f0882989f2a11_jjupIwrzgd.jpeg "  ")
 
 ```css 
     <style>
@@ -155,7 +155,7 @@ range是一种 input 类型，给定一个滑块类型的范围选择器。
 
 ### **2.状态切换**:indeterminate
 
-![  ](./image/7d5883d3b07e26108e7560c0c769d3ba_gerC8UEvDd.jpeg "  ")
+![  ](./assets/image/7d5883d3b07e26108e7560c0c769d3ba_gerC8UEvDd.jpeg "  ")
 
 上面我们有提到一个选择器 :indeterminate ，这个是用于选择状态不确定的表单元素与 \<progress> ，玩过扫雷的人都知道，右击除了可以选择红旗，还可以选择问号，就是选中，但不确定；又跟 promise 的 pending 状态类型，介于 resolve 与 reject 之间。
 
@@ -202,13 +202,13 @@ range是一种 input 类型，给定一个滑块类型的范围选择器。
 
 ### **3.游戏 天秀 蒂花之秀**
 
-![  ](./image/928f7909f5cbcdc4d850dbd9062bde9f_F2PoBQWlHw.gif "  ")
+![  ](./assets/image/928f7909f5cbcdc4d850dbd9062bde9f_F2PoBQWlHw.gif "  ")
 
-[input3.html](./file/input3_8U5uFx5kH5.html "input3.html")
+[input3.html](./assets/file/input3_8U5uFx5kH5.html "input3.html")
 
 ### **4.输入框绑定值**
 
-![  ](./image/875a4cae16ca6c97ce3647f0d7172dc9_NdS1ta3-sS.gif "  ")
+![  ](./assets/image/875a4cae16ca6c97ce3647f0d7172dc9_NdS1ta3-sS.gif "  ")
 
 ```html 
 <input type="text" list="names" multiple /> 

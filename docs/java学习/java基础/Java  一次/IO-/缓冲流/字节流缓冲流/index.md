@@ -57,4 +57,4 @@ public class copyFile3 {
 
 # 为什么快
 
-![](./image/image_fmBZvDRWCI.png)
+![](./assets/image/image_fmBZvDRWCI.png)

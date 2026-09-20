@@ -8,17 +8,17 @@
 
 现代操作系统（Windows，macOS，Linux）都可以执行多任务。多任务就是同时运行多个任务，例如：
 
-![](./image/image_y_MegP5xj3.png)
+![](./assets/image/image_y_MegP5xj3.png)
 
 CPU执行代码都是一条一条顺序执行的，但是，即使是单核cpu，也可以同时运行多个任务。**因为操作系统执行多任务实际上就是让CPU对多个任务轮流交替执行。**
 
 例如，假设我们有语文、数学、英语3门作业要做，每个作业需要30分钟。我们把这3门作业看成是3个任务，可以做1分钟语文作业，再做1分钟数学作业，再做1分钟英语作业：
 
-![](./image/image_zPCh6thoIr.png)
+![](./assets/image/image_zPCh6thoIr.png)
 
 **这样轮流做下去，在某些人眼里看来，做作业的速度就非常快，看上去就像同时在做3门作业一样**
 
-![](./image/image_SmIZOBcHQN.png)
+![](./assets/image/image_SmIZOBcHQN.png)
 
 **类似的，操作系统轮流让多个任务交替执行**，例如，让浏览器执行0.001秒，让QQ执行0.001秒，再让音乐播放器执行0.001秒，在人看来，CPU就是在同时执行多个任务。
 
@@ -32,7 +32,7 @@ CPU执行代码都是一条一条顺序执行的，但是，即使是单核cpu�
 
 进程和线程的关系就是：**一个进程可以包含一个或多个线程，但至少会有一个线程。**
 
-![](./image/image_HORrNNG_IM.png)
+![](./assets/image/image_HORrNNG_IM.png)
 
 操作系统调度的**最小任务单位**其实不是进程，**而是线程**。常用的Windows、Linux等操作系统都采用**抢占式多任务，如何调度线程完全由操作系统决定，****程序自己不能决定什么时候执行，以及执行多长时间****。**
 
@@ -40,15 +40,15 @@ CPU执行代码都是一条一条顺序执行的，但是，即使是单核cpu�
 
 **多进程模式（每个进程只有一个线程）：**
 
-![](./image/image_sNfiD3CnhY.png)
+![](./assets/image/image_sNfiD3CnhY.png)
 
 多线程模式（一个进程有多个线程）：
 
-![](./image/image_5S7TkY_w5p.png)
+![](./assets/image/image_5S7TkY_w5p.png)
 
 多进程＋多线程模式（复杂度最高）：
 
-![](./image/image_aB2IBFh0bv.png)
+![](./assets/image/image_aB2IBFh0bv.png)
 
 ### 进程 vs 线程
 

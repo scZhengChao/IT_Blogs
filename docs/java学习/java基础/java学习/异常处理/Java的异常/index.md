@@ -88,7 +88,7 @@ try {
 
 因为`Java`的异常是`class`，它的继承关系如下：
 
-![](./image/image_5UJLB7yOhV.png)
+![](./assets/image/image_5UJLB7yOhV.png)
 
 从继承关系可知：`Throwable`是**异常体系的根**，它继承自`Object`。`Throwable`有两个体系：`Error`和`Exception`，`Error`**表示严重的错误，程序对此一般无能为力**，例如：
 

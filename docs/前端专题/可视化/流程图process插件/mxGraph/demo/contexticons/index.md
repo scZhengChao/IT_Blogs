@@ -1,6 +1,6 @@
 # contexticons
 
-![](./image/image_GxWrGpA4GG.png)
+![](./assets/image/image_GxWrGpA4GG.png)
 
 ```html 
 <!--根据以下官方例子进行修改-->

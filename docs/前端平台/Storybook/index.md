@@ -26,6 +26,6 @@ npm create storybook@latest
 
 Storybook 是一个强大的工具，可以在 UI 开发工作流程的许多方面提供帮助。以下是一些主要概念，可帮助您入门。
 
-![](./image/image_KeoLO3lrag.png)
+![](./assets/image/image_KeoLO3lrag.png)
 
 [Storybook 是什么？](<./Storybook 是什么？/index.md> "Storybook 是什么？")

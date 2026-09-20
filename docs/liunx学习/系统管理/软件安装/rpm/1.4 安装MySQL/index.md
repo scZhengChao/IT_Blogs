@@ -30,7 +30,7 @@ rpm -qa | grep mariadb            查询当前系统中安装的名称带mariadb
 
 通过rpm -qa 查询到系统通过rpm安装的所有软件，太多了，不方便查看，所以我们可以通过管道符 | 配合着grep进行过滤查询。
 
-![](./image/image_IIkRyaLni2.png)
+![](./assets/image/image_IIkRyaLni2.png)
 
 通过查询，我们发现在当前系统中存在mariadb数据库，是CentOS7中自带的，而这个数据库和MySQL数据库是冲突的，所以要想保证MySQL成功安装，需要卸载mariadb数据库。
 
@@ -50,7 +50,7 @@ rpm -e --nodeps  mariadb-libs-5.5.60-1.el7_5.x86_64
 ```
 
 
-![](./image/image_dAA6gx4HMV.png)
+![](./assets/image/image_dAA6gx4HMV.png)
 
 我们看到执行完毕之后， 再次查询 mariadb，就查不到了，因为已经被成功卸载了。
 
@@ -60,9 +60,9 @@ A. 上传MySQL安装包
 
 在课程资料中，提供的有MySQL的安装包 ，我们需要将该安装包上传到Linux系统中。
 
-![](./image/image_mROKHPeDo_.png)
+![](./assets/image/image_mROKHPeDo_.png)
 
-![](./image/image_PQRjWeDr3c.png)
+![](./assets/image/image_PQRjWeDr3c.png)
 
 B. 解压到/usr/local/soft/mysql
 
@@ -74,13 +74,13 @@ tar -zxvf mysql-5.7.25-1.el7.x86_64.rpm-bundle.tar.gz -C /usr/local/soft/mysql
 ```
 
 
-![](./image/image_1eBt1nI5ZU.png)
+![](./assets/image/image_1eBt1nI5ZU.png)
 
 **4). 按照顺序安装rpm安装包**
 
 进入到上述解压的路径下：
 
-![](./image/image_TSBPQmlXr7.png)
+![](./assets/image/image_TSBPQmlXr7.png)
 
 执行如下命令：
 
@@ -102,7 +102,7 @@ rpm -ivh mysql-community-server-5.7.25-1.el7.x86_64.rpm
 > \*   安装过程中提示缺少net-tools依赖，使用yum安装(yum是一种在线安装方式，需要保证联网)
 > \*   可以通过指令(yum update)升级现有软件及系统内核
 
-![](./image/image_M2fvAvZQvA.png)
+![](./assets/image/image_M2fvAvZQvA.png)
 
 #### 1.4.2 MySQL启动
 
@@ -122,7 +122,7 @@ systemctl stop mysqld        停止mysql服务
 
 2.mysql是一个客户端软件，可以对任何主机的mysql服务（即后台运行的mysqld）发起连接，mysql自带的客户端程序一般都在cmd或者终端下进行操作
 
-![](./image/image_oFoYYv_RnG.png)
+![](./assets/image/image_oFoYYv_RnG.png)
 
 > 说明： 这里不建议，后期学习docker有可能会导致端口号冲突。
 >
@@ -140,7 +140,7 @@ ps -aux | grep mysql                查看mysql进程
 ```
 
 
-![](./image/image_cMQPtRMdsZ.png)
+![](./assets/image/image_cMQPtRMdsZ.png)
 
 备注:
 

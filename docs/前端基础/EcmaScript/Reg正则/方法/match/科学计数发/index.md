@@ -11,4 +11,4 @@ console.log(_m)
 ```
 
 
-![](./image/image_Q08_cD9hFD.png)
+![](./assets/image/image_Q08_cD9hFD.png)

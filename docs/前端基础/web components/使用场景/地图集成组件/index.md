@@ -10,7 +10,7 @@
 - 需要**保持第三方代码与主应用隔离**
 - 需要**自定义第三方组件的外观和行为**
 
-![](./image/image_UwCHjdV_WY.png)
+![](./assets/image/image_UwCHjdV_WY.png)
 
 ```html 
 <!DOCTYPE html>

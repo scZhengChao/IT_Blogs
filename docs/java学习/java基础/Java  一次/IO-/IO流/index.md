@@ -25,7 +25,7 @@ IO的数据传输，可以看做是一种数据的流动，按照流动的方向
 
 简单来说：**内存在读，内存在写。**
 
-![](./image/image_C8-6pyGrGn.png)
+![](./assets/image/image_C8-6pyGrGn.png)
 
 ### 区别
 

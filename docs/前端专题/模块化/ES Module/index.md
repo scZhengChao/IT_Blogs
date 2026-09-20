@@ -111,7 +111,7 @@ export default function sayHello() {
 
 结果如下
 
-![](./image/image_XcjKOpC8cp.png)
+![](./assets/image/image_XcjKOpC8cp.png)
 
 ## 重命名导入
 

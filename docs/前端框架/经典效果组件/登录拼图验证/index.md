@@ -1,6 +1,6 @@
 # 登录拼图验证
 
-![](./image/image_x4AJbEIfa5.png)
+![](./assets/image/image_x4AJbEIfa5.png)
 
 ```typescript 
 <!DOCTYPE html>

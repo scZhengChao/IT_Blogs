@@ -1,5 +1,5 @@
 # bean作用范围
 
-![](./image/image_D06GTpzHKM.png)
+![](./assets/image/image_D06GTpzHKM.png)
 
-![](./image/image_oiDTuUGlHp.png)
+![](./assets/image/image_oiDTuUGlHp.png)

@@ -1,11 +1,11 @@
 # 多环境
 
-![](./image/image_h30eUOkPBu.png)
+![](./assets/image/image_h30eUOkPBu.png)
 
-![](./image/image_Cfu9g9ktgC.png)
+![](./assets/image/image_Cfu9g9ktgC.png)
 
-![](./image/image_knB9awaije.png)
+![](./assets/image/image_knB9awaije.png)
 
-![](./image/image_q00y8sFNaJ.png)
+![](./assets/image/image_q00y8sFNaJ.png)
 
-![](./image/image_yIG5wdlMKV.png)
+![](./assets/image/image_yIG5wdlMKV.png)

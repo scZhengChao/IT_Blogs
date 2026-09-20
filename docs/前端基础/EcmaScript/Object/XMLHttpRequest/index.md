@@ -11,11 +11,11 @@
 
 [http://www.ruanyifeng.com/blog/2012/09/xmlhttprequest\_level\_2.html](http://www.ruanyifeng.com/blog/2012/09/xmlhttprequest_level_2.html "http://www.ruanyifeng.com/blog/2012/09/xmlhttprequest_level_2.html")  阮一峰
 
-[index.vue](./file/index_IRFSKRz7AD.vue "index.vue")
+[index.vue](./assets/file/index_IRFSKRz7AD.vue "index.vue")
 
 附上一张 timing 图
 
-![  ](./image/eece31134324e363bbddde6e540605d0_vJethRRgkn.png "  ")
+![  ](./assets/image/eece31134324e363bbddde6e540605d0_vJethRRgkn.png "  ")
 
 ```javascript 
     send(){

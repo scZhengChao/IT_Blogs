@@ -7,7 +7,7 @@
 
 ## 缩放、旋转动画
 
-![  ](./image/96862bd0d6e0462994678b761c61e49e~tplv-k3u1fbpfcp-z.webp "  ")
+![  ](./assets/image/96862bd0d6e0462994678b761c61e49e~tplv-k3u1fbpfcp-z.webp "  ")
 
 这里用到CSS3提供的tranition过渡属性，使得元素进行形变时有自然的过渡动画，实现起来也是相当简单
 
@@ -46,7 +46,7 @@ transition-delay 动画延迟多久开始执行
 
 ## 跟随鼠标丝滑移动的背景块
 
-![  ](./image/2d242c895c7b41fdb465b39be0dd4064~tplv-k3u1fbpfcp-z.webp "  ")
+![  ](./assets/image/2d242c895c7b41fdb465b39be0dd4064~tplv-k3u1fbpfcp-z.webp "  ")
 
 当点击到某一项，背景块固定，再将鼠标移至其他区域，色块又紧随其后，相当丝滑。
 

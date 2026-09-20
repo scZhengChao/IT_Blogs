@@ -7,7 +7,7 @@
 
 浏览器支持可设置动画的网格属性：
 
-![](./image/image_xVGysobHS8.png)
+![](./assets/image/image_xVGysobHS8.png)
 
 示例：
 

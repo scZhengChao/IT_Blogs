@@ -26,7 +26,7 @@ Druid连接池
 
 ## 配置参数
 
-![](./image/image_Ssg6NQjChW.png)
+![](./assets/image/image_Ssg6NQjChW.png)
 
 Druid连接池基本使用
 
@@ -56,7 +56,7 @@ Driud使用步骤
 
 #### 1.导入jar包 druid-1.1.12.jar
 
-![](./image/image_iD4Kfhpp88.png)
+![](./assets/image/image_iD4Kfhpp88.png)
 
 #### 2.定义配置文件，定义参数
 

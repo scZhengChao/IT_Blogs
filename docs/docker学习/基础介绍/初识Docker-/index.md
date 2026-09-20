@@ -6,9 +6,9 @@
 - [Docker如何解决不同系统环境的问题？  ](#Docker如何解决不同系统环境的问题)
 - [Docker原理  ](#Docker原理)
 
-![](./image/image_bzKuZNcS2K.png)
+![](./assets/image/image_bzKuZNcS2K.png)
 
-![](./image/image_Gz_IZmfiP9.png)
+![](./assets/image/image_Gz_IZmfiP9.png)
 
 Docker如何解决依赖的兼容问题的？
 
@@ -17,13 +17,13 @@ Docker如何解决依赖的兼容问题的？
 
 # 操作系统结构
 
-![](./image/image_oEWccJns7-.png)
+![](./assets/image/image_oEWccJns7-.png)
 
-![](./image/image_xZumBMEwE2.png)
+![](./assets/image/image_xZumBMEwE2.png)
 
 Docker如何解决不同系统环境的问题？
 
-![](./image/image_8xRRm7xWJS.png)
+![](./assets/image/image_8xRRm7xWJS.png)
 
 Docker如何解决不同系统环境的问题？
 
@@ -32,7 +32,7 @@ Docker如何解决不同系统环境的问题？
 
 Docker原理
 
-![](./image/image_SKWzO31XuM.png)
+![](./assets/image/image_SKWzO31XuM.png)
 
 Docker如何解决大型项目依赖关系复杂，不同组件依赖的兼容性问题？
 

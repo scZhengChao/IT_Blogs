@@ -13,7 +13,7 @@
 
 在node中，I/O处理方面有自己的libuv引擎，libuv引擎中事件循环分为6个阶段：
 
-![](./image/image_XNbeh0ymqq.png)
+![](./assets/image/image_XNbeh0ymqq.png)
 
 - timers阶段： 执行timer（setTimeout 、setInterval）的回调
 - poll阶段： 获取新的I/O事件，适当的条件下node将阻塞在这里。

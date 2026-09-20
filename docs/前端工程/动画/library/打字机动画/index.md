@@ -15,7 +15,7 @@
 
 [   https://mattboldt.github.io/typed.js/](https://mattboldt.github.io/typed.js/ "   https://mattboldt.github.io/typed.js/")
 
-![  ](./image/9c3c6637bc3546efb1308dcc22502e19~tplv-k3u1fbpfcp-z.webp "  ")
+![  ](./assets/image/9c3c6637bc3546efb1308dcc22502e19~tplv-k3u1fbpfcp-z.webp "  ")
 
 这里我们使用三方的工具`Typed.js`
 

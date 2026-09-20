@@ -40,7 +40,7 @@ console.log(view);
 ```
 
 
-![](./image/image_cgbzClbkxB.png)
+![](./assets/image/image_cgbzClbkxB.png)
 
 #### ② buffer、byteLength、byteOffset
 

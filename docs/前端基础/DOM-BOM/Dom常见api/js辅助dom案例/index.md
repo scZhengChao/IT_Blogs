@@ -39,9 +39,9 @@
 ```
 
 
-[editor\_dbclick.html](./file/editor_dbclick_1XMPTQ7UK-.html "editor_dbclick.html")
+[editor\_dbclick.html](./assets/file/editor_dbclick_1XMPTQ7UK-.html "editor_dbclick.html")
 
-[tabs-edit.html](./file/tabs-edit_kL7bDMZkAQ.html "tabs-edit.html")
+[tabs-edit.html](./assets/file/tabs-edit_kL7bDMZkAQ.html "tabs-edit.html")
 
 **二：div模拟输入框（**
 
@@ -219,4 +219,4 @@
 ```
 
 
-[drag1.html](./file/drag1_AMYxFvb2KE.html "drag1.html")
+[drag1.html](./assets/file/drag1_AMYxFvb2KE.html "drag1.html")

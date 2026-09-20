@@ -6,7 +6,7 @@
 
 **这是实现效果：**
 
-![](./image/image_gmT6_rB8bv.png)
+![](./assets/image/image_gmT6_rB8bv.png)
 
 想法是先用伪类创建一个与底色一样圆形，再用阴影扩展出一个与tab页颜色一样的圆形，再用伪类的圆形去盖住tab页颜色的圆形，最后使用定位来置于底部。
 

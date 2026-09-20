@@ -81,7 +81,7 @@ setTimeout
 
 如图：
 
-![](./image/image_t1HPTHdaZo.png)
+![](./assets/image/image_t1HPTHdaZo.png)
 
 另外，请注意下`Promise`的`polyfill`与官方版本的区别：
 

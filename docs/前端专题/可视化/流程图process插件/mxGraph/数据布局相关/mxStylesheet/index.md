@@ -2,7 +2,7 @@
 
 我们可以通过样式来改变`cell`的外观。如下图所示，`mxStyleSheet`可以**看成一个**`Hashtable`，`key`是样式名，`value`是很多具体的样式的数组。每一个具体的样式就是”`strokeColor=red`”这样**的k-v对**。因此**每个样式实际是一组具体的样式**，具体的样式可能是设置字体颜色为红色、设置透明的为`50`等等。
 
-![](./image/image_6e6x_FNJ2q.png)
+![](./assets/image/image_6e6x_FNJ2q.png)
 
 [图片](./图片/index.md "图片")
 

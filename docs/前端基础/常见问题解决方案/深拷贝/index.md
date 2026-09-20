@@ -167,7 +167,7 @@ console.log(copied)
 - 拷贝**各种 JavaScript 类型**，例如Date、Set、Map、Error、RegExp、ArrayBuffer, Blob、File、ImageData等；
 - 拷贝同样，所使用的结构化克隆算法也structuredClone()**不能克隆 DOM 元素**。将 HTMLElement 对象传递给structuredClone()将导致如上所示的错误。
 
-![](./image/image_kpGYphSnlO.png)
+![](./assets/image/image_kpGYphSnlO.png)
 
 - 任何**可转移的对象。**
 
@@ -216,7 +216,7 @@ const funcClone = structuredClone(func);
 
 输出结果如下：
 
-![](./image/image_LfnyIrKzhG.png)
+![](./assets/image/image_LfnyIrKzhG.png)
 
 **当拷贝方法时，也会抛出异常：**
 
@@ -237,7 +237,7 @@ const cloned = structuredClone(car);
 
 输出结果如下：
 
-![](./image/image_RJQ2I42mP3.png)
+![](./assets/image/image_RJQ2I42mP3.png)
 
 ### DOM 节点
 
@@ -309,7 +309,7 @@ AudioData、Blob、CryptoKey、DOMException、DOMMatrix、DOMMatrixReadOnly、DO
 
 目前主流浏览器都支持 structuredClone API：
 
-![](./image/image_1_L-rpVUWN.png)
+![](./assets/image/image_1_L-rpVUWN.png)
 
 # 为什么不用 `JSON.parse(JSON.stringify(x))`？
 
@@ -347,7 +347,7 @@ const copied = JSON.parse(JSON.stringify(originalObject))
 
 除此之外，`JSON.parse(JSON.stringify(x))` 无法对**包含循环引用的对象**进行深克隆：
 
-![](./image/image_WfM0guHW4p.png)
+![](./assets/image/image_WfM0guHW4p.png)
 
 所以，如果对象没有上面说的这些情况，使用 `JSON.parse(JSON.stringify(x))` 进行深克隆是完全没有问题的。如果有，就可以使用 `structuredClone()` 来进行深拷贝。
 

@@ -23,7 +23,7 @@
 
 # 基础使用
 
-[zustand.zip](./file/zustand_k-4c9BBtpR.zip "zustand.zip")
+[zustand.zip](./assets/file/zustand_k-4c9BBtpR.zip "zustand.zip")
 
 ```typescript 
 import create from 'zustand'

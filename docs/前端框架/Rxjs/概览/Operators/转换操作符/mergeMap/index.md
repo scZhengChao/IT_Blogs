@@ -8,7 +8,7 @@
 
 > 这里你是否还记得前面在`empty`操作符介绍的部分提到的，笔者留了个坑没补，就是演示`mergeMap`与`empty`是如何进行配合的？这里就把这个坑填上。
 
-![](./image/image_0rKS1AXPxL.png)
+![](./assets/image/image_0rKS1AXPxL.png)
 
 ```javascript 
 const source = Rx.Observable.interval(1000).take(3);

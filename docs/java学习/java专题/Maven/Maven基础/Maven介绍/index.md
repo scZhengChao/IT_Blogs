@@ -26,7 +26,7 @@ Maven就是是专门为Java项目打造的管理和构建工具，它的主要�
 
 一个使用Maven管理的普通的Java项目，它的目录结构默认如下：
 
-![](./image/image_J7X8Kr_L0j.png)
+![](./assets/image/image_J7X8Kr_L0j.png)
 
 项目的根目录`a-maven-project`是项目名，它有一个项目描述文件`pom.xml`，存放Java源码的目录是`src/main/java`，存放资源文件的目录是`src/main/resources`，存放测试源码的目录是`src/test/java`，存放测试资源的目录是`src/test/resources`，最后，所有编译、打包生成的文件都放在`target`目录里。这些就是一个Maven项目的标准目录结构。
 
@@ -99,7 +99,7 @@ Windows可以把`%M2_HOME%\bin`添加到系统Path变量中。
 
 然后，打开命令行窗口，输入`mvn -version`，应该看到Maven的版本信息：
 
-![](./image/image_d_D10PE7kw.png)
+![](./assets/image/image_d_D10PE7kw.png)
 
 如果提示命令未找到，说明系统PATH路径有误，需要修复后再运行。
 

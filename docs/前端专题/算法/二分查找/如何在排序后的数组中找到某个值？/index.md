@@ -33,7 +33,7 @@
 
 如果我们要检查这个数组中是否存在 48：
 
-![](./image/image_cld9fRjvFD.png)
+![](./assets/image/image_cld9fRjvFD.png)
 
 ## **执行**
 
@@ -80,12 +80,12 @@ function binarySearch(arr, x) {
 
 **用法：**
 
-![](./image/image_oAZUGFQjQB.png)
+![](./assets/image/image_oAZUGFQjQB.png)
 
 **比较**
 
 二分搜索比正常的线性搜索更快。
 
-![  ](./image/binart_dKPC88JN76.gif "  ")
+![  ](./assets/image/binart_dKPC88JN76.gif "  ")
 
 但是，你只能在排序数组上使用二分搜索!

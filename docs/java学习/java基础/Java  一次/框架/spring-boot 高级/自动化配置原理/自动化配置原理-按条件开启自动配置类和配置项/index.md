@@ -36,7 +36,7 @@ public class JdbcTemplateAutoConfiguration {
 
 3、JdbcProperties，用于加载默认的配置，如果配置文件配置了该属性，则配置文件就生效。
 
-![](./image/image_OD6CqaTlAo.png)
+![](./assets/image/image_OD6CqaTlAo.png)
 
 4、通过@Import导入JdbcTemplateConfiguration
 
@@ -84,7 +84,7 @@ public class MyConfig {
 
 结果：保证容器中只有一个 Bean 实例
 
-![](./image/image_EuTlQho_YO.png)
+![](./assets/image/image_EuTlQho_YO.png)
 
 问题：
 

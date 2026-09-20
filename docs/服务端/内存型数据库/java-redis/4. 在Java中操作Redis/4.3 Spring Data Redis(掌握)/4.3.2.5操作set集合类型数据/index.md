@@ -6,7 +6,7 @@
 
 ##### [4.3.2.5](http://tnm2.oa.com/host/home/4.3.2.5 "4.3.2.5")操作set集合类型数据
 
-![](./image/image_HhYFZlpjI-.png)
+![](./assets/image/image_HhYFZlpjI-.png)
 
 需求:
 

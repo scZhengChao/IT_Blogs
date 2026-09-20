@@ -83,11 +83,11 @@ flex-shrink:0;
 ```
 
 
-![  ](./image/1679823-dea0e956685154e5_3WIFApk0UE.png "  ")
+![  ](./assets/image/1679823-dea0e956685154e5_3WIFApk0UE.png "  ")
 
 2009年，W3C提出了一种新的方案--Flex布局，可以简便、完整、响应式地实现各种页面布局。目前已得到所有现在浏览器的支持。
 
-![  ](./image/1679823-909f698a8d82fbc4_Y75HEvnsCW.jpg "  ")
+![  ](./assets/image/1679823-909f698a8d82fbc4_Y75HEvnsCW.jpg "  ")
 
 flex浏览器支持
 
@@ -117,7 +117,7 @@ Flex是Flexible Box的缩写，翻译成中文就是“弹性盒子”，用来�
 
 采用Flex布局的元素，被称为Flex容器(flex container)，简称“容器”。其所有子元素自动成为容器成员，成为Flex项目(Flex item)，简称“项目”。
 
-![  ](./image/1679823-6ea441649bdf542a_wKggYHw3i6.png "  ")
+![  ](./assets/image/1679823-6ea441649bdf542a_wKggYHw3i6.png "  ")
 
 结构示意图
 

@@ -11,7 +11,7 @@
 
 在java 程序中运行的下场都有自己的名字。
 
-![](./image/image_yNVGDyRfps.png)
+![](./assets/image/image_yNVGDyRfps.png)
 
 - 获取线程的名字
 

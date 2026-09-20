@@ -98,7 +98,7 @@ export default Index;
 
 我们简单的写了个 `usePow`，我们通过 `usePow` 给所传入的数字平方, 用切换状态的按钮表示函数内部的状态，我们来看看此时的效果：
 
-![](./image/image_5Qd9YwfH9g.png)
+![](./assets/image/image_5Qd9YwfH9g.png)
 
 我们发现了一个问题，为什么点击切换按钮也会触发`console.log(1)`呢？
 
@@ -118,7 +118,7 @@ import { useMemo } from 'react';
 ```
 
 
-![](./image/image_4VR2E1y-Ha.png)
+![](./assets/image/image_4VR2E1y-Ha.png)
 
 发现此时就已经解决了这个问题，所以要非常注意一点，一个好用的自定义`hooks`,一定要配合`useMemo`、`useCallback`等 Api 一起使用。
 
@@ -207,7 +207,7 @@ import { useMemo } from 'react';
 ```
 
 
-![](./image/image_0FZuDuZThp.png)
+![](./assets/image/image_0FZuDuZThp.png)
 
 我们可以看到，当点击切换按钮的时候，没有经过 `useCallback`封装的函数会再次刷新，而进过过 `useCallback`包裹的函数不会被再次刷新
 
@@ -261,7 +261,7 @@ export default Index;
 
 效果
 
-![](./image/image_sYMPQ2V8N_.png)
+![](./assets/image/image_sYMPQ2V8N_.png)
 
 ### 缓存数据
 
@@ -420,7 +420,7 @@ export default useCreation;
 ```
 
 
-![](./image/image_JcGYvVVyuQ.png)
+![](./assets/image/image_JcGYvVVyuQ.png)
 
 我们可以看到，当我们做无关的`state`改变的时候，正常的函数也会刷新，但`useCreation`没有刷新，从而增强了渲染的性能～
 
@@ -507,7 +507,7 @@ export default useCreation;
 ```
 
 
-![](./image/image_T_5WfTCHxK.png)
+![](./assets/image/image_T_5WfTCHxK.png)
 
 ### useUpdate
 
@@ -549,7 +549,7 @@ export default useCreation;
 
 效果如下：
 
-![](./image/image_570F1YKZ9r.png)
+![](./assets/image/image_570F1YKZ9r.png)
 
 # 案例
 
@@ -719,7 +719,7 @@ export default useReactive;
 
 效果如下：
 
-![](./image/image_-C_w1LrxOO.png)
+![](./assets/image/image_-C_w1LrxOO.png)
 
 ## 案例2: useEventListener
 
@@ -894,7 +894,7 @@ export default useEventListener;
 
 效果：
 
-![](./image/image_lgubmmM0vc.png)
+![](./assets/image/image_lgubmmM0vc.png)
 
 我们可以利用`useEventListener`这个钩子去封装其他钩子，如 鼠标悬停，长按事件，鼠标位置等，在这里在举一个鼠标悬停的小例子
 
@@ -938,7 +938,7 @@ import { useState } from 'react';
 
 效果：
 
-![](./image/image_6fvym--huc.png)
+![](./assets/image/image_6fvym--huc.png)
 
 ## 案例3: 有关时间的Hooks
 
@@ -1151,7 +1151,7 @@ import React, { useState } from 'react';
 
 #### 效果展示：
 
-![](./image/image_0XGwYQWO6i.png)
+![](./assets/image/image_0XGwYQWO6i.png)
 
 ## 总结
 

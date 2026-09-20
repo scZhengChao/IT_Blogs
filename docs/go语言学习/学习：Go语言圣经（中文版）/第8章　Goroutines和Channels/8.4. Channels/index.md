@@ -95,7 +95,7 @@ func main() {
 
 Channels也可以用于将多个goroutine连接在一起，一个Channel的输出作为下一个Channel的输入。**这种串联的Channels就是所谓的管道（pipeline）**。下面的程序用两个channels将三个goroutine串联起来，如图8.1所示。
 
-![](./image/image_Tet3fm2rul.png)
+![](./assets/image/image_Tet3fm2rul.png)
 
 第一个goroutine是一个计数器，用于生成0、1、2、……形式的整数序列，然后通过channel将该整数序列发送给第二个goroutine；第二个goroutine是一个求平方的程序，对收到的每个整数求平方，然后将平方后的结果通过第二个channel发送给第三个goroutine；第三个goroutine是一个打印程序，打印收到的每个整数。为了保持例子清晰，我们有意选择了非常简单的函数，当然三个goroutine的计算很简单，在现实中确实没有必要为如此简单的运算构建三个goroutine。
 
@@ -261,7 +261,7 @@ ch = make(chan string, 3)
 ```
 
 
-![](./image/image_ghzmLaaKOp.png)
+![](./assets/image/image_ghzmLaaKOp.png)
 
 向**缓存Channel的发送操作就是向内部缓存队列的尾部插入元素**，\*\*接收操作则是从队列的头部删除元素。**如果**内部缓存队列是满的，那么发送操作将阻塞直到因另一个goroutine执行接收操作而释放了新的队列空间。\*\*相反，**如果channel是空的，接收操作将阻塞直到有另一个goroutine执行发送操作而向队列插入元素。**
 
@@ -277,7 +277,7 @@ ch <- "C"
 
 此刻，channel的内部缓存队列将是满的（图8.3），如果有第四个发送操作将发生阻塞。
 
-![](./image/image_Vfg4fOXIg1.png)
+![](./assets/image/image_Vfg4fOXIg1.png)
 
 如果我们接收一个值，
 
@@ -289,7 +289,7 @@ fmt.Println(<-ch) // "A"
 
 那么channel的缓存队列将不是满的也不是空的（图8.4），因此对该channel执行的发送或接收操作都不会发生阻塞。通过这种方式，channel的缓存队列解耦了接收和发送的goroutine。
 
-![](./image/image_TUT18b6kOT.png)
+![](./assets/image/image_TUT18b6kOT.png)
 
 在某些特殊情况下，程序可能需要知道channel内部缓存的容量，可以用内置的cap函数获取：
 

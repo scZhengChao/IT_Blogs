@@ -40,7 +40,7 @@ heapdump.writeSnapshot('./test.heapsnapshot');
 
 选择两个堆栈文件做比较来分析，这里有个技巧就是按内存大小排序，然后看到同一个大小的对象个数非常多，那么很有可能就是它被引用了很多次，泄漏的点就可能在那里。然后就发现了问题可能出在`console`对象上。
 
-![](./image/image_Ez6qsI4R-F.png)
+![](./assets/image/image_Ez6qsI4R-F.png)
 
 ## 2. 分析问题
 
@@ -155,7 +155,7 @@ setTimeout(() => {
 
 所以聪明的小伙伴们发现问题没有，**这变成了一个链式引用。这条链上的对象一个都别想被回收，都被牢牢绑死了。**
 
-![](./image/image_1Bs10D3sxl.png)
+![](./assets/image/image_1Bs10D3sxl.png)
 
 如果我们要解决这个问题，理想的引用模型应该是什么样的呢？
 
@@ -283,11 +283,11 @@ setTimeout(() => {
 
 1. 对`console.error`的取值操作，我们判断 ProxyStore 里是否被当前环境设置过了，这时候没有，那么我们给取值操作返回原生的 error 方法；
 
-![](./image/image_6MM7l4k1Hf.png)
+![](./assets/image/image_6MM7l4k1Hf.png)
 
 1. 对`console.error`赋值 Func1 的操作，我们判断 ProxyStore 里没有存储对这个属性的赋值，**那么将 Func1 存储到 ProxyStore，这里注意我们不能将 Func1 设置到**\*\*`console.error`\*\***上；**
 
-![](./image/image_7UZTlmA9dR.png)
+![](./assets/image/image_7UZTlmA9dR.png)
 
 1. 在后续的调用`console.error`操作，又会被我们拦截 get 方法，我们判断到 ProxyStore 里有被赋值过 Func1，这时候返回 Func1，调用`console.error`就变成了调用`Func1`；
 

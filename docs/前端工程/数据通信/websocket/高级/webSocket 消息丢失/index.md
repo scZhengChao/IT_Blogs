@@ -76,7 +76,7 @@ socket.addEventListener('error', (err) => {
 
 首先，我们从 server -> client 发送一个正常的消息，client 正常收到了消息，并且 tcpdump 也正常抓包到了 ACK 确认：
 
-![](./image/image_6ixvCGheY3.png)
+![](./assets/image/image_6ixvCGheY3.png)
 
 **然后 client 开启 NLC 模拟 100% loss 的情况，会发现当 server 收不到 ACK 确认的时候， 会不断的重新发送数据，直到websockt超时没有收到消息断开连接(一般默认 60s):**
 

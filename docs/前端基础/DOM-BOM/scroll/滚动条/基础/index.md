@@ -5,7 +5,7 @@
 - [scrollbar-width](#scrollbar-width)
   - [取值](#取值)
 
-![  ](./image/4ee82a36b0b0ab9f2e221ee289447bb3_LU3AulFunM.png "  ")
+![  ](./assets/image/4ee82a36b0b0ab9f2e221ee289447bb3_LU3AulFunM.png "  ")
 
 # **`scrollbar-width`**
 

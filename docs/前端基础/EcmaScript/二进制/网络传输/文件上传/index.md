@@ -14,7 +14,7 @@
 - 古老:  [https://www.zhangxinxu.com/wordpress/2015/11/html-input-type-file/](https://www.zhangxinxu.com/wordpress/2015/11/html-input-type-file/ "https://www.zhangxinxu.com/wordpress/2015/11/html-input-type-file/")
 - vue里 :[https://blog.csdn.net/qq\_29712995/article/details/78839093](https://blog.csdn.net/qq_29712995/article/details/78839093 "https://blog.csdn.net/qq_29712995/article/details/78839093")
 
-[upload.rar](./file/upload_3qOL0PHk8c.rar "upload.rar")
+[upload.rar](./assets/file/upload_3qOL0PHk8c.rar "upload.rar")
 
 [文件上传下载](./文件上传下载/index.md "文件上传下载")
 

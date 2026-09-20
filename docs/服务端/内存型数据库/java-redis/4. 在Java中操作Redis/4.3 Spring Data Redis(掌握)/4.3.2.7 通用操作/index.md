@@ -1,6 +1,6 @@
 # 4.3.2.7 通用操作
 
-![](./image/image_8ztCOzWhdO.png)
+![](./assets/image/image_8ztCOzWhdO.png)
 
 需求：
 

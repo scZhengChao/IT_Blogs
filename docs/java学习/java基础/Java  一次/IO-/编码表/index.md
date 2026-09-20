@@ -21,7 +21,7 @@
 &#x20;            存储一个字符a，首先需在码表中查到对应的数字是**97**，然后按照转换成二进制的规则进行存储。称为**编码  \*\* &#x20;
 &#x20;            读取的时候，先把二进制解析出来，再转成97，通过97查找早码表中对应的字符**是a。称为解码\*\*
 
-![](./image/image_aBqg2Aq1Js.png)
+![](./assets/image/image_aBqg2Aq1Js.png)
 
 ASCII码表：
 
@@ -29,7 +29,7 @@ ASCII码表：
 
 > 注意：ASCII码表中是没有中文的。
 
-![](./image/image_kVlwTEF-Bl.png)
+![](./assets/image/image_kVlwTEF-Bl.png)
 
 &#x20;
 
@@ -47,11 +47,11 @@ ASCII码表：
 
 注意： `Unicode`是万国码表，以`UTF-8编码后一个中文以三个字节`的形式存储
 
-![](./image/image_R_ayoHaw2a.png)
+![](./assets/image/image_R_ayoHaw2a.png)
 
 # 过程解析
 
-![](./image/image_vl-P8lkED6.png)
+![](./assets/image/image_vl-P8lkED6.png)
 
 - 所有编码都兼容ASCLL 码表；所以数字英文不会出现乱码问题
 - utf-8中文3个字节

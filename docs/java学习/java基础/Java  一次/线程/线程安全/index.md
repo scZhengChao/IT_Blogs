@@ -2,7 +2,7 @@
 
 **多个线程在**对**共享数据进行读改写**的时候，可能导致的**数据错乱就是线程**的安全问题了
 
-![](./image/image_SsuuoEfQEv.png)
+![](./assets/image/image_SsuuoEfQEv.png)
 
 处理时间大于cpu执行时间；导致状态不同步
 

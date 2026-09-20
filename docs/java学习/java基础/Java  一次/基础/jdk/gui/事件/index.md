@@ -1,8 +1,8 @@
 # 事件
 
-![](./image/image_c48bXpoxbj.png)
+![](./assets/image/image_c48bXpoxbj.png)
 
-![](./image/image_moLRc-MO_f.png)
+![](./assets/image/image_moLRc-MO_f.png)
 
 ```javascript 
         JFrame jf = new JFrame();

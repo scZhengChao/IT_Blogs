@@ -44,41 +44,41 @@ location ~* ^/444/AAA.*\.html$ {
 
 然后来看第一条路由：
 
-![](./image/image_Js04BEV497.png)
+![](./assets/image/image_Js04BEV497.png)
 
 location 和路径**之间加了个 =，代表精准匹配，** 也就是只有完全相同的 url 才会匹配这个路由。
 
-![](./image/image_oGepRTusTm.png)
+![](./assets/image/image_oGepRTusTm.png)
 
-![](./image/image_51i4KxYoxh.png)
+![](./assets/image/image_51i4KxYoxh.png)
 
 # \*\*不带 = \*\*
 
 **不带 = 代表根据前缀匹配，后面可以是任意路径。**
 
-![](./image/image_in8RGB4jyM.png)
+![](./assets/image/image_in8RGB4jyM.png)
 
 **这里的 \$uri 是取当前路径。**
 
-![](./image/image_qK39d5_emf.png)
+![](./assets/image/image_qK39d5_emf.png)
 
-![](./image/image_REejOhBEx8.png)
+![](./assets/image/image_REejOhBEx8.png)
 
 # 正则
 
 然后**如果想支持正则，就可以加个 \~。**
 
-![](./image/image_cMpH1MsHQw.png)
+![](./assets/image/image_cMpH1MsHQw.png)
 
 这里的正则语法不难看懂，就是 /aaaa/bbb 开头，然后中间是任意字符，最后 .html 结尾的 url。
 
-![](./image/image_rN0QCdeXCl.png)
+![](./assets/image/image_rN0QCdeXCl.png)
 
-![](./image/image_JsW2ILYhas.png)
+![](./assets/image/image_JsW2ILYhas.png)
 
 **但是它是区分大小写的，比如这样就不行了：**
 
-![](./image/image_a5SVGbfjnc.png)
+![](./assets/image/image_a5SVGbfjnc.png)
 
 换成小写就可以：
 
@@ -94,7 +94,7 @@ location 和路径**之间加了个 =，代表精准匹配，** 也就是只有�
 
 ![](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/58600f38f1324bfe89bdb43f89327bc0~tplv-k3u1fbpfcp-zoom-in-crop-mark:1512:0:0:0.awebp?)
 
-![](./image/image_y9rCR-wt9O.png)
+![](./assets/image/image_y9rCR-wt9O.png)
 
 任意的大小写都是可以的。
 
@@ -113,7 +113,7 @@ location /444 {
 
 这时候就有两个 /444 的路由了：
 
-![](./image/image_at01CUdHkm.png)
+![](./assets/image/image_at01CUdHkm.png)
 
 这时候浏览器访问，还是匹配上面的那个路由：
 

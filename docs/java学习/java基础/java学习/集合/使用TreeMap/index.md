@@ -8,7 +8,7 @@
 
 还有一种`Map`，它**在内部会对Key进行排序，这种`Map`****就是****`SortedMap`****。注意到****`SortedMap`****是接口，它的实现类是****`TreeMap`**。
 
-![](./image/image__xRD3yu_VO.png)
+![](./assets/image/image__xRD3yu_VO.png)
 
 `SortedMap`保证遍历时以Key的顺序来进行排序。例如，放入的Key是`"apple"`、`"pear"`、`"orange"`，遍历的顺序一定是`"apple"`、`"orange"`、`"pear"`，**因为**\*\*`String`\*\***默认按字母排序：**
 

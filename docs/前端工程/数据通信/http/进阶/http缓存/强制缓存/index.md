@@ -38,11 +38,11 @@ Expires已经被废弃了。对于强缓存来说，Expires已经不是实现强
 
 一般请求是从客户端直接发送到服务端，如下↓
 
-![](./image/image_yB9EU562wR.png)
+![](./assets/image/image_yB9EU562wR.png)
 
 但有些情况下是例外的：比如，出现代理服务器，如下↓
 
-![](./image/image_R709D7XaO6.png)
+![](./assets/image/image_R709D7XaO6.png)
 
 **而public和private就是决定资源是否可以在代理服务器进行缓存的属性。**
 

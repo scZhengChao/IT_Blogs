@@ -248,6 +248,6 @@
 
 根据key值得不同 可以模拟if else  完成单个元素的过度
 
-[transition.html](./file/transition_5nuz51p5bO.html "transition.html")
+[transition.html](./assets/file/transition_5nuz51p5bO.html "transition.html")
 
-[transitionMarqueen.html](./file/transitionMarqueen_O64H6hQebx.html "transitionMarqueen.html")
+[transitionMarqueen.html](./assets/file/transitionMarqueen_O64H6hQebx.html "transitionMarqueen.html")

@@ -6,7 +6,7 @@
 
 经过前面代码的洗礼，相信大家对该操作符已经不陌生了。
 
-![](./image/image_I8eCmBZBTK.png)
+![](./assets/image/image_I8eCmBZBTK.png)
 
 create
 

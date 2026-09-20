@@ -35,4 +35,4 @@ public class Student {
 
 > printIn 方法中自动调用 toString；
 
-![](./image/image_ulnN5Qs4ia.png)
+![](./assets/image/image_ulnN5Qs4ia.png)

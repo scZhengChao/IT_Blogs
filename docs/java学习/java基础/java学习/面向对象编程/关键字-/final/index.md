@@ -9,9 +9,9 @@
 
 **不允许往下派生；**
 
-![](./image/image_HIUb_8fZmr.png)
+![](./assets/image/image_HIUb_8fZmr.png)
 
-![](./image/image_jZgDncFQAs.png)
+![](./assets/image/image_jZgDncFQAs.png)
 
 [是什么](IT/服务端/java学习/java基础/java学习/面向对象编程/关键字-/final/是什么/是什么.md "是什么")
 

@@ -47,9 +47,9 @@
 
 除上述之外，文档相对友好，但也仅仅是相对于同类库的文档友好那么一滴滴，社区有维护一个中文文档。
 
-![](./image/image_iLq_0xbNud.png)
+![](./assets/image/image_iLq_0xbNud.png)
 
-![](./image/image_3Na9BDbxQ0.png)
+![](./assets/image/image_3Na9BDbxQ0.png)
 
 ### fabric.js
 
@@ -65,43 +65,43 @@ fabricjs是和konva同类型但是比konva更老牌的一个的Canvas库，目�
 
 简介：miniPaint\[8] \[在线演示\[9]] - 在线版的PS。PS这款软件大家都不陌生，web版本的如何呢？请看下图：
 
-![](./image/image_Jw7nCLRuaC.png)
+![](./assets/image/image_Jw7nCLRuaC.png)
 
 ### DarkroomJS
 
 简介：DarkroomJS\[10] \[在线演示\[11]] - 基于Fabricjs的浏览器端可扩展的图像编辑工具
 
-![](./image/image_9NrAGn9l7u.png)
+![](./assets/image/image_9NrAGn9l7u.png)
 
 ### fabric-brush
 
 简介：fabric-brush\[12] \[在线演示\[13]] - 基于Fabric.js的Canvas笔刷工具
 
-![](./image/image_iyq3CExGSP.png)
+![](./assets/image/image_iyq3CExGSP.png)
 
 ### fabricjs-image-editor-origin
 
 简介：fabricjs-image-editor-origin\[14] \[在线演示\[15]] - Fabricjs图像编辑器
 
-![](./image/image_s7oZXkZGQj.png)
+![](./assets/image/image_s7oZXkZGQj.png)
 
 ### react-sketch
 
 简介：react-sketch\[16] \[在线演示\[17]] - 基于React、Fabricjs的素描应用
 
-![](./image/image_xIf6aso6q-.png)
+![](./assets/image/image_xIf6aso6q-.png)
 
 ### glitch-canvas
 
 简介：glitch-canvas\[18] \[在线演示\[19]] - 给画布元素添加故障效果
 
-![](./image/image_6cOP2tJn33.png)
+![](./assets/image/image_6cOP2tJn33.png)
 
 ### animockup
 
 简介：animockup\[20] \[在线演示\[21]] - 在浏览器中创建动画模型，并导出为视频或动画GIF
 
-![](./image/image_e4FJnZ1J34.png)
+![](./assets/image/image_e4FJnZ1J34.png)
 
 ## 物理引擎
 
@@ -113,9 +113,9 @@ fabricjs是和konva同类型但是比konva更老牌的一个的Canvas库，目�
 
 matter.js\[25]相较于老牌的 Box2D 引擎库更为轻量级（压缩版仅有 87 KB），并且在性能和功能方面也不逊色。
 
-![](./image/image_Y3Dmys1eBE.png)
+![](./assets/image/image_Y3Dmys1eBE.png)
 
-![](./image/image_oIN7nLEOmo.png)
+![](./assets/image/image_oIN7nLEOmo.png)
 
 ## 流程图/组织图/图编辑等
 
@@ -128,11 +128,11 @@ matter.js\[25]相较于老牌的 Box2D 引擎库更为轻量级（压缩版仅�
 - GoJS用自定义模板和布局组件简化了节点、链接和分组。
 - 给用户交互提供了许多先进的功能，如拖拽、复制、粘贴、文本编辑、工具提示、上下文菜单、自动布局、模板、数据绑定和模型、事务状态和撤销管理、调色板、概述、事件处理程序、命令和自定义操作的扩展工具系统。
 
-![](./image/image_z-GzMD4fko.png)
+![](./assets/image/image_z-GzMD4fko.png)
 
 文档中提供了大量的demo\[29]可供参考，基本对于常见的图编辑程序做到了全覆盖。
 
-![](./image/image_HMDuqNU1u_.png)
+![](./assets/image/image_HMDuqNU1u_.png)
 
 ### butterfly
 
@@ -143,7 +143,7 @@ matter.js\[25]相较于老牌的 Box2D 引擎库更为轻量级（压缩版仅�
 - 利用DOM/REACT/VUE来定制元素；灵活性，可塑性，拓展性优秀
 - 提供了中文文档，这点对英文不好的小伙伴很Nice
 
-![](./image/image_eUoutZZNWV.png)
+![](./assets/image/image_eUoutZZNWV.png)
 
 ### wireflow
 
@@ -153,7 +153,7 @@ matter.js\[25]相较于老牌的 Box2D 引擎库更为轻量级（压缩版仅�
 - Wireflow 考虑到了协作。您可以邀请您的同事和他们一起实时设计下一个项目的用户流程。
 - 它具有内置的实时聊天功能，让您能够与您的队友进行交流，并且在您实时协作时仍然在同一个应用程序中。
 
-![](./image/image_Ls_n0RChE1.png)
+![](./assets/image/image_Ls_n0RChE1.png)
 
 ### flowy
 
@@ -163,37 +163,37 @@ matter.js\[25]相较于老牌的 Box2D 引擎库更为轻量级（压缩版仅�
 - 块重排、删除块、自动块居中
 - 条件捕捉、条件块移除、无依赖项
 
-![](./image/image_ZfVXMcJ3UN.png)
+![](./assets/image/image_ZfVXMcJ3UN.png)
 
 ### Workflow Designer
 
 简介：Workflow Designer\[36] \[在线示例\[37]] - 基于G6和React的可视化流程编辑器。
 
-![](./image/image_64_uv4ZfIO.png)
+![](./assets/image/image_64_uv4ZfIO.png)
 
 ### web-pdm
 
 简介：web-pdm\[38] \[在线示例\[39]] - 用G6做的ER图工具，最终目标是想做成在线版的powerdesigner.
 
-![](./image/image_u8YQm7FhrO.png)
+![](./assets/image/image_u8YQm7FhrO.png)
 
 ### X-Flowchart-Vue
 
 简介：X-Flowchart-Vue\[40] \[在线演示\[41]] - 基于G6和Vue的可视化图形编辑器。
 
-![](./image/image_CoAeb1AKm3.png)
+![](./assets/image/image_CoAeb1AKm3.png)
 
 ### OrgChart
 
 简介：OrgChart\[42] \[在线演示\[43]] - 简单直接的组织图插件
 
-![](./image/image_7qjedHHNNo.png)
+![](./assets/image/image_7qjedHHNNo.png)
 
 ### welabx-g6
 
 简介：welabx-g6\[44] \[在线示例\[45]] - 基于G6和Vue的流程图编辑器。
 
-![](./image/image_mDEZQA2IxN.png)
+![](./assets/image/image_mDEZQA2IxN.png)
 
 ## 全景图/AR/VR
 
@@ -203,7 +203,7 @@ matter.js\[25]相较于老牌的 Box2D 引擎库更为轻量级（压缩版仅�
 
 简介：Pannellum\[48] \[在线演示\[49]] - 轻量、免费、开源的web全景查看器。
 
-![](./image/image_6URFe6jfqQ.png)
+![](./assets/image/image_6URFe6jfqQ.png)
 
 ### Panolens.js
 
@@ -213,13 +213,13 @@ matter.js\[25]相较于老牌的 Box2D 引擎库更为轻量级（压缩版仅�
 
 简介：JS-Cloudimage-360-View\[52] \[在线演示\[53]] 一个简单的、交互式的资源，可以用来提供您的产品的虚拟游览。
 
-![](./image/image_Bi26O6nXwu.png)
+![](./assets/image/image_Bi26O6nXwu.png)
 
 ### A-Frame
 
 简介：A-Frame\[54] \[在线演示\[55]] A-Frame 除了帮助您构建 360 度媒体播放器外，它还提供了许多附加功能。其他功能可帮助您增强网站的虚拟现实体验。
 
-![](./image/image_d5cUYE0dsj.png)
+![](./assets/image/image_d5cUYE0dsj.png)
 
 ## 3D库
 
@@ -227,30 +227,30 @@ matter.js\[25]相较于老牌的 Box2D 引擎库更为轻量级（压缩版仅�
 
 简介：three.js\[58] \[在线演示\[59]] - 创建易于使用、轻量级、跨浏览器的通用3d js库。three.js就不多介绍了，大家想必都很熟悉。
 
-![](./image/image_7DNrmkylzW.png)
+![](./assets/image/image_7DNrmkylzW.png)
 
-![](./image/image_depM44y9Jy.png)
+![](./assets/image/image_depM44y9Jy.png)
 
 ### zdog
 
 简介：zdog\[60] \[在线演示\[61]] - 基于canvas和SVG设计师友好的伪3D引擎
 
-![](./image/image_KulTdmlpjU.png)
+![](./assets/image/image_KulTdmlpjU.png)
 
 ### seen.js
 
 简介：seen\[62] \[在线演示\[63]] - 使用SVG或Canvas渲染3D场景。
 
-![](./image/image_H8U_DhWuD2.png)
+![](./assets/image/image_H8U_DhWuD2.png)
 
 ### Oimo.js
 
 简介：Oimo.js\[64] \[在线演示\[65]] - 轻量级的JS 3D物理引擎。
 
-![](./image/image_yG8nzEQz_H.png)
+![](./assets/image/image_yG8nzEQz_H.png)
 
 ### phoria.js
 
 简介：phoria.js\[66] \[在线演示\[67]] - 用于在 HTML5 画布 2D 渲染器上进行简单 3D 图形和可视化的 JavaScript 库。它不使用 WebGL。适用于所有 HTML5 浏览器，包括桌面、iOS 和 Android。
 
-![](./image/image_8DIrJIEiv-.png)
+![](./assets/image/image_8DIrJIEiv-.png)

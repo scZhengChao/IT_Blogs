@@ -6,7 +6,7 @@
 
 > 等待这些 `Observables` 完成，然后把它们发出的最后一个值组合起来；如果传递了一个空数组，则立即完成。
 
-![](./image/image_fXOx4Na655.png)
+![](./assets/image/image_fXOx4Na655.png)
 
 `[forkJoin]` 是一个操作符，它接受任意数量的输入 `observable`，这些输入 `observable` 可以作为数组或输入 `observable` 的字典传递。如果没有提供输入 `observables`（例如传递一个空数组），那么结果流将立即完成。
 

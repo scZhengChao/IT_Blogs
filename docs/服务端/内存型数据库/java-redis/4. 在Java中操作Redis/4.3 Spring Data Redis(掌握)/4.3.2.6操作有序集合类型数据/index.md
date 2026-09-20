@@ -6,7 +6,7 @@
 
 ##### [4.3.2.6](http://tnm2.oa.com/host/home/4.3.2.6 "4.3.2.6")操作有序集合类型数据
 
-![](./image/image_AfmmCDSdg3.png)
+![](./assets/image/image_AfmmCDSdg3.png)
 
 需求:
 

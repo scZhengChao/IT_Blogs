@@ -6,9 +6,9 @@
 
 这种现象就是外边距的合并问题。
 
-![](./image/image_A-6aIsN3K2.png)
+![](./assets/image/image_A-6aIsN3K2.png)
 
-![](./image/image_zNORuiZt-1.png)
+![](./assets/image/image_zNORuiZt-1.png)
 
 **1、解决方案一：只设置其中一个元素的margin值即可（推荐）**
 
@@ -58,4 +58,4 @@
 ```
 
 
-![](./image/image__zH4umxJn7.png)
+![](./assets/image/image__zH4umxJn7.png)

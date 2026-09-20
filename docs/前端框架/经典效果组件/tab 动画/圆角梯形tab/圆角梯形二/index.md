@@ -30,7 +30,7 @@
 
 话不多说，先上普通版的效果：
 
-![](./image/image_Sc73W-o6ol.png)
+![](./assets/image/image_Sc73W-o6ol.png)
 
 ```javascript 
 <!doctype html>
@@ -226,7 +226,7 @@
 
 ##### 优化后最终效果
 
-![](./image/image_owHHWCfsxE.png)
+![](./assets/image/image_owHHWCfsxE.png)
 
 ```javascript 
 <!doctype html>

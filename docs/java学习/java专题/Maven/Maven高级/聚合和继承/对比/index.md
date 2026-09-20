@@ -1,5 +1,5 @@
 # 对比
 
-![](./image/image_yhDinMfxKW.png)
+![](./assets/image/image_yhDinMfxKW.png)
 
-![](./image/image_1lj37KpnIa.png)
+![](./assets/image/image_1lj37KpnIa.png)

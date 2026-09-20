@@ -37,7 +37,7 @@ Web Worker 为 Web 内容在新线程中运行脚本提供了一种简单的方�
 
 # [Comlink](https://link.juejin.cn/?target=https://github.com/GoogleChromeLabs/comlink "Comlink") 介绍
 
-![](./image/image_4CqBhorHi-.png)
+![](./assets/image/image_4CqBhorHi-.png)
 
 ## 使用案例 - 通过 Comlink 实现简单的插入和查询
 

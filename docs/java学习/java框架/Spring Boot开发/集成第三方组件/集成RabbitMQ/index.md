@@ -28,13 +28,13 @@ AMQP协议和前面我们介绍的JMS协议有所不同。在JMS中，有两种�
 
 但是AMQP协议比JMS要复杂一点，**它只有Queue，没有Topic，并且引入了Exchange的概念。** 当Producer想要发送消息的时候，它将消息发送给Exchange，**由Exchange将消息根据各种规则投递到一个或多个Queue：**
 
-![](./image/image_TA3qWQgyci.png)
+![](./assets/image/image_TA3qWQgyci.png)
 
 如果某个Exchange总是把消息发送到固定的Queue，那么这个消息通道就相当于JMS的Queue。如果某个Exchange把消息发送到多个Queue，那么这个消息通道就相当于JMS的Topic。**和JMS的Topic相比，Exchange的投递规则更灵活**，比如一个“登录成功”的消息被投递到Queue-1和Queue-2，而“登录失败”的消息则被投递到Queue-3。**这些路由规则称之为Binding，通常都在RabbitMQ的管理后台设置。**
 
 我们以具体的业务为例子，在RabbitMQ中，首先创建3个Queue，分别用于发送邮件、短信和App通知：
 
-![](./image/image_EIokTi-v0c.png)
+![](./assets/image/image_EIokTi-v0c.png)
 
 创建Queue时注意到可**配置为持久化（Durable）和非持久化（Transient），当Consumer不在线时，持久化的Queue会暂存消息，非持久化的Queue会丢弃消息。**
 

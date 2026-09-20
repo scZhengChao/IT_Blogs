@@ -2,17 +2,17 @@
 
 目的：理解@EnableAutoConfiguration自动化配置核心实现注解 讲解： 1、@EnableAutoConfiguration是一个组合注解
 
-![](./image/image_36EVBk2Ajh.png)
+![](./assets/image/image_36EVBk2Ajh.png)
 
 2、@AutoConfigurationPackage注解作用
 
 作用：利用Registrar给容器中导入一系列组件
 
-![](./image/image_PMPFf0Xfd6.png)
+![](./assets/image/image_PMPFf0Xfd6.png)
 
 点击 `Registrar` 进入到源码的 `register` 方法，添加 断点，测试
 
-![](./image/image_IaPYxOaW-9.png)
+![](./assets/image/image_IaPYxOaW-9.png)
 
 通过 debug 程序发现，默认情况下 将引导类的所有包及其子包的组件导入进来
 
@@ -29,15 +29,15 @@
 
 默认扫描我们当前系统里面所有META-INF/spring.factories位置的文件
 
-![](./image/image_Wd1w-IaKkP.png)
+![](./assets/image/image_Wd1w-IaKkP.png)
 
 spring-boot-autoconfigure-2.3.4.RELEASE.jar包里面也有META-INF/spring.factories
 
-![](./image/image_U_SZ7Iyatl.png)
+![](./assets/image/image_U_SZ7Iyatl.png)
 
 **通过这个配置文件加载的自动配置：当前版本（2.3.10）是有127个默认的自动化配置**
 
-![](./image/image_WHZGcjjWeE.png)
+![](./assets/image/image_WHZGcjjWeE.png)
 
 小结：
 

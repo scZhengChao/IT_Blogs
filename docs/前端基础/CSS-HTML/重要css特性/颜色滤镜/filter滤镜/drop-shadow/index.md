@@ -8,7 +8,7 @@
 - [参考资料](#参考资料)
 - [代码](#代码)
 
-![](./image/image_9nvnMNgS8Q.png)
+![](./assets/image/image_9nvnMNgS8Q.png)
 
 对于 Hover 导航 Tab 时候的内容切换，暂且不谈。本文，我们核心想探讨的是两个点：
 
@@ -238,7 +238,7 @@ li {
 
 此时，由于不规则按钮结构和右侧的主体内容结构，其实是在一个父 div 之下，所以，我们只需要给 `.g-main` 元素添加 `filter: drop-shadow()`，就可以实现一整个整体的阴影效果：
 
-![](./image/image_SevGzf4hTQ.png)
+![](./assets/image/image_SevGzf4hTQ.png)
 
 最后，我们利用 :has() 伪类，传递实时的 Hover 状态，把内外的结构连接起来。
 

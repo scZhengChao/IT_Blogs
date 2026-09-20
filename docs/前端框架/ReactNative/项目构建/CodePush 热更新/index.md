@@ -30,7 +30,7 @@
 
 免费的热更更新⽅方案：微软的CodePush，RN中⽂文⽹网的Pushy
 
-[React Native课程大纲-Day4【瑞客论坛 www.ruike1.com】.pdf](<./file/React Native课程大纲-Day4【瑞客论坛 www.ruike1.com】_PzDMhxj.pdf> "React Native课程大纲-Day4【瑞客论坛 www.ruike1.com】.pdf")
+[React Native课程大纲-Day4【瑞客论坛 www.ruike1.com】.pdf](<./assets/file/React Native课程大纲-Day4【瑞客论坛 www.ruike1.com】_PzDMhxj.pdf> "React Native课程大纲-Day4【瑞客论坛 www.ruike1.com】.pdf")
 
 [ ReactNative热更新发布应用(方式二CodePush:react-native-code-push) 前言：这里发布应用是配置热更新成功的前提下\~ 注：我们所说的根目录指的是package.json所在的目录\~ 先看一下流程图： 流程： 在根目录里右键-新建文件夹-bundl... https://www.jianshu.com/p/34d419448f44](https://www.jianshu.com/p/34d419448f44 " ReactNative热更新发布应用(方式二CodePush:react-native-code-push) 前言：这里发布应用是配置热更新成功的前提下~ 注：我们所说的根目录指的是package.json所在的目录~ 先看一下流程图： 流程： 在根目录里右键-新建文件夹-bundl... https://www.jianshu.com/p/34d419448f44")
 
@@ -215,7 +215,7 @@ android 平台配置：注意:
 ```
 
 
-![  ](./image/7f1a7819d3db1618aa634d24cf744a03_sPircqjNST.svg "  ")
+![  ](./assets/image/7f1a7819d3db1618aa634d24cf744a03_sPircqjNST.svg "  ")
 
 # CodePush热更新组件详细接入教程
 
@@ -240,7 +240,7 @@ android 平台配置：注意:
 
 \$ npm install -g code-push-cli
 
-![  ](./image/webp_WiovSqzw7m.webp "  ")
+![  ](./assets/image/webp_WiovSqzw7m.webp "  ")
 
 ### 2、注册 CodePush账号
 
@@ -252,21 +252,21 @@ android 平台配置：注意:
 
 当执行完上面的命令后，会自动打开一个授权网页，让你选择使用哪种方式进行授权登录，这里我们统一就选择使用GitHub即可
 
-![  ](./image/webp_iLg8Amz7kF.webp "  ")
+![  ](./assets/image/webp_iLg8Amz7kF.webp "  ")
 
 当注册成功后，CodePush会给我们一个key
 
-![  ](./image/webp_fV842qviqZ.webp "  ")
+![  ](./assets/image/webp_fV842qviqZ.webp "  ")
 
 我们直接复制这个key，然后在终端中将这个key填写进去即可，填写key登录成功显示效果如下
 
-![  ](./image/webp_2t5sceMLWy.webp "  ")
+![  ](./assets/image/webp_2t5sceMLWy.webp "  ")
 
 我们使用下面的命令来验证我的登录是否成功
 
 \$ code-push login
 
-![  ](./image/webp_yyI68V29hP.webp "  ")
+![  ](./assets/image/webp_yyI68V29hP.webp "  ")
 
 CodePush注册登录相关命令：
 
@@ -287,7 +287,7 @@ $ code-push app add iOSRNHybrid ios react-native
 ```
 
 
-![  ](./image/webp_tvMRoP1wlD.webp "  ")
+![  ](./assets/image/webp_tvMRoP1wlD.webp "  ")
 
 *添加Android平台应用*
 
@@ -296,7 +296,7 @@ $ code-push app   add  iOSRNHybridForAndroid Android react-native
 ```
 
 
-![  ](./image/webp_F7fwvdJwGA.webp "  ")
+![  ](./assets/image/webp_F7fwvdJwGA.webp "  ")
 
 我们可以输入如下命令来查看我们刚刚添加的App
 
@@ -305,7 +305,7 @@ $ code-push app list
 ```
 
 
-![  ](./image/webp_eztHQROswm.webp "  ")
+![  ](./assets/image/webp_eztHQROswm.webp "  ")
 
 image
 
@@ -328,7 +328,7 @@ $ npm install react-native-code-push --save
 ```
 
 
-![  ](./image/webp_NF7urlxbKL.webp "  ")
+![  ](./assets/image/webp_NF7urlxbKL.webp "  ")
 
 *添加原生依赖，这里添加依赖我们使用自动添加依赖的方式*
 
@@ -337,7 +337,7 @@ $ react-native link react-native-code-push
 ```
 
 
-![  ](./image/webp_dJr4Aw7F4Y.webp "  ")
+![  ](./assets/image/webp_dJr4Aw7F4Y.webp "  ")
 
 *我们在RN项目的根组件中添加热更新逻辑代码如下*
 
@@ -454,19 +454,19 @@ $ react-native link react-native-code-push
 
 - 使用Xcode打开项目，Xcode的项目导航视图中的PROJECT下选择你的项目，选择Info页签 ，在Configurations节点下单击 + 按钮 ，选择Duplicate "Release Configaration，输入Staging
 
-![  ](./image/webp_cPaubOiIfH.webp "  ")
+![  ](./assets/image/webp_cPaubOiIfH.webp "  ")
 
 - 选择Build Settings tab，搜索Build Location -> Per-configuration Build Products Path -> Staging，将之前的值：\$(BUILD\_DIR)/\$(CONFIGURATION)\$(EFFECTIVE\_PLATFORM\_NAME) 改为：\$(BUILD\_DIR)/Release\$(EFFECTIVE\_PLATFORM\_NAME)
 
-![  ](./image/webp_-ZijokOzdg.webp "  ")
+![  ](./assets/image/webp_-ZijokOzdg.webp "  ")
 
 - 选择Build Settings tab，点击 + 号，选择Add User-Defined Setting，将key设置为CODEPUSH\_KEY，Release 和 Staging的值为前面创建的key，我们直接复制进去即可
 
-![  ](./image/webp_Oj-oiDi6xj.webp "  ")
+![  ](./assets/image/webp_Oj-oiDi6xj.webp "  ")
 
 - 打开Info.plist文件，在CodePushDeploymentKey中输入\$(CODEPUSH\_KEY)，并修改Bundle versions为三位
 
-![  ](./image/webp_tPdE45985Q.webp "  ")
+![  ](./assets/image/webp_tPdE45985Q.webp "  ")
 
 iOS平台CodePush环境集成完毕
 
@@ -602,7 +602,7 @@ codePush.sync()（需要先导入codePush包：import codePush from 'react-nativ
 
 - 我们在RN项目根目录下线创建bundle文件夹，再在bundle中创建创建ios和android文件夹，最后将生成的bundle文件和资源文件拖到我们的项目工程中
 
-![  ](./image/webp_IX9-F0vYJR.webp "  ")
+![  ](./assets/image/webp_IX9-F0vYJR.webp "  ")
 
 - 生成bundle命令 react-native bundle --platform 平台 --entry-file 启动文件 --bundle-output 打包js输出文件 --assets-dest 资源输出目录 --dev 是否调试
 
@@ -611,11 +611,11 @@ $ react-native bundle --entry -file index.ios.js --bundle -output ./bundle/ios/m
 ```
 
 
-![  ](./image/webp_VczpVLoD70.webp "  ")
+![  ](./assets/image/webp_VczpVLoD70.webp "  ")
 
 - 将生成的bundle文件和资源文件拖到我们的项目工程
 
-![  ](./image/webp_VczpVLoD70.webp "  ")
+![  ](./assets/image/webp_VczpVLoD70.webp "  ")
 
 上传bundle
 
@@ -637,7 +637,7 @@ $ code-push release-react iOSRNHybrid ios --t 1.0.0 --dev false --d Production -
 
 更新包上传到CodePush服务器成功后，效果图如下：
 
-![  ](./image/webp_ggqm0cvzUd.webp "  ")
+![  ](./assets/image/webp_ggqm0cvzUd.webp "  ")
 
 查看发布的历史记录，命令如下
 
@@ -655,7 +655,7 @@ $ code-push deployment history projectName Staging
 ```
 
 
-![  ](./image/webp_tGWid97arN.webp "  ")
+![  ](./assets/image/webp_tGWid97arN.webp "  ")
 
 对1.0.0版本的应用如何发布第二个、第n个更新包
 
@@ -677,21 +677,21 @@ $ react-native bundle --entry -file index.ios.js --bundle -output ./bundle/ios/m
 ```
 
 
-![  ](./image/webp_mUS7EEtrkb.webp "  ")
+![  ](./assets/image/webp_mUS7EEtrkb.webp "  ")
 
 - 发布更新包命令中的 -- t 对应的参数是和我们项目中的版本号一致的，这个不要误理解为是更新包的版本号，例如项目中的版本号为1.0.0， 这时如果我们需要对这个1.0.0 版本的项目进行第一次热更新，那么命令中的 -- t 也为1.0.0，第二次热更新任然为1.0.0
 - 项目的版本号需要改为三位的，默认是两位的，但是CodePush需要三位数的版本号
 - 发布更新应用时，应用的名称必须要和之前注册过的应用名称一致
 
-![  ](./image/webp_jQbYEXbvKt.webp "  ")
+![  ](./assets/image/webp_jQbYEXbvKt.webp "  ")
 
 - 创建应用时，信息要填写正确
 
-![  ](./image/webp_KdVBu2YZK7.webp "  ")
+![  ](./assets/image/webp_KdVBu2YZK7.webp "  ")
 
 - 当执行link，命令卡住不执行时，这时直接按回车键先ignore key即可
 
-![  ](./image/webp_HQAg3WN2tP.webp "  ")
+![  ](./assets/image/webp_HQAg3WN2tP.webp "  ")
 
 - 还有最重要的一点需要注意的，就是打包证书环境要是良好的，证书不能报错
 

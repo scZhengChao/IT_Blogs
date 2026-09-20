@@ -107,7 +107,7 @@ goal的命名总是`abc:xyz`这种形式。
 
 看到这里，相信大家对lifecycle、phase和goal已经明白了吧？
 
-![](./image/image_8HRG6i9cZY.png)
+![](./assets/image/image_8HRG6i9cZY.png)
 
 其实我们类比一下就明白了：
 

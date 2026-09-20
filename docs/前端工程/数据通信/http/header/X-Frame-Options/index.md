@@ -72,4 +72,4 @@ IIS配置添加下面的配置到 ‘Web.config’文件中
 
 配置后如何确定X-Frame-Options是否已生效呢？我这里以Google浏览器为例，打开网站按F12键，选择Network，找到对应的Headers，如下图所示
 
-![  ](./image/69473d4d77c995f74a05b30974e160a3_HBXZ31cx1U.png "  ")
+![  ](./assets/image/69473d4d77c995f74a05b30974e160a3_HBXZ31cx1U.png "  ")

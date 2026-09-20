@@ -20,7 +20,7 @@
 
 下图为进入nginx文件夹下的文件内容
 
-![  ](./image/640_I0KX7OdkXX.jpg "  ")
+![  ](./assets/image/640_I0KX7OdkXX.jpg "  ")
 
 当进到这个目录下，我们就可以操作nginx了，接下来就列举一些非常非常有用的命令，多敲几遍，一定要记住
 
@@ -30,14 +30,14 @@
 - nginx
 - 当你敲完nginx这5个键的时候，并没有任何反应，此时你只需访问localhost:8080(默认)即可
 
-![  ](./image/640_jF62qxvbhV.jpg "  ")
+![  ](./assets/image/640_jF62qxvbhV.jpg "  ")
 
 - 关闭nginx
 - 如果出现下图情况，不要惊慌，是因为之前nginx被启动过了
 - 只需**nginx -s stop**，停止nginx服务
 - 然后再次启动nginx即可
 
-![  ](./image/640_-3Py4gbs6k.jpg "  ")
+![  ](./assets/image/640_-3Py4gbs6k.jpg "  ")
 
 - 重启nginx
 - nginx -s reload

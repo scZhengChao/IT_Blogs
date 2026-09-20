@@ -150,7 +150,7 @@ document.getElementById('link').addEventListener('click', async (e) => {
 
 当单击链接时，页面进行跳转，但是请求没有被取消。
 
-![  ](./image/640_r3iHTYwmIY.gif "  ")
+![  ](./assets/image/640_r3iHTYwmIY.gif "  ")
 
 事实上，我们是**留下了一个(unknown)状态，这只是因为活动页面不会等待接收任何类型的响应**。
 
@@ -185,7 +185,7 @@ navigator.sendBeacon('/log', JSON.stringify({
 
 为了演示说明，以下是 Network 选项卡中同时使用带 keepalive 的 fetch() 和 sendBeacon() 时的情况:
 
-![](./image/image_GKM3Fj1zfJ.png)
+![](./assets/image/image_GKM3Fj1zfJ.png)
 
 默认情况下，**fetch() 获得一个 “高” 优先级，而 beacon(上图中的 “ping” 类型) 具有 “最低” 优先级。对于那些对页面功能不是很重要的请求**，这是一件好事。直接引用 Beacon规范\[9]:
 

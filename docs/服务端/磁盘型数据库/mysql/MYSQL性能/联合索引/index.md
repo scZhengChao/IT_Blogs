@@ -13,7 +13,7 @@
 
 # 最左匹配&#x20;
 
-![](./image/image_wu9gP1ceo4.png)
+![](./assets/image/image_wu9gP1ceo4.png)
 
 走最\*\*左边的一个 key \*\*就可以走这个联合索引；不必全部匹配；
 

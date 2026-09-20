@@ -613,4 +613,4 @@ zustand的设计足够简单，十分灵活，代码也很简洁，充分利用�
 
 附一张网络上的原理图，不是我画的但觉得蛮好的
 
-![](./image/image_vXUTTmgjVe.png)
+![](./assets/image/image_vXUTTmgjVe.png)

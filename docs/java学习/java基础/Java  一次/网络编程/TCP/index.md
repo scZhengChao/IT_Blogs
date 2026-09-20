@@ -15,7 +15,7 @@ TCP通信协议是一种**可靠的**网络协议，它在通信的**两端各**
 - 通信之前要保证连接已经建立。
 - 通过`Socket`产生`IO`流来进行网络通信。
 
-![](./image/image_DlkS-MzM_M.png)
+![](./assets/image/image_DlkS-MzM_M.png)
 
 # 步骤
 
@@ -80,7 +80,7 @@ void close​()
 ```
 
 
-![](./image/image_9BEDGdAPht.png)
+![](./assets/image/image_9BEDGdAPht.png)
 
 # 案例
 

@@ -7,4 +7,4 @@
 - 分支判断用菱形表示
 - 元素之间用带箭头的线连接
 
-![](./image/image_H_O_xVEbB8.png)
+![](./assets/image/image_H_O_xVEbB8.png)

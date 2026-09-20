@@ -77,10 +77,10 @@
 
 **现在给 container 元素添加**\*\*`grid-auto-flow: row dense;`\*\***则页面效果如下：**
 
-![](./image/image_KKhjm7r7kf.png)
+![](./assets/image/image_KKhjm7r7kf.png)
 
 **将 grid-auto-flow 属性修改为 column dense，则页面效果如下图所示：**
 
-![](./image/image_TayflVF97y.png)
+![](./assets/image/image_TayflVF97y.png)
 
 页面效果如上图所示，column dense 表示“先列后行”，先填满第一列，再填满第2列，所以3号项目在第一列，4号项目在第二列。8号项目和9号项目被挤到了第四列。因为没有指定第四列的宽度，所以第四列的宽度为最大宽度。

@@ -20,7 +20,7 @@
 
 MobX 是一个身经百战的库，它通过运用透明的函数式响应编程（Transparent Functional Reactive Programming，TFRP）使状态管理变得简单和可扩展。
 
-![](./image/image_J9WzvFAUyu.png)
+![](./assets/image/image_J9WzvFAUyu.png)
 
 ## 原则
 

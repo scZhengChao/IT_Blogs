@@ -10,7 +10,7 @@
 
 Fanout，英文翻译是扇出，我觉得在MQ中叫广播更合适。
 
-![](./image/image_sOFVYE0p0I.png)
+![](./assets/image/image_sOFVYE0p0I.png)
 
 在广播模式下，消息发送流程是这样的：
 
@@ -25,13 +25,13 @@ Fanout，英文翻译是扇出，我觉得在MQ中叫广播更合适。
 - 创建一个交换机 itcast.fanout，类型是Fanout
 - 创建两个队列fanout.queue1和fanout.queue2，绑定到交换机itcast.fanout
 
-![](./image/image_FHHPB42An3.png)
+![](./assets/image/image_FHHPB42An3.png)
 
 ### 3.4.1.声明队列和交换机
 
 Spring提供了一个接口Exchange，来表示所有不同类型的交换机：
 
-![](./image/image_EY-5RV-2lm.png)
+![](./assets/image/image_EY-5RV-2lm.png)
 
 在consumer中创建一个配置类，声明队列和交换机：
 
@@ -138,9 +138,9 @@ public class FanoutConfig {
 
 ### 3.4.4.结果
 
-![](./image/image_e2MvsB01xT.png)
+![](./assets/image/image_e2MvsB01xT.png)
 
-![](./image/image_IFVe6NS8l3.png)
+![](./assets/image/image_IFVe6NS8l3.png)
 
 ### 3.4.5.总结
 

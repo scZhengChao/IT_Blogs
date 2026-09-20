@@ -1263,7 +1263,7 @@ func (*emptyCtx) Value(key any) any {
 
 emptyCtx通常是用来当作**最顶层的上下文，在创建其他三种上下文时作为父上下文传入。** context包中的各个实现关系如下图所示
 
-![](./image/image_11EpUo8DPw.png)
+![](./assets/image/image_11EpUo8DPw.png)
 
 ### valueCtx
 

@@ -75,4 +75,4 @@ source ~/.zshrc
 
 > 如果找不到 colorls; 要么是gem 环境变量的问题；要么就是rvm 的问题；
 
-![](./image/image_xl8tpOFSCa.png)
+![](./assets/image/image_xl8tpOFSCa.png)

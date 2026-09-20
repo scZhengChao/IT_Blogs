@@ -27,7 +27,7 @@
 
 **`Diff`****算法只会对****同层的节点进行比较。如图，它只会对颜色相同的节点进行比较**\*\*。 \*\*
 
-![  ](./image/eee9190ad2e2613ccc34f82e5d07173b_3s1GzYZ6gk.png "  ")
+![  ](./assets/image/eee9190ad2e2613ccc34f82e5d07173b_3s1GzYZ6gk.png "  ")
 
 下面，我们具体看下`Diff`算法是怎么做的，这里分为三种情况考虑 （也可以看性能优化部分，[官网也有diff介绍）](https://react.docschina.org/docs/reconciliation.html "官网也有diff介绍）")
 

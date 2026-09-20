@@ -44,7 +44,7 @@ reactions 是需要理解的重要概念，因为他可以将 MobX 中所有的�
 
 Autorun 通过在\_响应式上下文\_运行 `effect` 来工作。在给定的函数执行期间，MobX 会持续跟踪被 effect 直接或间接\_读取\_过的所有可观察对象和计算值。 一旦函数执行完毕，MobX 将收集并订阅所有被读取过的可观察对象，并等待其中任意一个再次发生改变。 一旦有改变发生，`autorun` 将会再次触发，重复整个过程。
 
-![](./image/image_xRGQni3ylq.png)
+![](./assets/image/image_xRGQni3ylq.png)
 
 这就是下面的示例的工作方式。
 

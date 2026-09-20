@@ -12,6 +12,6 @@
 
 [鼠标位置相关](./鼠标位置相关/index.md "鼠标位置相关")
 
-![  ](./image/123_c5K7rHOvYw.gif "  ")
+![  ](./assets/image/123_c5K7rHOvYw.gif "  ")
 
 [offset和client对比](./offset和client对比/index.md "offset和client对比")

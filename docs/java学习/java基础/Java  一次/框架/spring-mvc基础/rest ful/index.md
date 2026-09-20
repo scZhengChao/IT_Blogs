@@ -9,36 +9,36 @@
 
 # 简介
 
-![](./image/image_gdsqoh4qq7.png)
+![](./assets/image/image_gdsqoh4qq7.png)
 
-![](./image/image_QfI4ffTrU0.png)
+![](./assets/image/image_QfI4ffTrU0.png)
 
-![](./image/image_pSkXLtOCQy.png)
+![](./assets/image/image_pSkXLtOCQy.png)
 
 # 快速体验
 
-![](./image/image_5TBGWXUn7n.png)
+![](./assets/image/image_5TBGWXUn7n.png)
 
-![](./image/image_YGbhutIsMi.png)
+![](./assets/image/image_YGbhutIsMi.png)
 
-![](./image/image_ollq1eHB_i.png)
+![](./assets/image/image_ollq1eHB_i.png)
 
-![](./image/image_nIJ33EGtyx.png)
+![](./assets/image/image_nIJ33EGtyx.png)
 
-![](./image/image_QZAbpyb94m.png)
+![](./assets/image/image_QZAbpyb94m.png)
 
 # 简化注解
 
-![](./image/image_OD1k4X_Xd7.png)
+![](./assets/image/image_OD1k4X_Xd7.png)
 
-![](./image/image_XajzbY2ghW.png)
+![](./assets/image/image_XajzbY2ghW.png)
 
-![](./image/image_WgvNjslSZ_.png)
+![](./assets/image/image_WgvNjslSZ_.png)
 
 # 和前端交互
 
-![](./image/image_4RcfMAhciT.png)
+![](./assets/image/image_4RcfMAhciT.png)
 
-![](./image/image_hAQVOHm_cy.png)
+![](./assets/image/image_hAQVOHm_cy.png)
 
-![](./image/image_ucPwedXq4q.png)
+![](./assets/image/image_ucPwedXq4q.png)

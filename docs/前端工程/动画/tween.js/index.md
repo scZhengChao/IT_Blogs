@@ -305,18 +305,18 @@ x
 
 # example
 
-[scroll.html](./file/scroll_iBVt71Ts0f.html "scroll.html")
+[scroll.html](./assets/file/scroll_iBVt71Ts0f.html "scroll.html")
 
-[Tween.html](./file/Tween_4JNkfEZIbF.html "Tween.html")
+[Tween.html](./assets/file/Tween_4JNkfEZIbF.html "Tween.html")
 
-[test.html](./file/test_87UeW_nWPU.html "test.html")
+[test.html](./assets/file/test_87UeW_nWPU.html "test.html")
 
-[testLib.rar](./file/testLib_14Qxxd-zhs.rar "testLib.rar")
+[testLib.rar](./assets/file/testLib_14Qxxd-zhs.rar "testLib.rar")
 
-[marquee.html](./file/marquee_V5TAMtS4ql.html "marquee.html")
+[marquee.html](./assets/file/marquee_V5TAMtS4ql.html "marquee.html")
 
-[index4.html](./file/index4_Ln1p8PvEML.html "index4.html")
+[index4.html](./assets/file/index4_Ln1p8PvEML.html "index4.html")
 
-[index2.html](./file/index2_MGJ0X4JNmT.html "index2.html")
+[index2.html](./assets/file/index2_MGJ0X4JNmT.html "index2.html")
 
-[vue + tweenjs.html](<./file/vue + tweenjs_beer51e6Us.html> "vue + tweenjs.html")
+[vue + tweenjs.html](<./assets/file/vue + tweenjs_beer51e6Us.html> "vue + tweenjs.html")

@@ -6,7 +6,7 @@ dive 是一个 TUI，命令行的交互式 App，它可以让你看到 docker �
 
 `dive ubuntu:latest `命令可以看到 ubuntu image 里面都有什么文件。*内容会显示为两侧，左边显示每一层的信息，右边显示当前层（会包含之前的所有层）的文件内容，* 本层新添加的文件会用黄色来显示。通过 tab 键可以切换左右的操作。
 
-![](./image/image_hSiWGqavfo.png)
+![](./assets/image/image_hSiWGqavfo.png)
 
 一个非常有用的功能是，按下 ctrl + U 可以只显示当前层相比于前一层增加的内容，这样，就可以看到增加的文件是否是预期的了。
 

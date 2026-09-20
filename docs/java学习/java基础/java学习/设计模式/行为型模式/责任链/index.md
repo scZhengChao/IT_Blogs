@@ -8,7 +8,7 @@
 
 责任链模式（Chain of Responsibility）是一种处理请求的模式，它让多个处理器都有机会处理该请求，直到其中某个处理成功为止。责任链模式把多个处理器串成链，然后让请求在链上传递：
 
-![](./image/image_yszQv9yuER.png)
+![](./assets/image/image_yszQv9yuER.png)
 
 在实际场景中，财务审批就是一个责任链模式。假设某个员工需要报销一笔费用，审核者可以分为：
 

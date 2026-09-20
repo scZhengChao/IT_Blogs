@@ -342,7 +342,7 @@ npm i -D @babel/plugin-transform-runtime @babel/runtime
 
 用户与服务器的物理距离对响应时间也有影响。把内容部署在多个地理位置分散的服务器上能让用户更快地载入页面, CDN就是为了解决这一问题，在多个位置部署服务器，让用户离服务器更近，从而缩短请求时间。&#x20;
 
-![  ](./image/609a02095098874bb266ce9fef49d878_gkl2-P_27b.webp "  ")
+![  ](./assets/image/609a02095098874bb266ce9fef49d878_gkl2-P_27b.webp "  ")
 
 ## 10. 图片优化
 
@@ -405,7 +405,7 @@ img.src = img.getAttribute("original-src")
 4. 遍历Render(渲染)树开始布局， 计算每一个节点的位置大小信息
 5. 将渲染树每个节点绘制到屏幕上
 
-![  ](./image/490a359a17fc5e6522a646fc2db01ba9_ANIee5ECyM.webp "  ")
+![  ](./assets/image/490a359a17fc5e6522a646fc2db01ba9_ANIee5ECyM.webp "  ")
 
 ### **重排**
 
@@ -490,7 +490,7 @@ el.style.cssText = 'left: 10px;top: 10px; width: 20px'; 
 
 浏览器需要做的工作包含下面这个流程：&#x20;
 
-![  ](./image/27648487ea7abe6fb4c0f6f862adb9be_Iixpisnn_d.webp "  ")
+![  ](./assets/image/27648487ea7abe6fb4c0f6f862adb9be_Iixpisnn_d.webp "  ")
 
 首先你用js做了些逻辑，还触发了样式变化，style把应用的样式规则计算好之后，把影响到的页面元素进行重新布局，叫做
 
@@ -512,7 +512,7 @@ layout，再把它画到内存的一个画布里面，paint成了像素，最后
 
         虚拟列表是一种用来优化长列表的技术。它可以保证在列表元素不断增加，或者列表元素很多的情况下，依然拥有很好的滚动、浏览性能。它的核心思想在于：只渲染可见区域附近的列表元素。下图左边就是虚拟列表的效果，可以看到只有视口内和临近视口的上下区域内的元素会被渲染。&#x20;
 
-![  ](./image/c07e6fc300d554edd5ca2415cd816756_5WFh1ExCxH.webp "  ")
+![  ](./assets/image/c07e6fc300d554edd5ca2415cd816756_5WFh1ExCxH.webp "  ")
 
 具体实现步骤如下所示：&#x20;
 

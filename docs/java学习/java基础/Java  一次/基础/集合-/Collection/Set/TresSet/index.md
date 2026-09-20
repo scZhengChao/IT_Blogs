@@ -25,11 +25,11 @@ TreeSet<Integer> ts = new TreeSet<>();
 ```
 
 
-![](./image/image_sbeiaiqAnm.png)
+![](./assets/image/image_sbeiaiqAnm.png)
 
 # 对象
 
-![](./image/image_rFWe619X_O.png)
+![](./assets/image/image_rFWe619X_O.png)
 
 [自然排序Comparable接口](./自然排序Comparable接口/index.md "自然排序Comparable接口")
 

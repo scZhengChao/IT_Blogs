@@ -22,6 +22,6 @@
 ```
 
 
-![](./image/image_d026nvVv5W.png)
+![](./assets/image/image_d026nvVv5W.png)
 
 理解四种box非常重要，平时的使用浮动，定位，父级高度自动撑开等表现都是与boxes的作用有很大的关系。

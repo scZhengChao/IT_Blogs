@@ -2,7 +2,7 @@
 
 `AsyncSubject` 只有当 `Observable` **执行完成时**(执行`complete()`)，它才会**将执行的最后一个值发送给观察者**，**如果因异常而终止**，`AsyncSubject`将**不会释放任何数据**，但是会向`Observer`**传递一个异常通知。**
 
-![](./image/image_YeLhWgDgqW.png)
+![](./assets/image/image_YeLhWgDgqW.png)
 
 > `AsyncSubject`一般用的比较少，更多的还是使用前面三种。
 

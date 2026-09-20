@@ -105,7 +105,7 @@ function Children(){
 
 运行结果：
 
-![](./image/image_jKUo8LPeQk.png)
+![](./assets/image/image_jKUo8LPeQk.png)
 
 可以看到我们的子组件被波及了，解决办法有很多，总体来说分为两种。
 

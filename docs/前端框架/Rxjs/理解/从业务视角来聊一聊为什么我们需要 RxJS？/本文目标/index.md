@@ -21,7 +21,7 @@
 
 针对这种复杂的、多状态、异步、注重时序控制的场景，天然有一种技术，或者说是一种编程思想是为此而生的，那就是 FRP（Functional Reactive Programming），而在 FRP 领域，ReactivX，**简称 Rx，是由微软推出的通过可观察的流来进行异步编程的 API 则是 FRP 最经典的实现范本之一。**
 
-![](./image/image_EMd7oSwFCP.png)
+![](./assets/image/image_EMd7oSwFCP.png)
 
 > 上述为 ReactiveX 的官方：[reactivex.io/](https://link.juejin.cn/?target=https://reactivex.io/ "reactivex.io/") 例子，主要通过最简洁的语言与动画描述什么是 ReactiveX。
 

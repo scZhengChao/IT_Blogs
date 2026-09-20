@@ -1,9 +1,9 @@
 # 编码
 
-![](./image/image_ej-CYow4KB.png)
+![](./assets/image/image_ej-CYow4KB.png)
 
-![](./image/image_B1RqcvHRYw.png)
+![](./assets/image/image_B1RqcvHRYw.png)
 
-![](./image/image_zZP0mRchaX.png)
+![](./assets/image/image_zZP0mRchaX.png)
 
-![](./image/image_BTzIUK5Xqh.png)
+![](./assets/image/image_BTzIUK5Xqh.png)

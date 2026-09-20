@@ -66,7 +66,7 @@ public class Main {
 
 因为`ns`包含3个数组，因此，`ns.length`为`3`。实际上`ns`在内存中的结构如下：
 
-![](./image/image__gQKhn_Mk5.png)
+![](./assets/image/image__gQKhn_Mk5.png)
 
 二维数组的**每个数组元素的长度并不要求相同，** 例如，可以这么定义`ns`数组：
 
@@ -82,7 +82,7 @@ int[][] ns = {
 
 这个二维数组在内存中的结构如下：
 
-![](./image/image_6tIRodf1RX.png)
+![](./assets/image/image_6tIRodf1RX.png)
 
 要打印一个二维数组，可以使用两层嵌套的for循环：
 

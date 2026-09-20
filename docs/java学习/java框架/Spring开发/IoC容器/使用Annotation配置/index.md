@@ -91,7 +91,7 @@ ApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.cl
 
 整个工程结构如下：
 
-![](./image/image_KdeFgrXGqu.png)
+![](./assets/image/image_KdeFgrXGqu.png)
 
 使用Annotation配合自动扫描能大幅简化Spring的配置，我们只需要保证：
 

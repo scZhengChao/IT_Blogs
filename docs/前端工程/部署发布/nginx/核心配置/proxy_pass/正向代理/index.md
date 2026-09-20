@@ -4,6 +4,6 @@
 
   ![](https://segmentfault.com/img/remote/1460000041550618)
 
-![](./image/image_kkT9kt-8H_.png)
+![](./assets/image/image_kkT9kt-8H_.png)
 
 和用户请求方向一致，叫做正向代理。

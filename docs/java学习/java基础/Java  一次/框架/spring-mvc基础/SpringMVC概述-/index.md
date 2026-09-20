@@ -14,11 +14,11 @@ SpringMVC技术与Servlet技术功能等同，**均属于web层开发技术**
 
 SpringMVC简介
 
-![](./image/image_DjhRXMq-fD.png)
+![](./assets/image/image_DjhRXMq-fD.png)
 
-![](./image/image_GWXvMnryGR.png)
+![](./assets/image/image_GWXvMnryGR.png)
 
-![](./image/image_y70oo-43nB.png)
+![](./assets/image/image_y70oo-43nB.png)
 
 # 表现层
 
@@ -40,19 +40,19 @@ jdbc   —>   mybatis.   —>
 
 # 步骤
 
-![](./image/image_1cM81qF9ZL.png)
+![](./assets/image/image_1cM81qF9ZL.png)
 
-![](./image/image_OxZF6NQr25.png)
+![](./assets/image/image_OxZF6NQr25.png)
 
-![](./image/image_3uoMd2Ysi5.png)
+![](./assets/image/image_3uoMd2Ysi5.png)
 
-![](./image/image_OR9hVefd9o.png)
+![](./assets/image/image_OR9hVefd9o.png)
 
-![](./image/image_3WbkxhFFN5.png)
+![](./assets/image/image_3WbkxhFFN5.png)
 
 入门案例-总结
 
-![](./image/image_vDqVLkZZ5R.png)
+![](./assets/image/image_vDqVLkZZ5R.png)
 
 SpringMVC入门程序开发总结（1+N）
 一次性工作
@@ -69,10 +69,10 @@ SpringMVC入门程序开发总结（1+N）
 
 入门案例
 
-![](./image/image_Zb2o-3UvEs.png)
+![](./assets/image/image_Zb2o-3UvEs.png)
 
-![](./image/image_M_0476Ju_R.png)
+![](./assets/image/image_M_0476Ju_R.png)
 
-![](./image/image_GNvq5-0GGc.png)
+![](./assets/image/image_GNvq5-0GGc.png)
 
-![](./image/image_F4PgNeH94u.png)
+![](./assets/image/image_F4PgNeH94u.png)

@@ -14,7 +14,7 @@
 
 请看下面的示例：
 
-![  ](./image/640_pKatQ117Sp.gif "  ")
+![  ](./assets/image/640_pKatQ117Sp.gif "  ")
 
 这是一个可添加的数字的随机乱序列表。首先想一想，我们第一直觉可能会这样做：将这些数字的 DOM 节点用绝对定位来布局，数字变化后计算 `top`、`left` 的值，再配合 `transition` 实现该动画。这种方式看似简单，其实内部要维护各种位置信息，所有坐标都需要手动管理，相当繁杂，非常不利于后期扩展。如果这些节点换成高度不固定的图片，那计算量可想而知。
 
@@ -48,7 +48,7 @@
 
 即从 **Invert** 回到最终状态，有了两个点的位置信息，中间的过渡动画就可以使用 `transition` 实现。本文采用 Web Animation API\[2] 实现，动画执行过程中不会添加 CSS 到 DOM 上，相当干净。
 
-![  ](<./image/640 (1)_BPfxTt1P6h.gif> "  ")
+![  ](<./assets/image/640 (1)_BPfxTt1P6h.gif> "  ")
 
 实现
 这里主要使用 React 方式实现该效果，其他框架原理都一样可参考。
@@ -182,7 +182,7 @@ function shuffleList() {
 
 以上总体思路就是 First -> Last -> Invert -> Play 的一个变换过程。预览下：
 
-![  ](<./image/640 (2)_d2hwbJkN0s.gif> "  ")
+![  ](<./assets/image/640 (2)_d2hwbJkN0s.gif> "  ")
 
 你发现没有，每次做完操作都需要手动更新快照，作为开发者不能忍，我们要懒到极致，好好封装一下。
 
@@ -379,15 +379,15 @@ if (isLastRectOverflow && isCurrentRectOverflow) {
 
 记得之前 react-beautiful-dnd\[4] 库刚出来的时候拖拽动画迷倒了不少人。但是现在有了 FLIP 再配合 react-dnd\[5] 就可以轻松实现此类动画，功能上就更是属于碾压状态。而 react-motion\[6] 之类的动画库实现该动画就繁杂很多，因为它用的是绝对定位控制的类型。下面的例子仅仅用刚封装的 `Flipper` 包裹了一下：
 
-![  ](<./image/640 (3)_ABskY7XwwX.gif> "  ")
+![  ](<./assets/image/640 (3)_ABskY7XwwX.gif> "  ")
 
 以下是源码：
 
 [https://github.com/MinJieLiu/react-flip-demo](https://github.com/MinJieLiu/react-flip-demo "https://github.com/MinJieLiu/react-flip-demo") 其中里面的 `Flipper` 组件目录可以直接拷贝到项目中使用，100 来行代码相当轻量 🤭。
 
-[Flipper.tsx](./file/Flipper_rSQx59wZHM.tsx " Flipper.tsx")
+[Flipper.tsx](./assets/file/Flipper_rSQx59wZHM.tsx " Flipper.tsx")
 
-[Flipped.tsx](./file/Flipped_wwIpswHAOv.tsx " Flipped.tsx")
+[Flipped.tsx](./assets/file/Flipped_wwIpswHAOv.tsx " Flipped.tsx")
 
 注意：`Web Animation` 只兼容 `Chrome 75` 以上，兼容古董浏览器可以考虑 Web Animations API polyfill\[7]。
 
@@ -399,15 +399,15 @@ react-flip-toolkit\[8] 一款有 3.4K Star FLIP 的库。实现了你所能想�
 
 交错效果：
 
-![  ](<./image/640 (4)_x_tcY_8b-5.gif> "  ")
+![  ](<./assets/image/640 (4)_x_tcY_8b-5.gif> "  ")
 
 嵌套比例变换：
 
-![  ](<./image/640 (5)_sl_fejzgul.gif> "  ")
+![  ](<./assets/image/640 (5)_sl_fejzgul.gif> "  ")
 
 路由动画：
 
-![  ](<./image/640 (6)_L4h6HO8gJI.gif> "  ")
+![  ](<./assets/image/640 (6)_L4h6HO8gJI.gif> "  ")
 
 以及更多
 

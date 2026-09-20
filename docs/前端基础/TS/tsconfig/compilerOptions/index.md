@@ -36,11 +36,11 @@ TypeScript 是 JavaScript 的超集，是对 JavaScript 语法和类型上的扩
 
 延伸一下知识点，思考一下 tsc 是如何将高版本（ECMAScript 规范）代码向低版本代码转换的？这个转换的结果靠谱吗？与 Babel 有何差异？
 
-![](./image/image_FbNVW1s2Zb.png)
+![](./assets/image/image_FbNVW1s2Zb.png)
 
 通过一个实验，在 `src/index.ts` 文件中使用了 Map、Async/Await、Promise、扩展运算符，并在 `tsconfig.jon` -> `target` 设置为 `ES5`：
 
-![](./image/image_p6vZOnFEe7.png)
+![](./assets/image/image_p6vZOnFEe7.png)
 
 然后发现在右侧的 `dist/index.js` 文件中，依然存在 `new Map()` 、Promise 语法，因此可以得出结论：**tsc 的代码降级编译并不能完全处理兼容性**。
 
@@ -56,7 +56,7 @@ TypeScript 是 JavaScript 的超集，是对 JavaScript 语法和类型上的扩
 
 例如我们的代码会使用到**浏览器中的一些对象** `window`、`document`，这些全局对象 API 对于 **TypeScript Complier** 来说是不能识别的：
 
-![](./image/image_nYEnM6u94y.png)
+![](./assets/image/image_nYEnM6u94y.png)
 
 因而需要在 `lib` 字段中如下配置：
 
@@ -72,7 +72,7 @@ TypeScript 是 JavaScript 的超集，是对 JavaScript 语法和类型上的扩
 
 来显式引入在 **DOM** 即浏览器环境下的一些默认类型定义，即可在代码中使用，`window`、`document` 等浏览器环境中的对象，TS 在运行时以及编译时就不会报类型错误。
 
-![](./image/image_Co5LEJdaoH.png)
+![](./assets/image/image_Co5LEJdaoH.png)
 
 综合 `target` 和 `lib` 字段的实际功能表现，我们可以得出**结论**：
 

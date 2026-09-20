@@ -54,11 +54,11 @@
 
 先从简单的静态页面开始，众所周知，前端资源由 `HTML`、`JavaScript`、`CSS` 三剑客组成，假设我们有一个简单的页面，用`Nginx`作为 Web 服务器，资源组织结构大概如下：
 
-![](./image/image_ncu69LyyRP.png)
+![](./assets/image/image_ncu69LyyRP.png)
 
 此时， 只需将 `HTML`、`JavaScript`、`CSS` 等静态资源通过 `FTP` 等软件，上传到 `Web` 服务器（如 `Nginx`）某目录，将 `Nginx` 启动做简单配置即可让用户访问。
 
-![](./image/image_xgXscQUKdv.png)
+![](./assets/image/image_xgXscQUKdv.png)
 
 用户一访问，状态 200，页面渲染出来，前端十分简单，对不对？
 
@@ -74,11 +74,11 @@
 
 > 协商缓存: 向服务器发送请求，服务器会根据这个请求的 `Request Header` 的一些参数来判断是否命中协商缓存，如果命中，则返回 `304` 状态码并带上新的 `Response Header` 通知浏览器从缓存中读取资源；
 
-![](./image/image_eWOWyeV_Xh.png)
+![](./assets/image/image_eWOWyeV_Xh.png)
 
 此时，使用协商缓存后，`Network` 大致变成了这样：
 
-![](./image/image_BFQLPFnu6b.png)
+![](./assets/image/image_BFQLPFnu6b.png)
 
 > 注：协商缓存一般可在服务端通过设置 `Last-Modifed`、`ETag` 等 `ResponseHeader` 实现。注：`304` 状态码，表示资源未发生变更，可使用浏览器缓存。
 
@@ -94,13 +94,13 @@
 
 此时，强缓存的大致对话过程如图：
 
-![](./image/image_MpyV3JlVcS.png)
+![](./assets/image/image_MpyV3JlVcS.png)
 
 > 注意，缓存生效期间，浏览器是【自言自语】，和服务器无关。
 
 此时，设置强缓存后，Network 大致变成了这样：
 
-![](./image/image_c57z1ojnZr.png)
+![](./assets/image/image_c57z1ojnZr.png)
 
 > `From DiskCache`：从硬盘中读取。`From MemoryCache`：从内存中读取，速度最快。注：强缓存一般可在服务端通过设置 `Cache-Control:max-age`、`Expires` 等 `ResponseHeader`实现。
 
@@ -116,11 +116,11 @@
 
 又想马儿跑又不给马儿吃草？
 
-![](./image/image_1slfJEkrMZ.png)
+![](./assets/image/image_1slfJEkrMZ.png)
 
 相信大家很快就能得出一种思路，给资源加版本号！比如通过 `query` 加版本号，每次上线统一改版本号就搞定了。此时 `HTML` 变成如图：
 
-![](./image/image_P4kCdJ31Bg.png)
+![](./assets/image/image_P4kCdJ31Bg.png)
 
 注意，此时服务器内只有一份文件 `foo.css` 文件。
 
@@ -130,7 +130,7 @@
 
 什么东西与文件内容相关呢？**消息摘要算法**\[2] ，对文件求摘要信息，摘要信息与文件内容一一对应，就有了一种可以精确到单个文件粒度的缓存控制依据。现在，我们把 `URL` 改成带文件摘要信息的：
 
-![](./image/image__KKJ4-xE4x.png)
+![](./assets/image/image__KKJ4-xE4x.png)
 
 我们可以称这种这个方式为 `query-hash`，后续发版上线时，只有被变更文件的 `URL` 会更新，实现了精确的缓存控制，完美！
 
@@ -149,7 +149,7 @@
 
 > 如下图所示，展示了不同版本HTML与不同版本静态资源互相匹配到出现的异常Case。
 
-![](./image/image_ms1Ma3hSc9.png)
+![](./assets/image/image_ms1Ma3hSc9.png)
 
 > 绿色走向：正常访问并建立缓存的路径。红色走向：先部署静态资源（V2），V1-HTML访问V2静态资源并缓存Case 黑色走向：先部署HTML（V2），V2-HTML访问V1资源并缓存Case
 
@@ -166,7 +166,7 @@ V2 版本HTML，会将V1版本静态资源按V2版本Hash缓存起来。此时�
 
 此时 HTML 变成如图：
 
-![](./image/image_2qV5OFm_Ll.png)
+![](./assets/image/image_2qV5OFm_Ll.png)
 
 这样，每次部署时先全量部署静态资源，再灰度部署页面，就能比较完美的解决了缓存的问题。
 
@@ -190,7 +190,7 @@ V2 版本HTML，会将V1版本静态资源按V2版本Hash缓存起来。此时�
 
 此时，用户访问时流量走向 & 研发构建部署过程大致如下：
 
-![](./image/image_k2SfUV6Jw8.png)
+![](./assets/image/image_k2SfUV6Jw8.png)
 
 此时，我们总体部署方案需要进一步做三步改造。
 
@@ -210,7 +210,7 @@ b.  配置 `Webpack-HTML-Plugin`
 
 下面是一个配置示例：
 
-![](./image/image_U0YN4lNmcB.png)
+![](./assets/image/image_U0YN4lNmcB.png)
 
 ```javascript 
 // webpack.config.js
@@ -384,7 +384,7 @@ location ^~/static/ {
 
 下面是后端直出 `HTML` 的一种简要流程。
 
-![](./image/image_6FqqbTYjiB.png)
+![](./assets/image/image_6FqqbTYjiB.png)
 
 主要流程为前端构建出的 `HTML` 包含若干模板变量，后端收到请求后，通过各种 `Proxy` 层将 `Cookie` 转换成用户信息，再按依据版本配置从 `CDN` 加载 `index.html`, 并使用模板引擎等方式将模板变量替换为用户信息，最终吐回给浏览器的则是已经包含用户信息的 `HTML` 了！
 
@@ -400,7 +400,7 @@ location ^~/static/ {
 
 流程大致如图：
 
-![](./image/image_OEucUz71Y4.png)
+![](./assets/image/image_OEucUz71Y4.png)
 
 > Nginx 可通过配置 rewrite 设置转发，如下所示。
 
@@ -443,7 +443,7 @@ location /example {
 
 下图是依赖配置中心 + 服务端转发的流程图：
 
-![](./image/image_Kz0CNKxsIc.png)
+![](./assets/image/image_Kz0CNKxsIc.png)
 
 主要流程为：
 
@@ -489,7 +489,7 @@ location /example {
 
 > 超大图预警
 
-![](./image/image_jMJwTkErNB.png)
+![](./assets/image/image_jMJwTkErNB.png)
 
 本质上来说，相当于有一个公用的中间服务，部署在多个集群上，与构建发布过程深度绑定，用于承接HTML 的流量，并通过 `Web` 站点设置小流量规则、版本等等，来满足多变的上线需求。
 

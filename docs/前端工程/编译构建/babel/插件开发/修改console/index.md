@@ -13,7 +13,7 @@ console.log(1); -> console.log('文件名（行号，列号）：', 1);
 
 我们可以先看下\*\* console.log(1) 的 AST 结构\*\*
 
-![](./image/image_NJKFmfRRN-.png)
+![](./assets/image/image_NJKFmfRRN-.png)
 
 调用表达式的 AST 是 CallExpression。
 

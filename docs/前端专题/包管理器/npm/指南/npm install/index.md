@@ -27,7 +27,7 @@ content-v2存放的是依赖实际的内容，而index-v5则是存放依赖的�
 
 在下载依赖包之前，我们一般就能拿到`npm`对该依赖包计算的`hash`值，例如我们执行`npm info`命令，**紧跟**\*\*`tarball`****(下载链接) 的就是****`shasum`****(****`hash`)\*\*​
 
-![](./image/image_dURY8U3PPF.png)
+![](./assets/image/image_dURY8U3PPF.png)
 
 在下载依赖包之前，npm 会获取其 shasum 哈希值。**下载完成后，npm 会在本地重新计算哈希值，并与远程的哈希值对比。如果两者一致，则依赖包完整；否则，npm 会重新下载。**
 

@@ -1,6 +1,6 @@
 # js计算
 
-![](./image/image_KSyjnF0RDY.png)
+![](./assets/image/image_KSyjnF0RDY.png)
 
 ```typescript 
 import {memo, useRef, useState} from 'react';

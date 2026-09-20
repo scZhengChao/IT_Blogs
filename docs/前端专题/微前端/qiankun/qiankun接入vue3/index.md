@@ -150,7 +150,7 @@ registerMicroApps([
 
 如你所愿，如下所示vue3应用
 
-![](./image/image_Sp8vFkhvuK.png)
+![](./assets/image/image_Sp8vFkhvuK.png)
 
 ## vue3子应用接入路由
 

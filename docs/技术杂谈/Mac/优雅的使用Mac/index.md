@@ -116,7 +116,7 @@ Command + Shift + Control + 4 截取所选屏幕区域到剪贴板，或按空�
 
 然后，在“强制退出”窗口中选择相应的 App 并点按“强制退出”。
 
-![  ](./image/DB7DA0A2-9B00-45DA-BD5F-1D8DC8046434__Xjs0BPD9T.jpg "  ")
+![  ](./assets/image/DB7DA0A2-9B00-45DA-BD5F-1D8DC8046434__Xjs0BPD9T.jpg "  ")
 
 # Mac生产ssh key
 

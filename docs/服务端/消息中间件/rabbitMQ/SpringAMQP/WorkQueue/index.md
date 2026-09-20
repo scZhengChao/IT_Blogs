@@ -10,7 +10,7 @@
 
 Work queues，也被称为（Task queues），任务模型。简单来说就是让**多个消费者绑定到一个队列，共同消费队列中的消息。**
 
-![](./image/image_LfmWGXecC6.png)
+![](./assets/image/image_LfmWGXecC6.png)
 
 当消息处理比较耗时的时候，可能生产消息的速度会远远大于消息的消费速度。长此以往，消息就会堆积越来越多，无法及时处理。
 
@@ -81,17 +81,17 @@ public void testWorkQueue() throws InterruptedException {
 
 也就是说消息是平均分配给每个消费者，并没有考虑到消费者的处理能力。这样显然是有问题的。
 
-![](./image/image_fmx98tphWs.png)
+![](./assets/image/image_fmx98tphWs.png)
 
 说明：阐述上述原因是因为队列平均分配给每个消费者，**即使当前消费者没有消费完，队列也会将消息分配给消费者**。然后消费者一个一个消息消费，即使消费很快的消费者，消费完毕，而消费很慢的消费者一直在消费。这样很不合理。**应该是哪个消费者消费快应该多消费。哪个消费者消费慢应该少消费。**
 
-![](./image/image_SCj0J0ANRT.png)
+![](./assets/image/image_SCj0J0ANRT.png)
 
 ### 3.2.4.能者多劳
 
 在spring中有一个简单的配置叫预取prefetch，可以解决这个问题。我们修改consumer服务的application.yml文件，添加配置：
 
-![](./image/image_GptKgXX4Ah.png)
+![](./assets/image/image_GptKgXX4Ah.png)
 
 ```yaml 
 spring:
@@ -104,7 +104,7 @@ spring:
 
 重启消费者模块，运行生产者模块，查看消费者模块控制台：
 
-![](./image/image_0mM1ftDAZM.png)
+![](./assets/image/image_0mM1ftDAZM.png)
 
 ### 3.2.5.总结
 

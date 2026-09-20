@@ -12,6 +12,6 @@
 
 记住 构造方法就行了
 
-![](./image/image_SsNNoGJXX7.png)
+![](./assets/image/image_SsNNoGJXX7.png)
 
-![](./image/image_jeyvugRiFd.png)
+![](./assets/image/image_jeyvugRiFd.png)

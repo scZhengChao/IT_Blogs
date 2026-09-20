@@ -36,7 +36,7 @@ em是最常见的相对长度单位，适合基于特定的字号进行排版。
 
 这里给父元素设置了字体大小为20px，然后给子元素的border宽度设置为1em，这时，子元素的border值为20px，确实是相对于父元素的字体大小设置的：
 
-![](./image/image_PXoBZZ0Qki.png)
+![](./assets/image/image_PXoBZZ0Qki.png)
 
 那如果我们给子元素的字体设置为30px：
 
@@ -50,7 +50,7 @@ em是最常见的相对长度单位，适合基于特定的字号进行排版。
 
 这时可以看到，子元素的边框宽度就是30px，它是相对自己大小进行计算的：
 
-![](./image/image_5lelXyivDw.png)
+![](./assets/image/image_5lelXyivDw.png)
 
 **所以，可以得出结论：如果自身元素是没有设置字体大小的，那么就会根据其父元素的字体大小作为参照去计算，如果元素本身已经设置了字体，那么就会基于自身的字体大小进行计算。**
 
@@ -74,7 +74,7 @@ html {
 
 效果如下，可以看到，边框的长度变成了25px，它是根据根元素html的字体大小计算的：
 
-![](./image/image_9yZP3tNz_h.png)
+![](./assets/image/image_9yZP3tNz_h.png)
 
 如果没有对根元素设定字号的话，font-size: 1rem的作用与font-size: initial相同。
 

@@ -10,11 +10,11 @@
 
 cd 命令用于切换当前工作目录，需要与文件/目录名称一起使用：
 
-![](./image/image_AA_krYF42I.png)
+![](./assets/image/image_AA_krYF42I.png)
 
 这里的目录/文件名称可以是一个绝对路径或者相对路径。若目录名称省略，则变换至使用者的 home 目录 (也就是刚 login 时所在的目录)。另外，**\~ 表示为 home 目录， . 表示目前所在的目录， .. 表示目前目录位置的上一层目录。**
 
-![](./image/image_9RjnPy_w_i.png)
+![](./assets/image/image_9RjnPy_w_i.png)
 
 - cd   \~/.ssh  无论层级 查找 .ssh 结尾的文件  （不是无论层级，\~ 是指用户目录）
 - command + shift + .  显示和隐藏  .为前缀的文件&#x20;
@@ -57,15 +57,15 @@ FZLanTYJ_DemiBold.OTF FZLanTYJ_Light.OTF FZLanTYJ_Regular.ttf
 
 `ls -l`  命令会以长列表的形式来输出所有内容，使用该命令时，终端会输出**所有文件的更多信息**，比如权限、文件所有者、文件大小、日期等：
 
-![](./image/image_EkuL_lPkwH.png)
+![](./assets/image/image_EkuL_lPkwH.png)
 
 `ls -a` 命令会列举出文件夹/目录中所有的文件，**包括隐藏文件：**
 
-![](./image/image_Q12DluBTKn.png)
+![](./assets/image/image_Q12DluBTKn.png)
 
 我们还可以将两个参数放在一起使用，输出的结果将是两个参数分别执行时的效果和：
 
-![](./image/image_pfVFeaaTkV.png)
+![](./assets/image/image_pfVFeaaTkV.png)
 
 可以看到，输出的结果中包含了常规文件和隐藏文件的附加信息。
 

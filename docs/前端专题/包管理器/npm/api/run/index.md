@@ -37,7 +37,7 @@ npm run xxx的时候，首先会去项目的package.json文件里找scripts 里�
 
 我们在安装依赖的时候，是通过`npm i xxx` 来执行的，例如 `npm i @vue/cli-service`，`npm` 在 安装这个依赖的时候，**就会node\_modules/.bin/ 目录中创建 好vue-cli-service 为名的几个可执行文件了。**
 
-![](./image/image_lfkgyLHVnu.png)
+![](./assets/image/image_lfkgyLHVnu.png)
 
 .bin 目录，这个**目录不是任何一个 npm 包。**目录下的文件，表示这是**一个个软链接**，打开文件可以看到文件顶部写着 `#!/bin/sh` **，表示这是一个脚本。**
 
@@ -47,7 +47,7 @@ npm run xxx的时候，首先会去项目的package.json文件里找scripts 里�
 
 你说.bin 目录下的文件表示软连接，那**这个bin目录下的那些软连接文件是哪里来的呢**？它又是怎么知道**这条软连接是执行哪里的呢**？
 
-![](./image/image_NHaEcnpZH_.png)
+![](./assets/image/image_NHaEcnpZH_.png)
 
 可以看到，它存在项目最外层的**package-lock.json**文件中
 

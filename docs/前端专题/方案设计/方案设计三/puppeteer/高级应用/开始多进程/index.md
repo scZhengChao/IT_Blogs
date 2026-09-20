@@ -2,7 +2,7 @@
 
 很多场景我们会同时爬取多个网址，为了在性能上得到保证可以采用[puppeteer-cluster](https://link.juejin.cn/?target=https://www.npmjs.com/package/puppeteer-cluster "puppeteer-cluster")来管理多个线程进行不同网站的处理，降低性能的损耗
 
-![](./image/image_NRjDikb0Qs.png)
+![](./assets/image/image_NRjDikb0Qs.png)
 
 实例代码如下：
 

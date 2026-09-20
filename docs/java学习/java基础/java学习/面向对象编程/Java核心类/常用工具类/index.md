@@ -40,7 +40,7 @@ Math.pow(2, 10); // 2的10次方=1024
 ```
 
 
-![](./image/image_ec9AKGxKA0.png)
+![](./assets/image/image_ec9AKGxKA0.png)
 
 ```javascript 
 Math.sqrt(2); // 1.414...

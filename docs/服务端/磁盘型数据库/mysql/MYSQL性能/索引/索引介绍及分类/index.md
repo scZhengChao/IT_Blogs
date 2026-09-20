@@ -9,9 +9,9 @@
 
 Mysql官方对索引的定义为：\*\*索引（index）是帮助Mysql高效获取数据的数据结构。\*\*索引的本质：**索引就是数据结构;(B +Tree)**
 
-![](./image/image_TFeTpXLBHs.png)
+![](./assets/image/image_TFeTpXLBHs.png)
 
-![](./image/image_2Fk-4aeEAB.png)
+![](./assets/image/image_2Fk-4aeEAB.png)
 
 ## 分类
 

@@ -1,6 +1,6 @@
 # 公众号客户端
 
-[02\_公众号\_网页端【瑞客论坛 www.ruike1.com】.pdf](<./file/02_公众号_网页端【瑞客论坛 www.ruike1.com】_NC2rq01eYT.pdf> "02_公众号_网页端【瑞客论坛 www.ruike1.com】.pdf")
+[02\_公众号\_网页端【瑞客论坛 www.ruike1.com】.pdf](<./assets/file/02_公众号_网页端【瑞客论坛 www.ruike1.com】_NC2rq01eYT.pdf> "02_公众号_网页端【瑞客论坛 www.ruike1.com】.pdf")
 
 **oauth2.0 登陆**
 

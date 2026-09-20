@@ -16,7 +16,7 @@
 
 **在Redis中字符串类型的值最多可以容纳的数据长度是512M**，这是以后最常用的数据类型。
 
-![](./image/image_aRrxF-SjZh.png)
+![](./assets/image/image_aRrxF-SjZh.png)
 
 #### 常用命令
 

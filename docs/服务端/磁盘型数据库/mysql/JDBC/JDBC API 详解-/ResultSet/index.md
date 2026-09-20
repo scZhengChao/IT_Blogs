@@ -21,7 +21,7 @@ ResultSet    stmt.executeQuery(sql)：执行DQL 语句，返回 ResultSet 对象
 2. 调用next方法, ResultSet内部指针**会移动到下一行数据;**
 3. 我们可以通过ResultSet得**到一行数据 getXxx得到某列数据;**
 
-![](./image/image_hjTZvVBuf0.png)
+![](./assets/image/image_hjTZvVBuf0.png)
 
 > 注意 **：这个取的是结果集；是别名**；而不是原名
 
@@ -29,7 +29,7 @@ ResultSet    stmt.executeQuery(sql)：执行DQL 语句，返回 ResultSet 对象
 
 其实`ResultSet`获取数据的API是有规律的**get后面加数据类型。** 我们统称`getXXX()`
 
-![](./image/image_1HHmqDxLcI.png)
+![](./assets/image/image_1HHmqDxLcI.png)
 
 使用步骤：
 

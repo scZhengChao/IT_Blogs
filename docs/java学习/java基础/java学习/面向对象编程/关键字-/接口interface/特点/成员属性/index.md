@@ -7,4 +7,4 @@ public static final  int num = 10;
 ```
 
 
-![](./image/image_LuDNz2n-rN.png)
+![](./assets/image/image_LuDNz2n-rN.png)

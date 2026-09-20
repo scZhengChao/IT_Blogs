@@ -47,4 +47,4 @@ service.stop();
   - service.state可以获得当前状态，从下图可以看出，state实例和没有interpret时候没有区别；
   - service.send(arg)提供了状态转换功能，替代了lightMachine.transition；
 
-![](./image/image_ZQhgRfxiyW.png)
+![](./assets/image/image_ZQhgRfxiyW.png)

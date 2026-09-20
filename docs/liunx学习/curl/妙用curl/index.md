@@ -15,7 +15,7 @@
 - [获取所在地 IP](#获取所在地-IP)
 - [获取天气预报？](#获取天气预报)
 
-![](./image/image_KTWem3W1vW.png)
+![](./assets/image/image_KTWem3W1vW.png)
 
 # 认识 cURL
 
@@ -46,11 +46,11 @@ curl https://www.baidu.com
 
 这时候 cURL 就体现出它的价值了。此外贴心的 Postman，还为我们提供了各种语言和 cURL 的 snippet，方便你在 Postman 编辑完成后直接拿走开发和调试使用。
 
-![](./image/image_fNTgBxE6a6.png)
+![](./assets/image/image_fNTgBxE6a6.png)
 
 如上图，你直接 copy 内容，然后在命令行执行就可以了。
 
-![](./image/image_tuUdjuS3fX.png)
+![](./assets/image/image_tuUdjuS3fX.png)
 
 # 小工具了解一下
 
@@ -174,7 +174,7 @@ cURL 是好用，但如果我是个 web 应用，需要拼接一堆参数，那�
 
 是的，所以 浏览器也想到了，你可以在浏览器先正常发出请求，然后利用浏览器的工具将 cURL 的命令复制出来。
 
-![](./image/image_d9or_EfY_R.png)
+![](./assets/image/image_d9or_EfY_R.png)
 
 可以复制单个请求，也可以是页面的所有请求。然后你就可以粘贴到终端执行了。
 
@@ -190,7 +190,7 @@ curl -L ip.tool.lu
 ```
 
 
-![](./image/image_haxK32AfJo.png)
+![](./assets/image/image_haxK32AfJo.png)
 
 # 获取天气预报？
 
@@ -201,4 +201,4 @@ curl 'wttr.in/Beijing?lang=zh'
 ```
 
 
-![](./image/image_uI2Dh6e6uB.png)
+![](./assets/image/image_uI2Dh6e6uB.png)

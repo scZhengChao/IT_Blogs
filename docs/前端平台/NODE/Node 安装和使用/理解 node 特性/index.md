@@ -36,13 +36,13 @@
 
 **POSIX标准要求每次打开文件时（含socket）必须使用当前进程中最小可用的文件描述符号码，因此，在网络通信过程中稍不注意就有可能造成串话。**
 
-![  ](./image/1_253Ol3rVAX.png "  ")
+![  ](./assets/image/1_253Ol3rVAX.png "  ")
 
 文件描述与打开的文件对应模型如下图
 
 ：
 
-![  ](./image/2_6BxavoAAJN.png "  ")
+![  ](./assets/image/2_6BxavoAAJN.png "  ")
 
 **2. 文件描述限制**
 
@@ -154,7 +154,7 @@ open file description table）。有时，也称之为
 
 下图展示了文件描述符、打开的文件句柄以及i-node之间的关系，图中，两个进程拥有诸多打开的文件描述符。
 
-![  ](./image/3。jpg_Bj1RxqsRC1.png "  ")
+![  ](./assets/image/3。jpg_Bj1RxqsRC1.png "  ")
 
     在进程A中，文件描述符1和30都指向了同一个打开的文件句柄（标号23）。这可能是通过调用dup()、dup2()、fcntl()或者对
 

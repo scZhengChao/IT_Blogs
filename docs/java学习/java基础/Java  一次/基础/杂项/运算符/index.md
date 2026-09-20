@@ -6,29 +6,29 @@
 
 # 算数运算符
 
-![](./image/image_wgtsoDeozd.png)
+![](./assets/image/image_wgtsoDeozd.png)
 
-![](./image/image_6gvaT1y4GP.png)
+![](./assets/image/image_6gvaT1y4GP.png)
 
-![](./image/image_qQPQvDWmxO.png)
+![](./assets/image/image_qQPQvDWmxO.png)
 
-![](./image/image_avTqqbQPlB.png)
+![](./assets/image/image_avTqqbQPlB.png)
 
-![](./image/image_DaxfsRhms3.png)
+![](./assets/image/image_DaxfsRhms3.png)
 
-![](./image/image_E03inNYwEh.png)
+![](./assets/image/image_E03inNYwEh.png)
 
-![](./image/image_yjpcLOoyyQ.png)
+![](./assets/image/image_yjpcLOoyyQ.png)
 
-![](./image/image_H6rnZOp7bi.png)
+![](./assets/image/image_H6rnZOp7bi.png)
 
-![](./image/image_SyzdVE8yIs.png)
+![](./assets/image/image_SyzdVE8yIs.png)
 
-![](./image/image_ey9y1W5Bf5.png)
+![](./assets/image/image_ey9y1W5Bf5.png)
 
-![](./image/image_Zc9YVoBC_P.png)
+![](./assets/image/image_Zc9YVoBC_P.png)
 
-![](./image/image_MHB3-c-YrN.png)
+![](./assets/image/image_MHB3-c-YrN.png)
 
 [案例](IT/服务端/java学习/java基础/Java%20%20一次/基础/杂项/运算符/案例/案例.md "案例")
 

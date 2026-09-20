@@ -11,7 +11,7 @@
 
 # 原理
 
-![](./image/image_kZVJ-gJpPt.png)
+![](./assets/image/image_kZVJ-gJpPt.png)
 
 # 特性
 
@@ -23,13 +23,13 @@
 
 \*\*多个用户并发的访问数据库时，一个用户的事务不能被其他用户的事务干扰，多个并发的事务之间要相互隔离。 \*\*
 
-![](./image/image_ObcDEJCDpI.png)
+![](./assets/image/image_ObcDEJCDpI.png)
 
 ### 2、持久性(Durability)
 
 \*\*当事务提交或回滚后，数据库会持久化的保存数据。 \*\*
 
-![](./image/image_3VKJtbCmQ0.png)
+![](./assets/image/image_3VKJtbCmQ0.png)
 
 ### 3、原子性(Atomicity) &#xD;
 
@@ -41,4 +41,4 @@
 
 **事务操作前后，数据总量不变**
 
-![](./image/image_lVE_qbaZnn.png)
+![](./assets/image/image_lVE_qbaZnn.png)

@@ -77,7 +77,7 @@
 
 我们可以想象一个虚拟容器，以对齐中心（下图问号图标）向两边扩展，一直到边界处，如下所示（淡蓝色区域）
 
-![](./image/image_b09OoVO8i-.png)
+![](./assets/image/image_b09OoVO8i-.png)
 
 假设`HTML`如下
 

@@ -1,3 +1,3 @@
 # 自增自减
 
-![](./image/image_RAA7g79UOg.png)
+![](./assets/image/image_RAA7g79UOg.png)

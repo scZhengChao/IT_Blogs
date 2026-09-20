@@ -76,15 +76,15 @@
 
 **Scripting代码执行为35.9s**
 
-![](./image/image_21yYCB8mO_.png)
+![](./assets/image/image_21yYCB8mO_.png)
 
 拿什么拯救你，我的页面
 
-![](./image/image_yOJjJOpYmO.png)
+![](./assets/image/image_yOJjJOpYmO.png)
 
 召唤Web Worker，出来吧神龙
 
-![](./image/image_qyitQqxyVA.png)
+![](./assets/image/image_qyitQqxyVA.png)
 
 神龙，我想让页面的计算变快，并且不卡顿
 

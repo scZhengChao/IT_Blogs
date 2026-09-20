@@ -435,7 +435,7 @@ function Require(modulePath) {
 
 Node.js 中，模块加载过程分为 5 步：&#x20;
 
-![  ](./image/f2a0813d4608b388decc01c8be055f79_-tmdA3xLXv.webp "  ")
+![  ](./assets/image/f2a0813d4608b388decc01c8be055f79_-tmdA3xLXv.webp "  ")
 
 1. 路径解析（Resolution）：根据模块标识找出对应模块（入口）文件的绝对路径&#x20;
 2. 加载（Loading）：如果是 JSON 或 JS 文件，就把文件内容读入内存。如果是内置的原生模块，将其共享库动态链接到当前 Node.js 进程&#x20;

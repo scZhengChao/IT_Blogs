@@ -185,10 +185,10 @@
 ```
 
 
-![  ](./image/blank_azu3CjuL0x.gif "  ")
+![  ](./assets/image/blank_azu3CjuL0x.gif "  ")
 
-![  ](./image/blank_azu3CjuL0x.gif "  ")
+![  ](./assets/image/blank_azu3CjuL0x.gif "  ")
 
-![  ](./image/blank_azu3CjuL0x.gif "  ")
+![  ](./assets/image/blank_azu3CjuL0x.gif "  ")
 
-![  ](./image/blank_azu3CjuL0x.gif "  ")
+![  ](./assets/image/blank_azu3CjuL0x.gif "  ")

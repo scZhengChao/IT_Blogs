@@ -40,7 +40,7 @@ CipherFileInputStream extends FileInputStream {}
 
 我们发现，给`FileInputStream`添加3种功能，至少需要3个子类。这3种功能的组合，又需要更多的子类：
 
-![](./image/image_Hb7EbE8qNx.png)
+![](./assets/image/image_Hb7EbE8qNx.png)
 
 这还只是针对`FileInputStream`设计，如果针对另一种`InputStream`设计，很快会出现子类爆炸的情况。
 
@@ -87,15 +87,15 @@ InputStream gzip = new GZIPInputStream(buffered);
 
 **无论我们包装多少次，得到的对象始终是**\*\*`InputStream`\*\*，我们直接用`InputStream`来引用它，就可以正常读取：
 
-![](./image/image_6zl7v5sVMq.png)
+![](./assets/image/image_6zl7v5sVMq.png)
 
 上述这种通过一个“基础”组件再叠加各种“附加”功能组件的模式，**称之为Filter模式（或者装饰器模式：Decorator）**。它可以让我们通过少量的类来实现各种功能的组合：
 
-![](./image/image_8sysDlEwt-.png)
+![](./assets/image/image_8sysDlEwt-.png)
 
 类似的，`OutputStream`也是以这种模式来提供各种功能：
 
-![](./image/image_XnYfIgqATb.png)
+![](./assets/image/image_XnYfIgqATb.png)
 
 ### 编写FilterInputStream
 

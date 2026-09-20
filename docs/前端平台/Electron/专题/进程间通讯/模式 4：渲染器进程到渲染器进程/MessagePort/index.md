@@ -27,7 +27,7 @@
 
 本质都是使用 ipcRenderer.on() 和 webContents.send() 等 API 进行封装，在渲染进程与渲染进程之间进行通信时，得经过主进程进行消息转发。
 
-![](./image/image_7NIfXQ7O4J.png)
+![](./assets/image/image_7NIfXQ7O4J.png)
 
 `Electron` 官方还提供了 `MessagePort` 这种方案允许在不同上下文(进程)之间传递消息，类似于浏览器中的 `window.postMessage`。
 
@@ -77,7 +77,7 @@ port2.postMessage('我是渲染进程二发送的消息');
 - 渲染进程**初始化时，向主进程注册，并创建一对 port**，主进程**分发给渲染进程**
 - 之后渲染进程使用 port 进行收发消息，不再经过主进程
 
-![](./image/image_05-tpdysur.png)
+![](./assets/image/image_05-tpdysur.png)
 
 ### 注册进程时序图
 

@@ -4,6 +4,6 @@
 
 用户的主目录下面包含这数据文件和用户相关的配置文件。通常一个用户只能修改其目录下的文件，只有获得授权的情况下才能访问其它文件。
 
-![  ](./image/dcd50b36cc9843d9bb0f6e8b92e7a2a9_lf9E6_lV4L.jpeg "  ")
+![  ](./assets/image/dcd50b36cc9843d9bb0f6e8b92e7a2a9_lf9E6_lV4L.jpeg "  ")
 
 图7 zhangsn的主目录

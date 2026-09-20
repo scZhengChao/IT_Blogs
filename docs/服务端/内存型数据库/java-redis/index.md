@@ -1,6 +1,6 @@
 # java-redis
 
-[Redis基础课程讲义.md](./file/Redis基础课程讲义_FtqtkvMGRg.md "Redis基础课程讲义.md")
+[Redis基础课程讲义.md](./assets/file/Redis基础课程讲义_FtqtkvMGRg.md "Redis基础课程讲义.md")
 
 [1. Redis入门](<./1. Redis入门/index.md> "1. Redis入门")
 

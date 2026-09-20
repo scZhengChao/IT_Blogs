@@ -52,13 +52,13 @@ public class Person {
 
 我们还需要按照包结构把上面的Java文件组织起来。假设以`package_sample`作为根目录，`src`作为源码目录，那么所有文件结构就是：
 
-![](./image/image_4bNKcPfrJg.png)
+![](./assets/image/image_4bNKcPfrJg.png)
 
 即所有Java文件对应的目录层次要和包的层次一致。
 
 编译后的`.class`文件**也需要按照包结构存放**。如果使用IDE，把编译后的`.class`文件放到`bin`目录下，那么，编译的文件结构就是：
 
-![](./image/image_SVmb7F1X6S.png)
+![](./assets/image/image_SVmb7F1X6S.png)
 
 ### 包作用域
 
@@ -193,7 +193,7 @@ public class Main {
 
 **lang 不需要导入；** ​**不同包才需要导入**；
 
-![](./image/image_Mrtvzd9toD.png)
+![](./assets/image/image_Mrtvzd9toD.png)
 
 ### 最佳实践
 
@@ -223,7 +223,7 @@ public class Main {
 
 假设我们创建了如下的目录结构：
 
-![](./image/image_HSrI8cECA2.png)
+![](./assets/image/image_HSrI8cECA2.png)
 
 其中，`bin`目录用于存放编译后的`class`文件，`src`目录按包结构存放Java源码；我们怎么一次性编译这些Java源码呢？
 
@@ -247,7 +247,7 @@ C:\work> javac -d bin src\com\itranswarp\sample\Main.java src\com\itranswarp\wor
 
 如果编译无误，则`javac`命令没有任何输出。可以在`bin`目录下看到如下`class`文件：
 
-![](./image/image_5kLqiJNXKV.png)
+![](./assets/image/image_5kLqiJNXKV.png)
 
 现在，我们就可以直接运行`class`文件了。根据当前目录的位置确定classpath，例如，当前目录仍为`work`，则classpath为`bin`或者`./bin`：
 
@@ -258,4 +258,4 @@ Hello, world!
 ```
 
 
-![](./image/image_Mrtvzd9toD.png)
+![](./assets/image/image_Mrtvzd9toD.png)

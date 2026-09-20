@@ -112,7 +112,7 @@ Stream<Integer> i = s.flatMap(list -> list.stream());
 
 因此，所谓`flatMap()`，是指把`Stream`的每个元素（这里是`List`）映射为`Stream`，然后合并成一个新的`Stream`：
 
-![](./image/image_tR7uHC9Rmo.png)
+![](./assets/image/image_tR7uHC9Rmo.png)
 
 ### 并行
 

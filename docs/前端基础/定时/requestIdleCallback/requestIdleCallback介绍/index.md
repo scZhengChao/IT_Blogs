@@ -40,11 +40,11 @@ requestIdleCallback((deadline) => {
 
 `requestIdleCallback` 的`callback`会在浏览器的空闲时间运行，那么什么是空闲时间呢？
 
-![](./image/image_Pl9Co02eVa.png)
+![](./assets/image/image_Pl9Co02eVa.png)
 
 - 如上图。当我们在执行一段连续的动画的时候，第一帧已经渲染到屏幕上了，到第二帧开始渲染，这段时间内属于空闲时间。这种空闲时间会非常的短暂，如果我们的屏幕是60hz（1s内屏幕刷新60次）的。那么空闲时间会小于16ms（1000ms / 16）。
 
-![](./image/image_HhHsAbLxd8.png)
+![](./assets/image/image_HhHsAbLxd8.png)
 
 - 另外一种空闲时间，**当用户属于空闲状态（没有与网页进行任何交互），并且没有屏幕中也没有动画执行。此时空闲时间是无限长的。但是为了避免不可预测的事（用户突然和网页进行交互），空闲时间最大应该被限制在50ms以内。**
 

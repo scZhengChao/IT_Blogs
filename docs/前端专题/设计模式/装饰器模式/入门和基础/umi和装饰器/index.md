@@ -8,9 +8,9 @@
 
 [   https://github.com/umijs/umi/discussions/12425](https://github.com/umijs/umi/discussions/12425 "   https://github.com/umijs/umi/discussions/12425")
 
-![](./image/image_fnTbTEMAtm.png)
+![](./assets/image/image_fnTbTEMAtm.png)
 
-![](./image/image_wn-h-JKpxw.png)
+![](./assets/image/image_wn-h-JKpxw.png)
 
 # mobx集成失败
 

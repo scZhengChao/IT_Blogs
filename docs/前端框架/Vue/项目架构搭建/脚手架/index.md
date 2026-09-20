@@ -134,7 +134,7 @@ vue -v 查看vue 版本
 ```
 
 
-[vue-vant-sass-iphone.7z](./file/vue-vant-sass-iphone_w_4a1O-CCk.7z "vue-vant-sass-iphone.7z")
+[vue-vant-sass-iphone.7z](./assets/file/vue-vant-sass-iphone_w_4a1O-CCk.7z "vue-vant-sass-iphone.7z")
 
 # cli3
 
@@ -170,11 +170,11 @@ vue -v 查看vue 版本
 ```
 
 
-[笔记\_vue06\_项目架构实践【瑞客论坛 www.ruike1.com】.pdf](<./file/笔记_vue06_项目架构实践【瑞客论坛 www.ruike1.com】_xaxTjPSLFs.pdf> "笔记_vue06_项目架构实践【瑞客论坛 www.ruike1.com】.pdf")
+[笔记\_vue06\_项目架构实践【瑞客论坛 www.ruike1.com】.pdf](<./assets/file/笔记_vue06_项目架构实践【瑞客论坛 www.ruike1.com】_xaxTjPSLFs.pdf> "笔记_vue06_项目架构实践【瑞客论坛 www.ruike1.com】.pdf")
 
 第二版
 
-[笔记\_vue07\_项目架构实践2【瑞客论坛 www.ruike1.com】.pdf](<./file/笔记_vue07_项目架构实践2【瑞客论坛 www.ruike1.com】_EEonJsI3No.pdf> "笔记_vue07_项目架构实践2【瑞客论坛 www.ruike1.com】.pdf")
+[笔记\_vue07\_项目架构实践2【瑞客论坛 www.ruike1.com】.pdf](<./assets/file/笔记_vue07_项目架构实践2【瑞客论坛 www.ruike1.com】_EEonJsI3No.pdf> "笔记_vue07_项目架构实践2【瑞客论坛 www.ruike1.com】.pdf")
 
 ```纯文本 
  基于cli3 的 模式和环境变量                               我觉得很有用 

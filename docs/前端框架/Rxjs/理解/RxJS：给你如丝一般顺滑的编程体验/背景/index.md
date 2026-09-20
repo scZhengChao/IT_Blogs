@@ -57,7 +57,7 @@
 
 不仅如此，在`JavaScript`的世界里，就众多处理异步事件的场景中来看，“麻烦”两个字似乎经常容易被提起，我们可以先从`JS`的异步事件的处理方式发展史中来细细品味`RxJS`带来的价值。
 
-![](./image/image_Y71wYx2McK.png)
+![](./assets/image/image_Y71wYx2McK.png)
 
 异步事件处理方式
 

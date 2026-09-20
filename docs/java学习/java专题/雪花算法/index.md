@@ -7,9 +7,9 @@
   - [3.2 导入雪花算法工具类](#32-导入雪花算法工具类)
 - [配置使用](#配置使用)
 
-[雪花算法简单讲解.mhtml](./file/雪花算法简单讲解_168_oDzfpV.mhtml "雪花算法简单讲解.mhtml")
+[雪花算法简单讲解.mhtml](./assets/file/雪花算法简单讲解_168_oDzfpV.mhtml "雪花算法简单讲解.mhtml")
 
-![](./image/雪花ID简介_ojXBWIaXdg.png)
+![](./assets/image/雪花ID简介_ojXBWIaXdg.png)
 
 ## 3、SessionID唯一性解决方案
 
@@ -19,7 +19,7 @@
 - 什么是雪花算法？
   - 雪花算法是Twitter公司内部为分布式**环境下生成唯一ID的一种算法解决方案，底层会帮助我们生成一个64位(比特位)的long类型的Id；**
 
-![](./image/image_UmGuMB0i5z.png)
+![](./assets/image/image_UmGuMB0i5z.png)
 
 ### 3.2 导入雪花算法工具类
 

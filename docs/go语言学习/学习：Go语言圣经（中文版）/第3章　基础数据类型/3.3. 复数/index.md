@@ -94,4 +94,4 @@ func mandelbrot(z complex128) color.Color {
 
 用于遍历1024x1024图像每个点的两个嵌套的循环对应-2到+2区间的复数平面。程序反复测试每个点对应复数值平方值加一个增量值对应的点是否超出半径为2的圆。如果超过了，通过根据预设置的逃逸迭代次数对应的灰度颜色来代替。如果不是，那么该点属于Mandelbrot集合，使用黑色颜色标记。最终程序将生成的PNG格式分形图像输出到标准输出，如图3.3所示。
 
-![](./image/image_HCa3kP8N_V.png)
+![](./assets/image/image_HCa3kP8N_V.png)

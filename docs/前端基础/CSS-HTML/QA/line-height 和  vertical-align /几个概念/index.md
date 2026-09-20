@@ -3,6 +3,6 @@
 - **行高**: 两行文字基线之间的距离。
 - **基线**: 英语字母中的概念，是指书写英语字母时，**字母x底部所在的位置**，即我们用英语字母本子书写时从上往下，格子中的倒数第二条线。在CSS中值为baseline。以下图为行高，基线，以及`vertical-align`属性中，`baseline`,`bottom`,`middle`,`top`几个值的关系。
 
-![](./image/image_KKd5x6_uQg.png)
+![](./assets/image/image_KKd5x6_uQg.png)
 
 **纠正：上图中的middle描述有错，正确应该为baseline往上二分之一x-height所在的位置**，其中x-height指的是字母x的高度，关于x-height，具体你[可以点击这里](https://link.juejin.cn/?target=http://www.zhangxinxu.com/wordpress/2015/06/about-letter-x-of-css/ "可以点击这里")了解

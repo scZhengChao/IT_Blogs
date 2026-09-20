@@ -1,6 +1,6 @@
 # 表关系
 
-![](./image/image_8i4C64xCDK.png)
+![](./assets/image/image_8i4C64xCDK.png)
 
 [一对多](./一对多/index.md "一对多")
 

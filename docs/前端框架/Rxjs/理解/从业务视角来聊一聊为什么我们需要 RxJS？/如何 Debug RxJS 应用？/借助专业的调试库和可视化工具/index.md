@@ -48,7 +48,7 @@ const inputSearch = document.querySelector(".search");
 
 上述我们在三个部分打了 `tag`，然后给了对应的标识符，接着我们运行程序，打开控制台就可以查看对应的 `Stream` 执行的过程：
 
-![](./image/image_uIbyLBhUta.png)
+![](./assets/image/image_uIbyLBhUta.png)
 
 可以看到我们可以对某个 tag 过的 Stream 进行过程展示，甚至还能展示调用栈，极大提高调试体验，当然 rxjs-spy 还有更多高级、有用的特性，具体可以参见作者的教程：
 

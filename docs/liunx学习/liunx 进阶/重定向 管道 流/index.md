@@ -23,7 +23,7 @@
 - 标准输出 `stdout` ，终端输出的信息（不包含错误信息）；
 - 标准错误输出 `stderr` ，终端输出的错误信息。
 
-![](./image/image_ER8HSRRosy.png)
+![](./assets/image/image_ER8HSRRosy.png)
 
 ### 重定向
 
@@ -150,7 +150,7 @@ wc -m << END # 统计输入的单词复制代码
 
 把两个命令连起来使用，**一个命令的输出作为另外一个命令的输入**，英文是 `pipeline` ，可以想象一个个水管连接起来，**管道算是重定向流的一种。**
 
-![](./image/image_dINI4Kwq_f.png)
+![](./assets/image/image_dINI4Kwq_f.png)
 
 举几个实际用法案例：
 

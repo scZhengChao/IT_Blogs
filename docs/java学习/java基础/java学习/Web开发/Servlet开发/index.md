@@ -14,9 +14,9 @@
 
 这个过程是不是很繁琐？如果我们想在IDE中断点调试，还需要打开Tomcat的远程调试端口并且连接上去。
 
-![](./image/image_x7Go3aYBbT.png)
+![](./assets/image/image_x7Go3aYBbT.png)
 
-![](./image/image_xCHPDA5znT.png)
+![](./assets/image/image_xCHPDA5znT.png)
 
 许多初学者经常卡在如何在IDE中启动Tomcat并加载webapp，更不要说断点调试了。
 
@@ -118,7 +118,7 @@ public class Main {
 
 **这样，我们直接运行**\*\*`main()`****方法，即可启动嵌入式Tomcat服务器，然后，通过预设的****`tomcat.addWebapp("", new File("src/main/webapp")`****，Tomcat会自动加载当前工程作为根webapp，可直接在浏览器访问****`http://localhost:8080/`：\*\*​
 
-![](./image/image_iMAsf93ryO.png)
+![](./assets/image/image_iMAsf93ryO.png)
 
 通过`main()`方法启动`Tomcat`服务器并加载我们自己的webapp有如下好处：
 
@@ -168,7 +168,7 @@ public class Main {
 
 生成的war包结构如下：
 
-![](./image/image_3p2xjXKlYU.png)
+![](./assets/image/image_3p2xjXKlYU.png)
 
 之所以要把编译后的classes复制到war包根目录，是因为用`java -jar hello.war`启动时，JVM的Class Loader不会查找`WEB-INF/lib`的jar包，而是直接从`hello.war`的根目录查找。`MANIFEST.MF`生成的内容如下：
 
@@ -245,7 +245,7 @@ class TomcatRunner {
 
 现在，执行`java -jar hello.war`时，**JVM先定位**\*\*`hello.war`****的****`Main`\*\***类**，运行`main()`，**自动解压后**，文件系统目录如下：
 
-![](./image/image_DQnRLCvS4M.png)
+![](./assets/image/image_DQnRLCvS4M.png)
 
 解压后的目录结构和我们在`MANIFEST.MF`中设定的`Class-Path`一致，因此，JVM能顺利加载Tomcat的jar包，然后运行Tomcat，启动Web App。
 

@@ -62,7 +62,7 @@
 
 下图表示`Shell`与内核、操作系统之间的关系：
 
-![](./image/image_LJqPKnn9be.png)
+![](./assets/image/image_LJqPKnn9be.png)
 
 ## Shell 的种类
 

@@ -17,13 +17,13 @@ IP：全称”`互联网协议地址`”，也称IP地址。是分配**给上网
 
 > IP地址常见分类 : ipv4和ipv6
 
-![](./image/image_AYCKehAG4h.png)
+![](./assets/image/image_AYCKehAG4h.png)
 
 # IPv6
 
 IPv6：由于互联网的不断发展，**IP地址的需求量愈来愈大**，而IPv4的模式下IP的总数是有限的。&#x20;                采用128位地址长度，16位一组,一共分成8组。
 
-![](./image/image_GkrZ7K0BZt.png)
+![](./assets/image/image_GkrZ7K0BZt.png)
 
 # 常用命令：
 
@@ -38,4 +38,4 @@ IPv6：由于互联网的不断发展，**IP地址的需求量愈来愈大**，�
 - 为了方便我们对IP地址的获取和操作，Java提供了一个类`InetAddress` 供我们使用
 - `InetAddress`：此类表示Internet协议（IP）地址
 
-![](./image/image_4cMeWLQqrQ.png)
+![](./assets/image/image_4cMeWLQqrQ.png)

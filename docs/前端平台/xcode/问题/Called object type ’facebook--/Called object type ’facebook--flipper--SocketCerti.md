@@ -41,4 +41,4 @@
 
 作者 : 是的, 但是看到他们有merge对应的代码,之后release的版本应该就不需要手动改了
 
-![  ](./image/Snipaste_2024-07-18_15-17-23_Sf4pKXfx7S.png "  ")
+![  ](<../assets/Called object type ’facebook--/image/Snipaste_2024-07-18_15-17-23_Sf4pKXfx7S.png> "  ")

@@ -30,7 +30,7 @@ uptime
 
 可以使用 w 命令来代替 uptime。w 也提供关于当前系统登录用户和用户所进行工作的相关信息。
 
-![](./image/image_K9B-66TADw.png)
+![](./assets/image/image_K9B-66TADw.png)
 
 ### 3. users
 
@@ -52,29 +52,29 @@ lsof -i:3000
 ```
 
 
-![](./image/image_zP7btCX8P3.png)
+![](./assets/image/image_zP7btCX8P3.png)
 
 ### 5. df
 
 df 命令用于显示目前在 Linux 系统上的文件系统磁盘使用情况统计。
 
-![](./image/image_-P3wWMawj_.png)
+![](./assets/image/image_-P3wWMawj_.png)
 
 ### 6. passwd
 
 passwd 命令用来更改使用者的密码，需要根据提示输入一次旧密码和两次新密码。
 
-![](./image/image_EYHNoUquzJ.png)
+![](./assets/image/image_EYHNoUquzJ.png)
 
 ### 7. cal
 
 cal 命令用于查看日历，默认只显示当前月份：
 
-![](./image/image_BYgIx-E4uB.png)
+![](./assets/image/image_BYgIx-E4uB.png)
 
 可以使用`cal -y 2022`命令来显示某一年的日历：
 
-![](./image/image_BBo3Tzm3Ni.png)
+![](./assets/image/image_BBo3Tzm3Ni.png)
 
 [防火墙操作](./防火墙操作/index.md "防火墙操作")
 

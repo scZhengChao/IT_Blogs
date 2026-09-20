@@ -2,6 +2,6 @@
 
 该目录与/bin目录类似，用于存储二进制文件。与/bin目录不同的地方是这个目录存储的是用于系统管理的二进制文件，比如磁盘格式化（mkfs）、磁盘分区（fdisk）和网络配置（ifconfig）等命令。
 
-![  ](./image/9e35fd9b84a24a6aa61069837d09c264_LTrf5HbGPq.jpeg "  ")
+![  ](./assets/image/9e35fd9b84a24a6aa61069837d09c264_LTrf5HbGPq.jpeg "  ")
 
 图9 系统命令

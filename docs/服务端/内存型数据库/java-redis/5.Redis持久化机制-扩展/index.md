@@ -32,7 +32,7 @@ Redis是**一个内存存储的数据库，内存必须在通电的情况下才�
 ```
 
 
-![](./image/image_fbkQ5JzzMD.png)
+![](./assets/image/image_fbkQ5JzzMD.png)
 
 redis是一个支持持久化的内存数据库，也就是说redis需要经常将内存中的数据同步到磁盘来保证持久化。redis支持两种持久化方式，一种**是RDB(快照)也是默认方式，另一种是Append Only File(缩写AOF)的方式**。下面分别介绍：
 

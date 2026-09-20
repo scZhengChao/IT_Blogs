@@ -16,7 +16,7 @@
 ```
 
 
-![](./image/image_OZNNbt6deF.png)
+![](./assets/image/image_OZNNbt6deF.png)
 
 # 二
 

@@ -63,7 +63,7 @@
   - 情况二：`text1[0:i]` 和 `text2[0:j-1]` 的最长公共子序列
   - 对此，计算 `text1[0:i]` 和 `text2[0:j]` 的最长公共子序列，应取两项中长度较大的一项，因此 `dp[i][j] = max(dp[i-1]][j], dp[i][j-1])`。
 
-![](./image/image_2cc4TvPBQn.png)
+![](./assets/image/image_2cc4TvPBQn.png)
 
 根据状态转移方程，我们可以得到如下代码实现：
 
@@ -112,7 +112,7 @@ function longestCommonSubsequence(text1,text2){
 
 下图所示为二维数组 `dp[i][j]` 的存储内容，大问题的解由子问题的解推导而出，数组整体从左到右，从上到下推导构建。我们在图中使用黄色标识了 `text1[i-1] == text2[j-1]` 的情况。此时将从左上角相邻的位置取值并加 1；否则，取左边或上边的相邻值中的最大值。**整个二维数组中保存的最大值就是 LCS 问题的解。**
 
-![](./image/image_D9iKUNbvNu.png)
+![](./assets/image/image_D9iKUNbvNu.png)
 
 至此我们计算得到了最长公共子序列的长度，**然而在实际情况中，我们倾向于得到最长公共子序列本身。此时，可以借助我们构建的二维数组进行回溯。**
 
@@ -125,19 +125,19 @@ function longestCommonSubsequence(text1,text2){
 
 由此，我们可以得到如下的遍历路径。
 
-![](./image/image_iK0GUQsiIW.png)
+![](./assets/image/image_iK0GUQsiIW.png)
 
 在回溯得到遍历路径之后，我们对路径中**向左上角遍历的**起始位置进行染色（黄色），即可得到最长公共子序列 `CABA`，如下图所示。
 
-![](./image/image_jBWsqRGjKW.png)
+![](./assets/image/image_jBWsqRGjKW.png)
 
 当然，细心的同学可能会对上述的回溯方法产生疑问：为什么 `dp[i][j] = dp[i-1][j]` 时向上遍历，而非向左遍历？事实上，如果我们也可以修改回溯方法，得到如下的遍历路径。
 
-![](./image/image_ky8CBcjIwD.png)
+![](./assets/image/image_ky8CBcjIwD.png)
 
 同样，我们对路径中向左上角遍历的起始位置进行染色（黄色），即可得到最长公共子序列 `BABA`，如下图所示。
 
-![](./image/image_Xdv8zy5YyB.png)
+![](./assets/image/image_Xdv8zy5YyB.png)
 
 # 最小编辑距离
 
@@ -145,15 +145,15 @@ function longestCommonSubsequence(text1,text2){
 
 具体设定为：在最小编辑距离问题中，如果编辑操作只有 **删除** 和 **插入**，没有 **替换** 操作，且每个操作的代价是 1，那么从字符串 A 转换成字符串 B 的最小编辑距离就可以转换成如下公式。
 
-![](./image/image_2gwklCPWqn.png)
+![](./assets/image/image_2gwklCPWqn.png)
 
 以上述 `text1 = CBABAC`，`text2 = ABCABBA` 为例，寻找最长公共子序列问题，我们可以视为将 `text2` 转换成 `text1` 的最小编辑距离问题。
 
 此时，我们可以将向左遍历的起始位置染成红色，将向上遍历的起始位置[^注释3]染成绿色，如下所示是分别对 `CABA` 和 `BABA` 遍历路径的染色图。
 
-![](./image/image_rpxhM_ULF1.png)
+![](./assets/image/image_rpxhM_ULF1.png)
 
-![](./image/image_J1P1aVKCkC.png)
+![](./assets/image/image_J1P1aVKCkC.png)
 
 这里，我们对已经染色的路径进行编辑规则的定义，如下：
 
@@ -163,13 +163,13 @@ function longestCommonSubsequence(text1,text2){
 
 此时，我们就可以得到最小编辑距离的实际操作步骤，即 **最短编辑脚本（Shortest Edit Script，SES）**，如下所示。
 
-![](./image/image_QrjzNyS5-j.png)
+![](./assets/image/image_QrjzNyS5-j.png)
 
-![](./image/image_BmgbsUw7pr.png)
+![](./assets/image/image_BmgbsUw7pr.png)
 
 上面两图的右半部分是两个符合预期的最短编辑脚本。然而，在实际过程中，对某一个原始文本进行编辑得到另一个目标文本，可能会存在非常多的最短编辑脚本。此时我们该如何选择？**根据实际经验，我们认为先删除旧内容，后插入新内容，具有更直观的体验**。比如：Code Review 的差异比较也都是按照先删除后插入的方式进行展示，如下所示。因此，上述第一种最短编辑脚本更加直观，符合预期。
 
-![](./image/image_JKjLqsudf8.png)
+![](./assets/image/image_JKjLqsudf8.png)
 
 # Myers 差分算法
 
@@ -177,7 +177,7 @@ function longestCommonSubsequence(text1,text2){
 
 下面，我们以 `source = ABCABBA` 为原始字符串，`target = CBAABAC` 为目标字符串，基于 Myers 差分算法来查找最短编辑距离和最小编辑脚本。
 
-![](./image/image_8z9hIErhv_.png)
+![](./assets/image/image_8z9hIErhv_.png)
 
 ## 基本定义
 
@@ -187,7 +187,7 @@ function longestCommonSubsequence(text1,text2){
 - **遍历的步长**：对于向右和向下，步长为 1。一次只能移动一格；对于右下，一次可以移动任意长度，前提移动过程中所有坐标的 x、y 值对应在原始字符串和目标字符串中的对应位置的字符必须相同。下图所示，黄色箭头表示可以允许移动的起始位置和终点位置。
 - **遍历的深度**：对于向右和向下，每移动一步，深度加 1；对于右下，无论移动步长为多少，深度始终加 0。
 
-![](./image/image_ceg9jxQVgS.png)
+![](./assets/image/image_ceg9jxQVgS.png)
 
 ## K-D 坐标系
 
@@ -197,7 +197,7 @@ K 来源于 X 与 Y 的关系式 `y = x - k`，即偏移量。根据 X 和 K 的
 
 D 表示遍历的深度。由于向右或向下移动一步，深度加 1；右下移动一步，深度加 0。因此，D 轴并不是完全垂直于 K 轴，而是类似于等高线，向多方向增长，相同 D 值所连成的线可能是折线，而不一定是直线。
 
-![](./image/image_0k_Oekyk6L.png)
+![](./assets/image/image_0k_Oekyk6L.png)
 
 ## 最佳位置
 
@@ -218,7 +218,7 @@ Myers 差分算法是基于贪心策略实现的，对此它定义了一个 **�
 
 首先，为 `k(0)` 查找所有深度为 `d0` 的最佳位置，很显然，只有起点符合，如下图所示。
 
-![](./image/image_eF3WLK728M.png)
+![](./assets/image/image_eF3WLK728M.png)
 
 其次，为 `k(-1)` 和 `k(1)` 查找所有深度为 `d1` 的最佳位置。由于 `d1` 是基于 `d0` 宽度优先搜索查找的，而 `d0` 只有一个，所以由此向两个方向搜索的 K 线只有 `k(-1)` 和 `k(1)`。
 

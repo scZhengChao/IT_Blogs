@@ -41,7 +41,7 @@ assert.equal(Math.max(1, 100), 100);
 
 常用的第三方测试框架有mocha，jest，**他们之间的区别在于jest内容更加全面，集成了断言，jsdom模拟浏览器DOM环境。**
 
-![](./image/image_O_Xj9ZZ7EB.png)
+![](./assets/image/image_O_Xj9ZZ7EB.png)
 
 ## 测试用例
 
@@ -55,7 +55,7 @@ npm i jest @types/jest
 
 默认会测试spec和test结尾的js文件，**所有写单元测试的文件名必须是sum.spec.js或者sum.test.js这个的格式。**
 
-![](./image/image_CADpkN0ywu.png)
+![](./assets/image/image_CADpkN0ywu.png)
 
 然后需要在package.json里面增加一段脚本
 
@@ -244,7 +244,7 @@ npx jest --init
 
 通过命令运行`npm run test`最后会生成测试覆盖率
 
-![](./image/image_umG44CnyyN.png)
+![](./assets/image/image_umG44CnyyN.png)
 
 还会在coverage目录的lcov-report目录里生成HTML文件，可以通过浏览器打开查看。
 

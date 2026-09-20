@@ -33,6 +33,6 @@
 
 **接口只有行为；**
 
-![](./image/image_zSzAG-rJsB.png)
+![](./assets/image/image_zSzAG-rJsB.png)
 
-![](./image/image_ONjeeXJNZV.png)
+![](./assets/image/image_ONjeeXJNZV.png)

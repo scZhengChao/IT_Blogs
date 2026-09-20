@@ -22,11 +22,11 @@
 
 背景不希望应用发送的数据能在 Devtools 中被看到，避免接口被“同行”扒下来，然后被恶意使用&#x20;
 
-![  ](./image/a9d6ea21e97a4909c6dc24a5bb058753_FOO3NBkqjl.webp "  ")
+![  ](./assets/image/a9d6ea21e97a4909c6dc24a5bb058753_FOO3NBkqjl.webp "  ")
 
 要避免此问题，首先想到的就是对传输的数据进行一次加密，让后端自行解密然后处理 尽管js源码是被浏览器公开的，但通过构建工具混淆后，在没有source map的情况下还不不易定位目标代码 期望加密后的样子传输的内容如下&#x20;
 
-![  ](./image/67a746637dc5baed924d31a50a9dc7b3_tOx4znakqe.webp "  ")
+![  ](./assets/image/67a746637dc5baed924d31a50a9dc7b3_tOx4znakqe.webp "  ")
 
 ## jsencrypt
 
@@ -279,15 +279,15 @@ function updateReceive(data){
 
 **页面**
 
-![  ](./image/42b51674f60e672f6437eab46a1d2c98_a49v-USL0f.webp "  ")
+![  ](./assets/image/42b51674f60e672f6437eab46a1d2c98_a49v-USL0f.webp "  ")
 
 **发送网络请求**
 
-![  ](./image/a01f40b229e6be77b87d3fef1d34a444_Bi7LqCh6qI.webp "  ")
+![  ](./assets/image/a01f40b229e6be77b87d3fef1d34a444_Bi7LqCh6qI.webp "  ")
 
 **请求响应内容**
 
-![  ](./image/22b0fe056fd58a3adaea3122fd708914_7Ch3dtatEs.webp "  ")
+![  ](./assets/image/22b0fe056fd58a3adaea3122fd708914_7Ch3dtatEs.webp "  ")
 
 大功告成,接入十分简单&#x20;
 

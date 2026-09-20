@@ -1,8 +1,8 @@
 # Scanner&#x20;
 
-![](./image/image_x2B2cbVm7U.png)
+![](./assets/image/image_x2B2cbVm7U.png)
 
-![](./image/image_d2MrnbKv10.png)
+![](./assets/image/image_d2MrnbKv10.png)
 
 ```java 
 import java.util.Scanner;

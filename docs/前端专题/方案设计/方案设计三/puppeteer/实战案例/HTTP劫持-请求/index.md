@@ -2,7 +2,7 @@
 
 以[razer](https://link.juejin.cn/?target=https://gold.razer.com/my/en/gold/catalog/pubgm "razer")为例，在请求中找到渲染当前页面的关系，通过拦截当前游戏名称的请求进行数据分析，获取当前的商品名称和价格等信息。
 
-![](./image/image_Ez3tKG-f9z.png)
+![](./assets/image/image_Ez3tKG-f9z.png)
 
 **实例代码如下：**
 

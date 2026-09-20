@@ -120,7 +120,7 @@ System.out.println(editor.getState());
 
 这就是命令模式的结构：
 
-![](./image/image_NPQdTIo7FO.png)
+![](./assets/image/image_NPQdTIo7FO.png)
 
 有的童鞋会有疑问：搞了一大堆`Command`，多了好几个类，还不如直接这么写简单：
 
@@ -150,7 +150,7 @@ public interface Command {
 
 然后把执行的一系列命令用`List`保存起来，就既能支持Undo，又能支持Redo。这个时候，我们又需要一个`Invoker`对象，负责执行命令并保存历史命令：
 
-![](./image/image_m-hiZ7w-2M.png)
+![](./assets/image/image_m-hiZ7w-2M.png)
 
 可见，模式带来的**设计复杂度的增加是随着需求而增加的，它减少的是系统各组件的耦合度。**
 

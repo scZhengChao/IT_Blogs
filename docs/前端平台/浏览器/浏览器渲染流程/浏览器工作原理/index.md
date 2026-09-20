@@ -7,7 +7,7 @@
   - [TCP (Transmission Control Protocol) 握手](#TCP-Transmission-Control-Protocol-握手)
   - [TLS协商](#TLS协商)
 
-![](./image/image_LOJaNAuQNy.png)
+![](./assets/image/image_LOJaNAuQNy.png)
 
 > 浏览器（也称为网络浏览器或互联网浏览器）是安装在我们设备上的软件应用程序，使我们能够访问万维网。在阅读这篇文字时，你实际上正在使用一个浏览器。
 
@@ -31,11 +31,11 @@
 
 > **DNS 服务器**是包含**公共 IP 地址**及其**相关主机名数据库的计算机服务器**（这通常被比作电话簿，因为人们的名字与一个特定的电话号码相关联）。在大多数情况下，这些服务器按照要求将这些名字解析或翻译成 IP 地址（现在有 600 多个不同的 DNS 根服务器分布在世界各地）。
 
-![](./image/image_aOuf_yryfP.png)
+![](./assets/image/image_aOuf_yryfP.png)
 
 因此，当我们请求进行 DNS 查询时，我们实际做的是与这些服务器中的一个进行对话，要求找出与[example.com](https://link.juejin.cn/?target=https://example.com "example.com") 名称相对应的IP地址。如果找到了一个对应的 IP，就会返回。如果发生了一些情况，查找不成功，我们会在浏览器中看到一些错误信息。
 
-![](./image/image_H0g3Oy7yvT.png)
+![](./assets/image/image_H0g3Oy7yvT.png)
 
 在这个最初的查询之后，IP 地址可能会**被缓存一段时间**，所以下次**访问同一个网站会更快**，因为不需要进行 DNS 查询（记住，**DNS 查询只发生在我们第一次访问一个网站时**）。
 
@@ -49,15 +49,15 @@ TCP 握手是一种**机制，**旨在让两个想要相互传递信息的实体
 
 因此，如果浏览器和服务器是两个人，他们之间的对话会是这样的：
 
-![](./image/image_fH8uIlkOTk.png)
+![](./assets/image/image_fH8uIlkOTk.png)
 
 浏览器向服务器发送一个 **SYNC** 消息，要求进行同步（同步意味着连接）
 
-![](./image/image_JtpB4uedHI.png)
+![](./assets/image/image_JtpB4uedHI.png)
 
 然后，服务器将回复一个 **SYNC-ACK** 消息（ SYNChronization 和 ACKnowledgement）
 
-![](./image/image_KZ7zDDh-bu.png)
+![](./assets/image/image_KZ7zDDh-bu.png)
 
 在最后一步，浏览器将回复一个 **ACK** 信息
 
@@ -69,7 +69,7 @@ TCP 握手是一种**机制，**旨在让两个想要相互传递信息的实体
 
 > **传输层安全（TLS）是现已废弃的安全套接字层（SSL）的继任者，**是一种**加密协议**，旨在通过计算机网络提供通信安全。该协议被广泛用于**电子邮件和即时通讯**等应用，但它在确保 HTTPS安全方面的应用仍然是最公开的。由于应用程序可以使用或不使用 TLS（或SSL）进行通信，因此客户（浏览器）有**必要要求服务器建立 TLS 连接。**
 
-![](./image/image_0DS-3smNcN.png)
+![](./assets/image/image_0DS-3smNcN.png)
 
 在这一步骤中，浏览器和服务器之间还交换了一些信息
 

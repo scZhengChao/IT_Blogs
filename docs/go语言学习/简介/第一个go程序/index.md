@@ -10,7 +10,7 @@
 
 (1)进入前面创建的三个目录里面的src目录
 
-![](./image/image_83UEzZsrQ4.png)
+![](./assets/image/image_83UEzZsrQ4.png)
 
 (2)在`src`目录下创建一个hello目录，在hello目录中创建一个`main.go`文件：
 

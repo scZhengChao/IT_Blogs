@@ -8,7 +8,7 @@
 `Label`以`key/value`**键值对的形式附加到各种对象**上，如`Pod`、`Service`、`RC`、`Node`等。
 Label**定义了这些对象的可识别属性**，用来**对它们进行管理和选择**。`Label`可以在创建时附加到对象上，也可以在对象创建后通过API进行管理。
 
-![](./image/image_ENrtd7yZOA.png)
+![](./assets/image/image_ENrtd7yZOA.png)
 
 ### Label Selector（标签选择器）
 

@@ -14,11 +14,11 @@
 
 Linux系统中权限描述如下:
 
-![](./image/image_tfZ025w4Ib.png)
+![](./assets/image/image_tfZ025w4Ib.png)
 
 解析当前脚本的权限情况:
 
-![](./image/image_Bf39S5Dep6.png)
+![](./assets/image/image_Bf39S5Dep6.png)
 
 chmod命令可以**使用八进制数来指定权限**(0 - 代表无 , 1 - 执行x , 2 - 写w , 4 - 读r):
 

@@ -10,7 +10,7 @@ Maven 生命周期
   - **default：核心工作，例如编译，测试，打包，安装等**
   - **site：产生报告，发布站点等**
 
-![](./image/image_mFGKlkvDVd.png)
+![](./assets/image/image_mFGKlkvDVd.png)
 
 default 构建生命周期
 

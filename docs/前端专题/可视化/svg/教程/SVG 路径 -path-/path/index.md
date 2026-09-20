@@ -107,7 +107,7 @@
 
 而`h`和`H`的作用差不多，只不过传入的数据会和前一个点的`X坐标`相加，形成一个新的点，这就是相对位置。
 
-![](./image/image_0b6Z9mop_z.png)
+![](./assets/image/image_0b6Z9mop_z.png)
 
 ```svg 
 <svg width="300" height="300" style="border: 1px solid red;">
@@ -126,7 +126,7 @@
 
 `V`后面只需传入`Y坐标`即可，它的`X坐标`与前一个点相同。
 
-![](./image/image_IlGKvrTVN9.png)
+![](./assets/image/image_IlGKvrTVN9.png)
 
 ```svg 
 <svg width="300" height="300" style="border: 1px solid red;">

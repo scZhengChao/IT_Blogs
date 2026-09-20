@@ -2,7 +2,7 @@
 
 多线程是Java最基本的一种并发模型，本章我们将详细介绍Java多线程编程。
 
-![](./image/image_beQGZLUCmA.png)
+![](./assets/image/image_beQGZLUCmA.png)
 
 [多线程基础](./多线程基础/index.md "多线程基础")
 

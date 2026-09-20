@@ -14,7 +14,7 @@ docker save --help
 
 结果：
 
-![](./image/image_OInuzijuq6.png)
+![](./assets/image/image_OInuzijuq6.png)
 
 命令格式：
 
@@ -35,7 +35,7 @@ docker save -o nginx.tar nginx:latest
 
 结果如图：
 
-![](./image/image_GAsDx5ADP1.png)
+![](./assets/image/image_GAsDx5ADP1.png)
 
 3）使用docker load加载镜像
 
@@ -56,4 +56,4 @@ docker load -i nginx.tar
 
 结果：
 
-![](./image/image_qjNnM0QhFu.png)
+![](./assets/image/image_qjNnM0QhFu.png)

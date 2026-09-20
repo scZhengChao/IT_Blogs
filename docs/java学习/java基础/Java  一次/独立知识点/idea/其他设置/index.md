@@ -7,8 +7,8 @@
 
 # 快速调整字体&#x20;
 
-![](./image/image_iRIx_aUBe2.png)
+![](./assets/image/image_iRIx_aUBe2.png)
 
 # 文件夹层级
 
-![](./image/image_LmK8holVUo.png)
+![](./assets/image/image_LmK8holVUo.png)

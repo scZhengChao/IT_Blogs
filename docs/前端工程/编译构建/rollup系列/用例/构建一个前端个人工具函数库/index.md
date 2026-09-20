@@ -369,7 +369,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 例如，我创建`array` `is` `string`三个模块：
 
-![](./image/image_lv9bdH_BOO.png)
+![](./assets/image/image_lv9bdH_BOO.png)
 
 这几个模块分别导出了这些函数：
 
@@ -439,7 +439,7 @@ export * from './modules/string'
 
 此时我们可以试着打包看看，执行`pnpm build`，输出文件：
 
-![](./image/image_6PwUZGGytC.png)
+![](./assets/image/image_6PwUZGGytC.png)
 
 可以看到，dist下一共四个文件夹，cjs对应CommonJS，esm对应ES Module，umd对应UMD，types是类型声明。
 
@@ -589,17 +589,17 @@ function str_ensure_suffix(s: string, suffix: string) {
 
 现在不少AI工具都支持生成文档的功能，你可以选择你自己喜欢的工具，我个人使用的是`Mintlify Doc`，在VS Code插件市场可以安装下载：
 
-![](./image/image_Nd_uwoY0XI.png)
+![](./assets/image/image_Nd_uwoY0XI.png)
 
 第一次使用需要按提示注册账号并登录。
 
 `Mintlify Doc`的使用很简单，光标放在需要注释的函数的第一行，然后点击一下生成按钮就可以了：
 
-![](./image/image_dnKWZp1s_k.png)
+![](./assets/image/image_dnKWZp1s_k.png)
 
 文档默认是英文的，我们可以设置为中文：
 
-![](./image/image_WEHv_tS6yW.png)
+![](./assets/image/image_WEHv_tS6yW.png)
 
 生成效果：
 
@@ -650,7 +650,7 @@ export {
 
 其实这个插件是支持自定义注释模板的，可惜这是一项付费功能：
 
-![](./image/image_3ogbxN_3lr.png)
+![](./assets/image/image_3ogbxN_3lr.png)
 
 不想付费就只能手动改了，我的建议是，我们每写完一个函数，就用AI生成注释，然后人工检查并修改，化整为零，就不会显得很费劲，如果一次性写了很多函数，然后再一个一个来生成注释，这样就太费劲了。
 
@@ -709,7 +709,7 @@ pnpm add @microsoft/api-extractor @microsoft/api-documenter -D
 
 然后还要在项目根目录创建一个空的文件夹`etc`，这一步是必须的，否则会提示找不到这个文件夹而报错。
 
-![](./image/image_nDiE65wXRp.png)
+![](./assets/image/image_nDiE65wXRp.png)
 
 最后在package.json中添加脚本：
 
@@ -738,7 +738,7 @@ pnpm add @microsoft/api-extractor @microsoft/api-documenter -D
 
 一切都没问题后，执行`pnpm doc`，就会在根目录下生成一个doc文件夹，里面就是Markdown格式的API文档了。
 
-![](./image/image_j-BfHdpJzg.png)
+![](./assets/image/image_j-BfHdpJzg.png)
 
 ## VitePress创建文档站点
 
@@ -788,7 +788,7 @@ pnpm vitepress init
 
 完成以后，项目下会多出一个`.vitepress`文件夹和几个md文件，这里我们要删掉除`index.md`以外的其他两个md文件。
 
-![](./image/image_Dff5IFkyB5.png)
+![](./assets/image/image_Dff5IFkyB5.png)
 
 [编辑index.md](http://xn--index-lz2n363g.md "编辑index.md")：
 
@@ -928,7 +928,7 @@ export default defineConfig({
 
 最后，执行`pnpm docs:dev`查看效果：
 
-![](./image/image_EN5blG-dsw.png)
+![](./assets/image/image_EN5blG-dsw.png)
 
 vitepress的默认样式是有点小瑕疵的，出现滚动条时页面会晃动，这个问题有多种解决方案，但限于文章的篇幅我就不介绍了。
 
@@ -984,7 +984,7 @@ cache
 
 一切准备就绪，进入[Create a new site from git | Netlify](https://link.juejin.cn/?target=https://app.netlify.com/start "Create a new site from git | Netlify")，选择用Github账号登录，然后就可以部署我们的文档站点了：
 
-![](./image/image_P3ZEGfj-D2.png)
+![](./assets/image/image_P3ZEGfj-D2.png)
 
 关联对应的Github仓库，它就会自动开始部署了，具体的操作过程我就不细说了，没什么难度，实在搞不定就自己上网搜教程吧。
 

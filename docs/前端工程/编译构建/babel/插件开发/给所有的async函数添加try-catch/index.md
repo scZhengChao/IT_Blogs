@@ -15,7 +15,7 @@
 
 ## babel插件开发
 
-![](./image/image_eferabxeMK.png)
+![](./assets/image/image_eferabxeMK.png)
 
 ### 插件的基本格式示例
 

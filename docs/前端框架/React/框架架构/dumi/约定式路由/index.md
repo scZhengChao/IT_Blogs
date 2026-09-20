@@ -83,7 +83,7 @@ docs
 
 根据一级导航的规则，上面所有的 Markdown 必然都归属于`Platforms`导航，但同时它们还会分别归属于`Pc`和`Mobile`这两个二级导航，这是因为这些路由路径除了拥有共同的`/platforms`前缀外，还拥有各自的二级路径前缀，即`/pc`和`/mobile`，二级导航的 UI 效果如下：
 
-![](./image/image_RbZikKN-gM.png)
+![](./assets/image/image_RbZikKN-gM.png)
 
 二级导航的名称及顺序的默认规则与一级导航一致，类似的，我们也可以在该二级导航类目下**任一文档**的 Markdown 源文件头部通过 FrontMatter 指定，比如：
 

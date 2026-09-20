@@ -198,7 +198,7 @@ while (queue.isEmpty()) {
 
 所以，正确编写多线程代码是非常困难的，需要仔细考虑的条件非常多，任何一个地方考虑不周，都会导致多线程运行时不正常。
 
-![](./image/image_IOnIfef6M6.png)
+![](./assets/image/image_IOnIfef6M6.png)
 
 ### 小结
 

@@ -60,11 +60,11 @@ let subscription = fromEvent(document, "click")
 
 `fromEvent(document, "click")` 会声明一个 `Observable` 对象，同时也创建了一个 `Stream`，类似下面的图片：
 
-![](./image/image_PVkZ065u0B.png)
+![](./assets/image/image_PVkZ065u0B.png)
 
 `fromEvent(document, "click")` 创建的 `Observable` 对应着**上面的带有箭头的线**，这条线就是一个 `Stream` 流，上面的一个个 `ev` 就是每次点击之后产生的事件，随着时间推移，不断的产生事件，在这个线上不断的流动下去 -- 之所以为 `Stream`，而这个 `Stream` 其实也可以看作是**一个 “数组”，上面的**一个**个事件即为 “数组” 的元素**，我们可以对这个 “`数组`”进行遍历，以统一的方式如 `map/filter`等进行遍历，所以**也叫融合了迭代器模式，** 而在`RxJS` 中，通过这种 “`迭代器`” 模式，我们可以方便的对一个 `Stream` 进行变换，如 `map` 操作效果如下图所示：
 
-![](./image/image_cgYDxHK-js.png)
+![](./assets/image/image_cgYDxHK-js.png)
 
 > map 将一个 Stream 变换为另外一个 Stream
 

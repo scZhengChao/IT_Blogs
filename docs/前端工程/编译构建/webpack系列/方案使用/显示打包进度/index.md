@@ -38,4 +38,4 @@ module.exports = {
 
 加入这个插件之后就可以在打包的时候看到打包的进度了。
 
-![](./image/image_Z8Ik4uWVT-.png)
+![](./assets/image/image_Z8Ik4uWVT-.png)

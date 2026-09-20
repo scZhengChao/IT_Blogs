@@ -76,7 +76,7 @@ const degrees = radians * 180 / Math.PI;
 
 ### 绘制逆时针弧线
 
-![](./image/image_ck2zC8m23G.png)
+![](./assets/image/image_ck2zC8m23G.png)
 
 ```html 
 <canvas id="arcCanvas" width="400" height="200"></canvas>
@@ -106,7 +106,7 @@ const degrees = radians * 180 / Math.PI;
 
 ### 4. 创建圆形进度条
 
-![](./image/image_KS58IKI-KV.png)
+![](./assets/image/image_KS58IKI-KV.png)
 
 ```html 
 <canvas id="progressCanvas" width="200" height="200"></canvas>

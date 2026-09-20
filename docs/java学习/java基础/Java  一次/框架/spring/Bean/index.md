@@ -11,37 +11,37 @@
 
 # 为什么要学
 
-![](./image/image_bnMAwEPnRy.png)
+![](./assets/image/image_bnMAwEPnRy.png)
 
 学什么
 
-![](./image/image_S7HEyrFrzj.png)
+![](./assets/image/image_S7HEyrFrzj.png)
 
 怎么学
 
-![](./image/image_XE1edsJ2AS.png)
+![](./assets/image/image_XE1edsJ2AS.png)
 
 Spring简介
 
-![](./image/image_kk3hqAB5Zt.png)
+![](./assets/image/image_kk3hqAB5Zt.png)
 
-![](./image/image_VqXFSIt2_Z.png)
+![](./assets/image/image_VqXFSIt2_Z.png)
 
 Spring Framework系统架构
 
-![](./image/image_smijQm9crX.png)
+![](./assets/image/image_smijQm9crX.png)
 
-![](./image/image_KYkQCsCnvO.png)
+![](./assets/image/image_KYkQCsCnvO.png)
 
-![](./image/image_53I55KDHd9.png)
+![](./assets/image/image_53I55KDHd9.png)
 
 核心概念
 
-![](./image/image_55ySiGeCkU.png)
+![](./assets/image/image_55ySiGeCkU.png)
 
-![](./image/image_IkAxiwNBXA.png)
+![](./assets/image/image_IkAxiwNBXA.png)
 
-![](./image/image_nsLziWoJKT.png)
+![](./assets/image/image_nsLziWoJKT.png)
 
 [Ioc 案例](<./Ioc 案例/index.md> "Ioc 案例")
 

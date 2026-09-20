@@ -10,4 +10,4 @@
 
 就可以随心所欲的复制网页上的文本内容了，甚至什么`button`、`tag`上的文本内容也随便选：
 
-![](./image/image_2Zgn9pd1ET.png)
+![](./assets/image/image_2Zgn9pd1ET.png)

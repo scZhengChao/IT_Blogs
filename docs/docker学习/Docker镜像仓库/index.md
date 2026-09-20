@@ -4,7 +4,7 @@
 
 官网地址：[<https://hub.docker.com/> \_/registry](https://hub.docker.com/_/registry "https://hub.docker.com/_/registry")
 
-[Centos7安装Docker.md](./file/Centos7安装Docker_-HnQ45W727.md "Centos7安装Docker.md")
+[Centos7安装Docker.md](./assets/file/Centos7安装Docker_-HnQ45W727.md "Centos7安装Docker.md")
 
 [简化版镜像仓库](./简化版镜像仓库/index.md "简化版镜像仓库")
 

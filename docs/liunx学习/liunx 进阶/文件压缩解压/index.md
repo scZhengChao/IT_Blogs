@@ -17,7 +17,7 @@
 
 *我们常常使用 **`tar`** 将多个文件归档为一个总的文件，称为 **`archive`** 。然后用 **`gzip`** 或 **`bzip2`** 命令将 **`archive`** 压缩为更小的文件。*
 
-![](./image/image_kTkJSoLuT7.png)
+![](./assets/image/image_kTkJSoLuT7.png)
 
 ### tar
 

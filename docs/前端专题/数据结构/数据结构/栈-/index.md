@@ -16,9 +16,9 @@
 
 栈的特点是：\*\*先进后出，**或者说是**后进先出（\*\*LIFO, Last In First Out），从栈顶放入元素的操作叫入栈，取出元素叫出栈；&#x20;
 
-![  ](./image/4ef1dea5d36cc286ce82a08ab31c359d_GjhlAh4gBg.png "  ")
+![  ](./assets/image/4ef1dea5d36cc286ce82a08ab31c359d_GjhlAh4gBg.png "  ")
 
-![  ](./image/623728eea1bcd2a647f550bbdf3b32cf_xfBHqYuIYn.webp "  ")
+![  ](./assets/image/623728eea1bcd2a647f550bbdf3b32cf_xfBHqYuIYn.webp "  ")
 
 **适用场景**栈的结构就像一个集装箱，**越先放进去的东西越晚才能拿出来**，所以，栈常应用于实现**递归功能方面的场景**，例如斐波那契数列、**反转列表顺序**、**撤销一个或一系列**操作
 

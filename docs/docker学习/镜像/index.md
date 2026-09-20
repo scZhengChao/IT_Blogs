@@ -8,7 +8,7 @@
 
 常见的镜像操作命令如图：
 
-![](./image/image_YLk8G753Qm.png)
+![](./assets/image/image_YLk8G753Qm.png)
 
 [构建镜像](./构建镜像/index.md "构建镜像")
 

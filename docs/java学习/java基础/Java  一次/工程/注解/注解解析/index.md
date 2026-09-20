@@ -11,7 +11,7 @@
 
 `AnnotatedElement`:该接口定义了与注解解析相关的解析方法
 
-![](./image/image_BpY6rWnB3u.png)
+![](./assets/image/image_BpY6rWnB3u.png)
 
 - 所有的类成分**Class, Method , Field , Constructor，**都实现了`AnnotatedElement`接口**他们都拥有解析注解的能力：**
 

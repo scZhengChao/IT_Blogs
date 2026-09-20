@@ -8,7 +8,7 @@
 
 # position: fixed
 
-![](./image/image_kjBuE8Nd4N.png)
+![](./assets/image/image_kjBuE8Nd4N.png)
 
 ```html 
 <!doctype html>

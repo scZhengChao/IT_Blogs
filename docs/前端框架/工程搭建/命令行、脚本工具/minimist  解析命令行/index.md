@@ -21,7 +21,7 @@ const argv = minimist<{
 ```
 
 
-![](./image/image__3uRsm6IDC.png)
+![](./assets/image/image__3uRsm6IDC.png)
 
 `process.argv`可以获取运行脚本时的命令行参数 \*\*，而之所以常用`process.argv.slice(2)`\*\*，是因为一般第二个参数后才是我们需要的。再来看`minimist`的用法及例子：
 

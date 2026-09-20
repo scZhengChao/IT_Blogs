@@ -4,7 +4,7 @@
 
 我们可以利用这种堆叠**上下文技术来创建悬停效果，该效果可以交换按钮的背景**。例如：
 
-![](./image/image_1OZ4h3dhgJ.png)
+![](./assets/image/image_1OZ4h3dhgJ.png)
 
 ```html 
 <!doctype html>

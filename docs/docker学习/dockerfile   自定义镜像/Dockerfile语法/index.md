@@ -8,6 +8,6 @@
 
 **Dockerfile**就是**一个文本文件**，其中包含一个个的**指令(Instruction)**，用指令来说明要执行什么操作来构建镜像。**每一个指令都会形成一层Layer。**
 
-![](./image/image_M5LSEXDtBb.png)
+![](./assets/image/image_M5LSEXDtBb.png)
 
 更新详细语法说明，请参考官网文档：[https://docs.docker.com/engine/reference/builder](https://docs.docker.com/engine/reference/builder "https://docs.docker.com/engine/reference/builder")

@@ -23,7 +23,7 @@
 
 `Linux` 是一个多用户的操作系统。在 `Linux` 中，理论上来说，我们可以创建无数个用户，但是这些用户是被划分到不同的群组里面的，有一个用户，名叫 `root` ，是一个很特殊的用户，它是超级用户，拥有最高权限。
 
-![](./image/image_m8UeWOsdu-.png)
+![](./assets/image/image_m8UeWOsdu-.png)
 
 自己创建的用户是有限权限的用户，这样大大提高了 `Linux` 系统的安全性，有效防止误操作或是病毒攻击，但是我们执**行的某些命令需要更高权限时可以使用 ****`sudo`**** 命令。**
 
@@ -181,7 +181,7 @@ lrwxrwxrwx 1 root root    7 Jan 14 06:41 hello2.c -> hello.c
 
 权限的整体是按用户来划分的，如下图所示：
 
-![](./image/image_ZPBc8UbpER.png)
+![](./assets/image/image_ZPBc8UbpER.png)
 
 现在再来理解这句权限 `drwxr-xr-x` 的意思：
 

@@ -1,3 +1,3 @@
 # 跳转控制
 
-![](./image/image_mspb-TmgS7.png)
+![](./assets/image/image_mspb-TmgS7.png)

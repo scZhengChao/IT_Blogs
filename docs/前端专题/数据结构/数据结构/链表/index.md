@@ -31,19 +31,19 @@
 
 ### 单向链表
 
-![  ](./image/ea04f74110337f70536a7b29900227a0_ctnNIsz-it.webp "  ")
+![  ](./assets/image/ea04f74110337f70536a7b29900227a0_ctnNIsz-it.webp "  ")
 
 ### 双向链表
 
-![  ](./image/3ed40b38c77353c8bcbaa5b02637be05_HRDOKHR0Bz.webp "  ")
+![  ](./assets/image/3ed40b38c77353c8bcbaa5b02637be05_HRDOKHR0Bz.webp "  ")
 
 ### 单向循环链表
 
-![  ](./image/8be6a60daafe370fb34c356a154be96d_KQ-mD44qVP.webp "  ")
+![  ](./assets/image/8be6a60daafe370fb34c356a154be96d_KQ-mD44qVP.webp "  ")
 
 ### 双向循环链表
 
-![  ](./image/285b185f016d3c44a8be5bf1492f35f3_otJzqJcHLa.webp "  ")
+![  ](./assets/image/285b185f016d3c44a8be5bf1492f35f3_otJzqJcHLa.webp "  ")
 
 # 实现
 

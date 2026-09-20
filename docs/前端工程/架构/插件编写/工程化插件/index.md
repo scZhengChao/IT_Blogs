@@ -99,7 +99,7 @@ npm install --save-dev @babel/core @babel/preset-env rollup-plugin-babel@latest 
 
 运行 `npm run dev` 看看效果吧
 
-![](./image/image_DCOCglX3yS.png)
+![](./assets/image/image_DCOCglX3yS.png)
 
 ### 打包文件格式说明
 

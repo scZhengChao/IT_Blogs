@@ -66,4 +66,4 @@ a.forEach((s) => {
 
 Set()使用的foreach是它本身原型中定义的，专门用来遍历自身的对象;而我们用的foreach是用来遍历数组的方法
 
-![](./image/image_T2KCpmT876.png)
+![](./assets/image/image_T2KCpmT876.png)

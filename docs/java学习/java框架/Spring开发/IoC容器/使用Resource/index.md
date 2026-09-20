@@ -43,7 +43,7 @@ private Resource resource;
 
 但使用classpath是最简单的方式。上述工程结构如下：
 
-![](./image/image_p4VxW0Zli0.png)
+![](./assets/image/image_p4VxW0Zli0.png)
 
 使用Maven的标准目录结构，所有资源文件放入`src/main/resources`即可。
 

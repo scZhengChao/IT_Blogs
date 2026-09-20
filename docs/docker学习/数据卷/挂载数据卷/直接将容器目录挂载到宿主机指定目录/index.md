@@ -7,7 +7,7 @@
 
 如图：
 
-![](./image/image_dzQxBQ9bXk.png)
+![](./assets/image/image_dzQxBQ9bXk.png)
 
 **语法**：
 
@@ -22,15 +22,15 @@
 
 1）在将课前资料中的mysql.tar文件上传到虚拟机，通过load命令加载为镜像
 
-![](./image/image_ZBlCA_1AH6.png)
+![](./assets/image/image_ZBlCA_1AH6.png)
 
 > docker load -i mysql.tar
 
-![](./image/image_oOToym3Bth.png)
+![](./assets/image/image_oOToym3Bth.png)
 
 > 查看镜像： docker images
 
-![](./image/image_fMfJ5LipTk.png)
+![](./assets/image/image_fMfJ5LipTk.png)
 
 2）创建目录/tmp/mysql/data
 
@@ -38,7 +38,7 @@
 >
 > **说明：-p表示创建多级目录**
 
-![](./image/image_uS3YXJonjk.png)
+![](./assets/image/image_uS3YXJonjk.png)
 
 3）去查阅资料，创建并运行MySQL容器，要求：
 
@@ -62,7 +62,7 @@ docker run --restart=always -p 3306:3306 --name mysql -v /tmp/mysql/data:/var/li
 ```
 
 
-![](./image/image_9_aBziNxRP.png)
+![](./assets/image/image_9_aBziNxRP.png)
 
 ```markdown 
     5.-e：表示environment环境变量的意思
@@ -71,7 +71,7 @@ docker run --restart=always -p 3306:3306 --name mysql -v /tmp/mysql/data:/var/li
 ```
 
 
-![](./image/image_th-441y21a.png)
+![](./assets/image/image_th-441y21a.png)
 
 > 注意：
 >
@@ -81,15 +81,15 @@ docker run --restart=always -p 3306:3306 --name mysql -v /tmp/mysql/data:/var/li
 
 查看mysql容器是否启动：
 
-![](./image/image_IfivH6vodd.png)
+![](./assets/image/image_IfivH6vodd.png)
 
 使用mysql客户端datagrip访问下：
 
-![](./image/image_6-jtEWojbE.png)
+![](./assets/image/image_6-jtEWojbE.png)
 
-![](./image/image_iBpYh75Pc3.png)
+![](./assets/image/image_iBpYh75Pc3.png)
 
-![](./image/image_fHCrM73teJ.png)
+![](./assets/image/image_fHCrM73teJ.png)
 
 补充：
 

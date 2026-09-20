@@ -48,7 +48,7 @@ nodeC.right = nodeG;
 
 ## 遍历&#x20;
 
-![  ](./image/8e39277e9d519fcb14e13b6db94f9531_ET1zB8TAN9.webp "  ")
+![  ](./assets/image/8e39277e9d519fcb14e13b6db94f9531_ET1zB8TAN9.webp "  ")
 
 - **深度优先遍历**&#x20;
   - 先序遍历      先序遍历（又称先根遍历）为 ABDECFG（根-左-右）。&#x20;

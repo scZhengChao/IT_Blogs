@@ -37,7 +37,7 @@
 
 ## 模块初览
 
-![  ](./image/dccd50aba4d951417080124e79d6a2be_XLs-F8Uami.png "  ")
+![  ](./assets/image/dccd50aba4d951417080124e79d6a2be_XLs-F8Uami.png "  ")
 
  在concent里，提供一个全局唯一的store，而store是由多个模块一起组成的，模块是一个非常重要的概念，每个模块又分别由state、reducer、computed、watch、init组成。&#x20;
 
@@ -478,7 +478,7 @@ export function willUnmount(dispatch, moduleState){
 
 属于和连接是两个不同的概念，组件dispatch行为在没有指定目标模块时，都自动的修改的是自己模块数据，同时数据是诸如到this.state里的，**而且一个组件只能属于一个模块，但是可以连接多个其他模块**，连接的模块其数据是注入到**this.ctx.connectedState.{moduleName}下**的
 
-![](./image/image_gxSnih22v-.png)
+![](./assets/image/image_gxSnih22v-.png)
 
 如下我们将定义一个`BarComp`，指定其属于`bar`模块，同时连接`foo`和`baz`模块
 

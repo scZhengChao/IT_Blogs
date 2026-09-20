@@ -11,10 +11,30 @@ export default defineConfig({
   description: 'Engineering knowledge base',
 
   route: {
-    // Historical attachment files live beside articles and must not become pages.
-    extensions: ['.md', '.mdx'],
+    // Local assets may include Markdown downloads and must never become pages.
+    exclude: ['**/assets/**'],
     // Large sidebars otherwise prefetch many page chunks while the pointer moves.
     prefetchLink: false,
+  },
+
+  builderConfig: {
+    output: {
+      /*
+       * Keep nearby assets available at the same relative URL in doc_build,
+       * including files that are stored as downloads but not linked by a page.
+       */
+      copy: [
+        {
+          from: '**/assets/**/*',
+          context: path.resolve(process.cwd(), 'docs'),
+          noErrorOnMissing: true,
+          // Attachments are opaque downloads and must not be parsed or minified.
+          info: {
+            minimized: true,
+          },
+        },
+      ],
+    },
   },
 
   search: {

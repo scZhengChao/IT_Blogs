@@ -87,7 +87,7 @@ Web 页面性能优化，解决了图片相关，问题就解决了大半。本�
 
 HTTP/2 所有性能增强的核心在于新的二进制分帧层，它定义了如何封装 HTTP 消息并在客户端与服务器之间传输。&#x20;
 
-![  ](./image/ae09920e853bee0b21be83f8e770ba01_ZS9wDXsqGi.svg "  ")
+![  ](./assets/image/ae09920e853bee0b21be83f8e770ba01_ZS9wDXsqGi.svg "  ")
 
 从这张图比较清晰地看出 HTTP/1.x 和 HTTP/2的区别。HTTP/1.x 协议以换行符作为纯文本的分隔符，而 HTTP/2 将所有传输的信息分割为更小的消息和帧，并采用二进制格式对它们编码。&#x20;
 
@@ -104,7 +104,7 @@ HTTP/2 所有性能增强的核心在于新的二进制分帧层，它定义了�
 
 在 HTTP/2 中，请求和响应标头字段的定义保持不变，仅有一些微小的差异：所有标头字段名称均为小写，请求行现在拆分成各个 :method、:scheme、:authority 和 :path 伪标头字段。&#x20;
 
-![  ](./image/feb142f82737d148ed5bcefd91915276_d-rzmz2JUh.svg "  ")
+![  ](./assets/image/feb142f82737d148ed5bcefd91915276_d-rzmz2JUh.svg "  ")
 
 ### ◎ 多路复用&#x20;
 
@@ -116,7 +116,7 @@ HTTP/2 所有性能增强的核心在于新的二进制分帧层，它定义了�
 - 雪碧图&#x20;
 - Iconfont&#x20;
 
-![  ](./image/905fad46ec25c54a2df19c57b868d390_e_5PWpQDNi.webp "  ")
+![  ](./assets/image/905fad46ec25c54a2df19c57b868d390_e_5PWpQDNi.webp "  ")
 
 HTTP/2 的出现又可以让我们省掉不少麻烦。多路复用允许同时通过单一的 HTTP 请求多个响应。&#x20;
 
@@ -220,7 +220,7 @@ const App = () => {
 
 缓存是一种保存资源副本并在下次请求时直接使用该副本的技术，因此使用 HTTP 缓存是 WEB 性能优化中必不可少的，也是每位前端开发工程师的必修课。&#x20;
 
-![  ](./image/645d6bef307387f0001da17e9e0f1866_SxqcdWP5Nw.webp "  ")
+![  ](./assets/image/645d6bef307387f0001da17e9e0f1866_SxqcdWP5Nw.webp "  ")
 
 浏览器和服务器之间使用的缓存策略可以分为
 
@@ -237,7 +237,7 @@ const App = () => {
 
 Etag 的出现很好地解决了这个问题，其为一个哈希值，浏览器甚至不用去关系这个值是怎么来的，在第一次请求时，浏览器生成 Etag 并发送到服务端。浏览器下一次请求时发现这个值未变，就跳过请求。&#x20;
 
-![  ](./image/1d93ef58ad3934f8f4188862182daa16_CVjjrSL1yV.webp "  ")
+![  ](./assets/image/1d93ef58ad3934f8f4188862182daa16_CVjjrSL1yV.webp "  ")
 
 浏览器自动在 If-None-Match  HTTP 请求头内提供 ETag。服务器根据当前资源核对令牌，如果它未发生变化，服务器将返回 304 Not Modified 响应。这样一个来回避免了浏览器再次去请求资源，即省钱又省时间。&#x20;
 
@@ -249,7 +249,7 @@ Cache-Control 是强缓存的一种，每个资源都可通过 Cache-Control 定
 
 Cache-Control 是在 HTTP/1.1 规范中定义的，取代了之前用来定义响应缓存策略的头部（例如 Expires）。所有现代浏览器都支持 Cache-Control，因此，用他就足够了。&#x20;
 
-![  ](./image/595f28be34c9d874693222197229a1e4_LlN-xFYWwh.webp "  ")
+![  ](./assets/image/595f28be34c9d874693222197229a1e4_LlN-xFYWwh.webp "  ")
 
 | 指令       | 说明                                 |
 | -------- | ---------------------------------- |
@@ -284,7 +284,7 @@ Cache-Control 是在 HTTP/1.1 规范中定义的，取代了之前用来定义�
 
 将小图标合并成一张图片，利用 backround-position 属性值来确定图片呈现的位置即可。如下图所示不同尺寸、位置：
 
-![  ](./image/33822581ba11b9c447d236c0a333278e_Q6vdX6CxBB.webp "  ")
+![  ](./assets/image/33822581ba11b9c447d236c0a333278e_Q6vdX6CxBB.webp "  ")
 
 通过 CSS 定位，可以展现对应的图标。&#x20;
 
@@ -447,7 +447,7 @@ Web 开发中常见的图片包括 JPG，PNG，GIF，webP，选择合适的格�
 
 回忆本文开头介绍的不同图片格式的特点，大家可以参考下图选择合适的使用场景：&#x20;
 
-![  ](./image/bc378f94887986b1b425b4caa040ffb4_43EX3EeN9x.webp "  ")
+![  ](./assets/image/bc378f94887986b1b425b4caa040ffb4_43EX3EeN9x.webp "  ")
 
 ### ◎ 多倍图&#x20;
 
@@ -467,7 +467,7 @@ Web 开发中常见的图片包括 JPG，PNG，GIF，webP，选择合适的格�
 - 在 DPR 为 2 的设备（二倍屏）上，使用 2 \* 2 个物理像素展示一个 CSS 像素。&#x20;
 - 在 DPR 为 3 的设备（三倍屏）上，使用 3 \* 3 个物理像素展示一个 CSS 像素。&#x20;
 
-![  ](./image/57a64b155da9c5be1b6c88efabc52fbc_zKMSOvKGgv.png "  ")
+![  ](./assets/image/57a64b155da9c5be1b6c88efabc52fbc_zKMSOvKGgv.png "  ")
 
 针对一张 30px \* 30px 的图片，在 1 倍屏上，按照 1 : 1 平铺，图片质量并不损失。但是在 2 倍屏、3 倍屏上，分别通过 60 \* 60 与 90 \* 90 个物理像素渲染这张图片就会出现模糊、失真的现象，从而影响用户体验。所以，我们需要根据不同 DPR 去加载不同倍数的图片：&#x20;
 

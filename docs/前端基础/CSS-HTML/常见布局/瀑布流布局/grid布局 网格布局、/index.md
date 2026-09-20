@@ -1,6 +1,6 @@
 # grid布局 网格布局、
 
-![](./image/image_7q3DinwJxl.png)
+![](./assets/image/image_7q3DinwJxl.png)
 
 ```javascript 
 import {memo, useRef, useState} from 'react';

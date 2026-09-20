@@ -10,13 +10,13 @@
     - [传入被观察者](#传入被观察者)
   - [三、案例分析](#三案例分析)
 
-![  ](./image/9ff4eeccfa67b8c8201f4cc880789266_U2s0dAE4Yl.webp "  ")
+![  ](./assets/image/9ff4eeccfa67b8c8201f4cc880789266_U2s0dAE4Yl.webp "  ")
 
 ## 一、用途
 
 可视区域即我们浏览网页的设备肉眼可见的区域，如下图&#x20;
 
-![  ](./image/dd9f78d8e315767304a4fe4b2dab8305_o53J5n8eNq.webp "  ")
+![  ](./assets/image/dd9f78d8e315767304a4fe4b2dab8305_o53J5n8eNq.webp "  ")
 
 在日常开发中，我们经常需要**判断目标元素是否在视窗之内或者和视窗的距离小于一个值（例如 100 px）**，从而实现一些常用的功能，例如：&#x20;
 
@@ -37,7 +37,7 @@
 
 offsetTop，**元素的上外边框**至**包含元素的上内边框**之间的像素距离，其他offset属性如下图所示：&#x20;
 
-![  ](./image/225926923b3d38ff084a27e4fde2073d_O9MsQNc6u2.webp "  ")
+![  ](./assets/image/225926923b3d38ff084a27e4fde2073d_O9MsQNc6u2.webp "  ")
 
 下面再来了解下`clientWidth`、`clientHeight`：&#x20;
 
@@ -93,7 +93,7 @@ console.log(clientRect);
 
 属性对应的关系图如下所示：&#x20;
 
-![  ](./image/05cbc2f90ba619c443b7cad9aff0c4b3_jCBle2P93U.webp "  ")
+![  ](./assets/image/05cbc2f90ba619c443b7cad9aff0c4b3_jCBle2P93U.webp "  ")
 
 当页面发生滚动的时候，`top`与`left`属性值都会随之改变&#x20;
 

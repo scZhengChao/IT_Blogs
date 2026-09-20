@@ -8,11 +8,11 @@
 简介 - Java教程 - 廖雪峰的官方网站
 &#x20;廖雪峰的官方网站 (liaoxuefeng.com) 研究互联网产品和技术，提供原创中文精品教程 https://liaoxuefeng.com/books/java/introduction/index.html")
 
-![](./image/image_RtzNT5uJkg.png)
+![](./assets/image/image_RtzNT5uJkg.png)
 
-![](./image/image_xgdATr7Hzo.png)
+![](./assets/image/image_xgdATr7Hzo.png)
 
-![](./image/image_2c9Otp8FmH.png)
+![](./assets/image/image_2c9Otp8FmH.png)
 
 [重点知识快速入口](./重点知识快速入口/index.md "重点知识快速入口")
 

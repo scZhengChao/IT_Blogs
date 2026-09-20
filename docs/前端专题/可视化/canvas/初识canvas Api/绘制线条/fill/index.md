@@ -53,7 +53,7 @@ ctx.fill("evenodd");
 
 ### 填充复杂形状（带孔）
 
-![](./image/image_nZUqcF14uc.png)
+![](./assets/image/image_nZUqcF14uc.png)
 
 ```html 
 <canvas id="complexCanvas" width="300" height="300"></canvas>
@@ -82,7 +82,7 @@ ctx.fill("evenodd");
 
 ### 渐变填充
 
-![](./image/image_4EtHUSGVW1.png)
+![](./assets/image/image_4EtHUSGVW1.png)
 
 ```html 
 <canvas id="gradientCanvas" width="300" height="100"></canvas>

@@ -41,25 +41,25 @@
 
 在 `React` 中当组件的状态发生变化，就会重复渲染，这是 `React` 中组件更新的的内部机制，也是引起组件重复渲染的根本原因。
 
-![](./image/image_FkUXIo7tN7.png)
+![](./assets/image/image_FkUXIo7tN7.png)
 
 ### 🧐 父组件导致重复渲染
 
 当父组件重复渲染时，它的子组件都会跟着重新渲染。
 
-![](./image/image_c9l-Tl3S26.png)
+![](./assets/image/image_c9l-Tl3S26.png)
 
 ### 🧐 Context变化导致重复渲染
 
 当在使用 `Context` 时，如果 `Context Provider` 提供的 `value` 发生变化时，在所有使用 `Context` 数据的组件就会导致重复渲染，即使组件中只使用了 `Context` 中的**部分数据也会导致重复渲染**。
 
-![](./image/image_NySSoUvqWv.png)
+![](./assets/image/image_NySSoUvqWv.png)
 
 ### 🧐 hook变化导致重复渲染
 
 在组件中使用 `hook` 时，当 `hook` 中**状态发生变化，会导致组件的重复渲染**，如果在 `hook` 中使用了 `Context` 和 `Context value` 时，也会导致组件的重复渲染。
 
-![](./image/image__qZDCuhuhX.png)
+![](./assets/image/image__qZDCuhuhX.png)
 
 ## 通过组合阻止重复渲染
 
@@ -67,7 +67,7 @@
 
 &#x20;        在一个组件中的**渲染函数中创建组件是最大的性能杀手**，组件每一次重复渲染都会**导致创建的组件销毁并重新创建**，这就会**比通常创建组件的性能差。**
 
-![](./image/image_dcfist7f0u.png)
+![](./assets/image/image_dcfist7f0u.png)
 
 ### ✅ 防止重复渲染 `move state down`
 
@@ -379,25 +379,25 @@ const App = () => {
 
 如果子组件使用了 `React.memo` 封装，那么子组件的所有的 非原始值的 `props` 必须缓存
 
-![](./image/image_H-Zl-OBk-c.png)
+![](./assets/image/image_H-Zl-OBk-c.png)
 
 如果组件在 `useEffect` `useMemo` `useCallback` 中使用非原始值作为依赖项 `dependency` ，那也应该使用缓存
 
-![](./image/image_vmoCIiAIzE.png)
+![](./assets/image/image_vmoCIiAIzE.png)
 
 ## 避免 `Context` 提供的数据引起重复渲染
 
 ### ✅ 缓存 `Provider` 提供的数据
 
-![](./image/image_g1kLy9FgCX.png)
+![](./assets/image/image_g1kLy9FgCX.png)
 
 ### ✅ 将读取，写入数据分割成不同的 `Provider`
 
-![](./image/image__NmepE4QPY.png)
+![](./assets/image/image__NmepE4QPY.png)
 
 ### ✅ 将数据分割成小的 `Provider`
 
-![](./image/image_TOjZ0Ib6vP.png)
+![](./assets/image/image_TOjZ0Ib6vP.png)
 
 [通过 Children 或 Props 传递元素](<./通过 Children 或 Props 传递元素/index.md> "通过 Children 或 Props 传递元素")
 

@@ -23,11 +23,11 @@
 
 1. backdrop-filter：
 
-![](./image/image_hsTeCS5Fcu.png)
+![](./assets/image/image_hsTeCS5Fcu.png)
 
 1. filter ：
 
-![](./image/image_yMmxjmHTlw.png)
+![](./assets/image/image_yMmxjmHTlw.png)
 
 # 代码
 

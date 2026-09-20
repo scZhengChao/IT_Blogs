@@ -1,6 +1,6 @@
 # 反射
 
-![](./image/image_6GMIJlUCUo.png)
+![](./assets/image/image_6GMIJlUCUo.png)
 
 [](./反射获取类对象--/index.md)
 

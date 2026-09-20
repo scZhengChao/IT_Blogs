@@ -125,7 +125,7 @@ clip-path: unset;
 ```
 
 
-![](./image/image_0qu0qCk1U1.png)
+![](./assets/image/image_0qu0qCk1U1.png)
 
 ### 五边形
 
@@ -141,7 +141,7 @@ clip-path: unset;
 ```
 
 
-![](./image/image_wbdTjtzPhH.png)
+![](./assets/image/image_wbdTjtzPhH.png)
 
 ### border-radius
 

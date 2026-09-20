@@ -181,9 +181,9 @@ console.log('script start')
 
 > 加深理解
 
-[补充材料【瑞客论坛 www.ruike1.com】.pdf](<./file/补充材料【瑞客论坛 www.ruike1.com】_8gOEyx3RKD.pdf> "补充材料【瑞客论坛 www.ruike1.com】.pdf")
+[补充材料【瑞客论坛 www.ruike1.com】.pdf](<./assets/file/补充材料【瑞客论坛 www.ruike1.com】_8gOEyx3RKD.pdf> "补充材料【瑞客论坛 www.ruike1.com】.pdf")
 
-![  ](./image/4c085d1590eda022f08197e03331b075_D5VhqSwCwH.png "  ")
+![  ](./assets/image/4c085d1590eda022f08197e03331b075_D5VhqSwCwH.png "  ")
 
 **宏观任务**
 
@@ -415,7 +415,7 @@ timeout
 
 你猜对了吗。你可能猜对了，但是许多浏览器却不这样觉得。
 
-![  ](./image/broswer_zMA3Nadqsz.png "  ")
+![  ](./assets/image/broswer_zMA3Nadqsz.png "  ")
 
 *译者注：译者本机测试*
 
@@ -500,7 +500,7 @@ timeout
 
 timeout
 
-![  ](./image/broswer1_MLmIxQqh-q.png "  ")
+![  ](./assets/image/broswer1_MLmIxQqh-q.png "  ")
 
 **我发誓我从chrome得到的答案一直不一样- -。**
 

@@ -36,7 +36,7 @@ background:bg-color bg-image position/bg-size bg-repeat bg-origin bg-clip bg-att
 
 \*\*多url的渲染原理是盒模型的背景叠层渲染，**按照rul的引入**顺序从上至下叠层。\*\*url的位置要错开
 
-![](./image/image_VcA7mg3VEN.png)
+![](./assets/image/image_VcA7mg3VEN.png)
 
 ```typescript 
 .new{
@@ -113,11 +113,11 @@ background-repeat: round space;/*  表示不能整数次平铺时横向适度缩
 
 round
 
-![](./image/image_IQqh_bRysB.png)
+![](./assets/image/image_IQqh_bRysB.png)
 
 space
 
-![](./image/image_GCNK6FInmh.png)
+![](./assets/image/image_GCNK6FInmh.png)
 
 ## attachment
 
@@ -129,15 +129,15 @@ space
 
 先来看background-attachment的默认值scroll的效果图：
 
-![  ](./image/1309608-20190429172135700-399885903_AdRV-rXj3X.gif "  ")
+![  ](./assets/image/1309608-20190429172135700-399885903_AdRV-rXj3X.gif "  ")
 
 local的效果
 
-![  ](./image/1309608-20190429173158920-1762449904_ZujPtNgSnm.gif "  ")
+![  ](./assets/image/1309608-20190429173158920-1762449904_ZujPtNgSnm.gif "  ")
 
 fixed的效果图
 
-![  ](./image/1309608-20190429173221634-1840744992_-pR4581HeA.gif "  ")
+![  ](./assets/image/1309608-20190429173221634-1840744992_-pR4581HeA.gif "  ")
 
 [background-origin/clip](./background-origin-clip/index.md "background-origin/clip")
 

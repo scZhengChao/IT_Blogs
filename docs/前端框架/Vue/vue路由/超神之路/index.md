@@ -62,7 +62,7 @@ HTML5提供了对history栈中内容的操作。通过history.pushState/replaceS
 ```
 
 
-![  ](./image/640_tOf-X2dlh1.gif "  ")
+![  ](./assets/image/640_tOf-X2dlh1.gif "  ")
 
 &#x20;        当历史记录条目更改时，将触发popstate事件。如果被激活的历史记录条目是通过对history.pushState（）的调用创建的，或者受到对history.replaceState（）的调用的影响，popstate事件的state属性包含历史条目的状态对象的副本。\*\*需要注意的是调用****history.pushState()****或****history.replaceState()****不会触发****popstate****事件。只有在做出****浏览器动作****时，才会触发该事件，\*\*如用户点击浏览器的回退按钮（或者在Javascript代码中调用history.back()）触发浏览器回退按钮
 
@@ -73,7 +73,7 @@ HTML5提供了对history栈中内容的操作。通过history.pushState/replaceS
 ```
 
 
-![  ](./image/640_RvgZ6ntJZT.gif "  ")
+![  ](./assets/image/640_RvgZ6ntJZT.gif "  ")
 
 ## **vue-router 实现原理**
 
@@ -197,7 +197,7 @@ data.registerRouteInstance = (vm, val) => {
 
 > 这里主要讲了，vue-router 的 install，router-view 实现视图渲染，create-route 创建路由实例，还有如何实现与vue的结合，实现数据绑定等。由于篇幅的问题，再多细节的东西就没有讲了，有兴趣大家可以翻翻源码。
 
-![  ](./image/640_U4dvpQ9N1y.jpg "  ")
+![  ](./assets/image/640_U4dvpQ9N1y.jpg "  ")
 
 流程图
 
@@ -375,13 +375,13 @@ data.registerRouteInstance = (vm, val) => {
 
 我们看一下例子。
 
-![  ](./image/640_APXJ62IkmE.gif "  ")
+![  ](./assets/image/640_APXJ62IkmE.gif "  ")
 
 那么我们如何去优化它？
 
 思路就是在用户返回到列表页的时候不刷新数据，只有在用户主动进入列表的时候才会刷新数据，我们看一下效果
 
-![  ](./image/640_yWSVOzd7rM.gif "  ")
+![  ](./assets/image/640_yWSVOzd7rM.gif "  ")
 
 下面是实现的代码，原理就是监听 `popstate`，当浏览器返回的时候会触发 `popstate`，这时我们标记 `isBack` 为 `ture`。在 `setTimeout 0` 之后判断 `isBack`（是否为浏览器返回），如果不是浏览器返回的再刷新数据。
 
@@ -442,7 +442,7 @@ export default {
 
 利用的是 `vue` 的 `transition` 组件，结合 `vue-router`，在路由上做一些过渡效果。先看图说话
 
-![  ](./image/640_sWoZj-qNk6.gif "  ")
+![  ](./assets/image/640_sWoZj-qNk6.gif "  ")
 
 翻书效果
 

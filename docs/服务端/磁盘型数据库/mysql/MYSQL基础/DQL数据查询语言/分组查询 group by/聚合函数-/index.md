@@ -20,9 +20,9 @@
 
 # 聚合函数分类：
 
-![](./image/image_8pjC8HjNo0.png)
+![](./assets/image/image_8pjC8HjNo0.png)
 
-![](./image/image_p2-Ay63wug.png)
+![](./assets/image/image_p2-Ay63wug.png)
 
 # 聚合函数语法：
 
@@ -110,4 +110,4 @@ ifnull(english,2) ====english列的值是null，返回值是 2
 ```
 
 
-![](./image/image_-T6Fr8zVEQ.png)
+![](./assets/image/image_-T6Fr8zVEQ.png)

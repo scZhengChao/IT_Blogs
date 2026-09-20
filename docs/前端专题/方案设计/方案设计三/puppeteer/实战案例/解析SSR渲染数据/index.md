@@ -2,7 +2,7 @@
 
 以[jollymax](https://link.juejin.cn/?target=https://www.jollymax.com/ru/PUBG "jollymax")为例，通过查看当前的源码可以得到两个信息：使用的框架和是否为SSR渲染从而定位到数据的位置，下面是使用nuxtjs的SSR渲染，如图所示：
 
-![](./image/image_sXEm-_3KTz.png)
+![](./assets/image/image_sXEm-_3KTz.png)
 
 **实例代码如下：**
 

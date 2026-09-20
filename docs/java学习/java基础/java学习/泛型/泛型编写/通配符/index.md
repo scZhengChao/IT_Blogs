@@ -14,7 +14,7 @@ ArrayList<?> arr = new ArrayList<Student>()
 ```
 
 
-![](./image/image_7ZmjhDmPBx.png)
+![](./assets/image/image_7ZmjhDmPBx.png)
 
 # 使用
 
@@ -45,4 +45,4 @@ public static void main(String[] args) {
 
 在通配符的**使用过程中；对泛型做了约束，给泛型指定类型**时；只能是某个父类型或者子类型&#x20;
 
-![](./image/image_Q5eIsDVpNv.png)
+![](./assets/image/image_Q5eIsDVpNv.png)

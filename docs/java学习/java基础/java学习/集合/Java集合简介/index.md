@@ -7,7 +7,7 @@
 
 什么是集合（Collection）？集合就是“**由若干个确定的元素所构成的整体**”。例如，5只小兔构成的集合：
 
-![](./image/image_8PKYPDWqpG.png)
+![](./assets/image/image_8PKYPDWqpG.png)
 
 在数学中，我们经常遇到集合的概念。例如：
 

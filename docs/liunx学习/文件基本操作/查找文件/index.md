@@ -137,11 +137,11 @@ grep是一种强大的文本搜索工具，它能**使用字符串搜索文本�
 
 `grep` 命令用于**查找文件里符合条件的字符串**。如果发现某文件的内容符合所指定的范本样式，预设 `grep` 指令会把含有范本样式的**那一列显示**出来。若不指定任何文件名称，或是所给予的文件名为 -，则 grep 指令会从标准输入设备读取数据。
 
-![](./image/image_BNViGBo68n.png)
+![](./assets/image/image_BNViGBo68n.png)
 
 &#x20;
 
-![](./image/image_ooE4fZVBXj.png)
+![](./assets/image/image_ooE4fZVBXj.png)
 
 ```bash 
 cat /var/log/mysqld.log | grep password

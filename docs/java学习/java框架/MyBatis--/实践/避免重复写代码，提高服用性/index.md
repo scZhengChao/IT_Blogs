@@ -6,4 +6,4 @@
 
 # sql
 
-![](./image/image_JCIgH__09o.png)
+![](./assets/image/image_JCIgH__09o.png)

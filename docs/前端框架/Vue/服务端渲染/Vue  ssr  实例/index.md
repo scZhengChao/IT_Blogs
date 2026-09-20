@@ -53,7 +53,7 @@ install vue-server-renderer express
 
 webpack根据执行环境生成server bundle和client bundle
 
-![  ](./image/85392b44fca699b795226a9f47914bdb_iYFTjPKN_Y.png "  ")
+![  ](./assets/image/85392b44fca699b795226a9f47914bdb_iYFTjPKN_Y.png "  ")
 
 **路由 Vue-router**
 

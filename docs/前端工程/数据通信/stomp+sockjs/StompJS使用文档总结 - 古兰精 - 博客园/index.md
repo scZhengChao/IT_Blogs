@@ -270,7 +270,7 @@ host
 
 ）：
 
-![  ](./image/copycode_AZqxRFBej7.gif "  ")
+![  ](./assets/image/copycode_AZqxRFBej7.gif "  ")
 
 ```纯文本 
  var  headers =  {
@@ -283,7 +283,7 @@ client.connect(headers, connectCallback);
 ```
 
 
-![  ](./image/copycode_AZqxRFBej7.gif "  ")
+![  ](./assets/image/copycode_AZqxRFBej7.gif "  ")
 
 　　断开连接时，调用
 
@@ -607,7 +607,7 @@ message.ack()
 
 来通知服务端它已经接收了消息。
 
-![  ](./image/copycode_AZqxRFBej7.gif "  ")
+![  ](./assets/image/copycode_AZqxRFBej7.gif "  ")
 
 ```纯文本 
  var  subscription = client.subscribe( " /queue/test " ,
@@ -620,7 +620,7 @@ message.ack()
 ```
 
 
-![  ](./image/copycode_AZqxRFBej7.gif "  ")
+![  ](./assets/image/copycode_AZqxRFBej7.gif "  ")
 
 　　ack()
 
@@ -747,11 +747,11 @@ client.debug = null
 
 [**收藏该文**](# "收藏该文")
 
-![  ](./image/icon_weibo_24_RMtr5mylzR.png "  ")
+![  ](./assets/image/icon_weibo_24_RMtr5mylzR.png "  ")
 
-![  ](./image/wechat_g9FxNJZyFS.png "  ")
+![  ](./assets/image/wechat_g9FxNJZyFS.png "  ")
 
-![  ](./image/20190614200300_J19Qw7z4xV.png "  ")
+![  ](./assets/image/20190614200300_J19Qw7z4xV.png "  ")
 
 [古兰精](https://home.cnblogs.com/u/goloving/ "古兰精")
 

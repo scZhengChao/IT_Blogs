@@ -59,7 +59,7 @@ npm init -y
 ```
 
 
-![](./image/image_9ghYd8ewvd.png)
+![](./assets/image/image_9ghYd8ewvd.png)
 
 index.ejs 文件,模拟一个html模板出来
 
@@ -189,7 +189,7 @@ npx babel script.js --out-dir lib
 ```
 
 
-![](./image/image_mdgL2y4QXZ.png)
+![](./assets/image/image_mdgL2y4QXZ.png)
 
 启动该文件
 
@@ -213,7 +213,7 @@ npm i react react-dom -S
 
 有没有很有成就感？咱们启动了一个项目把数据填充到了jsx里面去了
 
-![](./image/image_IHuHAw96WB.png)
+![](./assets/image/image_IHuHAw96WB.png)
 
 这段代码就是SSR的核心所在，但是它暴露了一个问题：
 
@@ -609,7 +609,7 @@ app.listen(PORT, () => {
 
 因为咱们项目里面使用了App组件，他是react的，还涉及了ts，**所以需要用babel编译以后才能使用，所以我需要打包下，然后才能用node访问它。** 创建一个webpack.server.js文件，然后配置如下：
 
-![](./image/image_4gTw5VrjlG.png)
+![](./assets/image/image_4gTw5VrjlG.png)
 
 ```javascript 
 import path from 'path';

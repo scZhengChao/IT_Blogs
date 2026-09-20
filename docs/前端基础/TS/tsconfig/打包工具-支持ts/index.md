@@ -30,7 +30,7 @@ export default {
 
 结合其源码：
 
-![](./image/image_XLo0WbI8f5.png)
+![](./assets/image/image_XLo0WbI8f5.png)
 
 因为 typescript 声明了是 peerDependencies，因此会采用项目中安装的 typescript 版本，即是使用我们项目中的 TS 编译器。
 
@@ -38,11 +38,11 @@ export default {
 
 会调用 ts.parseJsonConfigFileContent() 方法，将 FORCED\_COMPILER\_OPTIONS 值 merge 到用户的自定义配置中。
 
-![](./image/image_hyVGhtBK5l.png)
+![](./assets/image/image_hyVGhtBK5l.png)
 
 通过英文解释看到，因为需要 TSC 编译获得 JS 产物，所以会将 noEmit 设置为 false，也就是 TSC 编译会输出文件，但为什么我们在输出目录却没有看到对应的 TSC 产物呐？
 
-![](./image/image_3mKuMUNhDU.png)
+![](./assets/image/image_3mKuMUNhDU.png)
 
 但是如果开启了 declaration，则会将 TSC 解析得到的 \*.d.ts 文件输出到指定目录。
 
@@ -81,7 +81,7 @@ module.exports = {
 
 可以看出 Webpack 主要是依赖 `ts-loader` 实现对 TypeScript 语法的编译支持，再看看对 `ts-loader` 的介绍：
 
-![](./image/image_hkeQZPlMbQ.png)
+![](./assets/image/image_hkeQZPlMbQ.png)
 
 换句话说，ts-loader 实际调用了 TSC 来编译 TS 文件，TSC 的配置依赖于你项目中的 tsconfig.json 文件。
 
@@ -146,6 +146,6 @@ import type { UserType } from './types';
 
 此外，关注到兼容性处理这方面，Bable 和 ESbuild 是类似的，因此会存在兼容性问题：
 
-![](./image/image_arVvWsIhxe.png)
+![](./assets/image/image_arVvWsIhxe.png)
 
 对于装饰器处理不支持，因为 TS 是 JS 的超集，ESnext 的规范提案某些还不是稳定的，因此如果有这方面诉求的项目，可以借助 TSC 做预编译，例如使用 Rollup 的 typescript 插件 或 Webpack 的 ts-loader 方式。

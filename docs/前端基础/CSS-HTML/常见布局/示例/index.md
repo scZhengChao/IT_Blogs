@@ -41,11 +41,11 @@
 ```
 
 
-![](./image/640_NM54zeCBs_.gif)
+![](./assets/image/640_NM54zeCBs_.gif)
 
 当我们设置`flex: 1 1 150px;`时候：
 
-![](<./image/640 (1)_-VGTAIGd-5.gif>)
+![](<./assets/image/640 (1)_-VGTAIGd-5.gif>)
 
 ### **经典的侧边栏**
 
@@ -79,7 +79,7 @@ grid-template-columns: minmax(<min>, <max>) ...
 ```
 
 
-![](<./image/640 (3)_d6QhGJrxdK.gif>)
+![](<./assets/image/640 (3)_d6QhGJrxdK.gif>)
 
 ### **固定的页眉和页脚**
 
@@ -103,7 +103,7 @@ grid-template-rows: auto 1fr auto
 ```
 
 
-![](<./image/640 (4)_FQekol5j18.gif>)
+![](<./assets/image/640 (4)_FQekol5j18.gif>)
 
 ### **经典的圣杯布局（古典圣杯布局）**
 
@@ -150,13 +150,13 @@ ex5 .parent {
 ```
 
 
-![](<./image/640 (5)_8Psgj85e2n.gif>)
+![](<./assets/image/640 (5)_8Psgj85e2n.gif>)
 
 ### **有意思的的叠块**
 
 使用`grid-template-columns`状语从句：`grid-column`可以实现如下图产品所示的布局。说明进一步了`repeat`状语从句：`fr`的便捷性。
 
-![](./image/image_IGnOhKGH41.png)
+![](./assets/image/image_IGnOhKGH41.png)
 
 ### **RAM技巧**
 
@@ -190,11 +190,11 @@ grid-template-columns: repeat(auto-fit, minmax(<base>, 1fr))
 3. 当满足满足一行放下3个box时，第三个box自动到第一行
 4. 当满足满足一行放下4个box时，第四个box自动到第一行
 
-![](<./image/640 (6)_MErZCMHGDR.gif>)
+![](<./assets/image/640 (6)_MErZCMHGDR.gif>)
 
 我们如果将`auto-fit`对划线`auto-fill`：
 
-![](./image/image_16cPOLdhVD.png)
+![](./assets/image/image_16cPOLdhVD.png)
 
 ### **卡片弹性适应性**
 
@@ -244,7 +244,7 @@ grid-template-columns: repeat(auto-fit, minmax(<base>, 1fr))
 ```
 
 
-![](<./image/640 (7)_qS_dmfVz8X.gif>)
+![](<./assets/image/640 (7)_qS_dmfVz8X.gif>)
 
 无论是宽度或高度的收缩还是延展，，都可以完子的展现卡的布局。
 
@@ -287,7 +287,7 @@ clamp(<min>, <actual>, <max>)
 ```
 
 
-![](<./image/640 (8)_OXw5z7AHkm.gif>)
+![](<./assets/image/640 (8)_OXw5z7AHkm.gif>)
 
 ## 固定的比例
 
@@ -327,4 +327,4 @@ aspect-ratio: <width> / <height>
 ```
 
 
-![](<./image/640 (9)_BrswSSguYE.gif>)
+![](<./assets/image/640 (9)_BrswSSguYE.gif>)

@@ -34,7 +34,7 @@ public interface Runnable {
 ```
 
 
-![](./image/image_FgEZQsjyw3.png)
+![](./assets/image/image_FgEZQsjyw3.png)
 
 # 例子
 

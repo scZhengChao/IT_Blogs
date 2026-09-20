@@ -39,9 +39,9 @@ react 本身有他的错误边界处理，详细见react 文档
 
 但是问题由来了，好像他只是捕获了console.error的错误，Promise的reject错误；并没有捕获&#x20;
 
-![  ](./image/e1b1a9d7f16a62fd2963b0607735ddec_8E-avfHFNJ.png "  ")
+![  ](./assets/image/e1b1a9d7f16a62fd2963b0607735ddec_8E-avfHFNJ.png "  ")
 
-![  ](./image/fba79a4363daa3d349551dbfe1345cd3_wP4tEGxzNz.png "  ")
+![  ](./assets/image/fba79a4363daa3d349551dbfe1345cd3_wP4tEGxzNz.png "  ")
 
 # 3.Promise 错误
 

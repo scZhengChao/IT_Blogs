@@ -36,7 +36,7 @@ ctx.stroke();
 
 ### 线条样式设置
 
-![](./image/image_yPYZfaNqGb.png)
+![](./assets/image/image_yPYZfaNqGb.png)
 
 ```html 
 <canvas id="canvas2" width="300" height="200"></canvas>
@@ -72,7 +72,7 @@ ctx.stroke();
 
 ### 路径动画示例
 
-![](./image/image_DBsDksetiF.png)
+![](./assets/image/image_DBsDksetiF.png)
 
 ```javascript 
 <canvas id="canvas4" width="300" height="200"></canvas>

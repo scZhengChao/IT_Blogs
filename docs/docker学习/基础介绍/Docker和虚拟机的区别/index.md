@@ -16,15 +16,15 @@ Docker可以让一个应用在任何操作系统中非常方便的运行。而�
 >
 > 所有主流的Linux发行版都可以运行Docker
 
-![](./image/image_4IE7xRJooR.png)
+![](./assets/image/image_4IE7xRJooR.png)
 
 ps:
 
-![](./image/image_D3qlisDUtu.png)
+![](./assets/image/image_D3qlisDUtu.png)
 
 对比来看：
 
-![](./image/image_T30-ayE3Qw.png)
+![](./assets/image/image_T30-ayE3Qw.png)
 
 小结：
 

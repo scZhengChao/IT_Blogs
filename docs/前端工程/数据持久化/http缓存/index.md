@@ -49,7 +49,7 @@ http缓存
 
 举个例子↓
 
-![](./image/image_BKQnUeBbWt.png)
+![](./assets/image/image_BKQnUeBbWt.png)
 
 看图，问题就是出在，**服务器需要处理http的请求，并且http去传输数据，需要带宽，带宽是要钱买的啊。而我们缓存，就是为了让服务器不去处理这个请求，客户端也可以拿到数据。**
 
@@ -73,7 +73,7 @@ http缓存又分为两种两种缓存，**强制缓存**和**协商缓存**,我�
 
 http缓存流程图↓ **一图胜千言**
 
-![](./image/image_FiXIf2Jxaq.png)
+![](./assets/image/image_FiXIf2Jxaq.png)
 
 ## 强制缓存
 
@@ -85,7 +85,7 @@ http缓存流程图↓ **一图胜千言**
 
 在以前，我们通常会使用响应头的`Expires`字段去实现强缓存。如下图↓
 
-![  ](./image/640_pS0qCI2ZJu.jpeg "  ")
+![  ](./assets/image/640_pS0qCI2ZJu.jpeg "  ")
 
 `Expires`字段的作用是，设定一个强缓存时间。在此时间范围内，则从内存（或磁盘）中读取缓存返回。
 
@@ -101,7 +101,7 @@ http缓存流程图↓ **一图胜千言**
 
 没想到吧，整半天，这个属性是废的。
 
-![](./image/image_at9tbi-kWV.png)
+![](./assets/image/image_at9tbi-kWV.png)
 
 ### 基于Cache-control实现的强缓存（代替Expires的强缓存实现方法）
 
@@ -120,7 +120,7 @@ res.writeHead(200,{
 
 下图的意思就是，从该资源第一次返回的时候开始，往后的10秒钟内如果该资源被再次请求，则从缓存中读取。
 
-![](./image/image_NlzREwUCPO.png)
+![](./assets/image/image_NlzREwUCPO.png)
 
 **Cache-Control:max-age=N，N就是需要缓存的秒数。从第一次请求资源的时候开始，往后N秒内，资源若再次请求，则直接从磁盘（或内存中读取），不与服务器做任何交互。**
 
@@ -143,11 +143,11 @@ res.writeHead(200,{
 
 一般请求是从客户端直接发送到服务端，如下↓
 
-![](./image/image_vmEV9fO8sy.png)
+![](./assets/image/image_vmEV9fO8sy.png)
 
 但有些情况下是例外的：比如，出现代理服务器，如下↓
 
-![](./image/image_7Ue3LIKL9s.png)
+![](./assets/image/image_7Ue3LIKL9s.png)
 
 **而public和private就是决定资源是否可以在代理服务器进行缓存的属性。**
 
@@ -191,7 +191,7 @@ res.writeHead(200,{
 
 如下图↓
 
-![](./image/image_O1ovUmEt4h.png)
+![](./assets/image/image_O1ovUmEt4h.png)
 
 注意圈出来的三行。
 
@@ -205,7 +205,7 @@ res.writeHead(200,{
 
 当客户端读取到`last-modified`的时候，会在下次的请求标头中携带一个字段:`If-Modified-Since`。
 
-![](./image/image_6_FmMx55GX.png)
+![](./assets/image/image_6_FmMx55GX.png)
 
 而这个请求头中的`If-Modified-Since`就是服务器第一次修改时候给他的时间，也就是上图中的
 
@@ -217,17 +217,17 @@ res.writeHead(200,{
 
 如图↓
 
-![](./image/image_5AD2DZC9rB.png)
+![](./assets/image/image_5AD2DZC9rB.png)
 
 这样，就是协商缓存的所有操作了。
 
 看到这里，有些小伙伴可能有些迷糊了。
 
-![](./image/image_VmB8NKD6qH.png)
+![](./assets/image/image_VmB8NKD6qH.png)
 
 没关系，我们用一张图来解释下协商缓存。
 
-![](./image/image_5GNP5T8Fbh.png)
+![](./assets/image/image_5GNP5T8Fbh.png)
 
 **使用以上方式的协商缓存已经存在两个非常明显的漏洞。这两个漏洞都是基于文件是****通过比较修改时间****来判断是否更改而产生的。**
 
@@ -239,7 +239,7 @@ res.writeHead(200,{
 
 又来新东西了，兄弟们顶住
 
-![](./image/image_gM3kb-GY1J.png)
+![](./assets/image/image_gM3kb-GY1J.png)
 
 ### 基础ETag的协商缓存
 
@@ -259,11 +259,11 @@ res.writeHead(200,{
 
 代码图例↓
 
-![](./image/image_iHRwAU1of3.png)
+![](./assets/image/image_iHRwAU1of3.png)
 
 流程示例图↓
 
-![](./image/image_5GDTjwGwdV.png)
+![](./assets/image/image_5GDTjwGwdV.png)
 
 > 从校验流程上来说，协商缓存的修改时间比对和文件指纹比对，几乎是一样的。
 
@@ -292,9 +292,9 @@ res.writeHead(200,{
 
 **为什么有哈希值的文件设置强缓存**
 
-![](./image/image_TCHSSuKsER.png)
+![](./assets/image/image_TCHSSuKsER.png)
 
-![](./image/image_62Ha2HJu0_.png)
+![](./assets/image/image_62Ha2HJu0_.png)
 
 这是我打完包之后的css文件。大家是否注意到。我划了红线的部分。明显，这绝不是我的文件名。这串和乱码一样的字符串叫哈希值。每次打包之后都会生产一串新的哈希值并追加到我们的文件名中。哈希值是打包后的文件名的一部分。
 
@@ -316,7 +316,7 @@ res.writeHead(200,{
 
 我给大家看个图
 
-![](./image/image_ztlpOR0CFn.png)
+![](./assets/image/image_ztlpOR0CFn.png)
 
 因为一般情况下，index.html是不会设置哈希值的。（具体得看自己项目下的dist文件夹）
 

@@ -70,6 +70,6 @@ console.log(Array.from(Array(10), () => Array(10)))
 ```
 
 
-![](./image/image_nzneQY7mqY.png)
+![](./assets/image/image_nzneQY7mqY.png)
 
-![](./image/image_RLCuFCvR9w.png)
+![](./assets/image/image_RLCuFCvR9w.png)

@@ -40,7 +40,7 @@
 
 ，作者阿宝哥
 
-![  ](./image/0_vyL-CXnrwF.jpeg "  ")
+![  ](./assets/image/0_vyL-CXnrwF.jpeg "  ")
 
 [**全栈修仙之路**](https://mp.weixin.qq.com/s/2KpMQxfv6WNoroqvu009rg# "全栈修仙之路")
 
@@ -76,7 +76,7 @@
 
 OvernightJS 是一个简单的库，用于为要调用 Express 路由的方法添加 TypeScript 装饰器。此外，该项目还包含了用于管理 json-web-token 和打印日志的包。
 
-![  ](./image/640_7cWrphVoSy.png "  ")
+![  ](./assets/image/640_7cWrphVoSy.png "  ")
 
 #### **1.1 OvernightJS 特性**
 
@@ -314,7 +314,7 @@ userRouter
 
  路由。下面我们用一张图来直观感受一下 OvernightJS 与 Express 在使用上的差异：
 
-![  ](./image/640_BMHxoB0Bx1.jpeg "  ")
+![  ](./assets/image/640_BMHxoB0Bx1.jpeg "  ")
 
 通过以上对比可知，利用 OvernightJS 提供的装饰器，可以让我们开发起来更加便捷。但大家要记住 OvernightJS 底层还是基于 Express，其内部最终还是通过 Express 提供的 API 来处理路由。
 
@@ -324,7 +324,7 @@ userRouter
 
 装饰器是一个表达式，该表达式执行后，会返回一个函数。在 TypeScript 中装饰器可以分为以下 4 类：
 
-![  ](./image/640__CHCJbxPof.jpeg "  ")
+![  ](./assets/image/640__CHCJbxPof.jpeg "  ")
 
 需要注意的是，若要启用实验性的装饰器特性，你必须在命令行或 
 
@@ -425,7 +425,7 @@ Reflect.defineMetadata
 
  装饰器的处理流程：
 
-![  ](./image/640_Siu4OzAS7g.jpeg "  ")
+![  ](./assets/image/640_Siu4OzAS7g.jpeg "  ")
 
 在 OvernightJS 项目中，所使用的 Reflect API 是来自 reflect-metadata 这个第三方库。该库提供了很多 API 用于操作元数据，这里我们只简单介绍几个常用的 API：
 
@@ -536,7 +536,7 @@ Reflect.defineMetadata
 
  装饰器的处理流程：
 
-![  ](./image/640_jDLylqhtip.jpeg "  ")
+![  ](./assets/image/640_jDLylqhtip.jpeg "  ")
 
 分析完 
 
@@ -571,7 +571,7 @@ Server
 
  类，对应的 UML 类图如下所示：
 
-![  ](./image/640_ArSjmbOdgV.jpeg "  ")
+![  ](./assets/image/640_ArSjmbOdgV.jpeg "  ")
 
 此外，在 
 
@@ -645,7 +645,7 @@ getRouter
 
 现在我们已经知道 OvernightJS 内部如何利用装饰器来为控制器类配置路由信息，这里阿宝哥用一张图来总结 OvernightJS 的工作流程：
 
-![  ](./image/640_9WTp9d1BXm.jpeg "  ")
+![  ](./assets/image/640_9WTp9d1BXm.jpeg "  ")
 
 在 OvernightJS 内部除了 
 
@@ -704,7 +704,7 @@ getRouter
 
 关注「前端大全」加星标，提升前端技能
 
-![  ](./image/640_rh03sqwqMh.jpeg "  ")
+![  ](./assets/image/640_rh03sqwqMh.jpeg "  ")
 
 好文章，我
 

@@ -27,11 +27,11 @@
 
 ##### 步骤一：到DockerHub搜索Redis镜像
 
-![](./image/image_9Y8PXYnPkh.png)
+![](./assets/image/image_9Y8PXYnPkh.png)
 
 ##### 步骤二：查看Redis镜像文档中的帮助信息
 
-![](./image/image_i_uualACXX.png)
+![](./assets/image/image_i_uualACXX.png)
 
 ##### 步骤三：利用docker run 命令运行一个Redis容器
 
@@ -55,7 +55,7 @@ docker exec -it redis bash
 ```
 
 
-![](./image/image_WhowiuAI4i.png)
+![](./assets/image/image_WhowiuAI4i.png)
 
 ##### 步骤五：执行redis-cli客户端命令
 
@@ -65,7 +65,7 @@ redis-cli
 ```
 
 
-![](./image/image_7lFfaZo88P.png)
+![](./assets/image/image_7lFfaZo88P.png)
 
 ##### 步骤六：设置数据num=666
 
@@ -75,8 +75,8 @@ set num 666
 ```
 
 
-![](./image/image_jL3iGlZIrr.png)
+![](./assets/image/image_jL3iGlZIrr.png)
 
 ##### 步骤七:在window系统中使用redis客户端连接
 
-![](./image/image_Nk0wlvmfVn.png)
+![](./assets/image/image_Nk0wlvmfVn.png)

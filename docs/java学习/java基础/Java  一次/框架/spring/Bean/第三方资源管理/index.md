@@ -11,32 +11,32 @@
   - [简单类型依赖注入    ](#简单类型依赖注入)
   - [引用类型依赖注入    ](#引用类型依赖注入)
 
-![](./image/image_NKH0p1Nf-U.png)
+![](./assets/image/image_NKH0p1Nf-U.png)
 
 # bean 管理
 
 使用@Bean配置第三方bean
 
-![](./image/image_QzHH8ZhYmt.png)
+![](./assets/image/image_QzHH8ZhYmt.png)
 
 使用独立的配置类管理第三方bean
 
-![](./image/image_iKG0EG6NMu.png)
+![](./assets/image/image_iKG0EG6NMu.png)
 
 ## 独立的配置类加入核心配置
 
 ### 方式一：导入式&#xD;
 
-![](./image/image_n-wAmNC-TR.png)
+![](./assets/image/image_n-wAmNC-TR.png)
 
 ### 方式二：扫描式&#xD;
 
-![](./image/image_C8OejuKAZi.png)
+![](./assets/image/image_C8OejuKAZi.png)
 
 简单类型依赖注入
 
-![](./image/image_NSLkeY5_1v.png)
+![](./assets/image/image_NSLkeY5_1v.png)
 
 引用类型依赖注入
 
-![](./image/image_cszABflOe3.png)
+![](./assets/image/image_cszABflOe3.png)

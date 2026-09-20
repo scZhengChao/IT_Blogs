@@ -9,15 +9,15 @@
 
 在软件开发中，**把一个大项目分拆为多个模块是降低软件复杂度的有效方法：**
 
-![](./image/image_sj9r1wpob1.png)
+![](./assets/image/image_sj9r1wpob1.png)
 
 对于Maven工程来说，原来是一个大项目：
 
-![](./image/image_w_Ym8KttvN.png)
+![](./assets/image/image_w_Ym8KttvN.png)
 
 现在可以分拆成3个模块：
 
-![](./image/image_5lk-UUcnxO.png)
+![](./assets/image/image_5lk-UUcnxO.png)
 
 Maven**可以有效地管理多个模块，我们只需要把每个模块当作一个独立的Maven项目**，它们有各自独立的`pom.xml`。例如，模块A的`pom.xml`：
 
@@ -159,7 +159,7 @@ Maven**可以有效地管理多个模块，我们只需要把每个模块当作�
 
 注意到parent的`<packaging>`是`pom`而不是`jar`，(**不写默认是jar**)，因为`parent`**本身不含任何Java代码**。编写`parent`的`pom.xml`**只是为了在各个模块中减少重复的配置**。现在我们的整个工程结构如下：
 
-![](./image/image_mxsX_eN98C.png)
+![](./assets/image/image_mxsX_eN98C.png)
 
 这样模块A就可以简化为：
 

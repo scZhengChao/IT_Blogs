@@ -167,9 +167,9 @@ export const KeepAliveComponent = memo(Component)
 
 ### 路由渲染
 
-![](./image/image_HMs2drB7vV.png)
+![](./assets/image/image_HMs2drB7vV.png)
 
-![](./image/image_E_tU5lVjrU.png)
+![](./assets/image/image_E_tU5lVjrU.png)
 
 /\* 渲染 `layout`组件 `layout`组件里面拿到他的子路由
 

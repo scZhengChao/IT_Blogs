@@ -5,7 +5,7 @@
 - [CSS Paint API](#CSS-Paint-API)
 - [磁吸 🧲 效果](#磁吸--效果)
 
-![  ](./image/c613c8caee89430c9d1945f0d69d51b6_tplv-k3u1fbpfcp-z.webp "  ")
+![  ](./assets/image/c613c8caee89430c9d1945f0d69d51b6_tplv-k3u1fbpfcp-z.webp "  ")
 
 鼠标在画布上移动的时候，吸铁石们会被吸引，旋转。使用 `Canvas` 实现这个效果并不难。恰好最近看了一点 `Houdini` 的文档。
 
@@ -169,7 +169,7 @@ background-image: paint(custom-background);
 
 如下图所示，**我们通过 Painter API 实现了一个支持 background margin 的效果。**
 
-![](./image/image_LO34cNV1-i.png)
+![](./assets/image/image_LO34cNV1-i.png)
 
 当前是写死了 `color` 和 `margin`，难以扩展，`PaintAPI` 可以支持 `CSS Variables`，我们可以将这两个元素出来。
 
@@ -207,7 +207,7 @@ class CustomBackgroundPainter {
 ```
 
 
-![](./image/image_JqdOUI5jwF.png)
+![](./assets/image/image_JqdOUI5jwF.png)
 
 ## 磁吸 🧲 效果
 

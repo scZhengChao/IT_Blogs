@@ -1,8 +1,8 @@
 # 高低梯形圆角
 
-![](./image/image_MlvEv2wiu4.png)
+![](./assets/image/image_MlvEv2wiu4.png)
 
-![](./image/image_4AtVsDS-as.png)
+![](./assets/image/image_4AtVsDS-as.png)
 
 ```javascript 
 <!doctype html>

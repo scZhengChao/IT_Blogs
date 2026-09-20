@@ -16,7 +16,7 @@
 - radial-gradient() ==》径向渐变: radial-gradient(circle圆/ellipse椭圆,red 5%,green 25%,yellow 70%)
 - repeating-linear/radial-gradient(red 0%,yellow 10%,blue 20%)  重复路径/径向渐变
 
-![](./image/image_v8ugwoktTN.png)
+![](./assets/image/image_v8ugwoktTN.png)
 
 &#x20;&#x20;
 
@@ -37,7 +37,7 @@
 
 ### radial-gradient
 
-![](./image/image_XM5VWiOSbn.png)
+![](./assets/image/image_XM5VWiOSbn.png)
 
 ```typescript 
 /* 起始渐变色,结束渐变色 -- 其他所有值默认*/

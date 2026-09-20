@@ -243,7 +243,7 @@ ps -aux| grep tomcat 
 - 启动的时候 如果存在xx文件夹，即便 xx.war更新了也不会触发解压
 - 所以更新war包，需要删除xx文件夹，重启才会更新最新代码
 
-![  ](./image/0a4db71cb14fd6808c6dc9e5f45110b4_J8SeptcqLp.png "  ")
+![  ](./assets/image/0a4db71cb14fd6808c6dc9e5f45110b4_J8SeptcqLp.png "  ")
 
 原来是tomcat/conf下server.xml里面的这行配置搞的鬼。  其中：
 

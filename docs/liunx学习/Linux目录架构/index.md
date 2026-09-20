@@ -2,7 +2,7 @@
 
 > Linux下的目录结构确实是比较复杂的，特别是对于初学者。如果登录桌面版（比如Ubuntu）会发现其实跟Windows还是很像的。
 
-![  ](./image/ddd21b85aec84b818260711719a0bad7_FdCS59EkTc.jpeg "  ")
+![  ](./assets/image/ddd21b85aec84b818260711719a0bad7_FdCS59EkTc.jpeg "  ")
 
 图2 图形界面目录结构
 
@@ -20,11 +20,11 @@
 
 **Linux 和 Windows的目录结构对比:**
 
-![](./image/image_SS8ASYiJSO.png)
+![](./assets/image/image_SS8ASYiJSO.png)
 
 Linux的目录结构，如下：
 
-![](./image/image_Yh5z00A_aC.png)
+![](./assets/image/image_Yh5z00A_aC.png)
 
 根目录/ 下各个目录的作用及含义说明:
 

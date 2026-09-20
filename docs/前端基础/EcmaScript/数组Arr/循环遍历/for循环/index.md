@@ -66,7 +66,7 @@ for(var i = 0; i <= 2; i++) {
 
 我们在浏览器的`sources`标签下打开运行的代码文件，在`22`行处打了个断点，运行后可以看到右边`Scope`的`Local`下可看到局部变量`j`始终是`3`，*由于没有形成*\*`Closure（闭包）`**，所以回调函数里给**`j`**赋值的**`i`**始终是引用回调函数执行时**`i`\*\*的具体值，\*也就是循环结束后`i`的值，所以并没有真正解决问题。
 
-![](./image/image_9T40Th2KAT.png)
+![](./assets/image/image_9T40Th2KAT.png)
 
 ## 每次循环重新var声明变量
 
@@ -107,7 +107,7 @@ for(var i = 0; i < 3; i++) {
 
 在`Scope`下可以看到形成**了一个块级作用域**，下面保存着`j`变量。每次执行会分别打印`0，1，2，`所以通过块级作用域可以解决`for`循环的缺陷。
 
-![](./image/image_QFKhSm6-Ic.png)
+![](./assets/image/image_QFKhSm6-Ic.png)
 
 ## 使用let创建块作用域（简写版）
 
@@ -139,7 +139,7 @@ for(var i = 0; i < 3; i++) {
 
 所以通过闭包也能解决问题。
 
-![](./image/image_7ArJNK3QZL.png)
+![](./assets/image/image_7ArJNK3QZL.png)
 
 [for of](<./for of/index.md> "for of")
 

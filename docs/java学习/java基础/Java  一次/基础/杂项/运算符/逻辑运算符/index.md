@@ -4,7 +4,7 @@
 
 - [非短路](#非短路)
 
-![](./image/image_HS2saCvtc1.png)
+![](./assets/image/image_HS2saCvtc1.png)
 
 # 非短路
 

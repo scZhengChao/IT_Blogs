@@ -210,7 +210,7 @@ btn1.addEventListener("click", () => {
 
 运行的结果，console输出顺序：... -> 页面更新3次 -> 空闲了, requestIdleCallback生效了-> ...
 
-![](./image/image_wQBm2369Yp.png)
+![](<../assets/熟悉requestidlecallback到了解react /image/image_wQBm2369Yp.png>)
 
 #### **demo3：用户行为**
 

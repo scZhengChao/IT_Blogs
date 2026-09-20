@@ -54,7 +54,7 @@
 
 **「预览效果如下：」**
 
-![](./image/image_EEkyrSDItq.png)
+![](../assets/img、docx、xlsx、ppt、pdf、md、txt、a/image/image_EEkyrSDItq.png)
 
 #### 音频：`audio`
 
@@ -100,7 +100,7 @@
 
 **「预览效果如下：」**
 
-![](./image/image__F08ycw6E4.png)
+![](../assets/img、docx、xlsx、ppt、pdf、md、txt、a/image/image__F08ycw6E4.png)
 
 **「关于音视频的定位的完整代码：」**
 
@@ -454,7 +454,7 @@ export default TextFileViewer;
 
 **「预览效果如下：」**
 
-![](./image/image_MJY-2HWzV4.png)
+![](../assets/img、docx、xlsx、ppt、pdf、md、txt、a/image/image_MJY-2HWzV4.png)
 
 ### `embed` 引入文件：`pdf`
 

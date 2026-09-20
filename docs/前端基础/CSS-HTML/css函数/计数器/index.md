@@ -59,7 +59,7 @@ counters(name, string,style); /* MDN上说，要想IE8兼容，这里逗号后�
 
 其中，`string`参数为字符串（需要引号包围的）（必须参数），表示子序号的连接字符串。例如`1.1`的`string`就是`'.'`, `1-1`就是`'-'`.
 
-![](./image/image_7iI0fu7UnU.png)
+![](./assets/image/image_7iI0fu7UnU.png)
 
 ```typescript 
 <!doctype html>

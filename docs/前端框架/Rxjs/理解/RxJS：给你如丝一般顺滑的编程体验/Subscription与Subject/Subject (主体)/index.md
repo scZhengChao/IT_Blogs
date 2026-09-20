@@ -16,7 +16,7 @@ Subject
 
 接下来就让笔者给大家好好分析这两个概念吧。
 
-![](./image/image_eADUevTfVz.png)
+![](./assets/image/image_eADUevTfVz.png)
 
 [单播](IT/前端框架/Rxjs/理解/RxJS：给你如丝一般顺滑的编程体验/Subscription与Subject/Subject%20(主体)/单播/单播.md "单播")
 

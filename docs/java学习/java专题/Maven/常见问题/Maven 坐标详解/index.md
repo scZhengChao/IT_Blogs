@@ -18,13 +18,13 @@
 - artifactId：定义当前Maven项目名称（通常是模块名称，例如 order-service、goods-service）
 - version：定义当前项目版本号
 
-![](./image/image_VOvxT65oq0.png)
+![](./assets/image/image_VOvxT65oq0.png)
 
 # IDEA 创建 Maven 项目
 
 [IDEA配置Maven（详细版）\_idea maven-CSDN博客 文章浏览阅读10w+次，点赞534次，收藏2.8k次。IDEA配置MavenIDEA创建Maven工程第一节 IDEA集成Maven插件第二节 使用骨架创建Maven的java工程第三节 不使用骨架创建Maven的java工程第四节 使用骨架创建Maven的java web工程第五节 不使用骨架创建Maven的java web工程第六节 IDEA使用Maven命令6.1 方式一6.2 方式二IDE https://blog.csdn.net/qq\_42057154/article/details/106114515](https://blog.csdn.net/qq_42057154/article/details/106114515 "IDEA配置Maven（详细版）_idea maven-CSDN博客 文章浏览阅读10w+次，点赞534次，收藏2.8k次。IDEA配置MavenIDEA创建Maven工程第一节 IDEA集成Maven插件第二节 使用骨架创建Maven的java工程第三节 不使用骨架创建Maven的java工程第四节 使用骨架创建Maven的java web工程第五节 不使用骨架创建Maven的java web工程第六节 IDEA使用Maven命令6.1 方式一6.2 方式二IDE https://blog.csdn.net/qq_42057154/article/details/106114515")
 
-![](./image/image_9GMexSrirl.png)
+![](./assets/image/image_9GMexSrirl.png)
 
 # 注意事项
 

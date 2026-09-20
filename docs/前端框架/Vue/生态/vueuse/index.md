@@ -38,7 +38,7 @@ star数：**6.3K**
 
 那位常年被调侃“懂个锤子Vue”的著名开源作者`Evan You`也是此库的金牌赞助商；
 
-![](./image/image_jNYxIBlwTB.png)
+![](./assets/image/image_jNYxIBlwTB.png)
 
 ## 安装 vueuse
 
@@ -81,7 +81,7 @@ Vue 2 Demo: Vue CLI
 
 那我就举几个有代表性的例子，带你快速理解这些方法大概是做什么的，有什么特点；
 
-![](./image/image_tAv-wpsAjg.png)
+![](./assets/image/image_tAv-wpsAjg.png)
 
 ### 例子1: useMouse
 
@@ -101,7 +101,7 @@ const { x, y } = useMouse()
 
 效果：
 
-![  ](./image/ff0e4a7c7db7486988a241650d888990_tplv-k3u1fbpfcp-z.gif "  ")
+![  ](./assets/image/ff0e4a7c7db7486988a241650d888990_tplv-k3u1fbpfcp-z.gif "  ")
 
 经过源码阅读，我们可以发现，这短短的一个方法，至少做了以下这些事：
 
@@ -144,7 +144,7 @@ const { counter, pause, resume } = useInterval(200, { controls: true })
 
 看看效果：
 
-![  ](./image/1c50a09986cf41b4ac33b2b094b1af97_tplv-k3u1fbpfcp-z.gif "  ")
+![  ](./assets/image/1c50a09986cf41b4ac33b2b094b1af97_tplv-k3u1fbpfcp-z.gif "  ")
 
 是不是很好用？相比手写`setInterval`更为便捷。如果徒手实现这样一个套方法，多少行暂且不说，我们需要在业务中写下大量的逻辑代码。而众所周知：**写的代码越多，出Bug的可能性越大，维护和理解的难度就越高**。 从这个角度看，这个库确实是一个合格的函数工具集；
 
@@ -205,7 +205,7 @@ const formData = reactive({
 ```
 
 
-![  ](./image/4ebc5c41541d40e8a9938f2d7fa5df8a_tplv-k3u1fbpfcp-z.gif "  ")
+![  ](./assets/image/4ebc5c41541d40e8a9938f2d7fa5df8a_tplv-k3u1fbpfcp-z.gif "  ")
 
 **对于有组件封装需求的朋友，这个方法墙裂推荐！**不用再为了`单项数据流`的组件封装，而写在组件内写冗余的代码了。直接将`useVModel`返回的数据作为**响应式对象**用即可。这可太得劲儿了\~\~今天我要**18:00准时下班**，谁都别拦我！
 
@@ -289,7 +289,7 @@ const { history, undo, redo } = useRefHistory(text)
 
 直接，跑起来，效果如下：
 
-![  ](./image/db78a13c8a107b2133810b6d82b85634_rNWv-ZnISU.gif "  ")
+![  ](./assets/image/db78a13c8a107b2133810b6d82b85634_rNWv-ZnISU.gif "  ")
 
 还有不同的选项，为这个功能增加更多的功能。例如，我们可以深入追踪 reactive 对象，并像这样限制 history 记录的数量。
 
@@ -369,7 +369,7 @@ onClickOutside(popup, () => {
 
 结果是这样的，我们可以用我们的按钮打开弹出窗口，然后在弹出内容窗口外单击关闭它。
 
-![  ](./image/aa32b88d68e5c002a79421a75ac8f44d_AUzBAaIXZm.gif "  ")
+![  ](./assets/image/aa32b88d68e5c002a79421a75ac8f44d_AUzBAaIXZm.gif "  ")
 
 ### 使用 intersectionobserver 跟踪元素的可见性
 
@@ -431,7 +431,7 @@ export default {
 ```
 
 
-![  ](./image/88c6c839c00770b7e6d0ef118cd0cc6e_-TVwaK4iTq.gif "  ")
+![  ](./assets/image/88c6c839c00770b7e6d0ef118cd0cc6e_-TVwaK4iTq.gif "  ")
 
 我们还可以为我们的 Intersection Observer 指定更多的选项，比如改变它的根元素、边距（计算交叉点时对根的边界框的偏移）和阈值水平。
 
@@ -475,7 +475,7 @@ const { stop } = useIntersectionObserver(
 
 如果使用 `useTransition` 做一个下面这样的效果，要怎么做呢?
 
-![  ](./image/b54b6d4c89e0d77b391108f816fa7dad_hQV27i_b5e.gif "  ")
+![  ](./assets/image/b54b6d4c89e0d77b391108f816fa7dad_hQV27i_b5e.gif "  ")
 
 我们可以通过三个步骤来做到这一点。
 

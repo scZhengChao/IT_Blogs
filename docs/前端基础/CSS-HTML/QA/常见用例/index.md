@@ -311,7 +311,7 @@ div {
 ```
 
 
-[test1.html](./file/test1_0janUkKLSW.html "test1.html")
+[test1.html](./assets/file/test1_0janUkKLSW.html "test1.html")
 
 # **a 标签全部设定为新页面打开**
 
@@ -513,7 +513,7 @@ display: -webkit-box; /*值必须为-webkit-box或者-webkit-inline-box*/
 3. IE浏览器如出现鼠标跳动现象可能是因为图标本身有问题，可以尝试网上下载一些标准的cur格式的图标来验证自定义的图标是否有问题。
 4. 改变图标的格式不要通过更改图片后缀名来欺骗浏览器,实际上无法显示。
 
-[index.html](./file/index_KfhsdZ9EEI.html "index.html")
+[index.html](./assets/file/index_KfhsdZ9EEI.html "index.html")
 
 # 伪元素扩大点击区域&#x20;
 
@@ -538,7 +538,7 @@ display: -webkit-box; /*值必须为-webkit-box或者-webkit-inline-box*/
 ```
 
 
-[index.html](./file/index_BdhoRzq6yI.html "index.html")
+[index.html](./assets/file/index_BdhoRzq6yI.html "index.html")
 
 # 禁止选择和优化选择文本
 
@@ -553,7 +553,7 @@ display: -webkit-box; /*值必须为-webkit-box或者-webkit-inline-box*/
 ```
 
 
-[index.html](./file/index_JJh0jHnD_S.html "index.html")
+[index.html](./assets/file/index_JJh0jHnD_S.html "index.html")
 
 ## 选中样式优化
 
@@ -566,7 +566,7 @@ display: -webkit-box; /*值必须为-webkit-box或者-webkit-inline-box*/
 ```
 
 
-[index.html](./file/index_uA8vJUKYJZ.html "index.html")
+[index.html](./assets/file/index_uA8vJUKYJZ.html "index.html")
 
 ## 添加禁止选择 &#x20;
 
@@ -641,7 +641,7 @@ Github：font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,
 ```
 
 
-[index.html](./file/index_Bis_VtIb_j.html "index.html")
+[index.html](./assets/file/index_Bis_VtIb_j.html "index.html")
 
 # 使用 WAI-ARIA 规范增强语义 &#x20;
 

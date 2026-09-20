@@ -69,7 +69,7 @@ body {
 
 ## 兼容性：
 
-![  ](./image/d0acd4a041dcfe70dafa1ab27ecfa153_qRQ5jJY6bg.png "  ")
+![  ](./assets/image/d0acd4a041dcfe70dafa1ab27ecfa153_qRQ5jJY6bg.png "  ")
 
 ## 变量的声明
 

@@ -71,7 +71,7 @@
 ```
 
 
-![](./image/image_acbyeoeYCp.png)
+![](./assets/image/image_acbyeoeYCp.png)
 
 # 一对多
 
@@ -121,4 +121,4 @@
 ```
 
 
-![](./image/image_ucYNzR2zfa.png)
+![](./assets/image/image_ucYNzR2zfa.png)

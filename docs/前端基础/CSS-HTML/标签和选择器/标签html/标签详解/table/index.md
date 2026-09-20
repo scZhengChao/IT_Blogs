@@ -246,4 +246,4 @@
 ```
 
 
-[table-vue.html](./file/table-vue_nRe6GA2vce.html "table-vue.html")
+[table-vue.html](./assets/file/table-vue_nRe6GA2vce.html "table-vue.html")

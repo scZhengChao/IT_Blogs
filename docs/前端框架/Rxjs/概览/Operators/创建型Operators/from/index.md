@@ -6,7 +6,7 @@
 
 从一个数组、类数组对象、`Promise`、迭代器对象或者类 `Observable` 对象创建一个 `Observable`
 
-![](./image/image_0ItBtMdpa7.png)
+![](./assets/image/image_0ItBtMdpa7.png)
 
 from
 

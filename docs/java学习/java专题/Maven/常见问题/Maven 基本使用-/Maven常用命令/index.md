@@ -6,4 +6,4 @@
 - package：打包
 - &#x20; install：安装
 
-![](./image/image_cFTijs6MLr.png)
+![](./assets/image/image_cFTijs6MLr.png)

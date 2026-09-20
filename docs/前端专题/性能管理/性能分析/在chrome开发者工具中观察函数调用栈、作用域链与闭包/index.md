@@ -58,7 +58,7 @@
 
 接下来，我们借助一些实例，来使用断点调试工具，看一看，我们的demo函数，在执行过程中的具体表现。
 
-![](./image/image_IydqAXZz67.png)
+![](./assets/image/image_IydqAXZz67.png)
 
 在向下阅读之前，我们可以停下来思考一下，这个例子中，谁是闭包？
 
@@ -66,33 +66,33 @@
 
 1、第一步：**设置断点，然后刷新页面。**
 
-![](./image/image_IBiDO_exbq.png)
+![](./assets/image/image_IBiDO_exbq.png)
 
 2、第二步：点击上图红色箭头指向的按钮 **（step into）**，该按钮的作用会根据代码执行顺序，一步一步向下执行。在点击的过程中，我们要注意观察下方`call stack` 与 `scope`的变化，以及函数执行位置的变化。
 
 一步一步执行，当函数执行到上例子中
 
-![](./image/image_1AviSTjuJE.png)
+![](./assets/image/image_1AviSTjuJE.png)
 
 我们可以看到，在`chrome`工具的理解中，由于在`foo`内部声明的`baz`函数在调用时访问了它的变量a，因此foo成为了闭包。这好像和我们学习到的知识不太一样。我们来看看在《你不知道的js》这本书中的例子中的理解。
 
-![](./image/image_hKLV5tBQ1M.png)
+![](./assets/image/image_hKLV5tBQ1M.png)
 
 书中的注释可以明显的看出，作者认为fn为闭包。即baz，这和chrome工具中明显是不一样的。
 
 而在备受大家推崇的《JavaScript高级编程》一书中，是这样定义闭包。
 
-![](./image/image_BFgblzCOTF.png)
+![](./assets/image/image_BFgblzCOTF.png)
 
 这里chrome中理解的闭包，与我所阅读的这几本书中的理解的闭包不一样。具体这里我先不下结论，但是我心中更加偏向于相信chrome浏览器。
 
 我们修改一下demo01中的例子，来看看一个非常有意思的变化。
 
-![](./image/image_ZkVv5X85Uc.png)
+![](./assets/image/image_ZkVv5X85Uc.png)
 
 这个例子在`demo01`的基础上，我在`baz`函数中传入一个参数，并打印出来。在调用时，我将全局的变量`m`传入。输出结果变为20。在使用断点调试看看作用域链。
 
-![](./image/image_cvRJQhoQJN.png)
+![](./assets/image/image_cvRJQhoQJN.png)
 
 是不是结果有点意外，闭包没了 **，作用域链中没有包含foo了。我靠，跟我们理解的好像又有点不一样。所以通过这个对比，我们可以确定闭包的形成需要两个条件。**
 
@@ -104,15 +104,15 @@
 
 我们继续来看看一个例子。
 
-![](./image/image_0veh6CvSht.png)
+![](./assets/image/image_0veh6CvSht.png)
 
 在这个例子中，fn只访问了foo中的a变量，因此它的闭包只有foo。
 
-![](./image/image_5BPUHOyBC7.png)
+![](./assets/image/image_5BPUHOyBC7.png)
 
 修改一下`demo03`，我们在`fn`中也访问`bar`中`b`变量试试看。
 
-![](./image/image_74UFxudUbj.png)
+![](./assets/image/image_74UFxudUbj.png)
 
 ![](https://ask.qcloudimg.com/http-save/yehe-1097444/21688db71b7f536b74a869d7b027f8ad.jpeg?imageView2/2/w/784)
 
@@ -122,11 +122,11 @@
 
 我们知道，闭包在模块中的应用非常重要。因此，我们来一个模块的例子，也用断点工具来观察一下。
 
-![](./image/image_l8zRASAT9Q.png)
+![](./assets/image/image_l8zRASAT9Q.png)
 
 `add`执行时，闭包为外层的自执行函数，`this`指向`test`
 
-![](./image/image_u14G1nQ-ie.png)
+![](./assets/image/image_u14G1nQ-ie.png)
 
 sum执行时，同上
 

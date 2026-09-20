@@ -74,7 +74,7 @@ export default function App() {
 ```
 
 
-![](./image/image_K7d3b6oCgH.png)
+![](./assets/image/image_K7d3b6oCgH.png)
 
 在 React 中，**每一次 render 所有的内容都会被创建，包括 objects 和 functions**，这会导致如果 objects 或 functions 作为 props，那么每一次父组件 re-render，子组件依旧会被 re-render，即使使用了 memo 函数将子组件记忆化，这是由于在 JS 中两个 objects 或 functions 看起来是一样，但实际是不等的，即{} !=={}，例如上面的例子，config 是一个 object，即使不会发生改变，已经会认为将其作为 props 传入是不一样的，导致 SlowComponent 在使用 memo 函数后依旧被 re-render 了。
 

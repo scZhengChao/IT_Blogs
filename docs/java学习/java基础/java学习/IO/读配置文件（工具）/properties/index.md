@@ -244,7 +244,7 @@ public class Demo2 {
 > {password=12124, name=asa, age=214}
 > Process finished with exit code 0
 
-![](./image/image_wBw5nEhLLQ.png)
+![](./assets/image/image_wBw5nEhLLQ.png)
 
 ## 存取配置文件
 

@@ -50,7 +50,7 @@ module.exports = override(
 
 - 修改package.json配置，重启项目`npm run serve`即可
 
-![](./image/image_iMKIm0lHgj.png)
+![](./assets/image/image_iMKIm0lHgj.png)
 
 - 页面组件引用方式由 …/方式可以改为@/方式
 

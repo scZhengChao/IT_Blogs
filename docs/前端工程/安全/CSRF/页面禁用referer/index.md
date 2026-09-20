@@ -32,7 +32,7 @@
 
 我分析了一下，发现重置密码这个页面，确实在加载第三方统计的时候，referer 头部会将整个 url 当做值带过去, 也就是这些第三方程序是可以在用户进入这个重置密码页面的时候，通过 referer 头部来得到这个重置密码的链接，比如下图：
 
-![](./image/image_rPT2qTFamZ.png)
+![](./assets/image/image_rPT2qTFamZ.png)
 
 ### 危害性
 
@@ -90,7 +90,7 @@ referer 的 metedata 参数可以设置为以下几种类型的值：
 
 那么加载的**第三方资源**将不会带上 `referer` 头部:
 
-![](./image/image_VSpIHJ10DV.png)
+![](./assets/image/image_VSpIHJ10DV.png)
 
 而且可以看到请求的 `Referrer Policy` 变成 `no-referrer`。
 
@@ -102,7 +102,7 @@ referer 的 metedata 参数可以设置为以下几种类型的值：
 
 就换变成只带 `host` 域名， 跟 `origin` 头部几乎一样 (多了最外面一个斜杠)
 
-![](./image/image_aQi_U-myKO.png)
+![](./assets/image/image_aQi_U-myKO.png)
 
 然后对应请求的 `Referrer Policy` 变成 `origin`:
 
@@ -112,7 +112,7 @@ referer 的 metedata 参数可以设置为以下几种类型的值：
 
 这个标准还是比较老的，不过通过 [can i use meta:referrer](<https://caniuse.com/#search=meta referrer> "can i use meta:referrer") 还是可以看到大部分的主流浏览器 (Edge, Firefox, Chrome) 都有支持 (我亲测过了)
 
-![](./image/image_Lr6yyDp599.png)
+![](./assets/image/image_Lr6yyDp599.png)
 
 ### 2. 添加ReferrerPolicy属性
 
@@ -132,7 +132,7 @@ A 标签也支持这个属性:
 
 通过 [can i use referrerPolicy](https://caniuse.com/#search=ReferrerPolicy "can i use referrerPolicy")， 可以看到除了 IE 和 少部分手机浏览器， 大部分的主流浏览器还是支持的:
 
-![](./image/image_aq5gZvX03R.png)
+![](./assets/image/image_aq5gZvX03R.png)
 
 ### 3. 通过 rel=’noreferrer‘
 
@@ -150,7 +150,7 @@ A 标签也支持这个属性:
 
 通过 [can i use noreferrer](https://caniuse.com/#search=noreferrer "can i use noreferrer") 可以看到支持的浏览器版本:
 
-![](./image/image_lnQWLF7yUO.png)
+![](./assets/image/image_lnQWLF7yUO.png)
 
 ### 4. 代理模式
 

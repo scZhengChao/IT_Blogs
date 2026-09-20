@@ -21,7 +21,7 @@ shell 单词的本意是“壳子”，在**计算机领域一样可以理解为
 
 需要说明的是，常见的概念包括shell脚本，其指的是采用shell语言编写的脚本，可以使用shell程序来进行执行，而本文所说的shell均指的是shell程序。二者之间的关系可见下图：
 
-![](./image/image_pdLQHngsvq.png)
+![](./assets/image/image_pdLQHngsvq.png)
 
 ## 2.有哪些shell？
 

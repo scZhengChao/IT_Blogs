@@ -9,7 +9,7 @@
 
 # 在 React 中使用 Immer 管理不可变状态
 
-![](./image/image_m-Rl01B5_2.png)
+![](./assets/image/image_m-Rl01B5_2.png)
 
 在 React 中，使用不可变状态可以快速且高效地比较更改前后的状态树。因此，每个组件可在执行任何成本很高的 DOM 操作之前，决定是否重新渲染。
 
@@ -35,7 +35,7 @@ Immer 是一个小型库，它基于写时拷贝（**copy-on-write** ）机制�
 
 从性能的角度来看，与使用 JavaScript 中的 **object.assign()** 或展开运算符的浅拷贝（Shallow Copy）相比，Immer 表现得可谓是相当的好。如果你有兴趣了解更多关于性能的比较方面的信息，请参考此文：[Immer vs 浅拷贝 vs 不可变性的测试](https://link.juejin.cn?target=https://www.measurethat.net/Benchmarks/Show/6108/0/immer-vs-shallow-copy-vs-immutable-perf-test "Immer vs 浅拷贝 vs 不可变性的测试")。
 
-![](./image/image_yXYWgT3G6W.png)
+![](./assets/image/image_yXYWgT3G6W.png)
 
 Immer 还减少了实现上述基准测试结果所需编写的代码量，这也是 Immer 脱颖而出的原因之一。
 

@@ -14,7 +14,7 @@
 
 # 是什么
 
-![](./image/image_iN48pV88Hb.png)
+![](./assets/image/image_iN48pV88Hb.png)
 
 # 特点
 

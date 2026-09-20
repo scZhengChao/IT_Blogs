@@ -42,7 +42,7 @@ console.log(s1, s2)
 
 **子类型的原型为父类型的一个实例对象。**
 
-![  ](./image/640_AUBSIWEzDF.jpg "  ")
+![  ](./assets/image/640_AUBSIWEzDF.jpg "  ")
 
 但这种方式实现的本质是通过将子类的原型指向了父类的实例，所以
 
@@ -60,7 +60,7 @@ console.log(s1.__proto__.__proto__ === s2.__proto__.__proto__) //true
 ```
 
 
-![  ](./image/640_VTEe1KmrUB.png "  ")
+![  ](./assets/image/640_VTEe1KmrUB.png "  ")
 
 s1中play属性发生变化，与此同时，s2中play属性也会跟着变化。
 
@@ -129,7 +129,7 @@ var s1 = new Student('Tom', 20, 15000)
 ```
 
 
-![  ](./image/640_tE3yODJyuf.png "  ")
+![  ](./assets/image/640_tE3yODJyuf.png "  ")
 
 **这种方式只是实现部分的继承，如果父类的原型还有方法和属性，子类是拿不到这些方法和属性的。**
 
@@ -186,7 +186,7 @@ console.log(p1.constructor) //Person
 ```
 
 
-![  ](./image/640_uGXZW-dha3.jpg "  ")
+![  ](./assets/image/640_uGXZW-dha3.jpg "  ")
 
 这种方式融合**原型链继承和构造函数的优点**，是 JavaScript 中最常用的继承模式。不过也存在缺点就是无论在什么情况下，都会调用两次构造函数：一次是在创建子类型原型的时候，另一次是在子类型构造函数的内部，子类型最终会包含父类型对象的全部实例属性，但我们不得不在调用子类构造函数时重写这些属性。
 
@@ -230,7 +230,7 @@ console.log(s1)
 ```
 
 
-![  ](./image/640_BsG112zU6g.png "  ")
+![  ](./assets/image/640_BsG112zU6g.png "  ")
 
 但这种方式没办法辨别是对象是子类还是父类实例化
 
@@ -283,7 +283,7 @@ console.log(s1)
 
 同样的，**Student继承了所有的Person原型对象的属性和方法。目前来说，最完美的继承方法！**
 
-![  ](./image/640_2V9cmWb5-r.png "  ")
+![  ](./assets/image/640_2V9cmWb5-r.png "  ")
 
 ## **方式六：ES6中class 的继承**
 
@@ -331,7 +331,7 @@ s1.showName()
 ```
 
 
-![  ](./image/640_AmcopOUiZ7.jpg "  ")
+![  ](./assets/image/640_AmcopOUiZ7.jpg "  ")
 
 **优点**：
 

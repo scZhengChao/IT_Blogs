@@ -13,7 +13,7 @@ FFmpeg 被广泛用于各种应用中，包括视频转换、视频编辑、视�
 
 所以很多视频网站都会通过视频切片的方式来优化用户观感，就是一部分一部分地去加载出来，这样有利于用户的体验
 
-![](./image/image_5SPwMkfAvD.png)
+![](./assets/image/image_5SPwMkfAvD.png)
 
 ## 安装 ffmpeg
 

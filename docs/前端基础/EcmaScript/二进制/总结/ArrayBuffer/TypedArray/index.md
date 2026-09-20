@@ -68,7 +68,7 @@ console.log(view);
 ```
 
 
-![](./image/image_xOEU5EI--4.png)
+![](./assets/image/image_xOEU5EI--4.png)
 
 这里就生成了一个 16个元素的 Int8Array 数组，除了手动赋值的元素，其他元素的初始值都是 0。
 
@@ -83,7 +83,7 @@ console.log(view);
 ```
 
 
-![](./image/image_3wcB-NZ2Cr.png)
+![](./assets/image/image_3wcB-NZ2Cr.png)
 
 - **TypedArray(object)**：参数可以是一个普通数组
 
@@ -119,7 +119,7 @@ console.log(view1, view2);
 ```
 
 
-![](./image/image_7Z0KIS4TMS.png)
+![](./assets/image/image_7Z0KIS4TMS.png)
 
 #### ② **BYTES\_PER\_ELEMENT**
 
@@ -160,7 +160,7 @@ console.log(a, b);
 ```
 
 
-![](./image/image_ukA7MMLQX5.png)
+![](./assets/image/image_ukA7MMLQX5.png)
 
 #### ④ **TypedArray.prototype.slice()**
 

@@ -12,7 +12,7 @@
 
 [ developer.chrome.com/site/zh/articles/multi-screen-window-placement/index.md at main · GoogleChrome/developer.chrome.com · GitHub The frontend, backend, and content source code for developer.chrome.com - developer.chrome.com/site/zh/articles/multi-screen-window-placement/index.md at main · GoogleChrome/developer.chrome.com https://github.com/GoogleChrome/developer.chrome.com/blob/main/site/zh/articles/multi-screen-window-placement/index.md](https://github.com/GoogleChrome/developer.chrome.com/blob/main/site/zh/articles/multi-screen-window-placement/index.md " developer.chrome.com/site/zh/articles/multi-screen-window-placement/index.md at main · GoogleChrome/developer.chrome.com · GitHub The frontend, backend, and content source code for developer.chrome.com - developer.chrome.com/site/zh/articles/multi-screen-window-placement/index.md at main · GoogleChrome/developer.chrome.com https://github.com/GoogleChrome/developer.chrome.com/blob/main/site/zh/articles/multi-screen-window-placement/index.md")
 
-[index.md](./file/index_OS3_fRmafx.md "index.md")
+[index.md](./assets/file/index_OS3_fRmafx.md "index.md")
 
 ### `window.screen.isExtended` 属性
 

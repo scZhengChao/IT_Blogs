@@ -140,7 +140,7 @@ SVG 文件推荐使用.svg（全部小写）作为此类文件的扩展名。
 
 预览效果：
 
-![](./image/image_t6F4hgulxh.png)
+![](./assets/image/image_t6F4hgulxh.png)
 
 2、另一个简单的 SVG 图形例子：
 
@@ -160,7 +160,7 @@ SVG 文件推荐使用.svg（全部小写）作为此类文件的扩展名。
 ```
 
 
-![](./image/image_b-_Iw-JAaA.png)
+![](./assets/image/image_b-_Iw-JAaA.png)
 
 **SVG 代码解析：**
 

@@ -136,4 +136,4 @@
 ```
 
 
-![](./image/image_k-widbFLES.png)
+![](./assets/image/image_k-widbFLES.png)

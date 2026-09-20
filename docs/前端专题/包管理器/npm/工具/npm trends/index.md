@@ -4,4 +4,4 @@
 
 一个分析 前端库 的使用下载趋势的 统计网站
 
-![](./image/image_EMoep7ZucM.png)
+![](./assets/image/image_EMoep7ZucM.png)

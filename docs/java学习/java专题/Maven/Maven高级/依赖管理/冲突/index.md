@@ -1,3 +1,3 @@
 # 冲突
 
-![](./image/image_WUvXryLDNl.png)
+![](./assets/image/image_WUvXryLDNl.png)

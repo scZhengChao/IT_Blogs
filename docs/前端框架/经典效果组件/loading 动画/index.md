@@ -72,13 +72,13 @@
 ```
 
 
-![  ](./image/d5783b23c75ccdad8fc091b59dc4a1aa_N-Rq3KaaXu.png "  ")
+![  ](./assets/image/d5783b23c75ccdad8fc091b59dc4a1aa_N-Rq3KaaXu.png "  ")
 
 [使用 CSS3 实现超炫的 Loading（加载）动画效果 - 梦想天空（山边小溪） - 博客园 SpinKit 是一套网页动画效果，包含8种基于 CSS3 实现的很炫的加载动画。借助 CSS3 Animation 的强大功能来创建平滑，易于定制的动画。SpinKit 的目标不是提供一个每个浏览器 https://www.cnblogs.com/lhb25/p/loading-spinners-animated-with-css3.html](https://www.cnblogs.com/lhb25/p/loading-spinners-animated-with-css3.html "使用 CSS3 实现超炫的 Loading（加载）动画效果 - 梦想天空（山边小溪） - 博客园 SpinKit 是一套网页动画效果，包含8种基于 CSS3 实现的很炫的加载动画。借助 CSS3 Animation 的强大功能来创建平滑，易于定制的动画。SpinKit 的目标不是提供一个每个浏览器 https://www.cnblogs.com/lhb25/p/loading-spinners-animated-with-css3.html")
 
-[28个纯css3 加载loading动画特效.zip](<./file/28个纯css3 加载loading动画特效_IZHzuvwOxY.zip> " 28个纯css3 加载loading动画特效.zip")
+[28个纯css3 加载loading动画特效.zip](<./assets/file/28个纯css3 加载loading动画特效_IZHzuvwOxY.zip> " 28个纯css3 加载loading动画特效.zip")
 
-![](./image/image_w03_Z3yCyn.png)
+![](./assets/image/image_w03_Z3yCyn.png)
 
 # 进度条
 
@@ -93,7 +93,7 @@
 
 ### 平滑加载
 
-![  ](./image/640_qyWt5RiUjN.gif "  ")
+![  ](./assets/image/640_qyWt5RiUjN.gif "  ")
 
 ```typescript 
 <div class="progress-1"></div>
@@ -116,7 +116,7 @@
 
 ### 按步加载
 
-![  ](./image/640_uZl3oEyNXX.gif "  ")
+![  ](./assets/image/640_uZl3oEyNXX.gif "  ")
 
 ```typescript 
 <div class="progress-2"></div>
@@ -141,7 +141,7 @@
 
 ### 条纹加载
 
-![  ](./image/640_Ne17vNT666.gif "  ")
+![  ](./assets/image/640_Ne17vNT666.gif "  ")
 
 ```typescript 
 <div class="progress-3"></div>
@@ -164,7 +164,7 @@
 
 ### 虚线加载
 
-![  ](./image/640_ic1I5IrCsa.gif "  ")
+![  ](./assets/image/640_ic1I5IrCsa.gif "  ")
 
 ```typescript 
 <div class="progress-4"></div>
@@ -187,7 +187,7 @@
 
 ### 电池加载
 
-![  ](./image/640_Pm9VPdNh2X.gif "  ")
+![  ](./assets/image/640_Pm9VPdNh2X.gif "  ")
 
 ```typescript 
 <div class="progress-5"></div>
@@ -222,7 +222,7 @@
 
 ### 内嵌加载
 
-![  ](./image/640_DoXWF3_ZXb.gif "  ")
+![  ](./assets/image/640_DoXWF3_ZXb.gif "  ")
 
 ```typescript 
 <div class="progress-6"></div>
@@ -256,7 +256,7 @@
 
 ### 珠链加载
 
-![  ](./image/640_1Gau2Pyj7J.gif "  ")
+![  ](./assets/image/640_1Gau2Pyj7J.gif "  ")
 
 ```typescript 
 <div class="progress-7"></div>
@@ -283,7 +283,7 @@
 
 ### 斑马线加载
 
-![  ](./image/640_BIhR7PM2mk.gif "  ")
+![  ](./assets/image/640_BIhR7PM2mk.gif "  ")
 
 ```typescript 
 <div class="progress-8"></div>
@@ -309,7 +309,7 @@
 
 ### 水柱加载
 
-![  ](./image/640_QYHjG4djCD.gif "  ")
+![  ](./assets/image/640_QYHjG4djCD.gif "  ")
 
 ```typescript 
 <div class="progress-9"></div>
@@ -343,7 +343,7 @@ radial-gradient 画出水平面的波动，就三个圆。var(--r1) 直接调用
 
 ### 信号加载
 
-![  ](<./image/640 (1)_PstgGzcsmb.gif> "  ")
+![  ](<./assets/image/640 (1)_PstgGzcsmb.gif> "  ")
 
 ```typescript 
 <div class="progress-10"></div>

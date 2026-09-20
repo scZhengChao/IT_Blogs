@@ -4,12 +4,12 @@
 
 - [整合myBatis](#整合myBatis)
 
-![](./image/image_0Tt2vgogDl.png)
+![](./assets/image/image_0Tt2vgogDl.png)
 
-![](./image/image_XuGaU3sT4P.png)
+![](./assets/image/image_XuGaU3sT4P.png)
 
 # 整合myBatis
 
-![](./image/image_A3j2nXWnUF.png)
+![](./assets/image/image_A3j2nXWnUF.png)
 
-![](./image/image_JRgAWuofaG.png)
+![](./assets/image/image_JRgAWuofaG.png)

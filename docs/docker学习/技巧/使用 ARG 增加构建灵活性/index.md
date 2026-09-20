@@ -63,9 +63,9 @@ docker build  --build-arg aaa=3 --build-arg bbb=4  -t arg-test -f 333.Dockerfile
 
 点击查看镜像详情，可以看到 ARG 已经被替换为具体的值了：
 
-![](./image/image_V6aW_2PAaG.png)
+![](./assets/image/image_V6aW_2PAaG.png)
 
-![](./image/image_4db6qYdaIT.png)
+![](./assets/image/image_4db6qYdaIT.png)
 
 然后跑起来：
 

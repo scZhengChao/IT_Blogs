@@ -14,4 +14,4 @@ emcc hello.c  -o hello.html
 
 打开 hello.html，我们可以看到一个界面，中间是一个 Canvas，显示 wasm 的渲染结果。下面则是控制台的输出。
 
-![](./image/image_ymPeP1DjKJ.png)
+![](./assets/image/image_ymPeP1DjKJ.png)

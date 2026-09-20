@@ -64,7 +64,7 @@ alter table 从表名 drop foreign key 外键名称;
 ```
 
 
-![](./image/image_O76aYISpaM.png)
+![](./assets/image/image_O76aYISpaM.png)
 
 # 作用
 
@@ -101,7 +101,7 @@ INSERT INTO department (dep_name, dep_location)
 ```
 
 
-![](./image/image_qOOU635rt-.png)
+![](./assets/image/image_qOOU635rt-.png)
 
 ### 3 后创建员工表，定义外键：
 
@@ -145,7 +145,7 @@ INSERT INTO employee (name, age, dep_id)
 ```
 
 
-![](./image/image__NLqFoYm4K.png)
+![](./assets/image/image__NLqFoYm4K.png)
 
 > 必须有效合法外键；
 

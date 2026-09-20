@@ -141,7 +141,7 @@ console.log(JSON.stringify(err, Object.getOwnPropertyNames(err), 'tttttttt'))
 ```
 
 
-![](./image/image_CaYqH4gBUd.png)
+![](./assets/image/image_CaYqH4gBUd.png)
 
 ## JSON.stringify的性能瓶颈
 
@@ -187,7 +187,7 @@ fn2()
 ```
 
 
-![](./image/image_tKzn5c91Ac.png)
+![](./assets/image/image_tKzn5c91Ac.png)
 
 从结果来看，两者的性能差距在4倍左右，那就证明`JSON.string`的类型判断这一步还是非常耗性能的。如果JSON.stringify能够跳过类型判断这一步是否对类型判断有帮助呢？
 

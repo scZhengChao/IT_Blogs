@@ -14,7 +14,7 @@
 - [生产环境，压缩混淆并移除console](#生产环境压缩混淆并移除console)
 - [Webpack3 新功能: Scope Hoisting](#Webpack3-新功能-Scope-Hoisting)
 
-![  ](./image/webpack_cqrznHxVBl.png "  ")
+![  ](./assets/image/webpack_cqrznHxVBl.png "  ")
 
 从产品层来讲，如何使得构建的包体积小、运行快，这有必要不断摸索实践，提炼升级，使之臻于最佳。本文将从以下些许方面，对 Webpack 打包体积方面，做下优化探讨(备注： Webpack实践版本： 3.3.0)：
 
@@ -24,7 +24,7 @@
 
 > “analyz”: “NODE\_ENV=production npm\_config\_report=true npm run build”
 
-![  ](./image/93f72404-b338-11e6-92d4-9a365550a701_4Y0Gx2UlYs.gif "  ")
+![  ](./assets/image/93f72404-b338-11e6-92d4-9a365550a701_4Y0Gx2UlYs.gif "  ")
 
 webpack-bundle-analyzer
 

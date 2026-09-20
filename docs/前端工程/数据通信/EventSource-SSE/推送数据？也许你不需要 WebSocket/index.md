@@ -12,7 +12,7 @@
 
 `WebSocket` 的通信过程是这样的：
 
-![](./image/image_KngBDUbJPR.png)
+![](./assets/image/image_KngBDUbJPR.png)
 
 首先通过 `http` 切换协议，服务端返回 `101` 的状态码后，就代表协议切换成功。
 
@@ -20,7 +20,7 @@
 
 而 `HTTP` 的 `Server Send Event` 是这样的：
 
-![](./image/image_e84y_7exNJ.png)
+![](./assets/image/image_e84y_7exNJ.png)
 
 服务端返回的 `Content-Type` 是 `text/event-stream`，这是**一个流，可以多次返回内容。**
 
@@ -38,9 +38,9 @@
 
 这也是基于 `SSE`。
 
-![](./image/image_M5xlW0l56K.png)
+![](./assets/image/image_M5xlW0l56K.png)
 
-![](./image/image_kPRcIysXyS.png)
+![](./assets/image/image_kPRcIysXyS.png)
 
 知道了什么是 SSE 以及它的应用，我们来自己实现一下吧：
 
@@ -52,7 +52,7 @@ npx nest new sse-test
 ```
 
 
-![](./image/image_rrWS0EaS5P.png)
+![](./assets/image/image_rrWS0EaS5P.png)
 
 把它跑起来：
 
@@ -62,15 +62,15 @@ npm run start:dev
 ```
 
 
-![](./image/image_Nwo1B1ApVh.png)
+![](./assets/image/image_Nwo1B1ApVh.png)
 
 访问 [http://localhost:3000](https://link.juejin.cn/?target=http://localhost:3000 "http://localhost:3000") 可以看到 hello world，代表服务器跑成功了：
 
-![](./image/image_atfmjS6PBF.png)
+![](./assets/image/image_atfmjS6PBF.png)
 
 然后在 AppController 添加一个 stream 接口：
 
-![](./image/image_gVDQBn7ZcP.png)
+![](./assets/image/image_gVDQBn7ZcP.png)
 
 这里不是通过 `@Get`、`@Post` 等装饰器标识，而是通过 `@Sse` 标识这是一个 `event stream` 类型的接口。
 
@@ -109,7 +109,7 @@ npx create-react-app --template=typescript sse-test-frontend
 ```
 
 
-![](./image/image_65vOSCbA4O.png)
+![](./assets/image/image_65vOSCbA4O.png)
 
 在 App.tsx 里写如下代码：
 
@@ -139,21 +139,21 @@ export default App;
 
 我们在 nest 服务**开启跨域**支持：
 
-![](./image/image_KU7p77dUz5.png)
+![](./assets/image/image_KU7p77dUz5.png)
 
 然后把 react 项目 index.tsx 里这几行代码删掉，它会导致额外的渲染：
 
-![](./image/image_vLUeB40tH-.png)
+![](./assets/image/image_vLUeB40tH-.png)
 
 执行 npm run start
 
 因为 3000 端口被占用了，它会跑在 3001：
 
-![](./image/image_nfPdQ0MfL_.png)
+![](./assets/image/image_nfPdQ0MfL_.png)
 
 浏览器访问下：
 
-![](./image/image_bPmdJkI5ea.png)
+![](./assets/image/image_bPmdJkI5ea.png)
 
 看到**一段段的响应**了没？
 
@@ -161,11 +161,11 @@ export default App;
 
 在 `devtools` 里可以看到，响应的 `Content-Type` 是 `text/event-stream`：
 
-![](./image/image_deFJ6i4NST.png)
+![](./assets/image/image_deFJ6i4NST.png)
 
 然后在 EventStream 里可以看到每一次收到的消息：
 
-![](./image/image_eE6IHls7h8.png)
+![](./assets/image/image_eE6IHls7h8.png)
 
 这样，服务端就可以随时向网页推送消息了。
 
@@ -173,7 +173,7 @@ export default App;
 
 可以在 [MDN](https://link.juejin.cn/?target=https://developer.mozilla.org/zh-CN/docs/Web/API/EventSource#%E6%B5%8F%E8%A7%88%E5%99%A8%E5%85%BC%E5%AE%B9%E6%80%A7 "MDN") 看到：
 
-![](./image/image_mRv51HSiR3.png)
+![](./assets/image/image_mRv51HSiR3.png)
 
 除了`  ie、edge  `外，其他浏览器都没任何兼容问题。
 
@@ -185,7 +185,7 @@ export default App;
 
 比如这个站内信：
 
-![](./image/image_s77oBZ1HK3.png)
+![](./assets/image/image_s77oBZ1HK3.png)
 
 这种推送用 WebSocket 就没必要了，可以用 SSE 来做。
 
@@ -201,7 +201,7 @@ export default App;
 
 `tail -f` **命令可以实时看到文件的最新内容：**
 
-![](./image/image_c0yqfpxpOQ.png)
+![](./assets/image/image_c0yqfpxpOQ.png)
 
 我们通过 `child_process` 模块的 `exec` 来**执行**这个命令，然后监听它的 `stdout` 输出：
 
@@ -219,7 +219,7 @@ childProcess.stdout.on('data', (msg) => {
 
 用 node 执行它：
 
-![](./image/image_0I16YRHBNW.png)
+![](./assets/image/image_0I16YRHBNW.png)
 
 然后添加一个 `sse` 的接口：
 
@@ -241,11 +241,11 @@ return new Observable((observer) => {
 
 浏览器连接这个新接口：
 
-![](./image/image_5XkKHR7JyM.png)
+![](./assets/image/image_5XkKHR7JyM.png)
 
 测试下：
 
-![](./image/image_9IXjlao1Yn.png)
+![](./assets/image/image_9IXjlao1Yn.png)
 
 可以看到，浏览器收到了实时的日志。
 
@@ -269,7 +269,7 @@ console.log(buffer);
 
 而 `Buffer` 有个 `toJSON` 方法：
 
-![](./image/image_wVjpOk4Zfs.png)
+![](./assets/image/image_wVjpOk4Zfs.png)
 
 这样不就可以通过 sse 的接口返回了么？
 
@@ -287,9 +287,9 @@ stream3() {
 ```
 
 
-![](./image/image_2gb31dFJsp.png)
+![](./assets/image/image_2gb31dFJsp.png)
 
-![](./image/image_R6ouTdw098.png)
+![](./assets/image/image_R6ouTdw098.png)
 
 确实可以。
 

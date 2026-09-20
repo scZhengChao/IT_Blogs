@@ -6,7 +6,7 @@
 
 ##### [4.3.2.3](http://tnm2.oa.com/host/home/4.3.2.3 "4.3.2.3")操作哈希类型数据
 
-![](./image/image_f9q9mtZzWw.png)
+![](./assets/image/image_f9q9mtZzWw.png)
 
 需求：
 

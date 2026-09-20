@@ -53,7 +53,7 @@ will-change 一个既陌生又熟悉的属性，以前在使用这个属性的�
 
 加入will-change后，通过观察复合层，如图下
 
-![](./image/image_mNeqybGsTI.png)
+![](./assets/image/image_mNeqybGsTI.png)
 
 加入will-change后，元素会被提升到**单独的复合层**，动画（重绘、重排）的操作只会在单独复合层上进行，减少了原来的页面层重绘和重排的行为 注：每一个**元素单独加入will-change都会单独创建一个复合层**，如果给大量的元素加上will-change就会创建大量的复合层，反而会影响性能
 
@@ -76,7 +76,7 @@ will-change 一个既陌生又熟悉的属性，以前在使用这个属性的�
 
 所以对于will-change的使用应该控制时机
 
-![](./image/image_AqxbtWxp_X.png)
+![](./assets/image/image_AqxbtWxp_X.png)
 
 ```javascript 
 const targetEl = document.getElementById('target')
@@ -107,7 +107,7 @@ function removeWiiiChange(){
    关于光栅化的内容可以查看这篇文章 [zhuanlan.zhihu.com/p/450540827](https://link.juejin.cn?target=https://zhuanlan.zhihu.com/p/450540827 "zhuanlan.zhihu.com/p/450540827")
 2. 至于为什么safari浏览器在元素提升到复合层后，进行光栅化会导致模糊问题，在我们翻阅了各家浏览器内核论坛后，找到一些资料 [groups.google.com/a/chromium.…](https://link.juejin.cn?target=https://groups.google.com/a/chromium.org/g/blink-dev/c/Ufwrhx_iZ7U "groups.google.com/a/chromium.…") （需要科学上网，才能查看）
 
-![](./image/image_H5rXN8N65G.png)
+![](./assets/image/image_H5rXN8N65G.png)
 
 大概的内容就是： &#x20;
 在2016年之前，不止safari，谷歌浏览器也是存在模糊的问题，原因是提升复合层后，光栅化的时候，设备比例的变化，导致绘制 图像 的过程变模糊，谷歌是在2016年解决的这个问题，所以现在看来我们会在iphone上发现模糊问题，在安卓机上并不会 &#x20;

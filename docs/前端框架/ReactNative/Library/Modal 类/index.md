@@ -38,7 +38,7 @@ github地址：
 
 react-native-actionsheet
 
-![  ](./image/591e50a25ae606fc25300b05c3b375d5_71AP3f3lwv.png "  ")
+![  ](./assets/image/591e50a25ae606fc25300b05c3b375d5_71AP3f3lwv.png "  ")
 
 [npm: react-native-actionsheet Cross platform ActionSheet. This component implements a custom ActionSheet  and provides the same way to drawing it on the defferent platforms(iOS and Android). Actually, In order to keep the best eff https://www.npmjs.com/package/react-native-actionsheet](https://www.npmjs.com/package/react-native-actionsheet "npm: react-native-actionsheet Cross platform ActionSheet. This component implements a custom ActionSheet  and provides the same way to drawing it on the defferent platforms(iOS and Android). Actually, In order to keep the best eff https://www.npmjs.com/package/react-native-actionsheet")
 

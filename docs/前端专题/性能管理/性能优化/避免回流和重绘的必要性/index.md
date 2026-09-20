@@ -22,7 +22,7 @@
 
 **这五个主要的部分，应该是我们值得去关注的，因为我们拥有最大控制权的部分**\*\*。至于\*\*每一个过程具体是怎么样的呢，不清楚的可以参考下图:
 
-![](./image/image_43b03fJdZ_.png)
+![](./assets/image/image_43b03fJdZ_.png)
 
 所以在这么一个像素的管道里，每部分都有可能造成卡顿，所以我们需要额外的关注这些，毕竟那一部分不当，都会开了不必要的性能开销。
 
@@ -30,7 +30,7 @@
 
 当时我的疑问是: **难道每一帧都总是会经过管道每个部分的处理嘛，其实不是这样子的，** 从视觉的角度来说，管道针对指定帧的运行通常有三种方式:
 
-![](./image/image_FCrmJgOjMT.png)
+![](./assets/image/image_FCrmJgOjMT.png)
 
 如果我们以第三种方式来更新视图，也就是更改一个既不要布局也不要绘制的属性，则浏览器将跳到只执行合成。
 
@@ -44,7 +44,7 @@
 
 我们添加多个dom元素进行动画，效果更佳明显，接着我们打开Performance，Record这个过程，我们需要关注的是Main选项卡，也就是主线程，我们在放大里面的Task，就有了下图:
 
-![](./image/image_meLsrQ42Wb.png)
+![](./assets/image/image_meLsrQ42Wb.png)
 
 经历的过程，也是很清楚看到，Update Layer Tree -->> Layout -->> Paint -->> Composite Layers。
 
@@ -54,7 +54,7 @@
 
 接着，我们按下，Optimize按钮，按照之前的流程走，Record后，发现不对劲，还是这样子步骤，难道是哪里存在问题嘛，好奇的我，打开了Sources面板，然后就发现了:
 
-![](./image/image_HdjbTYcVtQ.png)
+![](./assets/image/image_HdjbTYcVtQ.png)
 
 它的源码优化动画 **，使用的是rAF,了解过的人一定**不会陌生，你可以简单的理解就。这里就引出了帧的概念，后续会说明。
 
@@ -64,7 +64,7 @@
 
 回到前面我们设想的点，我们如何才能保证直接跳到合成过程，避免Layout以及Paint呢，当然有，我们需要对app.js中的uppdate函数进行改造，使用**transform: translateX(0px);** 做动画，做完update函数的处理逻辑后，我们再次Record一下:
 
-![](./image/image_u-rkn7iXmd.png)
+![](./assets/image/image_u-rkn7iXmd.png)
 
 从Task子任务中，我们可以发现，**Layout -->> Paint**, 布局和绘制的过程跳过了。这也是为什么我们常说的需要避免回流与重绘。从主线程上来看，能够完全的避免这些过程，避免了很多的运算开销。
 

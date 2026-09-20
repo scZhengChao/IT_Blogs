@@ -2,7 +2,7 @@
 
 本节我们将介绍Java的集合类型。集合类型也是Java标准库中被使用最多的类型。
 
-![](./image/image_OSmuWXC6HM.png)
+![](./assets/image/image_OSmuWXC6HM.png)
 
 [Java集合简介](./Java集合简介/index.md "Java集合简介")
 

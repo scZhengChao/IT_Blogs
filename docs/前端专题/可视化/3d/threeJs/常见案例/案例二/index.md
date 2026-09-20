@@ -4,7 +4,7 @@
 
 - [main.js ](#mainjs-)
 
-[1\_vr-memorial-hall-main.zip](./file/1_vr-memorial-hall-main_AwOcDoqyyg.zip "1_vr-memorial-hall-main.zip")
+[1\_vr-memorial-hall-main.zip](./assets/file/1_vr-memorial-hall-main_AwOcDoqyyg.zip "1_vr-memorial-hall-main.zip")
 
 #### main.js&#x20;
 

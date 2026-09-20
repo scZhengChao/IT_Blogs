@@ -9,7 +9,7 @@
 
 # 纯css3实现饼图进度动画
 
-![  ](./image/252a75f39ab0dde2738cda8084f198e9_ziAC7R8yRH.png "  ")
+![  ](./assets/image/252a75f39ab0dde2738cda8084f198e9_ziAC7R8yRH.png "  ")
 
 ```typescript 
 <!doctype html>
@@ -77,7 +77,7 @@ border-*-radius：[ <length> | <percentage> ]{1,2}
 
 语法的含义为，需要为 border- \*-radius 属性提供 1\~2 个参数，参数之间使用空格进行分隔。其中第一个参数表示圆角水平方向的半径或半轴，第二个参数表示圆角垂直方向的半径或半轴，如果省略第二个参数，那么该参数将直接沿用第一个参数的值。
 
-![](./image/image_I_7Vb43b5o.png)
+![](./assets/image/image_I_7Vb43b5o.png)
 
 ```typescript 
 border-radius：[ <length> | <percentage> ]{1,4} [ / [ <length> | <percentage> ]{1,4} ]?

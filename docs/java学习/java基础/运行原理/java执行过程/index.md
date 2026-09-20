@@ -5,7 +5,7 @@
 - [javac](#javac)
 - [java](#java)
 
-![](./image/image_zYYXOPgD7F.png)
+![](./assets/image/image_zYYXOPgD7F.png)
 
 # javac
 

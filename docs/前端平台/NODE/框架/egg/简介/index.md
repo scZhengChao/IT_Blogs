@@ -4,7 +4,7 @@
 
           官网  阿里系
 
-[07\_eggjs\_mvc分层架构【瑞客论坛 www.ruike1.com】.pdf](<./file/07_eggjs_mvc分层架构【瑞客论坛 www.ruike1.com】_7XXetYCxgn.pdf> "07_eggjs_mvc分层架构【瑞客论坛 www.ruike1.com】.pdf")
+[07\_eggjs\_mvc分层架构【瑞客论坛 www.ruike1.com】.pdf](<./assets/file/07_eggjs_mvc分层架构【瑞客论坛 www.ruike1.com】_7XXetYCxgn.pdf> "07_eggjs_mvc分层架构【瑞客论坛 www.ruike1.com】.pdf")
 
 ```纯文本 
  // 创建项目  脚手架 
@@ -15,7 +15,7 @@
 ```
 
 
-[07.7z](./file/07_n13Ymsxt26.7z "07.7z")
+[07.7z](./assets/file/07_n13Ymsxt26.7z "07.7z")
 
 [https://cron.qqe2.com/](https://cron.qqe2.com/ "https://cron.qqe2.com/")
 
@@ -190,7 +190,7 @@
 
 [http://localhost:7001/swagger-ui.html](http://localhost:7001/swagger-ui.html "http://localhost:7001/swagger-ui.html")
 
-![  ](./image/ec08d2b21a98e1e19e7fc6002571a592_noUE4ImfYh.png "  ")
+![  ](./assets/image/ec08d2b21a98e1e19e7fc6002571a592_noUE4ImfYh.png "  ")
 
 **增加异常处理中间件：**
 
@@ -608,6 +608,6 @@
 ```
 
 
-[egg-best.7z](./file/egg-best_xPCvC9pmei.7z "egg-best.7z")
+[egg-best.7z](./assets/file/egg-best_xPCvC9pmei.7z "egg-best.7z")
 
-[egg-server.7z](./file/egg-server_So8849G1sW.7z "egg-server.7z")
+[egg-server.7z](./assets/file/egg-server_So8849G1sW.7z "egg-server.7z")

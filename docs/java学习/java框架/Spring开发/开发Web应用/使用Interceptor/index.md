@@ -7,13 +7,13 @@
 
 在Web程序中，注意到使用Filter的时候，Filter由Servlet容器管理，它在Spring MVC的Web应用程序中作用范围如下：
 
-![](./image/image_5FDFhG05Xb.png)
+![](./assets/image/image_5FDFhG05Xb.png)
 
 上图虚线框就是Filter2的拦截范围，**Filter组件实际上并不知道后续内部处理是通过Spring MVC提供的**`DispatcherServlet`还是其他Servlet组件，因为Filter是Servlet规范定义的标准组件，它可以应用在任何基于Servlet的程序中。
 
 如果**只基于Spring MVC开发应用程序**，还可以**使用Spring MVC提供的一种功能类似Filter的拦截器：Interceptor**。和Filter相比，Interceptor拦截**范围不是后续整个处理流程，而是仅针对Controller拦截：**
 
-![](./image/image_qggGLTH8CI.png)
+![](./assets/image/image_qggGLTH8CI.png)
 
 上图虚线框就是Interceptor的拦截范围，注意到Controller的处理方法一般都类似这样：
 

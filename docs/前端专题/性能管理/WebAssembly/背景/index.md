@@ -33,7 +33,7 @@
 
 > JavaScript 占据着统治地位，不管是公开还是私有的项目、任何组织、世界任何地区，JavaScript 都是第一。 &#x20;
 
-![](./image/image_tA1I8CB-lt.png)
+![](./assets/image/image_tA1I8CB-lt.png)
 
 GitHub 2018 年度报告
 
@@ -122,7 +122,7 @@ Web 应用中，**性能瓶颈大部分的原因已经不在 JavaScript，而在
 
 Mozilla 给出了 asm.js 的 benchmark：
 
-![](./image/image_cKO9fkn66X.png)
+![](./assets/image/image_cKO9fkn66X.png)
 
 ## asm.js To WebAssembly
 
@@ -183,7 +183,7 @@ Mozilla 给出了 asm.js 的 benchmark：
 
 > [git@github.com](mailto:git@github.com "git@github.com"):codenoid/md5-cpp.git
 
-![](./image/image_HqtL34Y0n-.png)
+![](./assets/image/image_HqtL34Y0n-.png)
 
 使用 emscripten.h 中的 EMSCRIPTEN\_KEEPALIVE 宏，确保 emcc 编译器在编译时，不会因为该函数没有被调用而优化掉这个函数。
 

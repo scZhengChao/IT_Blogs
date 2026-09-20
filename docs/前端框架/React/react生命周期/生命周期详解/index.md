@@ -15,7 +15,7 @@
 
 # **React V16.3之前的生命周期：**
 
-![  ](./image/783f13d673ebf1152572212e10e17a92_OP30lmI_ux.png "  ")
+![  ](./assets/image/783f13d673ebf1152572212e10e17a92_OP30lmI_ux.png "  ")
 
 ```typescript 
  子组件先 mounted  父组件在 mounted 这点和vue 相同 
@@ -105,7 +105,7 @@
 
 # **React v16.3 的生命周期**
 
-![  ](./image/5695c36901827fafa21bc1f0302050ec_qpFzdTKdLH.png "  ")
+![  ](./assets/image/5695c36901827fafa21bc1f0302050ec_qpFzdTKdLH.png "  ")
 
         getDerivedStateFromProps
 
@@ -115,7 +115,7 @@
 
 # **React v16.4 的生命周期**
 
-![  ](./image/14cbd04cc37bcd24e6fbd6544261feba_nylNNmqtgi.png "  ")
+![  ](./assets/image/14cbd04cc37bcd24e6fbd6544261feba_nylNNmqtgi.png "  ")
 
 **变更缘由**
 
@@ -150,7 +150,7 @@ getSnapshotBeforeUpdate
 
         getDerivedStateFromProps前面要加上static保留字，声明为静态方法，不然会被react忽略掉
 
-![  ](./image/9e1d35d9fbaf4e9c86f505fc454a2192_6SXM7owsk0.png "  ")
+![  ](./assets/image/9e1d35d9fbaf4e9c86f505fc454a2192_6SXM7owsk0.png "  ")
 
 - getDerivedStateFromProps里面的this为undefined
 

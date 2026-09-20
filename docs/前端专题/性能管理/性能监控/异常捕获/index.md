@@ -17,7 +17,7 @@
 
 # 异常捕获分类
 
-![  ](./image/2c0dad57e536c4863e679e67f77d6f83_NAnF9hUB08.png "  ")
+![  ](./assets/image/2c0dad57e536c4863e679e67f77d6f83_NAnF9hUB08.png "  ")
 
 # try...catch
 

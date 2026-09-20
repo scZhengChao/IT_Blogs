@@ -47,7 +47,7 @@ export class AppModule {}
 
 导入 `DevtoolsModule` 并且你的应用启动并运行 (`npm run start:dev`) 后，你应该能够导航到 [开发者工具](https://devtools.nestjs.com/ "开发者工具") URL 并查看内省图。
 
-![](./image/image_Q3SWEb2Ar9.png)
+![](./assets/image/image_Q3SWEb2Ar9.png)
 
 > **提示**
 > 正如你在上面的屏幕截图中看到的，每个模块都连接到 `InternalCoreModule`。`InternalCoreModule` 是一个全局模块，总是导入到根模块中。由于它已注册为全局节点，Nest 会自动在所有模块和 `InternalCoreModule` 节点之间创建边。现在，如果你想从图表中隐藏全局模块，你可以使用 "隐藏全局模块" 复选框（在边栏中）。
@@ -56,7 +56,7 @@ export class AppModule {}
 
 只是为了仔细检查一切是否按预期工作，将图形视图更改为 "类"。你应该看到以下屏幕：
 
-![](./image/image_7-IazhvENJ.png)
+![](./assets/image/image_7-IazhvENJ.png)
 
 要关注特定节点，请单击矩形，图形将显示带有 "重点" 按钮的弹出窗口。你还可以使用搜索栏（位于边栏中）查找特定节点。
 

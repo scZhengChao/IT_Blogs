@@ -3,7 +3,7 @@
 在上面我们理解了 RxJS 将程序抽象为一个个 `Stream` 的概念，并且学习了从 `Stream` 的视角来操作程序，以及对多个 `Stream` 进行组合操作，接**下来我们将探索如何**在 `Stream` 中嵌套 `Stream`，然后**又如何去处理这些多重嵌套的** `Stream`。
 那么什么是多重嵌套的 `Stream` 呢？我们**在平时的业务开发中会碰到的典型的多重嵌套的** `Stream` 是什么呢？让我们来带着问题继续往下看 😋
 
-![](./image/image_ke-sEza5bg.png)
+![](./assets/image/image_ke-sEza5bg.png)
 
 上述的 Stream 就是一个多重嵌套 Stream，场景就是我们常见的鼠标按下（mousedown）然后鼠标移动（mousemove）进行拖拽、画图等操作：
 
@@ -78,7 +78,7 @@ export default function NestedNormal() {
 
 它可以实现这样的效果：
 
-![](./image/image_Ys9WWYcKHN.png)
+![](./assets/image/image_Ys9WWYcKHN.png)
 
 上述代码的实现思路如下：
 
@@ -113,7 +113,7 @@ canvas.addEventListener("mouseup", (e) => {
 
 首先进行问题分析，画出 Stream 图示：
 
-![](./image/image_KCRgiiyiTn.png)
+![](./assets/image/image_KCRgiiyiTn.png)
 
 我们抽离一次 `mousedown`、`mousemove`、`mouseup` 的过程来看会更清晰一点，实际上我们整个程序的可以通过如下 `Stream` 来描述：
 
@@ -184,7 +184,7 @@ tap((e) => ctx.moveTo(e.clientX, e.clientY - canvas.offsetTop))
 
 上述 `tap` 是一个 `RxJS` 操作符（`operators`），类似 `subscribe` 的效果，但是**只会拿传过的来值进行一次不影响后续** `Stream` 的 “纯操作”，常用来在 `Stream` 的中间态拿到当前的数据事件来修改外部的状态或做一些通知，它的 `Stream` 图如下：
 
-![](./image/image_sWCXEwBcBX.png)
+![](./assets/image/image_sWCXEwBcBX.png)
 
 > 这里 `tap` 所充当的作用较为关键，因为它可以拿到上一步的值，但是又不影响后续的操作，所以我们可以通过 `tap` 操作符进行 RxJS 的 Debug 操作，我们在后续的 如何 Debug RxJS 应用中讲解？
 
@@ -218,7 +218,7 @@ takeUntil(fromEvent(canvas, "mouseup"))
 ```
 
 
-![](./image/image_fYu2FXqR3F.png)
+![](./assets/image/image_fYu2FXqR3F.png)
 
 即上面两个 Stream，第一个 Stream pipe 到第二个 Stream 的第一个数据事件之前就结束，也是当第二个 Stream 的 z 事件发生时，第一个 Stream 就进入完成态，即后面的 e/f/g 都不会再继续执行。
 
@@ -236,7 +236,7 @@ fromEvent(canvas, "mousemove").pipe(
 
 然后我们再回过头来看 `mergeMap` ，它是干什么的呢？我们自己画个图来演示一下，官方的图比较模糊:
 
-![](./image/image_dQDpXFACU5.png)
+![](./assets/image/image_dQDpXFACU5.png)
 
 即对应到每次 `mousedown` 之后，我们移动鼠标产生多个 `mousemove` 事件，对应到数组的表示就是：
 
@@ -262,7 +262,7 @@ fromEvent(canvas, "mousemove").pipe(
 
 变成一维的数组，也就是一维的 Stream，上述场景就需要用到 mergeMap 这个操作符，也就是我们通过 mergeMap 之后的 Stream 图示如下：
 
-![](./image/image_NfKQoOD2sR.png)
+![](./assets/image/image_NfKQoOD2sR.png)
 
 即在时间维度上，将 `stream 2 `压平，然后与 `stream 1` 进行 `merge` 合并在一起，为什么需要这样做呢？
 

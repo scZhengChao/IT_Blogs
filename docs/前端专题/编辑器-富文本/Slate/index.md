@@ -10,4 +10,4 @@
 
 [ Slate | Athena Welcome to the Athena https://rain120.github.io/athena/zh/slate/Introduction.html#why](https://rain120.github.io/athena/zh/slate/Introduction.html#why " Slate | Athena Welcome to the Athena https://rain120.github.io/athena/zh/slate/Introduction.html#why")
 
-![](./image/image_pS13C6kMXs.png)
+![](./assets/image/image_pS13C6kMXs.png)

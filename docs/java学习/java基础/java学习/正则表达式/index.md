@@ -4,7 +4,7 @@
 
 本章我们会详细介绍如何在Java程序中使用正则表达式。
 
-![](./image/image_KsHj-NPUw2.png)
+![](./assets/image/image_KsHj-NPUw2.png)
 
 [正则表达式简介](./正则表达式简介/index.md "正则表达式简介")
 

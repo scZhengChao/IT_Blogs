@@ -33,7 +33,7 @@
 ```
 
 
-![  ](./image/b3251a15e5779fcfec925b78a149f5c8_858ubMdPdM.png "  ")
+![  ](./assets/image/b3251a15e5779fcfec925b78a149f5c8_858ubMdPdM.png "  ")
 
 # 执行顺序
 

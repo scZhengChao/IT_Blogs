@@ -7,7 +7,7 @@
 - [3、mixed](#3mixed)
 - [4.keep](#4keep)
 
-![](./image/image_QqIt14N4oV.png)
+![](./assets/image/image_QqIt14N4oV.png)
 
 - —hard 直接丢到垃圾桶
 - —mixed  移动head指针；重置暂存区；工作区不变

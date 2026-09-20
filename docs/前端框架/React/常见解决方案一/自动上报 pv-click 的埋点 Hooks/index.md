@@ -16,7 +16,7 @@
 1. `props` 改变带来的函数组件执行。
 2. `useState` 或 `useReducer` 改变 `state` 引起函数组件的更新。
 
-![](./image/image_beHi1CwpNj.png)
+![](./assets/image/image_beHi1CwpNj.png)
 
 ### 顺序原则
 

@@ -90,7 +90,7 @@ func compute() (value float64, ok bool) {
 
 接下来的程序演示了通过浮点计算生成的图形。它是带有两个参数的z = f(x, y)函数的三维形式，使用了可缩放矢量图形（SVG）格式输出，SVG是一个用于矢量线绘制的XML标准。图3.1显示了sin(r)/r函数的输出图形，其中r是`sqrt(x*x+y*y)`。
 
-![](./image/image_j-hIxu_gSP.png)
+![](./assets/image/image_j-hIxu_gSP.png)
 
 ```go 
 // Surface computes an SVG rendering of a 3-D surface function.
@@ -159,7 +159,7 @@ func f(x, y float64) float64 {
 
 第三个坐标系是一个二维的画布，起点(0,0)在左上角。画布中点的坐标用(sx,sy)表示。我们使用等角投影将三维点(x,y,z)投影到二维的画布中。
 
-![](./image/image_JCIKiTOh2w.png)
+![](./assets/image/image_JCIKiTOh2w.png)
 
 画布中从远处到右边的点对应较大的x值和较大的y值。并且画布中x和y值越大，则对应的z值越小。x和y的垂直和水平缩放系数来自30度角的正弦和余弦值。z的缩放系数0.4，是一个任意选择的参数。
 

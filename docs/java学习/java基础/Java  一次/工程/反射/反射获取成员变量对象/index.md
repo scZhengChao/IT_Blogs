@@ -4,16 +4,16 @@
 
 - [案例](#案例)
 
-![](./image/image_2KqrSGPS8J.png)
+![](./assets/image/image_2KqrSGPS8J.png)
 
 - 反射的第一步是先**得到类对象，然后从类对象中获取类的成分对象。**
 - Class类中用于\*\*获取成员变量的方法. \*\*
 
-![](./image/image_BOUUBle_MM.png)
+![](./assets/image/image_BOUUBle_MM.png)
 
 - 获取成员变量的作用依然是在某个对象中取值、赋值
 
-![](./image/image_y6j3ZFTRK3.png)
+![](./assets/image/image_y6j3ZFTRK3.png)
 
 # 案例
 

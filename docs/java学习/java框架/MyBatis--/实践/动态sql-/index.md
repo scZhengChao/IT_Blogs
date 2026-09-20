@@ -11,7 +11,7 @@
 
 **SQL语句会随着用户的输入或外部条件的变化而变化，我们称为 动态SQL**
 
-![](./image/image_gvC8iFDYu1.png)
+![](./assets/image/image_gvC8iFDYu1.png)
 
 # MyBatis 对动态SQL有很强大的支撑：
 

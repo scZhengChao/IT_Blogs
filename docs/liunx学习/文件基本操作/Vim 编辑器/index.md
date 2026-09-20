@@ -48,7 +48,7 @@
 
 用一张图表示三种模式如何切换：
 
-![](./image/image_qW0W9kOPfQ.png)
+![](./assets/image/image_qW0W9kOPfQ.png)
 
 [基本操作](./基本操作/index.md "基本操作")
 

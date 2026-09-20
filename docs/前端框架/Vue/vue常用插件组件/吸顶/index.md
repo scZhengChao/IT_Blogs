@@ -14,7 +14,7 @@
 
 近日，在做活动页的过程中遇到两层吸顶的需求，并且要兼容 IE9 及以上的浏览器。乍一看不就是个吸顶嘛，应该不难吧，事实证明还是踩了很多坑才出来。兼容性问题多到吐血，我太难了。废话不多说，先看一下两层吸顶的最终实现效果，如下图所示。&#x20;
 
-![  ](./image/a85d3cf7ed2853d18698c036c1ef87b1_3NIVcimmLi.gif "  ")
+![  ](./assets/image/a85d3cf7ed2853d18698c036c1ef87b1_3NIVcimmLi.gif "  ")
 
 功能点：两层吸顶，因为 Tabs 区域比较长所以在滚动过程中点击一层 Tabs 会回弹至一层吸顶刚吸顶的位置，这个功能点和锚点有些类似。二层 Tabs 通过 hover 切换，没有回弹效果。&#x20;
 
@@ -57,7 +57,7 @@
 
 吸顶元素在滚动到组件底部时，在谷歌、火狐等浏览器中，两层吸顶在消失过程中有重叠现象，具体现象如下图所示:&#x20;
 
-![  ](./image/e333ecb13c1427937b54bcbcd7952684_s8iYSlWQKb.webp "  ")
+![  ](./assets/image/e333ecb13c1427937b54bcbcd7952684_s8iYSlWQKb.webp "  ")
 
 主要原因：第一层吸顶还符合吸顶条件，第二层吸顶已经开始消失解决方案：给第一层吸顶元素添加  minHeight  属性，其大小为第一层吸顶元素的高度与第二层吸顶元素的高度的和。这里有一个需要注意的点在于：一开始第一层吸顶元素的高度并非两者之和，所以这里就需要监听滚动事件，在吸顶元素距离底部的距离为两者高度之和的位置处给第一层吸顶元素添加   minHeight  属性
 
@@ -77,7 +77,7 @@ if (offsetBottom <= sumHeight) {       
 
 在 IE 浏览器中，吸顶元素滚动到组件底部时不消失，具体现象如下图所示&#x20;
 
-![  ](./image/d6682ea3ba1b288437e875441fdaa7da_Zh8T3Bdo2O.webp "  ")
+![  ](./assets/image/d6682ea3ba1b288437e875441fdaa7da_Zh8T3Bdo2O.webp "  ")
 
 主要原因：在滚动过程中吸顶元素的 position:sticky; 属性始终存在
 
@@ -87,7 +87,7 @@ if (offsetBottom <= sumHeight) {       
 
 在 IE 浏览器中，两层吸顶元素始终吸在一起&#x20;
 
-![  ](./image/3d680c45014e5b6c5f78590d2038ef0c_jJWfEwfj1o.webp "  ")
+![  ](./assets/image/3d680c45014e5b6c5f78590d2038ef0c_jJWfEwfj1o.webp "  ")
 
 主要原因：第二层吸顶元素在不需要吸顶的区域，它的 position 值也为 sticky
 
@@ -99,7 +99,7 @@ if (offsetBottom <= sumHeight) {       
 
 查看 vue-sticky 的源码，发现 position:fixed; 是设置在要吸顶的元素的第一个子元素上&#x20;
 
-![  ](./image/c02c4de5ac1f254094bbacf18e336e9b_WTxpXLXxSI.webp "  ")
+![  ](./assets/image/c02c4de5ac1f254094bbacf18e336e9b_WTxpXLXxSI.webp "  ")
 
 因此为了兼容IE需要多加一层 div 结构&#x20;
 

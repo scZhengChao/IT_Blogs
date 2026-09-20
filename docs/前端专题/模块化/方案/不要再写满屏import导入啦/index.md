@@ -56,7 +56,7 @@ import { Modal, Checkbox, Message} from '@arco-design/web-react'
 ```
 
 
-![](./image/image_mUeR88K5NP.png)
+![](./assets/image/image_mUeR88K5NP.png)
 
 **Re-export**一般用于收拢**同类型的模块、一般都是以文件夹为单位**，如`components、routes、utils、hooks、stories`等都通过各自的index.tsx暴露，这样就能极大程度的**简化导入路径、提升代码可读性、可维护性**。
 

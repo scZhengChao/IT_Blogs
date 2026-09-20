@@ -8,7 +8,7 @@
 
 在Fanout模式中，一条消息，会被所有订阅的队列都消费。但是，在某些场景下，我们希望不同的消息被不同的队列消费。这时就要用到Direct类型的Exchange。
 
-![](./image/image_YG4uUIcMI0.png)
+![](./assets/image/image_YG4uUIcMI0.png)
 
 在Direct模型下：
 
@@ -22,7 +22,7 @@
 2. 在consumer服务中，编写两个消费者方法，分别监听direct.queue1和direct.queue2
 3. 在publisher中编写测试方法，向itcast. direct发送消息
 
-![](./image/image_BsdREq9SDK.png)
+![](./assets/image/image_BsdREq9SDK.png)
 
 ### 3.5.1.基于注解声明队列和交换机
 

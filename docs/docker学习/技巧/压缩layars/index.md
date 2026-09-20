@@ -39,7 +39,7 @@ squash 功能会在 Docker 完成构建之后，将所有的 layers 压缩成一
 
 一些常见的**包管理器删除缓存**的方法：
 
-![](./image/image_btEoLqXmcr.png)
+![](./assets/image/image_btEoLqXmcr.png)
 
 另外，上面这个命令其实还有一个缺点。因为我们在同一个 RUN 中写多行，不容易看出这个 dnf 到底安装了什么。而且，第一行和最后一行不一样，如果修改，diff 看到的会是两行内容，很不友好，容易出错。
 

@@ -183,7 +183,7 @@ react-native-swipe-list-view
 
 [npm: react-native-swipe-list-view A ListView with rows that swipe open and closed.. Latest version: 3.2.9, last published: 8 months ago. Start using react-native-swipe-list-view in your project by running \`npm i react-native-swipe-lis https://www.npmjs.com/package/react-native-swipe-list-view](https://www.npmjs.com/package/react-native-swipe-list-view "npm: react-native-swipe-list-view A ListView with rows that swipe open and closed.. Latest version: 3.2.9, last published: 8 months ago. Start using react-native-swipe-list-view in your project by running `npm i react-native-swipe-lis https://www.npmjs.com/package/react-native-swipe-list-view")
 
-![  ](./image/dbc6e7e225c1bc1501c6a6d8cc911f08_GjcAIUDKhQ.png "  ")
+![  ](./assets/image/dbc6e7e225c1bc1501c6a6d8cc911f08_GjcAIUDKhQ.png "  ")
 
 api文档：
 

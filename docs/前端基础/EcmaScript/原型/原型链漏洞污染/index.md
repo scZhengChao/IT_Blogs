@@ -78,7 +78,7 @@ function merge(target, source) {
 
 图1.1 原型链关系图
 
-![](./image/image_RsSybZkke2.png)
+![](./assets/image/image_RsSybZkke2.png)
 
 ## 1.2 原型链查找机制
 
@@ -88,11 +88,11 @@ function merge(target, source) {
 
 在开发中，常常会用到 `toString()`、`valueOf()`等方法，`array`类型的变量拥有更多的方法，例如`forEach()`、`map()`、`includes()`等等。例如声明了一个`arr`数组类型的变量，arr变量却可以调用如下图中并未定义的方法和属性。
 
-![](./image/image_v8ygTQRMho.png)
+![](./assets/image/image_v8ygTQRMho.png)
 
 通过变量的隐式原型可以查看到，数组类型变量的原型中已经定义了这些方法。例如某变量的类型是`Array`，那么它就可以基于原型链查找机制，调用相应的方法或属性。
 
-![](./image/image_GTYkZ-NmL6.png)
+![](./assets/image/image_GTYkZ-NmL6.png)
 
 ## 1.4 风险点分析&原型链污染漏洞原理
 
@@ -165,7 +165,7 @@ app.listen(3001, () => {
 
 当一个游客用户访问网址：[http://127.0.0.1:3001/](http://127.0.0.1:3001/ "http://127.0.0.1:3001/") 时，页面会显示“同学，游泳健身，了解一下？”
 
-![](./image/image_iexszYZbe9.png)
+![](./assets/image/image_iexszYZbe9.png)
 
 可以看到在代码中使用了`loadsh`（4.17.10版本）的`merge()`函数，将用户的`payload`和`prefixPayload`做了合并。
 
@@ -173,15 +173,15 @@ app.listen(3001, () => {
 
 然而使用特殊的`payload`测试，也就是运行一下我们的`attack.py`脚本
 
-![](./image/image_SKZqQ-BnT_.png)
+![](./assets/image/image_SKZqQ-BnT_.png)
 
 当我们再访问http\://127.0.0.1:3001时，会发现返回的结果如下：
 
-![](./image/image_PSEr8sRaeX.png)
+![](./assets/image/image_PSEr8sRaeX.png)
 
 瞬间变成了健身房的VIP对吧，可以快乐白嫖了？此时，无论什么用户访问这个网址，返回的网页都会是显示如上结果，**人人VIP时代**。如果是咱写的代码在线上出现这问题，【事故通报】了解一下。
 
-![](./image/image_L-GSo6ZE6e.png)
+![](./assets/image/image_L-GSo6ZE6e.png)
 
 [attact.py](http://attact.py "attact.py") 的代码如下：
 
@@ -346,7 +346,7 @@ app.listen(8888, '0.0.0.0');
 
 先看看我们可以实现的攻击效果：
 
-![](./image/image_UgPtl8DjAu.png)
+![](./assets/image/image_UgPtl8DjAu.png)
 
 可以看到，借助`attack.py`脚本，我们可以执行任意的`shell`命令，于此同时我们还保证了不会影响其他用户（管理员无法轻易感知入侵），在接下来的情况黑客就会常识性地进行提权、权限维持、横向渗透等攻击，以获取更大利益，但与此同时，也会给企业带来更大损失。
 
@@ -435,7 +435,7 @@ if __name__ == "__main__":
 
    **A**：在我使用的`loadsh`库4.17.10版本中，发现针对`__proto__`关键词做了判断和过滤，因此想到了通过访问构造函数的`prototype`的方式绕过
 
-![](./image/image_w6xNd9Yenw.png)
+![](./assets/image/image_w6xNd9Yenw.png)
 
 1. **Q**：在Demo中，为什么被攻击后，任意用户访问都是VIP身份了？
 

@@ -1,6 +1,6 @@
 # 彩虹文字
 
-![  ](./image/640_RVaqVTaf_9.gif "  ")
+![  ](./assets/image/640_RVaqVTaf_9.gif "  ")
 
 ```html 
 <!doctype html>

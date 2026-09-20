@@ -87,4 +87,4 @@ $(function () {
 
 &#x20;JavaScript 的 window\.onload 事件是等到所有内容，包括外部图片之类的文件加载完后，才会执行。
 
-![](./image/image_LB1zzOEakF.png)
+![](./assets/image/image_LB1zzOEakF.png)

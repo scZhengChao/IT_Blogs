@@ -118,7 +118,7 @@ exit
 
 通过以上命令后，就创建成功runner啦，这时候我们去GitLab中我们创建Runner的区域刷新就能看到了
 
-![](./image/image_O7BhnoZu91.png)
+![](./assets/image/image_O7BhnoZu91.png)
 
 或者
 
@@ -231,7 +231,7 @@ docker run \
 
 我们使用[docker](https://so.csdn.net/so/search?q=docker\&spm=1001.2101.3001.7020 "docker") 执行器时发现每次，构建都会去拉取基础镜像，这样很费时间
 
-![](./image/image_j1xE1D7mDK.png)
+![](./assets/image/image_j1xE1D7mDK.png)
 
 这种情况，我们可以通过修改，runner的配置实现本地存在镜像时，不再去下载镜像**首先找到runner的配置文件**
 
@@ -314,7 +314,7 @@ pull_policy="if-not-present"
 
 再次执行流水线任务，可以看到已经没有去下载镜像了
 
-![](./image/image_Y-wzzBlfM3.png)
+![](./assets/image/image_Y-wzzBlfM3.png)
 
 很明显，never是从不从远端拉镜像，只用本地。`if-not-present` 是优先本地，然后是从网络拉取镜像。`always` 是从远端拉取镜像。
 
@@ -388,6 +388,6 @@ volumes:
 
 4.再触发流水线可以看到，已经有Debug入口了，在任务执行期间，可以通过这里进入当前runner内部，查看任务具体详情
 
-![](./image/image_751YzbZ_Lt.png)
+![](./assets/image/image_751YzbZ_Lt.png)
 
 #

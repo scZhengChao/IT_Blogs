@@ -2,7 +2,7 @@
 
 在Linux下面，设备也是一个文件，**比如磁盘、优盘或者光盘等。包括无线网卡、摄像头和串口等都是一个文件。而通常这些文件都是在/dev目录下面，大家可以切换到该目录下看看具体的内容。**
 
-![  ](./image/59fbde6ba15c4294a6d70fd9972bba6b_hoBM9ry8gb.jpeg "  ")
+![  ](./assets/image/59fbde6ba15c4294a6d70fd9972bba6b_hoBM9ry8gb.jpeg "  ")
 
 图5 设备目录
 
@@ -10,6 +10,6 @@
 
 处理实体设备外，在该目录下面还有很多伪设备。比如/dev/random表示一个产生随机数的设备，/dev/loop0则是一个将本地文件映射为磁盘的虚拟设备。这些伪设备有的时候非常用于，我们经常使用这些设备做一些测试。
 
-![  ](./image/7acd56976fdf4bb1809d651f6c7fa01d_AuD7pSuCa8.jpeg "  ")
+![  ](./assets/image/7acd56976fdf4bb1809d651f6c7fa01d_AuD7pSuCa8.jpeg "  ")
 
 图6 GUI目录

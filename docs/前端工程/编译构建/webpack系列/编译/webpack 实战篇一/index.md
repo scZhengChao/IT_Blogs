@@ -69,17 +69,17 @@ new FriendlyErrorsPlugin({
 ```
 
 
-![  ](./image/324f7e02c8b527f76c25b3c0fb8e5427_na2yN6yS6P.png "  ")
+![  ](./assets/image/324f7e02c8b527f76c25b3c0fb8e5427_na2yN6yS6P.png "  ")
 
 ## **使用之后的结果展示**
 
 执行handlerRunConfig方法的结果：
 
-![  ](./image/2d71dd483916c1d55af0f845f20d47c2_eko80_E1-Z.png "  ")
+![  ](./assets/image/2d71dd483916c1d55af0f845f20d47c2_eko80_E1-Z.png "  ")
 
 执行**initRunIcon方法的结果， 默认不传参数的结果，** 其他传参结果自行玩呀\~\~
 
-![  ](./image/03e0f6cf1ecd0a4b7e56f7f07bee4fad_foBLU7C3L_.png "  ")
+![  ](./assets/image/03e0f6cf1ecd0a4b7e56f7f07bee4fad_foBLU7C3L_.png "  ")
 
 # **svg  图标配置使用**
 

@@ -20,7 +20,7 @@
 
 跨域脚本攻击 [XSS](https://baike.baidu.com/view/2161269.htm "XSS") 是最常见、危害最大的网页安全漏洞。
 
-![](./image/image_CTdlXsAiCX.png)
+![](./assets/image/image_CTdlXsAiCX.png)
 
 为了防止它们，要采取很多编程措施，非常麻烦。很多人提出，**能不能根本上解决问题，浏览器自动禁止外部注入恶意脚本？**
 
@@ -34,7 +34,7 @@ CSP 大大增强了网页的安全性。攻击者即使发现了漏洞，也没�
 
 两种方法可以启用 CSP。**一种是通过 HTTP 头信息的**\*\*`Content-Security-Policy`\*\***的字段。**
 
-![](./image/image_8307HvLpLC.png)
+![](./assets/image/image_8307HvLpLC.png)
 
 > Content-Security-Policy: script-src 'self'; object-src 'none';
 > style-src [cdn.example.org](http://cdn.example.org "cdn.example.org") [third-party.org](http://third-party.org "third-party.org"); child-src https:
@@ -62,11 +62,11 @@ CSP 大大增强了网页的安全性。攻击者即使发现了漏洞，也没�
 
 Chrome 的报错信息。
 
-![](./image/image_DhY1EyHLl2.png)
+![](./assets/image/image_DhY1EyHLl2.png)
 
 Firefox 的报错信息。
 
-![](./image/image_89kWh4YlH7.png)
+![](./assets/image/image_89kWh4YlH7.png)
 
 ## 二、限制选项
 
@@ -138,7 +138,7 @@ CSP 提供了很多限制选项，涉及安全的各个方面。
 ```
 
 
-![](./image/image_zhC22zF9do.png)
+![](./assets/image/image_zhC22zF9do.png)
 
 ## 三、Content-Security-Policy-Report-Only
 

@@ -43,7 +43,7 @@ function fn(): never {
 ```
 
 
-![](./image/image_WVeX2aZkd4.png)
+![](./assets/image/image_WVeX2aZkd4.png)
 
 #### never 在联合类型中会被过滤掉：
 

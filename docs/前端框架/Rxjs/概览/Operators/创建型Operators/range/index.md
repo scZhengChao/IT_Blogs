@@ -8,7 +8,7 @@
 
 > 学过`Python`的小伙伴有木有一点似曾相识的感觉。
 
-![](./image/image_ZsqMnDZ73z.png)
+![](./assets/image/image_ZsqMnDZ73z.png)
 
 ```javascript 
 const source = Rx.Observable.range(1, 4);

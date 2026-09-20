@@ -14,7 +14,7 @@
 
 微信PC端输入框支持**图片、文件、文字、Emoji**四种消息类型，本篇文章就这四种类型的消息输入进行实现。我们选用HTML5新增标签属性`contenteditable`来实现。
 
-![](./image/image_w8FGGm6oMq.png)
+![](./assets/image/image_w8FGGm6oMq.png)
 
 ## `contenteditable`属性
 
@@ -34,7 +34,7 @@
 ```
 
 
-![](./image/image_1oMhgMUjFd.png)
+![](./assets/image/image_1oMhgMUjFd.png)
 
 ## 文字输入
 
@@ -55,7 +55,7 @@
 ```
 
 
-![](./image/image_1Hxeji1qX3.png)
+![](./assets/image/image_1Hxeji1qX3.png)
 
 此时文本就可以正常输入了
 
@@ -120,7 +120,7 @@ editor.addEventListener("paste", (e) => {
 ```
 
 
-![](./image/image__IQ2fXJVSv.png)
+![](./assets/image/image__IQ2fXJVSv.png)
 
 现在就可以粘贴图片了，无论是截图的图片还是复制的文件图片都可以粘贴到文本框内了。
 
@@ -196,7 +196,7 @@ function handleImage(imageFile) {
 
 > 这里粘贴到光标位置就正常了
 
-![](./image/image_at39b9dI5T.png)
+![](./assets/image/image_at39b9dI5T.png)
 
 ## 文件输入
 
@@ -204,11 +204,11 @@ function handleImage(imageFile) {
 
 - 粘贴文件
 
-![](./image/image_HM7yd2btmY.png)
+![](./assets/image/image_HM7yd2btmY.png)
 
 - 选择文件
 
-![](./image/image_CbdPIeZUmr.png)
+![](./assets/image/image_CbdPIeZUmr.png)
 
 ### 粘贴文件
 
@@ -293,7 +293,7 @@ function handleFile(file) {
 
 因为我们的卡片是DOM，其父元素也就是输入框，开启了`contenteditable` ，因此它的该属性也继承了父元素的值，所以本身也是可以编辑的。分析到这里，就会涌现出一个方案——将卡片最外层 `div` 的`contenteditable` 属性值设为 `false` 。
 
-![](./image/image_EK99P5UT0Z.png)
+![](./assets/image/image_EK99P5UT0Z.png)
 
 但是，设置了 `contenteditable="false"` 后就变成了不可编辑元素，**光标在他周围就不**显示了🥹🥹🥹
 
@@ -495,4 +495,4 @@ fileDom.addEventListener("click", () => {
 
 以上的源码已经上传到了[Github](https://link.juejin.cn/?target=https://github.com/chongdongkongjian/RichTextInput "Github")， 想要源码的小伙伴自己去拉。代码读取文件那部分可以使用`Promise` 进行优化。最后，欢迎大佬批评指正。
 
-[Demo.zip](./file/Demo_Zh4kTgr2Ru.zip " Demo.zip")
+[Demo.zip](./assets/file/Demo_Zh4kTgr2Ru.zip " Demo.zip")

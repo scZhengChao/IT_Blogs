@@ -138,7 +138,7 @@ export default function (loading: boolean) {
 
 如（文案语言会自动读取 umi locale 配置切换）：
 
-![](./image/image_quYaIwflJq.png)
+![](./assets/image/image_quYaIwflJq.png)
 
 如果通过路由的模式引入子应用，可以配置如下：
 

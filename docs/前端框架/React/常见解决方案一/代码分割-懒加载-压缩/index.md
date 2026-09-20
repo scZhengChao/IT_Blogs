@@ -81,7 +81,7 @@ export class App extends Component {
 ```
 
 
-![  ](./image/62c8a05b0ded300d4df98e792db0253a_rStpek5oPn.png "  ")
+![  ](./assets/image/62c8a05b0ded300d4df98e792db0253a_rStpek5oPn.png "  ")
 
 # 2.Lazy   Suspense
 

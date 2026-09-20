@@ -30,7 +30,8 @@ function getEntries(directory: string) {
     })
     .filter(entry =>
       !entry.name.startsWith('.') &&
-      entry.name !== '_meta.json',
+      entry.name !== '_meta.json' &&
+      entry.name !== 'assets',
     )
     .sort((left, right) => {
       if (left.isDirectory() !== right.isDirectory()) {

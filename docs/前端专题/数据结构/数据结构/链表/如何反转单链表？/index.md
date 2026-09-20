@@ -8,7 +8,7 @@
 
 链表是表示一系列节点的数据结构，其中每个节点包含两条信息：节点的值和指向列表中下一个节点的指针/引用。链表的开头称为头，链表末尾的节点称为尾，指向空值；null。
 
-![](./image/image_7ioz1n2RjK.png)
+![](./assets/image/image_7ioz1n2RjK.png)
 
 与数组相比，链表的主要好处是更容易在列表中插入或删除节点。另一方面，不允许随机访问数据，因为与数组不同，链表没有索引。
 
@@ -33,7 +33,7 @@ head.next.next.next.next = new Node(2)
 
 如果我们被要求反转一个链表，我们需要让尾部成为头部：
 
-![](./image/image_Lq8-IHACu2.png)
+![](./assets/image/image_Lq8-IHACu2.png)
 
 我们**可以迭代或递归地反转链**表，但我们将只关注通过以下步骤来解释今天的迭代方法：
 
@@ -73,4 +73,4 @@ const reverseList = head => {
 
 用图解释：
 
-![](./image/image_1YRottAhjF.png)
+![](./assets/image/image_1YRottAhjF.png)

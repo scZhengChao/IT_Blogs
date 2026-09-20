@@ -170,7 +170,7 @@ console.log(a2.pro2)//from protptype2
 ```
 
 
-[单例模式.html](./file/单例模式_2G20Ch5Bln.html "单例模式.html")
+[单例模式.html](./assets/file/单例模式_2G20Ch5Bln.html "单例模式.html")
 
 ## es6
 

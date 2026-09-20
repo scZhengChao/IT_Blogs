@@ -41,7 +41,7 @@ equalsIgnoreCase(); // 忽略二进制比较
 ```
 
 
-![](./image/image_MmmcyMTAJX.png)
+![](./assets/image/image_MmmcyMTAJX.png)
 
 ```java title="案例"
 // 查找子串；
@@ -67,15 +67,15 @@ String str3 = new String(arr,"GBK");
 
 > 字节是计算机存储数据的基本单位；
 
-![](./image/image_yOFAKfLZfB.png)
+![](./assets/image/image_yOFAKfLZfB.png)
 
 &#x20;&#x20;
 
 > 每个字节**是8位；是不能超过127的；中文转换为字节后超过了127；发生了溢出；以负数的形式显示**；
 
-![](./image/image_3xIa2rvjEV.png)
+![](./assets/image/image_3xIa2rvjEV.png)
 
-![](./image/image_mr7tvM4LEs.png)
+![](./assets/image/image_mr7tvM4LEs.png)
 
 # equals比较
 
@@ -94,7 +94,7 @@ String str3 = new String(arr,"GBK");
 ```
 
 
-![](./image/image_7reR3OMtxJ.png)
+![](./assets/image/image_7reR3OMtxJ.png)
 
 # 不可变性
 
@@ -109,9 +109,9 @@ String s2 = "hello," + s1
 ```
 
 
-![](./image/image_O-rdHjZU2v.png)
+![](./assets/image/image_O-rdHjZU2v.png)
 
-![](./image/image_-dY7f6-XYK.png)
+![](./assets/image/image_-dY7f6-XYK.png)
 
 ```java 
 String s3 = new String("hello");
@@ -120,4 +120,4 @@ s3.substring(0,3); //  储存在常量池当中；
 ```
 
 
-![](./image/image_cOeSMgVUl8.png)
+![](./assets/image/image_cOeSMgVUl8.png)

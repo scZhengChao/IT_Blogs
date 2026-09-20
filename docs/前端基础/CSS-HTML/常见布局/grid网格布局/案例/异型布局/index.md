@@ -13,7 +13,7 @@
 
 ### 1. 照片墙
 
-![](./image/image_3Xl9WiBWKK.png)
+![](./assets/image/image_3Xl9WiBWKK.png)
 
 ```javascript 
 <!DOCTYPE html>
@@ -79,7 +79,7 @@
 
 ### 2. 漫画效果
 
-![](./image/image_i0Nx2rdQnX.png)
+![](./assets/image/image_i0Nx2rdQnX.png)
 
 ```javascript 
 <!DOCTYPE html>
@@ -169,7 +169,7 @@
 
 ### 3. 画报效果
 
-![](./image/image_tUB5VyNUBU.png)
+![](./assets/image/image_tUB5VyNUBU.png)
 
 ```javascript 
 <!DOCTYPE html>

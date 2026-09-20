@@ -180,7 +180,7 @@ Q.all([p1,p2]).then(function(res){
 
 ## coding
 
-[q.js](./file/q_NY_YYKhjT7.js "q.js")
+[q.js](./assets/file/q_NY_YYKhjT7.js "q.js")
 
 # **Memeda**
 

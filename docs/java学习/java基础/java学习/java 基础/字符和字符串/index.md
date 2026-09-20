@@ -213,11 +213,11 @@ public class Main {
 
 执行`String s = "hello";`时，JVM虚拟机先创建字符串`"hello"`，然后，把字符串变量`s`指向它：
 
-![](./image/image_M8Gtww2BTB.png)
+![](./assets/image/image_M8Gtww2BTB.png)
 
 紧接着，执行`s = "world";`时，JVM虚拟机先创建字符串`"world"`，然后，把字符串变量`s`指向它：
 
-![](./image/image_oyCcjBU9Dz.png)
+![](./assets/image/image_oyCcjBU9Dz.png)
 
 原来的字符串`"hello"`还在，只是我们无法通过变量`s`访问它而已。因此，字符串的不可变是指字符串内容不可变。至于变量，可以一会指向字符串`"hello"`，一会指向字符串`"world"`。
 

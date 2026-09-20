@@ -149,7 +149,7 @@ func ValueOf(i any) Value
 
 可以看到两个函数的参数类型都是`any`，也就是`interface{}`的别名。如果想要进行反射操作，就需要先将其类型转换为`interface{}`，这也是为什么前面提到了只要有反射就离不开空接口。不严谨的说，空接口就是连接Go类型系统与反射的桥梁，下图很形象的描述了其过程。
 
-![](./image/image_jXfJhZdget.png)
+![](./assets/image/image_jXfJhZdget.png)
 
 > 提示
 > 下文中为了方便，统一使用别名`any`来替代`interface{}`

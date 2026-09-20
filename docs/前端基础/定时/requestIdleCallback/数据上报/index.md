@@ -77,7 +77,7 @@
 ```
 
 
-![](./image/image_wPg3j_QmwH.png)
+![](./assets/image/image_wPg3j_QmwH.png)
 
 而如果不使用 `requestIdleCallback` , 直接进行数据上报，会直接卡死主线程，影响到浏览器的渲染。
 

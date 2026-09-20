@@ -70,7 +70,7 @@ document.getElementById('msg').innerHTML = `<mark>${value}</mark>`;
 
 **注意：** 要在 JS 中读取这些属性的值，可以通过getAttribute('data-custom-attr')g来获取，但是标准方式是用dataset来获取。
 
-![  ](./image/46e9c858c91a6a72c953109cb66a4072_hSAFxk7wfA.gif "  ")
+![  ](./assets/image/46e9c858c91a6a72c953109cb66a4072_hSAFxk7wfA.gif "  ")
 
 # **不常见标签**
 
@@ -125,7 +125,7 @@ document.getElementById('msg').innerHTML = `<mark>${value}</mark>`;
 ```
 
 
-![  ](./image/86d04fe90a0b425a7d4781fa1aba1549_GcORb6z_IC.gif "  ")
+![  ](./assets/image/86d04fe90a0b425a7d4781fa1aba1549_GcORb6z_IC.gif "  ")
 
 # progress meter**原生进度条和进度**
 
@@ -255,6 +255,6 @@ contenteditable是可以在元素上设置以使内容可编辑的属性。它�
 ```
 
 
-![  ](./image/1e30405365fc09aedec5f75647a41dd2_jWL4Jftd8i.gif "  ")
+![  ](./assets/image/1e30405365fc09aedec5f75647a41dd2_jWL4Jftd8i.gif "  ")
 
 可以让span或div标签可编辑，并且可以使用css样式向其添加任何丰富的内容。这将比使用输入字段处理它更好。试试看！

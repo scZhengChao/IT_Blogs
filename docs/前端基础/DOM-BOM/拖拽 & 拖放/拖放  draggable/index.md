@@ -454,11 +454,11 @@ target.ondrop = function(e){
 ```
 
 
-[drag.html](./file/drag_a76c6wDKQL.html "drag.html")
+[drag.html](./assets/file/drag_a76c6wDKQL.html "drag.html")
 
 **拖拽改变顺序：**
 
-[drag.html](./file/drag_qIh-03jeEK.html "drag.html")
+[drag.html](./assets/file/drag_qIh-03jeEK.html "drag.html")
 
 # 子页面
 

@@ -41,11 +41,11 @@
 
 本文主要侧重于分析几种常见的攻击的类型以及防御的方法。
 
-![  ](./image/640_YoLCNqdsGV.jpg "  ")
+![  ](./assets/image/640_YoLCNqdsGV.jpg "  ")
 
-![  ](./image/640_YOpWEm6tLS.jpg "  ")
+![  ](./assets/image/640_YOpWEm6tLS.jpg "  ")
 
-![  ](./image/640_w55iFAYqJD.png "  ")
+![  ](./assets/image/640_w55iFAYqJD.png "  ")
 
 ## **二、CSRF**
 
@@ -55,7 +55,7 @@ CSRF(Cross Site Request Forgery)，即跨站请求伪造，是一种常见的Web
 
 下面先介绍一下CSRF攻击的原理：
 
-![  ](./image/640_L9N9HS6KNe.jpg "  ")
+![  ](./assets/image/640_L9N9HS6KNe.jpg "  ")
 
 完成 CSRF 攻击必须要有三个条件：
 
@@ -67,7 +67,7 @@ CSRF(Cross Site Request Forgery)，即跨站请求伪造，是一种常见的Web
 
 &#x20;当我们登入转账页面后，突然眼前一亮**惊现"XXX隐私照片，不看后悔一辈子"的链接**，耐不住内心躁动，立马点击了该危险的网站（页面代码如下图所示），但当这页面一加载，便会执行submitForm这个方法来提交转账请求，从而将10块转给黑客。
 
-![  ](./image/640_sI6JlWwOkC.jpg "  ")
+![  ](./assets/image/640_sI6JlWwOkC.jpg "  ")
 
 ### **2.如何防御**
 
@@ -153,11 +153,11 @@ HTTP Referer是header的一部分，当浏览器向web服务器发送请求时�
 ```
 
 
-![  ](./image/640__Zo8-dAK28.jpg "  ")
+![  ](./assets/image/640__Zo8-dAK28.jpg "  ")
 
 从上图可知，攻击者通过图片作为页面背景，隐藏了用户操作的真实界面，当你按耐不住好奇点击按钮以后，真正的点击的其实是隐藏的那个页面的订阅按钮，然后就会在你不知情的情况下订阅了。
 
-![  ](./image/640_GLmpBZ0Abi.jpg "  ")
+![  ](./assets/image/640_GLmpBZ0Abi.jpg "  ")
 
 ### **3. 如何防御**
 
@@ -200,11 +200,11 @@ X-FRAME-OPTIONS
 
 安全意识低的用户点击后,经过服务器或者浏览器解析后，跳到恶意的网站中。
 
-![  ](./image/640_86eyVa7wiM.jpg "  ")
+![  ](./assets/image/640_86eyVa7wiM.jpg "  ")
 
 恶意链接需要进行伪装,经常的做法是熟悉的链接后面加上一个恶意的网址，这样才迷惑用户。
 
-![  ](./image/640_zazQbQE37J.jpg "  ")
+![  ](./assets/image/640_zazQbQE37J.jpg "  ")
 
 诸如伪装成像如下的网址，你是否能够识别出来是恶意网址呢？
 
@@ -251,7 +251,7 @@ SQL注入是一种常见的Web安全漏洞，攻击者利用这个漏洞，可�
 
 我们先举一个万能钥匙的例子来说明其原理：
 
-![  ](./image/640_d040uypIUZ.jpg "  ")
+![  ](./assets/image/640_d040uypIUZ.jpg "  ")
 
 ```纯文本 
  1 < form   action = "/login"   method = "POST" > 2      < p > Username:  < input   type = "text"   name = "username"  /></ p > 3      < p > Password:  < input   type = "password"   name = "password"  /></ p > 4      < p >< input   type = "submit"   value = "登陆"  /></ p > 5 </ form >
@@ -312,7 +312,7 @@ why! ----这就是SQL注入
 
 。
 
-![  ](./image/640_JTkZco_kPR.jpg "  ")
+![  ](./assets/image/640_JTkZco_kPR.jpg "  ")
 
 我们会发现SQL注入流程中与正常请求服务器类似，只是黑客控制了数据，构造了SQL查询，而正常的请求不会SQL查询这一步，
 
@@ -351,7 +351,7 @@ OS命令注入攻击指通过Web应用，执行非法的操作系统命令达到
 
 ### **1.原理**
 
-![  ](./image/640_JV9F062CmZ.jpg "  ")
+![  ](./assets/image/640_JV9F062CmZ.jpg "  ")
 
 黑客构造命令提交给web应用程序，web应用程序提取黑客构造的命令，拼接到被执行的命令中，因黑客注入的命令打破了原有命令结构，导致web应用执行了额外的命令，最后web应用程序将执行的结果输出到响应页面中。
 

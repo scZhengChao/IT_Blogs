@@ -7,8 +7,8 @@
 
 ## **marqueen  上下多行轮播**
 
-[setIimeMarqueen.html](./file/setIimeMarqueen_TcexBvp72m.html "setIimeMarqueen.html")
+[setIimeMarqueen.html](./assets/file/setIimeMarqueen_TcexBvp72m.html "setIimeMarqueen.html")
 
 ## transitionend 实现多行轮播
 
-[setIimeMarqueen.html](./file/setIimeMarqueen_C5vOIJT9Ul.html "setIimeMarqueen.html")
+[setIimeMarqueen.html](./assets/file/setIimeMarqueen_C5vOIJT9Ul.html "setIimeMarqueen.html")

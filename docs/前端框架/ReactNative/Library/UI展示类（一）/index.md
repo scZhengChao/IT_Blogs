@@ -462,7 +462,7 @@ export default withRedux(mapProps, mapAction)(extendLiftCycle(MutipleSelectAreaP
 ```
 
 
-[city.min的副本.js](./file/city.min的副本_5B_q8jr80l.js "city.min的副本.js")
+[city.min的副本.js](./assets/file/city.min的副本_5B_q8jr80l.js "city.min的副本.js")
 
 ```javascript 
  //AreaItem

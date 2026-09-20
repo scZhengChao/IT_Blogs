@@ -36,7 +36,7 @@ IntersectionObserver API 的使用教程请移步[这里](http://www.ruanyifeng.
 
 兼容性：
 
-![  ](./image/bb88b08afa30533a8c6a422d7f3d6720_o69U5bDIlF.png "  ")
+![  ](./assets/image/bb88b08afa30533a8c6a422d7f3d6720_o69U5bDIlF.png "  ")
 
 不难发现还是有那么一点兼容性问题的。所以我们不如将throttle和IntersectionObserver 方案结合起来使用
 

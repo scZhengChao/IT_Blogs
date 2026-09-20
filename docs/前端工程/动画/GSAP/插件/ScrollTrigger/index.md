@@ -64,7 +64,7 @@ gsap.to(".green", {
 
 start和end属性用来决定滚动触发元素开始的位置，可以是字符串、数值或者函数，两者的用法类似，我们以start为例；start的值默认是`"top bottom"`，它的含义是当触发物体（trigger）的顶部（top）碰到浏览器的底部（bottom）时；我们看下当开启标记marker时的触发位置。
 
-![](./image/image_1BkRQxkUXp.png)
+![](./assets/image/image_1BkRQxkUXp.png)
 
 我们看到`scroller-start`的线就是浏览器视窗的边界线，当浏览器向下滚动时，这条线滚动到物体的`start`线时，就触发了动画效果；同样的道理，向上滚动时，当`scroll-end`的线触碰到`end`时，动画结束。
 

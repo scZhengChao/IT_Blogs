@@ -113,7 +113,7 @@ store.addObserver(new ProductObserver() {
 
 用一张图画出观察者模式：
 
-![](./image/image_VdbJeewbAO.png)
+![](./assets/image/image_VdbJeewbAO.png)
 
 观察者模式也有很多变体形式。有的观察者模式把被观察者也抽象出接口：
 
@@ -150,7 +150,7 @@ public interface ProductObserver {
 
 广义的观察者模式**包括所有消息系统。所谓消息系统，** 就是把观察者和被观察者完全分离，通过消息系统本身来通知：
 
-![](./image/image_E9CuBz01oP.png)
+![](./assets/image/image_E9CuBz01oP.png)
 
 消息发送方称为Producer，消息接收方称为Consumer，Producer发送消息的时候，必须选择发送到哪个Topic。Consumer可以订阅自己感兴趣的Topic，从而只获得特定类型的消息。
 

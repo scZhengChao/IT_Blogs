@@ -19,7 +19,7 @@
 
 Rxjs 弹珠图如下：subscriber1在ReplaySubject发出值前订阅，subscriber2在ReplaySubject发出值后订阅，二者都能拿到ReplaySubject最近发出的值。
 
-![](./image/image_CsQ-n4Ykr5.png)
+![](./assets/image/image_CsQ-n4Ykr5.png)
 
 以下是一个使用 ReplaySubject 的例子：
 

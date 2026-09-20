@@ -29,7 +29,7 @@ npm install @hurdlegroup/robotjs
 ```
 
 
-[robotjs-master.zip](./file/robotjs-master_rQYdXIlq5D.zip "robotjs-master.zip")
+[robotjs-master.zip](./assets/file/robotjs-master_rQYdXIlq5D.zip "robotjs-master.zip")
 
 > 经常会下载失败；请用 —ignore-scripts 配置
 

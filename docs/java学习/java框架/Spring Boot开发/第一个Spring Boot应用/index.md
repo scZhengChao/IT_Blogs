@@ -11,7 +11,7 @@
 
 我们新建一个springboot-hello的工程，创建标准的Maven目录结构如下：
 
-![](./image/image_DSXcbMLmPm.png)
+![](./assets/image/image_DSXcbMLmPm.png)
 
 其中，在src/main/resources目录下，注意到几个文件：
 
@@ -143,7 +143,7 @@ $ DB_HOST=10.0.1.123 DB_USER=prod DB_PASSWORD=xxxx java -jar xxx.jar
 
 我们再来看源码目录结构：
 
-![](./image/image_XkECcVLEvW.png)
+![](./assets/image/image_XkECcVLEvW.png)
 
 在存放源码的`src/main/java`目录中，Spring Boot对Java包的层级结构有一个要求。注意到我们的根package是`com.itranswarp.learnjava`，下面还有`entity`、`service`、`web`等子package。Spring Boot要求`main()`方法所在的启动类必须放到根package下，命名不做要求，这里我们以`Application.java`命名，它的内容如下：
 

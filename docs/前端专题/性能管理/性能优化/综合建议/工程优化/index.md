@@ -29,7 +29,7 @@
 
 。&#x20;
 
-![  ](./image/2967e307dea32591e2ebf89a37a75b4d_Q1G7A-DiUI.jpeg "  ")
+![  ](./assets/image/2967e307dea32591e2ebf89a37a75b4d_Q1G7A-DiUI.jpeg "  ")
 
 # 优化的目的&#x20;
 
@@ -47,7 +47,7 @@
 4. **图片优化**
 5. **节流与防抖**
 
-![  ](./image/4246b55ab85dd3c5c918859768385fcc_QXnYHc1QUt.png "  ")
+![  ](./assets/image/4246b55ab85dd3c5c918859768385fcc_QXnYHc1QUt.png "  ")
 
 # 加载资源优化&#x20;
 
@@ -98,7 +98,7 @@
 
 ，则会影响整个页面的加载速度从而影响用户体验。所以说尽可能的将脚本往后挪，减少对并发下载的影响。&#x20;
 
-![  ](./image/fefdc4ff292f77a409eb95b6c643827d_hKApmQUC4L.jpeg "  ")
+![  ](./assets/image/fefdc4ff292f77a409eb95b6c643827d_hKApmQUC4L.jpeg "  ")
 
 # 渲染优化&#x20;
 
@@ -213,7 +213,7 @@ JS引擎是独立于渲染引擎存在的，就是说插在页面那，就在那
 - 对于动画新建图层
 - 启用 GPU 硬件加速
 
-![  ](./image/1af772efb1c6db0d20834e54188789a5_GK7N_h3Qy0.jpeg "  ")
+![  ](./assets/image/1af772efb1c6db0d20834e54188789a5_GK7N_h3Qy0.jpeg "  ")
 
 # 浏览器缓存&#x20;
 
@@ -221,7 +221,7 @@ JS引擎是独立于渲染引擎存在的，就是说插在页面那，就在那
 
 发现有缓存直接用。&#x20;
 
-![  ](./image/e68cd7a3794428335d85c6c5011a6403_meR3YR0HZm.png "  ")
+![  ](./assets/image/e68cd7a3794428335d85c6c5011a6403_meR3YR0HZm.png "  ")
 
 Expires: 绝对时间，判断客户端日期是否超过这个时间  &#x20;
 
@@ -259,7 +259,7 @@ Etag/If-None-Match&#x20;
 
 在一些浏览器的a标签是默认打开dns预解析的，在https协议下dns预解析是关闭的，加入mate后会打开。&#x20;
 
-![  ](./image/909e9f7231041971510115579eec2b30_ImfTv8Bm6a.png "  ")
+![  ](./assets/image/909e9f7231041971510115579eec2b30_ImfTv8Bm6a.png "  ")
 
 # 图片优化&#x20;
 
@@ -280,7 +280,7 @@ Etag/If-None-Match&#x20;
 
 [各种图片格式的特点](https://www.toutiao.com/a1659380667104270 "各种图片格式的特点")
 
-![  ](./image/f36283432f622c14e88bb5aa45f8af47_pge1Sx1IS2.jpeg "  ")
+![  ](./assets/image/f36283432f622c14e88bb5aa45f8af47_pge1Sx1IS2.jpeg "  ")
 
 # 节流和防抖&#x20;
 

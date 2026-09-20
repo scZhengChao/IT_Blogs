@@ -1,6 +1,6 @@
 # 鉴权
 
-[06\_Koa实战 - 鉴权【瑞客论坛 www.ruike1.com】.pdf](<./file/06_Koa实战 - 鉴权【瑞客论坛 www.ruike1.com】_8bHPz6UhTb.pdf> "06_Koa实战 - 鉴权【瑞客论坛 www.ruike1.com】.pdf")
+[06\_Koa实战 - 鉴权【瑞客论坛 www.ruike1.com】.pdf](<./assets/file/06_Koa实战 - 鉴权【瑞客论坛 www.ruike1.com】_8bHPz6UhTb.pdf> "06_Koa实战 - 鉴权【瑞客论坛 www.ruike1.com】.pdf")
 
 [JWT](./JWT/index.md "JWT")
 

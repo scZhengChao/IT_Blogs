@@ -29,7 +29,7 @@
 
 bisect 就是二分的意思。
 
-![](./image/image_BEEarQXUbb.png)
+![](./assets/image/image_BEEarQXUbb.png)
 
 我们创建个 demo 项目试一下：
 
@@ -63,9 +63,9 @@ b.js 也是每行创建一个 commit：
 
 我们把 **111 那个 commit 做为 good 的：**
 
-![](./image/image_TI5ZZQw1CK.png)
+![](./assets/image/image_TI5ZZQw1CK.png)
 
-![](./image/image_bLJN9ibOj1.png)
+![](./assets/image/image_bLJN9ibOj1.png)
 
 这时候提示你还有 2 个 commit 要测试，也就是还有 2 步。
 
@@ -77,7 +77,7 @@ b.js 也是每行创建一个 commit：
 
 这时候 git log 可以看到已经切换到 444 的 commit。
 
-![](./image/image__C58tzwhIe.png)
+![](./assets/image/image__C58tzwhIe.png)
 
 **我们跑下代码：**
 
@@ -85,7 +85,7 @@ b.js 也是每行创建一个 commit：
 
 **这时候还是报错的，所以继续指定当前 commit 为 bad：**
 
-![](./image/image_tOugGrXrTg.png)
+![](./assets/image/image_tOugGrXrTg.png)
 
 这时候中间的 commit 是 333，还需要 1 步了。
 
@@ -93,7 +93,7 @@ b.js 也是每行创建一个 commit：
 
 这时候确实切换到了 333：
 
-![](./image/image_lEL0kuOKM_.png)
+![](./assets/image/image_lEL0kuOKM_.png)
 
 这时候执行 git bisect view 是这样的：
 
@@ -113,9 +113,9 @@ b.js 也是每行创建一个 commit：
 
 然后切换到**了 222，这时候没报错了，标记为 good：**
 
-![](./image/image_b5atN3WOzB.png)
+![](./assets/image/image_b5atN3WOzB.png)
 
-![](./image/image__bVjprjNPS.png)
+![](./assets/image/image__bVjprjNPS.png)
 
 这样就找到了哪个 commit 出的错，是 333 这个 commit
 
@@ -139,7 +139,7 @@ git show fd4dbe4
 
 **我们可以执行 git bisect log 回顾下整个查找过程：**
 
-![](./image/image_EwEiKiTppo.png)
+![](./assets/image/image_EwEiKiTppo.png)
 
 通过一步步的二分查找，最终定位到了第一个出错的 commit。
 
@@ -165,7 +165,7 @@ git show fd4dbe4
 
 ![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/d107b98577e74c8196f71599f42f23ed~tplv-k3u1fbpfcp-zoom-in-crop-mark:1512:0:0:0.awebp?)
 
-![](./image/image_asucFC_MT6.png)
+![](./assets/image/image_asucFC_MT6.png)
 
 然后\*\* git bisect start 的时候用 --term-good、--term-bad 来指定一套新标记：\*\*
 
@@ -173,7 +173,7 @@ git show fd4dbe4
 
 这时候 git bisect terms 可以看到确实标记变了：
 
-![](./image/image_f3Fx4TkjYV.png)
+![](./assets/image/image_f3Fx4TkjYV.png)
 
 这时候就是用 aaa、bbb 来标记区间了：
 
@@ -183,7 +183,7 @@ git show fd4dbe4
 
 **这时候可以 git bisect skip：**
 
-![](./image/image_EjQJUuAh-N.png)
+![](./assets/image/image_EjQJUuAh-N.png)
 
 本来是在 444，因为无法确定是否是对的，所以 skip 了，这时候就移到了下一个 commit：
 
@@ -195,7 +195,7 @@ git show fd4dbe4
 
 **那 bisect 也没办法，它会把所有剩下的 commit 列出来，告诉你这些还没测试：**
 
-![](./image/image_Yonca7DdR6.png)
+![](./assets/image/image_Yonca7DdR6.png)
 
 这样是能快速找出目标 commit，但每个 commit 都要手动测试也太麻烦了，能不能自动化执行一个脚本来测试呢？
 
@@ -249,7 +249,7 @@ a+x 代表所有的（all）用户增加执行权限的意思。
 
 这样，666、777 没有涉及到 a.js 的更改，所以不在二分查找的范围内，查找的 commit 范围就缩小了很多：。
 
-![](./image/image_wKTzrUneMx.png)
+![](./assets/image/image_wKTzrUneMx.png)
 
 这里我们还是和之前一样的 commit 范围来测试：
 
@@ -266,7 +266,7 @@ git biset run ./test.js
 
 然后执行
 
-![](./image/image_dNZOP2LuOv.png)
+![](./assets/image/image_dNZOP2LuOv.png)
 
 可以看到，444 跑脚本报错了，然后回到 333 跑， 还是报错，然后去 222 跑，这是不报错了，就定位到了第一个出错的是 333 这个 commit。
 
@@ -274,7 +274,7 @@ git biset run ./test.js
 
 而且，这个过程是可以重做任意次的，你可以把 git bisect log 输出到某个文件，然后 git bisect replay 这个文件：
 
-![](./image/image__UsLBF7Iao.png)
+![](./assets/image/image__UsLBF7Iao.png)
 
 git bisect 会重新按照日志跑一次：
 

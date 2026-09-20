@@ -10,7 +10,7 @@
 
 > 用通俗的话来说就是，有人在说话，突然你大声开始说话，人家就被你打断了，这个时候大家就只能听到你说话了。
 
-![](./image/image_VWxPVuVRKF.png)
+![](./assets/image/image_VWxPVuVRKF.png)
 
 ```javascript 
 const btn = document.createElement('button');

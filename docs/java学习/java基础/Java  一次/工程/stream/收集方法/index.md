@@ -22,6 +22,6 @@ public static  Collector toMap​(Function keyMapper,Function valueMapper)：把
 ```
 
 
-![](./image/image_iHyKPHYYVk.png)
+![](./assets/image/image_iHyKPHYYVk.png)
 
-![](./image/image_Q_EiJLVL2H.png)
+![](./assets/image/image_Q_EiJLVL2H.png)

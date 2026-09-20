@@ -85,7 +85,7 @@
 
 [vscode-lldb](https://link.juejin.cn/?target=https://marketplace.visualstudio.com/items?itemName=vadimcn.vscode-lldb "vscode-lldb") 可以帮助你更好地帮助你调试`Rust`应用
 
-![](./image/image_iQbcOHYLgc.png)
+![](./assets/image/image_iQbcOHYLgc.png)
 
 ### better-toml
 

@@ -49,4 +49,4 @@ const App = () => {
 
 由于写法 2 可以将 selector 抽为独立函数，那么我们就可以将其拆分到独立文件来管理派生状态。由于这些selector 都是纯函数，所以能轻松实现测试覆盖。
 
-![](./image/image_rnFaaxE0Gw.png)
+![](./assets/image/image_rnFaaxE0Gw.png)

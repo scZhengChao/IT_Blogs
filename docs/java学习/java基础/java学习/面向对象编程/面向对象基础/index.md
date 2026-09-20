@@ -22,7 +22,7 @@
 
 ![](https://liaoxuefeng.com/books/java/oop/basic/instances.jpg)
 
-![](./image/image_vvRKRRpe1P.png)
+![](./assets/image/image_vvRKRRpe1P.png)
 
 两个`instance`拥有`class`定义的`name`和`age`字段，且各自都有一份独立的数据，互不干扰。
 

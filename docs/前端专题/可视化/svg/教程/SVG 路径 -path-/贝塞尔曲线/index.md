@@ -9,7 +9,7 @@
 
 下面的例子创建了一个二次方贝塞尔曲线，A 和 C 分别是起点和终点，B 是控制点：
 
-![](./image/image_tPaze3G_Gt.png)
+![](./assets/image/image_tPaze3G_Gt.png)
 
 ```svg 
 <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
@@ -48,7 +48,7 @@ Q x1 y1, x y
 
 Q**表示二阶贝塞尔曲线**  x1 y1, 就是二阶贝塞尔曲线的控制点， x, y是曲线的终点，曲线的起点是由画笔的上一个点构成， 这就形成了二阶贝塞尔曲线。
 
-![](./image/image_TUZfJeFcjw.png)
+![](./assets/image/image_TUZfJeFcjw.png)
 
 代码如下：
 
@@ -73,7 +73,7 @@ T x y
 
 有了这个参数 连续的波浪线了
 
-![](./image/image_utelMBqz3i.png)
+![](./assets/image/image_utelMBqz3i.png)
 
 ```svg 
     <path d="M10 80 Q 52.5 10, 95 80 T 180 80 T 280 80 T 380 80 T 480 80" stroke="black" fill="transparent"/>
@@ -104,4 +104,4 @@ T x y
 
 S x2, y2 表示第二个控制点 。x,y 表示 终点 \*\*。那么它的**第一个控制点会被假设成前一个命令曲线的第二个控制点的中心对称点。**\*\*
 
-![](./image/image_0hN_rin__C.png)
+![](./assets/image/image_0hN_rin__C.png)

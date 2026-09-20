@@ -129,7 +129,7 @@ function viteLogTime() {
 
 启动项目后，就可以看到控制台打印了信息！
 
-![](./image/image_uZsUQOoxJa.png)
+![](./assets/image/image_uZsUQOoxJa.png)
 
 还有个`transformIndexHtml`钩子，咱们也试试
 

@@ -59,7 +59,7 @@
 
   封装方法
 
-[React Native课程大纲-Day2【瑞客论坛 www.ruike1.com】.pdf](<./file/React Native课程大纲-Day2【瑞客论坛 www.ruike1.com】_lGLbQ9g.pdf> "React Native课程大纲-Day2【瑞客论坛 www.ruike1.com】.pdf")
+[React Native课程大纲-Day2【瑞客论坛 www.ruike1.com】.pdf](<./assets/file/React Native课程大纲-Day2【瑞客论坛 www.ruike1.com】_lGLbQ9g.pdf> "React Native课程大纲-Day2【瑞客论坛 www.ruike1.com】.pdf")
 
 # ***安装使用***
 

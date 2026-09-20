@@ -8,4 +8,4 @@
 
 **把默认方法的共性内容提取出来；**
 
-![](./image/image_53fjpk3m2W.png)
+![](./assets/image/image_53fjpk3m2W.png)

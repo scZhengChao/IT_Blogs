@@ -1,5 +1,5 @@
 # 线程的状态/生命周期
 
-![](./image/image_-FMyq84kIJ.png)
+![](./assets/image/image_-FMyq84kIJ.png)
 
-![](./image/image_tTljZRbLXt.png)
+![](./assets/image/image_tTljZRbLXt.png)

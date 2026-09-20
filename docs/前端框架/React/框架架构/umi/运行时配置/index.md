@@ -48,7 +48,7 @@ lessLoader: {
 
 mixin路径
 
-![](./image/image_-nlTODzmjV.png)
+![](./assets/image/image_-nlTODzmjV.png)
 
 # 修改全局less变量
 

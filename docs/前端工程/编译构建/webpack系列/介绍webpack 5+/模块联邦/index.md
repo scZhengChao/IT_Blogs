@@ -14,7 +14,7 @@
 
 首先，我们创建两个项目来模拟多个不同的业务组，一个是`saas`业务的项目，一个是`paas`业务的项目。两个项目都有自己的逻辑代码`index`，同时互相依赖对方的某个模块，两个项目都引用了第三方库`jquery`。
 
-![  ](./image/ea06135efebb406ab97931e28a662c66_tplv-k3u1fbpfcp-z.webp "  ")
+![  ](./assets/image/ea06135efebb406ab97931e28a662c66_tplv-k3u1fbpfcp-z.webp "  ")
 
 如图所示，我们如何通过`模块联邦`来实现这样的功能呢？**注意：我们如果想使用对方暴露出的模块那么****一定是通过****`网络传输`****请求对方的服务器来拿到想要的文件，所以一定要将想****`暴露出的模块`****和****`想导入外界模块`****的模块放在****一个异步环境中执行**\*\*。比如我们可以使用​`import()`****来进行对****模块的异步加载，让模块处于`异步`\*\***的环境中。**
 
@@ -68,13 +68,13 @@ module.exports = {
 
 - `remotes`表示**引入**其他项目导出的`模块联邦`，一个属性代表引入一个其他项目的模块联邦，`key`值代表名称，可修改，到时候引入就是`import paas from key/前面设置暴露出来模块的名称`。属性值代表的意思是`暴露出来文件的name@服务器地址/暴露出来的filename`。
 
-![](./image/image_v24rZ0SWwd.png)
+![](./assets/image/image_v24rZ0SWwd.png)
 
 ### 处理共享模块
 
-![](./image/image_17sqr9NcyU.png)
+![](./assets/image/image_17sqr9NcyU.png)
 
-![](./image/image_RCD6x3p4Zb.png)
+![](./assets/image/image_RCD6x3p4Zb.png)
 
 如果`saas`业务和`paas`业务都使用了第三方模块`jquery`，那么两个项目都会引入一次，如何通过`模块联邦`处理共享模块呢？我们只需要在原有的基础上配置[shared](https://link.juejin.cn/?target=https://webpack.js.org/plugins/module-federation-plugin/#options "shared")即可。配置过后，两个项目谁先启动，另一个就会引入对方服务器地址的`jquery`了。
 

@@ -27,7 +27,7 @@
 
 图示：
 
-![](./image/image_dRXMQTP0Br.png)
+![](./assets/image/image_dRXMQTP0Br.png)
 
 解释：
 
@@ -42,7 +42,7 @@
 2. 在consumer服务中，编写两个消费者方法，分别监听topic.queue1和topic.queue2
 3. 在publisher中编写测试方法，向itcast. topic发送消息
 
-![](./image/image_MfLLj9d7rC.png)
+![](./assets/image/image_MfLLj9d7rC.png)
 
 ### 3.6.2.消息接收
 

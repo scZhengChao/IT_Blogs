@@ -4,4 +4,4 @@
 
 - **避免冗余开发**
 
-![](./image/image_-_5nrpcmii.png)
+![](./assets/image/image_-_5nrpcmii.png)

@@ -16,7 +16,7 @@
 
 1. 导入Logback所需的相关jar文件，并添加到项目资源库中
    - 在项目工程下新建lib文件夹，把logback需要的jar文件存放到该文件夹下
-   - lib目录下的存储的jar文件，添**加到当前项目资源库中**![](./image/image_uYTraUsrUM.png)
+   - lib目录下的存储的jar文件，添**加到当前项目资源库中**![](./assets/image/image_uYTraUsrUM.png)
    然后ok 就可以了
 2. **把logback核心配置文件logback.xml，拷贝到当前项目的src目录下**
 
@@ -29,10 +29,10 @@ public static final Logger LOGGER = LoggerFactory.getLogger("哪一个类的日�
 ```
 
 
-![](./image/image_V-EcT1gc3a.png)
+![](./assets/image/image_V-EcT1gc3a.png)
 
-![](./image/image_BjMVk3VFs4.png)
+![](./assets/image/image_BjMVk3VFs4.png)
 
 # 总结
 
-![](./image/image_SUvvCLfvgd.png)
+![](./assets/image/image_SUvvCLfvgd.png)

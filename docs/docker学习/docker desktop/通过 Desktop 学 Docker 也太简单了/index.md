@@ -9,7 +9,7 @@
 而 Docker 就能完美解决这个问题：
 **它把系统的所有文件封装成一个镜像，镜像跑起来作为容器，它可以在一台机器上跑多个容器，每个容器都有独立的操作系统环境**，比如文件系统、网络端口等，在容器内跑各种服务。
 
-![](./image/image_KF5hkDX0o7.png)
+![](./assets/image/image_KF5hkDX0o7.png)
 
 **这也是为什么它的 logo 是这样的：**
 
@@ -23,7 +23,7 @@
 
 首先需要安装 Docker，直接从[官网](https://link.juejin.cn/?target=https://docker.com "官网")下载 docker desktop 就行：
 
-![](./image/image_w6IdZDPGHd.png)
+![](./assets/image/image_w6IdZDPGHd.png)
 
 它内置了 docker 命令。
 
@@ -31,11 +31,11 @@
 
 ![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/d84cf0ec2b25421286d57b35dd1a0093~tplv-k3u1fbpfcp-zoom-in-crop-mark:1512:0:0:0.awebp?)
 
-![](./image/image_99F4yiVu8S.png)
+![](./assets/image/image_99F4yiVu8S.png)
 
 如果不可用，那要设置下这个：
 
-![](./image/image_bBmPzyAaDM.png)
+![](./assets/image/image_bBmPzyAaDM.png)
 
 点击 Settings > Advanced，里面有两种安装路径，**如果是 /user/local/bin，那 docker 命令就是直接可用的**，因为这个路径在 PATH 变量里。
 
@@ -43,9 +43,9 @@
 
 然后我们来看看 docker desktop 的界面：
 
-![](./image/image_lDfchsspdd.png)
+![](./assets/image/image_lDfchsspdd.png)
 
-![](./image/image_f95VUB9t4x.png)
+![](./assets/image/image_f95VUB9t4x.png)
 
 images 是本地的所有镜像，containers 是镜像跑起来的容器。
 
@@ -53,13 +53,13 @@ docker desktop 可以可视化的管理它们，很方便。
 
 我们 pull 一个镜像试试看。
 
-![](./image/image_0Vc5FG2rp5.png)
+![](./assets/image/image_0Vc5FG2rp5.png)
 
 搜索 nginx 镜像，点击 pull（搜索这步需要科学上网，不然搜不到）。
 
 pull 下来之后，就可以在本地 images 看到了：
 
-![](./image/image_7XIFPp9lmY.png)
+![](./assets/image/image_7XIFPp9lmY.png)
 
 点击 run 会让你填一些参数：
 
@@ -117,7 +117,7 @@ pull 下来之后，就可以在本地 images 看到了：
 
 可以看到 /usr/share/nginx/html **被标识为 mounted**，就是挂载目录的意思：
 
-![](./image/image_H3f-oc-E5E.png)
+![](./assets/image/image_H3f-oc-E5E.png)
 
 我们再在本地添加一个文件：
 
@@ -127,7 +127,7 @@ pull 下来之后，就可以在本地 images 看到了：
 
 ![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/a5dda62645e84ed18665bcbd32cc5a66~tplv-k3u1fbpfcp-zoom-in-crop-mark:1512:0:0:0.awebp?)
 
-![](./image/image_T4yAghoV6x.png)
+![](./assets/image/image_T4yAghoV6x.png)
 
 这就是 volume 挂载的作用。
 
@@ -182,7 +182,7 @@ docker run --name nginx-test2 -p 80:80 -v /tmp/aaa:/usr/share/nginx/html -e KEY1
 
 对照下前面可视化界面，是不是瞬间就懂了：
 
-![](./image/image_R_NnnwFJPo.png)
+![](./assets/image/image_R_NnnwFJPo.png)
 
 docker run 会**返回一个容器的 hash：**
 
@@ -190,7 +190,7 @@ docker run 会**返回一个容器的 hash：**
 
 就是这里的 id：
 
-![](./image/image_4XpixIote0.png)
+![](./assets/image/image_4XpixIote0.png)
 
 这个**界面可以用 docker ps 来获取：**
 
@@ -204,7 +204,7 @@ docker run 会**返回一个容器的 hash：**
 
 除了 container 列表，image 镜像列表也可以通过\*\* docker images\*\* 命令获取：
 
-![](./image/image_H_08xGOR2F.png)
+![](./assets/image/image_H_08xGOR2F.png)
 
 我们在容器的 terminal 里执行命令，对应的是 **docker exec** 命令：
 
@@ -301,7 +301,7 @@ CMD 指定容器跑起来之后执行的命令，这里就是执行 http-server 
 
 把这个文件保存为 Dockerfile，然后在同级添加一个 index.html
 
-![](./image/image_5hF2tEkC5v.png)
+![](./assets/image/image_5hF2tEkC5v.png)
 
 然后通过 docker build 就可以根据这个 dockerfile 来生成镜像。
 
@@ -409,7 +409,7 @@ docker build -t aaa:ddd -f 2.Dockerfile
 
 比如我直接点击 run，不设置参数：
 
-![](./image/image_x6mxaFrkw8.png)
+![](./assets/image/image_x6mxaFrkw8.png)
 
 docker 会随机给他生成一个名字。
 

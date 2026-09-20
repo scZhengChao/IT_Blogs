@@ -8,7 +8,7 @@
 
 该操作符主要能力跟我们认知的节流函数也是一致的，就是它会控制一定时间内只会发送一个数据，多余的会直接抛弃掉。唯一和防抖操作符不一致的地方就在于它对于第一个值是不会阻塞的。
 
-![](./image/image_6IjL6vFDI1.png)
+![](./assets/image/image_6IjL6vFDI1.png)
 
 ```javascript 
 const source = Rx.Observable.interval(1000).take(6);

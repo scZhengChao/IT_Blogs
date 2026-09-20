@@ -279,7 +279,7 @@ ruleTester.run('type-typeof-limit', rule, {
 
 写好单元测试后，执行“npm test”命令即可运行测试，如果看到如图所示的输出，则表示单元测试通过了
 
-![](./image/image_IgsTz15Wk7.png)
+![](./assets/image/image_IgsTz15Wk7.png)
 
 下面在真实实验环境下新建插件，由于我们的插件还没有发布，因此需要通过 link 的方式使用。
 

@@ -98,6 +98,6 @@ export function htmlDecode(str) {
 
 Web应用程序在设置cookie时，**将其属性设为HttpOnly**，就可以避免该网页的**cookie被客户端恶意JavaScript窃取，保护用户cookie信息。**
 
-![  ](./image/189f1263228150d82a55d7b43e94b94a_FP8j_koPtv.jpeg "  ")
+![  ](./assets/image/189f1263228150d82a55d7b43e94b94a_FP8j_koPtv.jpeg "  ")
 
-![  ](./image/8c35ad146ef9d6ed7efb9b3c99f5e5c2_3B-4tQru-t.jpeg "  ")
+![  ](./assets/image/8c35ad146ef9d6ed7efb9b3c99f5e5c2_3B-4tQru-t.jpeg "  ")

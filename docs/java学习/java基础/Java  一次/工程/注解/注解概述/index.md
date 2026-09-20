@@ -7,7 +7,7 @@
 * Java 注解（Annotation）又称 Java 标注，是 JDK5.0 引入的一种注释机制。
 * Java 语言中的**类、构造器、方法、成员变量、参数**等都可以被注解进行标注。
 
-![](./image/image_1jHVttU4b-.png)
+![](./assets/image/image_1jHVttU4b-.png)
 
 # 作用
 

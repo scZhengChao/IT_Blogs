@@ -23,7 +23,7 @@ Linux和Mac平台就参照上面配置环境变量的方式将自己的工作目
 
 我们知道源代码都是存放在`GOPATH`的`src`目录下，那我们可以按照下图来组织我们的代码。
 
-![](./image/image_w6MQYG7wmx.png)
+![](./assets/image/image_w6MQYG7wmx.png)
 
 ## 1.3. 目前流行的项目结构
 
@@ -59,4 +59,4 @@ go get github.com/jmoiron/sqlx
 
 ## 1.4. 适合企业开发者
 
-![](./image/image_nAq0SocxOW.png)
+![](./assets/image/image_nAq0SocxOW.png)

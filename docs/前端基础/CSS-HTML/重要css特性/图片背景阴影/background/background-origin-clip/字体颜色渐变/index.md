@@ -5,7 +5,7 @@
 - [background-clip](#background-clip)
 - [mask](#mask)
 
-![](./image/image_z_l9n4sVqh.png)
+![](./assets/image/image_z_l9n4sVqh.png)
 
 ### background-clip
 
@@ -52,7 +52,7 @@ background-image: url("1.jpg");
 
 `background-clip：text` 目前支持大多浏览器，但是 IE 不可以
 
-![](./image/image_WF-DA8Nw2b.png)
+![](./assets/image/image_WF-DA8Nw2b.png)
 
 ### mask
 

@@ -8,7 +8,7 @@
 
 您知不知道可以使用 CSS 语句在 DevTools 中设置 console.log 输出的样式：
 
-![  ](./image/bba25a19263beb2a1e03443e4fd1dc2a_k4rJ3vRW9k.webp "  ")
+![  ](./assets/image/bba25a19263beb2a1e03443e4fd1dc2a_k4rJ3vRW9k.webp "  ")
 
 ```javascript 
  console.log('%c Success','color: green;font-size: 1.5em')

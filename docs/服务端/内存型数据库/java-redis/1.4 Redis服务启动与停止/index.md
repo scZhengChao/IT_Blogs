@@ -19,7 +19,7 @@ redis启动服务器
 ```
 
 
-![](./image/image_C8hTl4Yqgc.png)
+![](./assets/image/image_C8hTl4Yqgc.png)
 
 使用CTRL+ C 停止前端模式
 
@@ -35,9 +35,9 @@ vim redis.conf
 ```
 
 
-![](./image/image_Zg-UYktdWJ.png)
+![](./assets/image/image_Zg-UYktdWJ.png)
 
-![](./image/image_siQdnP5ki5.png)
+![](./assets/image/image_siQdnP5ki5.png)
 
 保存并退出。
 
@@ -50,7 +50,7 @@ cd /usr/local/soft/redis/bin
 ```
 
 
-![](./image/image_rAu8Xfaq5G.png)
+![](./assets/image/image_rAu8Xfaq5G.png)
 
 3.查看启动的后台进程
 
@@ -59,7 +59,7 @@ ps-aux | grep redis
 ```
 
 
-![](./image/image_ynW99jLJHG.png)
+![](./assets/image/image_ynW99jLJHG.png)
 
 ##### redis启动客户端
 
@@ -70,7 +70,7 @@ ps-aux | grep redis
 ```
 
 
-![](./image/image_TaASHScTmc.png)
+![](./assets/image/image_TaASHScTmc.png)
 
 ##### 停止redis
 
@@ -78,7 +78,7 @@ ps-aux | grep redis
 
 方法：在Redis客户端里面输入shutdown
 
-![](./image/image_f5u8KoN1bv.png)
+![](./assets/image/image_f5u8KoN1bv.png)
 
 **注意：上述已经将redis服务关闭了，如果希望演示下面的远程访问redis必须先启动redis服务。**
 
@@ -87,22 +87,22 @@ ps-aux | grep redis
 ```
 
 
-![](./image/image_yJ9-vwuRqH.png)
+![](./assets/image/image_yJ9-vwuRqH.png)
 
 #### **2）Windows系统中启动和停止Redis**了解
 
 Windows系统中启动Redis，直接双击redis-server.exe即可启动Redis服务，redis服务默认端口号为6379
 
-![](./image/image_mSQVQpaLfc.png)
+![](./assets/image/image_mSQVQpaLfc.png)
 
 如果双击无法启动redis,那么就打开dos窗口输入如下命令启动:
 
-![](./image/image_sPV6x9bbGm.png)
+![](./assets/image/image_sPV6x9bbGm.png)
 
 \==Ctrl + C==停止Redis服务
 
 双击==redis-cli.exe==即可启动Redis客户端，默认连接的是本地的Redis服务，而且不需要认证即可连接成功。
 
-![](./image/image_8jqRgK6lBq.png)
+![](./assets/image/image_8jqRgK6lBq.png)
 
 退出客户端可以输入==exit==或者==quit==命令。

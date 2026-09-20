@@ -17,7 +17,7 @@
 
 打开tomcat的解压之后的目录可以看到如下的目录结构：
 
-![  ](./image/5c23e15ead93766582c3bce36ebdfb52_J_LiXj7KRJ.png "  ")
+![  ](./assets/image/5c23e15ead93766582c3bce36ebdfb52_J_LiXj7KRJ.png "  ")
 
 ## 1.bin：
 
@@ -25,7 +25,7 @@
 
         很多环境变量的设置都在此处，例如可以设置JDK路径、tomcat路径  startup 用来启动tomcat  shutdown 用来关闭tomcat  修改catalina可以设置tomcat的内存
 
-![  ](./image/ea01e97ec08212a4287cae93f2ccacc1_8YnSSY7tKN.png "  ")
+![  ](./assets/image/ea01e97ec08212a4287cae93f2ccacc1_8YnSSY7tKN.png "  ")
 
 ## 2.conf：
 
@@ -37,7 +37,7 @@ conf目录主要是用来存放tomcat的一些配置文件。
 - tomcat-users.xml用来配置管理tomcat的用户与权限 &#x20;
 - 在Catalina目录下可以设置默认加载的项目
 
-![  ](./image/3a94fd196df886dbb7317249d8885a3d_MFSkBbTv_i.png "  ")
+![  ](./assets/image/3a94fd196df886dbb7317249d8885a3d_MFSkBbTv_i.png "  ")
 
 ## 3.lib:
 
@@ -45,7 +45,7 @@ lib目录主要用来存放tomcat运行需要加载的jar包。 &#x20;
 
 例如，像连接数据库的jdbc的包我们可以加入到lib目录中来。
 
-![  ](./image/8688e13a52b7871b3518424c00cb8268_hmID0k075x.png "  ")
+![  ](./assets/image/8688e13a52b7871b3518424c00cb8268_hmID0k075x.png "  ")
 
 ## 4.logs：
 
@@ -59,7 +59,7 @@ lib目录主要用来存放tomcat运行需要加载的jar包。 &#x20;
 
 temp目录用户存放tomcat在运行过程中产生的临时文件。（清空不会对tomcat运行带来影响）
 
-![  ](./image/8e4c574d25a66511ffdad632b55cdd8d_YxV_gdLmA5.png "  ")
+![  ](./assets/image/8e4c574d25a66511ffdad632b55cdd8d_YxV_gdLmA5.png "  ")
 
 ## 6.webapps：
 
@@ -77,7 +77,7 @@ temp目录用户存放tomcat在运行过程中产生的临时文件。（清空�
 
              应该是看你的tomcat的配置了，可以设置成每次都重新解压，也可以设置成存在就不解压。默认的好像是如果存在则不解压。所以如果你没有更改配置文件，应该是你修改jsp后，页面显示的是你修改后的jsp
 
-![  ](./image/2db6693b74fa66fab18a146473ecb4fc_aJpZYOgiGt.png "  ")
+![  ](./assets/image/2db6693b74fa66fab18a146473ecb4fc_aJpZYOgiGt.png "  ")
 
 ## 7.work:
 

@@ -21,7 +21,7 @@ ls ~/.oh-my-zsh/themes
 
 [主题效果预览](https://link.juejin.cn/?target=https://github.com/ohmyzsh/ohmyzsh/wiki/Themes "主题效果预览")
 
-![](./image/image_njTS1XlJQe.png)
+![](./assets/image/image_njTS1XlJQe.png)
 
 找到自己喜欢的主题，接下来就可以进行主题修改了，咱们以agnoster为例
 

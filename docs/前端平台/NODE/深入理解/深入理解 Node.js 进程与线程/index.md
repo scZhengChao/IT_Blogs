@@ -42,7 +42,7 @@
 
 ## 文章导览
 
-![  ](./image/640_4zvPhFaPQR.jpg "  ")
+![  ](./assets/image/640_4zvPhFaPQR.jpg "  ")
 
 ## 面试会问
 
@@ -69,7 +69,7 @@ server.listen(3000,()=>{
 
 运行上面代码后，以下为 Mac 系统自带的监控工具 “活动监视器” 所展示的效果，可以看到我们刚开启的 Nodejs 进程 7663
 
-![  ](./image/640_HjNsPIy_sz.jpg "  ")
+![  ](./assets/image/640_HjNsPIy_sz.jpg "  ")
 
 ## 线程
 
@@ -265,7 +265,7 @@ cluster 开启子进程Demo
 
 #### cluster原理分析
 
-![  ](./image/640_Xrkh7CPydg.png "  ")
+![  ](./assets/image/640_Xrkh7CPydg.png "  ")
 
 **cluster模块调用fork方法来创建子进程，该方法与child\_process中的fork是同一个方法**。cluster模块采用\*\*的是经典的主从模型，Cluster会创建一个master，然后根据你指定的数量复制出多个子进程，可以使用 \*\*`cluster.isMaster`
 
@@ -281,9 +281,9 @@ cluster模块**使用内置的负载均衡来更好地处理线程之间的压�
 
 cluster模块的一个弊端：
 
-![  ](./image/640_QlLiM813-T.png "  ")
+![  ](./assets/image/640_QlLiM813-T.png "  ")
 
-![  ](./image/640_QlLiM813-T.png "  ")
+![  ](./assets/image/640_QlLiM813-T.png "  ")
 
 `cluster`内部隐时的构建TCP服务器的方式来说对使用者确实简单和透明了很多，但是这种方式无法像使用`child process`那样灵活，**因为一直主进程只能管理一组相同的工作进程**，而自行通过`child_process`来创建工作进程，一个主进程可以控制多组进程。原因是`child_process`操作子进程时，可以隐式的创建多个TCP服务器，对比上面的两幅图应该能理解我说的内容。
 
@@ -297,11 +297,11 @@ Node中实现IPC通道是依赖于libuv。windows下由命名管道(name pipe)�
 
 IPC创建和实现示意图
 
-![  ](./image/640_GT0z4IzBO7.png "  ")
+![  ](./assets/image/640_GT0z4IzBO7.png "  ")
 
 **IPC通信管道是如何创建的**
 
-![  ](./image/640_HjL1fzspSO.jpg "  ")
+![  ](./assets/image/640_HjL1fzspSO.jpg "  ")
 
 **父进程在实际创建子进程之前，会创建 IPC通道并监听它，然后才 真正的创建出 子进程**，这个过程中也会通过环境变量（NODE CHANNEL FD）告诉子进程这**个IPC通道的文件描述符**。子进程在启动的过程中，根据文件描述符去连接这个已存在的IPC通道，**从而完成父子进程之间的连接。**
 
@@ -321,7 +321,7 @@ IPC创建和实现示意图
 
 结合句柄的发送与还原示意图更容易理解。
 
-![  ](./image/640_BPZIS2D6k5.png "  ")
+![  ](./assets/image/640_BPZIS2D6k5.png "  ")
 
 `send()`
 
@@ -368,7 +368,7 @@ IPC创建和实现示意图
 
 我们自己实现一个多进程架构守护Demo
 
-![  ](./image/640_YSiR0XByl-.png "  ")
+![  ](./assets/image/640_YSiR0XByl-.png "  ")
 
 编写主进程
 
@@ -576,7 +576,7 @@ process.env.UV_THREADPOOL_SIZE = 64
 
 libuv架构图
 
-![  ](./image/640_CxJz9PgBvf.jpg "  ")
+![  ](./assets/image/640_CxJz9PgBvf.jpg "  ")
 
 在Window环境下，**libuv直接使用Windows的IOCP来实现异步IO。**
 
@@ -629,7 +629,7 @@ libuv架构图
 
 由于 `worker_thread` 目前仍然处于实验阶段，所以启动时需要增加 `--experimental-worker flag`，运行后观察活动监视器，开启了5个子线程
 
-![  ](./image/640_-X7Kx2XCt1.jpg "  ")
+![  ](./assets/image/640_-X7Kx2XCt1.jpg "  ")
 
 #### worker\_thread 模块
 

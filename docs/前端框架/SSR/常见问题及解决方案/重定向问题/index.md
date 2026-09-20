@@ -32,7 +32,7 @@ context.response.setHeader('Location', uri); // 设置重定向目标地址
 
 ### 2. 完整重定向流程
 
-![](./image/image_hLkQ5_q84Q.png)
+![](./assets/image/image_hLkQ5_q84Q.png)
 
 ## 与其他重定向状态码对比
 

@@ -46,7 +46,7 @@ public class copyFile {
 
 # 1.7及以后
 
-![](./image/image_cXb6R5Deh8.png)
+![](./assets/image/image_cXb6R5Deh8.png)
 
 ```java 
 package com.copy;

@@ -31,7 +31,7 @@ LIMIT
 
 # sql 语句的执行顺序
 
-![](./image/image_IrYUBdAskb.png)
+![](./assets/image/image_IrYUBdAskb.png)
 
 1. **from**
 2. **where**
@@ -41,7 +41,7 @@ LIMIT
 6. **order by**
 7. \*\*limit \*\*
 
-![](./image/image_wfBdLQDVkg.png)
+![](./assets/image/image_wfBdLQDVkg.png)
 
 [基础查询](./基础查询/index.md "基础查询")
 

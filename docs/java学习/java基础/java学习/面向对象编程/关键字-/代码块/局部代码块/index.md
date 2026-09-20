@@ -3,4 +3,4 @@
 - 写在方法体中的代码块
 - 方法执行时才会调用；方法执行完及时释放；
 
-![](./image/image___hTDz6Lbs.png)
+![](./assets/image/image___hTDz6Lbs.png)

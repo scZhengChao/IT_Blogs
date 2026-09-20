@@ -7,23 +7,23 @@
   - [构造起参数适配](#构造起参数适配)
 - [如何选择](#如何选择)
 
-![](./image/image_PbODYwBzE7.png)
+![](./assets/image/image_PbODYwBzE7.png)
 
 # setter
 
-![](./image/image_Y1XWytqSH9.png)
+![](./assets/image/image_Y1XWytqSH9.png)
 
-![](./image/image_UmdLuMBuEP.png)
+![](./assets/image/image_UmdLuMBuEP.png)
 
 # 构造器
 
-![](./image/image_jWXCUTjLEn.png)
+![](./assets/image/image_jWXCUTjLEn.png)
 
-![](./image/image_KKu4zj8FRh.png)
+![](./assets/image/image_KKu4zj8FRh.png)
 
 ## 构造起参数适配
 
-![](./image/image_dm005xz2jj.png)
+![](./assets/image/image_dm005xz2jj.png)
 
 # 如何选择
 

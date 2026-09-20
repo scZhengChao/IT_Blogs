@@ -12,7 +12,7 @@
 3. 定义坐标的 groupId，artifactId，version
 4. 点击刷新按钮，使坐标生效
 
-![](./image/image_dmBVPW9Ap4.png)
+![](./assets/image/image_dmBVPW9Ap4.png)
 
 # 使用坐标导入 jar 包 – 快捷方式
 
@@ -20,4 +20,4 @@
 2. 在弹出的面板中搜索对应坐标，然后双击选中对应坐标
 3. 点击刷新按钮，使坐标生效
 
-![](./image/image_HJ5rY07IFY.png)
+![](./assets/image/image_HJ5rY07IFY.png)

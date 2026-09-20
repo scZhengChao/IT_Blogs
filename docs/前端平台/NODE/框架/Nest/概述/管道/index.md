@@ -2,7 +2,7 @@
 
 管道是具有 `@Injectable()` **装饰器的类**。管道应实现 `PipeTransform` 接口。
 
-![](./image/image_vmtYGSSkqf.png)
+![](./assets/image/image_vmtYGSSkqf.png)
 
 管道有两个典型的应用场景:
 

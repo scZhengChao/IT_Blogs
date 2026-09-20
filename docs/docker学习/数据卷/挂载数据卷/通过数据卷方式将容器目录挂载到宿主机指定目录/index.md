@@ -17,7 +17,7 @@ docker run --name mn -v html:/root/html -p 8080:80 -d nginx:latest
 - `-v html:/root/html`：把`html`**数据卷**挂载到**容器内的/root/html这个目录中**
 - **html 不存在 会自动创建**
 
-![](./image/image_4VQTOTQcQE.png)
+![](./assets/image/image_4VQTOTQcQE.png)
 
 ### 案例-给nginx挂载数据卷
 
@@ -54,4 +54,4 @@ vim index.html
 
 ③浏览器访问
 
-![](./image/image_h8m_Vn0t3P.png)
+![](./assets/image/image_h8m_Vn0t3P.png)

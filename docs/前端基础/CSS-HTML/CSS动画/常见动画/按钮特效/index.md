@@ -89,7 +89,7 @@
 ```
 
 
-![  ](./image/dc5a3a17c1ec7fea0c837fe589b3ebea_ZhYsPQ5t1j.gif "  ")
+![  ](./assets/image/dc5a3a17c1ec7fea0c837fe589b3ebea_ZhYsPQ5t1j.gif "  ")
 
 # **边框效果**
 
@@ -173,7 +173,7 @@
 ```
 
 
-![  ](./image/b84a08dd89505d67a6b12247e21d606d_vxv9kpkNMB.gif "  ")
+![  ](./assets/image/b84a08dd89505d67a6b12247e21d606d_vxv9kpkNMB.gif "  ")
 
 # **圆形效果**
 
@@ -238,7 +238,7 @@
 ```
 
 
-![  ](./image/21d0c423f39a2373f2e3a5f9085201f4_qc2brHVhUx.gif "  ")
+![  ](./assets/image/21d0c423f39a2373f2e3a5f9085201f4_qc2brHVhUx.gif "  ")
 
 # 圆角效果
 
@@ -297,7 +297,7 @@
 ```
 
 
-![  ](./image/a9656b6e2b9914c3ea857ff06c74129e_5OiVquQaZW.gif "  ")
+![  ](./assets/image/a9656b6e2b9914c3ea857ff06c74129e_5OiVquQaZW.gif "  ")
 
 # **冰冻效果**
 
@@ -385,7 +385,7 @@
 ```
 
 
-![  ](./image/7572a8b3c1f258aa22a99a14e4cf14e2_m8k9W7HUeF.gif "  ")
+![  ](./assets/image/7572a8b3c1f258aa22a99a14e4cf14e2_m8k9W7HUeF.gif "  ")
 
 # **闪亮效果**
 
@@ -455,7 +455,7 @@
 ```
 
 
-![  ](./image/944a1346a335567a8a74314988a50f5b_33i2tiDoE9.gif "  ")
+![  ](./assets/image/944a1346a335567a8a74314988a50f5b_33i2tiDoE9.gif "  ")
 
 # **加载效果**
 
@@ -519,4 +519,4 @@
 ```
 
 
-![  ](./image/b39d883f428423e0a16169df44b93d91_NzUFXdJDIw.gif "  ")
+![  ](./assets/image/b39d883f428423e0a16169df44b93d91_NzUFXdJDIw.gif "  ")

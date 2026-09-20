@@ -40,9 +40,9 @@ INSERT INTO 表名 VALUES(值1,值2,…),(值1,值2,…),(值1,值2,…)…;
 ```
 
 
-![](./image/image_SKvMbh3LRi.png)
+![](./assets/image/image_SKvMbh3LRi.png)
 
-![](./image/image_f-xxIGGX-_.png)
+![](./assets/image/image_f-xxIGGX-_.png)
 
 > 注意
 
@@ -67,7 +67,7 @@ UPDATE 表名 SET 列名1=值1,列名2=值2,… [WHERE 条件] ;
 
 > &#x20;**注意：修改语句中如果不加条件，则将所有数据都修改！**
 
-![](./image/image_lKAleWPBdo.png)
+![](./assets/image/image_lKAleWPBdo.png)
 
 # 删除 delete
 
@@ -89,7 +89,7 @@ TRUNCATE TABLE 表名;
 ```
 
 
-![](./image/image_OR0nPmVqZj.png)
+![](./assets/image/image_OR0nPmVqZj.png)
 
 > 注意
 

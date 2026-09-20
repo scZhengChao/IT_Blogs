@@ -20,11 +20,11 @@ Kafka也是一个消息服务器，它的特点一是快，二是有巨大的吞
 
 Kafka本身是Scala编写的，运行在JVM之上。Producer和Consumer都通过Kafka的客户端使用网络来与之通信。从逻辑上讲，Kafka设计非常简单，它只有一种类似JMS的Topic的消息通道：
 
-![](./image/image_OsBHdIgOVW.png)
+![](./assets/image/image_OsBHdIgOVW.png)
 
 那么Kafka如何支持十万甚至百万的并发呢？\*\*答案是分区。\*\***Kafka的一个Topic可以有一个至多个Partition，并且可以分布到多台机器上：**
 
-![](./image/image_9Kg8zerQ86.png)
+![](./assets/image/image_9Kg8zerQ86.png)
 
 \*\*Kafka只保证在一个Partition内部，消息是有序的，**但是，存在多个Partition的情况下，Producer发送的3个消息会依次发送到Partition-1、Partition-2和Partition-3，Consumer从3个Partition接收的消息并不一定是Producer发送的顺序**，因此，多个Partition只能保证接收消息大概率按发送时间有序，并不能保证完全按Producer发送的顺序。\*\*这一点在使用Kafka作为消息服务器时要特别注意，**对发送顺序有严格要求的Topic只能有一个Partition。**
 

@@ -10,7 +10,7 @@
 
 **效果还是相当不错的**
 
-[index.html](./file/index_nw3RIzmJyM.html " index.html")
+[index.html](./assets/file/index_nw3RIzmJyM.html " index.html")
 
 # **字多行超出出现省略号**
 

@@ -94,7 +94,7 @@
 
                见官网
 
-![  ](./image/027fa6c49abac70c0dc61f3c252bd30b_Zu_Wb0xaZl.png "  ")
+![  ](./assets/image/027fa6c49abac70c0dc61f3c252bd30b_Zu_Wb0xaZl.png "  ")
 
 **co-wechat-oauth（简化开发流程**
 
@@ -199,9 +199,9 @@
 
     授权码模式（authorization code）是功能最完整、流程最严密的授权模式。它的特点就是通过客户端的后 台服务器，与"服务提供商"的认证服务器进行互动。
 
-![  ](./image/e652f88345cce182bbcda0264b1e7f86_DQ1ouYcInn.png "  ")
+![  ](./assets/image/e652f88345cce182bbcda0264b1e7f86_DQ1ouYcInn.png "  ")
 
-![  ](./image/a017fcdc5e7add7f157ec284c67789c5_BPgSNz5F-R.png "  ")
+![  ](./assets/image/a017fcdc5e7add7f157ec284c67789c5_BPgSNz5F-R.png "  ")
 
 [https://developers.weixin.qq.com/doc/offiaccount/OA\_Web\_Apps/Wechat\_webpage\_authorization.html](https://developers.weixin.qq.com/doc/offiaccount/OA_Web_Apps/Wechat_webpage_authorization.html "https://developers.weixin.qq.com/doc/offiaccount/OA_Web_Apps/Wechat_webpage_authorization.html")
 

@@ -55,7 +55,7 @@ function App () {
 
 看到这个代码，你是不是**觉得当变量 year 切换时，一个组件会卸载，另一个组件会挂载**？但其实不是，我们来验证一下：
 
-![](./image/image_RwvVinfqr5.png)
+![](./assets/image/image_RwvVinfqr5.png)
 
 可以看到，我们在切换了变量 year 时，<Child/> **组件只挂载了一次，** 而不是不停地挂载、卸载。其实这是React做的处理，虽然写了两个 <Child/> 组件，但React只认为是一个，并直接进行更新，**即上述代码等价于：**
 

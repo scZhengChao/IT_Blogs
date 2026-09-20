@@ -4,7 +4,7 @@
 
 - [代码](#代码)
 
-![](./image/image_Ilt5J8QWL-.png)
+![](./assets/image/image_Ilt5J8QWL-.png)
 
 # 代码
 

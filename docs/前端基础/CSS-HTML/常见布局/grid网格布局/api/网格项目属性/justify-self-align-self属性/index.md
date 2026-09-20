@@ -30,6 +30,6 @@ justify-self 属性设置单元格内容的水平位置（左中右），跟 jus
 
 页面效果：
 
-![](./image/image_I4SNvaoFGg.png)
+![](./assets/image/image_I4SNvaoFGg.png)
 
 限于篇幅本文不再一一展示其他属性的页面效果，大家可以自己一一尝试一下。
