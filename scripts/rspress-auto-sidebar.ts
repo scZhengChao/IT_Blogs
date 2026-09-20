@@ -17,6 +17,9 @@ interface SidebarGroup {
 
 type Sidebar = Record<string, SidebarGroup[]>;
 
+const documentContentCache = new Map<string, boolean>();
+const directoryLinkCache = new Map<string, string | undefined>();
+
 function isMarkdown(name: string) {
   return /\.(md|mdx)$/i.test(name);
 }
@@ -96,38 +99,107 @@ function hasDirectMarkdown(dir: string) {
  * 纯 image / images / assets 等资源目录会被过滤掉。
  */
 function hasDocumentContent(dir: string): boolean {
+  const cachedResult = documentContentCache.get(dir);
+
+  if (cachedResult !== undefined) {
+    return cachedResult;
+  }
+
   if (getSameNamePage(dir)) {
+    documentContentCache.set(dir, true);
     return true;
   }
 
   if (hasDirectMarkdown(dir)) {
+    documentContentCache.set(dir, true);
     return true;
   }
 
-  return getEntries(dir).some(entry => {
+  const hasContent = getEntries(dir).some(entry => {
     if (!entry.isDirectory()) return false;
 
     return hasDocumentContent(
       path.join(dir, entry.name),
     );
   });
+
+  documentContentCache.set(dir, hasContent);
+  return hasContent;
 }
 
 /**
- * 生成某一个目录对应的 SidebarGroup。
+ * Finds the first page that can represent a directory in the sidebar.
+ *
+ * A same-name page or index page is preferred. Legacy directories without
+ * either page fall back to their first descendant Markdown route.
  */
-function buildGroup(
+function getDirectoryLink(
+  dir: string,
+  relativeDir: string,
+): string | undefined {
+  if (directoryLinkCache.has(dir)) {
+    return directoryLinkCache.get(dir);
+  }
+
+  if (
+    getSameNamePage(dir) ||
+    fs.existsSync(path.join(dir, 'index.md')) ||
+    fs.existsSync(path.join(dir, 'index.mdx'))
+  ) {
+    const link = `/${relativeDir}/`;
+
+    directoryLinkCache.set(dir, link);
+    return link;
+  }
+
+  for (const entry of getEntries(dir)) {
+    const entryPath = path.join(dir, entry.name);
+
+    if (entry.isFile() && isMarkdown(entry.name)) {
+      const fileName = getFileName(entry.name);
+      const link = `/${[relativeDir, fileName]
+        .filter(Boolean)
+        .join('/')}`;
+
+      directoryLinkCache.set(dir, link);
+      return link;
+    }
+
+    if (entry.isDirectory()) {
+      const childRelativeDir = relativeDir
+        ? `${relativeDir}/${entry.name}`
+        : entry.name;
+      const childLink = getDirectoryLink(
+        entryPath,
+        childRelativeDir,
+      );
+
+      if (childLink) {
+        directoryLinkCache.set(dir, childLink);
+        return childLink;
+      }
+    }
+  }
+
+  directoryLinkCache.set(dir, undefined);
+  return undefined;
+}
+
+/**
+ * Builds a shallow menu for one directory.
+ *
+ * Each route receives only its siblings and direct child directories. This
+ * keeps navigation predictable and prevents thousands of repeated descendant
+ * items from being serialized into every sidebar entry.
+ */
+function buildGroups(
   dir: string,
   relativeDir: string,
 ): SidebarGroup[] {
   const entries = getEntries(dir);
-
   const groups: SidebarGroup[] = [];
-
-  /*
-   * 1. 当前目录下的 Markdown 文件
-   */
   const directFiles: SidebarItem[] = [];
+  const childDirectories: SidebarItem[] = [];
 
   for (const entry of entries) {
     if (!entry.isFile()) continue;
@@ -135,54 +207,26 @@ function buildGroup(
 
     const fileName = getFileName(entry.name);
 
-    // index.md 是目录首页，不作为普通 sidebar item
-    if (fileName === 'index') {
+    if (
+      fileName === 'index' ||
+      fileName === path.basename(dir)
+    ) {
       continue;
     }
-
-    // xxx/xxx.md 是这个目录自己的首页
-    if (fileName === path.basename(dir)) {
-      continue;
-    }
-
-    const link =
-      '/' +
-      [
-        relativeDir,
-        fileName,
-      ]
-        .filter(Boolean)
-        .join('/');
 
     directFiles.push({
       text: fileName,
-      link,
+      link: `/${[relativeDir, fileName]
+        .filter(Boolean)
+        .join('/')}`,
     });
   }
 
-  /*
-   * 普通 Markdown 文件放到当前目录的一个 group 中
-   */
-  if (directFiles.length > 0) {
-    groups.push({
-      text:
-        relativeDir === ''
-          ? '文档'
-          : path.basename(dir),
-      items: directFiles,
-      collapsible: false,
-    });
-  }
-
-  /*
-   * 2. 当前目录下面的子目录
-   */
   for (const entry of entries) {
     if (!entry.isDirectory()) continue;
 
     const childDir = path.join(dir, entry.name);
 
-    // 过滤 image / assets 等纯资源目录
     if (!hasDocumentContent(childDir)) {
       continue;
     }
@@ -190,40 +234,32 @@ function buildGroup(
     const childRelativeDir = relativeDir
       ? `${relativeDir}/${entry.name}`
       : entry.name;
-
-    const sameNamePage = getSameNamePage(childDir);
-
-    const childGroups = buildGroup(
+    const link = getDirectoryLink(
       childDir,
       childRelativeDir,
     );
 
-    /*
-     * 子目录有自己的 xxx/xxx.md
-     *
-     * 例如：
-     *
-     * rust/
-     *   rust.md
-     *
-     * 那么：
-     *
-     * rust
-     *   ↓
-     * /rust/
-     */
+    if (link) {
+      childDirectories.push({
+        text: entry.name,
+        link,
+      });
+    }
+  }
+
+  if (childDirectories.length > 0) {
     groups.push({
-      text: entry.name,
-      ...(sameNamePage
-        ? {
-            link: `/${childRelativeDir}/`,
-          }
-        : {}),
-      items: childGroups.flatMap(
-        group => group.items,
-      ),
-      collapsible: true,
-      collapsed: false,
+      text: relativeDir ? 'Folders' : 'Library',
+      items: childDirectories,
+      collapsible: false,
+    });
+  }
+
+  if (directFiles.length > 0) {
+    groups.push({
+      text: 'Pages',
+      items: directFiles,
+      collapsible: false,
     });
   }
 
@@ -261,7 +297,7 @@ function buildSidebar(
       ? `/${relativeDir}/`
       : '/';
 
-    sidebar[routePath] = buildGroup(
+    sidebar[routePath] = buildGroups(
       currentDir,
       relativeDir,
     );
@@ -299,6 +335,13 @@ export function autoSidebarPlugin(): RspressPlugin {
     name: 'auto-sidebar',
 
     config(config) {
+      /*
+       * Config hooks can run again during development restarts. Clearing the
+       * scan caches ensures newly added or removed documents are discovered.
+       */
+      documentContentCache.clear();
+      directoryLinkCache.clear();
+
       const root = config.root || 'docs';
 
       const rootDir = path.resolve(
