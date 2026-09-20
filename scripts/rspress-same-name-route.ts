@@ -134,11 +134,29 @@ export function sameNameRoutePlugin(): RspressPlugin {
         },
 
         addPages() {
-            return pages.map(page => ({
-                routePath: page.routePath,
+            return pages.map(page => {
+                /*
+                 * Rspack treats "!" in a module request as a loader separator.
+                 * Passing such an absolute path through `filepath` truncates the
+                 * request and makes it resolve as ".md". Supplying the source as
+                 * `content` lets Rspress compile it from a safe temporary path
+                 * without changing the historical Markdown file.
+                 */
+                if (page.filepath.includes('!')) {
+                    return {
+                        routePath: page.routePath,
+                        content: fs.readFileSync(
+                            page.filepath,
+                            'utf8',
+                        ),
+                    };
+                }
 
-                filepath: page.filepath,
-            }));
+                return {
+                    routePath: page.routePath,
+                    filepath: page.filepath,
+                };
+            });
         },
     };
 }
