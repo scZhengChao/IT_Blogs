@@ -160,18 +160,18 @@ num2.substr() // Ok 语法检查通过
 
 这些ts类型体操的花活多是留给基础框架内部用的，通过写推导类型作为类型的通用方法，提高我们的类型编程的效率和准确性。
 
-[集成](IT/前端基础/TS/集成/集成.md "集成")
+[集成](./集成/index.md "集成")
 
-[API](IT/前端基础/TS/API/API.md "API")
+[API](./API/index.md "API")
 
 [tsconfig](./tsconfig/index.md "tsconfig")
 
-[typings.d.ts](./typings.d.ts/index.md "typings.d.ts")
+[typings.d.ts](./类型声明/index.md "typings.d.ts")
 
-[高级](IT/前端基础/TS/高级/高级.md "高级")
+[高级](./高级/index.md "高级")
 
-[技巧和提示](IT/前端基础/TS/技巧和提示/技巧和提示.md "技巧和提示")
+[技巧和提示](./技巧和提示/index.md "技巧和提示")
 
-[进阶](IT/前端基础/TS/进阶/进阶.md "进阶")
+[进阶](./进阶/index.md "进阶")
 
 [lib](./lib/index.md "lib")

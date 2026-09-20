@@ -50,4 +50,4 @@ Spring官网是[spring.io](https://spring.io/ "spring.io")，要注意官网有�
 
 [开发Web应用](./开发Web应用/index.md "开发Web应用")
 
-[集成第三方组件](IT/服务端/java学习/java框架/Spring开发/集成第三方组件/集成第三方组件.md "集成第三方组件")
+[集成第三方组件](./集成第三方组件/index.md "集成第三方组件")

@@ -509,4 +509,4 @@ import { RPCMessageEvent, RPC } from 'rpc-shooter';
 
 **附注：Google 专业解决 worker 调用的工具库 comlink，有生产需要同学可以试试。**
 
-[postMessage 消息通信如何 Promise 化？](<./postMessage 消息通信如何 Promise 化？/index.md> "postMessage 消息通信如何 Promise 化？")
+[postMessage 消息通信如何 Promise 化？](<./postMessage异步封装/index.md> "postMessage 消息通信如何 Promise 化？")

@@ -38,6 +38,6 @@ docker exec -it mysql mysql -u root -p
 ```
 
 
-[初始化](IT/服务端/java学习/java工程/数据库、表/初始化/初始化.md "初始化")
+[初始化](./初始化/index.md "初始化")
 
 [mapper接口方法和 xml](<./mapper接口方法和 xml/index.md> "mapper接口方法和 xml")

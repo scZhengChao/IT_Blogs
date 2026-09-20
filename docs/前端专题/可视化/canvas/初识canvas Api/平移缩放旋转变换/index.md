@@ -4,7 +4,7 @@
 
 &#x20;     &#x20;
 
-[QA](IT/前端专题/可视化/canvas/初识canvas%20Api/平移缩放旋转变换/QA/QA.md "QA")
+[QA](./QA/index.md "QA")
 
 [坐标系统](./坐标系统/index.md "坐标系统")
 

@@ -52,7 +52,7 @@ source  /Users/zhengchao/workSpace/emsdk-main/emsdk_env.sh &> /dev/null
 ```
 
 
-[Hello World](<IT/前端工程/wasm/Emscripten(c++）/Hello World/Hello World.md> "Hello World")
+[Hello World](<./Hello%20World/index.md> "Hello World")
 
 [HTML 模板](<./HTML 模板/index.md> "HTML 模板")
 

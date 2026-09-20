@@ -6,4 +6,4 @@
 
 [Centos7安装Docker.md](./assets/file/Centos7安装Docker_0ydzAWK594.md "Centos7安装Docker.md")
 
-[换源](IT/docker/基础介绍/安装/换源/换源.md "换源")
+[换源](./换源/index.md "换源")

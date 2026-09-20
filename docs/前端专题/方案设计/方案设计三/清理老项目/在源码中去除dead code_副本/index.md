@@ -82,6 +82,6 @@ FlagDependencyUsagePlugin.js
 
 [tree shaking原理](<./tree shaking原理/index.md> "tree shaking原理")
 
-[umi](IT/前端专题/方案设计/方案设计三/清理老项目/在源码中去除dead%20code_副本/umi/umi.md "umi")
+[umi](./umi/index.md "umi")
 
-[webpack](IT/前端专题/方案设计/方案设计三/清理老项目/在源码中去除dead%20code_副本/webpack/webpack.md "webpack")
+[webpack](./webpack/index.md "webpack")

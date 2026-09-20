@@ -160,7 +160,7 @@
 
 [indexDB](./indexDB/index.md "indexDB")
 
-[cookie](IT/前端基础/DOM-BOM/本地数据持久化/cookie/cookie.md "cookie")
+[cookie](./cookie/index.md "cookie")
 
 [sessionStorage](./sessionStorage/index.md "sessionStorage")
 

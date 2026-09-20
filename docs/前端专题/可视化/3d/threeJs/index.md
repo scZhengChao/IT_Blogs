@@ -6,6 +6,6 @@
 
 [ three.js中文网  http://www.yanhuangxueyuan.com/threejs/docs/index.html](http://www.yanhuangxueyuan.com/threejs/docs/index.html " three.js中文网  http://www.yanhuangxueyuan.com/threejs/docs/index.html")
 
-[常见问题](IT/前端专题/可视化/3d/threeJs/常见问题/常见问题.md "常见问题")
+[常见问题](./常见问题/index.md "常见问题")
 
 [常见案例](./常见案例/index.md "常见案例")

@@ -19,6 +19,6 @@
 ```
 
 
-[生命周期](IT/前端基础/web%20components/生命周期和高频api/生命周期/生命周期.md "生命周期")
+[生命周期](./生命周期/index.md "生命周期")
 
 [shadow DOM 高频 API ](<./shadow DOM 高频 API-/index.md> "shadow DOM 高频 API ")

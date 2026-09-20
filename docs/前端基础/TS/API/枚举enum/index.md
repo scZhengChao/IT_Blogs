@@ -367,4 +367,4 @@ type Keys = Combination<['foo', 'bar', 'baz']>
 ```
 
 
-[工具函数](IT/前端基础/TS/API/枚举enum/工具函数/工具函数.md "工具函数")
+[工具函数](./工具函数/index.md "工具函数")

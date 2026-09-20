@@ -8,9 +8,9 @@
 
 [初识canvas Api](<./初识canvas Api/index.md> "初识canvas Api")
 
-[案例](IT/前端专题/可视化/canvas/案例/案例.md "案例")
+[案例](./案例/index.md "案例")
 
-[QA](IT/前端专题/可视化/canvas/QA/QA.md "QA")
+[QA](./QA/index.md "QA")
 
 # 案例
 

@@ -30,4 +30,4 @@ performance.mark('registered-observer');
 
 [如何统计页面的 long task(长任务)](<./如何统计页面的 long task(长任务)/index.md> "如何统计页面的 long task(长任务)")
 
-[PerformanceObserver 如何测量页面性能](<./PerformanceObserver 如何测量页面性能/index.md> "PerformanceObserver 如何测量页面性能")
+[PerformanceObserver 如何测量页面性能](<./性能测量/index.md> "PerformanceObserver 如何测量页面性能")

@@ -8,4 +8,4 @@
 
 [esModuleInterop](./esModuleInterop/index.md "esModuleInterop")
 
-[allowSyntheticDefaultImports ](./allowSyntheticDefaultImports-/index.md "allowSyntheticDefaultImports ")
+[allowSyntheticDefaultImports ](./allowSyntheticDefaultImports/index.md "allowSyntheticDefaultImports ")

@@ -2,6 +2,6 @@
 
 [避免取消订阅导致的内存泄漏](./避免取消订阅导致的内存泄漏/index.md "避免取消订阅导致的内存泄漏")
 
-[避免 RxJS 中的内存泄露：正确使用 unsubscribe](<./避免 RxJS 中的内存泄露：正确使用 unsubscrib/避免 RxJS 中的内存泄露：正确使用 unsubscribe.md> "避免 RxJS 中的内存泄露：正确使用 unsubscribe")
+[避免 RxJS 中的内存泄露：正确使用 unsubscribe](<./取消订阅与内存泄漏/index.md> "避免 RxJS 中的内存泄露：正确使用 unsubscribe")
 
-[RxJS：所有订阅都需要调用unsubscribe取消订阅？](./RxJS：所有订阅都需要调用unsubscribe取消订阅？/index.md "RxJS：所有订阅都需要调用unsubscribe取消订阅？")
+[RxJS：所有订阅都需要调用unsubscribe取消订阅？](./订阅清理时机/index.md "RxJS：所有订阅都需要调用unsubscribe取消订阅？")

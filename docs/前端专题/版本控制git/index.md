@@ -21,7 +21,7 @@ refactor : 重构代码
 ```
 
 
-[QA](IT/前端专题/版本控制git/QA/QA.md "QA")
+[QA](./QA/index.md "QA")
 
 [入门命令](./入门命令/index.md "入门命令")
 

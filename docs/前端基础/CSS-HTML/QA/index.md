@@ -6,7 +6,7 @@
 
 [tabindex](./tabindex/index.md "tabindex")
 
-[line-height 和  vertical-align 的特殊性](<./line-height 和  vertical-align /line-height 和  vertical-align 的特殊性.md> "line-height 和  vertical-align 的特殊性")
+[line-height 和  vertical-align 的特殊性](<./行高与垂直对齐/index.md> "line-height 和  vertical-align 的特殊性")
 
 [百分比的大小](./百分比的大小/index.md "百分比的大小")
 
@@ -18,4 +18,4 @@
 
 [will-change](./will-change/index.md "will-change")
 
-[常见用例](IT/前端基础/CSS-HTML/QA/常见用例/常见用例.md "常见用例")
+[常见用例](./常见用例/index.md "常见用例")

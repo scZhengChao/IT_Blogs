@@ -12,4 +12,4 @@
 
 [DockerHub](./DockerHub/index.md "DockerHub")
 
-[安装](IT/docker/基础介绍/安装/安装.md "安装")
+[安装](./安装/index.md "安装")

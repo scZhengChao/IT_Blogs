@@ -65,4 +65,4 @@ intersectionObserver.observe(targetNode, config);
 
 [特殊特例](./特殊特例/index.md "特殊特例")
 
-[应用场景](IT/前端基础/DOM-BOM/Observer%20Api/IntersectionObserver/应用场景/应用场景.md "应用场景")
+[应用场景](./应用场景/index.md "应用场景")

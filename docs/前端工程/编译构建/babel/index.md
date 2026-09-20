@@ -90,7 +90,7 @@ module.exports = {
 ```
 
 
-[插件开发](IT/前端工程/编译构建/babel/插件开发/插件开发.md "插件开发")
+[插件开发](./插件开发/index.md "插件开发")
 
 [ Babel 入门教程 - 阮一峰的网络日志  https://www.ruanyifeng.com/blog/2016/01/babel.html](https://www.ruanyifeng.com/blog/2016/01/babel.html " Babel 入门教程 - 阮一峰的网络日志  https://www.ruanyifeng.com/blog/2016/01/babel.html")
 
@@ -98,12 +98,12 @@ module.exports = {
 
 [ Babel 是什么？ · Babel 中文网 ## Babel 是一个 JavaScript 编译器 https://www.babeljs.cn/docs/](https://www.babeljs.cn/docs/ " Babel 是什么？ · Babel 中文网 ## Babel 是一个 JavaScript 编译器 https://www.babeljs.cn/docs/")
 
-[api](IT/前端工程/编译构建/babel/api/api.md "api")
+[api](./api/index.md "api")
 
-[方案](IT/前端工程/编译构建/babel/方案/方案.md "方案")
+[方案](./方案/index.md "方案")
 
 [AST](./AST/index.md "AST")
 
-[基础](IT/前端工程/编译构建/babel/基础/基础.md "基础")
+[基础](./基础/index.md "基础")
 
 [ Babel · The compiler for next generation JavaScript The compiler for next generation JavaScript https://babeljs.io/repl#?browsers=defaults%2C%20not%20ie%2011%2C%20not%20ie\_mob%2011\&build=\&builtIns=false\&corejs=3.21\&spec=false\&loose=false\&code\_lz=MYGwhgzhAECyCeBhcVoG8BQ1pmMAplAPYBO0AtvAEJFEj5gB20AvNAGZggT4YC-GDMCKMIAF2hj85AA6tojfAHc4SFBAAUASiEiIdfADoQRAOYaA5OwCWJcRYA0k6TMOUaBpjoxTZb6rT0TPJiJACu-ADcuqIGxmaWPMKMACaOzn7ugQyMWkA\&debug=false\&forceAllTransforms=false\&modules=false\&shippedProposals=false\&evaluate=true\&fileSize=false\&timeTravel=false\&sourceType=module\&lineWrap=false\&presets=env%2Creact\&prettier=false\&targets=\&version=7.24.7\&externalPlugins=\&assumptions=%7B%7D](https://babeljs.io/repl#?browsers=defaults%2C%20not%20ie%2011%2C%20not%20ie_mob%2011\&build=\&builtIns=false\&corejs=3.21\&spec=false\&loose=false\&code_lz=MYGwhgzhAECyCeBhcVoG8BQ1pmMAplAPYBO0AtvAEJFEj5gB20AvNAGZggT4YC-GDMCKMIAF2hj85AA6tojfAHc4SFBAAUASiEiIdfADoQRAOYaA5OwCWJcRYA0k6TMOUaBpjoxTZb6rT0TPJiJACu-ADcuqIGxmaWPMKMACaOzn7ugQyMWkA\&debug=false\&forceAllTransforms=false\&modules=false\&shippedProposals=false\&evaluate=true\&fileSize=false\&timeTravel=false\&sourceType=module\&lineWrap=false\&presets=env%2Creact\&prettier=false\&targets=\&version=7.24.7\&externalPlugins=\&assumptions=%7B%7D " Babel · The compiler for next generation JavaScript The compiler for next generation JavaScript https://babeljs.io/repl#?browsers=defaults%2C%20not%20ie%2011%2C%20not%20ie_mob%2011\&build=\&builtIns=false\&corejs=3.21\&spec=false\&loose=false\&code_lz=MYGwhgzhAECyCeBhcVoG8BQ1pmMAplAPYBO0AtvAEJFEj5gB20AvNAGZggT4YC-GDMCKMIAF2hj85AA6tojfAHc4SFBAAUASiEiIdfADoQRAOYaA5OwCWJcRYA0k6TMOUaBpjoxTZb6rT0TPJiJACu-ADcuqIGxmaWPMKMACaOzn7ugQyMWkA\&debug=false\&forceAllTransforms=false\&modules=false\&shippedProposals=false\&evaluate=true\&fileSize=false\&timeTravel=false\&sourceType=module\&lineWrap=false\&presets=env%2Creact\&prettier=false\&targets=\&version=7.24.7\&externalPlugins=\&assumptions=%7B%7D")

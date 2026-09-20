@@ -4,7 +4,7 @@
 
 [枚举enum](./枚举enum/index.md "枚举enum")
 
-[断言](IT/前端基础/TS/API/断言/断言.md "断言")
+[断言](./断言/index.md "断言")
 
 [type/interface](./type-interface/index.md "type/interface")
 
@@ -20,9 +20,9 @@
 
 [元组](./元组/index.md "元组")
 
-[函数](IT/前端基础/TS/API/函数/函数.md "函数")
+[函数](./函数/index.md "函数")
 
-[对象](IT/前端基础/TS/API/对象/对象.md "对象")
+[对象](./对象/index.md "对象")
 
 [交叉类型](./交叉类型/index.md "交叉类型")
 
@@ -32,7 +32,7 @@
 
 [infer](./infer/index.md "infer")
 
-[泛型](IT/前端基础/TS/API/泛型/泛型.md "泛型")
+[泛型](./泛型/index.md "泛型")
 
 [record](./record/index.md "record")
 

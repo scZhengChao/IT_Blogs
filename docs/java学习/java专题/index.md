@@ -7,3 +7,7 @@
 [Maven](./Maven/index.md "Maven")
 
 [IDEA](../../技术杂谈/利其器/IDEA.md "IDEA")
+
+## 子目录与文章
+
+- [IDEA](./IDEA/index.md)

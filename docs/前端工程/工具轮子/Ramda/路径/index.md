@@ -31,4 +31,4 @@ R.modifyPath(['addresses', 0, 'zipCode'], R.reverse, person); //=> {name: 'James
 ```
 
 
-[更新状态](<../../../../前端框架/React/react 状态管理/Zustand/指南/更新状态/index.md> "更新状态")
+[更新状态](<../../../../前端框架/React/状态管理/Zustand/指南/更新状态/index.md> "更新状态")

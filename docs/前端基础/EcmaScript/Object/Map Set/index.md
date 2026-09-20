@@ -55,9 +55,9 @@ const hashMap = {}
 我在 LeetCode 上也证实了这种想法，对于数据量大的 Object 会超时，但 Map 上则不会。
 然而，说\*\* "Map 比 Object 快" 可能是算一种归纳\*\*性的，这两者一定有一些细微的差别，我们可以通过一些例子，把它找出来。
 
-[Map](IT/前端基础/EcmaScript/Object/Map%20Set/Map/Map.md "Map")
+[Map](./Map/index.md "Map")
 
-[Set](IT/前端基础/EcmaScript/Object/Map%20Set/Set/Set.md "Set")
+[Set](./Set/index.md "Set")
 
 [WeakSet  WeakMap ](<./WeakSet  WeakMap-/index.md> "WeakSet  WeakMap ")
 

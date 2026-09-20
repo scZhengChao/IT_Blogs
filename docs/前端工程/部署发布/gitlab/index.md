@@ -1,6 +1,6 @@
 # gitlab
 
-[gitlab](IT/前端工程/部署发布/gitlab/gitlab.md "gitlab")
+[gitlab](./index.md "gitlab")
 
 [gitlab-ci.yml](./gitlab-ci.yml/index.md "gitlab-ci.yml")
 
@@ -13,3 +13,7 @@
 [artifacts](./artifacts/index.md "artifacts")
 
 [我的配置](./我的配置/index.md "我的配置")
+
+## 子目录与文章
+
+- [gitlab](./gitlab/index.md)

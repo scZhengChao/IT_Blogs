@@ -6,4 +6,4 @@
 
 [nginx开发应用](./nginx开发应用/index.md "nginx开发应用")
 
-[mime.type详解  和 完整的config 中文版](<./mime.type详解  和 完整的config 中文版/index.md> "mime.type详解  和 完整的config 中文版")
+[mime.type详解  和 完整的config 中文版](<./MIME类型配置/index.md> "mime.type详解  和 完整的config 中文版")

@@ -2,7 +2,7 @@
 
 [楼层懒加载](./楼层懒加载/index.md "楼层懒加载")
 
-[缓存](IT/前端框架/React/性能调优/缓存/缓存.md "缓存")
+[缓存](./缓存/index.md "缓存")
 
 [children的处理](./children的处理/index.md "children的处理")
 

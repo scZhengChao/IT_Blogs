@@ -1029,6 +1029,6 @@ const contacts = [
 
 [使用 Context 深层传递参数](<./使用 Context 深层传递参数/index.md> "使用 Context 深层传递参数")
 
-[使用 Reducer 和 Context 拓展你的应用](<./使用 Reducer 和 Context 拓展你的应用/index.md> "使用 Reducer 和 Context 拓展你的应用")
+[使用 Reducer 和 Context 拓展你的应用](<./Reducer与Context/index.md> "使用 Reducer 和 Context 拓展你的应用")
 
 [渲染和提交](./渲染和提交/index.md "渲染和提交")

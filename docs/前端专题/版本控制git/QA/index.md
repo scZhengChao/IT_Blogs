@@ -1,8 +1,8 @@
 # QA
 
-[fatal:Unable to create“.../.git/index.lock](<./fatal-Unable to create“...-.gi/fatal-Unable to create“...-.git-index.lock.md> "fatal:Unable to create“.../.git/index.lock")
+[fatal:Unable to create“.../.git/index.lock](<./索引锁冲突/index.md> "fatal:Unable to create“.../.git/index.lock")
 
-[github Recv failure: Connection reset by peer](<./github Recv failure- Connectio/github Recv failure- Connection reset by peer.md> "github Recv failure: Connection reset by peer")
+[github Recv failure: Connection reset by peer](<./连接被重置/index.md> "github Recv failure: Connection reset by peer")
 
 [常见报错](./常见报错/index.md "常见报错")
 

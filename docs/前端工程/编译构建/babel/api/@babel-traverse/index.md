@@ -44,6 +44,6 @@ require("@babel/traverse").default(ast, {
 
 **具体的类型有哪些可以在**[**babel-types 的类型定义**](https://link.juejin.cn/?target=https://github.com/babel/babel/blob/main/packages/babel-types/src/ast-types/generated/index.ts#L2059 "babel-types 的类型定义")**中查。**
 
-[path](IT/前端工程/编译构建/babel/api/@babel-traverse/path/path.md "path")
+[path](./path/index.md "path")
 
 [state](./state/index.md "state")

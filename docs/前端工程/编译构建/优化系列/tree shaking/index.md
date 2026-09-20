@@ -64,4 +64,4 @@ if(false){
 
 [摇树](./摇树/index.md "摇树")
 
-[QA](IT/前端工程/编译构建/优化系列/tree%20shaking/QA/QA.md "QA")
+[QA](./QA/index.md "QA")

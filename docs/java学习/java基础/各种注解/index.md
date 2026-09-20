@@ -8,4 +8,4 @@
 
 [MyBatis](./MyBatis/index.md "MyBatis")
 
-[com.fasterxml.jackson.annotation.JsonFormat](./com.fasterxml.jackson.annotati/com.fasterxml.jackson.annotation.JsonFormat.md "com.fasterxml.jackson.annotation.JsonFormat")
+[com.fasterxml.jackson.annotation.JsonFormat](./JsonFormat/index.md "com.fasterxml.jackson.annotation.JsonFormat")

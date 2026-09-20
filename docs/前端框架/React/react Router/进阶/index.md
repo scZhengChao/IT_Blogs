@@ -4,4 +4,4 @@
 
 [源码核心](./源码核心/index.md "源码核心")
 
-[图解 history api 和 React Router 实现原理](<./图解 history api 和 React Router /图解 history api 和 React Router 实现原理.md> "图解 history api 和 React Router 实现原理")
+[图解 history api 和 React Router 实现原理](<./History与路由原理/index.md> "图解 history api 和 React Router 实现原理")

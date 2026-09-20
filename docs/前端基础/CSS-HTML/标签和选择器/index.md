@@ -2,4 +2,4 @@
 
 [标签html](./标签html/index.md "标签html")
 
-[选择器](IT/前端基础/CSS-HTML/标签和选择器/选择器/选择器.md "选择器")
+[选择器](./选择器/index.md "选择器")

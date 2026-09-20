@@ -4,4 +4,4 @@
 
 [](./继承-/index.md)
 
-[对比](IT/服务端/java学习/java专题/Maven/Maven高级/聚合和继承/对比/对比.md "对比")
+[对比](./对比/index.md "对比")

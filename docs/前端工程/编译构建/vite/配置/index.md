@@ -8,6 +8,6 @@
 
 [less等预加载器](./less等预加载器/index.md "less等预加载器")
 
-[别名](IT/前端工程/编译构建/vite/配置/别名/别名.md "别名")
+[别名](./别名/index.md "别名")
 
 [环境变量meta](./环境变量meta/index.md "环境变量meta")

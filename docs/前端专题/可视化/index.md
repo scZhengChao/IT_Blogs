@@ -1,6 +1,6 @@
 # 可视化
 
-[流程图process插件](./流程图process插件/index.md "流程图process插件")
+[流程图process插件](./流程图库/index.md "流程图process插件")
 
 [H5动态生成](./H5动态生成/index.md "H5动态生成")
 
@@ -10,4 +10,8 @@
 
 [canvas](./canvas/index.md "canvas")
 
-[svg](IT/前端专题/可视化/svg/svg.md "svg")
+[svg](./svg/index.md "svg")
+
+## 子目录与文章
+
+- [mxGraph](./mxGraph/index.md)

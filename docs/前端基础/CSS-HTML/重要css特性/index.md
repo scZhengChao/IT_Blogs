@@ -8,12 +8,12 @@
 
 [图片背景阴影](./图片背景阴影/index.md "图片背景阴影")
 
-[position](IT/前端基础/CSS-HTML/重要css特性/position/position.md "position")
+[position](./position/index.md "position")
 
 [overflow](./overflow/index.md "overflow")
 
-[渐变](IT/前端基础/CSS-HTML/重要css特性/渐变/渐变.md "渐变")
+[渐变](./渐变/index.md "渐变")
 
 [鼠标](./鼠标/index.md "鼠标")
 
-[Anchor Positioning 锚点定位神器解析](<./Anchor Positioning 锚点定位神器解析/index.md> "Anchor Positioning 锚点定位神器解析")
+[Anchor Positioning 锚点定位神器解析](<./Anchor-Positioning/index.md> "Anchor Positioning 锚点定位神器解析")

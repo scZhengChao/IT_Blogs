@@ -18,7 +18,7 @@
 
 [工作流程](./工作流程/index.md "工作流程")
 
-[生命周期](IT/前端基础/多线程和进程/service%20worker/特性/生命周期/生命周期.md "生命周期")
+[生命周期](./生命周期/index.md "生命周期")
 
 [更新Service Worker](<./更新Service Worker/index.md> "更新Service Worker")
 

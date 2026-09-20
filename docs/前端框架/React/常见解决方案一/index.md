@@ -8,7 +8,7 @@
 
 [自动上报 pv/click 的埋点 Hooks](<./自动上报 pv-click 的埋点 Hooks/index.md> "自动上报 pv/click 的埋点 Hooks")
 
-[拖拽](IT/前端框架/React/常见解决方案一/拖拽/拖拽.md "拖拽")
+[拖拽](./拖拽/index.md "拖拽")
 
 [面包屑](./面包屑/index.md "面包屑")
 

@@ -4,4 +4,4 @@
 
 [charless](./charless/index.md "charless")
 
-[proxyMan](proxyMan/proxyMan.md "proxyMan")
+proxyMan（原笔记未收录）

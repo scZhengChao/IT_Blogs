@@ -34,16 +34,16 @@ jQuery; // jQuery(selector, context)
 
 这种黑魔法的原理是jQuery在占用`$`之前，先在内部保存了原来的`$`,调用`jQuery.noConflict()`时会把原来保存的变量还原。
 
-[选择器](IT/前端框架/Jquery/jQuery教程/选择器/选择器.md "选择器")
+[选择器](./选择器/index.md "选择器")
 
 [操作DOM](./操作DOM/index.md "操作DOM")
 
-[事件](IT/前端框架/Jquery/jQuery教程/事件/事件.md "事件")
+[事件](./事件/index.md "事件")
 
-[动画](IT/前端框架/Jquery/jQuery教程/动画/动画.md "动画")
+[动画](./动画/index.md "动画")
 
-[ajax](IT/前端框架/Jquery/jQuery教程/ajax/ajax.md "ajax")
+[ajax](./ajax/index.md "ajax")
 
-[杂项](IT/前端框架/Jquery/jQuery教程/杂项/杂项.md "杂项")
+[杂项](./杂项/index.md "杂项")
 
 [jQuery 延迟对象](<./jQuery 延迟对象/index.md> "jQuery 延迟对象")

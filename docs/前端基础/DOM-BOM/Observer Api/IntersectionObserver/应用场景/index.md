@@ -11,4 +11,4 @@
 
 [滚动吸顶](./滚动吸顶/index.md "滚动吸顶")
 
-[性能优化](IT/前端基础/DOM-BOM/Observer%20Api/IntersectionObserver/应用场景/性能优化/性能优化.md "性能优化")
+[性能优化](./性能优化/index.md "性能优化")

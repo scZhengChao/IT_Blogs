@@ -144,4 +144,4 @@ align-self属性：允许单个项目与其他项目有不一样的对齐方式
 
 [flex-basis](./flex-basis/index.md "flex-basis")
 
-[flex](IT/前端基础/CSS-HTML/常见布局/弹性盒布局/子元素的属性/flex/flex.md "flex")
+[flex](./flex/index.md "flex")

@@ -31,11 +31,11 @@
 
 # 方案一
 
-利用[saga](<../../../../前端框架/React/react 状态管理/saga/index.md> "saga") 的 `takeLatest`
+利用[saga](<../../../../前端框架/React/状态管理/saga/index.md> "saga") 的 `takeLatest`
 
 # 方案二
 
-[处理竞态问题](../../../../前端框架/React/生态/hooks/精读hooks/useEffect/处理竞态问题/index.md "处理竞态问题") 利用useEffect；react的快照特性 （这个方案只是抛弃了返回）
+[处理竞态问题](../../../../前端框架/React/Hooks/精读hooks/useEffect/处理竞态问题/index.md "处理竞态问题") 利用useEffect；react的快照特性 （这个方案只是抛弃了返回）
 
 # 方案三
 
@@ -47,7 +47,7 @@
 
 # 方案五
 
-[使用 axios 拦截器解决「 前端并发冲突 」 问题](<../../../../前端工程/数据通信/axios/使用 axios 拦截器解决「 前端并发冲突 」 问题/index.md> "使用 axios 拦截器解决「 前端并发冲突 」 问题") ；统一封装取消请求函数调用
+[使用 axios 拦截器解决「 前端并发冲突 」 问题](<../../../../前端工程/数据通信/axios/拦截器与并发冲突/index.md> "使用 axios 拦截器解决「 前端并发冲突 」 问题") ；统一封装取消请求函数调用
 
 ## 加锁
 

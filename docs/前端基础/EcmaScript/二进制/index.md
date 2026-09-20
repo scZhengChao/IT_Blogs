@@ -33,9 +33,9 @@
 
 [数据转换](./数据转换/index.md "数据转换")
 
-[总结](IT/前端基础/EcmaScript/二进制/总结/总结.md "总结")
+[总结](./总结/index.md "总结")
 
-[方案](IT/前端基础/EcmaScript/二进制/方案/方案.md "方案")
+[方案](./方案/index.md "方案")
 
 [FileReader](./FileReader/index.md "FileReader")
 
@@ -43,4 +43,4 @@
 
 [网络传输](./网络传输/index.md "网络传输")
 
-[File对象](IT/前端基础/EcmaScript/二进制/File对象/File对象.md "File对象")
+[File对象](./File对象/index.md "File对象")

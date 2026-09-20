@@ -10,7 +10,7 @@ python --version
 
 [pyenv](./pyenv/index.md "pyenv")
 
-[简介](IT/python学习/简介/简介.md "简介")
+[简介](./简介/index.md "简介")
 
 [Python历史](./Python历史/index.md "Python历史")
 

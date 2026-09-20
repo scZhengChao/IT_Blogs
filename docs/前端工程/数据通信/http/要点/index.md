@@ -12,8 +12,8 @@
 
 [keep-alive机制](./keep-alive机制/index.md "keep-alive机制")
 
-[协议](IT/前端工程/数据通信/http/要点/协议/协议.md "协议")
+[协议](./协议/index.md "协议")
 
-[状态码](IT/前端工程/数据通信/http/要点/状态码/状态码.md "状态码")
+[状态码](./状态码/index.md "状态码")
 
 [method](./method/index.md "method")

@@ -210,3 +210,7 @@ export function htmlDecode(str) {
 Web应用程序在设置cookie时，将其属性设为HttpOnly，就可以避免该网页的cookie被客户端恶意JavaScript窃取，保护用户cookie信息。
 
 [XSS](./index.md "xss")
+
+## 子目录与文章
+
+- [xss](./xss/index.md)

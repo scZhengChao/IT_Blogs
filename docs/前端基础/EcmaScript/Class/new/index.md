@@ -1,3 +1,3 @@
 # new
 
-[new](IT/前端基础/EcmaScript/new/new.md "new")
+[new](../../new/index.md "new")

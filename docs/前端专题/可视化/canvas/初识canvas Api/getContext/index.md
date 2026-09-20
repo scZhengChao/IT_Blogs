@@ -182,4 +182,4 @@ function setupCanvas() {
 
 [imageSmoothingEnabled](./imageSmoothingEnabled/index.md "imageSmoothingEnabled")
 
-[createPattern](IT/前端专题/可视化/canvas/初识canvas%20Api/getContext/createPattern/createPattern.md "createPattern")
+[createPattern](./createPattern/index.md "createPattern")

@@ -95,6 +95,6 @@ function _new(fn, ...args) {
 ```
 
 
-[new Function](<IT/前端基础/EcmaScript/new/new Function/new Function.md> "new Function")
+[new Function](<./new%20Function/index.md> "new Function")
 
-[new class 和 new function 可有什么区别](<./new class 和 new function 可有什么区/new class 和 new function 可有什么区别.md> "new class 和 new function 可有什么区别")
+[new class 和 new function 可有什么区别](<./class与function构造器/index.md> "new class 和 new function 可有什么区别")

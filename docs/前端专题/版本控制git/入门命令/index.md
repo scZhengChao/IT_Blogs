@@ -22,4 +22,4 @@
 
 [git remote](<./git remote/index.md> "git remote")
 
-[switch](IT/前端专题/版本控制git/入门命令/switch/switch.md "switch")
+[switch](./switch/index.md "switch")

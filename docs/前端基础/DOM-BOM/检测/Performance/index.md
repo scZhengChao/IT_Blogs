@@ -36,4 +36,4 @@ timingInfo = performance.memory
 
 [PerformanceObserver](<../../Observer Api/PerformanceObserver/index.md> "PerformanceObserver")
 
-[性能分析](IT/前端专题/性能管理/性能分析/性能分析.md "性能分析")
+[性能分析](../../../../前端专题/性能管理/性能分析/index.md "性能分析")

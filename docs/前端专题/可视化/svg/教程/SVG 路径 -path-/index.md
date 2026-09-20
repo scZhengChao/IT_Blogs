@@ -27,8 +27,8 @@ SVG 中的`<path>`元素用于创建路径，它是 SVG 中最强大和最灵活
 - `stroke`属性定义了路径的描边颜色。
 - `stroke-width`属性定义了路径的描边宽度。
 
-[贝塞尔曲线](IT/前端专题/可视化/svg/教程/SVG%20路径%20-path-/贝塞尔曲线/贝塞尔曲线.md "贝塞尔曲线")
+[贝塞尔曲线](./贝塞尔曲线/index.md "贝塞尔曲线")
 
-[path](IT/前端专题/可视化/svg/教程/SVG%20路径%20-path-/path/path.md "path")
+[path](./path/index.md "path")
 
 [曲线 - 椭圆弧路径 path](<./曲线 - 椭圆弧路径 path/index.md> "曲线 - 椭圆弧路径 path")

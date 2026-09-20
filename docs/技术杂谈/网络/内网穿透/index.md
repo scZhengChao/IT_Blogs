@@ -1,8 +1,8 @@
 # 内网穿透
 
-[NAT](NAT/NAT.md "NAT")
+NAT（原笔记未收录）
 
-[ngrok](ngrok/ngrok.md "ngrok")
+ngrok（原笔记未收录）
 
 [搞一下](./搞一下.md "搞一下")
 

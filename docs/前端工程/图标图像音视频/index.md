@@ -2,7 +2,7 @@
 
 [audio](./audio/index.md "audio")
 
-[img](IT/前端工程/图标图像音视频/img/img.md "img")
+[img](./img/index.md "img")
 
 [video](./video/index.md "video")
 

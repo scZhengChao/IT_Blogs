@@ -10,7 +10,7 @@
 
 [animate.css](./animate.css/index.md "animate.css")
 
-[react](IT/前端工程/动画/react/react.md "react")
+[react](./react/index.md "react")
 
 [GSAP](./GSAP/index.md "GSAP")
 
@@ -24,4 +24,4 @@
 
 [鼠标点击特效](./鼠标点击特效/index.md "鼠标点击特效")
 
-[library](IT/前端工程/动画/library/library.md "library")
+[library](./library/index.md "library")

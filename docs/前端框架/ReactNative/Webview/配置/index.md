@@ -1,6 +1,6 @@
 # 配置
 
-[The certificate authority is not trusted](<./The certificate authority is n/The certificate authority is not trusted.md> "The certificate authority is not trusted")
+[The certificate authority is not trusted](<./证书颁发机构不受信任/index.md> "The certificate authority is not trusted")
 
 [本地url](./本地url/index.md "本地url")
 

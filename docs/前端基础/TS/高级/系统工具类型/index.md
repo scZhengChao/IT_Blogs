@@ -1,6 +1,6 @@
 # 系统工具类型
 
-[in](IT/前端基础/TS/高级/系统工具类型/in/in.md "in")
+[in](./in/index.md "in")
 
 [Partial](./Partial/index.md "Partial")
 

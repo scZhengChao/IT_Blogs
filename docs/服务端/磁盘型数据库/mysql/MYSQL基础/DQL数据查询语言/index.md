@@ -51,6 +51,10 @@ LIMIT
 
 [分组查询 group by](<./分组查询 group by/index.md> "分组查询 group by")
 
-[分页查询](IT/服务端/磁盘型数据库/mysql/MYSQL基础/DQL数据查询语言/分页查询/分页查询.md "分页查询")
+[分页查询](./分页查询/index.md "分页查询")
 
-[案例](IT/服务端/磁盘型数据库/mysql/MYSQL基础/DQL数据查询语言/案例/案例.md "案例")
+[案例](./案例/index.md "案例")
+
+## 子目录与文章
+
+- [排序查询 order by-](./排序查询%20order%20by-/index.md)

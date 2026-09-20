@@ -236,4 +236,4 @@ set $var = $http_x_forwarded_for;
 
 如果开启 on，那么当发生rewrite时，会\*\*产生一个`notice`级别的日志；否则不会产生任何日志。默认情况下是不产生的，\*\*但在调试的时候可以将其置为on。
 
-[案例](IT/前端工程/部署发布/nginx/核心配置/rewrite/案例/案例.md "案例")
+[案例](./案例/index.md "案例")

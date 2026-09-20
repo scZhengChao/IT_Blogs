@@ -16,7 +16,7 @@
 
 [ConnectedFn](./ConnectedFn/index.md "ConnectedFn")
 
-[Proxy](IT/前端基础/TS/高级/自定义工具类型/Proxy/Proxy.md "Proxy")
+[Proxy](./Proxy/index.md "Proxy")
 
 [unProxy](./unProxy/index.md "unProxy")
 

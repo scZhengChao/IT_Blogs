@@ -6,4 +6,4 @@
 
 [go.sum](./go.sum/index.md "go.sum")
 
-[初始化](IT/服务端/go语言学习/go%20模块化-工程化/go.mod%20%20go.sum/初始化/初始化.md "初始化")
+[初始化](./初始化/index.md "初始化")

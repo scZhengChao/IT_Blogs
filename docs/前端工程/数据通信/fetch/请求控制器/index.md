@@ -37,7 +37,7 @@
 
 当一个 [fetch request](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/fetch "fetch request") 初始化，我们把 `AbortSignal` 作为一个选项传递到到请求对象（如下 `{ signal }`）。这将&#x20;
 
-signal `和 controller 与这个 fetch request 相关联，然后允许我们通过调用 `[AbortController.abort()  ](\(https://developer.mozilla.org/zh-CN/docs/Web/API/AbortController/abort\) "AbortController.abort()  ")`中止请求，如下第二个事件监听函数。`
+signal `和 controller 与这个 fetch request 相关联，然后允许我们通过调用 `[AbortController.abort()](https://developer.mozilla.org/zh-CN/docs/Web/API/AbortController/abort)`中止请求，如下第二个事件监听函数。`
 
 ```javascript 
 const controller = new AbortController();

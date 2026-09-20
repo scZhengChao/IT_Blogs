@@ -4,6 +4,6 @@
 
 [get](./get/index.md "get")
 
-[post](IT/前端工程/数据通信/http/要点/method/post/post.md "post")
+[post](./post/index.md "post")
 
 [head](./head/index.md "head")

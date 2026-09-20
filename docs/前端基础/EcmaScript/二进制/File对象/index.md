@@ -95,6 +95,6 @@ dropZone.ondrop = (e) => {
 
 可以看到，这里得到的 `File` 对象和通过 `input` 标签获得的 `File` 对象是完全一样的。
 
-[File](IT/前端基础/EcmaScript/二进制/File对象/File/File.md "File")
+[File](./File/index.md "File")
 
 [和Blob的区别](./和Blob的区别/index.md "和Blob的区别")

@@ -1,5 +1,5 @@
 # document
 
-[方案](IT/前端基础/DOM-BOM/document/方案/方案.md "方案")
+[方案](./方案/index.md "方案")
 
 [createElementNS](./createElementNS/index.md "createElementNS")

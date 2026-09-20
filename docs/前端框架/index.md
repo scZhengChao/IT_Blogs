@@ -1,6 +1,6 @@
 # 前端框架
 
-[React](IT/前端框架/React/React.md "React")
+[React](./React/index.md "React")
 
 [Jquery](./Jquery/index.md "Jquery")
 
@@ -14,7 +14,7 @@
 
 [经典效果组件](./经典效果组件/index.md "经典效果组件")
 
-[工程搭建](IT/前端框架/工程搭建/工程搭建.md "工程搭建")
+[工程搭建](./工程搭建/index.md "工程搭建")
 
 [SSR](./SSR/index.md "SSR")
 

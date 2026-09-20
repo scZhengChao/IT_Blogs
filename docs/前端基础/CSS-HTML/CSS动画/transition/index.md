@@ -123,8 +123,8 @@ CSS 过渡通常使用简写属性 `transition` 来定义，这是最好的方�
 1. `propertyName` 一个字符串，表示过渡完成的 CSS 属性的名称。
 2. `elapsedTime` 一个浮点数，表示在事件发生时，过渡已经运行了多少秒。
 
-[语法](IT/前端基础/CSS-HTML/CSS动画/transition/语法/语法.md "语法")
+[语法](./语法/index.md "语法")
 
-[案例](IT/前端基础/CSS-HTML/CSS动画/transition/案例/案例.md "案例")
+[案例](./案例/index.md "案例")
 
-[高级使用](IT/前端基础/CSS-HTML/CSS动画/transition/高级使用/高级使用.md "高级使用")
+[高级使用](./高级使用/index.md "高级使用")

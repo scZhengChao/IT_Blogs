@@ -2,13 +2,13 @@
 
 [Operators](./Operators/index.md "Operators")
 
-[Observable](IT/前端框架/Rxjs/概览/Observable/Observable.md "Observable")
+[Observable](./Observable/index.md "Observable")
 
-[Observer](IT/前端框架/Rxjs/概览/Observer/Observer.md "Observer")
+[Observer](./Observer/index.md "Observer")
 
 [Subject](./Subject/index.md "Subject")
 
-[Subscription](IT/前端框架/Rxjs/概览/Subscription/Subscription.md "Subscription")
+[Subscription](./Subscription/index.md "Subscription")
 
 [调度器Scheduler](./调度器Scheduler/index.md "调度器Scheduler")
 

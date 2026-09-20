@@ -1,7 +1,11 @@
 # ArrayBuffer
 
-[ArrayBuffer](IT/前端基础/EcmaScript/二进制/总结/ArrayBuffer/ArrayBuffer.md "ArrayBuffer")
+[ArrayBuffer](./index.md "ArrayBuffer")
 
 [TypedArray](./TypedArray/index.md "TypedArray")
 
 [DataView](./DataView/index.md "DataView")
+
+## 子目录与文章
+
+- [ArrayBuffer](./ArrayBuffer/index.md)

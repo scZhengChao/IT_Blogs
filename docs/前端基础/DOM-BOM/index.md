@@ -6,7 +6,7 @@
 
 [Observer Api](<./Observer Api/index.md> "Observer Api")
 
-[scroll](IT/前端基础/DOM-BOM/scroll/scroll.md "scroll")
+[scroll](./scroll/index.md "scroll")
 
 [document](./document/index.md "document")
 
@@ -30,6 +30,6 @@
 
 [DOMPoint](./DOMPoint/index.md "DOMPoint")
 
-[性能优化](IT/前端基础/DOM-BOM/性能优化/性能优化.md "性能优化")
+[性能优化](./性能优化/index.md "性能优化")
 
 [检测](./检测/index.md "检测")

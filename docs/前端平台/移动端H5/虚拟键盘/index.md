@@ -6,4 +6,4 @@
 
 [戳中你痛点的软键盘问题及解决方法](./戳中你痛点的软键盘问题及解决方法/index.md "戳中你痛点的软键盘问题及解决方法")
 
-[ahooks](IT/前端平台/移动端H5/虚拟键盘/ahooks/ahooks.md "ahooks")
+[ahooks](./ahooks/index.md "ahooks")

@@ -181,4 +181,4 @@ const execa = require('execa');
 
 [cross-spawn](../../../../../前端框架/工程搭建/子进程/cross-spawn/index.md "cross-spawn")
 
-[如何判断脚本是运行在 类 Unix 的 Shell 环境 还是powershell](<../如何判断脚本是运行在 类 Unix 的 Shell 环境 还/如何判断脚本是运行在 类 Unix 的 Shell 环境 还是powershell.md> "如何判断脚本是运行在 类 Unix 的 Shell 环境 还是powershell")
+[如何判断脚本是运行在 类 Unix 的 Shell 环境 还是powershell](<../Shell环境识别/index.md> "如何判断脚本是运行在 类 Unix 的 Shell 环境 还是powershell")

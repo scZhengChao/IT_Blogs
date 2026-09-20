@@ -144,4 +144,4 @@ try {
 
 如果压缩内容包含中文文本，压缩时需要使用`encodeURIComponent`来转移一下，解压时需要`decodeURIComponent`来转义回去。否则会出现中文乱码。
 
-[案例](IT/前端工程/工具轮子/pako%20压缩/案例/案例.md "案例")
+[案例](./案例/index.md "案例")

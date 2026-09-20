@@ -15,4 +15,4 @@ server {
 ```
 
 
-[Nginx防止大流量攻击，限制流量访问（limit\_req\_zone模块）以及进行网站压力测试](../../方案/Nginx防止大流量攻击，限制流量访问（limit_req_/Nginx防止大流量攻击，限制流量访问（limit_req_zone模块）以及进行网站压力测试.md "Nginx防止大流量攻击，限制流量访问（limit_req_zone模块）以及进行网站压力测试")
+[Nginx防止大流量攻击，限制流量访问（limit\_req\_zone模块）以及进行网站压力测试](../../方案/请求限流与压测/index.md "Nginx防止大流量攻击，限制流量访问（limit_req_zone模块）以及进行网站压力测试")

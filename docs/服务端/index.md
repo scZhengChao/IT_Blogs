@@ -1,6 +1,6 @@
 # 服务端
 
-[java学习](IT/服务端/java学习/java学习.md "java学习")
+[java学习](../java学习/index.md "java学习")
 
 [go语言学习](../go语言学习/index.md "go语言学习")
 

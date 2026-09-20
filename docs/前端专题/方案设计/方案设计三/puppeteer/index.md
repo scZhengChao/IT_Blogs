@@ -8,9 +8,9 @@
 
 [   https://pptr.nodejs.cn/guides/configuration#configuration-files](https://pptr.nodejs.cn/guides/configuration#configuration-files "   https://pptr.nodejs.cn/guides/configuration#configuration-files")
 
-[问题](IT/前端专题/方案设计/方案设计三/puppeteer/问题/问题.md "问题")
+[问题](./问题/index.md "问题")
 
-[快速上手](IT/前端专题/方案设计/方案设计三/puppeteer/快速上手/快速上手.md "快速上手")
+[快速上手](./快速上手/index.md "快速上手")
 
 [简单case上手](./简单case上手/index.md "简单case上手")
 

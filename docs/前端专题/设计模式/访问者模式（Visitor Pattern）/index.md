@@ -78,8 +78,8 @@ computer.accept(new ComputerPartDisplayVisitor());
 
 如上**类似设备这个东西是一个相对稳定的结构，而访问者要实现的功能又是非常不确定的**，那么针对不同访问者，都可以对相同的设备进行不同的输出。其次只需要暴露特定接口，而相对稳定的设备不需要考虑接口中实现的内容。
 
-[理解](IT/前端专题/设计模式/访问者模式（Visitor%20Pattern）/理解/理解.md "理解")
+[理解](./理解/index.md "理解")
 
-[【设计模式27】访问者模式+源码分析：Eclipse JDT AST中浏览者模式](<./【设计模式27】访问者模式+源码分析：Eclipse JDT/【设计模式27】访问者模式+源码分析：Eclipse JDT AST中浏览者模式.md> "【设计模式27】访问者模式+源码分析：Eclipse JDT AST中浏览者模式")
+[【设计模式27】访问者模式+源码分析：Eclipse JDT AST中浏览者模式](<./Eclipse-JDT源码分析/index.md> "【设计模式27】访问者模式+源码分析：Eclipse JDT AST中浏览者模式")
 
 [初探javascript设计模式-访问者模式](./初探javascript设计模式-访问者模式/index.md "初探javascript设计模式-访问者模式")

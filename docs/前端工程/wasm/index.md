@@ -25,3 +25,7 @@ wasm 的优点：
 [wasm和node的关系](./wasm和node的关系/index.md "wasm和node的关系")
 
 [AssemblyScript ](./AssemblyScript-/index.md "AssemblyScript ")
+
+## 子目录与文章
+
+- [Emscripten(c++）](./Emscripten%28c++）/index.md)

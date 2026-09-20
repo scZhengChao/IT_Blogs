@@ -99,4 +99,4 @@ remove(values, a)
 
 如果可以的话，建议在`produce`**函数之外执行比较，或者使用**\*\*`.id`之类的唯一标识符\*\*属性，以避免需要使用
 
-[ Cannot assign to read only property 'isCheck' of object '#\<Object>'](<./Cannot assign to read only pro/Cannot assign to read only property ’isCheck’ of o.md> " Cannot assign to read only property 'isCheck' of object '#<Object>'")
+[ Cannot assign to read only property 'isCheck' of object '#\<Object>'](<./只读属性赋值错误/index.md> " Cannot assign to read only property 'isCheck' of object '#<Object>'")

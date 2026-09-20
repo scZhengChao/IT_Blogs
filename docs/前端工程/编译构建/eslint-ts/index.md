@@ -8,10 +8,10 @@
 
 [vite vue3 ](<./vite vue3-/index.md> "vite vue3 ")
 
-[方案用例](IT/前端工程/编译构建/eslint-ts/方案用例/方案用例.md "方案用例")
+[方案用例](./方案用例/index.md "方案用例")
 
-[插件](IT/前端工程/编译构建/eslint-ts/插件/插件.md "插件")
+[插件](./插件/index.md "插件")
 
-[规则](IT/前端工程/编译构建/eslint-ts/规则/规则.md "规则")
+[规则](./规则/index.md "规则")
 
 [集成Eslint](./集成Eslint/index.md "集成Eslint")

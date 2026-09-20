@@ -4,6 +4,6 @@
 
 [常见Q\&A](./常见Q&A/index.md "常见Q\&A")
 
-[熟悉requestidlecallback到了解react ric polyfill实现](<./熟悉requestidlecallback到了解react /熟悉requestidlecallback到了解react ric polyfill实现.md> "熟悉requestidlecallback到了解react ric polyfill实现")
+[熟悉requestidlecallback到了解react ric polyfill实现](<./React调度与polyfill/index.md> "熟悉requestidlecallback到了解react ric polyfill实现")
 
 [requestIdleCallback介绍](./requestIdleCallback介绍/index.md "requestIdleCallback介绍")

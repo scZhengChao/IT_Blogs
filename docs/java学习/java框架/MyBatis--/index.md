@@ -188,6 +188,6 @@ public class MybatisTest {
 
 [编写会话工具类](./编写会话工具类/index.md "编写会话工具类")
 
-[实践](IT/服务端/java学习/java框架/MyBatis--/实践/实践.md "实践")
+[实践](./实践/index.md "实践")
 
-[高级](IT/服务端/java学习/java框架/MyBatis--/高级/高级.md "高级")
+[高级](./高级/index.md "高级")

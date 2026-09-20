@@ -4,4 +4,4 @@
 
 [eslint-webpack-plugin](../../webpack系列/chainWebpack/eslint-webpack-plugin/index.md "eslint-webpack-plugin")
 
-[基础](IT/前端工程/编译构建/eslint-ts/插件/基础/基础.md "基础")
+[基础](./基础/index.md "基础")

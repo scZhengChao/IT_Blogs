@@ -22,7 +22,7 @@ getCookie()
 
 [SameSite](./SameSite/index.md "SameSite")
 
-[path](IT/前端基础/DOM-BOM/本地数据持久化/cookie/path/path.md "path")
+[path](./path/index.md "path")
 
 [expires/Max-Age](./expires-Max-Age/index.md "expires/Max-Age")
 

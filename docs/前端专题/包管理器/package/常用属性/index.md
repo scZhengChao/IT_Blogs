@@ -1,8 +1,8 @@
 # 常用属性
 
-[script](IT/前端专题/包管理器/package/常用属性/script/script.md "script")
+[script](./script/index.md "script")
 
-[cdn](IT/前端专题/包管理器/package/常用属性/cdn/cdn.md "cdn")
+[cdn](./cdn/index.md "cdn")
 
 [repository](./repository/index.md "repository")
 
@@ -16,7 +16,7 @@
 
 [private](./private/index.md "private")
 
-[os](IT/前端专题/包管理器/package/常用属性/os/os.md "os")
+[os](./os/index.md "os")
 
 [engines](./engines/index.md "engines")
 

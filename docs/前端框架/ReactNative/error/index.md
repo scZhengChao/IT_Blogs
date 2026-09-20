@@ -7,4 +7,4 @@ Could not determine the dependencies of task ':app:compileDebugJavaWithJavac'.
 
 [   https://github.com/reactnativecn/react-native-website/issues/695](https://github.com/reactnativecn/react-native-website/issues/695 "   https://github.com/reactnativecn/react-native-website/issues/695")
 
-[app:compileDebugJavaWithJavac](./app-compileDebugJavaWithJavac/index.md "app:compileDebugJavaWithJavac")
+[app:compileDebugJavaWithJavac](./Java编译失败/index.md "app:compileDebugJavaWithJavac")

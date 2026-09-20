@@ -10,4 +10,4 @@
 
 [打包工具-支持ts](./打包工具-支持ts/index.md "打包工具-支持ts")
 
-[QA](IT/前端基础/TS/tsconfig/QA/QA.md "QA")
+[QA](./QA/index.md "QA")

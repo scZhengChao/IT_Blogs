@@ -1,6 +1,6 @@
 # 依赖相关属性
 
-[dependencies/devDependencies](./dependencies-devDependencies/index.md "dependencies/devDependencies")
+[dependencies/devDependencies](./生产依赖与开发依赖/index.md "dependencies/devDependencies")
 
 [peerDependencies](./peerDependencies/index.md "peerDependencies")
 

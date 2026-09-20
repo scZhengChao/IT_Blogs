@@ -74,7 +74,7 @@
 
 [.gitlab-ci.yml](./assets/file/-gitlab-ci_bTLEoylUx9.yml " .gitlab-ci.yml")
 
-[api](IT/docker/api/api.md "api")
+[api](./api/index.md "api")
 
 [镜像](../技术杂谈/终端服务/镜像.md "镜像")
 
@@ -96,4 +96,4 @@
 
 [Docker镜像仓库](./Docker镜像仓库/index.md "Docker镜像仓库")
 
-[案例](IT/docker/案例/案例.md "案例")
+[案例](./案例/index.md "案例")

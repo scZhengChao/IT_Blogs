@@ -28,4 +28,4 @@ graph TD
 
 [jvm 内存划分](<./jvm 内存划分/index.md> "jvm 内存划分")
 
-[常量池](IT/服务端/java学习/java基础/java内存图解/常量池/常量池.md "常量池")
+[常量池](./常量池/index.md "常量池")

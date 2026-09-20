@@ -37,10 +37,10 @@ sym.description // 'The description'
 ```
 
 
-[特性](IT/前端基础/EcmaScript/Symbol/特性/特性.md "特性")
+[特性](./特性/index.md "特性")
 
 [属性名](./属性名/index.md "属性名")
 
 [重复](./重复/index.md "重复")
 
-[用例](IT/前端基础/EcmaScript/Symbol/用例/用例.md "用例")
+[用例](./用例/index.md "用例")

@@ -91,9 +91,9 @@ GET /index.html
 
 各版本的演进始终围绕**降低延迟、提高安全性、优化传输效率**展开。实际应用中，HTTP/2和HTTP/3需服务端和客户端同时支持（如浏览器、CDN）。
 
-[http/1.0->http/1.1连接复用（Connection Reuse）](<./http-1.0--http-1.1连接复用（Connect/http-1.0--http-1.1连接复用（Connection Reuse）.md> "http/1.0->http/1.1连接复用（Connection Reuse）")
+[http/1.0->http/1.1连接复用（Connection Reuse）](<./连接复用/index.md> "http/1.0->http/1.1连接复用（Connection Reuse）")
 
-[http/1.x ->http/2队头阻塞（Head-of-Line Blocking, HOL Blocking）](<./http-1.x --http-2队头阻塞（Head-of-/http-1.x --http-2队头阻塞（Head-of-Line Blocking- HOL B.md> "http/1.x ->http/2队头阻塞（Head-of-Line Blocking, HOL Blocking）")
+[http/1.x ->http/2队头阻塞（Head-of-Line Blocking, HOL Blocking）](<./队头阻塞/index.md> "http/1.x ->http/2队头阻塞（Head-of-Line Blocking, HOL Blocking）")
 
 [http/2服务器推送（Server Push）](<./http-2服务器推送（Server Push）/index.md> "http/2服务器推送（Server Push）")
 

@@ -113,8 +113,8 @@ p1: Person = new Person
 
 # interface 和 type 的区别是什么
 
-[抽象类](IT/前端基础/TS/进阶/类class/抽象类/抽象类.md "抽象类")
+[抽象类](./抽象类/index.md "抽象类")
 
-[this](IT/前端基础/TS/进阶/类class/this/this.md "this")
+[this](./this/index.md "this")
 
 [interface 和 type](<./interface 和 type/index.md> "interface 和 type")

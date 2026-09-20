@@ -76,7 +76,7 @@
 
 [常用属性](./常用属性/index.md "常用属性")
 
-[workspaces](IT/前端专题/包管理器/package/workspaces/workspaces.md "workspaces")
+[workspaces](./workspaces/index.md "workspaces")
 
 [导入导出相关属性](./导入导出相关属性/index.md "导入导出相关属性")
 

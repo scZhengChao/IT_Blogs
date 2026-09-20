@@ -82,7 +82,7 @@ node-gyp rebuild --runtime=electron --target=28.2.0 --disturl=https://atom.io/do
 
 [常见陷阱](./常见陷阱/index.md "常见陷阱")
 
-[electron 详细使用robotjs 的详细安装编译 步骤](<./electron 详细使用robotjs 的详细安装编译 步/electron 详细使用robotjs 的详细安装编译 步骤.md> "electron 详细使用robotjs 的详细安装编译 步骤")
+[electron 详细使用robotjs 的详细安装编译 步骤](<./robotjs安装编译/index.md> "electron 详细使用robotjs 的详细安装编译 步骤")
 
 [傀儡端：键盘操作](./傀儡端：键盘操作/index.md "傀儡端：键盘操作")
 

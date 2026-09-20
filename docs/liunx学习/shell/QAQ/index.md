@@ -4,4 +4,4 @@
 
 [怎么查看自己使用的是哪一个shell？](./怎么查看自己使用的是哪一个shell？/index.md "怎么查看自己使用的是哪一个shell？")
 
-[mac每次都要source \~/.bash\_profile](<./mac每次都要source ~-.bash_profile/index.md> "mac每次都要source ~/.bash_profile")
+[mac每次都要source \~/.bash\_profile](<./Shell配置加载/index.md> "mac每次都要source ~/.bash_profile")

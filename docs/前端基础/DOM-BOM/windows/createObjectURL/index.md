@@ -27,7 +27,7 @@ let  windowURL = window.URL || window.webkitURL ｜｜ window
 
 [结合 Blob](<./结合 Blob/index.md> "结合 Blob")
 
-[createObjectURL()  和  FileReader.readAsDataURL(file) 比较](<createObjectURL()  和  FileReader.readAsDataURL(fil.md> "createObjectURL()  和  FileReader.readAsDataURL(file) 比较")
+[createObjectURL()  和  FileReader.readAsDataURL(file) 比较](<./对象URL与DataURL/index.md> "createObjectURL()  和  FileReader.readAsDataURL(file) 比较")
 
 # 下载
 

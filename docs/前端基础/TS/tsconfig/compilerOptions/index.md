@@ -225,4 +225,4 @@ TypeScript 和 ES6 中引入了 Class 的概念，同时在 Decorators\[11] 提�
 
 [erasableSyntaxOnly ](./erasableSyntaxOnly-/index.md "erasableSyntaxOnly ")
 
-[@types ， typeRoots 和 types](<./@types ， typeRoots 和 types/index.md> "@types ， typeRoots 和 types")
+[@types ， typeRoots 和 types](<./类型声明配置/index.md> "@types ， typeRoots 和 types")

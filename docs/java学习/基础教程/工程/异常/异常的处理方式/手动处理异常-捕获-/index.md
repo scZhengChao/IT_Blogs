@@ -1,0 +1,13 @@
+手动处理异常-捕获
+
+\[捕获处理异常介绍 : try, catch
+
+]\(<捕获处理异常介绍 - try- catch--\_kgo69HBra5FGtGuGkxcatp.md> "捕获处理异常介绍 : try, catch
+
+")
+
+[](./多异常捕获处理方案-/index.md)
+
+## 子目录与文章
+
+- [捕获处理异常介绍 - try- catch--](./捕获处理异常介绍%20-%20try-%20catch--/index.md)

@@ -1,0 +1,127 @@
+# 包装类型
+
+## 目录
+
+- [为什么要包装类](#为什么要包装类)
+- [特点](#特点)
+- [解决了什么问题](#解决了什么问题)
+  - [小结](#小结)
+
+# 为什么要包装类
+
+**将基本类型封装成对象；好处是提供了方法操作数据；**
+
+**基础类型是没有方法的**
+
+![](./assets/image/image_tdh8e1XIlW.png)
+
+# 特点
+
+- **每一个基础类型都有一个对应的包装类**
+- **包装类是finial 修饰的；**
+- **数字都是继承number；其余的都是继承对象**；
+
+我们已经知道，Java的数据类型分两种：
+
+- 基本类型：`byte`，`short`，`int`，`long`，`boolean`，`float`，`double`，`char`；
+- 引用类型：所有`class`和`interface`类型。
+
+**引用类型可以赋值为**\*\*`null`****，表示空，但基本类型不能赋值为****`null`：\*\*​
+
+```java 
+String s = null;
+int n = null; // compile error!
+
+```
+
+
+那么，**如何把一个基本类型视为对象（引用类型）？**
+
+比如，想要把`int`基本类型变成一个引用类型，我们可以定义一个`Integer`类，它只包含一个实例字段`int`，这样，`Integer`类就可以视为`int`的包装类（Wrapper Class）：
+
+```java 
+public class Integer {
+    private int value;
+
+    public Integer(int value) {
+        this.value = value;
+    }
+
+    public int intValue() {
+        return this.value;
+    }
+}
+
+```
+
+
+定义好了`Integer`类，我们就可以把`int`和`Integer`互相转换：
+
+```java 
+Integer n = null;
+Integer n2 = new Integer(99);
+int n3 = n2.intValue();
+
+```
+
+
+实际上，**因为包装类型非常有用，Java核心库为每种基本类型都提供了对应的包装类型**：
+
+| 基本类型    | 对应的引用类型             |
+| ------- | ------------------- |
+| boolean | java.lang.Boolean   |
+| byte    | java.lang.Byte      |
+| short   | java.lang.Short     |
+| int     | java.lang.Integer   |
+| long    | java.lang.Long      |
+| float   | java.lang.Float     |
+| double  | java.lang.Double    |
+| char    | java.lang.Character |
+
+我们可以直接使用，并不需要自己去定义：
+
+```java 
+// Integer:
+public class Main {
+    public static void main(String[] args) {
+        int i = 100;
+        // 通过new操作符创建Integer实例(不推荐使用,会有编译警告):
+        Integer n1 = new Integer(i);
+        // 通过静态方法valueOf(int)创建Integer实例:
+        Integer n2 = Integer.valueOf(i);
+        // 通过静态方法valueOf(String)创建Integer实例:
+        Integer n3 = Integer.valueOf("100");
+        System.out.println(n3.intValue());
+    }
+}
+```
+
+
+# 解决了什么问题
+
+1. 实现`string` 类型**和7种基本类型**的转换（没有`char` ）
+2. 在使用mysql中；大量使用包装类型；**因为他可以存储null；**
+
+### 小结
+
+- Java核心库提供的包装类型可以把基本类型包装为`class`；
+- 自动装箱和自动拆箱都是在编译期完成的（JDK>=1.5）；
+- 装箱和拆箱会影响执行效率，且拆箱时可能发生`NullPointerException`；
+- 包装类型的比较必须使用`equals()`；
+- 整数和浮点数的包装类型都继承自`Number`；
+- 包装类型提供了大量实用方法。
+- 将基本数据类型封装成对象的好处就是可以**通过对象调用方法操作数据**
+
+[静态变量](./静态变量/index.md "静态变量")
+
+[处理无符号整型](./处理无符号整型/index.md "处理无符号整型")
+
+[Auto Boxing](<./Auto Boxing/index.md> "Auto Boxing")
+
+[不变类](./不变类/index.md "不变类")
+
+[进制转换](./进制转换/index.md "进制转换")
+
+[转换](./转换/index.md "转换")
+
+[缓存](./缓存/index.md "缓存")

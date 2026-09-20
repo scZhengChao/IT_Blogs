@@ -96,10 +96,10 @@ backface-visibility: hidden;
 ```
 
 
-[rotate](IT/前端基础/CSS-HTML/CSS动画/transform%20%20%202D-3D/语法/rotate/rotate.md "rotate")
+[rotate](./rotate/index.md "rotate")
 
-[translate](IT/前端基础/CSS-HTML/CSS动画/transform%20%20%202D-3D/语法/translate/translate.md "translate")
+[translate](./translate/index.md "translate")
 
 [skew](./skew/index.md "skew")
 
-[scale](IT/前端基础/CSS-HTML/CSS动画/transform%20%20%202D-3D/语法/scale/scale.md "scale")
+[scale](./scale/index.md "scale")

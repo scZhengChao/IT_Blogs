@@ -229,3 +229,7 @@ Husky 提供了一种干净、可维护的方式来管理 Git 钩子，是现代
 [](./- -$(dirname -$0-)-_-husky.sh-/index.md)
 
 [他是如何同lint-staged  配合的](<./他是如何同lint-staged  配合的/index.md> "他是如何同lint-staged  配合的")
+
+## 子目录与文章
+
+- [Hook启动脚本](./Hook启动脚本/index.md)

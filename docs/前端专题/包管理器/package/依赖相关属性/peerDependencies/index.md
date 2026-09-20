@@ -58,8 +58,8 @@ npm install --strict-peer-deps=false react-plugin
 
 [版本冲突解决方案](./版本冲突解决方案/index.md "版本冲突解决方案")
 
-[pnpm  Peer Dependency 处理方式的版本演进](<./pnpm  Peer Dependency 处理方式的版本演/pnpm  Peer Dependency 处理方式的版本演进.md> "pnpm  Peer Dependency 处理方式的版本演进")
+[pnpm  Peer Dependency 处理方式的版本演进](<./pnpm对等依赖演进/index.md> "pnpm  Peer Dependency 处理方式的版本演进")
 
 [核心价值和最佳实践](./核心价值和最佳实践/index.md "核心价值和最佳实践")
 
-[如何强制子包安装  peerDependencies ？](<如何强制子包安装  peerDependencies ？.md> "如何强制子包安装  peerDependencies ？")
+[如何强制子包安装  peerDependencies ？](<./强制安装对等依赖/index.md> "如何强制子包安装  peerDependencies ？")

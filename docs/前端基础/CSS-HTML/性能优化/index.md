@@ -6,7 +6,7 @@
 
 [降低CSS选择器复杂性的实用指南](./降低CSS选择器复杂性的实用指南/index.md " 降低CSS选择器复杂性的实用指南")
 
-[如何简化 Paint 复杂性并减少 Paint 面积](<./如何简化 Paint 复杂性并减少 Paint 面积/index.md> "如何简化 Paint 复杂性并减少 Paint 面积")
+[如何简化 Paint 复杂性并减少 Paint 面积](<./绘制性能优化/index.md> "如何简化 Paint 复杂性并减少 Paint 面积")
 
 [隐藏元素](./隐藏元素/index.md "隐藏元素")
 

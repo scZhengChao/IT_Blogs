@@ -341,4 +341,4 @@ const objectUrl = URL.createObjectURL(blob);
 ```
 
 
-[ArrayBuffer](IT/前端基础/EcmaScript/二进制/总结/ArrayBuffer/ArrayBuffer.md "ArrayBuffer")
+[ArrayBuffer](./ArrayBuffer/index.md "ArrayBuffer")

@@ -20,7 +20,7 @@ then.call(p2,(res)=>{  //一定要call执行, 否证prototype 找不到this
 ```
 
 
-[用例](IT/前端基础/EcmaScript/异步/Promise/用例/用例.md "用例")
+[用例](./用例/index.md "用例")
 
 [手写源码](./手写源码/index.md "手写源码")
 

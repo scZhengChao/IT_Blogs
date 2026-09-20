@@ -67,9 +67,9 @@ Linux的目录结构，如下：
 
 [/mnt – 临时挂载点目录](<./-mnt – 临时挂载点目录/index.md> "/mnt – 临时挂载点目录")
 
-[/opt – 自选软件包（Optional Packages）](<./-opt – 自选软件包（Optional Packages/index.md> "/opt – 自选软件包（Optional Packages）")
+[/opt – 自选软件包（Optional Packages）](<./opt/index.md> "/opt – 自选软件包（Optional Packages）")
 
-[/proc – Kernel & Process Files](<./-proc – Kernel & Process Files/index.md> "/proc – Kernel & Process Files")
+[/proc – Kernel & Process Files](<./proc/index.md> "/proc – Kernel & Process Files")
 
 [/root – root主目录](<./-root – root主目录/index.md> "/root – root主目录")
 
@@ -83,6 +83,6 @@ Linux的目录结构，如下：
 
 [/tmp – 临时文件](<./-tmp – 临时文件/index.md> "/tmp – 临时文件")
 
-[/usr – User Binaries & Read-Only Data](<./-usr – User Binaries & Read-On/-usr – User Binaries & Read-Only Data.md> "/usr – User Binaries & Read-Only Data")
+[/usr – User Binaries & Read-Only Data](<./usr/index.md> "/usr – User Binaries & Read-Only Data")
 
 [/var – 变量数据文件](<./-var – 变量数据文件/index.md> "/var – 变量数据文件")

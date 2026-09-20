@@ -137,6 +137,6 @@ K8S是属于**主从设备模型（Master-Slave架构）**，即有Master节点�
 
 [k8s整体结构](./k8s整体结构/index.md "k8s整体结构")
 
-[config](IT/前端工程/部署发布/k8s/config/config.md "config")
+[config](./config/index.md "config")
 
-[原理](IT/前端工程/部署发布/k8s/原理/原理.md "原理")
+[原理](./原理/index.md "原理")

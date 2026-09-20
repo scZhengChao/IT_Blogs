@@ -175,7 +175,7 @@ console.log(next.x)
 ```
 
 
-[用例](IT/前端工程/不可变数据/immer/用例/用例.md "用例")
+[用例](./用例/index.md "用例")
 
 [什么是 immer](<./什么是 immer/index.md> "什么是 immer")
 
@@ -183,6 +183,6 @@ console.log(next.x)
 
 [在 React 中使用 Immer 管理不可变状态](<./在 React 中使用 Immer 管理不可变状态/index.md> "在 React 中使用 Immer 管理不可变状态")
 
-[陷阱](IT/前端工程/不可变数据/immer/陷阱/陷阱.md "陷阱")
+[陷阱](./陷阱/index.md "陷阱")
 
-[高级](IT/前端工程/不可变数据/immer/高级/高级.md "高级")
+[高级](./高级/index.md "高级")

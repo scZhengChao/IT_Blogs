@@ -2,7 +2,7 @@
 
 [worker-loader](./worker-loader/index.md "worker-loader")
 
-[简介](IT/前端基础/多线程和进程/web-worker/简介/简介.md "简介")
+[简介](./简介/index.md "简介")
 
 [Transferable object](<./Transferable object/index.md> "Transferable object")
 
@@ -22,6 +22,6 @@
 
 [hardwareConcurrency](./hardwareConcurrency/index.md "hardwareConcurrency")
 
-[File](IT/前端基础/多线程和进程/web-worker/File/File.md "File")
+[File](./File/index.md "File")
 
 [Comlink 的使用](<./Comlink 的使用/index.md> "Comlink 的使用")

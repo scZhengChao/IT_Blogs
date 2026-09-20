@@ -136,4 +136,4 @@ self.addEventListener('fetch', event => {
 
 使用 offline-plugin 插件可以实现 PWA 应用程序的离线访问。离线访问可以提高用户体验，降低应用程序依赖网络的风险。在实际开发中，可以根据实际需求，选择合适的缓存策略，提高缓存效率，提高应用程序的性能。
 
-[使用offline-plugin搭配webpack轻松实现PWA](./使用offline-plugin搭配webpack轻松实现P/使用offline-plugin搭配webpack轻松实现PWA.md "使用offline-plugin搭配webpack轻松实现PWA")
+[使用offline-plugin搭配webpack轻松实现PWA](./offline-plugin实践/index.md "使用offline-plugin搭配webpack轻松实现PWA")

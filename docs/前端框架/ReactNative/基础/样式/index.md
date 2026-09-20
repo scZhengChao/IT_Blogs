@@ -288,10 +288,10 @@ var styles = StyleSheet.create({     box: {         borderWidth: 1 / P
 
 上述代码将保证你的应用在所有的设备上（像素密度），都获得 1像素 的边框厚度。PixelRatio 通过 get() 方法来返回设备的像素密度。&#x20;
 
-[position](IT/前端框架/ReactNative/基础/样式/position/position.md "position")
+[position](./position/index.md "position")
 
 [StyleSheet](./StyleSheet/index.md "StyleSheet")
 
-[flex](IT/前端框架/ReactNative/基础/样式/flex/flex.md "flex")
+[flex](./flex/index.md "flex")
 
-[鼠标穿透](IT/前端框架/ReactNative/基础/样式/鼠标穿透/鼠标穿透.md "鼠标穿透")
+[鼠标穿透](./鼠标穿透/index.md "鼠标穿透")

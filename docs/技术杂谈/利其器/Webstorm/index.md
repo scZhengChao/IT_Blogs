@@ -27,7 +27,7 @@
 
 ![](./assets/image/image_MmLYAldbLD.png)
 
-[2021.zip](file/2021_R-kIuSAuv0.zip "2021.zip")
+2021.zip（原附件未收录：`file/2021_R-kIuSAuv0.zip`）
 
 破解教程2020.3.3
 
@@ -117,7 +117,7 @@ sudo find ~ -iname '*webstorm*'
 
 [git使用小技巧](./git使用小技巧.md "git使用小技巧")
 
-[terminal 乱码](<terminal 乱码/terminal 乱码.md> "terminal 乱码")
+terminal 乱码（原笔记未收录）
 
 [git使用小技巧二](./git使用小技巧二.md "git使用小技巧二")
 

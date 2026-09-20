@@ -2,9 +2,9 @@
 
 [display属性](./display属性/index.md "display属性")
 
-[grid-template-columns，grid-template-rows属性](./grid-template-columns，grid-tem/grid-template-columns，grid-template-rows属性.md "grid-template-columns，grid-template-rows属性")
+[grid-template-columns，grid-template-rows属性](./行列轨道定义/index.md "grid-template-columns，grid-template-rows属性")
 
-[grid-row-gap 属性，grid-column-gap 属性，grid-gap 属性](<./grid-row-gap 属性，grid-column-ga/grid-row-gap 属性，grid-column-gap 属性，grid-gap 属性.md> "grid-row-gap 属性，grid-column-gap 属性，grid-gap 属性")
+[grid-row-gap 属性，grid-column-gap 属性，grid-gap 属性](<./网格间距/index.md> "grid-row-gap 属性，grid-column-gap 属性，grid-gap 属性")
 
 [grid-template-areas 属性](<./grid-template-areas 属性/index.md> "grid-template-areas 属性")
 
@@ -22,7 +22,7 @@
 
 [place-content属性](./place-content属性/index.md "place-content属性")
 
-[grid-auto-columns / grid-auto-rows 属性](<./grid-auto-columns - grid-auto-/grid-auto-columns - grid-auto-rows 属性.md> "grid-auto-columns / grid-auto-rows 属性")
+[grid-auto-columns / grid-auto-rows 属性](<./隐式行列尺寸/index.md> "grid-auto-columns / grid-auto-rows 属性")
 
 [grid-template 属性](<./grid-template 属性/index.md> "grid-template 属性")
 

@@ -20,6 +20,6 @@
 
 [COPY vs ADD](<./COPY vs ADD/index.md> "COPY vs ADD")
 
-[总结](IT/docker/技巧/总结/总结.md "总结")
+[总结](./总结/index.md "总结")
 
 [cicd](./cicd/index.md "cicd")

@@ -4,6 +4,6 @@
 
 [资源加载](./资源加载/index.md "资源加载")
 
-[table](IT/前端基础/DOM-BOM/性能优化/table/table.md "table")
+[table](./table/index.md "table")
 
 [dataset](./dataset/index.md "dataset")

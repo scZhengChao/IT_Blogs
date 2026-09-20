@@ -219,13 +219,13 @@ AMap.Geocoder地理编码与逆地理编码类，用于地址描述与坐标之�
 
 [加密解密](./加密解密/index.md "加密解密")
 
-[cookie](IT/前端工程/工具轮子/library库/cookie/cookie.md "cookie")
+[cookie](./cookie/index.md "cookie")
 
 [进度条](./进度条/index.md "进度条")
 
 [压缩js](./压缩js/index.md "压缩js")
 
-[代码高亮](IT/前端工程/工具轮子/library库/代码高亮/代码高亮.md "代码高亮")
+[代码高亮](./代码高亮/index.md "代码高亮")
 
 [复制黏贴](./复制黏贴/index.md "复制黏贴")
 

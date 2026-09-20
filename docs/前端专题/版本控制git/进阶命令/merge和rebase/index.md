@@ -6,6 +6,6 @@
 
 [git merge 和 git rebase的区别](<./git merge 和 git rebase的区别/index.md> "git merge 和 git rebase的区别")
 
-[配置](IT/前端专题/版本控制git/进阶命令/merge和rebase/配置/配置.md "配置")
+[配置](./配置/index.md "配置")
 
 [多次冲突](./多次冲突/index.md "多次冲突")

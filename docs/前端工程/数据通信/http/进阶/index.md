@@ -2,4 +2,4 @@
 
 [https加密](./https加密/index.md "https加密")
 
-[http缓存](IT/前端工程/数据通信/http/进阶/http缓存/http缓存.md "http缓存")
+[http缓存](./http缓存/index.md "http缓存")

@@ -2,7 +2,7 @@
 
 > 对于任何数据的处理或使用来说，我们首先会去关注的莫过于，它从哪里来，如何产生的，以及我们该怎么获取。
 
-[create](IT/前端框架/Rxjs/概览/Operators/创建型Operators/create/create.md "create")
+[create](./create/index.md "create")
 
 [empty](./empty/index.md "empty")
 
@@ -18,4 +18,4 @@
 
 [repeat](./repeat/index.md "repeat")
 
-[range](IT/前端框架/Rxjs/概览/Operators/创建型Operators/range/range.md "range")
+[range](./range/index.md "range")

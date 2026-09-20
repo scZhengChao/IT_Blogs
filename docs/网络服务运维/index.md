@@ -4,6 +4,6 @@
 
 [hosts](./hosts/index.md "hosts")
 
-[协议](IT/网络服务运维/协议/协议.md "协议")
+[协议](./协议/index.md "协议")
 
-[cdn](IT/网络服务运维/cdn/cdn.md "cdn")
+[cdn](./cdn/index.md "cdn")

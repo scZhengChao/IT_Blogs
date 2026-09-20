@@ -18,9 +18,9 @@ Subject
 
 ![](./assets/image/image_eADUevTfVz.png)
 
-[单播](IT/前端框架/Rxjs/理解/RxJS：给你如丝一般顺滑的编程体验/Subscription与Subject/Subject%20(主体)/单播/单播.md "单播")
+[单播](./单播/index.md "单播")
 
-[多播](IT/前端框架/Rxjs/理解/RxJS：给你如丝一般顺滑的编程体验/Subscription与Subject/Subject%20(主体)/多播/多播.md "多播")
+[多播](./多播/index.md "多播")
 
 [BehaviorSubject](./BehaviorSubject/index.md "BehaviorSubject")
 

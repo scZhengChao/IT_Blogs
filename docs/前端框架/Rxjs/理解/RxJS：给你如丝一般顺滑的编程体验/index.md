@@ -20,18 +20,18 @@
 
 本文将从学习的角度来解析这项技术具备的价值以及能给我们现有项目中带来的好处。
 
-[背景](IT/前端框架/Rxjs/理解/RxJS：给你如丝一般顺滑的编程体验/背景/背景.md "背景")
+[背景](./背景/index.md "背景")
 
 [前置知识点](./前置知识点/index.md "前置知识点")
 
-[Observable](IT/前端框架/Rxjs/理解/RxJS：给你如丝一般顺滑的编程体验/Observable/Observable.md "Observable")
+[Observable](./Observable/index.md "Observable")
 
-[Observer](IT/前端框架/Rxjs/理解/RxJS：给你如丝一般顺滑的编程体验/Observer/Observer.md "Observer")
+[Observer](./Observer/index.md "Observer")
 
 [Subscription与Subject](./Subscription与Subject/index.md "Subscription与Subject")
 
-[Cold-Observables与Hot-Observables](./Cold-Observables与Hot-Observabl/Cold-Observables与Hot-Observables.md "Cold-Observables与Hot-Observables")
+[Cold-Observables与Hot-Observables](./冷流与热流/index.md "Cold-Observables与Hot-Observables")
 
 [Schedulers(调度器)](./Schedulers(调度器)/index.md "Schedulers(调度器)")
 
-[总结](IT/前端框架/Rxjs/理解/RxJS：给你如丝一般顺滑的编程体验/总结/总结.md "总结")
+[总结](./总结/index.md "总结")

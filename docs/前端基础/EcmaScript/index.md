@@ -6,15 +6,15 @@
 
 [Symbol](./Symbol/index.md "Symbol")
 
-[new](IT/前端基础/EcmaScript/new/new.md "new")
+[new](./new/index.md "new")
 
-[原型](IT/前端基础/EcmaScript/原型/原型.md "原型")
+[原型](./原型/index.md "原型")
 
-[Object](IT/前端基础/EcmaScript/Object/Object.md "Object")
+[Object](./Object/index.md "Object")
 
-[Date](IT/前端基础/EcmaScript/Date/Date.md "Date")
+[Date](./Date/index.md "Date")
 
-[数字Math](IT/前端基础/EcmaScript/数字Math/数字Math.md "数字Math")
+[数字Math](./数字Math/index.md "数字Math")
 
 [数组Arr](./数组Arr/index.md "数组Arr")
 
@@ -26,7 +26,7 @@
 
 [Reflect](./Reflect/index.md "Reflect")
 
-[Class](IT/前端基础/EcmaScript/Class/Class.md "Class")
+[Class](./Class/index.md "Class")
 
 [运行机制](./运行机制/index.md "运行机制")
 

@@ -155,4 +155,4 @@ reader.onprogress = (e) => {
 
 `progress` 事件提供了两个属性：`loaded`（已读取量）和`total`（需读取总量）。
 
-[常见错误](IT/前端基础/EcmaScript/二进制/FileReader/常见错误/常见错误.md "常见错误")
+[常见错误](./常见错误/index.md "常见错误")

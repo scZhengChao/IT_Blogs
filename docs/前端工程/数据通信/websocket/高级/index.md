@@ -14,12 +14,12 @@ send
 
 **`WebSocket.send()`** 方法将需要**通过 WebSocket 链接传输至服务器的数据排入队列，并根据所需要传输的 data bytes 的大小来增加** `bufferedAmount`的值。&#x20;
 
-[全面理解WebSocket与Socket、TCP、HTTP的关系及区别](./全面理解WebSocket与Socket、TCP、HTTP的/全面理解WebSocket与Socket、TCP、HTTP的关系及区别.md "全面理解WebSocket与Socket、TCP、HTTP的关系及区别")
+[全面理解WebSocket与Socket、TCP、HTTP的关系及区别](./协议关系与区别/index.md "全面理解WebSocket与Socket、TCP、HTTP的关系及区别")
 
-[Websocket 底层是 TCP 还是 UDP？白话版解析 TCP 和 UDP 传输过程 ](<./Websocket 底层是 TCP 还是 UDP？白话版解析/Websocket 底层是 TCP 还是 UDP？白话版解析 TCP 和 UDP 传输过程-.md> "Websocket 底层是 TCP 还是 UDP？白话版解析 TCP 和 UDP 传输过程 ")
+[Websocket 底层是 TCP 还是 UDP？白话版解析 TCP 和 UDP 传输过程 ](<./WebSocket传输协议/index.md> "Websocket 底层是 TCP 还是 UDP？白话版解析 TCP 和 UDP 传输过程 ")
 
 [webSocket 消息丢失](<./webSocket 消息丢失/index.md> "webSocket 消息丢失")
 
-[通信可靠性提升：WebSocket ACK 应答机制](<./通信可靠性提升：WebSocket ACK 应答机制/index.md> "通信可靠性提升：WebSocket ACK 应答机制")
+[通信可靠性提升：WebSocket ACK 应答机制](<./ACK应答机制/index.md> "通信可靠性提升：WebSocket ACK 应答机制")
 
 [可靠和顺序问题](./可靠和顺序问题/index.md "可靠和顺序问题")

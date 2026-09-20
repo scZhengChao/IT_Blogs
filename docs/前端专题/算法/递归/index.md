@@ -38,7 +38,7 @@
 - 汉诺塔问题
 - 树的遍历及相关操作
 
-[Maximum call stack size exceeded 解决方案](<./Maximum call stack size exceed/Maximum call stack size exceeded 解决方案.md> "Maximum call stack size exceeded 解决方案")
+[Maximum call stack size exceeded 解决方案](<./调用栈溢出/index.md> "Maximum call stack size exceeded 解决方案")
 
 [尾递归](./尾递归/index.md "尾递归")
 

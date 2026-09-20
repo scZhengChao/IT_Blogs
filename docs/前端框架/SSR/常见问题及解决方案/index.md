@@ -4,7 +4,7 @@
 
 [DOM/BOM 缺失](<./DOM-BOM 缺失/index.md> "DOM/BOM 缺失")
 
-[问题二 useLayoutEffect Warning](<./问题二 useLayoutEffect Warning/index.md> "问题二 useLayoutEffect Warning")
+[问题二 useLayoutEffect Warning](<./useLayoutEffect警告/index.md> "问题二 useLayoutEffect Warning")
 
 [关注内存泄漏](./关注内存泄漏/index.md "关注内存泄漏")
 
@@ -28,6 +28,6 @@
 
 [421问题](./421问题/index.md "421问题")
 
-[总结](IT/前端框架/SSR/常见问题及解决方案/总结/总结.md "总结")
+[总结](./总结/index.md "总结")
 
 [重定向问题](./重定向问题/index.md "重定向问题")

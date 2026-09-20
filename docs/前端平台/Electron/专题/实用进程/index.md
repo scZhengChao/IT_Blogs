@@ -22,4 +22,4 @@ Electron 的 npm 包还导出包含 Electron TypeScript 类型定义子集的子
 
 [utilityProcess](./utilityProcess/index.md "utilityProcess")
 
-[process](IT/前端平台/Electron/专题/实用进程/process/process.md "process")
+[process](./process/index.md "process")

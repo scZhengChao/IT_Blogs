@@ -48,4 +48,4 @@ Spring Boot的官网入口是[这里](https://spring.io/projects/spring-boot "�
 
 [添加Filter](./添加Filter/index.md "添加Filter")
 
-[集成第三方组件](IT/服务端/java学习/java框架/Spring%20Boot开发/集成第三方组件/集成第三方组件.md "集成第三方组件")
+[集成第三方组件](./集成第三方组件/index.md "集成第三方组件")

@@ -91,4 +91,4 @@ npm install node-cron
 
 ![](https://mmbiz.qpic.cn/mmbiz_png/TZL4BdZpLdjKk3WY94zspgRXBFbUwFfL0MTOcNApVekGecKpbMYmr0mDFLNnia2QUckYZXSOMz49J0NHltxBvEw/640?wx_fmt=png\&from=appmsg)
 
-[使用 node-cron 在 Node.js 中调度任务](<./使用 node-cron 在 Node.js 中调度任务/index.md> "使用 node-cron 在 Node.js 中调度任务")
+[使用 node-cron 在 Node.js 中调度任务](<./定时任务实践/index.md> "使用 node-cron 在 Node.js 中调度任务")

@@ -79,6 +79,6 @@ catch(e){
 
 [导航](./导航/index.md "导航")
 
-[通讯](IT/前端基础/DOM-BOM/frames/iframe%20通讯/通讯/通讯.md "通讯")
+[通讯](./通讯/index.md "通讯")
 
 [window](./window/index.md "window")

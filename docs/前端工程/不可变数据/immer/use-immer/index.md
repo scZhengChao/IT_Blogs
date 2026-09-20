@@ -238,4 +238,4 @@ const initialTasks = [
 
 Reducers 应该**是纯净的**，所以它们**不应该去修改 state**。而 Immer 为你提供了一种特殊的 `draft` 对象，你可以通过它**安全的修改 state**。在底层，Immer 会基于当前 state 创建一个副本。这就是为什么通过 `useImmerReducer` 来管理 reducers 时，可以修改第一个参数，且不需要返回一个新的 state 的原因。
 
-[源码](IT/前端工程/不可变数据/immer/use-immer/源码/源码.md "源码")
+[源码](./源码/index.md "源码")

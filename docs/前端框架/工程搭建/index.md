@@ -4,15 +4,15 @@
 
 [cli工具开发](./cli工具开发/index.md "cli工具开发")
 
-[vite](IT/前端框架/工程搭建/vite/vite.md "vite")
+[vite](./vite/index.md "vite")
 
 [终端](./终端/index.md "终端")
 
 [下载、删除模板](./下载、删除模板/index.md "下载、删除模板")
 
-[框架](IT/前端框架/工程搭建/框架/框架.md "框架")
+[框架](./框架/index.md "框架")
 
-[工具包](IT/前端专题/包管理器/工具包/工具包.md "工具包")
+[工具包](../../前端专题/包管理器/工具包/index.md "工具包")
 
 [env](./env/index.md "env")
 

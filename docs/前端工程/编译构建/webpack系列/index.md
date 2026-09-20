@@ -29,4 +29,4 @@
 
 [Webpack 核心原理](<./Webpack 核心原理/index.md> "Webpack 核心原理")
 
-[配置](IT/前端工程/编译构建/webpack系列/配置/配置.md "配置")
+[配置](./配置/index.md "配置")

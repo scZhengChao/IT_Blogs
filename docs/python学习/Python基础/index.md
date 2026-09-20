@@ -37,7 +37,7 @@ Python使用缩进来组织代码块，请务必遵守约定俗成的习惯，�
 
 [数据类型和变量](./数据类型和变量/index.md "数据类型和变量")
 
-[字符串和编码](IT/python学习/Python基础/字符串和编码/字符串和编码.md "字符串和编码")
+[字符串和编码](./字符串和编码/index.md "字符串和编码")
 
 [使用list和tuple](./使用list和tuple/index.md "使用list和tuple")
 
@@ -45,6 +45,6 @@ Python使用缩进来组织代码块，请务必遵守约定俗成的习惯，�
 
 [模式匹配](./模式匹配/index.md "模式匹配")
 
-[循环](IT/python学习/Python基础/循环/循环.md "循环")
+[循环](./循环/index.md "循环")
 
 [使用dict和set](./使用dict和set/index.md "使用dict和set")

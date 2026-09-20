@@ -166,4 +166,4 @@ SyntaxError: invalid character '“' (U+201C)
 
 [使用文本编辑器](./使用文本编辑器/index.md "使用文本编辑器")
 
-[输入和输出](IT/python学习/第一个Python程序/输入和输出/输入和输出.md "输入和输出")
+[输入和输出](./输入和输出/index.md "输入和输出")

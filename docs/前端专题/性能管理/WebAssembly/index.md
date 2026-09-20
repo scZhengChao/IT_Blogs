@@ -27,6 +27,6 @@ WebAssembly 设计了一**个非常规整的**[**文本格式**](https://www.was
 
 WebAssembly\*\* 在 **[**web**](https://www.wasm.com.cn/docs/web/ "web")** 中被设**计成**无版本、特性可测试、向后兼容的 \*\*。`WebAssembly` **可以被 JavaScript 调用**，**进入 JavaScript 上下文**，也可以**像 Web API 一样调用浏览器的功能。** 当然，`WebAssembly` 不仅可以运行在浏览器上，也可以运行在[非web](https://www.wasm.com.cn/docs/non-web/ "非web")环境下。
 
-[文件上传](IT/前端专题/性能管理/WebAssembly/文件上传/文件上传.md "文件上传")
+[文件上传](./文件上传/index.md "文件上传")
 
-[背景](IT/前端专题/性能管理/WebAssembly/背景/背景.md "背景")
+[背景](./背景/index.md "背景")

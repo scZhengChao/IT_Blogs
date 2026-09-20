@@ -257,6 +257,6 @@ onselect
 
 [ClipboardEvent](./ClipboardEvent/index.md "ClipboardEvent")
 
-[键盘](IT/前端基础/DOM-BOM/事件Event/事件概览/键盘/键盘.md "键盘")
+[键盘](./键盘/index.md "键盘")
 
 [resize](./resize/index.md "resize")

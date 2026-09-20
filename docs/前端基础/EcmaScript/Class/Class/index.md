@@ -494,4 +494,4 @@ console.log(Person.setSex())
 
 [私有属性](./私有属性/index.md "私有属性")
 
-[常见用法](IT/前端基础/EcmaScript/Class/Class/常见用法/常见用法.md "常见用法")
+[常见用法](./常见用法/index.md "常见用法")

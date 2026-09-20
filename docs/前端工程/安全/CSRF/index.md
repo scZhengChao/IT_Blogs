@@ -445,7 +445,7 @@ CSRF攻击是攻击者利用用户的身份操作用户帐户的一种攻击方�
 
 [页面禁用referer](./页面禁用referer/index.md "页面禁用referer")
 
-[cookie](IT/前端基础/DOM-BOM/本地数据持久化/cookie/cookie.md "cookie")
+[cookie](../../../前端基础/DOM-BOM/本地数据持久化/cookie/index.md "cookie")
 
 [SameSite 的三种取值](<./SameSite 的三种取值/index.md> "SameSite 的三种取值")
 

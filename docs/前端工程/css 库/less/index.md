@@ -26,24 +26,24 @@ I normally ignore this PhpStorm error, or you can turn it off:
 
 [混合](./混合/index.md "混合")
 
-[循环](IT/前端工程/css%20库/less/循环/循环.md "循环")
+[循环](./循环/index.md "循环")
 
-[变量](IT/前端工程/css%20库/less/变量/变量.md "变量")
+[变量](./变量/index.md "变量")
 
-[转译](IT/前端工程/css%20库/less/转译/转译.md "转译")
+[转译](./转译/index.md "转译")
 
-[颜色](IT/前端工程/css%20库/less/颜色/颜色.md "颜色")
+[颜色](./颜色/index.md "颜色")
 
-[资源路径](IT/前端工程/css%20库/less/资源路径/资源路径.md "资源路径")
+[资源路径](./资源路径/index.md "资源路径")
 
 [global](./global/index.md "global")
 
 [when](./when/index.md "when")
 
-[函数](IT/前端工程/css%20库/less/函数/函数.md "函数")
+[函数](./函数/index.md "函数")
 
 [修改变量](./修改变量/index.md "修改变量")
 
-[递归](IT/前端工程/css%20库/less/递归/递归.md "递归")
+[递归](./递归/index.md "递归")
 
 [&](./&/index.md "&")

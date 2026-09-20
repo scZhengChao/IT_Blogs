@@ -20,7 +20,7 @@
 
 [input\[number\]](./input[number]/index.md "input\[number]")
 
-[range](IT/前端框架/经典效果组件/range/range.md "range")
+[range](./range/index.md "range")
 
 [省略号 TextWithEllipsis](<./省略号 TextWithEllipsis/index.md> "省略号 TextWithEllipsis")
 

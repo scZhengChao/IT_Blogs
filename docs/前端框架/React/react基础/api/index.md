@@ -2,8 +2,8 @@
 
 [ReactDOM](./ReactDOM/index.md "ReactDOM")
 
-[ref](IT/前端框架/React/react基础/api/ref/ref.md "ref")
+[ref](./ref/index.md "ref")
 
-[React](IT/前端框架/React/react基础/api/React/React.md "React")
+[React](./React/index.md "React")
 
 [elements及检测](./elements及检测/index.md "elements及检测")

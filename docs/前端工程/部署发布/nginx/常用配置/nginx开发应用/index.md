@@ -833,7 +833,7 @@ proxy\_cache\_path /tmp/nginx\_proxy\_cache levels=1 keys\_zone=cache\_one:512m 
 
 location \~ .(gif|jpg|png|htm|html|css|js)(. \*) {
 
-proxy\_pass [http://192.168.4.32:5000；#如果没有缓存则转向请求](:5000；)
+proxy\_pass `http://192.168.4.32:5000;` # 如果没有缓存则转向请求
 
 proxy\_redirect off;
 

@@ -6,6 +6,7 @@ import {
   remarkLazyImages,
 } from './scripts/rehype-lazy-images';
 import { autoSidebarPlugin } from './scripts/rspress-auto-sidebar';
+import { contentRedirectsPlugin } from './scripts/rspress-content-redirects';
 
 export default defineConfig({
   root: 'docs',
@@ -102,13 +103,18 @@ export default defineConfig({
 
   plugins: [
     autoSidebarPlugin(),
+    contentRedirectsPlugin(),
   ],
 
   markdown: {
     remarkPlugins: [remarkLazyImages],
     rehypePlugins: [rehypeLazyImages],
     link: {
-      checkDeadLinks: false,
+      checkDeadLinks: {
+        // Downloads are copied byte-for-byte and validated by check:docs.
+        // Rspress' route checker only understands pages, not local attachments.
+        excludes: url => /(?:^|\/)assets\//.test(url),
+      },
     },
     shiki: {
       // Preserve unknown historical fence labels as readable plain text.

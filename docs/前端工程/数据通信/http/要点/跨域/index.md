@@ -10,4 +10,4 @@
 
 [跨域允许携带cookie:](./跨域允许携带cookie-/index.md "跨域允许携带cookie:")
 
-[websocket](IT/前端工程/数据通信/http/要点/跨域/websocket/websocket.md "websocket")
+[websocket](./websocket/index.md "websocket")

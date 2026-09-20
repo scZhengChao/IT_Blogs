@@ -64,10 +64,10 @@ expires 7d;
 
 需要为我们的静态资源添加md5 hash后缀，避免资源更新而引起的前后端文件无法同步的问题。
 
-[http缓存](IT/前端工程/数据持久化/http缓存/http缓存.md "http缓存")
+[http缓存](./http缓存/index.md "http缓存")
 
-[浏览缓存（localstorage/sessionStorage）](./浏览缓存（localstorage-sessionStora/浏览缓存（localstorage-sessionStorage）.md "浏览缓存（localstorage/sessionStorage）")
+[浏览缓存（localstorage/sessionStorage）](./Web-Storage/index.md "浏览缓存（localstorage/sessionStorage）")
 
-[方案](IT/前端工程/数据持久化/方案/方案.md "方案")
+[方案](./方案/index.md "方案")
 
 [LocalForage](./LocalForage/index.md "LocalForage")

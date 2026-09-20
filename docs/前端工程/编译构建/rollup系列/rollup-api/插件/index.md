@@ -4,7 +4,7 @@
 
 [压缩的输出](./压缩的输出/index.md "压缩的输出")
 
-[commonjs](IT/前端工程/编译构建/rollup系列/rollup-api/插件/commonjs/commonjs.md "commonjs")
+[commonjs](./commonjs/index.md "commonjs")
 
 [与其他 NPM 包](<./与其他 NPM 包/index.md> "与其他 NPM 包")
 

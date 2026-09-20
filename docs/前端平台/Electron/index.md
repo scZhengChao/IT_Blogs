@@ -48,14 +48,21 @@ utils
 
 **command + r 刷新**
 
-[脚手架](IT/前端平台/Electron/脚手架/脚手架.md "脚手架")
+[脚手架](./脚手架/index.md "脚手架")
 
-[案例](IT/前端平台/Electron/案例/案例.md "案例")
+[案例](./案例/index.md "案例")
 
 [问题和解决](./问题和解决/index.md "问题和解决")
 
-[文档](IT/前端平台/Electron/文档/文档.md "文档")
+[文档](./文档/index.md "文档")
 
-[理解](IT/前端平台/Electron/理解/理解.md "理解")
+[理解](./理解/index.md "理解")
 
 [专题](./专题/index.md "专题")
+
+## 子目录与文章
+
+- [IPC](./IPC/index.md)
+- [安全](./安全/index.md)
+- [性能](./性能/index.md)
+- [构建发布](./构建发布/index.md)

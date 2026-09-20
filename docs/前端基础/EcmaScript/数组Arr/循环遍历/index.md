@@ -282,4 +282,4 @@ const items = {
 
 filter 为数组中的每个元素调用一次 callback 函数，并利用所有使得 callback 返回 true 或 等价于 true 的值 的元素创建一个新数组。callback 只会在已经赋值的索引上被调用，对于那些已经被删除或者从未被赋值的索引不会被调用。那些没有通过 callback 测试的元素会被跳过，不会被包含在新数组中。
 
-[for循环](IT/前端基础/EcmaScript/数组Arr/循环遍历/for循环/for循环.md "for循环")
+[for循环](./for循环/index.md "for循环")

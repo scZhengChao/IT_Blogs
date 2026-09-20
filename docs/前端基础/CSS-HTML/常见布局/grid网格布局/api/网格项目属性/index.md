@@ -1,6 +1,6 @@
 # 网格项目属性
 
-[grid-column-start / grid-column-end / grid-row-start / grid-row-end属性](<./grid-column-start - grid-colum/grid-column-start - grid-column-end - grid-row-sta.md> "grid-column-start / grid-column-end / grid-row-start / grid-row-end属性")
+[grid-column-start / grid-column-end / grid-row-start / grid-row-end属性](<./网格起止线/index.md> "grid-column-start / grid-column-end / grid-row-start / grid-row-end属性")
 
 [grid-column / grid-row 属性](<./grid-column - grid-row 属性/index.md> "grid-column / grid-row 属性")
 

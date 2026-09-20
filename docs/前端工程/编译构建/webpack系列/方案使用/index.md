@@ -10,6 +10,6 @@
 
 [缓存版本更新](./缓存版本更新/index.md "缓存版本更新")
 
-[webpack 将window上的全局对象 通过import 导入使用](<./webpack 将window上的全局对象 通过import/webpack 将window上的全局对象 通过import 导入使用.md> "webpack 将window上的全局对象 通过import 导入使用")
+[webpack 将window上的全局对象 通过import 导入使用](<./全局对象模块化导入/index.md> "webpack 将window上的全局对象 通过import 导入使用")
 
 [动态导入require.context ](./动态导入require.context-/index.md "动态导入require.context ")

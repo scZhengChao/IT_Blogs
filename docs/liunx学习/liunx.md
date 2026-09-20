@@ -20,15 +20,15 @@ which // 查看本机xx的安装位置
 
 [Linux目录架构](./Linux目录架构/index.md "Linux目录架构")
 
-[简介](IT/liunx/简介/简介.md "简介")
+[简介](./简介/index.md "简介")
 
 [用户与权限](./用户与权限/index.md "用户与权限")
 
 [liunx 进阶](<./liunx 进阶/index.md> "liunx 进阶")
 
-[系统管理](IT/liunx/系统管理/系统管理.md "系统管理")
+[系统管理](./系统管理/index.md "系统管理")
 
-[其他](IT/liunx/其他/其他.md "其他")
+[其他](./其他/index.md "其他")
 
 [shell](./shell/index.md "shell")
 

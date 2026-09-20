@@ -23,7 +23,7 @@
 
 [keyframes  animation](<./keyframes  animation/index.md> "keyframes  animation")
 
-[transition](IT/前端基础/CSS-HTML/CSS动画/transition/transition.md "transition")
+[transition](./transition/index.md "transition")
 
 [常见动画](./常见动画/index.md "常见动画")
 

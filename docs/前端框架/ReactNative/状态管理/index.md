@@ -6,4 +6,4 @@
 
 [redux](./redux/index.md "redux")
 
-[中间件](IT/前端框架/ReactNative/状态管理/中间件/中间件.md "中间件")
+[中间件](./中间件/index.md "中间件")

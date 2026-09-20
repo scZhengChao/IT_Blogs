@@ -14,6 +14,6 @@
 
 [Monorepo](./Monorepo/index.md "Monorepo")
 
-[工具包](IT/前端专题/包管理器/工具包/工具包.md "工具包")
+[工具包](./工具包/index.md "工具包")
 
-[QAQ](IT/前端专题/包管理器/QAQ/QAQ.md "QAQ")
+[QAQ](./QAQ/index.md "QAQ")

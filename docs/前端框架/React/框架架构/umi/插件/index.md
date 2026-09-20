@@ -8,10 +8,10 @@
 
 `@umijs/plugin-request` 基于 [umi-request](https://github.com/umijs/umi-request "umi-request") 和 [ahooks](http://ahooks.js.org/hooks "ahooks") 的 `useRequest` 提供了一套统一的网络请求和错误处理方案。
 
-[useRequest](IT/前端工程/架构/数据请求/useRequest/useRequest.md "useRequest")
+[useRequest](../../../../../前端工程/架构/数据请求/useRequest/index.md "useRequest")
 
 [权限](./权限/index.md "权限")
 
 [layout](./layout/index.md "layout")
 
-[model](IT/前端框架/React/框架架构/umi/插件/model/model.md "model")
+[model](./model/index.md "model")

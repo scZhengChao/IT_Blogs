@@ -127,7 +127,7 @@ Flex是Flexible Box的缩写，翻译成中文就是“弹性盒子”，用来�
 - cross start/cross end：交叉轴开始位置/结束位置；
 - main size/cross size：单个项目占据主轴/交叉轴的空间；
 
-[QA](IT/前端基础/CSS-HTML/常见布局/弹性盒布局/QA/QA.md "QA")
+[QA](./QA/index.md "QA")
 
 [父元素属性](./父元素属性/index.md "父元素属性")
 

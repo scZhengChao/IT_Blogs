@@ -240,4 +240,4 @@ hash值的例子如下，服务器给出一个允许执行的代码的hash值。
 
 **上面的代码中，虽然加载的脚本来自当前域名，但是通过改写回调函数，攻击者依然可以执行恶意代码。**
 
-[获取错误content-security-policy错误:拒绝创建worker](./获取错误content-security-policy错误-/获取错误content-security-policy错误-拒绝创建worker.md "获取错误content-security-policy错误:拒绝创建worker")
+[获取错误content-security-policy错误:拒绝创建worker](./Worker创建被阻止/index.md "获取错误content-security-policy错误:拒绝创建worker")

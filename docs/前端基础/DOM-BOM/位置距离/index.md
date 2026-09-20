@@ -1,10 +1,10 @@
 # 位置距离
 
-[案例](IT/前端基础/DOM-BOM/位置距离/案例/案例.md "案例")
+[案例](./案例/index.md "案例")
 
-[scroll](IT/前端基础/DOM-BOM/位置距离/scroll/scroll.md "scroll")
+[scroll](./scroll/index.md "scroll")
 
-[文档](IT/前端基础/DOM-BOM/位置距离/文档/文档.md "文档")
+[文档](./文档/index.md "文档")
 
 [获取元素的宽高](./获取元素的宽高/index.md "获取元素的宽高")
 

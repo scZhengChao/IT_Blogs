@@ -241,4 +241,4 @@ npm config rm https-proxy
 ```
 
 
-[yarn install --frozen-lockfile](<./yarn install --frozen-lockfile/index.md> "yarn install --frozen-lockfile")
+[yarn install --frozen-lockfile](<./冻结锁文件安装/index.md> "yarn install --frozen-lockfile")

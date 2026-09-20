@@ -11,4 +11,4 @@
 
 [exports](./exports/index.md "exports")
 
-[import require引入和package.json的关系](<./import require引入和package.json的/import require引入和package.json的关系.md> "import require引入和package.json的关系")
+[import require引入和package.json的关系](<./模块导入规则/index.md> "import require引入和package.json的关系")

@@ -24,7 +24,7 @@
 | 优化收益 | 节省 20-120ms DNS 耗时                                               | 节省 DNS + TCP + TLS 总耗时（100-500ms）                                         |
 | 兼容性  | IE9+ 及所有现代浏览器                                                    | Chrome 46+、Firefox 39+、Edge 12+、Safari 11.1+                              |
 | 适用场景 | 非关键跨域域名、批量域名预解析                                                  | 关键跨域域名（如 CDN、支付、核心 API），建议≤6 个                                            |
-| 使用示例 | \`\<link rel="dns-prefetch" href="[https://example.com">\`](">`) | \`\<link rel="preconnect" href="<https://cdn.example.com>" crossorigin>\` |
+| 使用示例 | `<link rel="dns-prefetch" href="https://example.com">` | \`\<link rel="preconnect" href="<https://cdn.example.com>" crossorigin>\` |
 
 ***
 

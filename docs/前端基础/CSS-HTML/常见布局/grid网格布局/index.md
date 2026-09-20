@@ -25,6 +25,6 @@
 
 [对比 Flex 布局](<./对比 Flex 布局/index.md> "对比 Flex 布局")
 
-[api](IT/前端基础/CSS-HTML/常见布局/grid网格布局/api/api.md "api")
+[api](./api/index.md "api")
 
-[案例](IT/前端基础/CSS-HTML/常见布局/grid网格布局/案例/案例.md "案例")
+[案例](./案例/index.md "案例")

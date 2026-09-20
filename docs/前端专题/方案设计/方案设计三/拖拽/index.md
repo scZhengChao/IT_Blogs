@@ -77,4 +77,4 @@ Github（⭐️ 4.5k）：<https://github.com/frontend-collective/react-sortable
 
 [react-draggable](./react-draggable/index.md "react-draggable")
 
-[案例](IT/前端专题/方案设计/方案设计三/拖拽/案例/案例.md "案例")
+[案例](./案例/index.md "案例")

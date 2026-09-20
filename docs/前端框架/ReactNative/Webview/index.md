@@ -330,10 +330,10 @@ export default WebViewWithPusher
 
 [新版指南](./新版指南/index.md "新版指南")
 
-[api](IT/前端框架/ReactNative/Webview/api/api.md "api")
+[api](./api/index.md "api")
 
-[配置](IT/前端框架/ReactNative/Webview/配置/配置.md "配置")
+[配置](./配置/index.md "配置")
 
-[案例](IT/前端框架/ReactNative/Webview/案例/案例.md "案例")
+[案例](./案例/index.md "案例")
 
-[通讯](IT/前端框架/ReactNative/Webview/通讯/通讯.md "通讯")
+[通讯](./通讯/index.md "通讯")

@@ -462,4 +462,4 @@ target.ondrop = function(e){
 
 # 子页面
 
-[api](IT/前端基础/DOM-BOM/拖拽%20&%20拖放/拖放%20%20draggable/api/api.md "api")
+[api](./api/index.md "api")

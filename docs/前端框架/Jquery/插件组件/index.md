@@ -4,7 +4,7 @@
 
 [jquery插件的封装](./jquery插件的封装/index.md "jquery插件的封装")
 
-[ajax](IT/前端框架/Jquery/插件组件/ajax/ajax.md "ajax")
+[ajax](./ajax/index.md "ajax")
 
 [超出省略展开收起](./超出省略展开收起/index.md "超出省略展开收起")
 

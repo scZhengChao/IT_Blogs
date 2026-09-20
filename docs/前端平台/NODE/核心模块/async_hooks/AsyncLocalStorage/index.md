@@ -191,4 +191,4 @@ await withTransaction(async () => {
 
 [   https://juejin.cn/post/7360737180392996899?searchId=202512011912438FF1CFD2B156A992716D](https://juejin.cn/post/7360737180392996899?searchId=202512011912438FF1CFD2B156A992716D "   https://juejin.cn/post/7360737180392996899?searchId=202512011912438FF1CFD2B156A992716D")
 
-[理解](IT/前端平台/NODE/核心模块/async_hooks/AsyncLocalStorage/理解/理解.md "理解")
+[理解](./理解/index.md "理解")

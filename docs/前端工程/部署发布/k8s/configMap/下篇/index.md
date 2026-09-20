@@ -9,4 +9,4 @@
 - 在只读卷里面添加一个文件：可以**将 ConfigMap 的值作为文件添加到 Pod 中**
 - **编写代码在 Pod 中运行**，使用 Kubernetes API 来读取 ConfigMap：可以使用 Kubernetes API 在 Pod 中读取 ConfigMap 的值。
 
-[将 ConfigMap 中的键值对作为容器的环境变量](<./将 ConfigMap 中的键值对作为容器的环境变量/index.md> "将 ConfigMap 中的键值对作为容器的环境变量")
+[将 ConfigMap 中的键值对作为容器的环境变量](<./注入环境变量/index.md> "将 ConfigMap 中的键值对作为容器的环境变量")

@@ -60,6 +60,6 @@ timeline
   - JDK7及以前：永久代(PermGen)
   - JDK8+：元空间(Metaspace，使用本地内存)
 
-[堆](IT/服务端/java学习/java基础/java内存图解/jvm%20内存划分/线程共享区域/堆/堆.md "堆")
+[堆](./堆/index.md "堆")
 
 [方法区（Method Area）](<./方法区（Method Area）/index.md> "方法区（Method Area）")
