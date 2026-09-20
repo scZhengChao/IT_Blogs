@@ -1,10 +1,14 @@
 {
   "name": "it_blogs",
   "version": "1.0.0",
+  "type": "module",
   "main": "index.js",
+  "engines": {
+    "node": "^20.19.0 || >=22.12.0"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "rspress dev",
+    "dev": "CHOKIDAR_USEPOLLING=1 CHOKIDAR_INTERVAL=500 rspress dev",
     "build": "rspress build",
     "preview": "rspress preview"
   },

@@ -158,5 +158,60 @@ export function sameNameRoutePlugin(): RspressPlugin {
                 };
             });
         },
+
+        routeServiceGenerated(routeService) {
+            /*
+             * Rspress 2.0.22 emits route metadata as single-quoted JavaScript
+             * literals. A historical path containing an apostrophe therefore
+             * produces invalid virtual-routes.js. Keep the original route data
+             * intact and only replace its generated literals with JSON strings.
+             */
+            const generateRoutesCodeByRouteMeta =
+                routeService.generateRoutesCodeByRouteMeta.bind(
+                    routeService,
+                );
+
+            routeService.generateRoutesCodeByRouteMeta = (
+                routes: Array<{
+                    routePath: string;
+                    relativePath: string;
+                    lang: string;
+                    version: string;
+                }>,
+            ) => {
+                let code =
+                    generateRoutesCodeByRouteMeta(routes);
+
+                for (const route of routes) {
+                    code = code
+                        .replace(
+                            `{ path: '${route.routePath}',`,
+                            `{ path: ${JSON.stringify(
+                                route.routePath,
+                            )},`,
+                        )
+                        .replace(
+                            `filePath: '${route.relativePath}',`,
+                            `filePath: ${JSON.stringify(
+                                route.relativePath,
+                            )},`,
+                        )
+                        .replace(
+                            `lang: '${route.lang}',`,
+                            `lang: ${JSON.stringify(
+                                route.lang,
+                            )},`,
+                        )
+                        .replace(
+                            `version: '${route.version}' }`,
+                            `version: ${JSON.stringify(
+                                route.version,
+                            )} }`,
+                        );
+                }
+
+                return code;
+            };
+        },
     };
 }
