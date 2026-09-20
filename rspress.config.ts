@@ -1,6 +1,10 @@
 import path from 'node:path';
 import { defineConfig } from '@rspress/core';
 
+import {
+  rehypeLazyImages,
+  remarkLazyImages,
+} from './scripts/rehype-lazy-images';
 import { autoSidebarPlugin } from './scripts/rspress-auto-sidebar';
 
 export default defineConfig({
@@ -13,8 +17,12 @@ export default defineConfig({
   route: {
     // Local assets may include Markdown downloads and must never become pages.
     exclude: ['**/assets/**'],
-    // Large sidebars otherwise prefetch many page chunks while the pointer moves.
-    prefetchLink: false,
+    /*
+     * Route content is already emitted as one lazy chunk per document. Enable
+     * intent-based prefetch now that sidebars are shallow, so hover/touch can
+     * warm the next page without downloading the whole library.
+     */
+    prefetchLink: true,
   },
 
   builderConfig: {
@@ -97,6 +105,8 @@ export default defineConfig({
   ],
 
   markdown: {
+    remarkPlugins: [remarkLazyImages],
+    rehypePlugins: [rehypeLazyImages],
     link: {
       checkDeadLinks: false,
     },
