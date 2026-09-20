@@ -48,12 +48,12 @@
 
 （7）table-cell元素设置vertical-align垂直对齐的是子元素，但是其作用的并不是子元素，而是table-cell元素自身。
 
-[几个概念](几个概念.md "几个概念")
+[几个概念](./几个概念/index.md "几个概念")
 
-[四种内联盒子](四种内联盒子.md "四种内联盒子")
+[四种内联盒子](./四种内联盒子/index.md "四种内联盒子")
 
-[深入理解行高line-height](深入理解行高line-height.md "深入理解行高line-height")
+[深入理解行高line-height](./深入理解行高line-height/index.md "深入理解行高line-height")
 
-[深入理解vertical-align](深入理解vertical-align.md "深入理解vertical-align")
+[深入理解vertical-align](./深入理解vertical-align/index.md "深入理解vertical-align")
 
-[line-height与vertical-align的密切关系与应用](line-height与vertical-align的密切关系与应用.md "line-height与vertical-align的密切关系与应用")
+[line-height与vertical-align的密切关系与应用](./line-height与vertical-align的密切关/line-height与vertical-align的密切关系与应用.md "line-height与vertical-align的密切关系与应用")

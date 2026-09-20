@@ -4,4 +4,4 @@
 
 你还可以将 `WebStorm` 配置为在保存时运行 `Prettier (Cmd+S/Ctrl+S)` 或将其用作默认格式化程序 `(Opt+Cmd+L/Ctrl+Alt+L)`。为此，请打开首选项/设置 | 语言和框架 | `JavaScript` | `Prettier` 并勾选相应的复选框：保存和/或“重新格式化代码”操作时。
 
-![](image_DFqqQSBgg4.png)
+![](../image/image_DFqqQSBgg4.png)

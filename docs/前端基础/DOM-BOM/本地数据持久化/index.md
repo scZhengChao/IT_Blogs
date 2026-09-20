@@ -1,0 +1,167 @@
+# 本地数据持久化
+
+```纯文本 
+ 本地存储（web存储） 
+ 1. cookie 存东西 
+          特点： 小(~4k),服务器环境(每次都会随着请求，发往服务器)，过期时间，完全兼容 
+         document.cookie=值 
+ 2. localStorage 、 sessionStorage 
+         特点：  大(~5M),不会发往服务器,没有过期时间 
+     共同点： 
+          不安全、不能跨域、不能跨浏览器 
+ 
+ 
+ sessionStorage 生命周期 会话结束时 
+         属性：同上 
+         方法：同上 
+ 
+ 
+ 
+ 
+ sessionStorage比localStorage更严苛一点，除了协议、主机名、端口外 ，还要求在同一窗口（也就是浏览器的标签页 ）下。 
+ localStorage是永久存储，除非手动删除。 
+ sessionStorage当会话结束（当前页面关闭的时候，自动销毁） 
+ cookie的数据会在每一次发送http请求的时候，同时发送给服务器而localStorage、sessionStorage不会 
+    
+ 示范： 
+ //change 
+   document.addEventListener('click',function(){ 
+         localStorage.setItem('data','a') 
+     }) 
+ // 监听 
+   window.addEventListener('storage',function(e){ 
+         console.log(e) 
+     }) 
+ 
+ //在Chrome，Firefox和Opera中，如果事件由用户调用，则该事件是受信任的，如果由脚本调用，则不受信任。在IE中，除了使用createEvent()方法创建的事件之外，所有事件都是可信任的， 此外ie中 不需要跨页面 ；自己页面的改变也会触发监听 
+ 
+ isTrusted: true  
+ key: "data" 
+ oldValue: null 
+ newValue: "a" 
+ url: "http://localhost/Ecma/index.html" 
+ storageArea: Storage {data: "a", length: 1} 
+ type: "storage" 
+ target: Window {parent: Window, opener: null, top: Window, length: 0, frames: Window, …} 
+ currentTarget: Window {parent: Window, opener: null, top: Window, length: 0, frames: Window, …} 
+ eventPhase: 0 
+ bubbles: false 
+ cancelable: false 
+ defaultPrevented: false 
+ composed: false 
+ timeStamp: 12302.050000056624 
+ srcElement: Window {parent: Window, opener: null, top: Window, length: 0, frames: Window, …} 
+ returnValue: true 
+ cancelBubble: false 
+ path: [Window] 
+ __proto__: StorageEvent 
+ 
+ 
+ 
+ 
+ 
+ 
+ function delCookie () { 
+   var keys = document.cookie.match(/[^ =;]+(?==)/g) 
+   if (keys) { 
+     for (var i = keys.length; i--;) { 
+       document.cookie = keys[i] + '=0;path=/;expires=' + new Date(0).toUTCString() // 清除当前域名下的,例如：m.ratingdog.cn 
+       document.cookie = keys[i] + '=0;path=/;domain=' + document.domain + ';expires=' + new Date(0).toUTCString() // 清除当前域名下的，例如 .m.ratingdog.cn 
+       document.cookie = keys[i] + '=0;path=/;domain=ratingdog.cn;expires=' + new Date(0).toUTCString() // 清除一级域名下的或指定的，例如 .ratingdog.cn 
+     } 
+   } 
+ }
+```
+
+
+```纯文本 
+ 3.ie 独有 userData 
+ 　IE浏览器实现了它专属的客户端存储机制——“userData”。userData可以实现一定量的字符串数据存储，可以将其用做是Web存储的替代方案。本文将详细介绍IE userData 
+     在IE5.0中，微软通过一个自定义行为引入了持久化用户数据的概念。用户数据允许每个文档最多128KB数据，每个域名最多1MB数据 
+       [注意]IE9+浏览器不支持 
+ 
+ 前提条件: 
+ 　    要使用持久化用户数据，首先必须如下所示，使用CSS在某个元素上指定userData行为 
+     <div style="behavior:url(#default#userData)" id="dataStore"></div> 
+         或者使用动态生成元素的方式 
+     var memory = document.createElement("div");    // 创建一个元素 
+     memory.id = "_memory";    // 设定一个id名 
+     memory.style.display = "none";    // 将其隐藏 
+     memory.style.behavior = "url('#default#userData')";//附加userData行为                              document.body.appendChild(memory);    // 将其添加到document元素中 
+ 
+ 保存数据: 
+      　    一旦该元素使用了userData行为，那么就可以使用setAttribute()方法在上面保存数据了。为了将数据提交到浏览器缓存中，还必须调用save()方法并告诉它要保存到的数据空间的名字。数据空间名字可以完全任意，仅用于区分不同的数据集 
+     var dataStore = document.getElementById("dataStore"); 
+     dataStore.setAttribute("name", "Nicholas"); 
+     dataStore.setAttribute("book", "Professional JavaScript"); 
+     dataStore.save("BookInfo"); 
+     在这段代码中，<div>元素上存入了两部分信息。在用setAttribute()存储了数据之后，调用了save()方法，指定了数据空间的名称为BookInfo 
+ 
+ 读取数据: 
+      　load()方法用于载入存储的数据。使用它的时候必须传递一个字符串作为参数——类似于一个文件名，该参数用来指定要载入的存储数据。当数据载入后，就可以通过该元素的属性来访问这些名/值对形式的数据，可以使用getAttribute()来査询这些数据，如下所示 
+     dataStore.load("BookInfo")； 
+ console.log(dataStore.getAttribute("name"));//"Nicholas" 
+ console.log(dataStore.getAttribute("book"));//"Professional JavaScript" 
+     　对load()的调用获取了BookInfo数据空间中的所有信息，并且使数据可以通过元素访问； 只有到载入确切完成之后数据方能使用 。如果getAttribute()调用了不存在的名称或者是尚未载入的名称，则返回null 
+       　[注意]IE11浏览器报错，IE9、10浏览器返回null 
+ 
+ 删除数据: 
+      可以通过removeAttribute()方法明确指定要删除某元素数据，只要指定属性名称。 删除之后，必须像下面这样再次调用save()来提交更改 
+     dataStore.removeAttribute("name"); 
+     dataStore.removeAttribute("book"); 
+     dataStore.save("BookInfo"); 
+ 
+ 有效期: 
+      默认情况下，通过userData存储的数据， 除非手动去删除它否则永不失效 。但是，也可以通过设置expires属性来指定它的过期时间。比如，可以给存储的数据设置时长100天的有效期，如下所示： 
+     var now = (new Date()).getTime(); 
+     var expires = now + 100 * 24 * 60 * 60 * 1000; 
+     expires = new Date(expires).toUTCString(); 
+     dataStore.expires = expires; 
+ 
+ 最后: 
+     由于上述代码只在IE浏览器下有效，最好使用IE条件注释来避免其他浏览器载入上述代码 
+         <!--[if IE]>    <![endif]--> 
+ 
+ 优缺点: 
+     IE userData的 作用域限制在和当前文档同目录的文档中(同一个document中) 。 作用域没有cookie宽泛 ，cookie对其所在目录下的子目录也有效。userData的机制并没有像cookie那样，通过设置path和domain属性来控制或者改变其作用域的方式 
+ 　 　userData允许存储的数据量要比cookie大，但是却比localStorage以及sessionStorage允许存储的数据量要小
+```
+
+
+```纯文本 
+ 4.IndexedDB 
+     为什么会有IndexedDB 
+ 　　现有的浏览器数据储存方案，都不适合储存大量数据：Cookie 的大小不超过4KB，且每次请求都会发送回服务器；LocalStorage 在 2.5MB 到 10MB 之间（各家浏览器不同），而且不提供搜索功能，不能建立自定义的索引，所以，需要一种新的解决方案，这就是 IndexedDB 诞生的背景 
+     什么是IndexedDB 
+ 　　通俗地说，IndexedDB 就是浏览器提供的本地数据库，它可以被网页脚本创建和操作，IndexedDB 允许储存大量数据，提供查找接口，还能建立索引，这些都是 LocalStorage 所不具备的，就数据库类型而言，IndexedDB 不属于关系型数据库（不支持 SQL 查询语句），更接近 NoSQL 数据库 
+     IndexedDB的特点 
+     a、键值对储存： IndexedDB 内部采用对象仓库（object store）存放数据，所有类型的数据都可以直接存入，包括 JavaScript 对象，对象仓库中，数据以"键值对"的形式保存，每一个数据记录都有对应的主键，主键是独一无二的，不能有重复，否则会抛出一个错误 
+ 　　b、异步： IndexedDB 操作时不会锁死浏览器，用户依然可以进行其他操作，这与 LocalStorage 形成对比，后者的操作是同步的，异步设计是为了防止大量数据的读写，拖慢网页的表现 
+ 　　c、支持事务： IndexedDB 支持事务（transaction），这意味着一系列操作步骤之中，只要有一步失败，整个事务就都取消，数据库回滚到事务发生之前的状态，不存在只改写一部分数据的情况 
+ 　　d、同源限制：IndexedDB 受到同源限制，每一个数据库对应创建它的域名，网页只能访问自身域名下的数据库，而不能访问跨域的数据库 
+ 　　e、储存空间大： IndexedDB 的储存空间比 LocalStorage 大得多，一般来说不少于 250MB，甚至没有上限 
+ 　　f、支持二进制储存：IndexedDB 不仅可以储存字符串，还可以储存二进制数据（ArrayBuffer 对象和 Blob 对象） 
+ 
+ 
+ 详解: 
+     IndexedDB是一个事务型数据库系统，类似于基于SQL的RDBMS。 然而，不像RDBMS使用固定列表，IndexedDB是一个基于JavaScript的面向对象的数据库。 IndexedDB允许您存储和检索用键索引的对象；可以存储结构化克隆算法支持的任何对    象。 您只需要指定数据库模式，打开与数据库的连接，然后检索和更新一系列事务。 
+      hello-indexeddb
+```
+
+
+| **存储方式** | cookie | localStorage | sessionStorage | IndexedDB  | webSQL | FileSystem |
+| -------- | ------ | ------------ | -------------- | ---------- | ------ | ---------- |
+| **类型**   |        | key-value    | key-value      | NoSQL      | SQL    |            |
+| **数据格式** | string | string       | string         | object     |        |            |
+| **容量**   | 4k     | 5M           | 5M             | 500M       | 60M    |            |
+| **进程**   | 同步     | 同步           | 同步             | 异步         | 异步     |            |
+| **检索**   |        | key          | key            | key, index | field  |            |
+| **性能**   |        | 读快写慢         |                | 读慢写快       |        |            |
+
+[indexDB](./indexDB/index.md "indexDB")
+
+[cookie](IT/前端基础/DOM-BOM/本地数据持久化/cookie/cookie.md "cookie")
+
+[sessionStorage](./sessionStorage/index.md "sessionStorage")
+
+[localstorage](./localstorage/index.md "localstorage")

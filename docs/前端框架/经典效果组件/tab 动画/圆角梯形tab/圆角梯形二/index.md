@@ -1,0 +1,421 @@
+# 圆角梯形二
+
+## 目录
+
+- [实现梯形圆角tab](#实现梯形圆角tab)
+  - [解决方案](#解决方案)
+    - [1. 使用切图](#1-使用切图)
+    - [2. 使用 css 实现](#2-使用-css-实现)
+      - [分析](#分析)
+      - [有点瑕疵](#有点瑕疵)
+      - [后续](#后续)
+      - [优化后最终效果](#优化后最终效果)
+    - [3.1 使用 clip-path path 函数实现](#31-使用-clip-path-path-函数实现)
+
+[   https://juejin.cn/post/7308956568334614591](https://juejin.cn/post/7308956568334614591 "   https://juejin.cn/post/7308956568334614591")
+
+# 实现梯形圆角tab
+
+![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/e62352430b534920a405ad2d484240e3~tplv-k3u1fbpfcp-jj-mark:3024:0:0:0:q75.awebp#?w=1550\&h=196\&s=194716\&e=png\&b=ffffff)
+
+![](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/3933bda60dc34b5f977bfe94b4c9e42d~tplv-k3u1fbpfcp-jj-mark:3024:0:0:0:q75.awebp#?w=1528\&h=192\&s=184826\&e=png\&b=ffffff)
+
+### 解决方案
+
+#### 1. 使用切图
+
+> UI 给我这么一个不规则的图案，想着前端最简单的解决办法：`UI 给我切个图`。但是使用背景图可能会出现切换时不流畅，背景图需要加载，而且最边上的 tab 选中的时候还需要给他填充一个选中的颜色；并且使用背景图如果到时候 tab 增加或者减少也需要相应的去换背景图，否则图片尺寸会拉升，就先不考虑这个方法了。
+
+#### 2. 使用 css 实现
+
+话不多说，先上普通版的效果：
+
+![](./image/image_Sc73W-o6ol.png)
+
+```javascript 
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background: #f5b6d7;
+        }
+        .tabs-fillet-corner {
+            width: 100%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            position: relative;
+            box-sizing: border-box;
+            padding-top: 9px;
+            overflow: hidden;
+            background: #fff;
+        }
+        .tabs-fillet-corner-item-wrap {
+            flex: 1;
+            height: 39px;
+            padding: 0 12px;
+        }
+        .tabs-fillet-corner-item-wrap:first-child .tabs-fillet-corner-item {
+            border-top-left-radius: 0;
+        }
+        .tabs-fillet-corner-item-wrap:first-child
+        .tabs-fillet-corner-item-active::before {
+            border-radius: 0;
+            transform: skew(0deg);
+            left: -17px;
+        }
+        .tabs-fillet-corner-item-wrap:last-child .tabs-fillet-corner-item {
+            border-top-right-radius: 0;
+        }
+
+        .tabs-fillet-corner-item-wrap:last-child
+        .tabs-fillet-corner-item-active::after {
+            border-radius: 0;
+            transform: skew(0deg);
+            right: -17px;
+        }
+
+        .tabs-fillet-corner-item {
+            border-radius: 8px 8px 0 0;
+            width: 100%;
+            height: 100%;
+            position: relative;
+        }
+
+        .tabs-fillet-corner-item-text {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            margin: 0 auto;
+            font-size: 13px;
+            line-height: 39px;
+            color: black;
+            text-align: center;
+            position: relative;
+            cursor: pointer;
+            z-index: 99;
+        }
+        .tabs-fillet-corner-item-active {
+            background: #f5b6d7;
+            z-index: 2;
+        }
+        .tabs-fillet-corner-item-active .tabs-fillet-corner-item-text {
+            font-weight: 500;
+            color: #fe4960;
+        }
+        .tabs-fillet-corner-item-active::before,
+        .tabs-fillet-corner-item-active::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            width: 17px;
+            height: 100%;
+            background: #f5b6d7;
+            border-radius: 17px 17px 0 0;
+        }
+        .tabs-fillet-corner-item-active::before {
+            transform: skew(-17deg);
+            left: -6.5px;
+        }
+        .tabs-fillet-corner-item-active::after {
+            transform: skew(17deg);
+            right: -6.5px;
+        }
+    </style>
+
+</head>
+<body>
+
+<div class="tabs-fillet-corner">
+    <div class="tabs-fillet-corner-item-wrap">
+        <div class="tabs-fillet-corner-item tabs-fillet-corner-item-active">
+            <p class="tabs-fillet-corner-item-text">唱</p>
+        </div>
+    </div>
+    <div class="tabs-fillet-corner-item-wrap">
+        <div class="tabs-fillet-corner-item">
+            <p class="tabs-fillet-corner-item-text">跳</p>
+        </div>
+    </div>
+    <div class="tabs-fillet-corner-item-wrap">
+        <div class="tabs-fillet-corner-item">
+            <p class="tabs-fillet-corner-item-text">rap</p>
+        </div>
+    </div>
+    <div class="tabs-fillet-corner-item-wrap">
+        <div class="tabs-fillet-corner-item">
+            <p class="tabs-fillet-corner-item-text">篮球</p>
+        </div>
+    </div>
+</div>
+
+
+</body>
+
+
+<script>
+    // 获取tab容器元素
+    const tabContainer = document.querySelector('.tabs-fillet-corner');
+
+    // 通过事件代理给tab添加点击事件
+    tabContainer.addEventListener('click', function (event) {
+        const target = event.target;
+        console.log(target)
+        // 判断点击的是否为tab元素或其子元素
+        if (
+            target.classList.contains('tabs-fillet-corner-item') ||
+            target.closest('.tabs-fillet-corner-item')
+        ) {
+            // 获取当前被点击的tab元素
+            const tab = target.closest('.tabs-fillet-corner-item') || target;
+
+            // 判断点击的是否为当前激活的tab元素
+            if (!tab.classList.contains('tabs-fillet-corner-item-active')) {
+                // 移除当前激活的tab和内容
+                const activeTab = tabContainer.querySelector(
+                    '.tabs-fillet-corner-item-active'
+                );
+                activeTab.classList.remove('tabs-fillet-corner-item-active');
+
+                // 添加新的激活的tab和内容
+                tab.classList.add('tabs-fillet-corner-item-active');
+            }
+        }
+    });
+</script>
+</html>
+```
+
+
+##### 分析
+
+- 选中的效果可以拆分成三个形状来拼接
+- 左边一个梯形，中间一个长方形，右边也一个梯形
+- 两端选中状态边上不需要梯形
+- 实现梯形只需要用到 `transform: skew(-17deg);`，角度自己调，将元素进行斜切变形成一个梯形，并且给上面加上圆角效果
+
+##### 有点瑕疵
+
+> 看着这个 tab 好像还行，但是对照设计稿细看，下面也有一个圆角，使这个选中的梯形状态更圆润，但是这个该怎么实现呢？
+
+![](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/ed21b1c631114cc7b063f9519e858eb5~tplv-k3u1fbpfcp-jj-mark:3024:0:0:0:q75.awebp#?w=826\&h=1042\&s=654837\&e=png\&b=fbeff7)
+
+> 这个圆角是朝向未选中 tab，所以在未选中 tab 那边也需要放一个类似的小梯形来实现这个这样的圆角幅度；效果类似下面这样，但是还需要填充两个梯形之间的缝隙为选中颜色，当时想着是在选中状态下再加个 dom 定位到底下（before、after 都用完了），但是我这个人有点强迫症，不太想再新增一个 dom，就没有实现底下圆角效果。设计师也没说什么，就这样完事了。
+
+![](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/f68a0e31c9124561bc92c9572e0e0cd9~tplv-k3u1fbpfcp-jj-mark:3024:0:0:0:q75.awebp#?w=754\&h=140\&s=89992\&e=png\&b=fefefe)
+
+> 期间实现查阅的资料发现 chrome 浏览器的 tab 效果其实类似，但是 chrome tab 没有倾斜变形，有点不符合我现在这个需求，也找到了 chrome tab 的实现效果。
+
+##### 后续
+
+> 没想到时隔几个月，又出来一个这个 tab 的需求！
+
+![](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/b9a572587ce44f078532e8cdfd6416e1~tplv-k3u1fbpfcp-jj-mark:3024:0:0:0:q75.awebp#?w=1308\&h=232\&s=159781\&e=png\&b=f2f4f7)
+
+> 强迫症的我就想着能不能优化下之前的 tab，使其圆润一点，网上查了下资料，发现已经有人实现了。 [实现tabs圆角及反圆角效果（PLUS）](https://juejin.cn/post/7230737419842633788 "实现tabs圆角及反圆角效果（PLUS）")可以看看这篇文章，看了下效果，和我的思路基本一样，但是选中和未选中的两个梯形填充了颜色，看了下他是通过 box-shadow 填充的，不需要新增 dom 去操作，完美。
+
+##### 优化后最终效果
+
+![](./image/image_owHHWCfsxE.png)
+
+```javascript 
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body {
+            background: #f5b6d7;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .tabs-fillet-corner {
+            width: 100%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            position: relative;
+            box-sizing: border-box;
+            padding-top: 9px;
+            overflow: hidden;
+            background: #fff;
+        }
+        .tabs-fillet-corner-item-wrap {
+            flex: 1;
+            height: 39px;
+            padding: 0 12px;
+        }
+        .tabs-fillet-corner-item-wrap:first-child .tabs-fillet-corner-item {
+            border-top-left-radius: 0;
+        }
+        .tabs-fillet-corner-item-wrap:first-child
+        .tabs-fillet-corner-item-active::before {
+            border-radius: 0;
+            transform: skew(0deg);
+            left: -17px;
+        }
+        .tabs-fillet-corner-item-wrap:last-child .tabs-fillet-corner-item {
+            border-top-right-radius: 0;
+        }
+
+        .tabs-fillet-corner-item-wrap:last-child
+        .tabs-fillet-corner-item-active::after {
+            border-radius: 0;
+            transform: skew(0deg);
+            right: -17px;
+        }
+
+        .tabs-fillet-corner-item {
+            border-radius: 8px 8px 0 0;
+            width: 100%;
+            height: 100%;
+            position: relative;
+        }
+        .tabs-fillet-corner-item::before,
+        .tabs-fillet-corner-item::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            width: 12px;
+            height: 100%;
+            z-index: 9;
+            background-color: #fff;
+        }
+        .tabs-fillet-corner-item::before {
+            border-bottom-left-radius: 6px;
+            transform: skew(17deg);
+            left: -18px;
+        }
+        .tabs-fillet-corner-item::after {
+            border-bottom-right-radius: 6px;
+            transform: skew(-17deg);
+            right: -18px;
+        }
+        .tabs-fillet-corner-item-text {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            margin: 0 auto;
+            font-size: 13px;
+            line-height: 39px;
+            color: black;
+            text-align: center;
+            position: relative;
+            cursor: pointer;
+            z-index: 99;
+        }
+        .tabs-fillet-corner-item-active {
+            background: #f5b6d7;
+            z-index: 2;
+        }
+        .tabs-fillet-corner-item-active .tabs-fillet-corner-item-text {
+            font-weight: 500;
+            color: #fe4960;
+        }
+        .tabs-fillet-corner-item-active::before,
+        .tabs-fillet-corner-item-active::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            width: 17px;
+            height: 100%;
+            background: #f5b6d7;
+            border-radius: 17px 17px 0 0;
+        }
+        .tabs-fillet-corner-item-active::before {
+            transform: skew(-17deg);
+            left: -6.5px;
+            box-shadow: -5px 15px 0 #f5b6d7;
+        }
+        .tabs-fillet-corner-item-active::after {
+            transform: skew(17deg);
+            right: -6.5px;
+            box-shadow: 5px 15px 0 0 #f5b6d7;
+        }
+
+    </style>
+
+</head>
+<body>
+<div class="tabs-fillet-corner">
+    <div class="tabs-fillet-corner-item-wrap">
+        <div class="tabs-fillet-corner-item tabs-fillet-corner-item-active">
+            <p class="tabs-fillet-corner-item-text">唱</p>
+        </div>
+    </div>
+    <div class="tabs-fillet-corner-item-wrap">
+        <div class="tabs-fillet-corner-item">
+            <p class="tabs-fillet-corner-item-text">跳</p>
+        </div>
+    </div>
+    <div class="tabs-fillet-corner-item-wrap">
+        <div class="tabs-fillet-corner-item">
+            <p class="tabs-fillet-corner-item-text">rap</p>
+        </div>
+    </div>
+    <div class="tabs-fillet-corner-item-wrap">
+        <div class="tabs-fillet-corner-item">
+            <p class="tabs-fillet-corner-item-text">篮球</p>
+        </div>
+    </div>
+</div>
+
+
+</body>
+
+
+<script>
+
+
+    // 获取tab容器元素
+    const tabContainer = document.querySelector('.tabs-fillet-corner');
+
+    // 通过事件代理给tab添加点击事件
+    tabContainer.addEventListener('click', function (event) {
+        const target = event.target;
+        console.log(target)
+        // 判断点击的是否为tab元素或其子元素
+        if (
+            target.classList.contains('tabs-fillet-corner-item') ||
+            target.closest('.tabs-fillet-corner-item')
+        ) {
+            // 获取当前被点击的tab元素
+            const tab = target.closest('.tabs-fillet-corner-item') || target;
+
+            // 判断点击的是否为当前激活的tab元素
+            if (!tab.classList.contains('tabs-fillet-corner-item-active')) {
+                // 移除当前激活的tab和内容
+                const activeTab = tabContainer.querySelector(
+                    '.tabs-fillet-corner-item-active'
+                );
+                activeTab.classList.remove('tabs-fillet-corner-item-active');
+
+                // 添加新的激活的tab和内容
+                tab.classList.add('tabs-fillet-corner-item-active');
+            }
+        }
+    });
+</script>
+</html>
+```
+
+
+#### 3.1 使用 clip-path path 函数实现
+
+> 这是在网上找到的方案，不太理解原理，附上地址 [jsrun.net/JHFKp](https://link.juejin.cn/?target=https://jsrun.net/JHFKp "jsrun.net/JHFKp")

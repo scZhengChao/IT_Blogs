@@ -1,0 +1,44 @@
+# 健康监控服务
+
+目的：能够理解健康监控`actuator`的作用 &#x20;
+
+讲解：
+
+每一个微服务在云上部署以后，我们都需要对其进行监控、追踪、审计、控制等。SpringBoot就抽取了Actuator场景，使得我们每个微服务快速引用即可获得生产级别的应用监控、审计等功能。
+
+实现：
+
+1、引入依赖
+
+```java 
+<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-actuator</artifactId>
+</dependency>
+
+```
+
+
+2、启动项目，访问 `http://localhost:80/actuator`
+
+![](./image/image_-WI2mO52NA.png)
+
+3、暴露所有监控信息为HTTP
+
+```java 
+management:
+  endpoints:
+    enabled-by-default: true #暴露所有端点信息
+    web:
+      exposure:
+        include: '*'  #以web方式暴露
+
+  endpoint:
+    health:
+      enabled: true   # 开启健康检查详细信息
+      show-details: always
+
+```
+
+
+访问 [http://localhost:80/actuator](http://localhost:80/actuator "http://localhost:80/actuator") 会发现内容多了，里面的地址分别都可以访问，记录的是对应的健康监测的信息。

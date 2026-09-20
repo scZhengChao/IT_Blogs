@@ -54,7 +54,7 @@ UDP的首部开销小，只有8个字节。
 
 ### **标准的七层模型，即OSI（Open System Interconnection）参考模型：**
 
-![](image_JY5UVhOunx.png)
+![](./image/image_JY5UVhOunx.png)
 
 简化的TCP/IP四层模型主要分为:应用层、传输层、网络层、数据链路层。
 
@@ -62,7 +62,7 @@ UDP的首部开销小，只有8个字节。
 
 每个WebSocket连接都始于一个HTTP请求。 **具体来说，WebSocket协议在第一次握手连接时，通过HTTP协议在传送WebSocket支持的版本号，协议的字版本号，原始地址，主机地址等等一些列字段给服务器端.**
 
-![](image_RhViRmlyOt.png)
+![](./image/image_RhViRmlyOt.png)
 
 **Upgrade首部，用来把当前的HTTP请求升级到WebSocket协议，** 这是HTTP协议本身的内容，是为了扩展支持其他的通讯协议。**如果服务器支持新的协议，则必须返回101.**
 

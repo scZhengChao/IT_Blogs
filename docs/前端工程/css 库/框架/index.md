@@ -1,0 +1,160 @@
+# 框架
+
+## 目录
+
+- [sass](#sass)
+  - [sass.js ](#sassjs-)
+  - [dart-sass](#dart-sass)
+  - [vue-cli](#vue-cli)
+    - [CLi4](#CLi4)
+    - [cli3](#cli3)
+
+# sass
+
+## sass.js&#x20;
+
+[https://www.cnblogs.com/zhoulujun/p/11069302.html](https://www.cnblogs.com/zhoulujun/p/11069302.html "https://www.cnblogs.com/zhoulujun/p/11069302.html")
+
+  终极解决方案
+
+```javascript 
+ npm i sass.js sassjs-loader
+```
+
+
+对于webpack ，在package移除node-sass 与 sass-loader
+
+webpack.config 里面，对 module.rules 中sass-loader ，替换为sassjs-loader（
+
+**这个目前不支持css里写//注释）**
+
+## dart-sass
+
+[http://blog.frogo.cn/content/5d49360e109e0f1986009c76](http://blog.frogo.cn/content/5d49360e109e0f1986009c76 "http://blog.frogo.cn/content/5d49360e109e0f1986009c76")
+
+**dart-sass 代替node-sass 相对成熟一点**
+
+Modele build failed: TypeError: this.getResolve is not a function at Object.loader...
+
+sass-loader 版本太高所导致的 找到package.json文件 修改成低版本即可（^7.3.1）
+
+```javascript 
+ {
+    loader：'sass-loader',
+    options:{
+        implementation:require('sass')
+    }
+}
+```
+
+
+**注意：这里有坑**
+
+在替换完Node Sass后，需要用::v-deep代替/deep/和>>> (注:如果在css中直接这么写是没用作用的) 来进行样式穿透
+
+```javascript 
+ .a {
+  >>> {
+    .b {
+      color: red;
+    }
+  }
+}
+/* 或者 */
+.a {
+  /deep/ {
+    .b {
+      color: red;
+    }
+  }
+}
+
+/* 修改为 */
+.a {
+  ::v-deep {
+    .b {
+      color: red;
+    }
+  }
+}
+或者
+/* 用伪元素写法传入一个css选择器作为参数 */
+::v-deep(.bar) {}
+
+/* 上边的写法会编译为下边的样子 */
+[v-data-xxxxxxx] .bar {}
+
+//此外还有两种scope css写法：
+//在 <style scoped> 代码快中使用 ::v-global()， 在这代码块中是全局范围
+::v-global(.foo) {}
+
+
+/* 被编译为 */
+.foo {}
+//专门修改slot插槽中元素的样式,你在子组件中修改插槽中样式是没用的，因为传入组件的插槽内容输入父组件，而Scoped styling是在编译时确定的,我们在子组件中可以这么写
+::v-slotted(.foo) {}
+
+/* 编译为 */
+.foo[v-data-xxxxxxx-s] {}
+```
+
+
+## vue-cli
+
+vue 安装sass 
+
+**不要一味的百度；看报错信息**
+
+### **CLi4**
+
+```javascript 
+ node-sass && sass-loader
+module.exports = {
+    css: {
+        requireModuleExtension: true,
+        sourceMap: false,
+        loaderOptions: {
+         sass: {
+          // 向全局sass样式传入共享的全局变量
+          additionalData: `@import "./src/assets/css/base.scss";`
+         }
+        }
+    },
+}
+
+
+```
+
+
+### **cli3**
+
+```javascript 
+ module.exports = {
+    css: {
+      loaderOptions: {
+        sass: {
+         prependData: `
+            @import "@/assets/css/base.scss";
+          `
+        }
+      }
+    }
+  }
+```
+
+
+\*\*/deep/ (scss|less )  深度选择器  类似 >>> (css) \*\*​
+
+注意：
+
+vant-ui样式出不来基本是因为这个 
+
+**requireModuleExtension:false属性，其他的第三方组件库就不知道会不会也和这个属性有关了**
+
+注意cl3 和 cli4 vant-ui样式出不来的问题：
+
+![  ](./image/24642cda6624eeabd630f72bb166a6dd_WBtuwqpsNN.png "  ")
+
+[vue](IT/前端工程/css%20库/框架/vue/vue.md "vue")
+
+[react](IT/前端工程/css%20库/框架/react/react.md "react")

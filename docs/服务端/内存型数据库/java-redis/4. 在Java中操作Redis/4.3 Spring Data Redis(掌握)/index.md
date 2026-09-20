@@ -1,0 +1,170 @@
+# 4.3 Spring Data Redis(掌握)
+
+## 目录
+
+- [4.3.1 介绍](#431-介绍)
+- [4.3.2 使用方式](#432-使用方式)
+
+#### 4.3.1 介绍
+
+Spring Data Redis 是 `Spring` 的一部分，提供了在 `Spring` 应用中**通过简单的配置就**可以访问 Redis 服务，**对 Redis 底层开发包进行了高度封装**。在 Spring 项目中，可以使用`Spring Data Redis`来简化 `Redis` 操作。
+
+网址：[https://spring.io/projects/spring-data-redis](https://spring.io/projects/spring-data-redis "https://spring.io/projects/spring-data-redis")
+
+![](./image/image_UOPPhniGSl.png)
+
+maven坐标：
+
+```javascript 
+<dependency>
+    <groupId>org.springframework.data</groupId>
+    <artifactId>spring-data-redis</artifactId>
+    <version>2.4.8</version>
+</dependency>
+
+```
+
+
+Spring Boot提供了对应的Starter，maven坐标：
+
+```javascript 
+<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-data-redis</artifactId>
+</dependency>
+
+```
+
+
+Spring Data Redis中**提供了一个高度封装的类**：**RedisTemplate**，针对类似 Jedis 客户端**中大量api进行了归类封装**,将同一类型操作封装为`operation`接口，具体分类如下：
+
+- ValueOperations：简单K-V操作(String类型)
+- SetOperations：set类型数据操作
+- ZSetOperations：zset类型数据操作
+- HashOperations：针对hash类型的数据操作
+- ListOperations：针对list类型的数据操作
+
+#### 4.3.2 使用方式
+
+第一步：创建maven项目`springdataredis_demo`，配置pom.xml文件
+
+```javascript 
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.4.5</version>
+        <relativePath/>
+    </parent>
+    <groupId>com.itheima</groupId>
+    <artifactId>springdataredis_demo</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <properties>
+        <java.version>1.8</java.version>
+    </properties>
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-redis</artifactId>
+        </dependency>
+    </dependencies>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <version>2.4.5</version>
+            </plugin>
+        </plugins>
+    </build>
+</project>
+
+```
+
+
+第二步：编写启动类
+
+```javascript 
+package com.itheima;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class App {
+
+    public static void main(String[] args) {
+        SpringApplication.run(App.class,args);
+    }
+
+}
+
+```
+
+
+第三步：配置application.yml
+
+```javascript 
+spring:
+  #Redis相关配置
+  redis:
+    host: 192.168.200.128 # 连接linux系统的redis
+    port: 6379 # 端口号
+    database: 0 #操作的是0号数据库
+
+```
+
+
+解释说明：
+
+> spring.redis.database：指定使用Redis的哪个数据库，Redis服务启动后默认有16个数据库，编号分别是从0到15。
+>
+> 可以通过修改Redis配置文件来指定数据库的数量。
+
+第四步：提供测试类
+
+```javascript 
+package com.itheima.test;
+
+import org.junit.runner.RunWith;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.context.junit4.SpringRunner;
+
+@SpringBootTest
+public class SpringDataRedisTest {
+
+    @Autowired
+    private RedisTemplate redisTemplate;
+
+}
+
+```
+
+
+[4.3.2.2操作字符串类型数据](./4.3.2.2操作字符串类型数据/index.md "4.3.2.2操作字符串类型数据")
+
+[4.3.2.3操作哈希类型数据](./4.3.2.3操作哈希类型数据/index.md "4.3.2.3操作哈希类型数据")
+
+[4.3.2.4操作列表类型数据](./4.3.2.4操作列表类型数据/index.md "4.3.2.4操作列表类型数据")
+
+[4.3.2.5操作set集合类型数据](./4.3.2.5操作set集合类型数据/index.md "4.3.2.5操作set集合类型数据")
+
+[4.3.2.6操作有序集合类型数据](./4.3.2.6操作有序集合类型数据/index.md "4.3.2.6操作有序集合类型数据")
+
+[4.3.2.7 通用操作](<./4.3.2.7 通用操作/index.md> "4.3.2.7 通用操作")
+
+[4.3.2.8 整合连接池(能够理解连接池参数即可)](<./4.3.2.8 整合连接池(能够理解连接池参数即可)/index.md> "4.3.2.8 整合连接池(能够理解连接池参数即可)")

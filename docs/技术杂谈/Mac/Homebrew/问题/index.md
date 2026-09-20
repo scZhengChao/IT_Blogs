@@ -1,0 +1,5 @@
+# 问题
+
+[error:Operation too slow. Less than 100 bytes/sec transferred the last 5 seconds](<./error-Operation too slow. Less/error-Operation too slow. Less than 100 bytes-sec .md> "error:Operation too slow. Less than 100 bytes/sec transferred the last 5 seconds")
+
+[Running Homebrew as root is extremely dangerous and no longer supported. As Homebrew does not drop privileges on installation you would be giving all build scripts full access to your system.](<./Running Homebrew as root is ex/Running Homebrew as root is extremely dangerous an.md> "Running Homebrew as root is extremely dangerous and no longer supported. As Homebrew does not drop privileges on installation you would be giving all build scripts full access to your system.")

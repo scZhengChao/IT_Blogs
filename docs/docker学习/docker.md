@@ -7,7 +7,7 @@
 - [docker-ce](#docker-ce)
 - [卸载docker](#卸载docker)
 
-[10\_部署\_nginx\_cluster\_pm2\_docker【瑞客论坛 www.ruike1.com】.pdf](<10_部署_nginx_cluster_pm2_docker【瑞客论坛 www.ruike1.com.pdf> "10_部署_nginx_cluster_pm2_docker【瑞客论坛 www.ruike1.com】.pdf")
+[10\_部署\_nginx\_cluster\_pm2\_docker【瑞客论坛 www.ruike1.com】.pdf](<./file/10_部署_nginx_cluster_pm2_docker【瑞客论坛 www.ruike1.com.pdf> "10_部署_nginx_cluster_pm2_docker【瑞客论坛 www.ruike1.com】.pdf")
 
 [ Docker Hub  https://hub.docker.com/](https://hub.docker.com/ " Docker Hub  https://hub.docker.com/")
 
@@ -66,34 +66,34 @@
 
 # 卸载docker
 
-[Dockerfile](file/Dockerfile_ghbsyn-u9K " Dockerfile")
+[Dockerfile](./file/Dockerfile_ghbsyn-u9K " Dockerfile")
 
-[docker-compose.yaml](docker-compose_xHbePD0Oz7.yaml " docker-compose.yaml")
+[docker-compose.yaml](./file/docker-compose_xHbePD0Oz7.yaml " docker-compose.yaml")
 
-[nginx.conf](nginx_0sR2N-ia5e.conf " nginx.conf")
+[nginx.conf](./file/nginx_0sR2N-ia5e.conf " nginx.conf")
 
-[.gitlab-ci.yml](-gitlab-ci_bTLEoylUx9.yml " .gitlab-ci.yml")
+[.gitlab-ci.yml](./file/-gitlab-ci_bTLEoylUx9.yml " .gitlab-ci.yml")
 
 [api](IT/docker/api/api.md "api")
 
-[镜像](IT/docker/镜像/镜像.md "镜像")
+[镜像](../技术杂谈/终端服务/镜像.md "镜像")
 
-[容器](容器.md "容器")
+[容器](./容器/index.md "容器")
 
-[数据卷](数据卷.md "数据卷")
+[数据卷](./数据卷/index.md "数据卷")
 
 [   https://juejin.cn/post/7157662419681017870](https://juejin.cn/post/7157662419681017870 "   https://juejin.cn/post/7157662419681017870")
 
-[技巧](技巧.md "技巧")
+[技巧](./技巧/index.md "技巧")
 
-[基础介绍](基础介绍.md "基础介绍")
+[基础介绍](./基础介绍/index.md "基础介绍")
 
-[docker desktop](<docker desktop.md> "docker desktop")
+[docker desktop](<./docker desktop/index.md> "docker desktop")
 
-[dockerfile   自定义镜像](<dockerfile   自定义镜像.md> "dockerfile   自定义镜像")
+[dockerfile   自定义镜像](<./dockerfile   自定义镜像/index.md> "dockerfile   自定义镜像")
 
-[docker-compose](docker-compose.md "docker-compose")
+[docker-compose](./docker-compose/index.md "docker-compose")
 
-[Docker镜像仓库](Docker镜像仓库.md "Docker镜像仓库")
+[Docker镜像仓库](./Docker镜像仓库/index.md "Docker镜像仓库")
 
 [案例](IT/docker/案例/案例.md "案例")

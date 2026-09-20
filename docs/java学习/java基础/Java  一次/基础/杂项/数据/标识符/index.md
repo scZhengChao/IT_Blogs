@@ -1,0 +1,11 @@
+# 标识符
+
+**数字不能作为标识符的首字母**；&#x20;
+
+![](./image/image_7LR1CKZLks.png)
+
+![](./image/image_5TGH7plQOP.png)
+
+![](./image/image_N9v5tooJt4.png)
+
+![](./image/image_5P9f96OT56.png)

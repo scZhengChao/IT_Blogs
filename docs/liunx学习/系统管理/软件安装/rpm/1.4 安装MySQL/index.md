@@ -1,0 +1,157 @@
+# 1.4 安装MySQL
+
+## 目录
+
+- [1.4 安装MySQL](#14-安装MySQL)
+  - [1.4.1 MySQL安装](#141-MySQL安装)
+  - [1.4.2 MySQL启动](#142-MySQL启动)
+
+### 1.4 安装MySQL
+
+#### 1.4.1 MySQL安装
+
+对于MySQL数据库的安装，我们将要使用前面讲解的第二种安装方式`rpm`进行安装。那么首先我们先了解一下什么是`rpm`？
+
+> **RPM：** 全称为 Red-Hat Package Manager，`RPM`软件包管理器，是红帽Linux用于管理和安装软件的工具。
+
+我们要通过`rpm`，进行MySQL数据库的安装，主要的步骤如下：
+
+**1). 检测当前系统是否安装过MySQL相关数据库**
+
+需要通过`rpm`相关指令，来查询当前系统中是否存在已安装的mysql软件包，执行指令如下：
+
+```bash 
+rpm -qa                            查询当前系统中安装的所有软件
+rpm -qa | grep mysql            查询当前系统中安装的名称带mysql的软件
+rpm -qa | grep mariadb            查询当前系统中安装的名称带mariadb的软件
+
+```
+
+
+通过rpm -qa 查询到系统通过rpm安装的所有软件，太多了，不方便查看，所以我们可以通过管道符 | 配合着grep进行过滤查询。
+
+![](./image/image_IIkRyaLni2.png)
+
+通过查询，我们发现在当前系统中存在mariadb数据库，是CentOS7中自带的，而这个数据库和MySQL数据库是冲突的，所以要想保证MySQL成功安装，需要卸载mariadb数据库。
+
+**2). 卸载现有的MySQL数据库**
+
+在rpm中，卸载软件的语法为：
+
+```bash 
+rpm -e --nodeps  软件名称
+```
+
+
+那么，我们就可以通过指令，卸载 mariadb，具体指令为：
+
+```bash 
+rpm -e --nodeps  mariadb-libs-5.5.60-1.el7_5.x86_64
+```
+
+
+![](./image/image_dAA6gx4HMV.png)
+
+我们看到执行完毕之后， 再次查询 mariadb，就查不到了，因为已经被成功卸载了。
+
+**3). 将资料中提供的MySQL安装包上传到Linux并解压**
+
+A. 上传MySQL安装包
+
+在课程资料中，提供的有MySQL的安装包 ，我们需要将该安装包上传到Linux系统中。
+
+![](./image/image_mROKHPeDo_.png)
+
+![](./image/image_PQRjWeDr3c.png)
+
+B. 解压到/usr/local/soft/mysql
+
+执行如下指令:
+
+```bash 
+mkdir   /usr/local/soft/mysql
+tar -zxvf mysql-5.7.25-1.el7.x86_64.rpm-bundle.tar.gz -C /usr/local/soft/mysql
+```
+
+
+![](./image/image_1eBt1nI5ZU.png)
+
+**4). 按照顺序安装rpm安装包**
+
+进入到上述解压的路径下：
+
+![](./image/image_TSBPQmlXr7.png)
+
+执行如下命令：
+
+```bash 
+rpm -ivh mysql-community-common-5.7.25-1.el7.x86_64.rpm
+rpm -ivh mysql-community-libs-5.7.25-1.el7.x86_64.rpm
+rpm -ivh mysql-community-devel-5.7.25-1.el7.x86_64.rpm
+rpm -ivh mysql-community-libs-compat-5.7.25-1.el7.x86_64.rpm
+rpm -ivh mysql-community-client-5.7.25-1.el7.x86_64.rpm
+yum install net-tools
+rpm -ivh mysql-community-server-5.7.25-1.el7.x86_64.rpm
+
+```
+
+
+> 说明:
+>
+> \*   因为rpm安装方式，是**不会自动处理依赖关系的，需要我们自己处理，所以对于上面的rpm包的安装顺序不能随意修改**。
+> \*   安装过程中提示缺少net-tools依赖，使用yum安装(yum是一种在线安装方式，需要保证联网)
+> \*   可以通过指令(yum update)升级现有软件及系统内核
+
+![](./image/image_M2fvAvZQvA.png)
+
+#### 1.4.2 MySQL启动
+
+MySQL安装完成之后，会自动注册为系统的服务，服务名为mysqld。那么，我们就可以通过systemctl指令来查看mysql的状态、启动mysql、停止mysql。
+
+```bash 
+systemctl status mysqld        查看mysql服务状态  
+systemctl start mysqld        启动mysql服务
+systemctl stop mysqld        停止mysql服务
+
+```
+
+
+说明：
+
+1.mysqld其实是SQL后台程序(也就是MySQL服务器)，它是关于服务器端的一个程序，mysqld意思是mysql daemon，在后台运行，监听3306端口，如果你想要使用客户端程序，这个程序必须运行，因为客户端是通过连接服务器来访问数据库的。你只有启动了mysqld.exe，你的mysql数据库才能工作。
+
+2.mysql是一个客户端软件，可以对任何主机的mysql服务（即后台运行的mysqld）发起连接，mysql自带的客户端程序一般都在cmd或者终端下进行操作
+
+![](./image/image_oFoYYv_RnG.png)
+
+> 说明： 这里不建议，后期学习docker有可能会导致端口号冲突。
+>
+> 可以设置开机时启动mysql服务，避免每次开机启动mysql。执行如下指令：
+>
+> systemctl enable mysqld
+
+我们可以通过如下两种方式，来判定mysql是否启动：
+
+```bash 
+netstat -tunlp                    查看已经启动的服务
+netstat -tunlp | grep mysql        查看mysql的服务信息
+ps -aux | grep mysql                查看mysql进程
+
+```
+
+
+![](./image/image_cMQPtRMdsZ.png)
+
+备注:
+
+A. netstat命令用来打印Linux中网络系统的状态信息，可让你得知整个Linux系统的网络情况。
+
+参数说明:
+
+-l或--listening：显示监控中的服务器的Socket； &#x20;
+&#x20;-n或--numeric：直接使用ip地址，而不通过域名服务器； &#x20;
+&#x20;-p或--programs：显示正在使用Socket的程序识别码和程序名称； &#x20;
+&#x20;-t或--tcp：显示TCP传输协议的连线状况； &#x20;
+&#x20;-u或--udp：显示UDP传输协议的连线状况；
+
+B. ps命令用于查看Linux中的进程数据。

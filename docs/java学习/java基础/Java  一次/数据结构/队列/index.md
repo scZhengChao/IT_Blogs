@@ -1,0 +1,9 @@
+# 队列
+
+- **一端开口；一端出口**
+
+![](./image/image_stKU9YNcdX.png)
+
+- 一端进；一端出 ；**先进先出；**
+
+[ArrayList](IT/服务端/java学习/java基础/Java%20%20一次/数据结构/队列/ArrayList/ArrayList.md "ArrayList")

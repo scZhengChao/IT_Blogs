@@ -1,0 +1,87 @@
+# 插件开发
+
+## 目录
+
+- [如何开发一个babel插件](#如何开发一个babel插件)
+  - [Babel 插件的作用](#Babel-插件的作用)
+    - [babel 插件的基本格式](#babel-插件的基本格式)
+    - [插件的简单格式示例](#插件的简单格式示例)
+
+# 如何开发一个babel插件
+
+## **Babel 插件的作用**
+
+Babel插件担负着编译过程中的核心任务：`转换 AST`
+
+### **babel 插件的基本格式**
+
+1）一个函数，参数是babel，然后就是返回一个对象，`key是visitor`，然后里面的对象是一个箭头函数
+
+2）函数有两个参数，`path`表示路径，`state`表示状态
+
+3）`CallExpression`就是我们要访问的节点，path 参数表示当前节点的位置，包含的主要是当前`节点（node）`内容以及`父节点（parent）`内容
+
+### **插件的简单格式示例**
+
+```typescript 
+module.exports = function (babel) {
+   let t = babel.type
+   return {
+      visitor: {
+        CallExression: (path, state) => {
+           do soming
+        }
+     }
+  }
+}
+```
+
+
+\*\*一个最简单的插件: \*\***`将const a 转化为const b`**
+
+创建babelPluginAtoB.js
+
+```typescript 
+module.exports = function(babel) {
+  let t = babel.types;
+  return {
+    visitor: {
+      VariableDeclarator(path, state) {
+        // VariableDeclarator 是要找的变量声明
+        if (path.node.id.name == "a") {
+         // 方式一：直接修改name
+         path.node.id.name = 'b';
+         // 方式二：把id是a的ast换成b的ast
+         // path.node.id = t.Identifier("b"); 
+        }
+      }
+    }
+  };
+};
+```
+
+
+在.babelrc中引入babelPluginAtoB插件
+
+```typescript 
+const babelPluginAtoB = require('./babelPluginAtoB.js');
+{
+    "plugins": [
+        [babelPluginAtoB]
+    ]
+}
+```
+
+
+**编写测试代码**
+
+```typescript 
+let a = 1;
+console.log(b); 
+// babel插件生效，没有报错，打印 1
+```
+
+
+[给所有的async函数添加try/catch](./给所有的async函数添加try-catch/index.md "给所有的async函数添加try/catch")
+
+[修改console](./修改console/index.md "修改console")

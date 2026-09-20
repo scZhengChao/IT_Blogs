@@ -14,25 +14,25 @@
 >
 > 2、利用git stash将A分支上的修改提交至暂存区（git分为工作区、暂存区、本地仓库、远程仓库四个区域），这里着重说下webstorm下如何使用stash功能，过程如下图：
 
-![](image_DelycLnuPS.png)
+![](../image/image_DelycLnuPS.png)
 
-![](image_kHGIKPNP-e.png)
+![](../image/image_kHGIKPNP-e.png)
 
-![](image_YjJgLOfW20.png)
+![](../image/image_YjJgLOfW20.png)
 
 当我们在B分支上修改完成，切换到A分支，该如何调取先前的那些被改动过的文件
 
-![](image_adokrRxils.png)
+![](../image/image_adokrRxils.png)
 
-![](image_USpVOWXErv.png)
+![](../image/image_USpVOWXErv.png)
 
-![](image_nirghs29OR.png)
+![](../image/image_nirghs29OR.png)
 
 ## [切换分支](https://so.csdn.net/so/search?q=切换分支\&spm=1001.2101.3001.7020 "切换分支")
 
 这里公司有要求分支的话需要切换一下对应的分支防止上传错远程仓库，切换分支在webStorm编辑器的右下角方向然后选择对应的分支即可.........
 
-![](image_4xvm7MvY2S.png)
+![](../image/image_4xvm7MvY2S.png)
 
 ## 更新代码和上传代码至远程仓库
 
@@ -59,10 +59,10 @@
 - 标记3是我们改进代码或者是更新代码的描述
 - 标记4中就是选中上传的代码新增或者是更改的地方
 
-![](image_i-A1OCBpp7.png)
+![](../image/image_i-A1OCBpp7.png)
 
 我们这四步都确认好了就可以点**Commit**了，它会提示我们一些警告和错误我们可以不管再点一次commit就好了，如下图：
 
-![](image_1M7zLxPQ-d.png)
+![](../image/image_1M7zLxPQ-d.png)
 
 这步完成后我们的代码并没有上传到远程仓库我们还需要最后一步就是点击最后的一个**绿色的向上箭头**图标或者是**Git => push**这才真正意义上完成Git上传！！！！

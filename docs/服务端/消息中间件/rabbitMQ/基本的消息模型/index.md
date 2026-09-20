@@ -1,0 +1,78 @@
+# 基本的消息模型
+
+## 目录
+
+- [【1】基本消息队列（BasicQueue）](#1基本消息队列BasicQueue)
+- [【2】工作消息队列（WorkQueue）](#2工作消息队列WorkQueue)
+- [【3】发布订阅（Publish、Subscribe），又根据交换机类型不同分为三种：](#3发布订阅PublishSubscribe又根据交换机类型不同分为三种)
+  - [Fanout Exchange：广播](#Fanout-Exchange广播)
+  - [Direct Exchange：路由](#Direct-Exchange路由)
+  - [Topic Exchange：主题](#Topic-Exchange主题)
+
+RabbitMQ官方提供了5个不同的Demo示例，对应了不同的消息模型：
+
+# 【1】基本消息队列（BasicQueue）
+
+![](./image/image_x4HoGRe0P1.png)
+
+> P（producer/ publisher）：生产者，一个发送消息的用户应用程序。我们自己书写代码发送。
+>
+> C（consumer）：消费者，消费和接收有类似的意思，消费者是一个主要用来等待接收消息的用户应用程序。我们自己书写代码接收。
+>
+> 队列（红色区域）：存在于rabbitmq内部。许多生产者可以发送消息到一个队列，许多消费者可以尝试从一个队列接收数据。
+>
+> 总之：生产者将消息发送到队列，消费者从队列中获取消息，队列是存储消息的缓冲区。
+
+# 【2】工作消息队列（WorkQueue）
+
+![](./image/image_DdTb3TULbV.png)
+
+![](./image/image_8s11mdPnr2.png)
+
+工作消息队列是基本消息队列的增强版，具有多个消费者消费队列的消息。假设消息队列中积压了多个消息，那么**此时可以使用多个消费者来消费队列中的消息。效率要比基本消息队列模型高。**
+
+# 【3】发布订阅（Publish、Subscribe），又根据交换机类型不同分为三种：
+
+> 1、1个生产者，多个消费者
+>
+> 2、每一个消费者都有自己的一个队列
+>
+> 3、生产者没有将消息直接发送到队列，而是发送到了交换机
+>
+> 4、每个队列都要绑定到交换机
+>
+> 5、生产者发送的消息，经过交换机到达队列，实现一个消息被多个消费者获取的目的
+>
+> X（Exchanges）：交换机一方面：**接收生产者发送的消息。另一方面：知道如何处理消息，例如递交给某个特别队列、递交给所有队列、或是将消息丢弃。** 到底如何操作，取决于Exchange的类型。**Exchange（交换机）只负责转发消息，不具备存储消息的能力，因此如果没有任何队列与Exchange绑定，或者没有符合路由规则的队列，那么消息会丢失！**
+
+### Fanout Exchange：广播
+
+![](./image/image_lyqGLbIInP.png)
+
+> 将消息交给所有绑定到交换机的队列,**生产者发送的消息，只能发送到交换机**，交换机来决定要发给哪个队列，生产者无法决定。交换机把消息发送给绑定过的所有队列.队列的消费者都能拿到消息。实现**一条消息被多个消费者消费.**
+
+### Direct Exchange：路由
+
+![](./image/image_aq9jJtT28C.png)
+
+> 1.在广播模式中，生产者发布消息，所有消费者都可以获取所有消息。
+>
+> 2.在某些场景下，我们希望**不同的消息被不同的队列消费。这时就要用到Direct类型的Exchange**。在Direct模型下，队列与交换机的绑定，不能是任意绑定了，而是要指定一个RoutingKey（路由key）.消息的发送方在向Exchange发送消息时，也必须指定消息的routing key。
+>
+> 3.P：生产者，向Exchange发送消息，发送消息时，会指定一个routing key。
+>
+> 4.X：Exchange（交换机），接收生产者的消息，然后把消息递交给 与routing key完全匹配的队列
+
+### Topic Exchange：主题
+
+![](./image/image_IXkTokp4Ew.png)
+
+1.Topic类型的Exchange与Direct相比，**都是可以根据RoutingKey把消息路由到不同的队列。只不过Topic类型Exchange可以让队列在绑定Routing key 的时候使用通配符！**
+
+2.Routingkey 一般都是有一个或多个单词组成，多个单词之间以”.”分割，例如： item.insert
+
+3.通配符规则：
+
+`#`：匹配一个或多个词
+
+`*`：匹配恰好1个词

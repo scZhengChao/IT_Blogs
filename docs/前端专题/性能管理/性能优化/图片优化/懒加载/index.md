@@ -1,0 +1,264 @@
+# 懒加载
+
+## 目录
+
+- [懒加载的概念](#懒加载的概念)
+- [实现懒加载](#实现懒加载)
+  - [懒加载思路](#懒加载思路)
+  - [开始手写懒加载](#开始手写懒加载)
+    - [第一步:让图片全部不显示](#第一步让图片全部不显示)
+    - [第二步：拿到用户可视界面的高度，图片相关的几何信息](#第二步拿到用户可视界面的高度图片相关的几何信息)
+    - [第三步：判断图片是否在可视区域，然后把图片的值（图片地址）放到src上面](#第三步判断图片是否在可视区域然后把图片的值图片地址放到src上面)
+
+今天，我们来学习一个面试经常考到的小知识点：懒加载！
+
+也是我们优化页面的一种手段，大家不妨学习一下！
+
+## 懒加载的概念
+
+懒加载（Lazy Loading）是一种延迟加载技术，指的是在需要使用某个对象或数据时才进行加载，而不是在系统启动或加载时就立即加载。懒加载可以在一定程度上提高系统的性能和资源利用率。
+
+例如：图片的加载，我们看不见的图片就不加载，能看到的图片就加载，加载完的图片就存入到浏览器的缓存当中，这样一个小小的功能就是懒加载！
+
+我们进入到PC端的淘宝网官网：
+
+![](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/e999b446dc4e4e0c8b7590f91be265b3~tplv-k3u1fbpfcp-jj-mark:3024:0:0:0:q75.awebp#?w=1220\&h=707\&s=2286324\&e=gif\&f=17\&b=f6f9fa)
+
+## 实现懒加载
+
+### 懒加载思路
+
+首先，我们说一下思路：
+
+- 要实现懒加载，我们可以先让图片全部**不显示**
+
+  **如何让图片加载**：只要img的src属性里面有图片，就会加载，所以我们可以给`img`的`src`属性设置一个空 的图片，这样图片就不会加载了。
+- 然后拿到用户的屏幕尺寸有多高，图片有多高，以及判断用户的屏幕能够放多少张图片！
+- 先让能放的下图片有值，放不下的图片不放值（本质上就是判断图片是否在可视区域，然后把图片的值（图片地址）放到src上面）
+
+接下来，我们就可以开始尝试手写懒加载了！
+
+### 开始手写懒加载
+
+首先，我们放十个`img`标签，并且自行搜索十张图片的地址! 并且设置一个类名`img-item`
+
+```javascript 
+<body>
+    <img class='img-item' src="https://img.zcool.cn/community/011e0e5c231dcaa80121df9063b03f.jpg@1280w_1l_2o_100sh.jpg" alt="">
+    <img class='img-item' src="https://img.zcool.cn/community/01427a5c63c7dba801213f26fa8f1f.jpg@1280w_1l_2o_100sh.jpg" alt="">
+    <img class='img-item' src="https://img.zcool.cn/community/0132fb60a7171011013f472074ee82.jpg@1280w_1l_2o_100sh.jpg" alt="">
+    <img class='img-item' src="https://pic2.zhimg.com/v2-ac79ec66a08cdbbfd36c3f9e4f307077_1440w.jpg" alt="">
+    <img class='img-item' src="https://img.zcool.cn/community/01702360a7171511013e3b7d2249ef.jpg@1280w_1l_2o_100sh.jpg" alt="">
+    <img class='img-item' src="https://img.zcool.cn/community/01c9e05da91bcea8012163bae9a7ea.jpg@2o.jpg" alt="">
+    <img class='img-item' src="https://img.zcool.cn/community/010c155dcec2b0a8012053c0802a12.jpg@3000w_1l_0o_100sh.jpg" alt="">
+    <img class='img-item' src="https://pic2.zhimg.com/v2-b2ab50d677e6f8a9101dae446dd99acd_r.jpg" alt="">
+    <img class='img-item' src="https://img.3dmgame.com/uploads/images/thumbpicfirst/20180824/1535099402_352803.jpg" alt="">
+    <img class='img-item' src="https://img.zcool.cn/community/0193a55b9df41ba8012099c8aedcd0.jpg@3000w_1l_0o_100sh.jpg" alt="">
+</body>
+
+```
+
+
+由于图片尺寸问题，我们为了看得更加舒服，我们加点样式:
+
+```javascript 
+<style>
+    .img-item{
+        display: block;
+        height: 300px;
+        margin-top: 50px;
+    }
+</style>
+
+```
+
+
+将其变为块级元素，从上往下显示，设置图片高度为300px，上外边距为50px
+
+接下来，怎么实现呢？
+
+#### 第一步:让图片全部不显示
+
+根据我们的思路，我们先让图片全部不显示，并且我们知道`html`中，我可以使用**自定义的属性存值作为过渡**！所以我们修改一下`body`部分的图片
+
+```javascript 
+<body>
+    <img class='img-item' src="" data-original="https://img.zcool.cn/community/011e0e5c231dcaa80121df9063b03f.jpg@1280w_1l_2o_100sh.jpg" alt="">
+    <img class='img-item' src="" data-original="https://img.zcool.cn/community/01427a5c63c7dba801213f26fa8f1f.jpg@1280w_1l_2o_100sh.jpg" alt="">
+    <img class='img-item' src="" data-original="https://img.zcool.cn/community/0132fb60a7171011013f472074ee82.jpg@1280w_1l_2o_100sh.jpg" alt="">
+    <img class='img-item' src="" data-original="https://pic2.zhimg.com/v2-ac79ec66a08cdbbfd36c3f9e4f307077_1440w.jpg" alt="">
+    <img class='img-item' src="" data-original="https://img.zcool.cn/community/01702360a7171511013e3b7d2249ef.jpg@1280w_1l_2o_100sh.jpg" alt="">
+    <img class='img-item' src="" data-original="https://img.zcool.cn/community/01c9e05da91bcea8012163bae9a7ea.jpg@2o.jpg" alt="">
+    <img class='img-item' src="" data-original="https://img.zcool.cn/community/010c155dcec2b0a8012053c0802a12.jpg@3000w_1l_0o_100sh.jpg" alt="">
+    <img class='img-item' src="" data-original="https://pic2.zhimg.com/v2-b2ab50d677e6f8a9101dae446dd99acd_r.jpg" alt="">
+    <img class='img-item' src="" data-original="https://img.3dmgame.com/uploads/images/thumbpicfirst/20180824/1535099402_352803.jpg" alt="">
+    <img class='img-item' src="" data-original="https://img.zcool.cn/community/0193a55b9df41ba8012099c8aedcd0.jpg@3000w_1l_0o_100sh.jpg" alt="">
+</body>
+
+
+```
+
+
+我们将`src`属性先置为空！然后我们自己定义一个`data-original`属性存我们图片的地址！
+
+#### 第二步：拿到用户可视界面的高度，图片相关的几何信息
+
+接下来，我们开始第二步，拿到用户可视界面的高度，图片相关的几何信息，我们可以这样写一段js代码
+
+```javascript 
+<script>
+    // 拿到可视区域的高度   innerHeight是window上独有的方法 别的用outerHeight或者innerHeight
+    let viewHeight = window.innerHeight;
+    // 拿到所有的img元素  img[data-original]只要具有data-original属性的img元素
+    let imgs = document.querySelectorAll('img[data-original]');
+    imgs.forEach(el=>{
+        // getBoundingClientRect()专门获取容器的几何信息
+        let rect = el.getBoundingClientRect()
+        })
+
+</script>
+
+```
+
+
+我们可以通过`window.innerHeight;`拿到用户可视区域的高度
+
+**注意！！ innerHeight是window上独有的方法 别的用ofsetheight或者innerheight**
+
+再通过`let imgs = document.querySelectorAll('img[data-original]');`拿到所有具有`data-original`属性的`img`元素
+
+`getBoundingClientRect()`:专门获取容器的几何信息！
+
+我们看看浏览器的输出,方便理解：
+
+![](./image/image_LyJIUaHG16.png)
+
+> \> top是指图片顶部到可视界面顶部的距离
+
+我们这里没有用`querySelectorAll`而是`querySelector`则拿到的是第一个`img`元素！
+
+#### 第三步：判断图片是否在可视区域，然后把图片的值（图片地址）放到src上面
+
+最后就是判断图片是否在可视区域，然后把图片的值（图片地址）放到src上面，我们再第二步的基础上可以封装一个方法！
+
+```javascript 
+<script>
+    // 拿到可视觉区域的高度
+    let viewHeight = window.innerHeight;
+    function lazyLoad(){
+        // 拿到所有的img元素  img[data-original]只要具有data-original属性的img元素
+        let imgs = document.querySelectorAll('img[data-original]');
+        imgs.forEach(el=>{
+            // getBoundingClientRect()专门获取容器的几何信息
+            let rect = el.getBoundingClientRect()
+            if(rect.top<viewHeight){
+                //进行赋值操作
+                }
+            }
+        })
+    }
+</script>
+
+```
+
+
+我们可以想象一下，只要到图片顶部的距离小于可视区域的高度，我们就应该加载图片了！
+
+所以这里用的是`if(rect.top<viewHeight)`
+
+如果是正常情况下，`data-original`的值应该用一个中间变量来承接，而这个中间变量应该是一个`image`标签，一般情况下我们还需要使用`createElement`创建一个标签，但是`image`标签比较特殊，它天生具有构造函数！可以创建一个图片对象,所以我们接下来可以这样写：
+
+```javascript 
+if(rect.top<viewHeight){
+    //进行赋值操作
+    let image = new Image()
+    image.src = el.dataset.original;
+}
+
+```
+
+
+**值得注意的是**：`data-original`在js中有专有写法，写成`dataset.original`
+
+接下来就是赋值了！
+
+你可能会想直接这样写：
+
+```javascript 
+el.src = image.src
+
+```
+
+
+但是我们不会这样写，而是写成
+
+```javascript 
+if(rect.top<viewHeight){
+    let image = new Image()
+    image.src = el.dataset.original;
+    image.onload = function(){
+        el.src = image.src
+    }
+}
+
+```
+
+
+为什么这样写呢？这样写我们就通过`onload`函数的执行，当我们创造的`image`标签加载完毕的时候，我们才去把`el.src`赋值为`image.src`。
+
+如果我们直接写`el.src = image.src`,图片加载的时候还是会空白一下，因为没有提前加载好，而加载是需要时间的，**用**\*\*`onload`\*\***封装的话，****图片可以提前加载完毕，存入浏览器的缓存当中****，能够更好的节约性能，节省时间！**
+
+当图片加载完毕了之后，我们再把`data-original`属性移除
+
+```javascript 
+if(rect.top<viewHeight){
+    let image = new Image()
+    image.src = el.dataset.original;
+    image.onload = function(){
+        el.src = image.src
+    }
+    // 图片加载完毕就移除属性
+    el.removeAttribute('data-original')
+}
+
+```
+
+
+写到这里，功能我们就实现了，我们调用一遍这个函数，**同时添加一个事件监听器监听滚动事件**，随着页面的滚动来加载图片，最终我们`js`部分就写成了这样！
+
+```javascript 
+<script>
+    // 拿到可视觉区域的高度
+    let viewHeight = window.innerHeight;
+    function lazyLoad(){
+        // 拿到所有的img元素
+        let imgs = document.querySelectorAll('img[data-original]');
+        imgs.forEach(el=>{
+            // getBoundingClientRect()专门获取容器的几何信息
+            let rect = el.getBoundingClientRect()
+            if(rect.top<viewHeight){
+                // img元素自带一个构造函数，可以创建一个图片对象
+                let image = new Image()
+                // js专有写法dataset.original; = data-original
+                image.src = el.dataset.original;
+                image.onload = function(){
+                    el.src = image.src
+                }
+                // 图片加载完毕就移除属性
+                el.removeAttribute('data-original')
+            }
+        })
+    }
+    lazyLoad()
+    // 添加滚动事件监听器
+    document.addEventListener('scroll',lazyLoad)
+</script>
+
+```
+
+
+我们来看看现在页面的效果！
+
+![](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/e5ad730e76e847a8b2e954cb3ba85439~tplv-k3u1fbpfcp-jj-mark:3024:0:0:0:q75.awebp#?w=1852\&h=865\&s=5528630\&e=gif\&f=48\&b=fcfbfb)
+
+![](./image/image_1muc7VAHnV.png)

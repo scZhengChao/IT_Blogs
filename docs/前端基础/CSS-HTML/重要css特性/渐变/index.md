@@ -1,0 +1,99 @@
+# 渐变
+
+## 目录
+
+- [linear-gradient](#linear-gradient)
+- [radial-gradient](#radial-gradient)
+- [repeating-linear-gradient](#repeating-linear-gradient)
+- [repeating-linear-gradient](#repeating-linear-gradient)
+- [案例](#案例)
+
+[https://www.cnblogs.com/yanggeng/p/11198528.html](https://www.cnblogs.com/yanggeng/p/11198528.html "https://www.cnblogs.com/yanggeng/p/11198528.html")
+
+[https://www.runoob.com/cssref/func-repeating-linear-gradient.html](https://www.runoob.com/cssref/func-repeating-linear-gradient.html "https://www.runoob.com/cssref/func-repeating-linear-gradient.html")
+
+- linear-gradient() ==》线性渐变: linear-gradient(45deg, 颜色1 20%,颜色2 50%,)
+- radial-gradient() ==》径向渐变: radial-gradient(circle圆/ellipse椭圆,red 5%,green 25%,yellow 70%)
+- repeating-linear/radial-gradient(red 0%,yellow 10%,blue 20%)  重复路径/径向渐变
+
+![](./image/image_v8ugwoktTN.png)
+
+&#x20;&#x20;
+
+```typescript 
+1 background-image: linear-gradient( #CD853F, #CD69C9);/* 默认方向自下向上 */
+2 background-image: linear-gradient(to left,#CD853F, #CD69C9);/* 自右向左 */
+3 background-image: linear-gradient(to left,#CD853F 50px, #CD69C9); /* 自右向左 起始颜色在50px位置开始渐变 */
+4 background-image: linear-gradient(to top left,#CD853F , #CD69C9);/* 自右下向左上渐变 */
+5 background-image: linear-gradient(30deg , #CD853F , #CD69C9);/* 30度位置开始渐变 */
+```
+
+
+### linear-gradient
+
+语法：linear-gradient(渐变角度，起始颜色 起始渐变位置，结束颜色 结束渐变的位置)；
+
+**渐变角度可以直接设置单一方向(left)，也可以设置复合方向(top left)，还可以设置度数(30deg);起始位置和结束位置除了示例中使用的像素位置还可以使用百分比。**
+
+### radial-gradient
+
+![](./image/image_XM5VWiOSbn.png)
+
+```typescript 
+/* 起始渐变色,结束渐变色 -- 其他所有值默认*/
+background-image: radial-gradient( #ff0,#009);
+/* 起始渐变色 起始渐变 位置(可以设置像素值百分比),结束渐变色 结束渐变位置 */
+background-image: radial-gradient(#ff0 20px, #009 90px);
+/*  扩散形状为圆形 (默认椭圆ellipse), 起始渐变色 起始渐变位置, 结束渐变色 结算渐变位置 */
+background-image: radial-gradient (circle ,#ff0 20px, #009 70px);
+/*  扩散形状圆形 at 圆心位置在左上角(可以设置像素值百分比) , 起始渐变色 起始渐变位置, 结束渐变色 结算渐变位置 */
+background-image: radial-gradient(circle  at top left ,#ff0 0px, #009 230px);
+/* 扩散形状圆形  半径大小(到最近的边) at 圆心位置在50px*²  , 起始渐变色 起始渐变位置, 结束渐变色 结算渐变位置 */
+background-image: radial-gradient(circle closest-side at 50px 50px,#ff0 20px, #009 70px);
+/* 半径大小共有四个值分别是： */
+closest-side：半径距离从圆心到最近的边的距离
+closest-corner：半径距离从圆心到最近的角的距离
+farthest-side：半径距离从圆心到最远的边的距离
+farthest-corner：半径距离从圆心到最远的角的距离
+```
+
+
+### repeating-linear-gradient
+
+语法：
+
+repeating-linear-gradient(
+
+渐变方向(单一方向；复合方向，角度),&#x20;
+
+起始颜色  \[这里可以设置**从什么地方开始渐变，没有渐变的部分被结束渐变色填充**，这部分宽度会被计入一组渐变色内(如果超出一组渐变色的宽度整个背景就变成了结束渐变色的纯色填充)]，&#x20;
+
+过渡颜色  \[这里可以设置纯色的宽度]，
+
+结束颜色  一组渐变色所占的宽度
+
+)
+
+```typescript 
+/* 被一组渐变色填充： 自上向下渐变，起始渐变色 开始渐变的位置是top 5px，中间过渡色，结束渐变色 */
+background-image: repeating-linear-gradient(to bottom, #aff 5px, #FFC125 ,#FF1493);
+/ * 自右向左渐变，起始渐变色 5像素后渐变，过渡色 过渡色保持3像素纯色， 结束渐变色 每组渐变色占20%宽度*/
+ background-image: repeating-linear-gradient(to left, #aff 5px, #FFC125 3px,#FF1493 20%);
+```
+
+
+### repeating-linear-gradient
+
+repeating-radial-gradient()的实现逻辑和repeating-linear-gradient()基本一致，一个采用宽度分组，一个采用半径分组。起始色的起始渐变都有基础渐变模式的其实色填充变成了重复平铺的结束渐变色填充，中间过渡色的起始渐变位置变成了中间渐变色的纯色宽度，结束渐变色的结束位置变成了每组渐变色的宽度。（**重点解析**：repeating-模式与普通渐变色的模式的区别）
+
+```typescript 
+/* 径向渐变的形状为圆形，起始渐变色 从5像素位置开始填充起始色，中间过渡色 中间过渡色的纯色宽度，结束渐变色 每组渐变色的宽度为30% */ 
+background-image:repeating-radial-gradient(circle,#ff0 5px,#ffc125 15px,  #009 30%);
+```
+
+
+### 案例
+
+[loading 动画](<../../../../前端框架/经典效果组件/loading 动画/index.md> "loading 动画") 进度条
+
+[css3实现圆角边框渐变](./css3实现圆角边框渐变/index.md "css3实现圆角边框渐变")

@@ -210,7 +210,7 @@ btn1.addEventListener("click", () => {
 
 运行的结果，console输出顺序：... -> 页面更新3次 -> 空闲了, requestIdleCallback生效了-> ...
 
-![](image_wQBm2369Yp.png)
+![](./image/image_wQBm2369Yp.png)
 
 #### **demo3：用户行为**
 

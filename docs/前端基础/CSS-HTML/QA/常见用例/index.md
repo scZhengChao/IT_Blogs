@@ -1,0 +1,667 @@
+# 常见用例
+
+## 目录
+
+- [光标禁止输入](#光标禁止输入)
+- [禁止选择文本](#禁止选择文本)
+- [禁止成为鼠标的target](#禁止成为鼠标的target)
+- [div模拟input输入框](#div模拟input输入框)
+- [文字两端对齐](#文字两端对齐)
+  - [用法一：](#用法一)
+  - [用法二： 平分布局](#用法二-平分布局)
+  - [用法三：常用在文字上：同上](#用法三常用在文字上同上)
+- [相邻选择器的常用场景： ](#相邻选择器的常用场景-)
+- [:focus-within ](#focus-within)
+- [position:sticky   ](#positionsticky)
+  - [    特点](#特点)
+  - [    生效条件](#生效条件)
+  - [    别开生面的用法:](#别开生面的用法)
+  - [总结：](#总结)
+- [a 标签全部设定为新页面打开](#a标签全部设定为新页面打开)
+- [渐变色](#渐变色)
+- [鼠标样式](#鼠标样式)
+  - [总览](#总览)
+  - [自定义：](#自定义)
+  - [问题：](#问题)
+- [伪元素扩大点击区域 ](#伪元素扩大点击区域-)
+- [禁止选择和优化选择文本](#禁止选择和优化选择文本)
+  - [快速选择](#快速选择)
+  - [选中样式优化](#选中样式优化)
+  - [添加禁止选择  ](#添加禁止选择-)
+- [字体选择](#字体选择)
+- [焦点响应 ](#焦点响应-)
+  - [保证非鼠标用户体验，合理运用 :focus-visible ](#保证非鼠标用户体验合理运用-focus-visible-)
+- [使用 WAI-ARIA 规范增强语义  ](#使用-WAI-ARIA-规范增强语义-)
+
+# **光标禁止输入**
+
+```css 
+ <input type="text" readonly="readonly" unselectable ='on'>  
+或者采用 onfocus="this.blur()
+```
+
+
+# **禁止选择文本**
+
+**:user-select:none;**
+
+文本不能被选择: user-select: none;  pointer-events: none;
+
+\*     none：
+
+\* 文本不能被选择
+
+\* text：
+
+\* 可以选择文本
+
+\* all：
+
+\* 当所有内容作为一个整体时可以被选择。如果双击或者在上下文上点击子元素，那么被选择的部分将是以该子元素向上回溯的最高祖先元素。
+
+\* element：
+
+\* 可以选择文本，但选择范围受元素边界的约束
+
+IE6-9不支持该属性，但支持使用标签属性 onselectstart="return false;" 来达到 user-select:none 的效
+
+不过，如果用户在页面的其他区域开始选择文本，则用户仍然可以继续选择将文本设置为 -ms-user-select:none; 的区域文本；
+
+```css 
+ <div class="test" onselectstart="return false;" unselectable="on">选择我试试，你会发现怎么也选择不到我，哈哈哈哈</div>
+```
+
+
+# **禁止成为鼠标的target**
+
+\*\*pointer-events:none  \*\*
+
+pointer-events属性有很多值，但是对于浏览器来说，
+
+**只有auto和non两个值可用，其它的几个是针对SVG的(本身这个属性就来自于SVG技术)。**
+
+\* auto——效果和没有定义pointer-events属性相同，鼠标不会穿透当前层。在SVG中，该值和visiblePainted的效果相同。
+
+\* none——元素不再是鼠标事件的目标，鼠标不再监听当前层而去监听下面的层中的元素。
+
+[
+详解css3 pointer-events（阻止hover、active、onclick等触发事件来\_慕课手记
+&#x20;pointer-events\&nbsp;更像是JavaScript，它能够：阻止用户的点击动作产生任何效果阻止缺省鼠标指针的显示阻止CSS里的\&nbsp;hover\&nbsp;和& https://www.imooc.com/article/48022](https://www.imooc.com/article/48022 "
+详解css3 pointer-events（阻止hover、active、onclick等触发事件来_慕课手记
+&#x20;pointer-events\&nbsp;更像是JavaScript，它能够：阻止用户的点击动作产生任何效果阻止缺省鼠标指针的显示阻止CSS里的\&nbsp;hover\&nbsp;和& https://www.imooc.com/article/48022")
+
+但是如果它的子
+
+元素设置了pointer-events为其它值，比如auto，
+
+鼠标还是会监听这个子元素的。
+
+# **div模拟input输入框**
+
+```css 
+ 模拟: placeholder
+.edit-div:empty:before {
+    content: 'placeholder';
+    display: block;
+    color: #ccc;
+}
+```
+
+
+\*\*如何模拟 可见 笔记   \*\*
+
+[js辅助dom案例](evernote:///view/21815029/s49/4575a2b7-2f2b-4fb2-94da-8a3c6ea71b3f/4575a2b7-2f2b-4fb2-94da-8a3c6ea71b3f/ "js辅助dom案例")
+
+# 文字两端对齐
+
+\*\*text-align：justify;  //文字两端对齐 \*\*
+
+## **用法一：**
+
+```css 
+  .box2{
+        background: #00ffff;
+        text-align: justify;
+    }
+直接使用；当文字遇到英文太长而换行时，能够自动使文字不全这一行，而不是在末尾空出来，而且文字必定靠边，即使你用了word-break：break-all
+```
+
+
+## **用法二： 平分布局**
+
+**注意：由于不处理最后一行，所以要添加啊：after且width：100%；换行了，所以就不再时最后一行，但是after里的内容不能被看到；height：0；**
+
+```css 
+     li{
+      width:100px;
+      height:100px;
+      background-color: #0086b3;    
+      display: inline-block;
+      list-style:none;
+    }
+   .justify_list{
+      text-align: justify;
+      width: 600px;
+      background: green;
+      }
+  .justify_list:after {
+    width: 100%;
+    height: 0;
+    margin: 0;
+    display: inline-block;
+    overflow: hidden;
+    content: '';
+  }
+     <ul class="justify_list">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+```
+
+
+## **用法三：常用在文字上：同上**
+
+```css 
+ li:after{
+    content: '';
+    display: inline-block;
+    width: 100%;
+    height: 0;
+}
+<li>张三</li>
+<li>李四</li>
+<li>abcd</li>
+<li>efgh</li>
+```
+
+
+# \*\*相邻选择器的常用场景： \*\*
+
+**你还在用border-top：1px ...     ul li:nth-child(2) border-top:none,太土鳖了**
+
+  如果不都是同一个标签还穿插者其他的标签，需要注意一下：
+
+```css 
+ ul li+li{
+    background: #00ffff
+}
+```
+
+
+# **:focus-within** 
+
+表示一个元素获得焦点 或者 该元素的后代获得焦点
+
+:placeholder-shown 神奇的实现占位符效果
+
+# \*\*position:sticky   \*\*​
+
+        设置了sticky的元素，
+
+在屏幕范围（viewport）时该元素的位置并不受到定位影响（设置是top、left等属性无效），当该元素的位置将要移出偏移范围时，定位又会变成fixed，根据设置的left、top等属性成固定位置的效果。
+
+##     特点
+
+    \* 该元素并不脱离文档流，仍然保留元素原本在文档流中的位置。
+
+    \* 当元素在容器中被滚动超过指定的偏移值时，元素在容器内固定在指定位置。亦即如果你设置了top: 50px，那么在sticky元素到达距离相对定位的元素顶部50px的位置时固定，不再向上移动。
+
+    \* 元素固定的相对偏移是相对于离它最近的具有滚动框的祖先元素，如果祖先元素都不可以滚动，那么是相对于viewport来计算元素的偏移量
+
+##     生效条件
+
+    \* 一个是元素自身在文档流中的位置
+
+    \* 另一个是该元素的父容器的边缘
+
+    第一点上面已经讲过了，如果设置了top: 50px，那么元素在达到距离顶部50px时才会发生定位，否则并不会发生定位。
+
+　　第二点则需要考虑父容器的高度情况：sticky元素在到达父容器的底部时，则不会再发生定位，如果父容器高度并没有比sticky元素高，那么sticky元素一开始就达到了底部，并不会有定位的效果。
+
+　　此外还有一点就是父元素的overflow属性，如果父元素的overflow属性并不是默认的visible属性，那么sticky元素则相对于该父元素定位。也就是如果要定位在顶部的话，此时这个效果就无效了。。
+
+##     别开生面的用法:
+
+**同一个父容器中的sticky元素，如果定位值相等，则会重叠；如果属于不同父元素，则会鸠占鹊巢，挤开原来的元素，形成依次占位的效果**
+
+。由于每一段短新闻都在section标签中，属于不同的父元素，因此，滚动的时候，后面的新闻标题才能把前面已经sticky定位的新闻标题推开，这是sticky定位天然的特性，无需任何JavaScript的帮助。
+
+        sticky定位，不仅可以设置top，基于滚动容器上边缘定位；还可以设置bottom，也就是相对底部粘滞。如果是水平滚动，也可以设置left和right值。
+
+## 总结：
+
+- 在滚动过程中,无论是上滚还是下滚,只要达到了触发条件,top,left优先,就会形成fixed效果(但是并没有脱离文档流), 包括一上来就执行.
+- 当处于同一个父元素当中时,相同位置的会覆盖,z-index只对其他元素有效,对同样sticky无效.
+
+    而不同父元素的的sticky会推开上一个,无需任何js帮助;
+
+     大家可以拖动滚动条查看定位效果，代码分析如下：
+
+（1）.粘性定位元素分别位于各自的\<section>父元素下。
+
+（2）.现在拖动滚动条，认真观察效果会发现如下几个特点。
+
+（3）.首先，top、bottom、left和right属性定位参考是以距离它最近的具有滚动条父元素为定位参考对象，如果是页面出现滚动条，则以视口包含块为定位参考对象，所以当拖动滚动条时，距离视口顶部50px的时候，粘性定位元素会固定。
+
+（4）.但是粘性定位元素的固定范围不会超出它的直接父元素，也就是不会超出它所在的红框。
+
+（5）.正是由于上面的原因，粘性定位的div元素之间不会覆盖在一起，因为受限于它们的直接父元素。
+
+```css 
+ <!DOCTYPE html> 
+<html> 
+<head> 
+<meta charset=" utf-8"> 
+<meta name="author" content="http://www.softwhy.com/" /> 
+<title>蚂蚁部落</title> 
+<style type="text/css">
+.container {
+  background: #eee;
+  width: 400px;
+  height: 1000px;
+  margin: 120px auto;
+}
+.sticky {
+  position: sticky;
+  height: 60px;
+  line-height: 60px;
+  background: #ccc;
+  top: 50px;
+}
+section{
+  max-width: 600px;
+  margin-bottom: 30px;
+  overflow:visible;
+}
+p{color:green}
+div {
+  font-size: 30px;
+  text-align: center;
+  color: #fff;
+}
+</style>
+</head>
+<body>
+  <div class="container">
+    <section>
+      <div class="sticky">蚂蚁部落一</div>
+      <p>CSS教程</p>
+    </section>
+    <section>
+      <div class="sticky">蚂蚁部落二</div>
+      <p>CSS教程</p>
+    </section>
+    <section>
+      <div class="sticky">蚂蚁部落三</div>
+      <p>CSS教程</p>
+    </section>
+    <section>
+      <div class="sticky">蚂蚁部落四</div>
+      <p>CSS教程</p>
+    </section>
+  </div>
+</body>
+</html>
+```
+
+
+[test1.html](./file/test1_0janUkKLSW.html "test1.html")
+
+# **a 标签全部设定为新页面打开**
+
+```css 
+     <base target='_blank'/>
+    a:active{
+        text:expression(target='_blank');  
+    }
+$('a').attr('target','_blank’)
+```
+
+
+# **渐变色**
+
+[  https://segmentfault.com/a/1190000009206542](https://segmentfault.com/a/1190000009206542 "  https://segmentfault.com/a/1190000009206542")
+
+**（注意：background-color 在 background-image之下）**
+
+background-image：linear-gradient(to right, transparent 50%, #655 0)
+
+- 线性渐变: linear-gradient(45deg, 颜色1 20%,颜色2 50%,)
+- 径向渐变: radial-gradient(circle圆/ellipse椭圆,red 5%,green 25%,yellow 70%)
+- 重复渐变: repeating-linear/radial-gradient(red 0%,yellow 10%,blue 20%)
+
+-webkit-radial-gradient( 20% 50% ,closest-side/farthest-side,red,yellow ,green );
+
+单行和多行省略号
+
+可以把 块容器 中的内容限制为指定的行数。并且在超过行数后，在最后一行显示"..."
+
+```javascript 
+{     
+
+width: 200px; 
+
+overflow : hidden; 
+
+text-overflow: ellipsis; 
+
+display: -webkit-box; /*值必须为-webkit-box或者-webkit-inline-box*/
+
+-webkit-line-clamp: 2;/*值为数字，表示一共显示几行*/ 
+
+-webkit-box-orient: vertical;/*值必须为vertical*/
+
+} 
+```
+
+
+或者
+
+/\*单行文本溢出\*/
+
+**p**
+
+ {
+
+  overflow: hidden;
+
+  text-overflow: ellipsis;
+
+  white-space: nowrap;
+
+}
+
+/\*
+
+多行文本溢出 这种方法有缺陷；会有一半的字看不到，一半又看的到
+
+\*/
+
+**p**
+
+ {
+
+  position: relative;
+
+  line-height: 1.5em;
+
+  /*高度为需要显示的行数*行高，比如这里我们显示两行，则为3 \*/
+
+  height: 3em;
+
+  overflow: hidden;
+
+}
+
+**p**
+
+:after {
+
+  content: '...';
+
+  position: absolute;
+
+  bottom: 0;
+
+  right: 0;
+
+  background-color: #fff;
+
+}
+
+# 鼠标样式
+
+## 总览
+
+```javascript 
+ // 属性名：cursor
+//属性值（手势状态）
+.auto            { cursor: auto; }
+.default         { cursor: default; }
+.none            { cursor: none; }
+.context-menu    { cursor: context-menu; }
+.help            { cursor: help; }
+.pointer         { cursor: pointer; }
+.progress        { cursor: progress; }
+.wait            { cursor: wait; }
+.cell            { cursor: cell; }
+.crosshair       { cursor: crosshair; }
+.text            { cursor: text; }
+.vertical-text   { cursor: vertical-text; }
+.alias           { cursor: alias; }
+.copy            { cursor: copy; }
+.move            { cursor: move; }
+.no-drop         { cursor: no-drop; }
+.not-allowed     { cursor: not-allowed; }
+.all-scroll      { cursor: all-scroll; }
+.col-resize      { cursor: col-resize; }
+.row-resize      { cursor: row-resize; }
+.n-resize        { cursor: n-resize; }
+.e-resize        { cursor: e-resize; }
+.s-resize        { cursor: s-resize; }
+.w-resize        { cursor: w-resize; }
+.ns-resize       { cursor: ns-resize; }
+.ew-resize       { cursor: ew-resize; }
+.ne-resize       { cursor: ne-resize; }
+.nw-resize       { cursor: nw-resize; }
+.se-resize       { cursor: se-resize; }
+.sw-resize       { cursor: sw-resize; }
+.nesw-resize     { cursor: nesw-resize; }
+.nwse-resize     { cursor: nwse-resize; }
+.zoom-in     { cursor: zoom-in; }
+.zoom-out     { cursor: zoom-out; }
+
+```
+
+
+## 自定义：
+
+ IE支持 
+
+**cur**
+
+, 
+
+**ani**
+
+, 
+
+**ico**
+
+这三种格式。&#x20;
+
+ Google，FF支持 
+
+**bmp**
+
+, 
+
+**gif**
+
+, 
+
+**jpg**
+
+, 
+
+**cur**
+
+, 
+
+**ico**
+
+这几种格式，不 支持 
+
+**ani**
+
+格式，也不支持 
+
+**gif**
+
+动画格式。&#x20;
+
+## 问题：
+
+1. IE浏览器下图标地址需要为绝对路径。
+2. 图片大小最好是32\*32的大小。
+3. IE浏览器如出现鼠标跳动现象可能是因为图标本身有问题，可以尝试网上下载一些标准的cur格式的图标来验证自定义的图标是否有问题。
+4. 改变图标的格式不要通过更改图片后缀名来欺骗浏览器,实际上无法显示。
+
+[index.html](./file/index_KfhsdZ9EEI.html "index.html")
+
+# 伪元素扩大点击区域&#x20;
+
+让用户更容易的点击到按钮无疑能很好的增加用户体验及可提升页面的访问性，尤其是在移动端，按钮通常都很小，但是受限于设计稿或者整体 UI 风格，我们不能直接去改变按钮元素的高宽。&#x20;
+
+这里，伪元素也是可以代表其宿主元素来响应的鼠标交互事件的。借助伪元素可以轻松帮我们实现，我们可以这样写：&#x20;
+
+```javascript 
+ .btn {
+        position: relative;
+        margin-left: 100px;
+        cursor: pointer;
+    }
+    .btn:after {
+        content: "";
+        position: absolute;
+        top: -20px;
+        right: -20px;
+        bottom: -20px;
+        left: -20px;
+    }
+```
+
+
+[index.html](./file/index_BdhoRzq6yI.html "index.html")
+
+# 禁止选择和优化选择文本
+
+## 快速选择
+
+         快速单击两次，可以选中单个单词，快速单击三次，可以选中一整行内容。但是如果有的时候我们的核心内容，被分隔符分割，或者潜藏在一整行中的一部分，这个时候选取起来就比较麻烦。&#x20;
+
+        利用 user-select: all，可以将需要一次选中的内容进行包裹，用户只需要点击一次，就可以选中该段信息：&#x20;
+
+```javascript 
+ user-select: all
+```
+
+
+[index.html](./file/index_JJh0jHnD_S.html "index.html")
+
+## 选中样式优化
+
+```javascript 
+ .g-select-all::selection {
+    background: #f7ec91;
+    color: #333;
+    text-shadow: 0 0 .5px #aaa, 1px 1px .5px #aaa, 2px 2px .5px #aaa, 3px 3px .5px #aaa, 4px 4px .5px #aaa;
+}
+```
+
+
+[index.html](./file/index_uA8vJUKYJZ.html "index.html")
+
+## 添加禁止选择 &#x20;
+
+```javascript 
+    {
+      -webkit-user-select:none;
+      /* Safari */
+      -ms-user-select:none;
+      /* IE 10 and IE 11 */
+      user-select:none;
+      /* Standard syntax */
+   }
+```
+
+
+# 字体选择
+
+         字体的选择与使用其实是非常有讲究的。&#x20;
+
+         如果网站没有强制必须使用某些字体。最新的规范建议我们更多的去使用系统默认字体。也就是 CSS Fonts Module Level 4 -- Generic font families 中新增的 font-family: system-ui 关键字。&#x20;
+
+font-family: system-ui 能够自动选择本操作系统下的默认系统字体。
+
+         默认使用特定操作系统的系统字体可以提高性能，因为浏览器或者 webview 不必去下载任何字体文件，而是使用已有的字体文件。font-family: system-ui 字体设置的优势之处在于它与当前操作系统使用的字体相匹配，对于文本内容而言，它可以得到最恰当的展示。&#x20;
+
+天猫：font-family: "PingFang SC",miui,system-ui,-apple-system,BlinkMacSystemFont,Helvetica Neue,Helvetica,sans-serif;&#x20;
+
+Github：font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;&#x20;
+
+简单而言，它们总体遵循了这样一个基本原则：&#x20;
+
+# 焦点响应&#x20;
+
+通过元素的 :focus 伪类以及键盘 Tab 键切换焦点，用户可以非常顺畅的在脱离鼠标的情况下，对页面的焦点切换及操作。&#x20;
+
+```javascript 
+ :focus {
+    outline:0;
+}
+```
+
+
+## 保证非鼠标用户体验，合理运用 :focus-visible&#x20;
+
+:focus 伪类不论用户在使用鼠标还是使用键盘，只要元素获焦，就会触发。&#x20;
+
+:focus-visible：这个选择器可以有效地根据用户的输入方式(鼠标 vs 键盘)展示不同形式的焦点。 （
+
+可以理解为使用键盘时触发）
+
+有了这个伪类，就可以做到，
+
+当用户使用鼠标操作可聚焦元素时，不展示 :focus 样式或者让其表现较弱
+
+，
+
+而当用户使用键盘操作焦点时，利用 :focus-visible，
+
+让可获焦元素获得一个较强的表现样式。&#x20;
+
+```javascript 
+   button:active {
+    background: #eee;
+  }
+
+  button:focus {
+    outline: 2px solid red;
+  }
+  button:focus:not(:focus-visible) {
+    outline: none;
+  }
+```
+
+
+[index.html](./file/index_Bis_VtIb_j.html "index.html")
+
+# 使用 WAI-ARIA 规范增强语义 &#x20;
+
+基于大量类似的场景，有了 WAI-ARIA 标准，WAI-ARIA是一个为残疾人士等提供无障碍访问动态、可交互Web内容的技术规范。&#x20;
+
+简单来说，它提供了一些属性，增强标签的语义及行为：&#x20;
+
+- 可以使用 tabindex 属性控制元素是否可以聚焦，以及它是否/在何处参与顺序键盘导航
+- 可以使用 role 属性，来标识元素的语义及作用，譬如使用Save 来模拟一个按钮&#x20;
+- 还有大量的 aria-\* 属性，表示元素的属性或状态，帮助我们进一步地识别以及实现元素的语义化，优化无障碍体验
+
+```javascript 
+ <span role="button"  aria-label="goto inbound page" tabindex="0" class="ssc-breadcrumb-item-link">Inbound </span>
+```
+
+
+对于 A11Y 相关的内容，篇幅及内容非常之多，感兴趣的可以通读下下列文章：&#x20;
+
+- WAI-ARIA basics
+- WAI-ARIA 1.1
+- Web中的焦点管理
+- 无障碍功能
+- 提升Web用户体验的71个设计要点

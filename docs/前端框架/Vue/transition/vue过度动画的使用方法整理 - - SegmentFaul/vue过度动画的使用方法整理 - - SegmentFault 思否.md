@@ -52,7 +52,7 @@
 
 ### 六个过度类名
 
-![  ](bV8UTF_oNt1VSrXw0.png "  ")
+![  ](./image/bV8UTF_oNt1VSrXw0.png "  ")
 
        简单地说就是 active 会伴随 enter/leave 的整个过程，v-enter 与 v-leave 存在的时长只都有
 

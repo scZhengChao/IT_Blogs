@@ -1,0 +1,103 @@
+# 进程服务
+
+## 目录
+
+- [ps](#ps)
+- [kill](#kill)
+- [netstat](#netstat)
+- [nohup](#nohup)
+
+# ps
+
+ps 命令用于显示当前进程的状态，类似于 windows 的任务管理器。
+
+![](./image/image_Kzt0zv6CNw.png)
+
+```bash 
+ps -aux | grep tomcat
+
+ps -ef |grep tomcat
+
+```
+
+
+**说明:**
+
+- ps命令是`linux`下非常强大的进程查看命令，通过`ps -aux`可以**查看当前运行的所有进程的详细信息**
+- "|" 在Linux中称为管道符，可以将**前一个命令的结果输出给后一个命令作为输入**
+- 使用ps命令查看进程时，经常配合管道符和查找命令 `grep` 一起使用，来查看特定进程
+
+# kill
+
+kill 命令用于删除执行中的程序或工作。kill 可将指定的信息送至程序。预设的信息为 SIGTERM(15)，可将指定程序终止。若仍无法终止该程序，可使用 SIGKILL(9) 信息尝试强制删除程序。
+
+```bash 
+kill -9 3000
+
+```
+
+
+# netstat
+
+我们可以通过如下两种方式，来判定mysql是否启动：
+
+```bash 
+netstat -tunlp                    查看已经启动的服务
+netstat -tunlp | grep mysql        查看mysql的服务信息
+ps -aux | grep mysql                查看mysql进程
+
+```
+
+
+备注:
+
+A. `netstat`命令用来打印`Linux`中**网络系统的状态信息**，可让你得知整个Linux系统的网络情况。
+
+参数说明:
+
+- -l或--listening：显示监控中的服务器的Socket； &#x20;
+- &#x20;-n或--numeric：直接使用ip地址，而不通过域名服务器； &#x20;
+- &#x20;-p或--programs：显示正在使用Socket的程序识别码和程序名称； &#x20;
+- &#x20;-t或--tcp：显示TCP传输协议的连线状况； &#x20;
+- &#x20;-u或--udp：显示UDP传输协议的连线状况；
+
+B. ps命令用于查看Linux中的进程数据。
+
+```bash 
+netstat -tnlp | grep :3306
+```
+
+
+# nohup
+
+**nohup命令：** 英文全称**no hang up（不挂起），用于不挂断地运行指定命令，退出终端不会影响程序的运行**
+
+**语法格式：** nohup Command \[ Arg … ]\[&]
+
+**参数说明：**
+
+Command：要执行的命令
+
+Arg：一些参数，可以指定输出文件
+
+&：让命令在后台运行
+
+举例：
+
+nohup java -jar boot工程.jar &> hello.log &
+
+上述指令的含义为： 后台运行 java -jar 命令，并将日志输出到hello.log文件
+
+那么经过上面的介绍，我们可以推测中，我们要想让当前部署的项目后台运行，就可以使用下面的指令：
+
+```bash 
+nohup java -jar helloworld-1.0-SNAPSHOT.jar &> hello.log &
+
+```
+
+
+说明：
+
+> 1.上述命令的 “&” ，表示在当窗口关闭时，程序才会中止运行。&代表让该命令在后台执行。
+
+> hello.log ” 该命令就是指定日志输出的文件。

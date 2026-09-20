@@ -1,0 +1,1048 @@
+# 构建一个前端个人工具函数库
+
+## 目录
+
+- [前言](#前言)
+- [初始化项目](#初始化项目)
+  - [使用模板创建初始项目](#使用模板创建初始项目)
+  - [配置初始项目](#配置初始项目)
+- [组织代码](#组织代码)
+  - [模块化](#模块化)
+  - [模块自动导入并导出](#模块自动导入并导出)
+- [TSDoc 注释](#TSDoc-注释)
+- [AI生成注释](#AI生成注释)
+- [一键生成文档](#一键生成文档)
+- [VitePress创建文档站点](#VitePress创建文档站点)
+- [部署到Netlify](#部署到Netlify)
+  - [配置](#配置)
+  - [部署](#部署)
+- [发布到npm](#发布到npm)
+
+## 前言
+
+在前端开发中，有一些常用、通用的逻辑，每换一个项目，都免不了重写或复制粘贴一遍，那为什么不将它们封装成一个库，发布到`npm`上呢，每次要用的时候只需`npm install`就可以拿来用了。
+
+本文将从项目构建的角度，教你从零开始用rollup打造一个前端个人工具函数库。包括但不限于以下内容：
+
+- `使用rollup创建TS项目`
+  - 配置三种模式的打包：ES Module，CommonJS，UMD。
+  - 实现摇树优化（Tree Shaking）
+- `AI生成注释`
+- `一键生成API文档`
+- `使用 VitePress 将文档创建为站点并部署上线`
+- `发布到npm`
+
+虽然我会在文中列举一些函数作为例子，但这不是文章的重点，具体要写哪些函数，以及该怎么写，应该按你自己的需求来决定。
+
+## 初始化项目
+
+初始目录结构如下：
+
+```纯文本 
+utils                  项目文件夹
+ ├─src                  源码目录  
+ │   └─index.ts         入口文件  
+ ├─test                 测试目录
+ │   └─index.test.ts    测试用例
+ ├─.eslintignore        eslint忽略文件
+ ├─.eslintrc.js         eslint配置文件
+ ├─LICENSE.md           许可文件
+ ├─package.json         包管理文件
+ ├─README.md            readme
+ ├─rollup.config.js     rollup配置文件
+ └─tsconfig.json        TS配置文件
+
+```
+
+
+后面我会按步骤一个一个来创建这些文件。
+
+我们要用pnpm进行包管理
+
+```bash 
+npm i pnpm -g
+```
+
+
+### 使用模板创建初始项目
+
+如果你懒得自己一个一个去配置上述文件，可以使用我配置的起始模板。
+
+> 不想使用我的模板可以跳过这一节，下一节我会具体介绍每个文件该如何配置。
+
+全局安装@taiyuuki/create-starter
+
+```bash 
+npm i @taiyuuki/create-starter -g
+```
+
+
+安装完成后，执行命令：
+
+```bash 
+create-starter
+```
+
+
+或者使用简化的命令
+
+```bash 
+cs
+```
+
+
+然后依次选择或输入：
+
+1. ts-starter —— ts起始模板
+2. 项目名称 —— 例如xxxx-utils
+3. 项目文件夹名称 —— 与项目名称一致即可
+4. 项目描述 —— 可以暂时留空
+5. 作者
+6. rollup
+7. use pnpm
+
+最后等待依赖安装完成。
+
+### 配置初始项目
+
+> 如果你使用了我的模板，可以跳过这一节，当然，如果你想了解配置的细节，也可以看看。
+
+1. 新建项目文件夹。例如xxxx-utils，或者直接就叫utils（但要记得将package.json中项目名称改为@xxxx/utils），xxxx就是你的用户名，这样可以避免在最后发布至npm时包名冲突。
+2. 在项目文件夹下执行`pnpm init`，生成`package.json`。
+3. 安装eslint、typescript、 @types/node
+
+```bash 
+pnpm add @types/node eslint typescript -D
+```
+
+
+项目根目录下新建`.eslintrc.js`，配置eslint：
+
+```javascript 
+module.exports = {
+    root: true,
+    extends: ['@taiyuuki/eslint-config-ts'],
+}
+```
+
+
+这里用到的是我自己的eslint配置，安装`pnpm add @taiyuuki/eslint-config-ts`，但我的配置未必适合你，你可以用你自己喜欢的配置。
+
+新建`.eslintignore`，eslint的忽略文件：
+
+```javascript 
+/node_modules
+/dist
+/doc
+/etc
+/temp
+```
+
+
+1. 初始化ts配置
+
+```javascript 
+pnpm tsc init
+```
+
+
+生成的`tsconfig.json`，内容设置如下：
+
+```javascript 
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "noEmit": true,
+    "resolveJsonModule": true,
+    "forceConsistentCasingInFileNames": true,
+    "sourceMap": true,
+    "strict": true,
+    "target": "esnext",
+    "isolatedModules": true,
+    "useDefineForClassFields": true,
+    "jsx": "preserve",
+    "lib": [
+      "esnext",
+      "dom"
+    ],
+    "baseUrl": ".",
+    "paths": {
+      "src/*": [
+        "src/*"
+      ]
+    }
+  },
+  "exclude": [
+    "dist",
+    "node_modules"
+  ]
+}
+
+```
+
+
+1. 安装rollup以及相应的插件
+
+```javascript 
+pnpm add rollup -D
+```
+
+
+插件：
+
+- `rollup-plugin-typescript2`  TS插件
+- `@rollup/plugin-commonjs` CommonJS插件
+- `@rollup/plugin-babel` babel插件，使用这个插件记得要安装babel `pnpm add babel -D`
+- `@rollup/plugin-node-resolve` 打包外部模块。
+- `rollup-plugin-node-globals` 用于UMD模式，引入全局变量。
+- `rollup-plugin-node-builtins` 用于UMD模式，为浏览器提供node模块的pollyfill，通常来说我们不应该将node模块打包进浏览器，如果确定不需要，可以不用这个插件。
+- `@rollup/plugin-terser` 压缩代码，建议只用于UMD模式，因为我们这是一个库项目，没必要压缩代码，压缩代码的工作可以交给引入我们这个库的其他应用。
+- `rollup-plugin-dts` 打包类型声明。
+
+安装完插件后，在根目录新建`rollup.config.js`，配置内容如下：
+
+```javascript 
+ import { defineConfig } from 'rollup'
+   import ts from 'rollup-plugin-typescript2'
+   import commonjs from '@rollup/plugin-commonjs'
+   import babelPlugin from '@rollup/plugin-babel'
+   import resolve from '@rollup/plugin-node-resolve'
+   import globals from 'rollup-plugin-node-globals'
+   import builtins from 'rollup-plugin-node-builtins'
+   import terser from '@rollup/plugin-terser'
+   import dts from 'rollup-plugin-dts'
+   
+   const config = defineConfig([
+       // 输出两种模式：ES Module和CommonJS
+       {
+           input: ['src/index.ts'],
+           output: [
+               {
+                   dir: 'dist/esm',
+                   format: 'esm',
+                   preserveModules: true, // 开启这个选项会将每个模块单独打包，有利于摇树优化
+               },
+               {
+                   dir: 'dist/cjs',
+                   format: 'cjs',
+                   preserveModules: true,
+               },
+           ],
+           plugins: [
+               ts(),
+               babelPlugin({ exclude: '**/node_modules/**' }),
+               commonjs(),
+           ],
+       },
+       // 打包为UMD
+       {
+           input: 'src/index.ts',
+           output: [
+               {
+                   file: 'dist/umd/index.js',
+                   format: 'umd',
+                   name: 'utils',
+               },
+           ],
+           plugins: [
+               ts(),
+               babelPlugin({ exclude: '**/node_modules/**' }),
+               commonjs(),
+               resolve({ preferBuiltins: true, mainFields: ['browser'] }),
+               globals(),
+               builtins(),
+               terser(),
+           ],
+       },
+       // 打包类型声明
+       {
+           input: 'src/index.ts',
+           output: {
+               dir: 'dist/types',
+               format: 'esm',
+               preserveModules: true,
+           },
+           plugins: [
+               dts(),
+           ],
+       },
+   ])
+   
+   export default config
+
+```
+
+
+1. 新建`src/index.ts`作为项目的入口文件，然后配置package.json（这里省略了部分字段）：
+
+```javascript 
+{
+  "name": "@taiyuuki/utils",
+  "version": "0.0.1",
+  "description": "个人工具函数库",
+  "type": "module",
+  "main": "./dist/cjs/index.js",
+  "module": "./dist/esm/index.js",
+  "types": "./dist/types/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/taiyuuki/utils"
+  },
+  "bugs": "https://github.com/taiyuuki/utils/issues",
+  "homepage": "https://github.com/taiyuuki/utils#readme",
+  "scripts": {
+    "lint": "eslint --ext .js,.ts ./",
+    "dev": "rollup -c --watch",
+    "build": "rollup -c"
+  },
+  "keywords": [],
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/esm/index.js",
+      "require": "./dist/cjs/index.js"
+    }
+  },
+  "author": "taiyuuki <taiyuuki@qq.com>",
+  "license": "MIT",
+  "files": [
+    "dist"
+  ],
+}
+
+```
+
+
+- &#x20;你需要将其中的用户名改为你自己的。
+- `main`是CommonJS导入的入口
+- `module`是ES Module导入的入口
+- `types`是类型声明
+- `sideEffects`的作用是告诉打包工具：这是一个不含副作用的库，有利于摇树优化。
+- `exports`配置不同的导入方式对应的不同文件。
+- `files`是发布至npm时上传的文件或文件夹。
+
+1. 安装测试框架，我用的`vitest`，`pnpm add vitest -D`，你可以选择自己喜欢的测试框架。
+
+新建`test`文件夹，测试用例全放在这个文件夹内，但本文不会涉及如何写测试用例的内容。 在package.json添加测试脚本：
+
+```javascript 
+{
+    "scripts": {
+        "lint": "eslint --ext .js,.ts ./",
+        "build": "rollup -c",
++        "test": 'vitest'
+    },
+}
+```
+
+
+1. 新建`README.md`
+2. 新建`LICENSE.md`，按你选择的许可类型写入内容，例如MIT：
+
+```javascript 
+The MIT License (MIT)
+
+Copyright (c) 2023 Taiyuuki
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sub license, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,FITNESS FOR A PARTICULAR PURPOSE AND NON INFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+```
+
+
+只需将第三行的时间和作者按你的实际情况改一下就可以了。
+
+到此为止，初始项目已经创建完毕。
+
+## 组织代码
+
+### 模块化
+
+我们采用多模块的方式来组织代码，在`src`目录下创建`modules`文件夹，各个模块放入该文件夹内。
+
+例如，我创建`array` `is` `string`三个模块：
+
+![](./image/image_lv9bdH_BOO.png)
+
+这几个模块分别导出了这些函数：
+
+```javascript 
+// src/modules/array.ts
+function arr_unique<T>(arr: T[]): T[] {
+    return Array.from(new Set(arr))
+}
+
+export {
+    arr_unique,
+}
+
+```
+
+
+```javascript 
+// src/modules/is.ts
+function is_object(o: any): o is Exclude<object, Array<any>> {
+    return o !== null && typeof o === 'object' && !Array.isArray(o)
+}
+
+function is_number(n: any): n is number {
+    return typeof n === 'number' && isFinite(n)
+}
+
+export {
+    is_object,
+    is_number,
+}
+
+
+```
+
+
+```javascript 
+// src/modules/string.ts
+function str_ensure_prefix(s: string, prefix: string) {
+    return s.startsWith(prefix) ? s : `${prefix}${s}`
+}
+
+function str_ensure_suffix(s: string, suffix: string) {
+    return s.endsWith(suffix) ? s : `${s}${suffix}`
+}
+
+export {
+    str_ensure_prefix,
+    str_ensure_suffix,
+}
+
+```
+
+
+> 提示：
+> 不要使用export default，默认导出会失去摇树优化。
+> 不要使用export function的写法，而应该将每一个函数归集到一个统一的导出中，便于查看和维护。
+
+然后在`src/index.ts`中归集各个模块并导出：
+
+```javascript 
+// src/index.ts
+export * from './modules/array'
+export * from './modules/is'
+export * from './modules/string'
+```
+
+
+此时我们可以试着打包看看，执行`pnpm build`，输出文件：
+
+![](./image/image_6PwUZGGytC.png)
+
+可以看到，dist下一共四个文件夹，cjs对应CommonJS，esm对应ES Module，umd对应UMD，types是类型声明。
+
+每个文件夹内都有一个index.js，它们是模块的入口文件，例如dist/esm/index.js：
+
+```javascript 
+// dist/esm/index.js
+export { arr_unique } from './modules/array.js';
+export { is_number, is_object } from './modules/is.js';
+export { str_ensure_prefix, str_ensure_suffix } from './modules/string.js';
+
+```
+
+
+我之所以不将modules内的模块合并到一个文件，是因为这样更有利于摇树优化。
+
+理论上types是可以合并的，但为了后面生成文档时方便debug，所以也没有进行合并。
+
+### 模块自动导入并导出
+
+我们在src/index.ts中归集每个模块，为了避免每次新增模块时，我们都需要手动给它添加一行`export * from 'xxx'`，我们可以使用`rollup-plugin-import-export`插件。
+
+安装
+
+```javascript 
+pnpm add rollup-plugin-import-export -D
+```
+
+
+然后在`rollup.config.js`中，给每一个plugins都添加该插件：
+
+```javascript 
++ import { importExportPlugin } from 'rollup-plugin-import-export'
+
+plugins: [
++    importExportPlugin(),
+    ts(),
+    babelPlugin({ exclude: '**/node_modules/**' }),
+    commonjs(),
+]
+
+plugins: [
++    importExportPlugin(),
+    ts(),
+    babelPlugin({ exclude: '**/node_modules/**' }),
+    commonjs(),
+    resolve({ preferBuiltins: true, mainFields: ['browser'] }),
+    globals(),
+    builtins(),
+    terser(),
+],
+
+plugins: [
++    importExportPlugin(),
+    dts(),
+],
+
+```
+
+
+然后我们在`src/index.ts`中导入一个虚拟模块：
+
+```javascript 
+export * from 'iem:./modules/**/*'
+```
+
+
+为避免eslint报错，我们需要修改一下`.eslintrc.js`
+
+```javascript 
+module.exports = {
+    root: true,
+    extends: ['@taiyuuki/eslint-config-ts'],
+    rules: {
+        'import/no-unresolved': [
+            'error', { ignore: ['iem:./modules/*'] }],
+    },
+}
+
+```
+
+
+为避免ts报错，你可以使用 `@ts-ignore`。
+
+```javascript 
+// @ts-ignore
+export * from 'iem:./modules/**/*'
+```
+
+
+如果你觉得`@ts-ignore`不够优雅，我们也可以在`src`目录下创建一个`iem.d.ts`文件，给虚拟模块随便声明一个类型：
+
+```javascript 
+// src/iem.d.ts
+declare module 'iem:./modules/*' {
+  export { }
+}
+
+```
+
+
+这样，modules目录下的所有模块都会被自动导入并导出了。
+
+## TSDoc 注释
+
+接下来我们要给每个函数添加注释，以便于后续生成文档，我们采用TSDoc规范，后面生成文档需要基于这个规范。
+
+详细的规范参考它的[文档](https://link.juejin.cn/?target=https://tsdoc.org/ "文档")，我这里简单介绍一下，格式如下：
+
+```javascript 
+/**
+ * 该函数确保给定的字符串具有指定的后缀。
+ * @public
+ * @param s - 我们要确保具有特定的后缀的字符串。
+ * @param suffix - suffix
+ * 参数是一个字符串，我们要确保它位于输入字符串的结尾。如果输入的字符串已经以后缀结尾，我们直接将它返回作为结果，
+ * 否则，该函数将后缀添加到输入字符串的结尾并返回结果字符串。
+ * @returns
+ * 函数“str_ensure_suffix”返回一个字符串。如果输入字符串“s”以“suffix”字符串结尾，则该函数按原样返回“s”。否则，它返回一个新字符串，它是“suffix”字符串和原始“s”字符串的串联。
+ * @example
+ * ```ts
+ * const str = 'abc'
+ * const text = str_ensure_suffix(str, '.txt') // 'abc.txt'
+ * ```
+ */
+function str_ensure_suffix(s: string, suffix: string) {
+    return s.endsWith(suffix) ? s : `${s}${suffix}`
+}
+
+```
+
+
+第一行是对函数的描述。
+
+第二行是该函数的发布类型，有以下几种类型：
+
+- @public - 公开版，也就是正式发布的版本。
+- @alpha - alpha测试版，允许第三方开发者使用，但尚未正式发布的版本。
+- @beta - beta测试版，表示这是一个实验性的API，不应在生产环境中使用，它还处于征集意见的阶段，未来可能会更改，也可能最终不发布。
+- @deprecated - 表示该API已废弃
+
+@param，@returns，分别表示函数的参数和返回值。需要注意的是，参数的格式必须是`@param xxx -` ，必须有短横线`-`，不能有额外的内容。
+
+@example是示例代码，使用md格式的代码块。
+
+## AI生成注释
+
+现在不少AI工具都支持生成文档的功能，你可以选择你自己喜欢的工具，我个人使用的是`Mintlify Doc`，在VS Code插件市场可以安装下载：
+
+![](./image/image_Nd_uwoY0XI.png)
+
+第一次使用需要按提示注册账号并登录。
+
+`Mintlify Doc`的使用很简单，光标放在需要注释的函数的第一行，然后点击一下生成按钮就可以了：
+
+![](./image/image_dnKWZp1s_k.png)
+
+文档默认是英文的，我们可以设置为中文：
+
+![](./image/image_WEHv_tS6yW.png)
+
+生成效果：
+
+```javascript 
+/**
+ * 此函数接受任何类型的数组并返回一个仅包含唯一值的新数组。
+ * @param {T[]} arr -
+ * 参数“arr”是一个类型为T的数组，其中T可以是字符串、数字、布尔值、对象等任意数据类型。函数“arr_unique”将这个数组作为输入，返回一个只有唯一元素的新数组.它使用 Set 对象来删除重复项
+ * @returns 函数“arr_unique”返回一个“T”类型的唯一元素数组。
+ */
+function arr_unique<T>(arr: T[]): T[] {
+    return Array.from(new Set(arr))
+}
+
+export {
+    arr_unique,
+}
+
+```
+
+
+这是按jsdoc的规范生成的文档，我们需要稍微修改一下：
+
+- 添加@public
+- 删除{T}形式的参数类型
+
+例如上面的例子需要这么改：
+
+```javascript 
+/**
+ * 此函数接受任何类型的数组并返回一个仅包含唯一值的新数组。
++ * @public
+- * @param {T[]} arr -
++ * @param arr -
+ * 参数“arr”是一个类型为T的数组，其中T可以是字符串、数字、布尔值、对象等任意数据类型。函数“arr_uniqueque”将这个数组作为输入，返回一个只有唯一元素的新数组.它使用 Set 对象来删除重复项
+ * @returns 函数“arr_uniqueque”返回一个“T”类型的唯一元素数组。
+ */
+function arr_uniqueque<T>(arr: T[]): T[] {
+    return Array.from(new Set(arr))
+}
+
+export {
+    arr_uniqueque,
+}
+
+```
+
+
+其实这个插件是支持自定义注释模板的，可惜这是一项付费功能：
+
+![](./image/image_3ogbxN_3lr.png)
+
+不想付费就只能手动改了，我的建议是，我们每写完一个函数，就用AI生成注释，然后人工检查并修改，化整为零，就不会显得很费劲，如果一次性写了很多函数，然后再一个一个来生成注释，这样就太费劲了。
+
+## 一键生成文档
+
+这里我们要用到`@microsoft/api-extractor`和`@microsoft/api-documenter`这两个库，它们是微软发布的、基于TSDoc的文档导出工具，前者用于导出API接口，后者用于生成文档。
+
+安装
+
+```javascript 
+pnpm add @microsoft/api-extractor @microsoft/api-documenter -D
+```
+
+
+由于国内的网络问题，安装过程容易卡住，此时建议换源，或者借助某C字开头的科技软件。
+
+安装完以后，我们在项目根目录创建一个`api-extractor.json`文件，内容如下：
+
+```javascript 
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/api-extractor/v7/api-extractor.schema.json",
+  "mainEntryPointFilePath": "<projectFolder>/dist/types/index.d.ts",
+  "bundledPackages": [],
+  "compiler": {},
+  "apiReport": {
+    "enabled": true
+  },
+  "docModel": {
+    "enabled": true
+  },
+  "dtsRollup": {
+    "enabled": true
+  },
+  "tsdocMetadata": {},
+  "messages": {
+    "compilerMessageReporting": {
+      "default": {
+        "logLevel": "warning"
+      }
+    },
+    "extractorMessageReporting": {
+      "default": {
+        "logLevel": "warning"
+      }
+    },
+    "tsdocMessageReporting": {
+      "default": {
+        "logLevel": "warning"
+      }
+    }
+  }
+}
+
+```
+
+
+然后还要在项目根目录创建一个空的文件夹`etc`，这一步是必须的，否则会提示找不到这个文件夹而报错。
+
+![](./image/image_nDiE65wXRp.png)
+
+最后在package.json中添加脚本：
+
+```javascript 
+{
+    "scripts": {
+        "lint": "eslint --ext .js,.ts ./ --fix",
+        "dev": "rollup -c --watch",
+        "build": "rollup -c",
++        "doc": "api-extractor run --local --verbose && api-documenter markdown -i temp -o doc",
++        "doc:debug": "api-extractor run --local --verbose --diagnostics && api-documenter markdown -i temp -o doc",
++        "trace": "tsc dist/types/index.d.ts --traceResolution > trace.log"
+    },
+}
+
+```
+
+
+其中`pnpm doc`用于生成文档，`pnpm doc:debug`用于调试错误，`pnpm trace`可以将TS的构建过程输出到trace.log文件，方便查找错误发生的位置。
+
+一般来说，只要遵循了TSDoc规范，是不会报错的。
+
+如果出现黄色的警告，说明有不符合规范的地方，按照它的提示进行更改即可。
+
+另外要注意的是，在生成文档前，一定要先将项目打包一次，因为注释是从打包目录下的dist/types/index.d.ts读取的，我的建议是，在每次发布到npm前执行一次生成文档的操作。
+
+一切都没问题后，执行`pnpm doc`，就会在根目录下生成一个doc文件夹，里面就是Markdown格式的API文档了。
+
+![](./image/image_j-BfHdpJzg.png)
+
+## VitePress创建文档站点
+
+接下来我们要使用VitePress来将上面生成的文档创建成一个站点.
+
+安装
+
+```javascript 
+pnpm add vitepress vue -D
+```
+
+
+初始化vitepress
+
+```javascript 
+pnpm vitepress init
+```
+
+
+设置如下：
+
+```javascript 
+┌   Welcome to VitePress! 
+│
+◇  Where should VitePress initialize the config?
+│  ./
+│
+◇  Site title:
+│  Utilities
+│
+◇  Site description:
+│  个人工具函数库
+│
+◇  Theme:
+│  Default Theme
+│
+◇  Use TypeScript for config and theme files?
+│  Yes
+│
+◇  Add VitePress npm scripts to package.json?
+│  Yes
+│
+└  Done! Now run npm run docs:dev and start writing.
+
+```
+
+
+完成以后，项目下会多出一个`.vitepress`文件夹和几个md文件，这里我们要删掉除`index.md`以外的其他两个md文件。
+
+![](./image/image_Dff5IFkyB5.png)
+
+[编辑index.md](http://xn--index-lz2n363g.md "编辑index.md")：
+
+```javascript 
+---
+# https://vitepress.dev/reference/default-theme-home-page
+layout: home
+
+hero:
+  name: "Utilities"
+  text: "@taiyuuki/utils"
+  tagline: 个人用工具函数库
+  actions:
+    - theme: brand
+      text: API
+      link: /doc/utils
+
+features:
+  - title: npm i @taiyuuki/utils
+---
+
+```
+
+
+这里我写得很简单，你可以按自己的需求参考vitepress的文档来编写。
+
+接下来，我们需要安装fast-glob这个库，用于提取doc文件夹下的文件名称。
+
+```javascript 
+pnpm add fast-glob -D
+```
+
+
+然后编辑`.vitepress/config.ts`文件，这个地方不太好解释，直接看代码吧，结合vitepress文档以及我的注释，应该不难理解，实在不行你直接复制就完了：
+
+```javascript 
+import { basename } from 'path'
+import type { DefaultTheme } from 'vitepress'
+import { defineConfig } from 'vitepress'
+import fg from 'fast-glob'
+
+interface IndexTree {
+  [index: string]: {
+      link: string
+      items?: IndexTree
+  }
+}
+
+// 目录标题去除utils.前缀
+function resolveTitle(title: string) {
+  return title === 'utils' ? title : title.replace('utils.', '')
+}
+
+// 将md文档列表转为树结构
+function getTree(file: string, prefix: string, tree = {}) {
+  const [ cur, ...rest ] = file.replace('.md', '').split('.')
+  const curPath = prefix + cur
+  if (!tree[curPath]) {
+      tree[curPath] = {
+          link: '/doc/' + curPath + '.md',
+      }
+  }
+  if (rest.length > 0) {
+      if (!tree[curPath].items) {
+          tree[curPath].items = {}
+      }
+      getTree(rest.join('.'), curPath + '.', tree[curPath].items)
+  }
+}
+
+// 将树结构转为目录数组
+function treeToItems(tree: IndexTree) {
+  const items: DefaultTheme.SidebarItem[] = []
+  Object.keys(tree).forEach((key) => {
+      const item: DefaultTheme.SidebarItem = {
+          text: resolveTitle(key),
+          link: tree[key].link,
+      }
+      if (tree[key].items) {
+          if (!item.items) {
+              item.items = []
+          }
+          item.items.push(...treeToItems(tree[key].items!))
+      }
+      items.push(item)
+  })
+  return items
+}
+
+const tree
+= fg.sync(['./doc/**/*.md'])
+  .map((path) => basename(path))
+  .reduce((tree, file) => {
+      getTree(file, '', tree)
+      return tree
+  }, {})
+
+const docs: DefaultTheme.SidebarItem[] = treeToItems(tree)
+
+// https://vitepress.dev/reference/site-config
+export default defineConfig({
+  title: 'Utilities',
+  description: 'Documentations of @taiyuuki/utils',
+  themeConfig: {
+  // https://vitepress.dev/reference/default-theme-config
+      nav: [
+          { text: '主页', link: '/doc/index' },
+          { text: 'API', link: '/doc/utils' },
+      ],
+
+      sidebar: [
+          {
+              text: 'API',
+              items: docs,
+          },
+      ],
+
+      socialLinks: [
+          { icon: 'github', link: 'https://github.com/taiyuuki/utils' },// 这里要替换成你自己的仓库地址
+      ],
+
+      search: {
+          provider: 'local'
+      }
+  },
+
+  markdown: {
+      theme: {
+          light: 'light-plus',
+          dark: 'github-dark',
+      },
+  },
+})
+
+```
+
+
+最后，执行`pnpm docs:dev`查看效果：
+
+![](./image/image_EN5blG-dsw.png)
+
+vitepress的默认样式是有点小瑕疵的，出现滚动条时页面会晃动，这个问题有多种解决方案，但限于文章的篇幅我就不介绍了。
+
+## 部署到Netlify
+
+### 配置
+
+首先，我们要在package.json里忽略pnpm的错误：
+
+```javascript 
+"pnpm": {
+    "peerDependencyRules": {
+        "ignoreMissing": [
+            "@algolia/client-search",
+            "search-insights"
+        ]
+    }
+},
+
+```
+
+
+在根目录下创建netlify.toml文件，内容很简单：
+
+```javascript 
+[build]
+    publish = ".vitepress/dist"
+    command = "npx pnpm i && npm run docs:build"
+```
+
+
+接下来，初始化git仓库
+
+```javascript 
+git init
+```
+
+
+创建`.gitignore`
+
+```javascript 
+node_modules
+dist
+temp
+trace.log
+cache
+```
+
+
+最后在Github创建一个仓库，并将代码提交上去。
+
+### 部署
+
+一切准备就绪，进入[Create a new site from git | Netlify](https://link.juejin.cn/?target=https://app.netlify.com/start "Create a new site from git | Netlify")，选择用Github账号登录，然后就可以部署我们的文档站点了：
+
+![](./image/image_P3ZEGfj-D2.png)
+
+关联对应的Github仓库，它就会自动开始部署了，具体的操作过程我就不细说了，没什么难度，实在搞不定就自己上网搜教程吧。
+
+当然，Netlify部署的站点目前国内可能难以访问，所以，我们也可以手动将vitepress打包`pnpm docs:build`，然后将其部署到Github Page或者Gitee Page，虽然更麻烦一点，但从可访问性来说，这可能是个更好的选择。
+
+## 发布到npm
+
+> 提示：[在发布前务必先写好README.md](http://xn--README-9f2jsvs4c9xar9ge7n5shc5q6gg.md "在发布前务必先写好README.md")，将部署好的文档站点贴进去。
+
+最后我们要将打包的文件发布到npm。
+
+首先我们需要有一个npm账号。
+
+登录：
+
+```javascript 
+npm login
+```
+
+
+查看当前登录的账号：
+
+```javascript 
+npm who am i
+```
+
+
+**发布包到服务器**
+
+```javascript 
+npm publish
+```
+
+
+如果你的npm配置的是国内的源，发布时还需要添加源服务器地址：
+
+```javascript 
+pnpm publish --registry=https://registry.npmjs.org
+```
+
+
+如果你的项目名是`@user/package`的形式，例如我的`@taiyuuki/utils`，还必须在后面添加`--access=public`参数。
+
+```javascript 
+pnpm publish --registry=https://registry.npmjs.org --access=public
+```
+
+
+如果发现发布的包有问题，在发布后的48小时内，我们可以使用`npm unpublish [pkg]@[version]`将其撤回，例如：
+
+```javascript 
+npm unpublish @taiyuuki/utils@0.0.1
+```
+
+
+最终会被上传到npm上的文件有：
+
+- package.json中`files`字段设置的文件或文件夹
+- package.json
+- [README.md](http://README.md "README.md")
+- [LICENSE.md](http://LICENSE.md "LICENSE.md")

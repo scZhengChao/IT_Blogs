@@ -1,0 +1,12 @@
+# 配置：
+
+`GOPATH`是一个环境变量，用来表明你写的`go`项目的存放路径
+
+`GOPATH`路径最好只设置一个，**所有的项目代码都放到**\*\*`GOPATH`****的****`src`\*\***目录下。**
+
+```bash 
+ echo $GOPATH
+```
+
+
+![](./image/image_hm1lD_4YKL.png)

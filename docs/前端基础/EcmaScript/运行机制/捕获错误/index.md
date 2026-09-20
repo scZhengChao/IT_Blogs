@@ -1,0 +1,51 @@
+# 捕获错误
+
+## 目录
+
+- [try catch finally](#try-catch-finally)
+  - [try catch 遇到 return](#try-catch-遇到-return)
+  - [省略错误信息](#省略错误信息)
+
+# **try catch finally**
+
+**try、catch、finally用法总结:**
+
+　　1、不管有没有异常，finally中的代码都会执行 除了报错，throw new Error('连线有错误')&#x20;
+
+**可以主动抛出异常打断try进入catch**
+
+## try catch 遇到 return
+
+- **当try、catch中有return时，finally中的代码依然会继续执行**
+- **且后面的更改并不会影响 return 的值；**当finally代码块里有return时，**finally是在return后面的表达式运算之后执行的**，此时并没有返回运算之后的值，而是把值**保存起来**，**不管finally对该值做任何的改变，返回的值都不会改变，依然返****回保存起来的值****。**也就是说方法的**返回值是在finally运算之前就确定了的。**
+- **总会返回 ****最后面的return****；finally代码中最好不要包含return**，程序会提前退出，也**就是说返回的值不是try或catch中的值，而是finlly return 的值**
+
+```javascript 
+ function test(data){
+  try{
+    if(data == 1)
+    return data    //注释掉finally的return 返回 1 即使 finally执行了，但并没有改变返回值
+  }catch(err){
+
+  }finally{
+    data = 10
+    // return data   //放开注释 返回10
+  }
+}
+$("#btn").on('click',function(){
+  console.log(test(1))
+})
+```
+
+
+[index.html](./file/index_YoMAFxyZY9.html "index.html")
+
+## 省略错误信息
+
+```javascript 
+ try {
+  throw new Error('Some Error')
+} catch {
+  handleError() // 这里没有用到错误信息，可以省略 catch 后面的 (e)。
+}
+```

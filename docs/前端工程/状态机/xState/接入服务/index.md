@@ -1,0 +1,50 @@
+# 接入服务
+
+`XState`提供了`Interpret`来创建服务作为状态机的管理者角色
+
+```typescript 
+import { createMachine, interpret } from 'xstate'; 
+const lightMachine = createMachine({ 
+    initial:'red', 
+    states: { 
+        red: { 
+            on:{ 
+                click:'green', 
+            } 
+        }, 
+        green: { 
+            on:{ 
+                press:'yellow', 
+            } 
+        }, 
+        yellow: { 
+            on:{ 
+                keyup:'red', 
+            } 
+        }, 
+    }, 
+}); 
+//包装服务 
+const service  = interpret(lightMachine); 
+//启动服务 
+service.start(); 
+//通过send切换状态，相当于lightMachine.transition函数 
+service.send('click'); 
+//获取当前状态 
+console.log('service.state',service.state) 
+service.send('press'); 
+console.log('service.state',service.state) 
+console.log('state.value',service.state.value); 
+console.log('matches green',service.state.matches('green',)); 
+console.log('state.nextEvents',service.state.nextEvents); 
+service.stop(); 
+
+```
+
+
+- 通过interpret函数创建服务，返回值为interpret实例
+  - 从管理者角度提供了一些api和property，比如启动和停止；
+  - service.state可以获得当前状态，从下图可以看出，state实例和没有interpret时候没有区别；
+  - service.send(arg)提供了状态转换功能，替代了lightMachine.transition；
+
+![](./image/image_ZQhgRfxiyW.png)

@@ -8,7 +8,7 @@
 ```
 
 
-[marquee.rar](marquee__O5hxnOVhZ.rar "marquee.rar")
+[marquee.rar](./file/marquee__O5hxnOVhZ.rar "marquee.rar")
 
 ```纯文本 
  vue 方案： 
@@ -316,7 +316,7 @@ Fuchsia, White, Green, Purple, Silver, Yellow, Aqua \<marquee bgcolor=aaaaee>颜
 
 [JavaScript](https://www.cnblogs.com/smiler/category/494858.html "JavaScript")
 
-![  ](20170829140218_ANhLg3sji8.png "  ")
+![  ](./image/20170829140218_ANhLg3sji8.png "  ")
 
 [幕三少](https://home.cnblogs.com/u/smiler/ "幕三少")
 

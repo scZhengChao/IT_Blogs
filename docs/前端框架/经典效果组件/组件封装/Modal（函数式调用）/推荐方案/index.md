@@ -1,0 +1,633 @@
+# 推荐方案
+
+## 目录
+
+- [customModal](#customModal)
+  - [hooks](#hooks)
+    - [useModalHook(tsx)](#useModalHooktsx)
+    - [usePatchElementHook(tsx)](#usePatchElementHooktsx)
+  - [global.less](#globalless)
+  - [ModalPatch](#ModalPatch)
+  - [DrawerPatch](#DrawerPatch)
+- [models](#models)
+  - [useCustomModal](#useCustomModal)
+- [使用](#使用)
+  - [app.js](#appjs)
+  - [demo](#demo)
+  - [TestContent ](#TestContent-)
+
+## customModal
+
+### hooks
+
+#### useModalHook(tsx)
+
+```react tsx 
+import * as React from 'react/index';
+import usePatchElement from './usePatchElementHook';
+import ModalPatch from '../ModalPatch';
+import DrawerPatch from '../DrawerPatch';
+import type { ModalPatchRef, ModalConfigOptions } from '../ModalPatch';
+import type { DrawerPatchRef, DrawerConfigOptions } from '../DrawerPatch';
+export type ComposeConfigOptions = ModalConfigOptions & DrawerConfigOptions;
+type ComposeHookRef = DrawerPatchRef & ModalPatchRef;
+let uuid = 0;
+interface ElementsHolderRef {
+  patchElement: ReturnType<typeof usePatchElement>[1];
+}
+export enum PatchModalTypeEnums {
+  弹框 = 'modal',
+  抽屉 = 'drawer',
+}
+const ElementsHolder = React.memo(
+  React.forwardRef<ElementsHolderRef>((_props, ref) => {
+    const [elements, patchElement] = usePatchElement();
+    React.useImperativeHandle(
+      ref,
+      () => ({
+        patchElement,
+      }),
+      [],
+    );
+    // eslint-disable-next-line react/jsx-no-useless-fragment
+    return <>{elements}</>;
+  }),
+);
+export default function useModalHook() {
+  const holderRef = React.useRef<ElementsHolderRef>();
+
+  function showModal(type: PatchModalTypeEnums, config: ComposeConfigOptions) {
+    uuid += 1;
+    const queue: Function[] = []; // 利用引用类型；
+    const modalRef = React.createRef<ComposeHookRef>();
+    const closeFunc = holderRef.current?.patchElement(getNode());
+    function getNode() {
+      switch (type) {
+        case PatchModalTypeEnums.弹框: {
+          return (
+            <ModalPatch
+              key={`modal-${uuid}`}
+              config={config}
+              ref={modalRef}
+              actionQueue={queue}
+              afterClose={() => {
+                config?.afterClose?.();
+                closeFunc?.();
+              }}
+            />
+          );
+        }
+        case PatchModalTypeEnums.抽屉: {
+          return (
+            <DrawerPatch
+              key={`drawer-${uuid}`}
+              config={config}
+              ref={modalRef}
+              actionQueue={queue}
+              afterOpenChange={(open: boolean) => {
+                if (!open) {
+                  config?.afterOpenChange?.(open);
+                  closeFunc?.();
+                }
+              }}
+            />
+          );
+        }
+        default: {
+          return null;
+        }
+      }
+    }
+
+    return {
+      destroy: () => {
+        function destroyAction() {
+          modalRef.current?.destroy();
+        }
+
+        if (modalRef.current) {
+          destroyAction();
+        } else {
+          queue.push(destroyAction);
+        }
+      },
+      update: (newConfig: ComposeConfigOptions) => {
+        function updateAction() {
+          modalRef.current?.update(newConfig);
+        }
+        if (modalRef.current) {
+          updateAction();
+        } else {
+          queue.push(updateAction);
+        }
+      },
+    };
+  }
+  return [showModal, <ElementsHolder ref={holderRef} />] as [typeof showModal, React.ReactNode];
+}
+
+```
+
+
+#### usePatchElementHook(tsx)
+
+```react tsx 
+import * as React from 'react';
+export default function usePatchElementHook(): [
+  React.ReactElement[],
+  (element: React.ReactElement) => Function,
+] {
+  const [elements, setElements] = React.useState<React.ReactElement[]>([]);
+
+  const patchElement = React.useCallback((element: React.ReactElement) => {
+    setElements((originElements) => [...originElements, element]);
+
+    return () => {
+      setElements((originElements) => originElements.filter((ele) => ele !== element));
+    };
+  }, []);
+
+  return [elements, patchElement];
+}
+
+```
+
+
+### global.less
+
+```react tsx 
+.common-context-modal {
+  top: 60px !important;
+  .ant-modal-content {
+    border-radius: 8px;
+    overflow: hidden;
+    .common-context-modal-wrapper {
+      overflow-y: auto;
+    }
+
+    .ant-modal-body {
+      line-height: 1.5;
+      min-height: 100px;
+    }
+
+    .ant-modal-footer {
+      border: none;
+      padding: 0 24px 24px;
+    }
+  }
+}
+
+.common-context-drawer {
+  .ant-drawer-content {
+    border-bottom-left-radius: 8px;
+    border-top-left-radius: 8px;
+    .ant-drawer-body {
+      overflow: hidden;
+      line-height: 1.5;
+    }
+    .common-context-drawer-wrapper {
+      overflow-y: auto;
+      height: 100%;
+    }
+  }
+}
+```
+
+
+### ModalPatch
+
+```typescript 
+import { useState, useImperativeHandle, forwardRef, cloneElement, useEffect, useRef } from 'react';
+import type {
+  ForwardRefRenderFunction,
+  FunctionComponentElement,
+  ReactElement,
+  JSXElementConstructor,
+} from 'react';
+import { Modal } from 'antd';
+import type { ModalProps } from 'antd';
+import { useBoolean } from 'ahooks';
+export interface ModalConfigOptions extends Omit<ModalProps, 'onOk' | 'onCancel'> {
+  content?:
+    | FunctionComponentElement<{ ref: any }>
+    | ReactElement<any, string | JSXElementConstructor<any>>;
+  onOk?: (...data: any[]) => Promise<any>;
+  onCancel?: () => void;
+  maxHeight?: number;
+  contentProps?: any;
+  needRef?: boolean;
+}
+
+export interface ModalPatchProps {
+  afterClose: () => void;
+  config: ModalConfigOptions;
+  actionQueue: Function[];
+}
+
+export interface ModalPatchRef {
+  destroy: () => void;
+  update: (config: ModalConfigOptions) => void;
+}
+
+const ModalPatch: ForwardRefRenderFunction<ModalPatchRef, ModalPatchProps> = (
+  { afterClose, config, actionQueue },
+  ref,
+) => {
+  const [open, setOpen] = useState<boolean>(true);
+  const [innerConfig, setInnerConfig] = useState<ModalConfigOptions>(config);
+  const [confirmLoading, { setTrue, setFalse }] = useBoolean(false);
+  const update = (newConfig: ModalConfigOptions) => {
+    setInnerConfig((originConfig) => ({
+      ...originConfig,
+      ...newConfig,
+    }));
+  };
+  /**
+   * 兼容useModel 带来的弊端
+   */
+  useEffect(() => {
+    const len = actionQueue?.length || 0;
+    if (len) {
+      [...actionQueue].forEach((action: Function) => {
+        actionQueue.unshift();
+        action();
+      });
+    }
+  }, []);
+  const {
+    content,
+    okText,
+    cancelText = '取消',
+    onOk,
+    destroyOnClose = true,
+    width = 450,
+    title = '标题',
+    maxHeight = 400,
+    onCancel,
+    centered = true,
+    needRef = false,
+    contentProps = {}, // 针对闭包带来的组件不更新的问题；注意：defaultvalue等类似属性是不行的
+    ...rest
+  } = innerConfig;
+
+  const onClose = async () => {
+    try {
+      await onCancel?.();
+      setOpen(false);
+    } catch (e) {
+      console.error(e);
+    }
+  };
+  const componentRef = useRef();
+  const contentRef = (content as FunctionComponentElement<{ ref: any }>)?.ref ?? componentRef;
+
+  const onHandleOk = async (data?: unknown) => {
+    try {
+      setTrue();
+      await onOk?.(data ?? contentRef.current);
+      setOpen(false);
+    } catch (e) {
+      console.error(e);
+    } finally {
+      setFalse();
+    }
+  };
+  useImperativeHandle(ref, () => ({
+    destroy: onClose,
+    update: update,
+  }));
+
+  return (
+    <Modal
+      className={'common-context-modal'}
+      title={title}
+      width={width}
+      destroyOnClose={destroyOnClose}
+      open={open}
+      afterClose={afterClose}
+      okText={okText}
+      centered={centered}
+      cancelText={cancelText}
+      onCancel={onClose}
+      okButtonProps={{ loading: confirmLoading, disabled: confirmLoading }}
+      onOk={() => onHandleOk()}
+      {...rest}
+    >
+      <div className={'common-context-modal-wrapper'} style={{ maxHeight }}>
+        {cloneElement(content, {
+          ...contentProps,
+          onClose: onClose,
+          update: update,
+          onOk: onHandleOk,
+          confirmLoading,
+          ref: needRef ? contentRef : undefined,
+        })}
+      </div>
+    </Modal>
+  );
+};
+
+export default forwardRef(ModalPatch);
+
+```
+
+
+### DrawerPatch
+
+```typescript 
+import { useState, useImperativeHandle, forwardRef, cloneElement, useEffect } from 'react';
+import type { ForwardRefRenderFunction, ReactElement } from 'react';
+import { Drawer } from 'antd';
+import type { DrawerProps } from 'antd';
+
+export interface DrawerConfigOptions extends DrawerProps {
+  content?: ReactElement;
+  onCancel?: () => void;
+  contentProps?: any;
+}
+
+export interface DrawerPatchProps {
+  afterOpenChange?: (open: boolean) => void;
+  config: DrawerConfigOptions;
+  actionQueue: Function[];
+}
+
+export interface DrawerPatchRef {
+  destroy: () => void;
+  update: (config: DrawerConfigOptions) => void;
+}
+
+const DrawerPatch: ForwardRefRenderFunction<DrawerPatchRef, DrawerPatchProps> = (
+  { afterOpenChange, config, actionQueue },
+  ref,
+) => {
+  const [open, setOpen] = useState<boolean>(true);
+  const [innerConfig, setInnerConfig] = useState<DrawerConfigOptions>(config);
+
+  const update = (newConfig: DrawerConfigOptions) => {
+    setInnerConfig((originConfig) => ({
+      ...originConfig,
+      ...newConfig,
+    }));
+  };
+  useEffect(() => {
+    const len = actionQueue?.length || 0;
+    if (len) {
+      [...actionQueue].forEach((action: Function) => {
+        actionQueue.unshift();
+        action();
+      });
+    }
+  }, []);
+  const {
+    content,
+    onCancel,
+    destroyOnClose = true,
+    width = 600,
+    title = '标题',
+    contentProps = {},
+    ...rest
+  } = innerConfig;
+  const onClose = async () => {
+    await onCancel?.();
+    setOpen(false);
+  };
+
+  useImperativeHandle(ref, () => ({
+    destroy: onClose,
+    update: update,
+  }));
+  return (
+    <Drawer
+      className={'common-context-drawer'}
+      title={title}
+      width={width}
+      destroyOnClose={destroyOnClose}
+      open={open}
+      afterOpenChange={afterOpenChange}
+      onClose={onClose}
+      {...rest}
+    >
+      <div className={'common-context-drawer-wrapper'}>
+        {cloneElement(content, {
+          ...contentProps,
+          onClose: onClose,
+          update: update,
+        })}
+      </div>
+    </Drawer>
+  );
+};
+
+export default forwardRef(DrawerPatch);
+
+```
+
+
+## models
+
+#### useCustomModal
+
+```react tsx 
+import useModalHook, { PatchModalTypeEnums } from '@/components/CustomModal/hooks/useModalHook';
+import type { ComposeConfigOptions } from '@/components/CustomModal/hooks/useModalHook';
+import type { MutableRefObject } from 'react';
+import { cloneElement } from 'react';
+import type { ProFormInstance } from '@ant-design/pro-components';
+import * as React from 'react';
+export interface CustomHandle {
+  update?: Function;
+  destroy?: Function;
+}
+export default function useCustomModal() {
+  const [showModal, contextHolder] = useModalHook();
+  const openModal = (props: ComposeConfigOptions): CustomHandle => {
+    const customModal = showModal(PatchModalTypeEnums.弹框, props);
+    return {
+      update: customModal.update,
+      destroy: customModal.destroy,
+    };
+  };
+  const openDrawer = (props: ComposeConfigOptions) => {
+    const customModal = showModal(PatchModalTypeEnums.抽屉, props);
+    return {
+      update: customModal.update,
+      destroy: customModal.destroy,
+    };
+  };
+  /**
+   * 场景；footer有两个按钮的表单 modal；避免重复代码；
+   * 支持：ProForm ; ProForm 完全兼容 form
+   *
+   * 函数第二个参数传入formRef，可选；外面不需要用到；可以不传；我会为组件注入一个 formRef
+   *
+   * 你需要做的；接受props 带的 formRef；绑定到form表单上
+   * 我帮你做的：
+   * 1.获取表达的值，和表单的ref 透传给onOk，
+   * 2.校验失败；不关闭弹窗；onOk失败；同样不关闭弹窗
+   *
+   * 注意：返回成功会关闭弹窗；onOk透传的formRef就绑定不到表单了；但是catch的时候有用
+   */
+  const openProFormModal = (
+    props: ComposeConfigOptions,
+    formRef: MutableRefObject<ProFormInstance> = React.createRef<ProFormInstance>(),
+  ) => {
+    const option: ComposeConfigOptions = {
+      ...props,
+      onOk: (...args) => {
+        return formRef.current?.validateFields().then(() => {
+          const allFields = formRef.current.getFieldsValue(true);
+          return props?.onOk?.bind(null, allFields, formRef)(...args);
+        });
+      },
+      content: cloneElement(props.content, {
+        formRef: formRef,
+      }),
+    };
+    const customModal = showModal(PatchModalTypeEnums.弹框, option);
+    return {
+      update: customModal.update,
+      destroy: customModal.destroy,
+    };
+  };
+  return {
+    openModal,
+    openDrawer,
+    openProFormModal,
+    contextHolder,
+  };
+}
+
+```
+
+
+## 使用
+
+### app.js
+
+```typescript 
+import React from 'react';
+import type { ReactNode, PropsWithChildren } from 'react';
+import '@mealCard/common/utils/request.util';
+import { configErrorNotification } from '@mealCard/common/interceptors/error-handler.interceptor';
+import { ConfigProvider, message } from 'antd';
+import zhCN from 'antd/lib/locale/zh_CN';
+import { logInit } from '@mealCard/common/utils/log.util';
+import { useModel } from '@@/plugin-model/useModel';
+
+configErrorNotification((msg: ReactNode) => {
+  message.error(msg);
+});
+logInit();
+
+console.log(`ebee-pc-admin-boilerplate is running，current env is：${process.env.active}`);
+
+const App = (props: PropsWithChildren<any>) => {
+   const { contextHolder } = useModel('useContextModal'); 
+  return (
+    <ConfigProvider locale={zhCN}>
+      {props.children}
+       {contextHolder} 
+    </ConfigProvider>
+  );
+};
+export function rootContainer(container: any) {
+  return React.createElement(App, null, container);
+}
+```
+
+
+### demo
+
+```typescript 
+import React from 'react';
+import { Button } from 'antd';
+import { useModel } from '@@/plugin-model/useModel';
+import TestContent from '@/components/CustomModal/TestContent';
+const Demo: React.FC = () => {
+  const { openModal, openDrawer } = useModel('useCustomModal');
+   const modalInstance = useRef<any>();
+  const openM = () => {
+    modalInstance.current = openModal({
+      content: (
+        <TestContent
+          destroy={() => {
+            modalInstance.current.destroy();
+          }}
+        />
+      ),
+    });
+  };
+  const openD = () => {
+    openDrawer({
+      content: <TestContent />,
+    });
+  };
+  return (
+    <div>
+      <Button onClick={openM}>测试弹框</Button>
+      <Button onClick={openD}>测试抽屉</Button>
+    </div>
+  );
+};
+export default Demo;
+
+
+```
+
+
+### TestContent&#x20;
+
+```typescript 
+import React from 'react';
+import { useModel } from '@umijs/max';
+import { Button } from 'antd';
+
+/**使用
+  const { openModal } = useModel('useCustomModal');
+  const open = ()=>{
+    openModal({
+      content:<TestContent/>
+    })
+  }
+ * @param props
+ * @constructor
+ */
+const TestContent: React.FC = (props: { destroy?: () => void }) => {
+  const { userToken } = useModel('useAuthModel');
+  const { openModal, openDrawer } = useModel('useCustomModal');
+  const openM = () => {
+    openModal({
+      content: <TestContent />,
+    });
+  };
+  const onDestory = () => {
+    props?.destroy?.();
+  };
+  const openD = () => {
+    openDrawer({
+      content: <TestContent />,
+    });
+  };
+  console.log(props, userToken, '---userToken----');
+  return (
+    <div style={{ width: 800, height: 800 }}>
+      这是弹框内容；测试context
+      <Button onClick={openM}>再打开一个modal</Button>
+      <Button onClick={openD}>再打开一个Drawer</Button>
+      <Button onClick={onDestory}>主动销毁Modal</Button>
+    </div>
+  );
+};
+export default TestContent;
+ 
+
+
+```
+
+
+[推荐方案第二版](./推荐方案第二版/index.md "推荐方案第二版")
+
+[推荐集成](./推荐集成/index.md "推荐集成")
+
+[支持拖拽](./支持拖拽/index.md "支持拖拽")

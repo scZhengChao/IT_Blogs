@@ -1,0 +1,22 @@
+# 特点
+
+- 接口不能实例化
+- 没有构造方法；只能通过子类对象实现创造
+- 可以多实现
+- 实现了就**必须实现所有方法；否则就是抽象类；**
+- 方法可以不写abstract；**默认都是abstract和 public**；属性默认都是；public static final
+- 1.8 新增；default 和 static ；引用调用；
+
+![](./image/image_KEs3n2nE9D.png)
+
+![](./image/image_deEMzw0DSP.png)
+
+[成员方法](./成员方法/index.md "成员方法")
+
+[成员属性](./成员属性/index.md "成员属性")
+
+[构造方法](IT/服务端/java学习/java基础/java学习/面向对象编程/关键字-/接口interface/特点/构造方法/构造方法.md "构造方法")
+
+[1.8 新增](<./1.8 新增/index.md> "1.8 新增")
+
+[1.9新增](./1.9新增/index.md "1.9新增")

@@ -1,0 +1,65 @@
+# 树
+
+## 目录
+
+- [分类 ](#分类-)
+- [实现 ](#实现-)
+- [遍历 ](#遍历-)
+  - [用途 ](#用途-)
+
+&#x20;      树是一种数据结构，**它是由 n(n>=1)个有限节点组成一个具有层次关系的集合**。把它叫做“树”是因为它看起来**像一棵倒挂的树**，也就是说它是根朝上，而叶朝下的。&#x20;
+
+## 分类&#x20;
+
+- 无序树：树中任意节点的子结点之间没有顺序关系，这种树称为无序树,也称为自由树。
+- 有序树：树中任意节点的子结点之间有顺序关系，这种树称为有序树。
+- 二叉树：每个节点最多含有两个子树的树称为二叉树。
+- 满二叉树：叶节点除外的所有节点均含有两个子树的树被称为满二叉树。
+- 完全二叉树：除最后一层外，所有层都是满节点，且最后一层缺右边连续节点的二叉树称为完全二叉树（堆就是一个完全二叉树）。
+- 哈夫曼树（最优二叉树）：带权路径最短的二叉树称为哈夫曼树或最优二叉树。
+
+## 实现&#x20;
+
+```javascript 
+ // 二叉树的实现
+
+function Node(data) {
+    this.data = data;
+    this.left = null;
+    this.right = null;
+}
+const nodeA = new Node('A');
+const nodeB = new Node('B');
+const nodeC = new Node('C');
+const nodeD = new Node('D');
+const nodeE = new Node('E');
+const nodeF = new Node('F');
+const nodeG = new Node('G');
+
+
+nodeA.left = nodeB;
+nodeA.right = nodeC;
+nodeB.left = nodeD;
+nodeB.right = nodeE;
+nodeC.left = nodeF;
+nodeC.right = nodeG;
+```
+
+
+## 遍历&#x20;
+
+![  ](./image/8e39277e9d519fcb14e13b6db94f9531_ET1zB8TAN9.webp "  ")
+
+- **深度优先遍历**&#x20;
+  - 先序遍历      先序遍历（又称先根遍历）为 ABDECFG（根-左-右）。&#x20;
+  - 中序遍历   中序遍历（又称中根遍历）为 DBEAFCG（左-根-右）（仅二叉树有中序遍历）。&#x20;
+  - 后序遍历    后序遍历（又称后根遍历）为 DEBFGCA（左-右-根）。&#x20;
+- 广度优先遍历&#x20;
+  - 层序遍历    层序遍历为 ABCDEFG。&#x20;
+
+#### 用途&#x20;
+
+1. 树的扁平化（展示 OCR 识别结果）
+2. 扁平化数组转换成树（标签树）
+
+[数组转树](./数组转树/index.md "数组转树")

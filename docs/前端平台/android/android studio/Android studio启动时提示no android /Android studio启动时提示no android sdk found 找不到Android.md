@@ -9,7 +9,7 @@
 \*\* &#x20;
 进入File》setting？Appearance》System Settings》Android SDK
 
-![](image_i5EtwPilob.png)
+![](./image/image_i5EtwPilob.png)
 
 点击蓝色edit
 
@@ -22,7 +22,7 @@
 
 选择SDK下载
 
-![](image_V81Gi2y1mx.png)
+![](./image/image_V81Gi2y1mx.png)
 
 问题基本上解决 &#x20;
 但是还有可能会出现这种情况 &#x20;
@@ -32,4 +32,4 @@
 需要配置代理：如下图 &#x20;
 把代理配置改成自动检测URL
 
-![](image_JfW8igdK21.png)
+![](./image/image_JfW8igdK21.png)

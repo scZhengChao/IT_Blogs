@@ -1,0 +1,17 @@
+# 常量池
+
+## 目录
+
+- [常量池](#常量池)
+
+# 常量池
+
+> **双引号创建的：要进入字符串常量池；包括：new String("ss"). 和 String str = "sas"；两种模式**
+
+> **双引号创建常量池（本质是一个对象）；先判读有没有；有直接复用；没有就创建；**
+
+![](./image/image_0A_mNu9bxb.png)
+
+![](./image/image_A8sAx4Ii0k.png)
+
+![](./image/image_ldXkYuOPAh.png)

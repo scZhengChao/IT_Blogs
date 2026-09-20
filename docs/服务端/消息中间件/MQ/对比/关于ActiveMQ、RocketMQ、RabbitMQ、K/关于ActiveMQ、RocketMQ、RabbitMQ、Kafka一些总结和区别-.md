@@ -55,7 +55,7 @@
 
 传统模式:
 
-![  ](o_jieou5_obfTiD-9Bf.png "  ")
+![  ](./image/o_jieou5_obfTiD-9Bf.png "  ")
 
 传统模式的缺点：
 
@@ -63,7 +63,7 @@
 
 中间件模式:
 
-![  ](o_jieou6_W_ccyvPUfn.png "  ")
+![  ](./image/o_jieou6_W_ccyvPUfn.png "  ")
 
 中间件模式的的优点：
 
@@ -73,7 +73,7 @@
 
 传统模式:
 
-![  ](o_yibu2_oz9MSjqGEi.png "  ")
+![  ](./image/o_yibu2_oz9MSjqGEi.png "  ")
 
 传统模式的缺点：
 
@@ -81,7 +81,7 @@
 
 中间件模式:
 
-![  ](o_yibu3_uQviUqVvjG.png "  ")
+![  ](./image/o_yibu3_uQviUqVvjG.png "  ")
 
 中间件模式的的优点：
 
@@ -91,7 +91,7 @@
 
 传统模式
 
-![  ](o_xuefeng1_SGgby6pySN.png "  ")
+![  ](./image/o_xuefeng1_SGgby6pySN.png "  ")
 
 传统模式的缺点：
 
@@ -99,7 +99,7 @@
 
 中间件模式:
 
-![  ](o_xuefeng2_oCJXGSUIXK.png "  ")
+![  ](./image/o_xuefeng2_oCJXGSUIXK.png "  ")
 
 中间件模式的的优点：
 
@@ -170,7 +170,7 @@
 
 以rcoketMQ为例，他的集群就有多master 模式、多master多slave异步复制模式、多 master多slave同步双写模式。多master多slave模式部署架构图(网上找的,偷个懒，懒得画):
 
-![  ](o_rocketcluster_lfnoGrZxSD.png "  ")
+![  ](./image/o_rocketcluster_lfnoGrZxSD.png "  ")
 
 其实博主第一眼看到这个图，就觉得和kafka好像，只是NameServer集群，在kafka中是用zookeeper代替，都是用来保存和发现master和slave用的。通信过程如下:
 
@@ -178,7 +178,7 @@ Producer 与 NameServer集群中的其中一个节点（随机选择）建立长
 
 那么kafka呢,为了对比说明直接上kafka的拓补架构图(也是找的，懒得画)
 
-![  ](o_kafka_vzWrQUl1MM.png "  ")
+![  ](./image/o_kafka_vzWrQUl1MM.png "  ")
 
 如上图所示，一个典型的Kafka集群中包含若干Producer（可以是web前端产生的Page View，或者是服务器日志，系统CPU、Memory等），若干broker（Kafka支持水平扩展，一般broker数量越多，集群吞吐率越高），若干Consumer Group，以及一个Zookeeper集群。Kafka通过Zookeeper管理集群配置，选举leader，以及在Consumer Group发生变化时进行rebalance。Producer使用push模式将消息发布到broker，Consumer使用pull模式从broker订阅并消费消息。
 
@@ -273,7 +273,7 @@ transaction机制就是说，发送消息前，开启事物(channel.txSelect())�
 
 [数据流向图](http://www.infoq.com/cn/articles/kafka-analysis-part-2/ "数据流向图")
 
-![  ](o_kafka1png_1GLg2JJKj3.png "  ")
+![  ](./image/o_kafka1png_1GLg2JJKj3.png "  ")
 
 Producer在发布消息到某个Partition时，先通过ZooKeeper找到该Partition的Leader，然后无论该Topic的Replication Factor为多少（也即该Partition有多少个Replica），Producer只将该消息发送到该Partition的Leader。Leader会将该消息写入其本地Log。每个Follower都从Leader中pull数据。
 

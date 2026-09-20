@@ -1,0 +1,261 @@
+# 图形图标
+
+## 目录
+
+- [斜线效果 ](#斜线效果-)
+- [ css三角形   ](#css三角形-)
+- [固定宽高比](#固定宽高比)
+- [饼图 环形图](#饼图环形图)
+  - [饼图](#饼图)
+  - [环形图](#环形图)
+- [css 气泡](#css气泡)
+
+# 斜线效果&#x20;
+
+```css 
+ div{
+  position:relative;
+  margin:50px auto;
+  width:100px;
+  height:100px;
+  box-sizing:border-box;
+  border:1px solid #333;  
+  line-height:120px;
+  text-indent:5px;
+  background:
+    linear-gradient(45deg, transparent 49.5%, deeppink 49.5%, deeppink 50.5%, transparent 50.5%);
+}
+
+<div></div>
+```
+
+
+![  ](./image/185e58fe02f1926e9d0a9fd7ed91d32e__GycrwJTd3.png "  ")
+
+#  css三角形   
+
+```css 
+ .box::after{
+      content:'';
+      width:0;
+      height: 0;
+      border-left: 16px solid transparent;
+      border-top: 16px solid transparent;
+      border-right: 16px solid transparent;
+      border-bottom: 16px solid #399;
+      position: absolute;
+      z-index: 9999999999999;
+      top: 10px;
+  }
+
+
+带边框的三角形
+.callout {
+        position: relative;
+        top: 5em;  /*单位em相对父元素字体大小 此处即<body> 16px*/
+        width: 20em;
+        height: 12.6em;
+        background-color: #F8BCFF;
+        border: 3px solid #000;
+        text-align: center;
+        line-height: 12.6em;
+    }
+.callout::before {
+        content: "";
+        position: absolute;
+        top: -1.25em;
+        left: 1em;
+        padding: 1em;
+        background-color: inherit;
+        border: inherit;
+        border-right: 0;
+        border-bottom: 0;
+        transform: rotate(45deg);
+    }
+<body>
+     <div class="callout">请按正确格式填写</div>
+ </body>
+```
+
+
+- 颜色不能有透明色；不然重叠部会有阴影，&#x20;
+- 里面的内容会往下挤一点；&#x20;
+- 小三角形效果是通过伪元素inherit继承父元素颜色相同的背景和边框达到的视觉上的效果，其实“小三角形”是“小正方形“，因此可能会遮罩住部分文本元素。    
+
+![  ](./image/3e4653fef8df9f4d0515d4eeb36e7b7e_6WcGQ4hqfz.png "  ")
+
+# 固定宽高比
+
+```css 
+    .box{
+        width: 50%;
+        height: 0;
+        /* 注意了padding 是以宽度的为基准计算的,宽度的50%; 不是针对内容,而是针对自身的高度来计算撑起来的*/
+        padding-bottom: 20%;
+        background: red;
+    }
+    .box2{
+        width: 100px;
+        height: 100px;
+        background: green;
+    }
+
+    <div class="box">
+        <div class="box2"></div>
+    </div>
+
+
+```
+
+
+# 饼图 环形图
+
+## 饼图
+
+```css 
+ <div class="pie"></div>
+.pie {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: yellowgreen;
+    background-image: linear-gradient(to right, transparent 50%, #655 0);
+}
+.pie::before {
+    content: '';
+    display: block;
+    margin-left: 50%;
+    height: 100%;
+    border-radius: 0 100% 100% 0/50%;
+    background-color: inherit;
+    transform-origin: left;
+    transform: rotate(.2turn);
+}
+
+
+```
+
+
+## 环形图
+
+```css 
+ <div class="loading">
+    <div class="left"></div>
+    <div class="right"></div>
+    <div class="progress">85%</div>
+</div>
+
+.loading {
+    margin: 100px auto;
+    width: 8em;
+    height: 8em;
+    position: relative;
+}
+.loading .progress {
+    position: absolute;
+    width: 6em;
+    height: 6em;
+    background-color: white;
+    border-radius: 50%;
+    left: 1em;
+    top: 1em;
+    line-height: 6em;
+    text-align: center;
+}
+.left,
+.right {
+    width: 4em;
+    height: 8em;
+    overflow: hidden;
+    position: relative;
+    float: left;
+    background-color: #999999
+}
+.left {
+    border-radius: 8em 0 0 8em;
+}
+.right {
+    border-radius: 0 8em 8em 0;
+}
+.left:after,
+.right:after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 4em;
+    height: 8em;
+    background-color: white;
+    border-radius: 8em 0 0 8em;
+    background-color: red;
+}
+.right:after {
+    content: "";
+    position: absolute;
+    display: block;
+    border-radius: 0 8em 8em 0;
+}
+.left:after {
+    transform-origin: right center;
+}
+.right:after {
+    transform-origin: left center;
+    transform: rotateZ(45deg);
+}
+```
+
+
+# **css 气泡**
+
+```css 
+  /*data-* 属性，HTML5规范允许我们使用 data-* 属性来嵌入自定义数据。*/
+  /*attr() 函数，attr()函数通常配合content属性使用，可以返回选择元素的属性值。*/
+
+<p class="text">
+  请你打开电视看看 多少人为生命在努力勇敢的走下去。——
+  <span class="tooltip" data-tip="《稻香》">周杰伦</span>
+</p>
+
+.text {
+  font-size: 16px;
+  margin-top: 300px;
+  text-align: center;
+}
+.tooltip {
+  position: relative;
+  font-size: 14px;
+  cursor: default;
+}
+.tooltip::before {
+  content: attr(data-tip); /* 注意data-tip不加引号 */
+  position: absolute;
+  top: -37px;
+  left: 50%;
+  transform: translatex(-50%);
+  display: none;
+  padding: 4px 8px;
+  background-color: #303133;
+  color: #fff;
+  font-size: 12px;
+  white-space: nowrap; /* 防止父元素宽度不够，文字换行 */
+  border-radius: 4px;
+}
+.tooltip::after {
+  content: '';
+  position: absolute;
+  top: -18px;
+  left: 50%;
+  transform: translatex(-50%) rotate(45deg);
+  display: none;
+  width: 10px;
+  height: 10px;
+  background-color: #303133;
+  border-radius: 2px;
+}
+.tooltip:hover::before,
+.tooltip:hover::after {
+  display: block;
+}
+```
+
+
+![  ](./image/70c187c26e527a1355e570c1f22e1764_Bh8z2-rCGU.png "  ")

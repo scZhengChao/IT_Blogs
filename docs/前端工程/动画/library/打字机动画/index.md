@@ -1,0 +1,344 @@
+# 打字机动画
+
+## 目录
+
+- [1.typed.js的介绍](#1typedjs的介绍)
+- [2.typed.js的使用](#2typedjs的使用)
+  - [2.1 安装](#21-安装)
+  - [2.2 使用](#22-使用)
+    - [HTML部分](#HTML部分)
+    - [JavaScript部分](#JavaScript部分)
+- [3. 配置项说明](#3-配置项说明)
+- [4. 个人练习Demo](#4-个人练习Demo)
+
+[ 前端实现打字机的效果 -- typed库的使用 - 掘金 展示: 1.typed.js的介绍 typed.js是一个类型化库，效果是用打字机的方式显示一段话，可以自定义任何字符串、指定显示速度、指定是否循环等 可以在此网站查看所有演示的Demo: http https://juejin.cn/post/7349752708385374262?utm\_source=gold\_browser\_extension](https://juejin.cn/post/7349752708385374262?utm_source=gold_browser_extension " 前端实现打字机的效果 -- typed库的使用 - 掘金 展示: 1.typed.js的介绍 typed.js是一个类型化库，效果是用打字机的方式显示一段话，可以自定义任何字符串、指定显示速度、指定是否循环等 可以在此网站查看所有演示的Demo: http https://juejin.cn/post/7349752708385374262?utm_source=gold_browser_extension")
+
+[   https://mattboldt.github.io/typed.js/](https://mattboldt.github.io/typed.js/ "   https://mattboldt.github.io/typed.js/")
+
+![  ](./image/9c3c6637bc3546efb1308dcc22502e19~tplv-k3u1fbpfcp-z.webp "  ")
+
+这里我们使用三方的工具`Typed.js`
+
+```react tsx 
+pnpm add typed.js
+
+// 绑定Dom对象
+const el = useRef(null)
+
+// 在Dom渲染后进行初始化
+useEffect(() => {
+const typed = new Typed(el.current, {
+  strings: ['Hello,I am Benjamin', 'Welcome !'],
+  typeSpeed: 50, // 打印速度
+});
+return () => {
+  // 退出页面时销毁动画提升页面性能
+  typed.destroy();
+};
+}, []);
+
+return <div ref={el}></div>
+
+
+```
+
+
+## 1.typed.js的介绍
+
+typed.js是一个类型化库，效果是用打字机的方式显示一段话，可以自定义`任何字符串`、指定`显示速度`、指定`是否循环`等
+
+可以在此网站查看所有演示的Demo:
+
+- [mattboldt.github.io/typed.js/](https://link.juejin.cn?target=https://mattboldt.github.io/typed.js/ "mattboldt.github.io/typed.js/")
+
+其实可以使用原生JS来实现这个效果，但是还是很麻烦的 typed.js是一个轻量级的JavaScript插件, 用于实现页面文字的打字动画效果 这是一款轻量级，使用简单，功能强大的插件
+
+主要特点:
+
+1. **易于使用**：通过简单的配置，就可以在网页上实现打字效果。
+2. **高度可配置**：可以自定义打字速度、打字时间间隔、回退速度等。
+3. **多种模式**：支持打字、删除、打字后再删除等不同的动画模式。
+4. **无依赖**：Typed.js 不依赖于任何第三方库，可以直接在网页上使用。
+5. **跨浏览器兼容**：支持主流的浏览器，包括最新的版本。
+
+## 2.typed.js的使用
+
+### 2.1 安装
+
+使用包管理器进行安装
+
+```bash 
+ # With NPM
+ npm install typed.js
+
+ # With Yarn
+ yarn add typed.js
+
+```
+
+
+### 2.2 使用
+
+#### HTML部分
+
+```bash 
+ <span id="typed" style="white-space: pre-wrap;line-height: 30px;"></span>
+
+```
+
+
+**经过测试,文字放在**\*\*`span`\*\***标签里面，输入的光标才会正常显示。**
+
+#### JavaScript部分
+
+```javascript 
+ const options = {
+   strings: [
+     'First test.',
+     'Second test, \nit will pause for three seconds. ^3000',
+     "Second test, \nthe last sentence will go back to 'Second test, ', \noh no, this is the third test. ^1000",
+     "It's going to start repeating.",
+   ],
+   typeSpeed: 50, // 打印速度
+   startDelay: 300, // 开始之前的延迟300毫秒
+   loop: true, // 是否循环
+ };
+ ​
+ const typed = new Typed('#typed', options);
+
+```
+
+
+输入暂停
+
+```javascript 
+ var typed = new Typed(".element", {
+   // 键入“first”后等待1000毫秒
+   strings: ["First ^1000 sentence.", "Second sentence."]
+ });
+
+```
+
+
+智能退格
+
+在下面的示例中，这只会在“This is a”之后退格。
+
+```javascript 
+ // 只退格与前一个字符串不匹配的内容
+ var typed = new Typed(".element", {
+   strings: ["This is a JavaScript library", "This is an ES6 module"],
+   smartBackspace: true // Default value
+ });
+
+```
+
+
+## 3. 配置项说明
+
+```javascript 
+ var typed = new Typed(".element", {
+   /**
+    * @property {array} strings 要键入的字符串
+    * @property {string} stringsElement 包含字符串子元素的元素的ID
+    */
+   strings: ['These are the default values...', 'You know what you should do?', 'Use your own!', 'Have a great day!'],
+   stringsElement: null,
+ 
+   /**
+    * @property {number} typeSpeed 输入速度，以毫秒为单位
+    */
+   typeSpeed: 0,
+ 
+   /**
+    * @property {number} startDelay 键入之前的时间以毫秒开始
+    */
+   startDelay: 0,
+ 
+   /**
+    * @property {number} backSpeed 退格速度，以毫秒为单位
+    */
+   backSpeed: 0,
+ 
+   /**
+    * @property {boolean} smartBackspace 是否只退格与前一个字符串不匹配的内容
+    */
+   smartBackspace: true,
+ 
+   /**
+    * @property {boolean} shuffle 是否洗牌
+    */
+   shuffle: false,
+ 
+   /**
+    * @property {number} backDelay 退回之前的时间，以毫秒为单位
+    */
+   backDelay: 700,
+ 
+   /**
+    * @property {boolean} fadeOut 是否用淡出替代空格
+    * @property {string} fadeOutClass 用于淡入淡出动画的css类
+    * @property {boolean} fadeOutDelay 以毫秒为单位淡出延迟
+    */
+   fadeOut: false,
+   fadeOutClass: 'typed-fade-out',
+   fadeOutDelay: 500,
+ 
+   /**
+    * @property {boolean} loop 是否循环字符串
+    * @property {number} loopCount 循环次数
+    */
+   loop: false,
+   loopCount: Infinity,
+ 
+   /**
+    * @property {boolean} showCursor 是否显示光标
+    * @property {string} cursorChar 光标的字符
+    * @property {boolean} autoInsertCss 是否将光标和fadeOut的CSS插入HTML <head>
+    */
+   showCursor: true,
+   cursorChar: '|',
+   autoInsertCss: true,
+ 
+   /**
+    * @property {string} attr 输入属性
+    * 例如：输入占位符，值或仅HTML文本
+    */
+   attr: null,
+ 
+   /**
+    * @property {boolean} bindInputFocusEvents 如果el是文本输入，则绑定到焦点和模糊
+    */
+   bindInputFocusEvents: false,
+ ​
+   /**
+    * @property {string} contentType 明文的'html'或'null'
+    */
+   contentType: 'html',
+ 
+   /**
+    * 所有打字都已完成调用的回调函数
+    * @param {Typed} self
+    */
+   onComplete: (self) => {},
+ 
+   /**
+    * 在键入每个字符串之前调用的回调函数
+    * @param {number} arrayPos
+    * @param {Typed} self
+    */
+   preStringTyped: (arrayPos, self) => {},
+ 
+   /**
+    * 输入每个字符串后调用的回调函数
+    * @param {number} arrayPos
+    * @param {Typed} self
+    */
+   onStringTyped: (arrayPos, self) => {},
+ 
+   /**
+    * 在循环期间，在键入最后一个字符串之后调用的回调函数
+    * @param {Typed} self
+    */
+   onLastStringBackspaced: (self) => {},
+ 
+   /**
+    * 打字已经停止调用的回调函数
+    * @param {number} arrayPos
+    * @param {Typed} self
+    */
+   onTypingPaused: (arrayPos, self) => {},
+ 
+   /**
+    * 停止后开始键入调用的回调函数
+    * @param {number} arrayPos
+    * @param {Typed} self
+    */
+   onTypingResumed: (arrayPos, self) => {},
+ 
+   /**
+    * 重置后调用的回调函数
+    * @param {Typed} self
+    */
+   onReset: (self) => {},
+ 
+   /**
+    * 停止后调用的回调函数
+    * @param {number} arrayPos
+    * @param {Typed} self
+    */
+   onStop: (arrayPos, self) => {},
+ 
+   /**
+    * 开始后调用的回调函数
+    * @param {number} arrayPos
+    * @param {Typed} self
+    */
+   onStart: (arrayPos, self) => {},
+ 
+   /**
+    * 销毁后调用的回调函数
+    * @param {Typed} self
+    */
+   onDestroy: (self) => {}
+ });
+
+```
+
+
+## 4. 个人练习Demo
+
+html
+
+```html 
+<span id="typed"></span>
+
+```
+
+
+css
+
+```css 
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background: rgb(34, 193, 195);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+span {
+    font-size: 32px;
+    font-weight: 600;
+    white-space: pre-wrap; /* 保持空白和换行符，并自动换行 */
+}
+
+```
+
+
+**js**
+
+```javascript 
+       var typed = new Typed("#typed", {
+            strings: ['我喜欢<span style="color:yellow">睡觉</span>', '我喜欢吃饭', '<span style="color:red">我喜欢自由</span>'],
+            typeSpeed: 100,//打字的速度
+            smartBackspace: true, // 开启智能退格 默认false
+            backSpeed: 50,//后退速度
+            backDelay: 500,//后退延迟
+            loop: true,//是否循环.,,
+            startDelay: 1000,//起始时间
+            fadeOut: true,//淡出效果
+            fadeOutClass: 'typed-fade-out',//fadeOutClass 用于淡入淡出动画的css类
+            fadeOutDelay: 500,//以毫秒为单位淡出延迟
+            smartBackspace: true, //智能后间距,
+
+        });
+
+```

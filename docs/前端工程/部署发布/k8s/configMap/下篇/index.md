@@ -1,0 +1,12 @@
+# 下篇
+
+关于使用ConfigMap的更多详情，可提前参考官方文档：[kubernetes.io/zh-cn/docs/…](https://link.juejin.cn?target=https://kubernetes.io/zh-cn/docs/concepts/configuration/configmap/#using-configmaps "kubernetes.io/zh-cn/docs/…")
+
+以下是官方文档中提到的4种方式：
+
+- 在容器命令和参数内：可以将 `ConfigMap `的值直接**传递给容器的命令和参数**。
+- 容器的环境变量：可以将 `ConfigMap `的值**注入到容器的环境变量中。**
+- 在只读卷里面添加一个文件：可以**将 ConfigMap 的值作为文件添加到 Pod 中**
+- **编写代码在 Pod 中运行**，使用 Kubernetes API 来读取 ConfigMap：可以使用 Kubernetes API 在 Pod 中读取 ConfigMap 的值。
+
+[将 ConfigMap 中的键值对作为容器的环境变量](<./将 ConfigMap 中的键值对作为容器的环境变量/index.md> "将 ConfigMap 中的键值对作为容器的环境变量")

@@ -28,8 +28,8 @@
 
 点击查看详细加载情况，红色的就是没有使用的代码，但是打包压缩后的代码，我们一般都看不出来是人还是鬼。所以我们尽量对代码进行切割，不仅可以减少大文件加载的时间，也可以明确问题所在。
 
-![](image_Moc1FHXQ3Q.png)
+![](./image/image_Moc1FHXQ3Q.png)
 
 我们可以处理一下第三方的js，能看到echarts和elemenet-ui加载的大小和实际使用的大小有出入，一般Lighthouse用超过20 kb的未使用代码标记每个JavaScript文件。我们改变一下element-ui的引入方式，目前是全局引入，我们可以使用按需引入，因为目前我只用到了Button，我们就只需要引入Button。优化后打包大小明显变小。
 
-![](image_EUU3RCwcQc.png)
+![](./image/image_EUU3RCwcQc.png)

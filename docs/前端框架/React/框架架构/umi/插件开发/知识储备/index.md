@@ -1,0 +1,11 @@
+# 知识储备
+
+[什么是插件](./什么是插件/index.md "什么是插件")
+
+[启用插件](./启用插件/index.md "启用插件")
+
+[配置插件](./配置插件/index.md "配置插件")
+
+[Umi 插件的机制及其生命周期](<./Umi 插件的机制及其生命周期/index.md> "Umi 插件的机制及其生命周期")
+
+[plugin & preset](<./plugin & preset/index.md> "plugin & preset")

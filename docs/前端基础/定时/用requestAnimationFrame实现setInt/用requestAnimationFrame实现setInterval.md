@@ -55,8 +55,8 @@ mySetInterval(timer => {
 ```
 
 
-[为什么 requestAnimationFrame 比 setTimeout 更好？](<为什么 requestAnimationFrame 比 setTimeout 更好？.md> "为什么 requestAnimationFrame 比 setTimeout 更好？")
+[为什么 requestAnimationFrame 比 setTimeout 更好？](<./为什么 requestAnimationFrame 比 se/为什么 requestAnimationFrame 比 setTimeout 更好？.md> "为什么 requestAnimationFrame 比 setTimeout 更好？")
 
-[怎样阻止函数被调用太快或者太多次？ ](怎样阻止函数被调用太快或者太多次？-.md "怎样阻止函数被调用太快或者太多次？ ")
+[怎样阻止函数被调用太快或者太多次？ ](./怎样阻止函数被调用太快或者太多次？-/index.md "怎样阻止函数被调用太快或者太多次？ ")
 
 [api](IT/前端基础/定时/用requestAnimationFrame实现setInt/api/api.md "api")

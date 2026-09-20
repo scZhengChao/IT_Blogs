@@ -67,7 +67,7 @@ add()
 
 上面例子的全局执行上下文：
 
-![](image_hfh2XoTj7G.png)
+![](./image/image_hfh2XoTj7G.png)
 
 1. 从全局执行上下文中，取出 add 函数代码。
 2. 对 add 函数的这段代码进行编译，并创建该**函数的执行上下文**和**可执行代码**。
@@ -75,7 +75,7 @@ add()
 
 **完整流程**
 
-![](image_2-nn5jQThH.png)
+![](./image/image_2-nn5jQThH.png)
 
 当执行到 add 函数的时候，就有了两个执行上下文
 
@@ -90,7 +90,7 @@ add()
 
 > 栈容器、入栈、栈满、出栈、空栈
 
-![](image_PrGAGu5PKX.png)
+![](./image/image_PrGAGu5PKX.png)
 
 #### 什么是 JavaScript 的调用栈
 
@@ -117,31 +117,31 @@ addAll(3,6)
 
 全局执行上下文压栈
 
-![](image_4GtMeDWFzc.png)
+![](./image/image_4GtMeDWFzc.png)
 
 赋值操作改变执行上下文中的值
 
-![](image_0k0K61lZaV.png)
+![](./image/image_0k0K61lZaV.png)
 
 **第二步是调用 addAll 函数。**
 
 执行 addAll 函数时的调用栈
 
-![](image_fZj-0L7yr_.png)
+![](./image/image_fZj-0L7yr_.png)
 
 **第三步，当执行到 add 函数**
 
 执行 add 函数时的调用栈
 
-![](image_ehBueUWgv9.png)
+![](./image/image_ehBueUWgv9.png)
 
 当 add 函数返回时，该函数的执行上下文就会从**栈顶弹出**
 
-![](image_9eSbrLxM-u.png)
+![](./image/image_9eSbrLxM-u.png)
 
 addAll 的执行上下文也会从栈顶部弹出，此时调用栈中就只剩下全局上下文。
 
-![](image_bbxvAailTq.png)
+![](./image/image_bbxvAailTq.png)
 
 **调用栈是 JavaScript 引擎追踪函数执行的一个机制。**
 
@@ -156,7 +156,7 @@ addAll 的执行上下文也会从栈顶部弹出，此时调用栈中就只剩�
 5. 通过右边“call stack”来查看当前的调用栈的情况
 6. 栈的最底部是 anonymous，也就是全局的函数入口
 
-![](image_nGl0gq6vPp.png)
+![](./image/image_nGl0gq6vPp.png)
 
 除了通过断点来查看调用栈，还可以使用 `console.trace()` 来输出当前的函数调用关系
 
@@ -177,7 +177,7 @@ console.log(division(1,2))
 ```
 
 
-![](image_BVMJJ4KGCS.png)
+![](./image/image_BVMJJ4KGCS.png)
 
 原因如下：
 
@@ -272,7 +272,7 @@ runStack(50000)
 ```
 
 
-![](image_YdYPYFCsMG.png)
+![](./image/image_YdYPYFCsMG.png)
 
 #### 参考
 
@@ -310,4 +310,4 @@ trampoline(runStack(1000000))
 ```
 
 
-![](image_OS6QXE5JQu.png)
+![](./image/image_OS6QXE5JQu.png)

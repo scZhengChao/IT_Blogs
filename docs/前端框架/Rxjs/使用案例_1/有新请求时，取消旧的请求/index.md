@@ -1,0 +1,39 @@
+# 有新请求时，取消旧的请求
+
+业务需求： 搜索框中每输入一个字，就向后台发起请求，这些请求返回速度不一定，导致结果不准确且有很多冗余的请求。
+
+解决方法： 当rxjs的subject发出邮件时，**switchmap取消未完成的请求。**
+
+```javascript 
+import { Subject, debounceTime, switchMap, catchError, of } from 'rxjs';
+private keyupSubject$: Subject<void> = new Subject();
+constructor() {
+    this.keyupSubject$.pipe(switchmap(() =>
+     // 这里是请求api的接口操作
+    )).subscribe((res) => {
+     // 这里是api返回数据后的操作
+    })
+}
+
+keyUpFun() {
+    this.keyupSubject$.next();
+}
+
+useMount(() => {
+    subject.current
+      .pipe(
+        debounceTime(500),
+        switchMap(() => fetchApi()),
+        catchError(() => of([])),
+      )
+      .subscribe((append) => {
+        handleResults(append);
+      })
+});
+
+```
+
+
+效果：
+
+![](./image/image_Oz7lLjCX9z.png)

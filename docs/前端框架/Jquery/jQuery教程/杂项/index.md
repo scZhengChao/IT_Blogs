@@ -1,0 +1,9 @@
+# 杂项
+
+[ jQuery 杂项方法 | 菜鸟教程 jQuery     杂项方法  jQuery 杂项方法               方法         描述                           data()         向被选元素附加数据，或者从被选元素获取数据                           each()         为每个匹配元素执行函数                           g https://www.runoob.com/jquery/jquery-ref-misc.html](https://www.runoob.com/jquery/jquery-ref-misc.html " jQuery 杂项方法 | 菜鸟教程 jQuery     杂项方法  jQuery 杂项方法               方法         描述                           data()         向被选元素附加数据，或者从被选元素获取数据                           each()         为每个匹配元素执行函数                           g https://www.runoob.com/jquery/jquery-ref-misc.html")
+
+[jQuery.extend()方法](./jQuery.extend()方法/index.md "jQuery.extend()方法")
+
+[jQuery.fn.extend()方法](./jQuery.fn.extend()方法/index.md "jQuery.fn.extend()方法")
+
+[utils](./utils/index.md "utils")

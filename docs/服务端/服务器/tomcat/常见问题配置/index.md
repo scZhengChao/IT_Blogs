@@ -1,0 +1,260 @@
+# 常见问题配置
+
+## 目录
+
+- [1.静态文件配置](#1静态文件配置)
+- [2.启动并查看日志](#2启动并查看日志)
+- [3.启动脚本startup.sh分析](#3启动脚本startupsh分析)
+  - [一、分析说明](#一分析说明)
+  - [二、脚本分析](#二脚本分析)
+  - [三、总结](#三总结)
+- [4.查看pid](#4查看pid)
+- [5.解压war包](#5解压war包)
+- [6.查看version版本](#6查看version版本)
+- [8.配置虚拟路径部署web](#8配置虚拟路径部署web)
+
+中文文档：
+
+[<https://wiki.archlinux.org/index.php/Tomcat> \_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)](https://wiki.archlinux.org/index.php/Tomcat_\(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87\) "  https://wiki.archlinux.org/index.php/Tomcat_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)")
+
+# 1.静态文件配置
+
+ 打开\$TOMCAT\_HOME\$/conf目录下的WEB.XML文件，找到 \<mime-mapping> 配置位置，并添加以下配置：
+
+\<mime-mapping>    &#x20;
+
+\<extension>flv\</extension>    &#x20;
+
+\<mime-type>video/x-flv\</mime-type>&#x20;
+
+\</mime-mapping>
+
+# 2.启动并查看日志
+
+在Linux环境下，启动Tomcat时我们需要在启动过程中看到日志信息。可以通过下面命令启动Tocmat。
+
+在tomcat的bin目录下输入
+
+```handlebars 
+ ./startup.sh; tailf ../logs/catalina.out
+```
+
+
+或者
+
+```handlebars 
+ ./startup.sh && tail -f ../logs/catalina.out
+```
+
+
+# 3.启动脚本startup.sh分析
+
+## 一、分析说明
+
+    为了写出更加完善的tomcat启动方面的自动化脚本，健壮自己用于代码上线自动化部署的脚本，特分析下tomcat的bin目录下的starup.sh脚本，学习标准的sh脚本的编写方法，从中吸取经验
+
+## **二、脚本分析**
+
+\#!/bin/sh
+
+\# Licensed to the Apache Software Foundation (ASF) under one or more
+
+\# contributor license agreements. See the NOTICE file distributed with
+
+\# this work for additional information regarding copyright ownership.
+
+\# The ASF licenses this file to You under the Apache License, Version 2.0
+
+\# (the "License"); you may not use this file except in compliance with
+
+\# the License. You may obtain a copy of the License at
+
+\#
+
+\# <http://www.apache.org/licenses/LICENSE-2.0>
+
+\#
+
+\# Unless required by applicable law or agreed to in writing, software
+
+\# distributed under the License is distributed on an "AS IS" BASIS,
+
+\# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+
+\# See the License for the specific language governing permissions and
+
+\# limitations under the License.
+
+\# -----------------------------------------------------------------------------
+
+\# Start Script for the CATALINA Server
+
+\#
+
+\# \$Id: startup.sh 1130937 2011-06-03 08:27:13Z markt \$
+
+\# -----------------------------------------------------------------------------
+
+\# Better OS/400 detection: see Bugzilla 31132
+
+os400=false
+
+darwin=false
+
+\#os400是 IBM的AIX
+
+\#darwin是MacOSX 操作环境的操作系统成份
+
+\#Darwin是windows平台上运行的类UNIX模拟环境
+
+case "\`uname\`" in
+
+CYGWIN \*) cygwin=true;;
+
+OS400 \*) os400=true;;
+
+Darwin \*) darwin=true;;
+
+esac
+
+\#上一个判断是为了判断操作系统，至于何用，往下看
+
+\# resolve links - \$0 may be a softlink
+
+\#读取脚本名
+
+PRG="\$0"
+
+\#test –h File 文件存在并且是一个符号链接（同-L）
+
+while \[ -h "\$PRG" ] ; do
+
+ls=\`ls -ld "\$PRG"\`
+
+link=`expr "$ls" : '. *-> \(.*\)$'`
+
+if expr "\$link" : '/. \*' > /dev/null; then
+
+PRG="\$link"
+
+else
+
+PRG=\`dirname "\$PRG"\`/"\$link"
+
+fi
+
+done
+
+\#上面循环语句的意思是保证文件路径不是一个连接，使用循环直至找到文件原地址
+
+\#遇到一时看不明白的shell，可以拆解后自己在linux反复运行验证，一点点拆解就会明白的
+
+\#link=`expr "$ls" : '. *-> \(.*\)$'` 模拟后： expr 'lrwxrwxrwx 1 root root 19 3月 17 10:12 ./bbb.sh -> /root/shell/test.sh' : '. *-> (.*)\$'
+
+\#很明确的发现是用expr来提取/root/shell/test.sh的内容
+
+\#而这个循环就可以明确其目的，排除命令为链接，找出命令真正的目录，防止后面的命令出错
+
+\#这段代码如果在以后有这方面的找出链接源头的需求可以完全借鉴
+
+\#获取这个脚本的目录
+
+PRGDIR=\`dirname "\$PRG"\`
+
+EXECUTABLE=catalina.sh
+
+\# Check that target executable exists
+
+\#这些判断是否气是其他的操作系统
+
+if \$os400; then
+
+\# -x will Only work on the os400 if the files are:
+
+\# 1. owned by the user
+
+\# 2. owned by the PRIMARY group of the user
+
+\# this will not work if the user belongs in secondary groups
+
+eval
+
+\#这个eval还没有理解
+
+else
+
+if \[ ! -x "\$PRGDIR"/"\$EXECUTABLE" ]; then
+
+\#判断脚本catalina.sh是否存在并有可执行权限，没有执行权限就退出
+
+echo "Cannot find \$PRGDIR/\$EXECUTABLE"
+
+echo "The file is absent or does not have execute permission"
+
+echo "This file is needed to run this program"
+
+exit 1
+
+fi
+
+fi
+
+exec "\$PRGDIR"/"\$EXECUTABLE" start "\$@"
+
+\#exec命令在执行时会把当前的shell process关闭，然后换到后面的命令继续执行。
+
+\#exec命令可以很好的进行脚本之间过渡，并且结束掉前一个脚本这样不会对后面执行的脚本造成干扰。
+
+\#exec 命令：常用来替代当前 shell 并重新启动一个 shell，换句话说，并没有启动子 shell。使用这一命令时任何现
+
+\#有环境都将会被清除。exec 在对文件描述符进行操作的时候，也只有在这时，exec 不会覆盖你当前的 shell 环境。
+
+\#exec 可以用于脚本执行完启动需要启动另一个脚本是使用，但须考虑到环境变量是否被继承。
+
+## **三、总结**
+
+            tomcat的startup.sh脚本主要用来判断环境，找到catalina.sh脚本源路径，将启动命令参数传递给catalina.sh执行。然而catalina.sh脚本中也涉及到判断系统环境和找到catalina.sh脚本原路径的相关代码，所以执行tomcat启动时，无需使用startup.sh脚本（下一篇分析的shutdown.sh也类似），直接./catalina.sh start|stop|restart 即可。
+
+# 4.查看pid
+
+- 方法1:
+
+echo \$(ps -ef |grep tomcat |grep -w 'tomcat\_name'|grep -v 'grep'|awk '{print \$2}')
+
+如：返回27742&#x20;
+
+tomcat\_name: tomcat根目录
+
+- 方法2:
+
+ps -ef | grep tomcat
+
+ps -aux| grep tomcat 
+
+...
+
+第一行，第二列即tomcat pid
+
+# 5.解压war包
+
+出现这样问题的原因是因为应用重新发布部署后，原本其中非 war 中的文件和目录都会被删除！
+
+- 启动的时候 如果xx.war 不存在 xx文件夹，就会触发xx.war的解压
+- 启动的时候 如果存在xx文件夹，即便 xx.war更新了也不会触发解压
+- 所以更新war包，需要删除xx文件夹，重启才会更新最新代码
+
+![  ](./image/0a4db71cb14fd6808c6dc9e5f45110b4_J8SeptcqLp.png "  ")
+
+原来是tomcat/conf下server.xml里面的这行配置搞的鬼。  其中：
+
+- appBase=“xxx/xxx” 表示项目的路径，有的默认为null，有的默认为webapps，你想要把项目放在哪就把这个路径改成哪
+- unpackWARs=“true” 是否自动解压war包
+- autoDeploy=“true” 是否在不重启下自动解压war包
+
+# 6.查看version版本
+
+bin目录下的version.sh 脚本执行
+
+# 8.配置虚拟路径部署web
+
+[tomcat配置虚拟目录的最正确方式和部署多个web项目\_基于虚拟目录部署多站点-CSDN博客 文章浏览阅读1w次，点赞8次，收藏33次。tomcat 配置虚拟目录的最正确方式在部署web项目到服务器上的时一般都是这么配置的：配置虚拟目录不是配置虚拟路径，虚拟目录的意思是，web项目名称。1.虚拟目录的映射：Web开发以后交给服务器，要想被外界访问，就得把目录交给服务器管理，这个过程叫做虚拟路径的映射。当浏览器地址为：http://localhost:8080 就是访问到了tomcat的we https://blog.csdn.net/ITBigGod/article/details/83750825?ops\_request\_misc=%257B%2522request%255Fid%2522%253A%2522160577432019725222407071%2522%252C%2522scm%2522%253A%252220140713.130102334.pc%255Fall.%2522%257D\&request\_id=160577432019725222407071\&biz\_id=0\&utm\_medium=distribute.pc\_search\_result.none-task-blog-2\~all\~first\_rank\_v2\~rank\_v28-1-83750825.pc\_search\_result\_cache\&utm\_term=tomcat8%E9%85%8D%E7%BD%AE%E5%A4%9A%E4%B8%AA%E8%99%9A%E6%8B%9F%E7%9B%AE%E5%BD%95\&spm=1018.2118.3001.4449](https://blog.csdn.net/ITBigGod/article/details/83750825?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522160577432019725222407071%2522%252C%2522scm%2522%253A%252220140713.130102334.pc%255Fall.%2522%257D\&request_id=160577432019725222407071\&biz_id=0\&utm_medium=distribute.pc_search_result.none-task-blog-2~all~first_rank_v2~rank_v28-1-83750825.pc_search_result_cache\&utm_term=tomcat8%E9%85%8D%E7%BD%AE%E5%A4%9A%E4%B8%AA%E8%99%9A%E6%8B%9F%E7%9B%AE%E5%BD%95\&spm=1018.2118.3001.4449 "tomcat配置虚拟目录的最正确方式和部署多个web项目_基于虚拟目录部署多站点-CSDN博客 文章浏览阅读1w次，点赞8次，收藏33次。tomcat 配置虚拟目录的最正确方式在部署web项目到服务器上的时一般都是这么配置的：配置虚拟目录不是配置虚拟路径，虚拟目录的意思是，web项目名称。1.虚拟目录的映射：Web开发以后交给服务器，要想被外界访问，就得把目录交给服务器管理，这个过程叫做虚拟路径的映射。当浏览器地址为：http://localhost:8080 就是访问到了tomcat的we https://blog.csdn.net/ITBigGod/article/details/83750825?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522160577432019725222407071%2522%252C%2522scm%2522%253A%252220140713.130102334.pc%255Fall.%2522%257D\&request_id=160577432019725222407071\&biz_id=0\&utm_medium=distribute.pc_search_result.none-task-blog-2~all~first_rank_v2~rank_v28-1-83750825.pc_search_result_cache\&utm_term=tomcat8%E9%85%8D%E7%BD%AE%E5%A4%9A%E4%B8%AA%E8%99%9A%E6%8B%9F%E7%9B%AE%E5%BD%95\&spm=1018.2118.3001.4449")

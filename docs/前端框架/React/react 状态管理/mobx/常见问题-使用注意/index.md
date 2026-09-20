@@ -1,0 +1,9 @@
+# 常见问题/使用注意
+
+[如果你非要传递可观察对象到未被observer包裹的组件中](./如果你非要传递可观察对象到未被observer包裹的组件中/index.md "如果你非要传递可观察对象到未被observer包裹的组件中")
+
+[memo](IT/前端框架/React/react%20状态管理/mobx/常见问题-使用注意/memo/memo.md "memo")
+
+[在 action 和 reaction 之外使用 observable的值 符合规范嘛](<./在 action 和 reaction 之外使用 obser/在 action 和 reaction 之外使用 observable的值 符合规范嘛.md> "在 action 和 reaction 之外使用 observable的值 符合规范嘛")
+
+[数组](IT/前端框架/React/react%20状态管理/mobx/常见问题-使用注意/数组/数组.md "数组")

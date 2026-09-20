@@ -1,0 +1,222 @@
+# 样式隔离
+
+## 目录
+
+- [CSS样式隔离：12个技巧让冲突率降低75%](#CSS样式隔离12个技巧让冲突率降低75)
+  - [1. BEM命名规范](#1-BEM命名规范)
+  - [2. CSS Modules](#2-CSS-Modules)
+  - [3. Shadow DOM](#3-Shadow-DOM)
+  - [4. CSS 命名空间](#4-CSS-命名空间)
+  - [5. @scope规则（新特性）](#5-scope规则新特性)
+  - [6. CSS自定义属性（变量）继承](#6-CSS自定义属性变量继承)
+  - [7. 作用域选择器 :where() 和 :is()](#7-作用域选择器-where-和-is)
+  - [8. CSS Containment](#8-CSS-Containment)
+  - [9. 样式穿透控制](#9-样式穿透控制)
+  - [10. 层叠层级 @layer](#10-层叠层级-layer)
+  - [11. 动态样式生成](#11-动态样式生成)
+  - [12. 样式重置策略](#12-样式重置策略)
+
+# CSS样式隔离：12个技巧让冲突率降低75%
+
+随着项目复杂度的增加，CSS样式隔离变得越来越重要，分享12个能够显著降低样式冲突的技巧。
+
+## 1. BEM命名规范
+
+采用块（Block）、元素（Element）、修饰符（Modifier）的命名方法。
+
+```css 
+/* 传统方式 */
+.sidebar .title { }
+
+/* BEM命名 */
+.sidebar__title--highlight {
+  color: #007bff;
+  font-weight: bold;
+}
+
+```
+
+
+## 2. CSS Modules
+
+通过自动生成唯一的类名来实现样式隔离。
+
+```css 
+/* styles.module.css */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+```
+
+
+```typescript 
+import styles from './styles.module.css';
+
+function Component() {
+  return <div className={styles.container}></div>;
+}
+
+```
+
+
+## 3. Shadow DOM
+
+利用Web Components的Shadow DOM实现完全的样式隔离。
+
+```javascript 
+class MyComponent extends HTMLElement {
+  constructor() {
+    super();
+    const shadow = this.attachShadow({ mode: 'closed' });
+    const style = document.createElement('style');
+    style.textContent = `
+      :host {
+        display: block;
+        background: #f4f4f4;
+      }
+    `;
+    shadow.appendChild(style);
+  }
+}
+
+```
+
+
+## 4. CSS 命名空间
+
+为不同模块或组件添加特定的命名空间前缀。
+
+```css 
+/* 页面级命名空间 */
+.homepage-header { }
+.homepage-sidebar { }
+
+/* 组件级命名空间 */
+.user-profile__avatar { }
+.user-profile__name { }
+
+```
+
+
+## 5. @scope规则（新特性）
+
+使用最新的@scope规则精确控制样式作用范围。
+
+```css 
+@scope (.card){
+  h2{
+    color:#333;
+  }
+  p{
+    font-size:14px;
+  }
+}
+```
+
+
+## 6. CSS自定义属性（变量）继承
+
+通过自定义属性实现可控的样式继承和隔离。
+
+```css 
+.theme-light{
+  --primary-color:blue;
+  --secondary-color:green;
+}
+.theme-dark{
+  --primary-color:darkblue;
+  --secondary-color:darkgreen;
+}
+.button{
+  background-color:var(--primary-color);
+)
+```
+
+
+## 7. 作用域选择器 :where() 和 :is()
+
+利用新一代选择器降低选择器特异性。
+
+```css 
+/*降低选择器特异性*/
+:where(.sidebar .title){
+  font-weight:bold;
+}
+:is(.header, .footer) .nav{
+  display:flex;
+}
+```
+
+
+## 8. CSS Containment
+
+使用contain属性限制CSS布局和绘制的作用范围。
+
+```css 
+.component{
+  contain:layout;/*隔离布局*/
+  contain:paint;/*隔离绘制*/
+  contain:strict;/*完全隔离*/
+}
+```
+
+
+## 9. 样式穿透控制
+
+在组件库和框架中精确控制样式穿透。
+
+```css 
+/* Vue Scoped Style */
+.parent ::v-deep .child{
+  color:red;
+}
+/* CSS Selector */
+.component > :global(.external-class){
+  margin:10px;
+}
+```
+
+
+## 10. 层叠层级 @layer
+
+通过定义样式层级管理样式优先级。
+
+```css 
+@layer reset,base,components,utilities;
+@layer components{
+   .button{
+      background:blue;
+    }
+}
+
+```
+
+
+## 11. 动态样式生成
+
+通过JavaScript动态生成和管理唯一样式。
+
+![](./image/image_D3gMrc7hgu.png)
+
+## 12. 样式重置策略
+
+全局和局部样式重置的平衡策略。
+
+```css 
+/* 局部重置 */
+.reset-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* 范围重置 */
+@scope (.card) {
+  ul {
+    margin: 0;
+  }
+}
+
+```

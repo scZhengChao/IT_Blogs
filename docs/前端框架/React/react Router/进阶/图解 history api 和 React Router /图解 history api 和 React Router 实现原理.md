@@ -81,7 +81,7 @@ history.replaceState({aaa:1}, '', 'https://www.baidu.com?wd=光')
 
 前后 `history` 都没变，**只有当前的变了：**
 
-![](image_6lVgjvRMnC.png)
+![](./image/image_6lVgjvRMnC.png)
 
 也就是这样：
 
@@ -95,7 +95,7 @@ history.pushState({bbb:1}, '', 'https://www.baidu.com?wd=东');
 ```
 
 
-![](image_Jh_Lm4e7cy.png)
+![](./image/image_Jh_Lm4e7cy.png)
 
 **但有个现象，就是之后的 history 都没了：**
 
@@ -127,7 +127,7 @@ history.pushState({bbb:1}, '', 'https://www.baidu.com?wd=东');
 
 比如我访问百度到了这个位置：
 
-![](image_X5ViQA-dc6.png)
+![](./image/image_X5ViQA-dc6.png)
 
 打开个新页面，再退回来：
 
@@ -137,7 +137,7 @@ history.pushState({bbb:1}, '', 'https://www.baidu.com?wd=东');
 
 **这是因为它的 history.scrollRestoration 是 auto**
 
-![](image_tzpZ5gUh_Y.png)
+![](./image/image_tzpZ5gUh_Y.png)
 
 我们把它设置为 `manual` 试试看：
 
@@ -153,7 +153,7 @@ history.pushState({bbb:1}, '', 'https://www.baidu.com?wd=东');
 
 **但是 history.pushState、history.replaceState 这种并不会触发 popstate。**
 
-![](image_6G6xwVsbea.png)
+![](./image/image_6G6xwVsbea.png)
 
 ```css 
 history.pushState({aaa:1}, '', 'https://www.baidu.com?#/aaa');
@@ -167,11 +167,11 @@ history.pushState({bbb:2}, '', 'https://www.baidu.com?#/bbb');
 
 加上导航页一共 4 个：
 
-![](image_ZrbtxE9gUq.png)
+![](./image/image_ZrbtxE9gUq.png)
 
 然后我监听 popstate 事件：
 
-![](image_h55hsq-1Vd.png)
+![](./image/image_h55hsq-1Vd.png)
 
 ```javascript 
 window.addEventListener('popstate', event => {console.log(event)});
@@ -321,7 +321,7 @@ npm run start
 
 我们断点调试下：
 
-![](image_OPLvDsHS76.png)
+![](./image/image_OPLvDsHS76.png)
 
 创建调试配置文件 `launch.json`，然后创建 `chrome` 类型的调试配置：
 
@@ -329,7 +329,7 @@ npm run start
 
 在 `createBrowserRouter` 的地方打个断点：
 
-![](image_aYjPSRWvYB.png)
+![](./image/image_aYjPSRWvYB.png)
 
 点击 debug：
 
@@ -373,7 +373,7 @@ npm run start
 
 `matchRoutes` 会把**嵌套路由拍平**，然后和 `location` 匹配：
 
-![](image_K5E1Y7VhTX.png)
+![](./image/image_K5E1Y7VhTX.png)
 
 然后就匹配**到了要渲染的组件以及它包含的子路由：**
 
@@ -395,7 +395,7 @@ npm run start
 
 当点击 link 切换路由的时候：
 
-![](image__uSW3me-Co.png)
+![](./image/image__uSW3me-Co.png)
 
 会执行 navigate 方法：
 
@@ -409,13 +409,13 @@ npm run start
 
 match 完会 `pushState` 或者 `replaceState` 修改 `history`，然后更新 state：
 
-![](image_Mvhl1BHuyI.png)
+![](./image/image_Mvhl1BHuyI.png)
 
 然后触发了 `setState`，组件树会重新渲染：
 
-![](image_DkfGR11DMg.png)
+![](./image/image_DkfGR11DMg.png)
 
-![](image_rI2SDrKB6W.png)
+![](./image/image_rI2SDrKB6W.png)
 
 也就是这样的流程：
 
@@ -427,9 +427,9 @@ match 完会 `pushState` 或者 `replaceState` 修改 `history`，然后更新 s
 
 而渲染到 `Outlet` 的时候，会从 `context` 中**取出当前需要渲染的组件来渲染：**
 
-![](image_COfuVgFv46.png)
+![](./image/image_COfuVgFv46.png)
 
-![](image_DXdy2TC5C4.png)
+![](./image/image_DXdy2TC5C4.png)
 
 这就是 `router` 初次渲染和点击 `link` 时的渲染流程。
 

@@ -66,10 +66,10 @@ btn.addEventListener('click', async () => {
 ```
 
 
-[1. 使用 ipcMain.handle 监听事件](<1. 使用 ipcMain.handle 监听事件.md> "1. 使用 ipcMain.handle 监听事件")
+[1. 使用 ipcMain.handle 监听事件](<./1. 使用 ipcMain.handle 监听事件/index.md> "1. 使用 ipcMain.handle 监听事件")
 
-[2. 通过预加载脚本暴露 ipcRenderer.invoke](<2. 通过预加载脚本暴露 ipcRenderer.invoke.md> "2. 通过预加载脚本暴露 ipcRenderer.invoke")
+[2. 通过预加载脚本暴露 ipcRenderer.invoke](<./2. 通过预加载脚本暴露 ipcRenderer.invok/2. 通过预加载脚本暴露 ipcRenderer.invoke.md> "2. 通过预加载脚本暴露 ipcRenderer.invoke")
 
 [3. 构建渲染器进程 UI](<IT/前端平台/Electron/专题/进程间通讯/模式 2：渲染器进程到主进程（双向）invoke-handl/3. 构建渲染器进程 UI/3. 构建渲染器进程 UI.md> "3. 构建渲染器进程 UI")
 
-[注意：对于旧方法](注意：对于旧方法.md "注意：对于旧方法")
+[注意：对于旧方法](./注意：对于旧方法/index.md "注意：对于旧方法")

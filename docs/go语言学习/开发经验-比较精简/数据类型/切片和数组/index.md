@@ -1,0 +1,7 @@
+# 切片和数组
+
+[切片重切片（reslicing）操作，用于调整切片的可见长度。](./切片重切片（reslicing）操作，用于调整切片的可见长度/index.md "切片重切片（reslicing）操作，用于调整切片的可见长度。")
+
+[切片扩容操作分解](./切片扩容操作分解/index.md "切片扩容操作分解")
+
+[make vs new](<./make vs new/index.md> "make vs new")

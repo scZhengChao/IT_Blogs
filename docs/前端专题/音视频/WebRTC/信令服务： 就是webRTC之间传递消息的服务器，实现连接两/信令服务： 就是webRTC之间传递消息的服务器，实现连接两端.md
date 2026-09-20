@@ -6,7 +6,7 @@
 
 **信令承载的作用就是各种转发；** 基于`webSocket`
 
-![](image_44uUnfbftR.png)
+![](./image/image_44uUnfbftR.png)
 
 ## 建立数据传输 RTCDataChannel过程
 

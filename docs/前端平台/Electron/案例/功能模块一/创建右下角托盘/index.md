@@ -1,0 +1,72 @@
+# 创建右下角托盘
+
+## 目录
+
+- [初始化系统托盘](#初始化系统托盘)
+
+对于一个桌面应用来说，右下角的系统托盘必不可少，electron应用的系统托盘使用`tray`这个api实现，下面是封装的专门处理系统托盘的文件
+`systemTray.js`
+
+```javascript 
+const { app, Tray, Menu } = require('electron')
+const path = require('path')
+const { getMainWindow, mainWindowIsExist } = require('./windows/mainWindow')
+
+let tray = null
+const iconPath = path.resolve(__dirname, './assets/logo.png')
+
+function initTray() {
+    tray = new Tray(iconPath)
+
+    const contextMenu = Menu.buildFromTemplate([
+        {
+            label: '打开应用', click: () => {
+                mainWindowIsExist() && getMainWindow().show()
+            }
+        },
+        { label: '退出应用', click: () => { app.quit() } },
+    ])
+    
+    tray.setToolTip('Harbour') // 设置鼠标悬停时显示的提示信息
+    tray.setContextMenu(contextMenu)
+    
+    tray.on('click', () => {
+        mainWindowIsExist() && getMainWindow().show()
+    })
+}
+
+function getTray() {
+    return tray
+}
+
+module.exports = { initTray, getTray }
+
+```
+
+
+`代码解析`
+
+1. `iconPath`获取托盘图标路径，这里注意一定要使用`path.resolve`生产`绝对路径`否则打包成安装包后会无法找到该文件导致报错
+2. `Menu.buildFromTemplate`是electron的一个方法，用来创建一个菜单，菜单的`label`是显示的内容，`click`是点击后触发的事件
+3. `tray.setToolTip('Harbour')`是用来设置鼠标悬停时显示的提示信息
+4. `tray.setContextMenu(contextMenu)`将使用Menu.buildFromTemplate创建出的菜单设置为托盘菜单
+5. `tray.on('click', () => {})` 当点击托盘的时候触发的事件，我们这里是将`mainWindow`show出来
+
+# `初始化系统托盘`
+
+系统托盘的初始化需要在`app.on('ready')`之后，因此我们将初始化系统托盘的方法封装好导出，在`app.on('ready')`中执行
+
+```javascript 
+const { app } = require('electron')
+const { createMainWindow } = require('./windows/mainWindow')
+const { initTray, getTray } = require('./systemTray')
+
+app.on('ready', () => {
+    createMainWindow()
+    initTray()
+})
+
+```
+
+
+[初始化系统托盘](./初始化系统托盘/index.md "初始化系统托盘")

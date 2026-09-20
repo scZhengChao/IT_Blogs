@@ -1,0 +1,476 @@
+# 拖拽
+
+## 目录
+
+- [最全的React拖拽排序组件库对比研究](#最全的React拖拽排序组件库对比研究)
+  - [React-dnd](#React-dnd)
+  - [react-beautiful-dnd](#react-beautiful-dnd)
+  - [dnd-kit](#dnd-kit)
+  - [react-sortable-hoc](#react-sortable-hoc)
+  - [三、兼容antd的table](#三兼容antd的table)
+  - [四、树兼容](#四树兼容)
+  - [五、移动端兼容](#五移动端兼容)
+  - [六、无限滚动](#六无限滚动)
+  - [七、总结对比](#七总结对比)
+  - [八、如何自己封装一个简单的拖拽组件](#八如何自己封装一个简单的拖拽组件)
+    - [一、HTML5拖放API](#一HTML5拖放API)
+    - [二、功能与架构设计](#二功能与架构设计)
+    - [三、代码](#三代码)
+    - [四、优化空间](#四优化空间)
+    - [五、在线代码](#五在线代码)
+
+# 最全的React拖拽排序组件库对比研究
+
+[ 最全的React拖拽排序组件库对比研究 大厂技术  高级前端  Node进阶点击上方 程序员成长指北，关注公众号回复1，加入高级Node交流群一、用 https://mp.weixin.qq.com/s/TlLkn1-MkX06-1lV-HpRiQ](https://mp.weixin.qq.com/s/TlLkn1-MkX06-1lV-HpRiQ " 最全的React拖拽排序组件库对比研究 大厂技术  高级前端  Node进阶点击上方 程序员成长指北，关注公众号回复1，加入高级Node交流群一、用 https://mp.weixin.qq.com/s/TlLkn1-MkX06-1lV-HpRiQ")
+
+基于react的拖拽功能，有这么几个比较流行的库：
+
+1. react-dnd
+2. react-beautiful-dnd
+3. dnd-kit
+4. react-sortable-hoc
+
+### React-dnd
+
+**（一）基本概念**
+
+- **Backend**：后端主要用来抹平浏览器差异，处理 DOM 事件，同时把 DOM 事件转换为 React DnD 内部的 redux action，你可以使用 HTML5 拖拽后端，也可以自定义 touch、mouse 事件模拟的后端实现
+- **Item**：用一个数据对象来描述当前被拖拽的元素，例如{ cardId: 42 }
+- **Type**：类似于 redux 里面的actions types 枚举常量，定义了应用程序里支持的拖拽类型
+- **Monitor：** 拖放本质上是有状态的。要么正在进行拖动操作，要么不在。要么有当前类型和当前项目，要么没有，React DnD 通过 Monitor 来存储这些状态并且提供查询
+- **Connector**：连接组件和 Backend ，可以让 Backend 获取到 DOM
+- **DragSource**：这是一个高阶组件，使用它包裹住你的组件使它变为拖拽源
+- **DropTarget**：这是一个高阶组件，使用它包裹住你的组件使它变为放置源
+- **DragDropContext**：包裹根组件，提供拖拽的上下文环境
+
+**（二）简单demo**
+
+![](https://mmbiz.qpic.cn/mmbiz_jpg/YBFV3Da0NwvONhibmLUq26DV49dRS5wAicJG2W1ia9A3DsrYYowGsgvlCZTQ3MobibqVQ3wy2p8ZOXQWiaKgoKktycg/640?wx_fmt=jpeg\&wxfrom=5\&wx_lazy=1\&wx_co=1)
+
+[*codesandbox.io/s/github/re…\[1\]*](http://codesandbox.io/s/github/re…\[1] "codesandbox.io/s/github/re…\[1]")
+
+### react-beautiful-dnd
+
+**（一）基本概念**
+
+![](https://mmbiz.qpic.cn/mmbiz_gif/YBFV3Da0NwvONhibmLUq26DV49dRS5wAichmYKqkkbfRXSx81CicTSib9XdbW0X4exqcr2hNahibGqUEv5mSyQ7Fxiaw/640?wx_fmt=gif\&wxfrom=5\&wx_lazy=1)
+
+![](https://mmbiz.qpic.cn/mmbiz_jpg/YBFV3Da0NwvONhibmLUq26DV49dRS5wAicDHUDXd1VoyM2oszOfZxa5m0XCMwmdGMRuApOM9iaawXMPd0YARaqQdA/640?wx_fmt=jpeg\&wxfrom=5\&wx_lazy=1\&wx_co=1)
+
+主要包含三个组件.
+
+1. DragDropContext : 用于包装拖拽根组件，Draggable和Droppable都需要包裹在DragDropContext内
+2. Draggable 用于包装你需要拖动的组件，使组件能够被拖拽（make it draggable）
+3. Droppable 用于包装接收拖拽元素的组件，使组件能够放置（dropped on it）
+
+**（二）简单demo**
+
+![](https://mmbiz.qpic.cn/mmbiz_jpg/YBFV3Da0NwvONhibmLUq26DV49dRS5wAiccribIZeA6JFTVvF4slUHpMXgDvicmUlHNgn1f4WVCmibw5d25qHsVcLOA/640?wx_fmt=jpeg\&wxfrom=5\&wx_lazy=1\&wx_co=1)
+
+![](https://mmbiz.qpic.cn/mmbiz_jpg/YBFV3Da0NwvONhibmLUq26DV49dRS5wAicZRXgNbR9oeuq57gkf3kNu3NY63ibO2jk6gZnoNYqHicc3544dq1SLE7Q/640?wx_fmt=jpeg\&wxfrom=5\&wx_lazy=1\&wx_co=1)
+
+[*https://juejin.cn/post/codesandbox.io/s/k260nyxq9v*](https://juejin.cn/post/codesandbox.io/s/k260nyxq9v "https://juejin.cn/post/codesandbox.io/s/k260nyxq9v")
+
+### dnd-kit
+
+**（一）、基本概念**
+
+![](https://mmbiz.qpic.cn/mmbiz_jpg/YBFV3Da0NwvONhibmLUq26DV49dRS5wAictic1fjsGHibzCPWCZiaR8kU8ENYMaQicowyKdL9z4zde6bozSApb1lxCBg/640?wx_fmt=jpeg\&wxfrom=5\&wx_lazy=1\&wx_co=1)
+
+![](https://mmbiz.qpic.cn/mmbiz_jpg/YBFV3Da0NwvONhibmLUq26DV49dRS5wAicYEJgsNI52z98U0GyofD82nmU9DHzfP6iavraMCHqyQuD7R4ER9KJNsg/640?wx_fmt=jpeg\&wxfrom=5\&wx_lazy=1\&wx_co=1)
+
+1、DndContext 用于包装拖拽根组件，Draggable和Droppable都需要包裹在DndContext 内 &#x20;
+2、Droppable 用于包装接收拖拽元素的组件，使组件能够放置 &#x20;
+3、Draggable 用于包装你需要拖动的组件，使组件能够被拖拽 &#x20;
+4、Sensors 用于检测不同的输入方法，以启动拖动操作、响应移动以及结束或取消操作，内置传感器有：
+
+- 指针
+- 鼠标
+- 触摸
+- 键盘
+
+5、Modifiers 可让您动态修改传感器检测到的运动坐标。它们可用于广泛的用例，例如：
+
+- 将运动限制在单个轴上
+- 限制可拖动节点容器的边界矩形的运动
+- 限制可拖动节点的滚动容器边界矩形的运动
+- 施加阻力或夹紧运动
+
+**（二）、简单demo**
+
+![](https://mmbiz.qpic.cn/mmbiz_jpg/YBFV3Da0NwvONhibmLUq26DV49dRS5wAickxzfxVO2ibUib5DocYx2PuINSRiaATbf2twm22ZlwgqhBtoDFibmEfI52A/640?wx_fmt=jpeg\&wxfrom=5\&wx_lazy=1\&wx_co=1)
+
+[*5fc05e08a4a65d0021ae0bf2-ffprtowwny.chromatic.com/iframe.html…\[2\]*](http://5fc05e08a4a65d0021ae0bf2-ffprtowwny.chromatic.com/iframe.html…\[2] "5fc05e08a4a65d0021ae0bf2-ffprtowwny.chromatic.com/iframe.html…\[2]")
+
+### react-sortable-hoc
+
+**（一）、基本概念**
+
+1、SortableContainer 拖拽排序的容器
+
+2、SortableElement 拖拽排序的元素
+
+**（二）、简单demo**
+
+![](https://mmbiz.qpic.cn/mmbiz_jpg/YBFV3Da0NwvONhibmLUq26DV49dRS5wAicjLUXxKQRLR9X8dZSe4YVJXVrhg1ic42wxX0cRiboqn5ocPFWdfuYLwrg/640?wx_fmt=jpeg\&wxfrom=5\&wx_lazy=1\&wx_co=1)
+
+[*https://juejin.cn/post/codesandbox.io/s/react-sortable-hoc-starter-o104x95y86*](https://juejin.cn/post/codesandbox.io/s/react-sortable-hoc-starter-o104x95y86 "https://juejin.cn/post/codesandbox.io/s/react-sortable-hoc-starter-o104x95y86")
+
+## 三、兼容antd的table
+
+如何配合antd的table组件进行使用？
+
+![](https://mmbiz.qpic.cn/mmbiz_jpg/YBFV3Da0NwvONhibmLUq26DV49dRS5wAicjkYicy8mtR5qMJjkBfQvxGmd7XiblFEHOyZR1xdkibBvGfpd3YBt9PHPg/640?wx_fmt=jpeg\&wxfrom=5\&wx_lazy=1\&wx_co=1)
+
+**react-dnd** 使用antd-table :codesandbox.io/s/tuo-zhuai…\[3]
+
+![](https://mmbiz.qpic.cn/mmbiz_jpg/YBFV3Da0NwvONhibmLUq26DV49dRS5wAicBXnpQaAqpyBIia4FxvMjonUclcSWMBGcnek8x9lM0rMxNFdElz55a5Q/640?wx_fmt=jpeg\&wxfrom=5\&wx_lazy=1\&wx_co=1)
+
+**react-sortable-hoc**使用antd-table:codesandbox.io/s/tuo-zhuai…\[4]
+
+![](https://mmbiz.qpic.cn/mmbiz_jpg/YBFV3Da0NwvONhibmLUq26DV49dRS5wAiczC2e2IjTOFdd4ETzIKMNMHtkeh6Bk4ekKDdJQ8TZiaGIbUf09WEQQQA/640?wx_fmt=jpeg\&wxfrom=5\&wx_lazy=1\&wx_co=1)
+
+**react-beautiful-dnd-antd-table**：[*codesandbox.io/s/react-bea…\[5\]*](http://codesandbox.io/s/react-bea…\[5] "codesandbox.io/s/react-bea…\[5]")
+
+**dnd-kit**：[stackblitz.com/edit/react-…\[6\]（该demo无法运行，github.com/clauderic/d…\[7\]](http://stackblitz.com/edit/react-…\[6]（该demo无法运行，github.com/clauderic/d…\[7] "stackblitz.com/edit/react-…\[6]（该demo无法运行，github.com/clauderic/d…\[7]") 根据这个issue说是antd-design自身的原因，
+
+![](https://mmbiz.qpic.cn/mmbiz_png/YBFV3Da0NwvONhibmLUq26DV49dRS5wAicVPNdkq3BqQcUcPgPIjZpz93ciaibHDjphcKhib3fC7l7uEC7txqic9hnmg/640?wx_fmt=png\&wxfrom=5\&wx_lazy=1\&wx_co=1)
+
+在底层增强了表格组件）
+
+## 四、树兼容
+
+antd自带的tree拖拽排序：[*codepen.io/huxinmin/em…\[8\]*](http://codepen.io/huxinmin/em…\[8] "codepen.io/huxinmin/em…\[8]")
+
+**自带的tree拖拽缺点是**
+
+1. 无法实现动态实时拖拽更换位置效果，必须拖拽结束后才发生位置变化
+2. 需要修改大量的自带的样式
+
+可以简单地把树看做是互相嵌套的列表。
+
+![](https://mmbiz.qpic.cn/mmbiz_jpg/YBFV3Da0NwvONhibmLUq26DV49dRS5wAiclg1iciachR1te2V1v6nm9b0Vr85KHAZJG0ufyXG0U39zWzcgicBFovFqA/640?wx_fmt=jpeg\&wxfrom=5\&wx_lazy=1\&wx_co=1)
+
+**react-dnd**：[*codesandbox.io/s/crazy-hoo…\[9\]*](http://codesandbox.io/s/crazy-hoo…\[9] "codesandbox.io/s/crazy-hoo…\[9]")
+
+![](https://mmbiz.qpic.cn/mmbiz_jpg/YBFV3Da0NwvONhibmLUq26DV49dRS5wAic0BvbKo3AgKUVBxf0EAMOYEict0QhhjWEarvcvOV9Gph0U1ZqZoZON0w/640?wx_fmt=jpeg\&wxfrom=5\&wx_lazy=1\&wx_co=1)
+
+**react-sortable-hoc：** codesandbox.io/embed/react…\[10]
+
+![](https://mmbiz.qpic.cn/mmbiz_jpg/YBFV3Da0NwvONhibmLUq26DV49dRS5wAicibjEwzBJMXibaZ7jnkNI9QXQL8kEYQoC5MgicoRtiaUDjxeqqu4HD17iaxQ/640?wx_fmt=jpeg\&wxfrom=5\&wx_lazy=1\&wx_co=1)
+
+**react-beautiful-dnd-antd-table:** codesandbox.io/embed/react…\[11]
+
+![](https://mmbiz.qpic.cn/mmbiz_jpg/YBFV3Da0NwvONhibmLUq26DV49dRS5wAicHwzVlnBf6b1HibibHvO0QzZSarjY0mia7pWQTxiaEzricCATgV02DwB8tXQ/640?wx_fmt=jpeg\&wxfrom=5\&wx_lazy=1\&wx_co=1)
+
+**dnd-kit：** codesandbox.io/embed/react…\[12]
+
+## 五、移动端兼容
+
+![](https://mmbiz.qpic.cn/mmbiz_jpg/YBFV3Da0NwvONhibmLUq26DV49dRS5wAicl3FkCsPH1IQJkwDuxf91XDScwO1icSaw8ACWfxPW986CjCRsI05vm2g/640?wx_fmt=jpeg\&wxfrom=5\&wx_lazy=1\&wx_co=1)
+
+**react-dnd**:codesandbox.io/embed/react…\[13]
+
+![](https://mmbiz.qpic.cn/mmbiz_jpg/YBFV3Da0NwvONhibmLUq26DV49dRS5wAiczC2e2IjTOFdd4ETzIKMNMHtkeh6Bk4ekKDdJQ8TZiaGIbUf09WEQQQA/640?wx_fmt=jpeg\&wxfrom=5\&wx_lazy=1\&wx_co=1)
+
+**react-beautiful-dnd-antd-table**：[codesandbox.io/s/react-bea…\[14\]](http://codesandbox.io/s/react-bea…\[14] "codesandbox.io/s/react-bea…\[14]")
+
+![](https://mmbiz.qpic.cn/mmbiz_jpg/YBFV3Da0NwvONhibmLUq26DV49dRS5wAicBXnpQaAqpyBIia4FxvMjonUclcSWMBGcnek8x9lM0rMxNFdElz55a5Q/640?wx_fmt=jpeg\&wxfrom=5\&wx_lazy=1\&wx_co=1)
+
+**react-sortable-hoc**使用antd-table:codesandbox.io/s/tuo-zhuai…\[15]
+
+![](https://mmbiz.qpic.cn/mmbiz_jpg/YBFV3Da0NwvONhibmLUq26DV49dRS5wAiclgHgMe4DxOYp76r2HyGdl6iaE6QBAGPzQ71Siahd6ReiaI4tib9icib8jObQ/640?wx_fmt=jpeg\&wxfrom=5\&wx_lazy=1\&wx_co=1)
+
+**dnd-kit:** 5fc05e08a4a65d0021ae0bf2-hbqxtqukzi.chromatic.com/iframe.html…\[16]
+
+## 六、无限滚动
+
+最佳的方法就是使用virtual-list，不过这几个库的支持情况也不一样。
+
+![](https://mmbiz.qpic.cn/mmbiz_jpg/YBFV3Da0NwvONhibmLUq26DV49dRS5wAicYich6sWibiaNguIug5MdO45KJ7KiaD23KRUyXxpZetPiboArXj0e0N9GKqQ/640?wx_fmt=jpeg\&wxfrom=5\&wx_lazy=1\&wx_co=1)
+
+**react-dnd:** codesandbox.io/embed/react…\[17]
+
+使用requestAnimationFrame进行性能优化，也可以配合其他的虚拟list库进行使用。
+
+![](https://mmbiz.qpic.cn/mmbiz_jpg/YBFV3Da0NwvONhibmLUq26DV49dRS5wAicxJ8VwEhUKMuNtzxDvUYDydXKK6ibNx7sK8gW3zxSS1k2TMrFibHbkv4w/640?wx_fmt=jpeg\&wxfrom=5\&wx_lazy=1\&wx_co=1)
+
+**dnd-kit:** 5fc05e08a4a65d0021ae0bf2-hbqxtqukzi.chromatic.com/iframe.html…\[18]
+
+这个demo使用了react-tiny-virtual-list\[19]库。
+
+![](https://mmbiz.qpic.cn/mmbiz_jpg/YBFV3Da0NwvONhibmLUq26DV49dRS5wAicjAMMry4IobFxJsYxLR2L84zTYpicxWoib5pY1PVR05Zc2sjnuSeBqDFg/640?wx_fmt=jpeg\&wxfrom=5\&wx_lazy=1\&wx_co=1)
+
+**react-sortable-hoc:** clauderic.github.io/react-sorta…\[20]
+
+使用了react-virtualized
+
+![](https://mmbiz.qpic.cn/mmbiz_jpg/YBFV3Da0NwvONhibmLUq26DV49dRS5wAic9Cc9bGNx1DV5Mzxiax50w6k32D6QwXfzPyFsuuIGdQMLErIqYyj0H7g/640?wx_fmt=jpeg\&wxfrom=5\&wx_lazy=1\&wx_co=1)
+
+**react-beautifule-dnd:** react-beautiful-dnd.netlify.app/iframe.html…\[21]
+
+使用了react-virtualized。
+
+## 七、总结对比
+
+- react-dnd\[22]
+- 文档齐全
+- github star星数16.4k
+- 维护更新良好，最近一月内有更新维护
+- 学习成本较高
+- 功能中等
+- 移动端兼容情况，良好
+- 示例数量中等
+- 概念较多，使用复杂
+- 组件间能解耦
+- react-beautiful-dnd\[23]
+- 文档齐全
+- github star星数24.8k
+- 维护更新良好，最近三月内有更新维护
+- 学习成本较高
+- 使用易度中等
+- 功能丰富
+- 移动端兼容情况，优秀
+- 示例数量丰富
+- 是为垂直和水平列表专门构建的更高级别的抽象，没有提供 react-dnd 提供的广泛功能
+- 外观漂亮，可访问性好，物理感知让人感觉更真实的在移动物体
+- 开发理念上是拖拽，不支持copy/clone
+- dnd-kit\[24]
+- 文档齐全
+- github star星数2.8k
+- 维护更新良好，最近一月内有更新维护
+- 学习成本中等
+- 使用易度中等
+- 功能中等
+- 移动端兼容情况，中等
+- 示例数量丰富
+- 未看到copy/clone
+- react-sortable-hoc\[25]
+- 文档较少
+- github star星数9.5k
+- 维护更新良好，最近三月内有更新维护
+- 学习成本较低
+- 使用易度较低
+- 功能简单
+- 移动端兼容情况，中等
+- 示例数量中等
+- 不支持拖拽到另一个容器中
+- 未看到copy/clone
+- 主要集中于排序功能，其余拖拽功能不丰富
+
+如果是要结合antd的table使用，最简单的组件是react-sortable-hoc，如果是无限滚动react-sortable-hoc示例虽然多，但是源码很少，可以考虑使用react-beautiful-dnd。如果是树形拖拽，要求不高的情况可以使用antd自带的tree，要求高点可以使用react-beautiful-dnd。兼容移动端，可以考虑使用react-sortable-hoc或者react-beautiful-dnd。
+
+## 八、如何自己封装一个简单的拖拽组件
+
+### 一、HTML5拖放API
+
+首先，为了使元素可以拖动，需要设置draggable属性：
+
+```react tsx 
+<img draggable="true">
+
+```
+
+
+然后有这么几个拖拽处理的函数：
+
+1. ondrag 拖放进行中
+2. ondragend/ondragstart 开始拖放和结束拖放
+3. ondragover 当元素或选中的文本被拖到一个目标目标上（每100毫秒触发一次）。
+4. ondragenter/ondragleave 源对象开始进入/离开目标对象范围内
+5. ondrop 源对象被拖放到目标对象上
+
+数据的传输，使用event.dataTransfer，它有如下这些api：
+
+- setData: 添加拖拽数据，这个方法接收两个参数，第一个参数是数据类型（可自定义），第二个参数是对应的数据
+- getData:反向操作，获取数据，只接收一个参数，即数据类型
+- clearData: 清除数据
+- setDragImage: 可自定义拖放过程中鼠标旁边的图像
+- effectAllowed: 属性指定拖放操作所允许的一个效果。*copy* 操作用于指示被拖动的数据将从当前位置复制到放置位置。\_move操作用于指定被拖动的数据将被移动。link\_操作用于指示将在源和放置位置之间创建某种形式的关系或连接。
+
+### 二、功能与架构设计
+
+1. 使用react-hooks
+2. 拖拽对象drag组件，拖放对象drop组件，拖拽上下文dndContext
+3. 支持移动端
+4. 支持排序
+
+### 三、代码
+
+Drag组件使用：
+
+```react tsx 
+<Drag index={1} id='1'>
+  <div>被包裹的可以拖拽的组件</div>
+</Drag>
+
+```
+
+
+Drag组件实现：
+
+```react tsx 
+import { FC } from "react";
+
+interface DragProps {
+  index: number;
+  id: string | number;
+}
+
+const Drag: FC<DragProps> = (props) => {
+  const startDrag = (ev) => {
+    // 传输数据
+    ev.dataTransfer.setData("index", props.index);
+    ev.dataTransfer.setData("id", props.id);
+  };
+
+  return (
+    <div draggable onDragStart={startDrag}>
+      {props.children}
+    </div>
+  );
+};
+
+export default Drag;
+
+```
+
+
+Drop组件使用：
+
+```react tsx 
+<Drop>
+ <Drag index={1} id='1'>
+   <div>被包裹的可以拖拽的组件</div>
+ </Drag>
+</Drop>
+
+```
+
+
+Drop组件实现：
+
+```react tsx 
+import { FC, useContext } from "react";
+import { Context } from "./DndContext";
+
+const Drop: FC = (props) => {
+  const { onDragOver, onDragEnd } = useContext(Context);
+  const dragOver = (ev) => {
+    ev.preventDefault();
+    if (onDragOver) onDragOver();
+  };
+
+  const drop = (ev) => {
+    // 获取数据
+    const oldIndex = ev.dataTransfer.getData("index");
+    // 获取拖拽结束时的Y轴坐标
+    const Y = ev.clientY;
+    // 简便计算，设定高度为20
+    // 我这里很偷懒，实际计算情况很复杂
+    //一般有两种实现思路，一种就是根据位置计算，另外一种就是给拖拽源设置可放置，然后获取
+    const height = 20;
+    const newIndex = Math.floor(Y / height);
+
+    if (oldIndex) {
+      if (onDragEnd) onDragEnd(Number(oldIndex), newIndex);
+    }
+  };
+
+  return (
+    <div onDragOver={dragOver} onDrop={drop}>
+      {props.children}
+    </div>
+  );
+};
+
+export default Drop;
+
+```
+
+
+DndContext组件使用：
+
+```react tsx 
+<DndContext
+        onDragEnd={(oldIndex, newIndex) => {
+          setData(arrayMove(data, oldIndex, newIndex));
+        }}
+        onDragOver={() => {}}
+      >
+        <Drop>
+          {data.map((i, index) => (
+            <Drag key={i.id} id={i.id} index={index}>
+              <div className="item">{i.text}</div>
+            </Drag>
+          ))}
+        </Drop>
+      </DndContext>
+
+```
+
+
+DndContext组件实现：
+
+```react tsx 
+import { createContext, FC } from "react";
+
+export interface TContext {
+  onDragOver: () => void;
+  onDragEnd: (oldIndex: number, newIndex: number) => void;
+}
+
+const Context = createContext<TContext>({} as TContext);
+
+const DndContext: FC<TContext> = (props) => {
+  return (
+    <Context.Provider
+      value={{
+        onDragEnd: (oldIndex, newIndex) => {
+          props.onDragEnd(oldIndex, newIndex);
+        },
+        onDragOver: () => {
+          props.onDragOver();
+        }
+      }}
+    >
+      {props.children}
+    </Context.Provider>
+  );
+};
+
+export { Context };
+export default DndContext;
+
+```
+
+
+如果需要处理移动端的兼容性，可以使用如下库：[github.com/timruffles/…\[26\]](http://github.com/timruffles/…\[26] "github.com/timruffles/…\[26]")
+
+### 四、优化空间
+
+1. 拖拽结束，所在位置计算
+2. 拖拽过程中实时交换位置
+3. 性能优化
+4. 异常处理等
+5. 拖拽过程样式
+6. 拖拽方向，x轴和Y轴
+7. 等等
+
+### 五、在线代码
+
+具体在线代码示例：[codesandbox.io/embed/react…\[27\]](http://codesandbox.io/embed/react…\[27] "codesandbox.io/embed/react…\[27]")
+
+![](https://mmbiz.qpic.cn/mmbiz_jpg/YBFV3Da0NwvONhibmLUq26DV49dRS5wAicDodC93oZ1o74Ets9C5Xssz4SbUq71PHXFibhs3u45tSKsUvqkj234Uw/640?wx_fmt=jpeg\&wxfrom=5\&wx_lazy=1\&wx_co=1)
+
+> 作者：青火
+>
+> 文章地址：[*https://juejin.cn/post/7062625911312646175*](https://juejin.cn/post/7062625911312646175 "https://juejin.cn/post/7062625911312646175")
+
+[react-dnd](./react-dnd/index.md "react-dnd")
+
+[react-sortable-hoc](./react-sortable-hoc/index.md "react-sortable-hoc")
+
+[react-beautiful-dnd](./react-beautiful-dnd/index.md "react-beautiful-dnd")
+
+[SortableJS](./SortableJS/index.md "SortableJS")

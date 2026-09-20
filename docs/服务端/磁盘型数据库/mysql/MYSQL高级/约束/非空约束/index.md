@@ -1,0 +1,56 @@
+# 非空约束
+
+## 目录
+
+- [作用：](#作用)
+- [语法：
+  ](#语法)
+- [练习](#练习)
+- [面试题：空+唯一 约束与主键约束区别?  ](#面试题空唯一-约束与主键约束区别)
+
+# 作用：
+
+被非空约束的字段，本列**数据不允许出现null（即空）数据**。插入数据如果该字段为空将回报错。
+
+语法：
+
+\*\*唯一约束需要使用关键字： \*\***`not null`**
+
+创建表时指定
+
+```sql 
+CREATE TABLE 表名 (
+    字段名 字段类型 NOT NULL,
+......
+);
+
+
+```
+
+
+已有表给指定字段添加唯一约束
+
+```sql 
+ALTER TABLE 表名 modify 字段 类型 NOT NULL
+
+```
+
+
+# 练习
+
+创建学生表, 包含字段(id, name),id设置为主键自增约束，name这一列设置唯一非空约束;
+参考：
+
+```sql 
+CREATE TABLE st2 (
+    id int PRIMARY KEY AUTO_INCREMENT,
+    name varchar(20) UNIQUE NOT NULL
+);
+
+
+```
+
+
+面试题：空+唯一 约束与主键约束区别?
+
+![](./image/image_shwTKp1uHS.png)

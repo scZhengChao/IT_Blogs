@@ -1,0 +1,41 @@
+# 开始多进程
+
+很多场景我们会同时爬取多个网址，为了在性能上得到保证可以采用[puppeteer-cluster](https://link.juejin.cn/?target=https://www.npmjs.com/package/puppeteer-cluster "puppeteer-cluster")来管理多个线程进行不同网站的处理，降低性能的损耗
+
+![](./image/image_NRjDikb0Qs.png)
+
+实例代码如下：
+
+```javascript 
+const { Cluster } = require("puppeteer-cluster");
+
+(async () => {
+  // Create a cluster with 2 workers
+  const cluster = await Cluster.launch({
+    concurrency: Cluster.CONCURRENCY_CONTEXT,
+    maxConcurrency: 3,
+    puppeteerOptions: {
+      headless: false,
+    },
+  });
+
+  // Define a task (in this case: screenshot of page)
+  await cluster.task(async ({ page, data: url }) => {
+    await page.goto(url);
+
+    const path = url.replace(/[^a-zA-Z]/g, "_") + ".png";
+    await page.screenshot({ path });
+    console.log(`Screenshot of ${url} saved: ${path}`);
+  });
+
+  // Add some pages to queue
+  cluster.queue("https://www.baidu.com");
+  cluster.queue("https://www.bing.com/?mkt=zh-CN");
+  cluster.queue("https://github.com/");
+
+  // Shutdown after everything is done
+  await cluster.idle();
+  await cluster.close();
+})();
+
+```
