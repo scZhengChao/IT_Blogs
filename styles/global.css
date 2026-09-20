@@ -432,11 +432,13 @@ body {
 }
 
 .reading-progress {
-  position: fixed;
-  top: var(--rp-nav-height);
+  /* Share the sticky navbar's movement, including native scroll rebound. */
+  position: absolute;
   right: 0;
+  /* Cover the navbar's 1px border instead of leaving a separate line below. */
+  bottom: -1px;
   left: 0;
-  z-index: 59;
+  z-index: 1;
   height: 2px;
   background: var(--rp-c-brand);
   pointer-events: none;

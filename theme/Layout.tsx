@@ -4,8 +4,9 @@ import GlobalBreadcrumb from '../components/GlobalBreadcrumb';
 import { PageContextRail } from '../components/PageContextRail';
 
 /**
- * Uses a CSS scroll-driven animation for reading progress, avoiding per-scroll
- * React updates on long documents.
+ * Animates reading progress with CSS, avoiding per-scroll React updates.
+ * The navbar slot keeps the bar in the same sticky container as the header so
+ * browser overscroll moves both together instead of opening a visible gap.
  */
 function ReadingProgress() {
   return (
@@ -17,19 +18,15 @@ function ReadingProgress() {
 }
 
 /**
- * Places route navigation inside the document column. This avoids the global
- * sticky bar covering the main navigation and keeps the content width aligned
- * with every article.
+ * Anchors reading progress inside the navbar and keeps breadcrumbs aligned
+ * with the document column. The title slot sits inside the sticky header,
+ * unlike beforeNav/afterNav, which would leave the bar outside that container.
  */
 export function Layout() {
   return (
     <BaseLayout
-      beforeDocContent={(
-        <>
-          <ReadingProgress />
-          <GlobalBreadcrumb />
-        </>
-      )}
+      afterNavTitle={<ReadingProgress />}
+      beforeDocContent={<GlobalBreadcrumb />}
       beforeOutline={<PageContextRail />}
     />
   );
