@@ -41,7 +41,7 @@ docs/
 
 ## 图片和附件
 
-图片、PDF、压缩包等文件必须放在对应文章附近的 `assets/` 目录。
+图片必须放在对应文章附近的 `assets/` 目录。PDF、压缩包、代码示例等下载附件统一托管在 GitHub Releases。
 
 推荐直接使用 WebP 图片。如果加入了 PNG，可以执行：
 
@@ -54,6 +54,26 @@ npm run optimize:images
 - 将 `docs/` 中的 PNG 转换为 WebP。
 - 更新 Markdown 中对应的本地图片引用。
 - 删除转换成功的 PNG。
+
+### 将下载附件迁移到 GitHub Releases
+
+Release 使用 `assets-v1` 标签。批量上传时，可以将附件临时汇总到项目根目录的
+`release-assets/assets-v1/`，该目录已被 Git 忽略。
+
+在 Release 编辑页面上传附件并更新 Release 后，先检查远端附件与本地内容：
+
+```bash
+npm run migrate:attachments
+```
+
+确认数量、摘要和引用均匹配后执行：
+
+```bash
+npm run migrate:attachments -- --apply
+```
+
+脚本按照 SHA-256 匹配 GitHub 自动改名后的附件，更新 Markdown 下载链接，并删除
+已经迁移的本地附件。上传完成前不要删除 `docs/` 中的源文件。
 
 不要在文件或目录名中使用 `!`、`'`、`?`、`#` 等特殊字符。
 

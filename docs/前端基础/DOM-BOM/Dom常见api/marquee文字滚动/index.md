@@ -8,7 +8,7 @@
 ```
 
 
-[marquee.rar](<../assets/HTML之marquee(文字滚动)详解 - 幕三少 - 博/file/marquee__O5hxnOVhZ.rar> "marquee.rar")
+[marquee.rar](<https://github.com/scZhengChao/IT_Blogs/releases/download/assets-v1/marquee__O5hxnOVhZ.rar> "marquee.rar")
 
 ```纯文本 
  vue 方案： 

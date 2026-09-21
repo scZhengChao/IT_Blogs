@@ -5,7 +5,7 @@
 - [1. 软件安装](#1-软件安装)
   - [1.1 软件安装方式](#11-软件安装方式)
 
-[Linux-Day02.md](./assets/file/Linux-Day02_VYmM4YAmUc.md "Linux-Day02.md")
+[Linux-Day02.md](https://github.com/scZhengChao/IT_Blogs/releases/download/assets-v1/Linux-Day02_VYmM4YAmUc.md "Linux-Day02.md")
 
 ## 1. 软件安装
 

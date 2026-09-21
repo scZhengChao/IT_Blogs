@@ -52,4 +52,4 @@
 
 改写 pushState  和 replaceState
 
-[index.html](./assets/file/index_L73Zh75Gc0.html "index.html")
+[index.html](https://github.com/scZhengChao/IT_Blogs/releases/download/assets-v1/index_L73Zh75Gc0.html "index.html")

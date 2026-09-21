@@ -22,7 +22,7 @@ android 手机如果要不使用数据线直接adb链接；就需要安装一个
 
 开源应用仓库 F-Droid
 
-[F-Droid.apk](./assets/file/F-Droid_z0KxhgpNQ2.apk "F-Droid.apk")
+[F-Droid.apk](https://github.com/scZhengChao/IT_Blogs/releases/download/assets-v1/F-Droid_z0KxhgpNQ2.apk "F-Droid.apk")
 
 Google Play商店
 

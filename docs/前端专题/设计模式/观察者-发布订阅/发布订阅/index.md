@@ -9,7 +9,7 @@
 
 ## pub-sub
 
-[pubsub.js](./assets/file/pubsub_wpbPKp48Ah.js "pubsub.js")
+[pubsub.js](https://github.com/scZhengChao/IT_Blogs/releases/download/assets-v1/pubsub_wpbPKp48Ah.js "pubsub.js")
 
 ```typescript 
 // clearAllSubscriptions: ƒ clearAllSubscriptions()

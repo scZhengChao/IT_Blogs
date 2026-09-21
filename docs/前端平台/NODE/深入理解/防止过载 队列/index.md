@@ -1,8 +1,8 @@
 # 防止过载 队列
 
-[bagpipe.js](./assets/file/bagpipe_heJoD8qvtk.js "bagpipe.js")
+[bagpipe.js](https://github.com/scZhengChao/IT_Blogs/releases/download/assets-v1/bagpipe_heJoD8qvtk.js "bagpipe.js")
 
-[bagpipe-source.js](./assets/file/bagpipe-source_ddVMiRehvf.js "bagpipe-source.js")
+[bagpipe-source.js](https://github.com/scZhengChao/IT_Blogs/releases/download/assets-v1/bagpipe-source_ddVMiRehvf.js "bagpipe-source.js")
 
 1.bagpipe的解决方案
 

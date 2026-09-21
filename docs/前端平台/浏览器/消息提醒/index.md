@@ -118,4 +118,4 @@ options
 | sticky | 布尔值。是否通知具有粘性，这样用户不太容易清除通知。默认false, 表示没有粘性。根据我自己的猜测，应该和position的sticky属性值类似。 |
 | ------ | --------------------------------------------------------------------------- |
 
-[index.vue](./assets/file/index_n_0DRJZEij.vue "index.vue")
+[index.vue](https://github.com/scZhengChao/IT_Blogs/releases/download/assets-v1/index_n_0DRJZEij.vue "index.vue")

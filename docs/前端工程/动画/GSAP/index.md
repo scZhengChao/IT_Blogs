@@ -14,15 +14,15 @@
 
 [ GSAP 中文教程 中文文档 ｜官方文档 官方教程翻译 ｜好奇代码出品  好奇代码的三木整理的GSAP官方教程文档的翻译网站 | GSAP是前端领域最好的动效框架，能快速实现很多高级复杂的动效交互效果，被众多优秀的开发者和设计师所喜爱，在大量获奖的网站作品中被使用！ https://gsap.framer.wiki/stated](https://gsap.framer.wiki/stated " GSAP 中文教程 中文文档 ｜官方文档 官方教程翻译 ｜好奇代码出品  好奇代码的三木整理的GSAP官方教程文档的翻译网站 | GSAP是前端领域最好的动效框架，能快速实现很多高级复杂的动效交互效果，被众多优秀的开发者和设计师所喜爱，在大量获奖的网站作品中被使用！ https://gsap.framer.wiki/stated")
 
-[greenSock简介.html](./assets/file/greenSock简介_pnUdzVWBjE.html "greenSock简介.html")
+[greenSock简介.html](https://github.com/scZhengChao/IT_Blogs/releases/download/assets-v1/greenSock._pnUdzVWBjE.html "greenSock简介.html")
 
-[greenSock + vue  对数字 的递增.html](<./assets/file/greenSock + vue  对数字 的递增_1eV1LQLi5u.html> "greenSock + vue  对数字 的递增.html")
+[greenSock + vue  对数字 的递增.html](<https://github.com/scZhengChao/IT_Blogs/releases/download/assets-v1/greenSock.+.vue._1eV1LQLi5u.html> "greenSock + vue  对数字 的递增.html")
 
-[TweenMax.min.js](./assets/file/TweenMax.min_nBKGVJAXlD.js "TweenMax.min.js")
+[TweenMax.min.js](https://github.com/scZhengChao/IT_Blogs/releases/download/assets-v1/TweenMax.min_nBKGVJAXlD.js "TweenMax.min.js")
 
-[greenSock + tween + color + vue.html](<./assets/file/greenSock + tween + color + vue_rCMCElwrSu.html> "greenSock + tween + color + vue.html")
+[greenSock + tween + color + vue.html](<https://github.com/scZhengChao/IT_Blogs/releases/download/assets-v1/greenSock.+.tween.+.color.+.vue_rCMCElwrSu.html> "greenSock + tween + color + vue.html")
 
-[greenSock + vue + svg.html](<./assets/file/greenSock + vue + svg_Xk456L0GSW.html> "greenSock + vue + svg.html")
+[greenSock + vue + svg.html](<https://github.com/scZhengChao/IT_Blogs/releases/download/assets-v1/greenSock.+.vue.+.svg_Xk456L0GSW.html> "greenSock + vue + svg.html")
 
 # install
 

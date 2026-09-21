@@ -185,14 +185,14 @@ this.updateDomDataCache({
 
     2. 再基于这个滚动距离进行相应计算，得知相应子元素已经被滚动到视窗外，并且判断是否应该将这些离开视窗的子元素移动到末尾，从而再对它们进行 `translate `的设置来移动到末尾。这就像是一个循环队列一样，随着滚动的进行，顶部元素先出视窗，但又将移动到末尾，从而实现无限下拉。
 
-[longList.html](./assets/file/longList_NO3WQEsURs.html "longList.html")
+[longList.html](https://github.com/scZhengChao/IT_Blogs/releases/download/assets-v1/longList_NO3WQEsURs.html "longList.html")
 
 这个文件有个严重的问题；会反复触发**IntersectionObserver监听；没有解决**
 
 **最后看下作者源码**：
 
-[listScroll-master.7z](./assets/file/listScroll-master_omu7uRgywq.7z "listScroll-master.7z")
+[listScroll-master.7z](https://github.com/scZhengChao/IT_Blogs/releases/download/assets-v1/listScroll-master_omu7uRgywq.7z "listScroll-master.7z")
 
 看了作者源码后修改的：
 
-[longList.html](./assets/file/longList_JHjQUnEQ7I.html "longList.html")
+[longList.html](https://github.com/scZhengChao/IT_Blogs/releases/download/assets-v1/longList_JHjQUnEQ7I.html "longList.html")

@@ -30,7 +30,7 @@
 
 免费的热更更新⽅方案：微软的CodePush，RN中⽂文⽹网的Pushy
 
-[React Native课程大纲-Day4【瑞客论坛 www.ruike1.com】.pdf](<./assets/file/React Native课程大纲-Day4【瑞客论坛 www.ruike1.com】_PzDMhxj.pdf> "React Native课程大纲-Day4【瑞客论坛 www.ruike1.com】.pdf")
+[React Native课程大纲-Day4【瑞客论坛 www.ruike1.com】.pdf](<https://github.com/scZhengChao/IT_Blogs/releases/download/assets-v1/React.Native.-Day4.www.ruike1.com._PzDMhxj.pdf> "React Native课程大纲-Day4【瑞客论坛 www.ruike1.com】.pdf")
 
 [ ReactNative热更新发布应用(方式二CodePush:react-native-code-push) 前言：这里发布应用是配置热更新成功的前提下\~ 注：我们所说的根目录指的是package.json所在的目录\~ 先看一下流程图： 流程： 在根目录里右键-新建文件夹-bundl... https://www.jianshu.com/p/34d419448f44](https://www.jianshu.com/p/34d419448f44 " ReactNative热更新发布应用(方式二CodePush:react-native-code-push) 前言：这里发布应用是配置热更新成功的前提下~ 注：我们所说的根目录指的是package.json所在的目录~ 先看一下流程图： 流程： 在根目录里右键-新建文件夹-bundl... https://www.jianshu.com/p/34d419448f44")
 

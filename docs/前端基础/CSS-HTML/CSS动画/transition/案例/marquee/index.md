@@ -7,8 +7,8 @@
 
 ## **marqueen  上下多行轮播**
 
-[setIimeMarqueen.html](./assets/file/setIimeMarqueen_TcexBvp72m.html "setIimeMarqueen.html")
+[setIimeMarqueen.html](https://github.com/scZhengChao/IT_Blogs/releases/download/assets-v1/setIimeMarqueen_TcexBvp72m.html "setIimeMarqueen.html")
 
 ## transitionend 实现多行轮播
 
-[setIimeMarqueen.html](./assets/file/setIimeMarqueen_C5vOIJT9Ul.html "setIimeMarqueen.html")
+[setIimeMarqueen.html](https://github.com/scZhengChao/IT_Blogs/releases/download/assets-v1/setIimeMarqueen_C5vOIJT9Ul.html "setIimeMarqueen.html")

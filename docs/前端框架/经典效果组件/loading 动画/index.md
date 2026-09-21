@@ -76,7 +76,7 @@
 
 [使用 CSS3 实现超炫的 Loading（加载）动画效果 - 梦想天空（山边小溪） - 博客园 SpinKit 是一套网页动画效果，包含8种基于 CSS3 实现的很炫的加载动画。借助 CSS3 Animation 的强大功能来创建平滑，易于定制的动画。SpinKit 的目标不是提供一个每个浏览器 https://www.cnblogs.com/lhb25/p/loading-spinners-animated-with-css3.html](https://www.cnblogs.com/lhb25/p/loading-spinners-animated-with-css3.html "使用 CSS3 实现超炫的 Loading（加载）动画效果 - 梦想天空（山边小溪） - 博客园 SpinKit 是一套网页动画效果，包含8种基于 CSS3 实现的很炫的加载动画。借助 CSS3 Animation 的强大功能来创建平滑，易于定制的动画。SpinKit 的目标不是提供一个每个浏览器 https://www.cnblogs.com/lhb25/p/loading-spinners-animated-with-css3.html")
 
-[28个纯css3 加载loading动画特效.zip](<./assets/file/28个纯css3 加载loading动画特效_IZHzuvwOxY.zip> " 28个纯css3 加载loading动画特效.zip")
+[28个纯css3 加载loading动画特效.zip](<https://github.com/scZhengChao/IT_Blogs/releases/download/assets-v1/28.css3.loading._IZHzuvwOxY.zip> " 28个纯css3 加载loading动画特效.zip")
 
 ![](./assets/image/image_w03_Z3yCyn.webp)
 

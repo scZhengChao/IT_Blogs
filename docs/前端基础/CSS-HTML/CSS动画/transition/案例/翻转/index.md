@@ -95,4 +95,4 @@ div.flip-3d figure:after {
 ```
 
 
-[2d3d.html](./assets/file/2d3d_PdUn0z7czs.html "2d3d.html")
+[2d3d.html](https://github.com/scZhengChao/IT_Blogs/releases/download/assets-v1/2d3d_PdUn0z7czs.html "2d3d.html")

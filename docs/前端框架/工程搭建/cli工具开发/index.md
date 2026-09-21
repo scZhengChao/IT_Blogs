@@ -382,8 +382,8 @@ views下面新增一个文件，执行`kkb refresh`命令，我们会看到`rout
 
 ## 代码
 
-[app-cli.zip](./assets/file/app-cli_6TwafHUhWD.zip " app-cli.zip")
+[app-cli.zip](https://github.com/scZhengChao/IT_Blogs/releases/download/assets-v1/app-cli_6TwafHUhWD.zip " app-cli.zip")
 
 或者
 
-[vue-auto-router-cli.zip](./assets/file/vue-auto-router-cli_jeVmRxHdoY.zip " vue-auto-router-cli.zip")
+[vue-auto-router-cli.zip](https://github.com/scZhengChao/IT_Blogs/releases/download/assets-v1/vue-auto-router-cli_jeVmRxHdoY.zip " vue-auto-router-cli.zip")

@@ -6,4 +6,4 @@
 
 ![](./assets/image/image_54GgwPEHB3.webp)
 
-[cleanLastUpdated.bat](./assets/file/cleanLastUpdated_vMhlSeYbCl.bat "cleanLastUpdated.bat")
+[cleanLastUpdated.bat](https://github.com/scZhengChao/IT_Blogs/releases/download/assets-v1/cleanLastUpdated_vMhlSeYbCl.bat "cleanLastUpdated.bat")

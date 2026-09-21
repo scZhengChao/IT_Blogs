@@ -39,9 +39,9 @@
 ```
 
 
-[editor\_dbclick.html](./assets/file/editor_dbclick_1XMPTQ7UK-.html "editor_dbclick.html")
+[editor\_dbclick.html](https://github.com/scZhengChao/IT_Blogs/releases/download/assets-v1/editor_dbclick_1XMPTQ7UK-.html "editor_dbclick.html")
 
-[tabs-edit.html](./assets/file/tabs-edit_kL7bDMZkAQ.html "tabs-edit.html")
+[tabs-edit.html](https://github.com/scZhengChao/IT_Blogs/releases/download/assets-v1/tabs-edit_kL7bDMZkAQ.html "tabs-edit.html")
 
 **二：div模拟输入框（**
 
@@ -219,4 +219,4 @@
 ```
 
 
-[drag1.html](./assets/file/drag1_AMYxFvb2KE.html "drag1.html")
+[drag1.html](https://github.com/scZhengChao/IT_Blogs/releases/download/assets-v1/drag1_AMYxFvb2KE.html "drag1.html")

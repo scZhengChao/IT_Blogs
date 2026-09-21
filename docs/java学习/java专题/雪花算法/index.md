@@ -7,7 +7,7 @@
   - [3.2 导入雪花算法工具类](#32-导入雪花算法工具类)
 - [配置使用](#配置使用)
 
-[雪花算法简单讲解.mhtml](./assets/file/雪花算法简单讲解_168_oDzfpV.mhtml "雪花算法简单讲解.mhtml")
+[雪花算法简单讲解.mhtml](https://github.com/scZhengChao/IT_Blogs/releases/download/assets-v1/_168_oDzfpV.mhtml "雪花算法简单讲解.mhtml")
 
 ![](./assets/image/雪花ID简介_ojXBWIaXdg.webp)
 

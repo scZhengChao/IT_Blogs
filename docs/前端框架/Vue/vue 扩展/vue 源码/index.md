@@ -1,8 +1,8 @@
 # vue 源码
 
-[笔记\_vue04\_源码串讲【瑞客论坛 www.ruike1.com】.pdf](<./assets/file/笔记_vue04_源码串讲【瑞客论坛 www.ruike1.com】_tq82UwVeG7.pdf> "笔记_vue04_源码串讲【瑞客论坛 www.ruike1.com】.pdf")
+[笔记\_vue04\_源码串讲【瑞客论坛 www.ruike1.com】.pdf](<https://github.com/scZhengChao/IT_Blogs/releases/download/assets-v1/_vue04_.www.ruike1.com._tq82UwVeG7.pdf> "笔记_vue04_源码串讲【瑞客论坛 www.ruike1.com】.pdf")
 
-[笔记\_vue05\_源码串讲2【瑞客论坛 www.ruike1.com】.pdf](<./assets/file/笔记_vue05_源码串讲2【瑞客论坛 www.ruike1.com】_YHBluE95tg.pdf> "笔记_vue05_源码串讲2【瑞客论坛 www.ruike1.com】.pdf")
+[笔记\_vue05\_源码串讲2【瑞客论坛 www.ruike1.com】.pdf](<https://github.com/scZhengChao/IT_Blogs/releases/download/assets-v1/_vue05_.2.www.ruike1.com._YHBluE95tg.pdf> "笔记_vue05_源码串讲2【瑞客论坛 www.ruike1.com】.pdf")
 
 ```纯文本 
  数据劫持  没有你想的那么简单 ； 但是大体原理是相同 ； 

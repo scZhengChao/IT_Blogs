@@ -9,6 +9,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "check:docs": "node scripts/check-docs.mjs",
+    "migrate:attachments": "node scripts/migrate-attachments-to-release.mjs",
     "optimize:images": "node scripts/convert-png-to-webp.mjs",
     "predev": "npm run check:docs",
     "dev": "CHOKIDAR_USEPOLLING=1 CHOKIDAR_INTERVAL=500 rspress dev",

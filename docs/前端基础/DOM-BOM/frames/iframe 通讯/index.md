@@ -36,7 +36,7 @@ iframe常用属性:
 
 # 案例
 
-[testLib.rar](./assets/file/testLib_-EoCMHVK0B.rar "testLib.rar")
+[testLib.rar](https://github.com/scZhengChao/IT_Blogs/releases/download/assets-v1/testLib_-EoCMHVK0B.rar "testLib.rar")
 
 postMessage是html5引入的API,postMessage()方法允许来自不同源的脚本采用异步方式进行有效的通信,可以实现跨文本文档,多窗口,跨域消息传递.多用于窗口间数据通信,这也使它成为跨域通信的一种有效的解决方案.
 

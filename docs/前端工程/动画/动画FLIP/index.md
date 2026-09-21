@@ -385,9 +385,9 @@ if (isLastRectOverflow && isCurrentRectOverflow) {
 
 [https://github.com/MinJieLiu/react-flip-demo](https://github.com/MinJieLiu/react-flip-demo "https://github.com/MinJieLiu/react-flip-demo") 其中里面的 `Flipper` 组件目录可以直接拷贝到项目中使用，100 来行代码相当轻量 🤭。
 
-[Flipper.tsx](./assets/file/Flipper_rSQx59wZHM.tsx " Flipper.tsx")
+[Flipper.tsx](https://github.com/scZhengChao/IT_Blogs/releases/download/assets-v1/Flipper_rSQx59wZHM.tsx " Flipper.tsx")
 
-[Flipped.tsx](./assets/file/Flipped_wwIpswHAOv.tsx " Flipped.tsx")
+[Flipped.tsx](https://github.com/scZhengChao/IT_Blogs/releases/download/assets-v1/Flipped_wwIpswHAOv.tsx " Flipped.tsx")
 
 注意：`Web Animation` 只兼容 `Chrome 75` 以上，兼容古董浏览器可以考虑 Web Animations API polyfill\[7]。
 

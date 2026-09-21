@@ -181,7 +181,7 @@ console.log('script start')
 
 > 加深理解
 
-[补充材料【瑞客论坛 www.ruike1.com】.pdf](<./assets/file/补充材料【瑞客论坛 www.ruike1.com】_8gOEyx3RKD.pdf> "补充材料【瑞客论坛 www.ruike1.com】.pdf")
+[补充材料【瑞客论坛 www.ruike1.com】.pdf](<https://github.com/scZhengChao/IT_Blogs/releases/download/assets-v1/www.ruike1.com._ZdRZOFfx1-.pdf> "补充材料【瑞客论坛 www.ruike1.com】.pdf")
 
 ![  ](./assets/image/4c085d1590eda022f08197e03331b075_D5VhqSwCwH.webp "  ")
 

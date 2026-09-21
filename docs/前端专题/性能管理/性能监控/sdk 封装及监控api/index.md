@@ -1,6 +1,6 @@
 # sdk 封装及监控api
 
-[rollup-monitor-sdk.zip](./assets/file/rollup-monitor-sdk_y4Hr9byIdP.zip "rollup-monitor-sdk.zip")
+[rollup-monitor-sdk.zip](https://github.com/scZhengChao/IT_Blogs/releases/download/assets-v1/rollup-monitor-sdk_y4Hr9byIdP.zip "rollup-monitor-sdk.zip")
 
 ```纯文本 
      此项目 rollup打包  es6语法, 完全拆分 别人开源项目, 并非最终版, 并非直接使用, 第一次试水, 具有参考价值. 不许使用babel   开源地址:` https://github.com/a597873885/webfunny_monitor    webfunny_monitor

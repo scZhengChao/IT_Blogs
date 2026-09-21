@@ -2,7 +2,7 @@
 
 开课吧的 课件 参考：
 
-[笔记\_vue07\_项目架构实践2【瑞客论坛 www.ruike1.com】.pdf](<./assets/file/笔记_vue07_项目架构实践2【瑞客论坛 www.ruike1.com】_5HRowH7_GH.pdf> "笔记_vue07_项目架构实践2【瑞客论坛 www.ruike1.com】.pdf")
+[笔记\_vue07\_项目架构实践2【瑞客论坛 www.ruike1.com】.pdf](<https://github.com/scZhengChao/IT_Blogs/releases/download/assets-v1/_vue07_.2.www.ruike1.com._EEonJsI3No.pdf> "笔记_vue07_项目架构实践2【瑞客论坛 www.ruike1.com】.pdf")
 
 **传统的web开发**
 

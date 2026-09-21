@@ -7,9 +7,9 @@
 ```
 
 
-[officemate - mongo-node.7z](<./assets/file/officemate - mongo-node_eEQVgnlvVv.7z> "officemate - mongo-node.7z")
+[officemate - mongo-node.7z](<https://github.com/scZhengChao/IT_Blogs/releases/download/assets-v1/officemate.-.mongo-node_eEQVgnlvVv.7z> "officemate - mongo-node.7z")
 
-[officemate.7z](./assets/file/officemate_kFYJDbRwXD.7z "officemate.7z")
+[officemate.7z](https://github.com/scZhengChao/IT_Blogs/releases/download/assets-v1/officemate_kFYJDbRwXD.7z "officemate.7z")
 
 ```纯文本 
  //gulpfile.js   全自动 基于项目的设置 

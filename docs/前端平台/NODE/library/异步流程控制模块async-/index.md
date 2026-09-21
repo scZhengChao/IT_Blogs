@@ -289,7 +289,7 @@ q.drain = function() {
 ```
 
 
-[async.js](./assets/file/async_dM6iA6nGdr.js "async.js")
+[async.js](https://github.com/scZhengChao/IT_Blogs/releases/download/assets-v1/async_dM6iA6nGdr.js "async.js")
 
 # **step**
 
@@ -408,4 +408,4 @@ Step(
 ```
 
 
-[step.js](./assets/file/step_QMCLHdplaK.js "step.js")
+[step.js](https://github.com/scZhengChao/IT_Blogs/releases/download/assets-v1/step_QMCLHdplaK.js "step.js")

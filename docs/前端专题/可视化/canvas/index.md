@@ -16,4 +16,4 @@
 
 [ 郑超/drawCanvas Gitee.com（码云） 是 OSCHINA.NET 推出的代码托管平台，支持 Git 和 SVN，提供免费的私有仓库托管。目前已有超过 1350万的开发者选择 Gitee。 https://gitee.com/changtuizhengchao/draw-canvas](https://gitee.com/changtuizhengchao/draw-canvas " 郑超/drawCanvas Gitee.com（码云） 是 OSCHINA.NET 推出的代码托管平台，支持 Git 和 SVN，提供免费的私有仓库托管。目前已有超过 1350万的开发者选择 Gitee。 https://gitee.com/changtuizhengchao/draw-canvas")
 
-[demo.zip](./assets/file/demo_rGlaO3KDlY.zip " demo.zip")
+[demo.zip](https://github.com/scZhengChao/IT_Blogs/releases/download/assets-v1/demo_rGlaO3KDlY.zip " demo.zip")

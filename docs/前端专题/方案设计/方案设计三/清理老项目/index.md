@@ -438,7 +438,7 @@ const usedExports = compilation.chunkGraph.moduleGraph.getUsedExports(module, ch
 
 # 代码
 
-[Demo.zip](./assets/file/Demo_f3PeA6pjTV.zip " Demo.zip")
+[Demo.zip](https://github.com/scZhengChao/IT_Blogs/releases/download/assets-v1/Demo_f3PeA6pjTV.zip " Demo.zip")
 
 [在源码中去除dead code\_副本](<./在源码中去除dead code_副本/index.md> "在源码中去除dead code_副本")
 

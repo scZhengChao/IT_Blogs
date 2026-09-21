@@ -14,7 +14,7 @@
 
 > github源码
 
-[mxgraph-master.zip](./assets/file/mxgraph-master_-opHmCAprA.zip " mxgraph-master.zip")
+[mxgraph-master.zip](https://github.com/scZhengChao/IT_Blogs/releases/download/assets-v1/mxgraph-master_-opHmCAprA.zip " mxgraph-master.zip")
 
 # 参考资料
 
@@ -22,9 +22,9 @@
 
 # demo
 
-[mxgraph-demos-master.zip](./assets/file/mxgraph-demos-master_YhVs3QipNS.zip " mxgraph-demos-master.zip")
+[mxgraph-demos-master.zip](https://github.com/scZhengChao/IT_Blogs/releases/download/assets-v1/mxgraph-demos-master_YhVs3QipNS.zip " mxgraph-demos-master.zip")
 
-[pokemon-diagram-master.zip](./assets/file/pokemon-diagram-master_S6EjRnkZ_X.zip " pokemon-diagram-master.zip")
+[pokemon-diagram-master.zip](https://github.com/scZhengChao/IT_Blogs/releases/download/assets-v1/pokemon-diagram-master_S6EjRnkZ_X.zip " pokemon-diagram-master.zip")
 
 [graph模块](./Graph-API/index.md "graph模块")
 

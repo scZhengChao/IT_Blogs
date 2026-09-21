@@ -4,6 +4,6 @@
 
 ![](./assets/image/image_Qgc_qAOdiS.webp)
 
-[Centos7安装Docker.md](./assets/file/Centos7安装Docker_0ydzAWK594.md "Centos7安装Docker.md")
+[Centos7安装Docker.md](https://github.com/scZhengChao/IT_Blogs/releases/download/assets-v1/Centos7.Docker_wnppBqXrzw.md "Centos7安装Docker.md")
 
 [换源](./换源/index.md "换源")

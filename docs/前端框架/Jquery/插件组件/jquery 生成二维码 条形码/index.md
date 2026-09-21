@@ -167,7 +167,7 @@ function generateQRCode(rendermethod, picwidth, picheight, url) {
 
 # 六位验证码
 
-[6为验证码.html](./assets/file/6为验证码_mDffqrezIF.html "6为验证码.html")
+[6为验证码.html](https://github.com/scZhengChao/IT_Blogs/releases/download/assets-v1/6._mDffqrezIF.html "6为验证码.html")
 
 ```javascript 
  如何修改别忘了在引入之前还要引入 qrcode.js 
@@ -389,4 +389,4 @@ function generateQRCode(rendermethod, picwidth, picheight, url) {
 ```
 
 
-[erweima.rar](./assets/file/erweima_AOYlTfX8tk.rar "erweima.rar")
+[erweima.rar](https://github.com/scZhengChao/IT_Blogs/releases/download/assets-v1/erweima_AOYlTfX8tk.rar "erweima.rar")

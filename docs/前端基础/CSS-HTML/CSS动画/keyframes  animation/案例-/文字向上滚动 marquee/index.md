@@ -4,18 +4,18 @@
 
 keyframe 模拟 marquee
 
-[index2.html](./assets/file/index2_qtaVjutx6F.html "index2.html")
+[index2.html](https://github.com/scZhengChao/IT_Blogs/releases/download/assets-v1/index2_qtaVjutx6F.html "index2.html")
 
 单行无缝轮播 css
 
-[marqueen.html](./assets/file/marqueen_vEyb32m_cr.html "marqueen.html")
+[marqueen.html](https://github.com/scZhengChao/IT_Blogs/releases/download/assets-v1/marqueen_vEyb32m_cr.html "marqueen.html")
 
 多行无缝轮播
 
-[marqueen.html](./assets/file/marqueen_9qeSe6-gP_.html "marqueen.html")
+[marqueen.html](https://github.com/scZhengChao/IT_Blogs/releases/download/assets-v1/marqueen_9qeSe6-gP_.html "marqueen.html")
 
 其实闪动了一下；只是重复数据长的一模一样；你没看出来而已
 
 短暂停顿滚动（多行类似上面，关键是keyframe的停顿的间隔控制时间的多少）
 
-[marqueen.html](./assets/file/marqueen_OVgyIYzqk4.html "marqueen.html")
+[marqueen.html](https://github.com/scZhengChao/IT_Blogs/releases/download/assets-v1/marqueen_OVgyIYzqk4.html "marqueen.html")

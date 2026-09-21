@@ -170,4 +170,4 @@ console.log(util.inspect(server.listeners('connection')));
 
 ## coding
 
-[eventproxy.js](./assets/file/eventproxy_431gc5MnXi.js "eventproxy.js")
+[eventproxy.js](https://github.com/scZhengChao/IT_Blogs/releases/download/assets-v1/eventproxy_431gc5MnXi.js "eventproxy.js")

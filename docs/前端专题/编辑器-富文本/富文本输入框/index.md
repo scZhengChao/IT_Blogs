@@ -495,4 +495,4 @@ fileDom.addEventListener("click", () => {
 
 以上的源码已经上传到了[Github](https://link.juejin.cn/?target=https://github.com/chongdongkongjian/RichTextInput "Github")， 想要源码的小伙伴自己去拉。代码读取文件那部分可以使用`Promise` 进行优化。最后，欢迎大佬批评指正。
 
-[Demo.zip](./assets/file/Demo_Zh4kTgr2Ru.zip " Demo.zip")
+[Demo.zip](https://github.com/scZhengChao/IT_Blogs/releases/download/assets-v1/Demo_Zh4kTgr2Ru.zip " Demo.zip")

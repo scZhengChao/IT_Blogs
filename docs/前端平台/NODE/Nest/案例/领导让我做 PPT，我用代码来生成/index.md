@@ -429,4 +429,4 @@ export class AppService {
 
 # demo
 
-[nest-generate.zip](./assets/file/nest-generate_nSUxbfxhzJ.zip " nest-generate.zip")
+[nest-generate.zip](https://github.com/scZhengChao/IT_Blogs/releases/download/assets-v1/nest-generate_nSUxbfxhzJ.zip " nest-generate.zip")

@@ -246,4 +246,4 @@
 ```
 
 
-[table-vue.html](./assets/file/table-vue_nRe6GA2vce.html "table-vue.html")
+[table-vue.html](https://github.com/scZhengChao/IT_Blogs/releases/download/assets-v1/table-vue_nRe6GA2vce.html "table-vue.html")

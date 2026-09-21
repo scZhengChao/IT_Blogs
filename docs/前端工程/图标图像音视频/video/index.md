@@ -267,7 +267,7 @@ base64:
 
 下面实例 都是以封装类的形式 写的； 比较有参考&#x20;
 
-[my.7z](./assets/file/my_8KrJogM2Dg.7z "my.7z")
+[my.7z](https://github.com/scZhengChao/IT_Blogs/releases/download/assets-v1/my_8KrJogM2Dg.7z "my.7z")
 
 ## 全屏
 

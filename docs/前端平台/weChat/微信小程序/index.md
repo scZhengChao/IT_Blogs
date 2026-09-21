@@ -181,4 +181,4 @@
 
 demo
 
-[小程序.rar](./assets/file/小程序_2KotjDBL7r.rar "小程序.rar")
+[小程序.rar](https://github.com/scZhengChao/IT_Blogs/releases/download/assets-v1/_2KotjDBL7r.rar "小程序.rar")

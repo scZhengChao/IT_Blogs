@@ -1743,7 +1743,7 @@ UPDATE \`user\` SET \`deleted\_at\`='2016-07-07 14:46:01' WHERE \`deleted\_at\` 
 
 下面demo用import（）导入模型 而我是用 define 定义模型
 
-[sequlize\_model\_relation\_demo-master.zip](./assets/file/sequlize_model_relation_demo-master_FwavFgMY5_.zip "sequlize_model_relation_demo-master.zip")
+[sequlize\_model\_relation\_demo-master.zip](https://github.com/scZhengChao/IT_Blogs/releases/download/assets-v1/sequlize_model_relation_demo-master_FwavFgMY5_.zip "sequlize_model_relation_demo-master.zip")
 
 \*\*连接池设定： \*\*​
 

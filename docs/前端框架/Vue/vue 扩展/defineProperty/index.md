@@ -84,9 +84,9 @@ object.defineProperty(data,key,{
 ```
 
 
-[vue的双向绑定.rar](./assets/file/vue的双向绑定_Sr_AKCLSNl.rar "vue的双向绑定.rar")
+[vue的双向绑定.rar](https://github.com/scZhengChao/IT_Blogs/releases/download/assets-v1/vue._Sr_AKCLSNl.rar "vue的双向绑定.rar")
 
-[testLib.rar](./assets/file/testLib_ArCWdSNERN.rar "testLib.rar")
+[testLib.rar](https://github.com/scZhengChao/IT_Blogs/releases/download/assets-v1/testLib_ArCWdSNERN.rar "testLib.rar")
 
 ```纯文本 
 

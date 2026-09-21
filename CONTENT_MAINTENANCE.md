@@ -59,3 +59,10 @@ node scripts/check-docs.mjs --built
 - 使用 `git filter-repo` 清除全部历史 PNG、误提交的 `node_modules/`、`doc_build/`、旧 `docs/assets/` 和 `.DS_Store`。
 - Git pack 由 1.34 GiB 降至 386.50 MiB；历史完整性检查通过，当前 4,092 个 WebP 均保留。
 - 历史重写会改变全部提交哈希，远端同步必须使用带旧提交校验的 `--force-with-lease`，其他克隆需要重新拉取。
+
+## Release 附件迁移（2026-09-21）
+
+- 将 157 个非图片附件迁移到 GitHub Release `assets-v1`，内容去重后对应 152 个远端文件。
+- 使用 SHA-256 匹配 GitHub 自动规范化后的附件名称，更新 88 篇文档中的 157 个下载链接。
+- 删除本地附件 183,091,855 字节（174.61 MiB），图片仍保留在文章附近的 `assets/` 目录。
+- 生产构建及产物检查通过，发布产物由 753.62 MiB 降至 579.03 MiB，文件数由 16,627 降至 16,470。

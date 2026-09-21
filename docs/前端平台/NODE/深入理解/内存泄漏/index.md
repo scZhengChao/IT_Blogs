@@ -126,7 +126,7 @@
 
 [https://blog.csdn.net/zdhsoft/article/details/56671395](https://blog.csdn.net/zdhsoft/article/details/56671395 "https://blog.csdn.net/zdhsoft/article/details/56671395")
 
-[heapdump.js](./assets/file/heapdump_YTy_4pElUX.js "heapdump.js")
+[heapdump.js](https://github.com/scZhengChao/IT_Blogs/releases/download/assets-v1/heapdump_YTy_4pElUX.js "heapdump.js")
 
 ![  ](./assets/image/4cbac19fa93b01fa37ce1ed485d1eef7_IUg1M7YqGL.webp "  ")
 

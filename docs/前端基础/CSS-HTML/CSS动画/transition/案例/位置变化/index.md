@@ -11,4 +11,4 @@
 ```
 
 
-[scroll.html](./assets/file/scroll_6BErVBa3d8.html "scroll.html")
+[scroll.html](https://github.com/scZhengChao/IT_Blogs/releases/download/assets-v1/scroll_6BErVBa3d8.html "scroll.html")

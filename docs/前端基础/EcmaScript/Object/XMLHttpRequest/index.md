@@ -11,7 +11,7 @@
 
 [http://www.ruanyifeng.com/blog/2012/09/xmlhttprequest\_level\_2.html](http://www.ruanyifeng.com/blog/2012/09/xmlhttprequest_level_2.html "http://www.ruanyifeng.com/blog/2012/09/xmlhttprequest_level_2.html")  阮一峰
 
-[index.vue](./assets/file/index_IRFSKRz7AD.vue "index.vue")
+[index.vue](https://github.com/scZhengChao/IT_Blogs/releases/download/assets-v1/index_IRFSKRz7AD.vue "index.vue")
 
 附上一张 timing 图
 

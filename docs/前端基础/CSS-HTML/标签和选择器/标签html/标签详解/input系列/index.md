@@ -204,7 +204,7 @@ range是一种 input 类型，给定一个滑块类型的范围选择器。
 
 ![  ](./assets/image/928f7909f5cbcdc4d850dbd9062bde9f_F2PoBQWlHw.gif "  ")
 
-[input3.html](./assets/file/input3_8U5uFx5kH5.html "input3.html")
+[input3.html](https://github.com/scZhengChao/IT_Blogs/releases/download/assets-v1/input3_8U5uFx5kH5.html "input3.html")
 
 ### **4.输入框绑定值**
 

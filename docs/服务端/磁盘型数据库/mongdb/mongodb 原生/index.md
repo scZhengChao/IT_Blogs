@@ -1,10 +1,10 @@
 # mongodb 原生
 
-[05\_持久化\_mongo【瑞客论坛 www.ruike1.com】.pdf](<./assets/file/05_持久化_mongo【瑞客论坛 www.ruike1.com】_eoVPbPiKdL.pdf> "05_持久化_mongo【瑞客论坛 www.ruike1.com】.pdf")
+[05\_持久化\_mongo【瑞客论坛 www.ruike1.com】.pdf](<https://github.com/scZhengChao/IT_Blogs/releases/download/assets-v1/05_._mongo.www.ruike1.com._eoVPbPiKdL.pdf> "05_持久化_mongo【瑞客论坛 www.ruike1.com】.pdf")
 
-[mac\_mongodb安装及配置说明【瑞客论坛 www.ruike1.com】.pdf](<./assets/file/mac_mongodb安装及配置说明【瑞客论坛 www.ruike1.com】_kGqzx0X0VN.pdf> "mac_mongodb安装及配置说明【瑞客论坛 www.ruike1.com】.pdf")
+[mac\_mongodb安装及配置说明【瑞客论坛 www.ruike1.com】.pdf](<https://github.com/scZhengChao/IT_Blogs/releases/download/assets-v1/mac_mongodb.www.ruike1.com._kGqzx0X0VN.pdf> "mac_mongodb安装及配置说明【瑞客论坛 www.ruike1.com】.pdf")
 
-[windows\_mongodb安装及配置说明【瑞客论坛 www.ruike1.com】.pdf](<./assets/file/windows_mongodb安装及配置说明【瑞客论坛 www.ruike1.com】_Jzsj92.pdf> "windows_mongodb安装及配置说明【瑞客论坛 www.ruike1.com】.pdf")
+[windows\_mongodb安装及配置说明【瑞客论坛 www.ruike1.com】.pdf](<https://github.com/scZhengChao/IT_Blogs/releases/download/assets-v1/windows_mongodb.www.ruike1.com._Jzsj92.pdf> "windows_mongodb安装及配置说明【瑞客论坛 www.ruike1.com】.pdf")
 
 ```纯文本 
  https://www.runoob.com/nodejs/nodejs-mongodb.html     --- 菜鸟教程  node +mogodb 

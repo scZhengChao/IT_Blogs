@@ -1574,7 +1574,7 @@ export default  WithHeadAndMethod(PickerAlertViewItem)
 
 源码：
 
-[react-native-slidepicker.zip](./assets/file/react-native-slidepicker_3wEcebHmwP.zip "react-native-slidepicker.zip")
+[react-native-slidepicker.zip](https://github.com/scZhengChao/IT_Blogs/releases/download/assets-v1/react-native-slidepicker_3wEcebHmwP.zip "react-native-slidepicker.zip")
 
 文档：[https://github.com/lexguy/react-native-slidepicker](https://github.com/lexguy/react-native-slidepicker "https://github.com/lexguy/react-native-slidepicker")
 
@@ -2261,13 +2261,13 @@ export const CascadePicker = WithHeadAndMethod(RelativedPicker);
 
 完整代码:
 
-[PickerAlertView.tsx](./assets/file/PickerAlertView_3lilJHR-oR.tsx " PickerAlertView.tsx")
+[PickerAlertView.tsx](https://github.com/scZhengChao/IT_Blogs/releases/download/assets-v1/PickerAlertView_3lilJHR-oR.tsx " PickerAlertView.tsx")
 
 [React Native纯JS实现日期、地址选择控件 目前git上是没有看到js实现的Picker组件，git上比较火的 react-native-picker使用过程中发现了一堆bug，而且很不灵活，其他的就更无从谈起。这里分享我们项目中纯js实现的Picker控件。 先看效果（android、ios真机… https://zhuanlan.zhihu.com/p/33680472](https://zhuanlan.zhihu.com/p/33680472 "React Native纯JS实现日期、地址选择控件 目前git上是没有看到js实现的Picker组件，git上比较火的 react-native-picker使用过程中发现了一堆bug，而且很不灵活，其他的就更无从谈起。这里分享我们项目中纯js实现的Picker控件。 先看效果（android、ios真机… https://zhuanlan.zhihu.com/p/33680472")
 
 [GitHub - iberHK/react-native-picker: 纯JS实现的一个高效流畅的日期选择器和区域选择器，支持android、ios 纯JS实现的一个高效流畅的日期选择器和区域选择器，支持android、ios. Contribute to iberHK/react-native-picker development by creating an account on GitHub. https://github.com/iberHK/react-native-picker](https://github.com/iberHK/react-native-picker "GitHub - iberHK/react-native-picker: 纯JS实现的一个高效流畅的日期选择器和区域选择器，支持android、ios 纯JS实现的一个高效流畅的日期选择器和区域选择器，支持android、ios. Contribute to iberHK/react-native-picker development by creating an account on GitHub. https://github.com/iberHK/react-native-picker")
 
-[react-native-picker.zip](./assets/file/react-native-picker_zfGb2CPkLM.zip "react-native-picker.zip")
+[react-native-picker.zip](https://github.com/scZhengChao/IT_Blogs/releases/download/assets-v1/react-native-picker_zfGb2CPkLM.zip "react-native-picker.zip")
 
 ### 引用样式部分
 

@@ -65,7 +65,7 @@ rust
 
 [ Digest-wasm NPM | npm.io Check Digest-wasm 0.1.4 package - Last release 0.1.4 with Apache-2.0 licence at our NPM packages aggregator and search engine. https://npm.io/package/digest-wasm](https://npm.io/package/digest-wasm " Digest-wasm NPM | npm.io Check Digest-wasm 0.1.4 package - Last release 0.1.4 with Apache-2.0 licence at our NPM packages aggregator and search engine. https://npm.io/package/digest-wasm")
 
-[worker.zip](./assets/file/worker_4t9NIydDgU.zip " worker.zip")
+[worker.zip](https://github.com/scZhengChao/IT_Blogs/releases/download/assets-v1/worker_4t9NIydDgU.zip " worker.zip")
 
 # 超过260字符
 

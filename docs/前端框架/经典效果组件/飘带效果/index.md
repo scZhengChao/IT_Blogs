@@ -6,7 +6,7 @@
 
 [ 纯CSS3精美样式的飘带特效 | HTML5资源教程  https://www.html5tricks.com/css3-ribbon-text.html](https://www.html5tricks.com/css3-ribbon-text.html " 纯CSS3精美样式的飘带特效 | HTML5资源教程  https://www.html5tricks.com/css3-ribbon-text.html")
 
-[css3-ribbon-text.zip](./assets/file/css3-ribbon-text_X30IILv5VT.zip " css3-ribbon-text.zip")
+[css3-ribbon-text.zip](https://github.com/scZhengChao/IT_Blogs/releases/download/assets-v1/css3-ribbon-text_X30IILv5VT.zip " css3-ribbon-text.zip")
 
 ![](./assets/image/image_UEQwKPmwBY.webp)
 
