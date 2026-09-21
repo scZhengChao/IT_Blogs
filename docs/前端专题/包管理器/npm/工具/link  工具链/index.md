@@ -53,7 +53,7 @@ npm link common
 
 比如我的是这样：
 
-![](./assets/image/image_uwySyIDOZJ.png)
+![](./assets/image/image_uwySyIDOZJ.webp)
 
 这时候，进入这个 bin 目录。
 

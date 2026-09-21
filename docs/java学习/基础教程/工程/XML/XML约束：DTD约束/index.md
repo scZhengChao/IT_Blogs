@@ -25,7 +25,7 @@
 
 体验效果说明：当编写xml文档时不符合指定dtd约束时，进行提示xml编写错误，如下图：
 
-![](./assets/image/image_BKhwP68Vlv.png)
+![](./assets/image/image_BKhwP68Vlv.webp)
 
 体验步骤:
 
@@ -75,7 +75,7 @@
 
 步骤四：idea开发工具books.xml的dtd约束验证不通过的效果如下
 
-![](./assets/image/image_dMDiCR3kOF.png)
+![](./assets/image/image_dMDiCR3kOF.webp)
 
 #### 3. DTD学习要求
 

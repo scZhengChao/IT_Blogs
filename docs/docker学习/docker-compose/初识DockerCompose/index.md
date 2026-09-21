@@ -4,7 +4,7 @@
 
 Docker Compose可以**基于Compose文件帮我们快速的部署分布式应用，而无需手动一个个创建和运行容器！**
 
-![](./assets/image/image_azuVN1LKHc.png)
+![](./assets/image/image_azuVN1LKHc.webp)
 
 Compose文件是一个文本文件，通过指令定义集群中的每个容器如何运行。格式如下：
 

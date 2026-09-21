@@ -22,13 +22,13 @@ window.innerHeight || document.documentElement.clientHeight || document.body.cli
 
 window\.innerHeight/innerWidth         "浏览器的宽度/高度 和页面的高度无关"
 
-![](./assets/image/image_fckeSiociy.png)
+![](./assets/image/image_fckeSiociy.webp)
 
 ### 1.3 整个浏览器窗口的宽高（只读）outerWidth、outerHeight
 
 不支持IE，IE没有获取整个浏览器窗口的宽高的方法
 
-![](./assets/image/image_CDKrPgnGMx.png)
+![](./assets/image/image_CDKrPgnGMx.webp)
 
 ### 1.4 pageXOffset、pageYOffset
 
@@ -54,7 +54,7 @@ s += "\r\n网页正文全文高："+ document.body.scrollHeight;
 s += "\r\n网页被卷去的高："+ document.body.scrollTop;
 s += "\r\n网页被卷去的左："+ document.body.scrollLeft;
 
-![](./assets/image/image_t5WnX49UIv.png)
+![](./assets/image/image_t5WnX49UIv.webp)
 
 ```javascript 
 // 浏览器窗口相对于屏幕左上角的水平位置

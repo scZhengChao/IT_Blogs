@@ -198,7 +198,7 @@ class MyComponent extends HTMLElement {
 
 通过JavaScript动态生成和管理唯一样式。
 
-![](./assets/image/image_D3gMrc7hgu.png)
+![](./assets/image/image_D3gMrc7hgu.webp)
 
 ## 12. 样式重置策略
 

@@ -138,7 +138,7 @@ const promptList = [{
 ```
 
 
-![  ](./assets/image/a40fd2f7696061241f13491b6c2d3074_Pvjz8aQQQk.png "  ")
+![  ](./assets/image/a40fd2f7696061241f13491b6c2d3074_Pvjz8aQQQk.webp "  ")
 
 2\. confirm
 
@@ -173,9 +173,9 @@ const promptList = [{
 ```
 
 
-![  ](./assets/image/b36ef06d1814232ce4fc2d5cc61621cb_HUTCXES2KK.png "  ")
+![  ](./assets/image/b36ef06d1814232ce4fc2d5cc61621cb_HUTCXES2KK.webp "  ")
 
-![  ](./assets/image/c48ba94b886c896731d0c7032a1f80f5_iWUJd2PLA-.png "  ")
+![  ](./assets/image/c48ba94b886c896731d0c7032a1f80f5_iWUJd2PLA-.webp "  ")
 
 3\. list
 
@@ -208,7 +208,7 @@ const promptList = [{
 ```
 
 
-![  ](./assets/image/b064c53e830d1f99a8906a665a5604d8_vnaOHEg21B.png "  ")
+![  ](./assets/image/b064c53e830d1f99a8906a665a5604d8_vnaOHEg21B.webp "  ")
 
 4\. rawlist
 
@@ -235,7 +235,7 @@ const promptList = [{
 ```
 
 
-![  ](./assets/image/0373efbd63cf4d2246f5e01ac7bcfa1e_jYUgFsU18T.png "  ")
+![  ](./assets/image/0373efbd63cf4d2246f5e01ac7bcfa1e_jYUgFsU18T.webp "  ")
 
 5\. expand
 
@@ -286,7 +286,7 @@ const promptList = [{
 ```
 
 
-![  ](./assets/image/94e1c3ffc676834459a0d85b004089aa_by67jZyPqY.png "  ")
+![  ](./assets/image/94e1c3ffc676834459a0d85b004089aa_by67jZyPqY.webp "  ")
 
 6.checkbox
 
@@ -363,7 +363,7 @@ const promptList = [{
 ```
 
 
-![  ](./assets/image/0634b1e5bed1d54a343b8a703c5ed8dd_3EtgD_W7Uc.png "  ")
+![  ](./assets/image/0634b1e5bed1d54a343b8a703c5ed8dd_3EtgD_W7Uc.webp "  ")
 
 7.password
 
@@ -380,7 +380,7 @@ const promptList = [{
 ```
 
 
-![  ](./assets/image/b3a4a49fd0c7d9ef33b1a8a727fffe78_WYac-2U82x.png "  ")
+![  ](./assets/image/b3a4a49fd0c7d9ef33b1a8a727fffe78_WYac-2U82x.webp "  ")
 
 **8. editor**
 
@@ -389,7 +389,7 @@ const promptList = [{
 ```
 
 
-![  ](./assets/image/170b5eaf98470ff3187fa1c3b2846c8d_ocND1r6tR-.png "  ")
+![  ](./assets/image/170b5eaf98470ff3187fa1c3b2846c8d_ocND1r6tR-.webp "  ")
 
 # **4.Compression-webpack-plugin（可以前端+服务器处理； 也可以服务器后端单独处理）**
 

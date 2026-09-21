@@ -22,7 +22,7 @@
 
 画一下文本差异（diff）的输入输出的流程图如下：
 
-![](./assets/image/image_ZThIhs9Dtu.png)
+![](./assets/image/image_ZThIhs9Dtu.webp)
 
 ### 使用rxjs前：以命令式的方式直接调用
 
@@ -87,7 +87,7 @@ functionprocessDiff(diff) {
 
 数据流动图
 
-![](./assets/image/image_tzo6cWZhpy.png)
+![](./assets/image/image_tzo6cWZhpy.webp)
 
 以下是伪代码
 

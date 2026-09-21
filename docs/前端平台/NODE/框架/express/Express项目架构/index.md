@@ -36,7 +36,7 @@
 
      版本（node）：
 
-![  ](<../assets/nodeJS（2）深了解： nodeJS 项目架构详解（ap/image/824226-20170904144658585-1875149549__guRAq_o1f.png> "  ")
+![  ](<../assets/nodeJS（2）深了解： nodeJS 项目架构详解（ap/image/824226-20170904144658585-1875149549__guRAq_o1f.webp> "  ")
 
 ## **新建 nodeJS 项目：**
 
@@ -45,7 +45,7 @@
 - 模板： EJS （2.5.5）
 - 获得文件目录如下：
 
-![  ](<../assets/nodeJS（2）深了解： nodeJS 项目架构详解（ap/image/824226-20170904145218585-1038173021_54tUsDIx7l.png> "  ")
+![  ](<../assets/nodeJS（2）深了解： nodeJS 项目架构详解（ap/image/824226-20170904145218585-1038173021_54tUsDIx7l.webp> "  ")
 
 其中重点文件/文件夹说明：
 
@@ -956,11 +956,11 @@ req.end();
 
 [**收藏该文**](# "收藏该文")
 
-![  ](<../assets/nodeJS（2）深了解： nodeJS 项目架构详解（ap/image/icon_weibo_24_Ur4NzmNdA-.png> "  ")
+![  ](<../assets/nodeJS（2）深了解： nodeJS 项目架构详解（ap/image/icon_weibo_24_Ur4NzmNdA-.webp> "  ")
 
-![  ](<../assets/nodeJS（2）深了解： nodeJS 项目架构详解（ap/image/wechat_RQenS5l3Fo.png> "  ")
+![  ](<../assets/nodeJS（2）深了解： nodeJS 项目架构详解（ap/image/wechat_RQenS5l3Fo.webp> "  ")
 
-![  ](<../assets/nodeJS（2）深了解： nodeJS 项目架构详解（ap/image/20160314220828_RXKu6AxVg8.png> "  ")
+![  ](<../assets/nodeJS（2）深了解： nodeJS 项目架构详解（ap/image/20160314220828_RXKu6AxVg8.webp> "  ")
 
 [云雀sunshine](https://home.cnblogs.com/u/ostrich-sunshine/ "云雀sunshine")
 

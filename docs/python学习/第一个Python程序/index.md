@@ -14,17 +14,17 @@
 
 在Windows开始菜单选择“`Terminal`”，就进入到`PowerShell`命令行模式，它的提示符类似`PS C:>`：
 
-![](./assets/image/image_w_nPEOTMJg.png)
+![](./assets/image/image_w_nPEOTMJg.webp)
 
 ### Python交互模式
 
 在命令行模式下敲命令`python`，就看到类似如下的一堆文本输出，然后就进入到Python交互模式，它的提示符是`>>>`。
 
-![](./assets/image/image_T_GIL6O-14.png)
+![](./assets/image/image_T_GIL6O-14.webp)
 
 在Python交互模式下输入`exit()`并回车，就退出了Python交互模式，并回到命令行模式：
 
-![](./assets/image/image_Z9etsflz1p.png)
+![](./assets/image/image_Z9etsflz1p.webp)
 
 也可以直接通过开始菜单选择`Python (command line)`菜单项，*直接进入*Python交互模式，但是输入`exit()`后窗口会直接关闭，不会回到命令行模式。
 
@@ -66,17 +66,17 @@ hello, world
 
 **执行一个**`.py`**文件*****只能*****在命令行模式执行**。如果敲一个命令`python hello.py`，看到如下错误：
 
-![](./assets/image/image_NbPmjzonPr.png)
+![](./assets/image/image_NbPmjzonPr.webp)
 
 错误提示`No such file or directory`说明这个`hello.py`在当前目录下*找不到*，必须先把当前目录切换到`hello.py`所在的目录下，才能正常执行：
 
-![](./assets/image/image_Hp2RBEKXka.png)
+![](./assets/image/image_Hp2RBEKXka.webp)
 
 上述命令假定`hello.py`存储在`work`目录下。如果你的`hello.py`存储在其他目录，例如，`test`目录，则使用`cd test`，或者使用绝对路径`cd \Users\who_am_i\learn\sample`。
 
 在Windows下，如果要切换到其他盘符，**例如切换到**`D:`盘，需要输入`D:`：
 
-![](./assets/image/image_Bd0dSoAr4D.png)
+![](./assets/image/image_Bd0dSoAr4D.webp)
 
 在`D:`提示符下，再继续用`cd`命令切换到包含文件`hello.py`的`work`目录，就可以正常执行`python hello.py`了。
 

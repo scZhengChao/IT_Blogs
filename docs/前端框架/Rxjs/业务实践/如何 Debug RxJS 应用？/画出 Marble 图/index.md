@@ -22,4 +22,4 @@ const inputSearch = document.querySelector(".search");
 ```
 
 
-![](./assets/image/image_iXL8Zf948A.png)
+![](./assets/image/image_iXL8Zf948A.webp)

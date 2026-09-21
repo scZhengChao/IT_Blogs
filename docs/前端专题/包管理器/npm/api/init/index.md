@@ -32,7 +32,7 @@ npm init foo --hello --> npx create-foo --hello。
 
 从上面的解释可以看出，在命令行中运行 `npm init @vitejs/app`，实际上是通过了 npx 运行了名为 @vitejs/create-app 这个包，那么我们就去 Vite 官方仓库找一找有没有叫 create-app 的文件？
 
-![](./assets/image/image_JMJ7iBdZtb.png)
+![](./assets/image/image_JMJ7iBdZtb.webp)
 
 ### npm init VS vue create
 

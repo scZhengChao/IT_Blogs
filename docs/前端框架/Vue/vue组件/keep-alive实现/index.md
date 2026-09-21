@@ -191,7 +191,7 @@ prepatch 操作就不会在执行组件的 mounted 和 created 生命周期函�
 
 对照上面keep-alive里
 
-![](./assets/image/image_KcIXQlHFYi.png)
+![](./assets/image/image_KcIXQlHFYi.webp)
 
 （4）LRU （least recently used）缓存策略
 

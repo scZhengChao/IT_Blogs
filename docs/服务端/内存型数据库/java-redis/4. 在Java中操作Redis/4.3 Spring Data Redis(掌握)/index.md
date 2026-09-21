@@ -11,7 +11,7 @@ Spring Data Redis 是 `Spring` 的一部分，提供了在 `Spring` 应用中**�
 
 网址：[https://spring.io/projects/spring-data-redis](https://spring.io/projects/spring-data-redis "https://spring.io/projects/spring-data-redis")
 
-![](./assets/image/image_UOPPhniGSl.png)
+![](./assets/image/image_UOPPhniGSl.webp)
 
 maven坐标：
 

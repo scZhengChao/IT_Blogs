@@ -73,7 +73,7 @@ program.parse (process.argv); //process描述的是主进程  process.argv是命
 
 #### 打印一个欢迎界面
 
-![](./assets/image/image_LUubpOhNc2.png)
+![](./assets/image/image_LUubpOhNc2.webp)
 
 编辑kkb.js
 
@@ -110,7 +110,7 @@ module.exports = async name => {
 
 运行`kkb init name`
 
-![](./assets/image/image_VRXHHTqfIV.png)
+![](./assets/image/image_VRXHHTqfIV.webp)
 
 #### 实现克隆github项目的功能
 
@@ -154,7 +154,7 @@ module.exports = async name => {
 
 运行`kkb init vue-template`命令，成功克隆项目
 
-![](./assets/image/image_gTrUnUgFja.png)
+![](./assets/image/image_gTrUnUgFja.webp)
 
 #### 安装依赖
 
@@ -250,7 +250,7 @@ module.exports = async name => {
 ```
 
 
-![](./assets/image/image_oBKgNcOGRE.png)
+![](./assets/image/image_oBKgNcOGRE.webp)
 
 #### 自动生成`router.js`和`App.vue`中的**router-link**
 
@@ -258,7 +258,7 @@ module.exports = async name => {
 
 看一下此时的目录结构
 
-![](./assets/image/image_mc7P94djar.png)
+![](./assets/image/image_mc7P94djar.webp)
 
 在我们克隆的项目`vue-template`中新建一个tempalte文件夹，以及文件`App.vue.hbs`和`router.js.hbs`，这俩个文件将来要给**handelbars**这个包使用。
 
@@ -376,9 +376,9 @@ program.parse (process.argv); //process描述的是主进程  process.argv是命
 
 views下面新增一个文件，执行`kkb refresh`命令，我们会看到`router.js`和`App.vue`自动生成
 
-![](./assets/image/image_ZkRan9Ldxb.png)
+![](./assets/image/image_ZkRan9Ldxb.webp)
 
-![](./assets/image/image_Te_wNd9KUO.png)
+![](./assets/image/image_Te_wNd9KUO.webp)
 
 ## 代码
 

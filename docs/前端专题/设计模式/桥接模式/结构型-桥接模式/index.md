@@ -47,7 +47,7 @@ JavaScript 桥接模式的核心要素包括以下三部分：
 
 ### 3. UML 类图说明
 
-![](./assets/image/image_giel1PBdt1.png)
+![](./assets/image/image_giel1PBdt1.webp)
 
 - **抽象部分**（`Abstraction`）：是一个抽象类或接口，它定义了抽象部分的方法。在 JavaScript 中，我们使用构造函数或类来代表抽象部分。
 - **扩充抽象部分**（`RefAbstraction`）：是抽象部分具体实现类。在 JavaScript 中，我们使用子类来代表扩充抽象部分，它继承了抽象部分并可以扩展额外的功能。
@@ -141,7 +141,7 @@ instance2.performAction() // 输出：ConcreteImplementationB is performing acti
 
 ## 四. 应用案例
 
-![](./assets/image/image_X3zxKBDBcs.png)
+![](./assets/image/image_X3zxKBDBcs.webp)
 
 应用场景：假设有一个图形绘制应用，需要支持不同的图形形状（如矩形、圆形等）和不同的绘制颜色（如红色、蓝色等）的组合。这时可以使用桥接模式来实现。
 

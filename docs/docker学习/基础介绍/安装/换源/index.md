@@ -31,4 +31,4 @@ docker官方镜像仓库网速较差，我们需要设置国内镜像服务：
 
 参考阿里云的镜像加速文档：[https://cr.console.aliyun.com/cn-hangzhou/instances/mirrors](https://cr.console.aliyun.com/cn-hangzhou/instances/mirrors "https://cr.console.aliyun.com/cn-hangzhou/instances/mirrors")
 
-![](./assets/image/image_t4arPxkpD_.png)
+![](./assets/image/image_t4arPxkpD_.webp)

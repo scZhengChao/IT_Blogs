@@ -6,7 +6,7 @@
 
 **信令承载的作用就是各种转发；** 基于`webSocket`
 
-![](<../assets/信令服务： 就是webRTC之间传递消息的服务器，实现连接两/image/image_44uUnfbftR.png>)
+![](<../assets/信令服务： 就是webRTC之间传递消息的服务器，实现连接两/image/image_44uUnfbftR.webp>)
 
 ## 建立数据传输 RTCDataChannel过程
 

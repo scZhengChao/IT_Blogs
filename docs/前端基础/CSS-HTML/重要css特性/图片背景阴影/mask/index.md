@@ -50,7 +50,7 @@ mask-image遮罩所支持的图片类型非常的广泛，可以是url()静态�
 ```
 
 
-![](./assets/image/image_XtPLm1ZmM0.png)
+![](./assets/image/image_XtPLm1ZmM0.webp)
 
 **如果Xia.png加载失败，则Firefox，Chrome浏览器下直接原始图不显示**。
 

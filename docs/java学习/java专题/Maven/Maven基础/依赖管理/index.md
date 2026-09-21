@@ -18,7 +18,7 @@
 
 Maven解决了依赖管理问题。例如，我们的项目依赖`abc`这个jar包，而`abc`又依赖`xyz`这个jar包：
 
-![](./assets/image/image_nciEU_dM4U.png)
+![](./assets/image/image_nciEU_dM4U.webp)
 
 当我们声明了`abc`的依赖时，Maven自动把`abc`和`xyz`都加入了我们的项目依赖，不需要我们自己去研究`abc`是否需要依赖`xyz`。
 
@@ -38,7 +38,7 @@ Maven解决了依赖管理问题。例如，我们的项目依赖`abc`这个jar�
 
 当我们声明一个`spring-boot-starter-web`依赖时，Maven会自动解析并判断最终需要大概二三十个其他依赖：
 
-![](./assets/image/image_ca8HdAdrRY.png)
+![](./assets/image/image_ca8HdAdrRY.webp)
 
 如果我们自己去手动管理这些依赖是非常费时费力的，而且出错的概率很大。
 
@@ -119,7 +119,7 @@ Maven**并不会每次都从中央仓库下载jar包。一个jar包一旦被下�
 
 除了可以从Maven的中央仓库下载外，还可以从Maven的镜像仓库下载。如果访问Maven的中央仓库非常慢，我们可以选择一个速度较快的Maven的镜像仓库。Maven镜像仓库定期从中央仓库同步：
 
-![](./assets/image/image_eTIeamS9w2.png)
+![](./assets/image/image_eTIeamS9w2.webp)
 
 中国区用户可以使用阿里云提供的Maven镜像仓库。使用Maven镜像仓库需要一个配置，在用户主目录下进入`.m2`目录，创建一个`settings.xml`配置文件，内容如下：
 
@@ -145,7 +145,7 @@ Maven**并不会每次都从中央仓库下载jar包。一个jar包一旦被下�
 
 最后一个问题：如果我们要引用一个第三方组件，比如`okhttp`，如何确切地获得它的`groupId`、`artifactId`和`version`？方法是**通过**[**search.maven.org**](https://search.maven.org/ "search.maven.org")**搜索关键字，找到对应的组件后，直接复制：**
 
-![](./assets/image/image_Ibrru_naxm.png)
+![](./assets/image/image_Ibrru_naxm.webp)
 
 ### 命令行编译
 
@@ -162,7 +162,7 @@ $ mvn clean package
 
 几乎所有的IDE都内置了对`Maven`的支持。在Eclipse中，可以直接创建或导入Maven项目。如果导入后的Maven项目有错误，可以尝试选择项目后点击右键，选择`Maven - Update Project`...更新：
 
-![](./assets/image/image_tNz2YFs32-.png)
+![](./assets/image/image_tNz2YFs32-.webp)
 
 ### 小结
 

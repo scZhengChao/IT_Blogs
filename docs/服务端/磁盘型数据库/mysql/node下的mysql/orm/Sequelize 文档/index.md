@@ -885,7 +885,7 @@ E-R
 
 结构如下：
 
-![  ](./assets/image/bd8ebcb84b40a95b6dc1696f6b24c8dc_fhswXmYU0h.png "  ")
+![  ](./assets/image/bd8ebcb84b40a95b6dc1696f6b24c8dc_fhswXmYU0h.webp "  ")
 
 定义
 

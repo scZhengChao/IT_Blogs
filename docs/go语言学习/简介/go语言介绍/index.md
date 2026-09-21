@@ -43,7 +43,7 @@ Go 语言提供了一套格式化工具——go fmt。一些 Go 语言的开发�
 
 #### 开发效率高
 
-![](./assets/image/image_p4HLMB9tkL.png)
+![](./assets/image/image_p4HLMB9tkL.webp)
 
 Go语言实现了开发效率与执行效率的完美结合，让你像写Python代码（效率）一样编写C代码（性能）。
 

@@ -76,7 +76,7 @@
 
 此示例中，`.circle-outside` 类利用`shape-outside: circle(50%);` 定义了一个圆形的外形，文本随即形成相应的流动路径。
 
-![](./assets/image/image_1yqwOMNW-0.png)
+![](./assets/image/image_1yqwOMNW-0.webp)
 
 ### 示例2：自定义多边形路径环绕
 

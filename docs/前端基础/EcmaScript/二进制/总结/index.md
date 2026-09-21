@@ -94,7 +94,7 @@ console.log(blob.type); // "text/plain"
 
 到现在，Blob 对象看起来似乎我们还是没有啥用。那该如何使用 Blob 对象呢？可以使用 `URL.createObjectURL()` 方法将将其转化为一个 URL，并在 Iframe 中加载：
 
-![](./assets/image/image_ACdf_9XAIz.png)
+![](./assets/image/image_ACdf_9XAIz.webp)
 
 ```javascript 
 
@@ -146,7 +146,7 @@ iframe.src = URL.createObjectURL(subBlob);
 
 ![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/8e91b79159224b52907a3ee7ba2598bb~tplv-k3u1fbpfcp-zoom-in-crop-mark:4536:0:0:0.awebp)
 
-![](./assets/image/image_w0_s2w0K5h.png)
+![](./assets/image/image_w0_s2w0K5h.webp)
 
 ## 5. Object URL
 

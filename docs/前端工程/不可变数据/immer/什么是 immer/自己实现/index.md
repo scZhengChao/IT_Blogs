@@ -31,7 +31,7 @@ github: [github.com/MinJieLiu/i…](https://link.juejin.cn?target=https://github
 
 `immot` 做到了 `typescript` 类型安全。`$updateIn`、`$setIn`、`$mergeIn` 中的 `keyPath` 路径支持类型自动提示（目前只支持小于 7 层结构）。
 
-![](./assets/image/image_vJNfIP1kCh.png)
+![](./assets/image/image_vJNfIP1kCh.webp)
 
 ### 使用
 

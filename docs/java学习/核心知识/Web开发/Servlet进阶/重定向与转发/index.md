@@ -38,11 +38,11 @@ Location: /hello
 
 **当浏览器收到302响应后，它会立刻根据**\*\*`Location`****的指示发送一个新的****`GET /hello`\*\***请求，这个过程就是重定向：**
 
-![](./assets/image/image_Jiih04nXti.png)
+![](./assets/image/image_Jiih04nXti.webp)
 
 观察Chrome浏览器的网络请求，可以看到两次HTTP请求：
 
-![](./assets/image/image_y4vCUAQWDl.png)
+![](./assets/image/image_y4vCUAQWDl.webp)
 
 并且浏览器的地址栏路径自动更新为`/hello`。
 
@@ -86,11 +86,11 @@ req.getRequestDispatcher("/hello").forward(req, resp);
 
 后续请求的处理实际上是由`HelloServlet`完成的。这种处理方式称为转发（`Forward`），我们用流程图画出来如下：
 
-![](./assets/image/image_D_IakY16gE.png)
+![](./assets/image/image_D_IakY16gE.webp)
 
 转发和重定向的区别在于，**转发是在Web服务器内部完成的，对浏览器来说，它只发出了一个HTTP请求：**
 
-![](./assets/image/image_2lzYZ-FjSh.png)
+![](./assets/image/image_2lzYZ-FjSh.webp)
 
 注意到使用转发的时候，浏览器的地址栏路径仍然是`/morning`，浏览器并不知道该请求在Web服务器内部实际上做了一次转发。
 

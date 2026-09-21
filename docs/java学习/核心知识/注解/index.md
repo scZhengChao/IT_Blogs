@@ -2,7 +2,7 @@
 
 本节我们将介绍`Java`程序的一种特殊“注释”——注解`（Annotation）`。
 
-![](./assets/image/image_hMWXrgfarx.png)
+![](./assets/image/image_hMWXrgfarx.webp)
 
 [使用注解](./使用注解/index.md "使用注解")
 

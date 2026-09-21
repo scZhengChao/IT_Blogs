@@ -9,7 +9,7 @@
 
 B+tree将树分为**叶子节点和非叶子节点**，其中**非叶子节点只存储索引+指针**，不存储数据，**而叶子节点存储索引+数据；**
 
-![](./assets/image/image_Qh-PgFYFek.png)
+![](./assets/image/image_Qh-PgFYFek.webp)
 
 说明：
 

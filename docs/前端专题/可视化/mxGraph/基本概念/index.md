@@ -61,7 +61,7 @@ var graph = new mxGraph(node);
 
 `mxGraph`和`mxGraphModal`、`mxCell`**关系如下图:**
 
-![](./assets/image/image_07jPtgvk3D.png)
+![](./assets/image/image_07jPtgvk3D.webp)
 
 `mxGraph.insertVertex`创建**一个节点的方法,实际上是调用**`mxCell`实现的.
 
@@ -79,7 +79,7 @@ mxGraph**中对图形(节点、连接线)操作的方法调用时序图如下:**
 
 `mxStylesheet`定义了cell(节点、连接线)的样式.它**实际上是个Object对象,key是字符串,value是个数组.** 默认存在两个值`defaultVertex`和`defaultEdge`.
 
-![](./assets/image/image_vewYrVoH7B.png)
+![](./assets/image/image_vewYrVoH7B.webp)
 
 图形**上可修改的样式种类**,**都定义在**[**mxConstants**](https://jgraph.github.io/mxgraph/docs/js-api/files/util/mxConstants-js.html "mxConstants")\*\*中,****`STYLE_`**** 开头的字符串是各种样式定义字符串。\*\*一些样式应用到节点上，一些适用于节点，一些适用于连线，一些都适用。
 

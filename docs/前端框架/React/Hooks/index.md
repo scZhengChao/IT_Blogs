@@ -1,6 +1,6 @@
 # hooks
 
-![](./assets/image/image_OdELe-wUm8.png)
+![](./assets/image/image_OdELe-wUm8.webp)
 
 [方案](./方案/index.md "方案")
 

@@ -398,7 +398,7 @@ WebSocket对象有三个属性，readyState，bufferedAmount和Protocol。
 
 WebSocket对象**通过只读属性readyState来传达连接状态**，它会更加连接状态自动改变。下表展示了readyState属性的四个不同的值。
 
-![](./assets/image/image_AoVgdJByA1.png)
+![](./assets/image/image_AoVgdJByA1.webp)
 
 了解当前连接的状态有助于我们调试。
 
@@ -601,7 +601,7 @@ Opcode, 长度为 4 比特, 该字段将指示 frame 的类型, RFC 6455 定义�
 
 以下是一个客户端和服务端相互传递文本消息的示例
 
-![](./assets/image/image_vvnpeDnAfB.png)
+![](./assets/image/image_vvnpeDnAfB.webp)
 
 **其中模拟了长消息被切分为多个帧（continuation frame）的例子。**
 
@@ -609,7 +609,7 @@ Opcode, 长度为 4 比特, 该字段将指示 frame 的类型, RFC 6455 定义�
 
 **关闭相对简单，由客户端或服务端发送关闭帧，即可完成关闭。**
 
-![](./assets/image/image_Cppwzd-MCC.png)
+![](./assets/image/image_Cppwzd-MCC.webp)
 
 ## 八、WebSocket协议进一步理解
 
@@ -780,7 +780,7 @@ OPCODE说明:
 
 连接关闭时状态码说明:
 
-![](./assets/image/image_cxrkO91K4f.png)
+![](./assets/image/image_cxrkO91K4f.webp)
 
 ### 9.WebSocket相关扩展
 

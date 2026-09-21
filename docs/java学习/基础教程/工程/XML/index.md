@@ -26,13 +26,13 @@
 
 &#x20;
 
-![](./assets/image/image_ucEu45kLm0.png)
+![](./assets/image/image_ucEu45kLm0.webp)
 
 2\) 配置文件：在后期我们主要用于**各种框架的配置文件基本天天见。**
 
 比如 连接池：c3p0-config.xml 日志：logback.xml
 
-![](./assets/image/image_mi78LqHY9g.png)
+![](./assets/image/image_mi78LqHY9g.webp)
 
 #### 小结
 

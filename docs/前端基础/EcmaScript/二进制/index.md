@@ -13,7 +13,7 @@
 
 &#x20;      本篇文章总结了浏览器端的**二进制以及有关数据之间的转化**，如 `ArrayBuffer`，`TypedArray`，`Blob`，`DataURL`，`ObjectURL`，`Text`之间的互相转换。为了更好的理解与方便以后的查询，特意做了一张图做总结。
 
-![  ](./assets/image/50e165c24138569bacbfbf7d1a6b5e1f_5eFc2TCIHJ.png "  ")
+![  ](./assets/image/50e165c24138569bacbfbf7d1a6b5e1f_5eFc2TCIHJ.webp "  ")
 
 ## **二进制相关数据类型**
 

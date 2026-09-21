@@ -4,7 +4,7 @@ Maven是一个Java项目管理和构建工具，它可以定义项目结构、�
 
 本章我们详细介绍如何使用Maven。
 
-![](./assets/image/image_U1JuamDfkh.png)
+![](./assets/image/image_U1JuamDfkh.webp)
 
 [Maven介绍](./Maven介绍/index.md "Maven介绍")
 

@@ -11,7 +11,7 @@
 
 异步通讯：就像发邮件，不需要马上回复。
 
-![](./assets/image/image_apLN1QgxDd.png)
+![](./assets/image/image_apLN1QgxDd.webp)
 
 两种方式各有优劣，打电话可以立即得到响应，但是你却不能跟多个人同时通话。发送邮件可以同时与多个人收发邮件，但是往往响应会有延迟。
 
@@ -19,7 +19,7 @@
 
 虽然调用可以实时得到结果，但存在下面的问题：
 
-![](./assets/image/image_AKjGLI_C75.png)
+![](./assets/image/image_AKjGLI_C75.webp)
 
 总结：
 
@@ -46,7 +46,7 @@
 
 为了解除事件发布者与订阅者之间的耦合，两者并不是直接通信，而是有一个中间人（Broker）。发布者发布事件到Broker，不关心谁来订阅事件。订阅者从Broker订阅事件，不关心谁发来的消息。
 
-![](./assets/image/image_n7nAVNSSWB.png)
+![](./assets/image/image_n7nAVNSSWB.webp)
 
 Broker 是一个像数据总线一样的东西，所有的服务要接收数据和发送数据都发到这个总线上，这个总线就像协议一样，让服务间的通讯变得标准和可控。
 

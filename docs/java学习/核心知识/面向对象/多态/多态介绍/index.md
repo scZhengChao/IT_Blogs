@@ -8,7 +8,7 @@
 
 # 多态的分类
 
-![](./assets/image/image_fzhED80gWI.png)
+![](./assets/image/image_fzhED80gWI.webp)
 
 1. 编译时多态（设计时多态）：方法重载。
 2. 运行时多态：JAVA**运行时系统根据调用该方法的实例**的类型来决定选择调用哪个方法则被称为运行时多态。

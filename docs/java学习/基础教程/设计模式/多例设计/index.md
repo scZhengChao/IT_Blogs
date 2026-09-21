@@ -95,4 +95,4 @@ public class Teacher {
 
 #### 动态设置数量
 
-![](./assets/image/image_dpdN4gq0XZ.png)
+![](./assets/image/image_dpdN4gq0XZ.webp)

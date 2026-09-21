@@ -1,5 +1,5 @@
 Spring事务角色
 
-![](./assets/image/image_Wpqhf9Qx9D.png)
+![](./assets/image/image_Wpqhf9Qx9D.webp)
 
 事务角色事务管理员：发**起事务方，在Spring中通常指代业务层开启事务的方法**事务协调员：加入事务方，在Spring中通常指**代数据层方法，也可以是业务层方法**

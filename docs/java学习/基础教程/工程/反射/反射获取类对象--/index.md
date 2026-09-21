@@ -13,11 +13,11 @@
 
 # 反射的第一步：获取Class类的对象
 
-![](./assets/image/image_ZzZ-uBKxIf.png)
+![](./assets/image/image_ZzZ-uBKxIf.webp)
 
-![](./assets/image/image_Cqyg7wYVSB.png)
+![](./assets/image/image_Cqyg7wYVSB.webp)
 
-![](./assets/image/image_xnlR7mAwRz.png)
+![](./assets/image/image_xnlR7mAwRz.webp)
 
 # 获取类对象的三种方法
 
@@ -27,7 +27,7 @@
 
 - 在程序运行时动态加载
 
-![](./assets/image/image_WscmtufHC8.png)
+![](./assets/image/image_WscmtufHC8.webp)
 
 #### 类名.class
 

@@ -1,6 +1,6 @@
 # 关键字&#x20;
 
-![](./assets/image/image_qmt0qjJa4E.png)
+![](./assets/image/image_qmt0qjJa4E.webp)
 
 [final](./final/index.md "final")
 

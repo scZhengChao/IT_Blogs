@@ -1,6 +1,6 @@
 # 拦截器
 
-![](./assets/image/image_6ZHT0KLtLs.png)
+![](./assets/image/image_6ZHT0KLtLs.webp)
 
 [简介](./简介/index.md "简介")
 

@@ -7,21 +7,21 @@
 
 # 小到大
 
-![](./assets/image/image_ZUQy9PCcd3.png)
+![](./assets/image/image_ZUQy9PCcd3.webp)
 
 > 取范围大的（隐式装换）
 
-![](./assets/image/image_XjskldTOgW.png)
+![](./assets/image/image_XjskldTOgW.webp)
 
 # 大到小
 
 > **不允许使用**
 
-![](./assets/image/image_nyf33ed2I7.png)
+![](./assets/image/image_nyf33ed2I7.webp)
 
 > **本质是大小不一样**；
 
-![](./assets/image/image_YtVGCxyb6h.png)
+![](./assets/image/image_YtVGCxyb6h.webp)
 
 **整数：int**
 

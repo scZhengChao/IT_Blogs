@@ -306,7 +306,7 @@ npm install --download-url=https://download.com/file.zip
 
 当我们在 npm install 后面增加了一个 `--download-url` 参数时，此参数会将参数和值设置到进程的环境变量中，[logger.info](http://logger.info "logger.info") 再次打印 `process.env` 时就会打印出此变量：
 
-![](./assets/image/image_1KyDait67W.png)
+![](./assets/image/image_1KyDait67W.webp)
 
 仔细看会发现，我们加的参数前被增加了 `npm_config_` 前缀，**并且中横线也被替换为下划线。所以读取的时候要注意一下：**
 

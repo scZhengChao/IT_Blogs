@@ -1,8 +1,8 @@
 # Date
 
-![](./assets/image/image_bJznEnLYjG.png)
+![](./assets/image/image_bJznEnLYjG.webp)
 
-![](./assets/image/image_bgN5bZmgT5.png)
+![](./assets/image/image_bgN5bZmgT5.webp)
 
 [学习方法](./学习方法/index.md "学习方法")
 

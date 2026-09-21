@@ -68,13 +68,13 @@ module.exports = {
 
 - `remotes`表示**引入**其他项目导出的`模块联邦`，一个属性代表引入一个其他项目的模块联邦，`key`值代表名称，可修改，到时候引入就是`import paas from key/前面设置暴露出来模块的名称`。属性值代表的意思是`暴露出来文件的name@服务器地址/暴露出来的filename`。
 
-![](./assets/image/image_v24rZ0SWwd.png)
+![](./assets/image/image_v24rZ0SWwd.webp)
 
 ### 处理共享模块
 
-![](./assets/image/image_17sqr9NcyU.png)
+![](./assets/image/image_17sqr9NcyU.webp)
 
-![](./assets/image/image_RCD6x3p4Zb.png)
+![](./assets/image/image_RCD6x3p4Zb.webp)
 
 如果`saas`业务和`paas`业务都使用了第三方模块`jquery`，那么两个项目都会引入一次，如何通过`模块联邦`处理共享模块呢？我们只需要在原有的基础上配置[shared](https://link.juejin.cn/?target=https://webpack.js.org/plugins/module-federation-plugin/#options "shared")即可。配置过后，两个项目谁先启动，另一个就会引入对方服务器地址的`jquery`了。
 

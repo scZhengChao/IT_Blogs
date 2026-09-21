@@ -132,7 +132,7 @@ $ ./issueshtml repo:golang/go commenter:gopherbot json encoder >issues.html
 
 图4.4显示了在web浏览器中的效果图。每个issue包含到Github对应页面的链接。
 
-![](./assets/image/image_-7m-zN2yIJ.png)
+![](./assets/image/image_-7m-zN2yIJ.webp)
 
 图4.4中issue没有包含会对HTML格式产生冲突的特殊字符，但是我们马上将看到标题中含有`&`和`<`字符的issue。下面的命令选择了两个这样的issue：
 

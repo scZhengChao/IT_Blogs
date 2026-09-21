@@ -1,8 +1,8 @@
 # MQ的基本结构：
 
-![](./assets/image/image_Mwa0WTZPto.png)
+![](./assets/image/image_Mwa0WTZPto.webp)
 
-![](./assets/image/image_VjpBmcc7mX.png)
+![](./assets/image/image_VjpBmcc7mX.webp)
 
 【1】RabbitMQ中的一些角色：
 

@@ -10,7 +10,7 @@
 
 > 把对象写入磁盘文件
 
-![](./assets/image/image_BHOq_vIpyX.png)
+![](./assets/image/image_BHOq_vIpyX.webp)
 
 # 特点
 
@@ -21,11 +21,11 @@
 - 持久化存储；重启计算机后；依然可以把对象加载进来；&#x20;
 - 跨计算机
 
-![](./assets/image/image_9WacaJTfKK.png)
+![](./assets/image/image_9WacaJTfKK.webp)
 
 # 操作流
 
-![](./assets/image/image_C4u1aukn9Y.png)
+![](./assets/image/image_C4u1aukn9Y.webp)
 
 # 类
 

@@ -65,7 +65,7 @@ let message = new Message("Foo", { name: "Michel" }, ["Joe", "Sara"])
 
 在内存中这个例子将会像下图所示的这样，绿色的块代表的是 ***可观察的*** 属性，注意 *值本身* 并不是可观察的！
 
-![](./assets/image/image_n8htLB9m19.png)
+![](./assets/image/image_n8htLB9m19.webp)
 
 简单来说，`MobX` 所做的就是**记录下你在跟踪函数中所使用的属性的箭头指向**（就像上图中的箭头那样）。在此之后，当这些箭头中的任何一个发生变化（比如该箭头从一个值指向另一个值）时，MobX 都会响应变化，并重新执行相应的跟踪函数。
 

@@ -2,7 +2,7 @@
 
 大概可以用如下图片来解释：
 
-![](./assets/image/image_e-rBJ9h0g8.png)
+![](./assets/image/image_e-rBJ9h0g8.webp)
 
 当一个servicework被注册成功后，它将开始它的生命周期，**我们对servicework的操作一般都是在其生命周期里面进行的**。servicework的生命周期分为这么几个状态 **安装中, 安装后, 激活中, 激活后, 废弃。**
 

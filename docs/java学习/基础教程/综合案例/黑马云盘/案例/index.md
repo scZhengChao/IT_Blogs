@@ -51,7 +51,7 @@
 
 云盘项目包含客户端和服务端，通过客户端可以查看网盘内容，可以下载网盘中的文件，上传文件到网盘中
 
-![](./assets/image/image_kh4KZhd8Pn.png)
+![](./assets/image/image_kh4KZhd8Pn.webp)
 
 网盘内容功能：已写过
 
@@ -82,11 +82,11 @@ File类提供一个方法： File[]  listFiles()  //当前目录下所有内容
 
 ### 2.1 服务端实现
 
-![](./assets/image/image_xgIXaLyC-0.png)
+![](./assets/image/image_xgIXaLyC-0.webp)
 
 ### 2.2 客户端实现
 
-![](./assets/image/image_INUwecoCHx.png)
+![](./assets/image/image_INUwecoCHx.webp)
 
 ## 三 详细设计
 
@@ -103,7 +103,7 @@ File类提供一个方法： File[]  listFiles()  //当前目录下所有内容
    4. ResourceBundle配置文件读取
       - 读取当前项目中src目录下的.properties配置文件
 
-![](./assets/image/image_onBq9_j0Fv.png)
+![](./assets/image/image_onBq9_j0Fv.webp)
 
 ### 3.2 协议定义
 
@@ -113,7 +113,7 @@ File类提供一个方法： File[]  listFiles()  //当前目录下所有内容
 
 TCP协议是区分客户端服务端的一个比较底层的协议，传输的数据是字节码数据，如下
 
-![](./assets/image/image_76tUSddrk6.png)
+![](./assets/image/image_76tUSddrk6.webp)
 
 当客户端连接服务端后，若要上传一个文件到服务端。直接将文件数据传给服务端，那么服务端该如何识别这个数据呢。对于服务端来讲收到的都是字节数据，服务端该如何识别客户端的操作意图，如果是上传文件，那么文件的类型是什么，文件的名字是什么等等信息。
 
@@ -121,11 +121,11 @@ TCP协议是区分客户端服务端的一个比较底层的协议，传输的�
 
 我们可以把要发送给对方的数据前加一行描述信息，我们可以称为头信息。这个头信息包含了我要干什么，我的数据有哪些属性等信息，发头信息后再把具体的数据发送给对方。这样对方先把头信息获取，知道了我要做什么操作，发送过来的数据是是什么有什么数据，再接收具体的数据，就搞定了。
 
-![](./assets/image/image_JMLbbW8vOk.png)
+![](./assets/image/image_JMLbbW8vOk.webp)
 
 加了头信息的数据如下：
 
-![](./assets/image/image_rOWS6plfhS.png)
+![](./assets/image/image_rOWS6plfhS.webp)
 
 #### 自定义协议
 
@@ -261,7 +261,7 @@ public class Protocol {
 
 - 客户端与服务端的交互流程
 
-![](./assets/image/image_q5tXGmsNBb.png)
+![](./assets/image/image_q5tXGmsNBb.webp)
 
 - **数据交互**
 
@@ -300,7 +300,7 @@ type=scan,fileName=null,status=failed,message=目录不存在，只能浏览当�
 
 - **文件上传交换流程**
 
-![](./assets/image/image_U3CMRS4XTH.png)
+![](./assets/image/image_U3CMRS4XTH.webp)
 
 - **数据交互**
 
@@ -347,7 +347,7 @@ type=upload,fileName=要上传的文件,status=ok,message=文件上传成功,
 
 - 文件下载流程
 
-![](./assets/image/image_7yXoNoUUKX.png)
+![](./assets/image/image_7yXoNoUUKX.webp)
 
 - **数据交互**
 
@@ -375,21 +375,21 @@ type=upload,fileName=要上传的文件,status=ok,message=文件上传成功,
 
 #### 服务端架构
 
-![](./assets/image/image_ApqxIUXoNK.png)
+![](./assets/image/image_ApqxIUXoNK.webp)
 
 代码结构：
 
-![](./assets/image/image_rFc2MfcslZ.png)
+![](./assets/image/image_rFc2MfcslZ.webp)
 
 基础代码请看看今天资料
 
 #### 客户端架构
 
-![](./assets/image/image_iVHvqHkjJy.png)
+![](./assets/image/image_iVHvqHkjJy.webp)
 
 项目结构：
 
-![](./assets/image/image_md0Zxh7uOQ.png)
+![](./assets/image/image_md0Zxh7uOQ.webp)
 
 基础代码请看看今天资料
 

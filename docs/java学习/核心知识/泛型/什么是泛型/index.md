@@ -190,7 +190,7 @@ Integer n = integerList.get(1); // ClassCastException!
 
 用\*\*一个图来表示泛型的继承关系，\*\***就是T不变时，可以向上转型，T本身不能向上转型：**
 
-![](./assets/image/image_HosLAMmW-N.png)
+![](./assets/image/image_HosLAMmW-N.webp)
 
 ### 小结
 

@@ -10,8 +10,8 @@
 
 > **双引号创建常量池（本质是一个对象）；先判读有没有；有直接复用；没有就创建；**
 
-![](./assets/image/image_0A_mNu9bxb.png)
+![](./assets/image/image_0A_mNu9bxb.webp)
 
-![](./assets/image/image_A8sAx4Ii0k.png)
+![](./assets/image/image_A8sAx4Ii0k.webp)
 
-![](./assets/image/image_ldXkYuOPAh.png)
+![](./assets/image/image_ldXkYuOPAh.webp)

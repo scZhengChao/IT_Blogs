@@ -10,9 +10,9 @@
 
 > 保证对象的唯一性
 
-![](./assets/image/image_K__CNPtMMR.png)
+![](./assets/image/image_K__CNPtMMR.webp)
 
-![](./assets/image/image_PQnsV3YIEJ.png)
+![](./assets/image/image_PQnsV3YIEJ.webp)
 
 #### 4.1 单例设计模式的作用
 

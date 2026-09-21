@@ -69,7 +69,7 @@ Webpack 特别难学！！！
 
 也就是将各种**类型的资源，包括图片、css、js等，转译、组合、拼接、生成 JS 格式的 bundler 文件**。官网首页的动画很形象地表达了这一点：
 
-![](./assets/image/image_d10V8xOg0i.png)
+![](./assets/image/image_d10V8xOg0i.webp)
 
 这个过程核心完成了**内容转换 + 资源合并**两种功能，实现上包含三个阶段：
 
@@ -105,7 +105,7 @@ webpack 编译过程都是围绕着这些关键对象展开的，更详细完整
 
 学习一个项目的源码通常都是从入口开始看起，按图索骥慢慢摸索出套路的，所以先来看看 webpack 的初始化过程：
 
-![](./assets/image/image_k6wTEUtNLM.png)
+![](./assets/image/image_k6wTEUtNLM.webp)
 
 解释一下：
 
@@ -177,7 +177,7 @@ Webpack 架构很灵活，但代价是牺牲了源码的直观性，比如说上
 
 这些问题，基本上在构建阶段都能看出一些端倪。构建阶段从`entry`开始递归解析资源与资源的依赖，在`compilation`对象内逐步构建出`module`集合以及`module`之间的依赖关系，核心流程：
 
-![](./assets/image/image_aTClth-nqT.png)
+![](./assets/image/image_aTClth-nqT.webp)
 
 解释一下，构建阶段从入口文件开始：
 
@@ -199,19 +199,19 @@ Webpack 架构很灵活，但代价是牺牲了源码的直观性，比如说上
 
 假如有如下图所示的文件依赖树：
 
-![](./assets/image/image_zxafcRXL-B.png)
+![](./assets/image/image_zxafcRXL-B.webp)
 
 其中`index.js`为`entry`文件，依赖于 a/b 文件；a 依赖于 c/d 文件。初始化编译环境之后，`EntryPlugin`根据`entry`配置找到`index.js`文件，调用`compilation.addEntry`函数触发构建流程，构建完毕后内部会生成这样的数据结构：
 
-![](./assets/image/image_pDrD0wI9qJ.png)
+![](./assets/image/image_pDrD0wI9qJ.webp)
 
 此时得到`module[index.js]`的内容以及对应的依赖对象`dependence[a.js]`、`dependence[b.js]`。OK，这就得到下一步的线索：a.js、b.js，根据上面流程图的逻辑继续调用`module[index.js]`的`handleParseResult`函数，继续处理 a.js、b.js 文件，递归上述流程，进一步得到 a、b 模块：
 
-![](./assets/image/image_Pp_mgqZO6g.png)
+![](./assets/image/image_Pp_mgqZO6g.webp)
 
 从 a.js 模块中又解析到 c.js/d.js 依赖，于是再再继续调用`module[a.js]`的`handleParseResult`，再再递归上述流程：
 
-![](./assets/image/image_Cz5pZPf35d.png)
+![](./assets/image/image_Cz5pZPf35d.webp)
 
 到这里解析完所有模块后，发现没有更多新的依赖，就可以继续推进，进入下一步。
 
@@ -259,7 +259,7 @@ compile(callback) {
 
 `seal`原意密封、上锁，我个人理解在 webpack 语境下接近于 \*\*“将模块装进蜜罐”**。`seal`**函数主要完成从****`module`****到****`chunks`\*\***的转化，核心流程：**
 
-![](./assets/image/image_ZQbTnXwaEi.png)
+![](./assets/image/image_ZQbTnXwaEi.webp)
 
 简单梳理一下：
 
@@ -313,7 +313,7 @@ module.exports = {
 
 生成的`chunks`结构为：
 
-![](./assets/image/image_SkN8hbP8YM.png)
+![](./assets/image/image_SkN8hbP8YM.webp)
 
 也就是根据依赖关系，`chunk[a]`包含了`index-a/c`两个模块；`chunk[b]`包含了`c/index-b/d`三个模块；`chunk[e-hash]`为动态引入`e`对应的 chunk。
 
@@ -330,7 +330,7 @@ module.exports = {
 3. 遍历`module`构建 chunk 集合
 4. 触发各种优化钩子
 
-![](./assets/image/image_sheQj3lJkf.png)
+![](./assets/image/image_sheQj3lJkf.webp)
 
 上面 1-3 都是预处理 + chunks 默认规则的实现，不在我们讨论范围，这里重点关注第4个步骤触发的`optimizeChunks`钩子，这个时候已经跑完主流程的逻辑，得到`chunks`集合，`SplitChunksPlugin`正是使用这个钩子，分析`chunks`集合的内容，按配置规则增加一些通用的 chunk ：
 
@@ -398,7 +398,7 @@ compilation = {
 
 OK，上面已经把逻辑层面的构造主流程梳理完了，这里结合**资源形态流转**的角度重新考察整个过程，加深理解：
 
-![](./assets/image/image_WO0LfIfNPN.png)
+![](./assets/image/image_WO0LfIfNPN.webp)
 
 - `compiler.make`阶段：
 - `entry`文件以`dependence`对象形式加入`compilation`的依赖列表，`dependence`对象记录有`entry`的类型、路径等信息
@@ -494,11 +494,11 @@ const {
 
 触发时机与 webpack **工作过程紧密相关，大体上从启动到结束**，`compiler`对象逐次触发如下钩子：
 
-![](./assets/image/image_gWMPD50gZ-.png)
+![](./assets/image/image_gWMPD50gZ-.webp)
 
 而`compilation`对象逐次触发：
 
-![](./assets/image/image__PkaLzLqU8.png)
+![](./assets/image/image__PkaLzLqU8.webp)
 
 所以，理解清楚前面说的 webpack 工作的主流程，基本上就可以捋清楚“什么时候会触发什么钩子”。
 
@@ -609,7 +609,7 @@ class EntryPlugin {
 
 Loader 的作用和实现比较简单，容易理解，所以简单介绍一下就行了。回顾 loader 在编译流程中的生效的位置：
 
-![](./assets/image/image_PliZFPtmVR.png)
+![](./assets/image/image_PliZFPtmVR.webp)
 
 流程图中，`runLoaders`会调用**用户所配置的 loader 集合读取、转译资源**，此前的内容可以千奇百怪，但转**译之后理论上应该输出标准 JavaScript 文本或者 AST 对象**，webpack 才能继续处理模块依赖。
 

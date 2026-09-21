@@ -3,7 +3,7 @@
 - Integer；Double; String; Character; 自带排序规则
 - 自定义：**必须实现**Comparable 接口；（负数；正数；0；底层红黑树需要； ）
 
-![](./assets/image/image_h_ShVmQV7W.png)
+![](./assets/image/image_h_ShVmQV7W.webp)
 
 ```java title="student"
 

@@ -16,7 +16,7 @@
 
 栈的特点是：\*\*先进后出，**或者说是**后进先出（\*\*LIFO, Last In First Out），从栈顶放入元素的操作叫入栈，取出元素叫出栈；&#x20;
 
-![  ](./assets/image/4ef1dea5d36cc286ce82a08ab31c359d_GjhlAh4gBg.png "  ")
+![  ](./assets/image/4ef1dea5d36cc286ce82a08ab31c359d_GjhlAh4gBg.webp "  ")
 
 ![  ](./assets/image/623728eea1bcd2a647f550bbdf3b32cf_xfBHqYuIYn.webp "  ")
 

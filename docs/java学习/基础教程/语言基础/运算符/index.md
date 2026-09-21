@@ -6,29 +6,29 @@
 
 # 算数运算符
 
-![](./assets/image/image_wgtsoDeozd.png)
+![](./assets/image/image_wgtsoDeozd.webp)
 
-![](./assets/image/image_6gvaT1y4GP.png)
+![](./assets/image/image_6gvaT1y4GP.webp)
 
-![](./assets/image/image_qQPQvDWmxO.png)
+![](./assets/image/image_qQPQvDWmxO.webp)
 
-![](./assets/image/image_avTqqbQPlB.png)
+![](./assets/image/image_avTqqbQPlB.webp)
 
-![](./assets/image/image_DaxfsRhms3.png)
+![](./assets/image/image_DaxfsRhms3.webp)
 
-![](./assets/image/image_E03inNYwEh.png)
+![](./assets/image/image_E03inNYwEh.webp)
 
-![](./assets/image/image_yjpcLOoyyQ.png)
+![](./assets/image/image_yjpcLOoyyQ.webp)
 
-![](./assets/image/image_H6rnZOp7bi.png)
+![](./assets/image/image_H6rnZOp7bi.webp)
 
-![](./assets/image/image_SyzdVE8yIs.png)
+![](./assets/image/image_SyzdVE8yIs.webp)
 
-![](./assets/image/image_ey9y1W5Bf5.png)
+![](./assets/image/image_ey9y1W5Bf5.webp)
 
-![](./assets/image/image_Zc9YVoBC_P.png)
+![](./assets/image/image_Zc9YVoBC_P.webp)
 
-![](./assets/image/image_MHB3-c-YrN.png)
+![](./assets/image/image_MHB3-c-YrN.webp)
 
 [案例](./案例/index.md "案例")
 

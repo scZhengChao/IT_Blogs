@@ -23,7 +23,7 @@ yum list lrzsz
 ```
 
 
-![](./assets/image/image_X--0ZGH2lM.png)
+![](./assets/image/image_X--0ZGH2lM.webp)
 
 **2). 在线安装lrzsz**
 
@@ -32,17 +32,17 @@ yum install lrzsz.x86_64
 ```
 
 
-![](./assets/image/image_Sh8DTD2JGT.png)
+![](./assets/image/image_Sh8DTD2JGT.webp)
 
 **3). 测试**
 
 在命令行中输入 rz , 就会自动打开一个文件选择的窗口，然后选择要上传的文件。
 
-![](./assets/image/image_vDarNenhJm.png)
+![](./assets/image/image_vDarNenhJm.webp)
 
 将linux的文件下载到window系统中(默认下载到windows桌面上)的命令是：sz
 
-![](./assets/image/image_jDtl0SDbtv.png)
+![](./assets/image/image_jDtl0SDbtv.webp)
 
 **yum拓展知识:**
 
@@ -50,13 +50,13 @@ yum install lrzsz.x86_64
 
 2\). 我们可以通过一个指令，来检查当前的yum源
 
-![](./assets/image/image_DnwSAegIOn.png)
+![](./assets/image/image_DnwSAegIOn.webp)
 
 从图中，我们可以看到我们安装的 CentOS7 采用的是南京邮电大学的yum源。
 
 3\). 网络 yum 源配置文件位于 /etc/yum.repos.d/ 目录下，文件扩展名为" \*.repo"
 
-![](./assets/image/image_lbwqcHMQky.png)
+![](./assets/image/image_lbwqcHMQky.webp)
 
 可以看到，该目录下有 7 个 yum 配置文件，通常情况下 CentOS-Base.repo 文件生效。
 
@@ -92,6 +92,6 @@ yum makecache
 
 E. 再次查看yum源
 
-![](./assets/image/image_rASa4oW_64.png)
+![](./assets/image/image_rASa4oW_64.webp)
 
 > 之后，我们通过yum指令安装软件，就是从阿里云下载的。

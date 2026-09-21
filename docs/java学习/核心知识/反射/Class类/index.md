@@ -47,11 +47,11 @@ Class cls = new Class(String);
 
 **所以，JVM持有的每个**\*\*`Class`****实例都指向一个数据类型（****`class`****或****`interface`）：\*\*​
 
-![](./assets/image/image_tSyrZ6I13V.png)
+![](./assets/image/image_tSyrZ6I13V.webp)
 
 **一个**\*\*`Class`****实例包含了该****`class`\*\***的所有完整信息：**
 
-![](./assets/image/image_V2L1x0Rbpi.png)
+![](./assets/image/image_V2L1x0Rbpi.webp)
 
 **由于JVM为每个加载的**\*\*`class`****创建了对应的****`Class`****实例，****并在实例中保存了该****`class`****的所有信息，包括类名、包名、父类、实现的接口、所有方法、字段等，因此，如果获取了某个****`Class`****实例****，我们就可以通过这个****`Class`****实例获取到该实例对应的****`class`\*\***的所有信息。**
 

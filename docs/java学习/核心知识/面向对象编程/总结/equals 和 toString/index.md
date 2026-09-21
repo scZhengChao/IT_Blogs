@@ -13,7 +13,7 @@
 > string 的 equals 方法判断的不再是引用；而是值；
 > **自己重写**（强制转换）
 
-![](./assets/image/image_of4FERMj6H.png)
+![](./assets/image/image_of4FERMj6H.webp)
 
 # toString
 

@@ -18,7 +18,7 @@
 
 队列与栈一样，也是一种线性表，不同的是，队列可以**在一端添加元素，在另一端取出元素**，也就是：**先进先出**。从一端放入元素的操作称为入队，取出元素为出队&#x20;
 
-![  ](./assets/image/d081917ee54ce000bf8220b9c11c21d9_OWqzzL-Pa-.png "  ")
+![  ](./assets/image/d081917ee54ce000bf8220b9c11c21d9_OWqzzL-Pa-.webp "  ")
 
 ![  ](./assets/image/9d77f3ac71ba5bd35aae31848e644eea_l7YvHkoSIG.webp "  ")
 

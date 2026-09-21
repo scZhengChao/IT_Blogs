@@ -21,7 +21,7 @@
 > mysql默认：一行sql语句就是会自动提交
 > 事务：**逻辑单元；** 可以在事务中书写多行sql语句；**这些sql语句会作为一个整体**；要么全部成功；要么全部失败；
 
-![](./assets/image/image_bLxHELHi4C.png)
+![](./assets/image/image_bLxHELHi4C.webp)
 
 # 操作
 
@@ -38,13 +38,13 @@
 
 ### 事务执行流程
 
-![](./assets/image/image_mZTLtcBqnw.png)
+![](./assets/image/image_mZTLtcBqnw.webp)
 
 # 案例
 
-![](./assets/image/image_LDHI2neN13.png)
+![](./assets/image/image_LDHI2neN13.webp)
 
-![](./assets/image/image_FsXbI4Pp4L.png)
+![](./assets/image/image_FsXbI4Pp4L.webp)
 
 修改事务的默认提交方式：
 

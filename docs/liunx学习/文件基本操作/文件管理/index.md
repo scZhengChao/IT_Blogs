@@ -36,7 +36,7 @@ cat filename1 filename2 >> filename3
 
 touch 命令用于修改文件或者目录的时间属性，包括存取时间和更改时间。若文件不存在，系统会建立一个新的文件。
 
-![](./assets/image/image_bxdtVVYBg3.png)
+![](./assets/image/image_bxdtVVYBg3.webp)
 
 如果不添加任何参数，就会将文件的修改时间改为当前的系统时间。
 
@@ -44,7 +44,7 @@ touch 命令用于修改文件或者目录的时间属性，包括存取时间�
 
 cp 命令主要用于复制文件或目录。使用该指令复制目录时，必须使用参数 -r 或者 -R 。
 
-![](./assets/image/image_lIJ5rU6Hr1.png)
+![](./assets/image/image_lIJ5rU6Hr1.webp)
 
 这里复制了test目录，并重命名为了test1，test1目录中也包含test目录中所有的内容
 
@@ -52,7 +52,7 @@ cp 命令主要用于复制文件或目录。使用该指令复制目录时，�
 
 mv 命令用来为文件或目录改名（如果目录名称不存在）、或将文件或目录移入其它位置。
 
-![](./assets/image/image_MdDO2DaGLf.png)
+![](./assets/image/image_MdDO2DaGLf.webp)
 
 这里将 test1 文件移动到了 test 文件中。
 

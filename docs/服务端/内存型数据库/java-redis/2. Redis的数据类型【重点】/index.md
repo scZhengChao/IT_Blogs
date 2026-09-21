@@ -37,7 +37,7 @@ redis是一种高级的key-value的存储系统，**键是string类型，其中v
 | set             | 集合类型，类似于Java中Set，元素是存取无序，不可重复   |
 | sorted set/zset | 有序的集合类型，每个元素有一个分数用来决定它的顺序。      |
 
-![](./assets/image/image_SyBbLkl8VE.png)
+![](./assets/image/image_SyBbLkl8VE.webp)
 
 [2、string类型的操作命令](./2、string类型的操作命令/index.md "2、string类型的操作命令")
 

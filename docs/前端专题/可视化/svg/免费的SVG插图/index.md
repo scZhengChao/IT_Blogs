@@ -10,4 +10,4 @@
 
 最有意思的是，插画的颜色可以根据你页面的主题色进行统一修改，系统预设了6种配色方案，你也可以自定义颜色，下载支持PNG和SVG两种格式，支持免费商用，用户体验超好der！
 
-![](./assets/image/image_0GujgQQnsk.png)
+![](./assets/image/image_0GujgQQnsk.webp)

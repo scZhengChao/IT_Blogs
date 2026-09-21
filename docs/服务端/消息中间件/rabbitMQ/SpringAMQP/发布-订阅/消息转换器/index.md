@@ -9,7 +9,7 @@
 
 **之前说过，Spring会把你发送的消息序列化为字节发送给MQ，接收消息的时候，还会把字节反序列化为Java对象。**
 
-![](./assets/image/image_I26X2n_Xno.png)
+![](./assets/image/image_I26X2n_Xno.webp)
 
 只不过，默认情况下Spring采用的序列化方式是JDK序列化。众所周知，JDK序列化存在下列问题：
 
@@ -25,7 +25,7 @@
 
 我们在consumer中利用@Bean声明一个队列：
 
-![](./assets/image/image_LO8IHuf0MJ.png)
+![](./assets/image/image_LO8IHuf0MJ.webp)
 
 ```java 
 @Bean
@@ -38,7 +38,7 @@ public Queue objectMessageQueue(){
 
 #### 2.生产者
 
-![](./assets/image/image_TngpAjh-6S.png)
+![](./assets/image/image_TngpAjh-6S.webp)
 
 我们修改消息发送的代码，发送一个Map对象：
 
@@ -58,9 +58,9 @@ public Queue objectMessageQueue(){
 
 停止consumer服务，发送消息后查看控制台：
 
-![](./assets/image/image_jW5aCk23Ue.png)
+![](./assets/image/image_jW5aCk23Ue.webp)
 
-![](./assets/image/image_rOzzcMCVpt.png)
+![](./assets/image/image_rOzzcMCVpt.webp)
 
 > **消息经过jdk序列化处理，阅读性很差，且数据体积过大！**
 
@@ -82,7 +82,7 @@ public Queue objectMessageQueue(){
 
 【2】在生产者方配置消息转换器。
 
-![](./assets/image/image_oLWozunp64.png)
+![](./assets/image/image_oLWozunp64.webp)
 
 ```java 
 @Bean
@@ -95,9 +95,9 @@ public MessageConverter jsonMessageConverter(){
 
 【3】在消费者方配置消息转换器。
 
-![](./assets/image/image_N_2Yl1Z4Rh.png)
+![](./assets/image/image_N_2Yl1Z4Rh.webp)
 
-![](./assets/image/image_pumWHqNyOI.png)
+![](./assets/image/image_pumWHqNyOI.webp)
 
 ```java 
 @RabbitListener(queues = "object.queue")
@@ -110,8 +110,8 @@ public MessageConverter jsonMessageConverter(){
 
 【4】执行生产者代码，查看mq服务器内容
 
-![](./assets/image/image_2USETbNkKb.png)
+![](./assets/image/image_2USETbNkKb.webp)
 
 【5】执行消费者代码，查看idea控制台。
 
-![](./assets/image/image_5SdbKbHkV1.png)
+![](./assets/image/image_5SdbKbHkV1.webp)

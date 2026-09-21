@@ -35,14 +35,14 @@
 
 页面效果：
 
-![](./assets/image/image_ugDPkZQAqL.png)
+![](./assets/image/image_ugDPkZQAqL.webp)
 
 ```typescript 
 justify-content: end;
 ```
 
 
-![](./assets/image/image_b3e00DoeyY.png)
+![](./assets/image/image_b3e00DoeyY.webp)
 
 ```typescript 
 justify-content: center;
@@ -50,7 +50,7 @@ justify-content: center;
 ```
 
 
-![](./assets/image/image_P2X5jeqGct.png)
+![](./assets/image/image_P2X5jeqGct.webp)
 
 ```typescript 
 justify-content: space-around;
@@ -58,14 +58,14 @@ justify-content: space-around;
 ```
 
 
-![](./assets/image/image_YuCT0nbhLD.png)
+![](./assets/image/image_YuCT0nbhLD.webp)
 
 ```typescript 
 justify-content: space-between;
 ```
 
 
-![](./assets/image/image_cok6hlu5q-.png)
+![](./assets/image/image_cok6hlu5q-.webp)
 
 ```typescript 
 justify-content: space-evenly;
@@ -73,8 +73,8 @@ justify-content: space-evenly;
 ```
 
 
-![](./assets/image/image_Ngmok6d5yg.png)
+![](./assets/image/image_Ngmok6d5yg.webp)
 
 注意：只有当项目宽度没有指定时，`justify-content: stretch;`才会使得整个内容区域在水平方向拉伸占据整个网格容器，如果指定了项目宽度页面效果与`justify-content: start;`相同。 不指定项目宽度后，显示效果如图所示：
 
-![](./assets/image/image_SOaK7Le_8C.png)
+![](./assets/image/image_SOaK7Le_8C.webp)

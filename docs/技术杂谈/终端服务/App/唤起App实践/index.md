@@ -39,7 +39,7 @@
 
 一张图了解一下什么是唤端。
 
-![](./assets/image/image__mySxTwQjv.png)
+![](./assets/image/image__mySxTwQjv.webp)
 
 #### 2. 唤端功能
 
@@ -53,7 +53,7 @@
 
 唤端技术架构图如下。
 
-![](./assets/image/image_YNQ7GTkY9a.png)
+![](./assets/image/image_YNQ7GTkY9a.webp)
 
 # 二 面临的新问题
 
@@ -103,7 +103,7 @@
 
 架构图如下：
 
-![旧架构  旧架构  ](./assets/image/image_SdaPMUi3rG.png "旧架构  旧架构  ")
+![旧架构  旧架构  ](./assets/image/image_SdaPMUi3rG.webp "旧架构  旧架构  ")
 
 这种以运行时平台基础的策略模式+适配器模式的设计架构，随着业务复杂度的提高，主要存在以下弊端：
 
@@ -143,7 +143,7 @@ new CallApp().start({path: ''})
 
 结合了自身的业务场景的特点，和业界的优秀方案，最终沉淀出以下架构，如图所示。
 
-![](./assets/image/image_YsCuvNsIzQ.png)
+![](./assets/image/image_YsCuvNsIzQ.webp)
 
 设计的原则和思想是，以功能职责划分，抽象出各个功能模块，然后再将各个模块有机的组成一个整体。
 
@@ -409,7 +409,7 @@ const copyToClipboard = str => {
 ```
 
 
-![页面还原流程 页面还原流程 ](./assets/image/image_0kvMKho7yG.png "页面还原流程 页面还原流程 ")
+![页面还原流程 页面还原流程 ](./assets/image/image_0kvMKho7yG.webp "页面还原流程 页面还原流程 ")
 
 页面还原效果如下：
 
@@ -433,7 +433,7 @@ evokeDownload(zzDownloadLink)
 
 整体流程如下图：
 
-![](./assets/image/image_SUne5wlw7K.png)
+![](./assets/image/image_SUne5wlw7K.webp)
 
 ### 短信短链接唤起
 
@@ -445,7 +445,7 @@ evokeDownload(zzDownloadLink)
 
 下面是 IOS 短信短链接唤起 App 的实现流程。
 
-![](./assets/image/image_i6mswEU_1G.png)
+![](./assets/image/image_i6mswEU_1G.webp)
 
 短链接唤起效果如下：
 
@@ -507,7 +507,7 @@ new CallApp({
 
 通过数据发现一个问题，数据中`触发 > 成功 + 失败`, 那么说明什么原因造成的呢？可以推测唤端触发时按钮没有加防抖，那么就可以加以对其进行修复完善，这样就可以形成一个数据驱动反馈的闭环。
 
-![](./assets/image/image_pb9euwy2_b.png)
+![](./assets/image/image_pb9euwy2_b.webp)
 
 ## 五 周边生态建设
 
@@ -515,19 +515,19 @@ new CallApp({
 
 前端工具平台可一键生成唤起App长链接、短链接，短信短链接等，便于业务使用。
 
-![](./assets/image/image_gKBRjjtpUI.png)
+![](./assets/image/image_gKBRjjtpUI.webp)
 
 ### 统跳平台
 
 统跳平台便于多个App跳转目标URL进行统一管理。URL可以是一个页面地址，也可以是一个行为的描述，比如弹
 
-![](./assets/image/image_lgvX_tW_Ue.png)
+![](./assets/image/image_lgvX_tW_Ue.webp)
 
 ### 中间落地页
 
 统一的中间页，让使用者可以接入URL页面的形式来接入唤起功能，而无需修改项目代码引入唤起库，唤端中间页支持多App。
 
-![](./assets/image/image_kbXKxnPb7g.png)
+![](./assets/image/image_kbXKxnPb7g.webp)
 
 # 六 开源建设
 
@@ -549,4 +549,4 @@ Github 地址：[https://github.com/zhuanzhuanfe/call-app](https://github.com/zh
 
 最后，附上唤端兼容性一览表：
 
-![](./assets/image/image_WIQcz27Tlt.png)
+![](./assets/image/image_WIQcz27Tlt.webp)

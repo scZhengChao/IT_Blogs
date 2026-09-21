@@ -4,31 +4,31 @@
 
 > docker pause 容器名
 
-![](./assets/image/image_2nWgnsqbJB.png)
+![](./assets/image/image_2nWgnsqbJB.webp)
 
 【2】从暂停回到运行容器?
 
 > docker unpause 容器名
 
-![](./assets/image/image_tuJb_kWiiZ.png)
+![](./assets/image/image_tuJb_kWiiZ.webp)
 
 【3】停止容器?
 
 > docker stop 容器名
 
-![](./assets/image/image_4EkWCxGdky.png)
+![](./assets/image/image_4EkWCxGdky.webp)
 
 【4】从停止到启动容器?
 
 > docker start 容器名
 
-![](./assets/image/image_MTA-1K7VPb.png)
+![](./assets/image/image_MTA-1K7VPb.webp)
 
 【5】查看所有运行的容器状态?
 
 可以通过-a参数查看所有状态的容器，包括已经停止的
 
-![](./assets/image/image_YiEK9zSeko.png)
+![](./assets/image/image_YiEK9zSeko.webp)
 
 【6】查看容器日志?
 
@@ -44,7 +44,7 @@
 >
 > docker rm -f 容器名
 
-![](./assets/image/image_Os4TJaGYS8.png)
+![](./assets/image/image_Os4TJaGYS8.webp)
 
 【8】docker run命令的常见参数有哪些？
 

@@ -23,7 +23,7 @@
 
 - i 表示接口。（`inteface`）
 
-![](./assets/image/image_wK7TCkyi57.png)
+![](./assets/image/image_wK7TCkyi57.webp)
 
 # 学习路线
 

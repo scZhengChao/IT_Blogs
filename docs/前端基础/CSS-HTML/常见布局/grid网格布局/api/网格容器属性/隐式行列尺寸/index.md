@@ -84,7 +84,7 @@ grid-auto-columns属性和grid-auto-rows属性用来设置浏览器自动创建�
 
 页面效果：
 
-![](<../assets/grid-auto-columns - grid-auto-/image/image_OLvg1sd0cU.png>)
+![](<../assets/grid-auto-columns - grid-auto-/image/image_OLvg1sd0cU.webp>)
 
 我们可以发现4号项目和5号项目也发生了改变，想要了解原因需要了解隐式网格的定义：
 

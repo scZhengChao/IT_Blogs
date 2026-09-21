@@ -30,7 +30,7 @@ background: linear-gradient(to right, red, yellow);
 
 这将创建一个从左到右的红色到黄色的线性渐变背景。
 
-![](./assets/image/image_W6mP6CTkHC.png)
+![](./assets/image/image_W6mP6CTkHC.webp)
 
 `repeating-linear-gradient()`函数与 `linear-gradient()` 类似，但是它创建的渐变会无限地重复。这意味着渐变模式会在容器内重复填充，直到填满整个容器。参数与 `linear-gradient()` 相同，但效果是重复的。
 
@@ -42,7 +42,7 @@ background: repeating-linear-gradient(to right, red, yellow 10px);
 
 这将创建一个从左到右的重复线性渐变，其中红色和黄色之间的过渡每10像素重复一次。
 
-![](./assets/image/image_5GMiNCHk4m.png)
+![](./assets/image/image_5GMiNCHk4m.webp)
 
 ### radial-gradient()、**repeating-radial-gradient()**
 
@@ -69,7 +69,7 @@ background: radial-gradient(circle, red, yellow);
 
 这将创建一个从中心开始的红色到黄色的圆形径向渐变背景。
 
-![](./assets/image/image_GlYhp-CJJk.png)
+![](./assets/image/image_GlYhp-CJJk.webp)
 
 `repeating-radial-gradient()` 函数与 `radial-gradient()` 类似，但它创建的渐变会无限地重复。这意味着渐变模式会在容器内重复填充，直到填满整个容器。其语法与 `radial-gradient()` 相同，但效果是重复的。
 
@@ -81,7 +81,7 @@ background: repeating-radial-gradient(circle, red, yellow 10%);
 
 这将创建一个从中心开始的重复径向渐变，其中红色和黄色之间的过渡每`10%`的径向距离重复一次。
 
-![](./assets/image/image_F88w5OGi3y.png)
+![](./assets/image/image_F88w5OGi3y.webp)
 
 ### conic-gradient()、repeating-conical-gradient()
 
@@ -106,7 +106,7 @@ background: conic-gradient(red 0%, yellow 100%);
 
 这将创建一个从红色渐变到黄色的锥形渐变背景，其中红色位于渐变的起点（0度或0%），黄色位于渐变的终点（360度或100%）。
 
-![](./assets/image/image_K05skM3Gun.png)
+![](./assets/image/image_K05skM3Gun.webp)
 
 `repeating-conic-gradient()` 函数与 `conic-gradient()` 类似，但是它创建的渐变会无限地重复。这意味着锥形渐变模式会在容器内重复填充，直到填满整个容器。语法与 conic-gradient() 类似，但渐变会重复。
 
@@ -118,4 +118,4 @@ background: repeating-conic-gradient(red 0% 25%, yellow 25% 50%);
 
 这将创建一个重复的锥形渐变，其中红色和黄色之间的过渡从0%到25%，然后从25%到50%重复这个过渡。
 
-![](./assets/image/image_WbqGutu34R.png)
+![](./assets/image/image_WbqGutu34R.webp)

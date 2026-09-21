@@ -4,7 +4,7 @@
 
 > 尽管 `RxJS` 的根基是 `Observable`，**但最有用的还是它的操作符**\*\*。操作符是允许****复杂的异步代码以声明式****的方式进行轻松组合\*\*的基础代码单元。
 
-![](./assets/image/image_UWCpeIwMC0.png)
+![](./assets/image/image_UWCpeIwMC0.webp)
 
 [实现一个Operator](./实现一个Operator/index.md "实现一个Operator")
 

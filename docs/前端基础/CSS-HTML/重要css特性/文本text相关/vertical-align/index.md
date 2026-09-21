@@ -42,7 +42,7 @@
 ```
 
 
-![](./assets/image/image_w9DnnTnaVo.png)
+![](./assets/image/image_w9DnnTnaVo.webp)
 
 这时候的对齐方式是没什么问题的（浏览器默认字符大小16px）
 再我先来改变一下字符的大小看看，将`.bo``x1`的字符改为48px：
@@ -60,7 +60,7 @@
 ```
 
 
-![](./assets/image/image_HTiKRpxWoz.png)
+![](./assets/image/image_HTiKRpxWoz.webp)
 
 可以看到两个盒子文本距离底线有明显的不同，那么更换下盒子字符看看？ &#x20;
 
@@ -81,7 +81,7 @@
 ```
 
 
-![](./assets/image/image_RVELIfmmJv.png)
+![](./assets/image/image_RVELIfmmJv.webp)
 
 这说明文字的**基线对齐是相对于最后一行文字来说的！**
 那对于这种情况，如果我们想**自定义垂直方向上的对齐方式改怎样呢**？
@@ -99,7 +99,7 @@
 ```
 
 
-![](./assets/image/image_MJgVCj4uvV.png)
+![](./assets/image/image_MJgVCj4uvV.webp)
 
 `vertical-align`可能的值的列表如下：
 

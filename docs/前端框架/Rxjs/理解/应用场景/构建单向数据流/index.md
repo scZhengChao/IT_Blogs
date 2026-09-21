@@ -9,7 +9,7 @@
 
 而在`rxjs`中，订阅者通过订阅`observable`/数据源，确保了数据的来源是唯一的，很容易就构建了单向数据流。如下图
 
-![](./assets/image/image_UCwifEYC0E.png)
+![](./assets/image/image_UCwifEYC0E.webp)
 
 而**数据流动不单向**的现象就是状态与状态之间相互修改：用状态A去计算出状态B，又用状态B计算出状态A。这样的代码难以理解，无法维护。
 

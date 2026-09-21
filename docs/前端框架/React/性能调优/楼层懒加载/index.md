@@ -139,7 +139,7 @@ const scrollRenderHandler = ():void => {
 
 假设一屏展示 3 个组件，类似常见分页逻辑中的 pageSize = 3，我们可以将 n 个组件分割成每 3 个 1 组，对每组依次进行渲染，并用 compGroups 保存分割的组，同时使用 groupIdx 指针来指向下一个需要渲染的组序列。&#x20;
 
-![  ](./assets/image/32bab42291af9963fa4041494cfffa3b_QUlMmQfBye.png "  ")
+![  ](./assets/image/32bab42291af9963fa4041494cfffa3b_QUlMmQfBye.webp "  ")
 
 ```javascript 
  export const splitGroups = (homeList: any[], pageSize: number): any[] => {

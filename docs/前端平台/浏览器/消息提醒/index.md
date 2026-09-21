@@ -102,7 +102,7 @@ options
 
 ![  ](./assets/image/message-replace_2Hx9hFhIBU.gif "  ")
 
-![  ](./assets/image/2016-07-05_233335_vi6Ugjzjs1.png "  ")
+![  ](./assets/image/2016-07-05_233335_vi6Ugjzjs1.webp "  ")
 
 | silent | 布尔值。通知出现的时候，是否要有声音。默认false, 表示无声。 |
 | ------ | --------------------------------- |

@@ -67,7 +67,7 @@ export default App;
 
 不过，在代码执行完毕后我们打开控制台：
 
-![](./assets/image/image_cDmJNoj4gk.png)
+![](./assets/image/image_cDmJNoj4gk.webp)
 
 **实际的情况并非如此，按照打印顺序来讲。** ​**useEffect 是在 micorTask 之前被调用，这也就意味着 useEffect 实际是在渲染前被同步调用执行。**
 
@@ -191,7 +191,7 @@ export default App;
 
 当我们在浏览器中点击按钮时：
 
-![](./assets/image/image_ZZMJXXTG1J.png)
+![](./assets/image/image_ZZMJXXTG1J.webp)
 
 我们惊奇的发现，当产生用户事件后执行顺序和初次渲染时存在阻塞 while 循环的输出顺序又是不同了。
 

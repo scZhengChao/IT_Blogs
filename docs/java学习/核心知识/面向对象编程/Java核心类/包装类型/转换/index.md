@@ -41,4 +41,4 @@ int t4 = Integer.valueOf(t2)
 
 **在转换时；务必保证转换为基本类型的格式；否则会抛错；**
 
-![](./assets/image/image_uSgmAAllcA.png)
+![](./assets/image/image_uSgmAAllcA.webp)

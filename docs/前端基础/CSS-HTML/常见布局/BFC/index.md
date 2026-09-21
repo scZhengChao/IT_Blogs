@@ -101,7 +101,7 @@ zoom:1
 | background-clip   | 指定背景图片从什么位置开始裁切                | safari 4, chrome 3                   |
 | rgba              | 基于r,g,b三个颜色通道来设置颜色值, 通过a来设置透明度 | safari 4, chrome 3, FF3, opera 10    |
 
-![  ](./assets/image/640_O6PY3Lvses.png "  ")
+![  ](./assets/image/640_O6PY3Lvses.webp "  ")
 
 # **4. 清除浮动有哪些方法, 各有什么优缺点**
 
@@ -169,7 +169,7 @@ border-color
 
 效果如下:
 
-![  ](./assets/image/640_UFEO_gf73N.png "  ")
+![  ](./assets/image/640_UFEO_gf73N.webp "  ")
 
 2\. 接下来,我们将border值增大
 
@@ -211,7 +211,7 @@ border-color
 
 }
 
-![  ](./assets/image/640_M1avrdOPEM.png "  ")
+![  ](./assets/image/640_M1avrdOPEM.webp "  ")
 
 很容易发现, border渲染并不是正方形, 而是梯形的.
 
@@ -255,7 +255,7 @@ border-color
 
 }
 
-![  ](./assets/image/640_7I6yYZIzWc.png "  ")
+![  ](./assets/image/640_7I6yYZIzWc.webp "  ")
 
 四个三角形拼合成的矩形呈现在我们眼前,那如如果我们只想要一个三角形, 我们是不是可以设想将其他三个设为不可见;
 
@@ -299,7 +299,7 @@ border-color
 
 }
 
-![  ](./assets/image/640_XgYi-dkiEU.png "  ")
+![  ](./assets/image/640_XgYi-dkiEU.webp "  ")
 
 三角形这样就出来, 有木有很简单, 当然我们也可以采用逆向思维来写这个效果, 就是先将所有边框设为透明, 然后需要哪边再对其设置颜色, 效果是一样的
 
@@ -345,7 +345,7 @@ solid
 
 }
 
-![  ](./assets/image/640_I6qajyJGII.png "  ")
+![  ](./assets/image/640_I6qajyJGII.webp "  ")
 
 这样给面试你的人讲,讲明白应该不是问题., 重点就是要理解
 
@@ -357,7 +357,7 @@ solid
 
 三栏布局，顾名思义就是两边固定，中间自适应。三栏布局在开发十分常见，那么什么是三栏布局？即左右模块固定宽度，中间模块随浏览器变化自适应，想要完成的最终效果如下图所示：
 
-![  ](./assets/image/640_R_5j7jqdZH.png "  ")
+![  ](./assets/image/640_R_5j7jqdZH.webp "  ")
 
 下面列出四种实现方式, 在开发中可以根据实际需求选择适合自己的方法进行编码:
 

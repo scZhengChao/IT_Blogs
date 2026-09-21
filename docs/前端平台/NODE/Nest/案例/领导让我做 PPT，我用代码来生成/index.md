@@ -33,7 +33,7 @@ nest new ppt-generate
 ```
 
 
-![](./assets/image/image_W_N2APs-Qe.png)
+![](./assets/image/image_W_N2APs-Qe.webp)
 
 安装 puppeteer：
 
@@ -132,17 +132,17 @@ npm run start:dev
 
 ![](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/41ede95f567f4a94a1ca714818cdc2fe~tplv-k3u1fbpfcp-jj-mark:3024:0:0:0:q75.awebp#?w=2262\&h=732\&s=1498671\&e=png\&b=f4f3f3)
 
-![](./assets/image/image_X5Os0rIT6L.png)
+![](./assets/image/image_X5Os0rIT6L.webp)
 
 抓取每个学校数据的时间太长，我们用 SSE（server sent event） 的方式返回数据。
 
 Sever Sent Event 就是服务端返回的 Content-Type 是 text/event-stream，这是一个流，可以多次返回内容，通过这种方式来随时推送数据。
 
-![](./assets/image/image_MwV2KCJSEG.png)
+![](./assets/image/image_MwV2KCJSEG.webp)
 
 SSE 类似这样用：
 
-![](./assets/image/image_NsQV2S92eF.png)
+![](./assets/image/image_NsQV2S92eF.webp)
 
 改下 AppController
 
@@ -157,7 +157,7 @@ async universityList() {
 
 还有 AppService
 
-![](./assets/image/image_yv5fUdaiVx.png)
+![](./assets/image/image_yv5fUdaiVx.webp)
 
 ```javascript 
 import { Injectable } from '@nestjs/common';
@@ -236,7 +236,7 @@ export class AppService {
 
 试一下：
 
-![](./assets/image/image_Z9lkAJUKdo.png)
+![](./assets/image/image_Z9lkAJUKdo.webp)
 
 **SSE 和爬虫简直是绝配！**
 
@@ -244,9 +244,9 @@ export class AppService {
 
 用法很简单：
 
-![](./assets/image/image_FXEKUOmWIR.png)
+![](./assets/image/image_FXEKUOmWIR.webp)
 
-![](./assets/image/image__zXULfpB6_.png)
+![](./assets/image/image__zXULfpB6_.webp)
 
 new 一个实例，添加一个 Slide，然后添加 text image 等内容，最后写入文件。
 
@@ -296,7 +296,7 @@ node ./test.js
 ```
 
 
-![](./assets/image/image_YE7YGb5zif.png)
+![](./assets/image/image_YE7YGb5zif.webp)
 
 打开看一下：
 
@@ -407,7 +407,7 @@ export class AppService {
 ```
 
 
-![](./assets/image/image_-FGdaRrrd0.png)
+![](./assets/image/image_-FGdaRrrd0.webp)
 
 跑一下：
 

@@ -15,7 +15,7 @@ Mapper**映射文件中定义了操作数据库的sql**,每一个\*\*sql都被�
 
 - `SQL` 映射文件只有很少的几个顶级元素（按照应被定义的顺序列出）：&#x20;
 
-![](./assets/image/image_R01uHa7o3P.png)
+![](./assets/image/image_R01uHa7o3P.webp)
 
 说明：
 \*\*映射文件中需要直接书写SQL语句对数据库进行操作，对数据库操作SQL语句主要有CRUD这四类。
@@ -25,7 +25,7 @@ Mapper**映射文件中定义了操作数据库的sql**,每一个\*\*sql都被�
 
 select标签属性:
 
-![](./assets/image/image_n9OukWzDLg.png)
+![](./assets/image/image_n9OukWzDLg.webp)
 
 练习1:查询id是1的用户信息;
 
@@ -51,13 +51,13 @@ public class MyBatisTest01 {   private static UserMapper userMapper;    @Befor
 ```
 
 
-![](./assets/image/image_zZ_JMWvBC8.png)
+![](./assets/image/image_zZ_JMWvBC8.webp)
 
 > **注意：入参类型可以不写；会自动推导**
 
 2.insert标签
 
-![](./assets/image/image_nZ6bOElsjM.png)
+![](./assets/image/image_nZ6bOElsjM.webp)
 
 > \*\*说明:#{username},#{birthday},#{sex},#{address} 大括号里面的值必须和pojo的实体类User类中的属性名一致，否则会报错。
 >
@@ -77,9 +77,9 @@ Integer addUser(User user);
 ```
 
 
-![](./assets/image/image__4vcVnIttj.png)
+![](./assets/image/image__4vcVnIttj.webp)
 
-![](./assets/image/image_2aJbz9UqqP.png)
+![](./assets/image/image_2aJbz9UqqP.webp)
 
 > sqlSession.close()
 
@@ -123,7 +123,7 @@ Integer addUser(User user);
 
 3.update标签
 
-![](./assets/image/image_AYD0WYyvXX.png)
+![](./assets/image/image_AYD0WYyvXX.webp)
 
 ### 1)定义接口方法&#xD;
 
@@ -144,13 +144,13 @@ update user set user_name=#{username},birthday=#{birthday},sex=#{sex},address= 
 ```
 
 
-![](./assets/image/image_V_4zJOI0QI.png)
+![](./assets/image/image_V_4zJOI0QI.webp)
 
-![](./assets/image/image_As6Lk7Krt0.png)
+![](./assets/image/image_As6Lk7Krt0.webp)
 
 4.delete标签
 
-![](./assets/image/image_wKVGtbu7IQ.png)
+![](./assets/image/image_wKVGtbu7IQ.webp)
 
 ### 1)定义接口方法&#xD;
 
@@ -171,6 +171,6 @@ void deleteById(Integer id);
 ```
 
 
-![](./assets/image/image_wwMYWdPGLO.png)
+![](./assets/image/image_wwMYWdPGLO.webp)
 
-![](./assets/image/image_-ruDrYnL2z.png)
+![](./assets/image/image_-ruDrYnL2z.webp)

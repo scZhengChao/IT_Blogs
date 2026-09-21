@@ -32,7 +32,7 @@ JS生态已经有很多模块了，有些模块封装得非常好，我们使用
 
 工厂模式的名字就很直白，封装的模块就像一个工厂一样批量的产出需要的对象。常见工厂模式的一个特征就是调用的时候不需要使用 new，而且传入的参数比较简单。但是调用次数可能比较频繁，经常需要产出不同的对象，频繁调用时不用 new也方便很多。一个工厂模式的代码结构如下所示:&#x20;
 
-![  ](./assets/image/ecb88e6e8e7ebf182b5c36422b8c9161_CjJ0NNkDW4.png "  ")
+![  ](./assets/image/ecb88e6e8e7ebf182b5c36422b8c9161_CjJ0NNkDW4.webp "  ")
 
 上述代码中，我们传入了 type，然后工厂根据不同的 type来创建不同的对象。&#x20;
 
@@ -44,7 +44,7 @@ JS生态已经有很多模块了，有些模块封装得非常好，我们使用
 
 针对这几种弹窗，我们先来分别建一个类：&#x20;
 
-![  ](./assets/image/cd7b4139e27926b8a6150ab8d7511149_MnOgda-Sux.png "  ")
+![  ](./assets/image/cd7b4139e27926b8a6150ab8d7511149_MnOgda-Sux.webp "  ")
 
 然后我们使用 popup就不用 new了，直接调用函数就行:&#x20;
 
@@ -57,27 +57,27 @@ JS生态已经有很多模块了，有些模块封装得非常好，我们使用
 
 上述代码虽然实现了工厂模式，但是 switch始终感觉不是很优雅。我们使用面向对象改造下 popup，将它改为一个类，将不同类型的弹窗挂载在这个类上成为工厂方法：&#x20;
 
-![  ](./assets/image/5f36846ef8b8dc2b13afd72cde378f41_E0AIt0oYn8.png "  ")
+![  ](./assets/image/5f36846ef8b8dc2b13afd72cde378f41_E0AIt0oYn8.webp "  ")
 
 ### 封装成模块&#x20;
 
 这个 popup不仅仅让我们调用的时候少了一个 new，他其实还把相关的各种弹窗都封装在了里面，这个 popup可以直接作为模块 export出去给别人调用，也可以挂载在 window上作为一个模块给别人调用。因为 popup封装了弹窗的各种细节，即使以后 popup内部改了，或者新增了弹窗类型，或者弹窗类的名字变了，只要保证对外的接口参数不变，对外面都没有影响。挂载在 window上作为模块可以使用自执行函数：&#x20;
 
-![  ](./assets/image/1f9a6abcac4cd05ff184308afec19aa3_owvMhX4aKp.png "  ")
+![  ](./assets/image/1f9a6abcac4cd05ff184308afec19aa3_owvMhX4aKp.webp "  ")
 
 # 建造者模式&#x20;
 
 建造者模式是用于比较复杂的大对象的构建，比如 Vue， Vue内部包含一个功能强大，逻辑复杂的对象，在构建的时候也需要传很多参数进去。像这种需要创建的情况不多，创建的对象本身又很复杂的时候就适用建造者模式。建造者模式的一般结构如下：&#x20;
 
-![  ](./assets/image/78eefa46dce880092debe37615143224_-FnfFng0Eg.png "  ")
+![  ](./assets/image/78eefa46dce880092debe37615143224_-FnfFng0Eg.webp "  ")
 
-![  ](./assets/image/0baba7057f38cdf6653feac4ddf0f1d3_kUOID3vGd0.png "  ")
+![  ](./assets/image/0baba7057f38cdf6653feac4ddf0f1d3_kUOID3vGd0.webp "  ")
 
 # 单例模式&#x20;
 
 单例模式适用于全局只能有一个实例对象的场景，单例模式的一般结构如下：&#x20;
 
-![  ](./assets/image/1cc560f86d05100cc2ea675449c85265_hZh7MNDbUB.png "  ")
+![  ](./assets/image/1cc560f86d05100cc2ea675449c85265_hZh7MNDbUB.webp "  ")
 
 ### 实例：全局数据存储对象&#x20;
 
@@ -87,22 +87,22 @@ JS生态已经有很多模块了，有些模块封装得非常好，我们使用
 
 这个需求要求全局只有一个数据存储对象，是典型的适合单例模式的场景，我们可以直接套用上面的代码模板，但是上面的代码模板获取 instance必须要调 getInstance才行，要是某个使用者直接调了 Singleton()或者 newSingleton()就会出问题，这次我们换一种写法，让他能够兼容 Singleton()和 newSingleton()，使用起来更加傻瓜化:&#x20;
 
-![  ](./assets/image/24f3a3d8632c0d9ec2cc0413f9b0f0f9_wmFWOknQmv.png "  ")
+![  ](./assets/image/24f3a3d8632c0d9ec2cc0413f9b0f0f9_wmFWOknQmv.webp "  ")
 
 上述代码支持使用 newstore()的方式调用，我们使用了一个静态变量 instance来记录是否有进行过实例化，如果实例化了就返回这个实例，如果没有实例化说明是第一次调用，那就把 this赋给这个这个静态变量，因为是使用 new调用，这时候的 this指向的就是实例化出来的对象，并且最后会隐式的返回 this。&#x20;
 
 如果我们还想支持 store()直接调用，我们可以用前面工厂模式用过的方法，检测 this是不是当前类的实例，如果不是就帮他用 new调用就行了：&#x20;
 
-![  ](./assets/image/9ffcdf930871ff5bae63e70e0ab1a84d_8ZJq3KW-yX.png "  ")
+![  ](./assets/image/9ffcdf930871ff5bae63e70e0ab1a84d_8ZJq3KW-yX.webp "  ")
 
-![  ](./assets/image/b48db024b67cdfbbe2f7468362a1ca28_eXyNl1A7eI.png "  ")
+![  ](./assets/image/b48db024b67cdfbbe2f7468362a1ca28_eXyNl1A7eI.webp "  ")
 
 # 原型模式&#x20;
 
 原型模式最典型的应用就是JS本身啊，JS的原型链就是原型模式。JS中可以使用 Object.create指定一个对象作为原型来创建对象:&#x20;
 
-![  ](./assets/image/01fd760cf57ffe79f3aefd5f2b324bf4_kPvDdAgP5v.png "  ")
+![  ](./assets/image/01fd760cf57ffe79f3aefd5f2b324bf4_kPvDdAgP5v.webp "  ")
 
 上述代码我们将 obj作为原型，然后用 Object.create创建的新对象都会拥有这个对象上的属性和方法，这其实就算是一种原型模式。还有JS的面向对象其实更加是这种模式的体现，比如JS的继承可以这样写:&#x20;
 
-![  ](./assets/image/ecaa5fe81d96c8a22e343956f882b5e8_kOWiKmWYvV.png "  ")
+![  ](./assets/image/ecaa5fe81d96c8a22e343956f882b5e8_kOWiKmWYvV.webp "  ")

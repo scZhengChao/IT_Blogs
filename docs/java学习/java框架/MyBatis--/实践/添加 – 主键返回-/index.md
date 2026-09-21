@@ -4,7 +4,7 @@
 
 在向表中插入一行记录后，**会自动把当前行的主键列下的数据值获取**
 
-![](./assets/image/image_rfk0zGwCaW.png)
+![](./assets/image/image_rfk0zGwCaW.webp)
 
 ```java title="sql-xml"
 <?xml version="1.0" encoding="UTF-8" ?>

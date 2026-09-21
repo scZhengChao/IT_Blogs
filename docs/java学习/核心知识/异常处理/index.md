@@ -8,7 +8,7 @@
 
 本章我们讨论如何在Java程序中处理各种异常情况。
 
-![](./assets/image/image_If8X4LBaff.png)
+![](./assets/image/image_If8X4LBaff.webp)
 
 [Java的异常](./Java的异常/index.md "Java的异常")
 

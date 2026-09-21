@@ -10,7 +10,7 @@
 - [上述代码中出现的操作符解析](#上述代码中出现的操作符解析)
 - [引用计数](#引用计数)
 
-![](../assets/Cold-Observables与Hot-Observabl/image/image_OJ6F7h1yOY.png)
+![](../assets/Cold-Observables与Hot-Observabl/image/image_OJ6F7h1yOY.webp)
 
 ##### **Cold Observables**
 

@@ -265,7 +265,7 @@ cluster 开启子进程Demo
 
 #### cluster原理分析
 
-![  ](./assets/image/640_Xrkh7CPydg.png "  ")
+![  ](./assets/image/640_Xrkh7CPydg.webp "  ")
 
 **cluster模块调用fork方法来创建子进程，该方法与child\_process中的fork是同一个方法**。cluster模块采用\*\*的是经典的主从模型，Cluster会创建一个master，然后根据你指定的数量复制出多个子进程，可以使用 \*\*`cluster.isMaster`
 
@@ -281,9 +281,9 @@ cluster模块**使用内置的负载均衡来更好地处理线程之间的压�
 
 cluster模块的一个弊端：
 
-![  ](./assets/image/640_QlLiM813-T.png "  ")
+![  ](./assets/image/640_QlLiM813-T.webp "  ")
 
-![  ](./assets/image/640_QlLiM813-T.png "  ")
+![  ](./assets/image/640_QlLiM813-T.webp "  ")
 
 `cluster`内部隐时的构建TCP服务器的方式来说对使用者确实简单和透明了很多，但是这种方式无法像使用`child process`那样灵活，**因为一直主进程只能管理一组相同的工作进程**，而自行通过`child_process`来创建工作进程，一个主进程可以控制多组进程。原因是`child_process`操作子进程时，可以隐式的创建多个TCP服务器，对比上面的两幅图应该能理解我说的内容。
 
@@ -297,7 +297,7 @@ Node中实现IPC通道是依赖于libuv。windows下由命名管道(name pipe)�
 
 IPC创建和实现示意图
 
-![  ](./assets/image/640_GT0z4IzBO7.png "  ")
+![  ](./assets/image/640_GT0z4IzBO7.webp "  ")
 
 **IPC通信管道是如何创建的**
 
@@ -321,7 +321,7 @@ IPC创建和实现示意图
 
 结合句柄的发送与还原示意图更容易理解。
 
-![  ](./assets/image/640_BPZIS2D6k5.png "  ")
+![  ](./assets/image/640_BPZIS2D6k5.webp "  ")
 
 `send()`
 
@@ -368,7 +368,7 @@ IPC创建和实现示意图
 
 我们自己实现一个多进程架构守护Demo
 
-![  ](./assets/image/640_YSiR0XByl-.png "  ")
+![  ](./assets/image/640_YSiR0XByl-.webp "  ")
 
 编写主进程
 

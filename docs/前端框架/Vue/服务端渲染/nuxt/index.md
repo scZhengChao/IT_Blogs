@@ -8,7 +8,7 @@
 
 \*\*   有点像生命周期\*\*​
 
-![  ](./assets/image/4f64dfd65f3ba5c0d27e739a5a11c3e2_-tY9Mfdtyq.png "  ")
+![  ](./assets/image/4f64dfd65f3ba5c0d27e739a5a11c3e2_-tY9Mfdtyq.webp "  ")
 
 **nuxt安装**
 
@@ -68,11 +68,11 @@
 ```
 
 
-![  ](./assets/image/23cde4d9f5603a7bec2cd8082a4404c2_WiM9O1lxOC.png "  ")
+![  ](./assets/image/23cde4d9f5603a7bec2cd8082a4404c2_WiM9O1lxOC.webp "  ")
 
-![  ](./assets/image/f8bd65931ce5278e32eed53aadffdabb_4hkn_IoqDr.png "  ")
+![  ](./assets/image/f8bd65931ce5278e32eed53aadffdabb_4hkn_IoqDr.webp "  ")
 
-![  ](./assets/image/ff5cdbf8c3f2bbb7220551bd7dcf92b1_sjaC6iOr5x.png "  ")
+![  ](./assets/image/ff5cdbf8c3f2bbb7220551bd7dcf92b1_sjaC6iOr5x.webp "  ")
 
 **导航**
 
@@ -170,11 +170,11 @@ to
 
 **嵌套路由**
 
-![  ](./assets/image/e895fc29706cc0d7f76d91f34b939005_Mt1Bjr9mxh.png "  ")
+![  ](./assets/image/e895fc29706cc0d7f76d91f34b939005_Mt1Bjr9mxh.webp "  ")
 
-![  ](./assets/image/e8ef73b1eb882a21c7fbedbda1d0b5c3_Wuo83dQBlv.png "  ")
+![  ](./assets/image/e8ef73b1eb882a21c7fbedbda1d0b5c3_Wuo83dQBlv.webp "  ")
 
-![  ](./assets/image/88a68a042daa74cd18210a1e00a302ef_Qdcm3MoUSj.png "  ")
+![  ](./assets/image/88a68a042daa74cd18210a1e00a302ef_Qdcm3MoUSj.webp "  ")
 
 ```纯文本 
  创建内嵌子路由，你需要添加一个  .vue 文件， 同时添加一个与 该文件同名的目录用来存放子视图组件 。 
@@ -197,7 +197,7 @@ Nuxt.js
 
 如何为指定的路由配置数据和视图
 
-![  ](./assets/image/3d089f0c09274856618147a900237260_fZHSLaSGdb.png "  ")
+![  ](./assets/image/3d089f0c09274856618147a900237260_fZHSLaSGdb.webp "  ")
 
 ```纯文本 
  根据 页面灵活的选择 视图布局layout 
@@ -235,11 +235,11 @@ Nuxt.js
 ```
 
 
-![  ](./assets/image/13e431c38b3cade30b057d896460bc73_h7uGeFKC0O.png "  ")
+![  ](./assets/image/13e431c38b3cade30b057d896460bc73_h7uGeFKC0O.webp "  ")
 
-![  ](./assets/image/f38e157714f46ef9703788c8d38f3583_d8VMJXFWeC.png "  ")
+![  ](./assets/image/f38e157714f46ef9703788c8d38f3583_d8VMJXFWeC.webp "  ")
 
-![  ](./assets/image/e97bd949375111a2076feeb5ea0b466a_W1xbHdUTzz.png "  ")
+![  ](./assets/image/e97bd949375111a2076feeb5ea0b466a_W1xbHdUTzz.webp "  ")
 
 **页面（个人觉得 大头部分）pages**
 
@@ -276,7 +276,7 @@ Nuxt.js
 
    官网地址
 
-![  ](./assets/image/410330b1fc085257ca3c2eaabcba49d2_dRBVcBbpEJ.png "  ")
+![  ](./assets/image/410330b1fc085257ca3c2eaabcba49d2_dRBVcBbpEJ.webp "  ")
 
 **异步数据获取   pages**
 
@@ -342,7 +342,7 @@ Nuxt.js
 ```
 
 
-![  ](./assets/image/d2c1829b67de0f21a832c64648135f3f_TGr6788r0i.png "  ")
+![  ](./assets/image/d2c1829b67de0f21a832c64648135f3f_TGr6788r0i.webp "  ")
 
 ```纯文本 
  整合axios 

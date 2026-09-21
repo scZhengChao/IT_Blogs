@@ -28,6 +28,6 @@ public class Main {
 
 注意：上述方法的输出都是`String`，在计算机内存中，只用二进制表示，不存在十进制或十六进制的表示方法。`int n = 100`在内存中总是以4字节的二进制表示：
 
-![](./assets/image/image_4-0Qkgqya6.png)
+![](./assets/image/image_4-0Qkgqya6.webp)
 
 我们经常使用的`System.out.println(n);`是**依靠核心库自动把整数格式化为10进制输出并显示在屏幕**上，使用`Integer.toHexString(n)`则通过**核心库自动把整数格式化为16进制**。

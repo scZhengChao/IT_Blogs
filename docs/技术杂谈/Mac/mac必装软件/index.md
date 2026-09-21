@@ -128,8 +128,8 @@ Easy New File 是一款小巧的 Finder扩展应用，可以为 Finder右键菜�
 
 ## Roste放假日历
 
-![](./assets/image/image_ULFYoueZ2r.png)
+![](./assets/image/image_ULFYoueZ2r.webp)
 
 ## xCal 更加好用
 
-![](./assets/image/image_pQootlLaWp.png)
+![](./assets/image/image_pQootlLaWp.webp)

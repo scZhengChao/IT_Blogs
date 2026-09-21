@@ -28,7 +28,7 @@ docker exec -it mn bash
 
 容器内部会模拟一个独立的Linux文件系统，看起来如同一个linux服务器一样：
 
-![](./assets/image/image_UlKjWVoXRj.png)
+![](./assets/image/image_UlKjWVoXRj.webp)
 
 nginx的环境、配置、运行文件全部都在这个文件系统中，包括我们要修改的html文件。
 
@@ -44,7 +44,7 @@ cd /usr/share/nginx/html
 
 查看目录下文件：
 
-![](./assets/image/image_nVIRZTsYTt.png)
+![](./assets/image/image_nVIRZTsYTt.webp)
 
 3）修改index.html的内容
 
@@ -64,6 +64,6 @@ sed -i -e 's#Welcome to nginx#传智教育欢迎您#g' -e 's#<head>#<head><meta 
 
 在浏览器访问自己的虚拟机地址，例如我的是：[http://192.168.150.101，即可看到结果：](<> "http://192.168.150.101，即可看到结果：")
 
-![](./assets/image/image_xT5CQpRbu6.png)
+![](./assets/image/image_xT5CQpRbu6.webp)
 
-![](./assets/image/image_NIlLNa12iD.png)
+![](./assets/image/image_NIlLNa12iD.webp)

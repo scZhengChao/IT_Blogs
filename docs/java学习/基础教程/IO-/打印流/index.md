@@ -29,7 +29,7 @@ public void print()
 ```
 
 
-![](./assets/image/image_gSNGgN17l6.png)
+![](./assets/image/image_gSNGgN17l6.webp)
 
 # 修改System.out
 

@@ -146,7 +146,7 @@ POC:
 
 加载该图片后，路由器会给用户一个合法的 SESSION，就可以进行下一步操作了。
 
-![](./assets/image/image_v_2Z2BLNpv.png)
+![](./assets/image/image_v_2Z2BLNpv.webp)
 
 **CSRF 攻击的对象**
 
@@ -280,7 +280,7 @@ CSRF攻击是**源于Web的隐式身份验证机制！**Web的身份验证机制
 
 什么是HTTP Referer？下面GIF图是由百度跳转到QQ邮箱页面的Referer查看示意：
 
-![](./assets/image/image_sSt0IMf1jH.png)
+![](./assets/image/image_sSt0IMf1jH.webp)
 
 可以看出Referer为
 

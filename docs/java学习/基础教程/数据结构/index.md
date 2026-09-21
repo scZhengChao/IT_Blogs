@@ -5,7 +5,7 @@
 - [什么是数据结构](#什么是数据结构)
 - [常见的数据结构](#常见的数据结构)
 
-![](./assets/image/image_wQgYPzgOY1.png)
+![](./assets/image/image_wQgYPzgOY1.webp)
 
 # 什么是数据结构
 

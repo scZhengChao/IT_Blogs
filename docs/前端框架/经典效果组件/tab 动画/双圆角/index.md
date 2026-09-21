@@ -19,13 +19,13 @@
 
 一个带圆角的矩形 + 左右对称的不规则图形（一个小矩形分别去掉一个圆角），利用伪元素 `::before` `::after` 和 `box-shadow` 阴影实现。
 
-![](./assets/image/image_Ktq0A7dxTv.png)
+![](./assets/image/image_Ktq0A7dxTv.webp)
 
-![](./assets/image/image_M1XGgs4EJe.png)
+![](./assets/image/image_M1XGgs4EJe.webp)
 
-![](./assets/image/image_jNd1qJrhkz.png)
+![](./assets/image/image_jNd1qJrhkz.webp)
 
-![](./assets/image/image_9GGvmhCevF.png)
+![](./assets/image/image_9GGvmhCevF.webp)
 
 ## 代码结构
 
@@ -68,7 +68,7 @@
 ```
 
 
-![](./assets/image/image_x_ZykKacnr.png)
+![](./assets/image/image_x_ZykKacnr.webp)
 
 #### 1. 顶部圆角实现
 
@@ -80,7 +80,7 @@
 ```
 
 
-![](./assets/image/image_G2emaSsXJo.png)
+![](./assets/image/image_G2emaSsXJo.webp)
 
 #### 2. 底部外圆角实现(借助 CSS3 伪元素)
 
@@ -109,7 +109,7 @@
 ```
 
 
-![](./assets/image/image_MkkYBFvcId.png)
+![](./assets/image/image_MkkYBFvcId.webp)
 
 ### 3. 使用 `box-shadow` 覆盖外圆角没有覆盖的区域
 
@@ -121,11 +121,11 @@
 ```
 
 
-![](./assets/image/image_243OAlZ3Or.png)
+![](./assets/image/image_243OAlZ3Or.webp)
 
 将蓝色改回白色，左右外圆角底色改成橙色
 
-![](./assets/image/image_PKlMuerrUd.png)
+![](./assets/image/image_PKlMuerrUd.webp)
 
 ```javascript 
 .tab-box .active::before {
@@ -138,4 +138,4 @@
 ```
 
 
-![](./assets/image/image_uRgcKAqFys.png)
+![](./assets/image/image_uRgcKAqFys.webp)

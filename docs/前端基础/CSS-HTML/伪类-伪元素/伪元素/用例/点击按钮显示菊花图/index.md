@@ -2,11 +2,11 @@
 
 说一个很常见的使用场景：在表单里，当你点击提交按钮时，如果能够让用户看到“更多的反馈效果”似乎这个网页会更受欢迎一些。那么，当你“提交表单”时让用户知道自己再等待状态似乎是个不错的选择：
 
-![  ](./assets/image/101ac8fe126f39d2a9f2d701844e1141_KvNC48d16u.png "  ")
+![  ](./assets/image/101ac8fe126f39d2a9f2d701844e1141_KvNC48d16u.webp "  ")
 
 通过JavaScript控制类名，在点击时给button按钮施加loading-name，将其文字变透明，并将背景设置为一个loading图！
 
-![  ](./assets/image/4cbaac9d317bcd356a883cb5e029e205_BKhLGpdfCR.png "  ")
+![  ](./assets/image/4cbaac9d317bcd356a883cb5e029e205_BKhLGpdfCR.webp "  ")
 
 当你看到“点击时”，我想你应该有那么一瞬间要想到“
 

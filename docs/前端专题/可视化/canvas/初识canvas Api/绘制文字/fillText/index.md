@@ -35,7 +35,7 @@ ctx.fillText(text, x, y [, maxWidth]);
 
 ### 结合 textAlign 和 textBaseline 使用
 
-![](./assets/image/image_0URTiYvHvl.png)
+![](./assets/image/image_0URTiYvHvl.webp)
 
 ```html 
 <canvas id="alignBaselineCanvas" width="600" height="300"></canvas>
@@ -78,7 +78,7 @@ ctx.fillText(text, x, y [, maxWidth]);
 
 ### 使用 maxWidth 参数
 
-![](./assets/image/image_j7QXOVy2Rh.png)
+![](./assets/image/image_j7QXOVy2Rh.webp)
 
 ```html 
 <canvas id="maxWidthCanvas" width="400" height="200"></canvas>
@@ -100,7 +100,7 @@ ctx.fillText(text, x, y [, maxWidth]);
 
 ### 动态文本绘制
 
-![](./assets/image/image_h_2rvjQXue.png)
+![](./assets/image/image_h_2rvjQXue.webp)
 
 ```javascript 
 <canvas id="dynamicTextCanvas" width="400" height="200"></canvas>
@@ -130,7 +130,7 @@ ctx.fillText(text, x, y [, maxWidth]);
 
 ### 文本阴影效果
 
-![](./assets/image/image_BvAkDDDhwW.png)
+![](./assets/image/image_BvAkDDDhwW.webp)
 
 ```html 
 <canvas id="shadowTextCanvas" width="400" height="200"></canvas>
@@ -165,7 +165,7 @@ ctx.fillText(text, x, y [, maxWidth]);
 
 ### 文本渐变填充
 
-![](./assets/image/image_2Sa6LUZN-i.png)
+![](./assets/image/image_2Sa6LUZN-i.webp)
 
 ```html 
 <canvas id="gradientTextCanvas" width="400" height="200"></canvas>
@@ -188,7 +188,7 @@ ctx.fillText(text, x, y [, maxWidth]);
 
 ### 文本旋转
 
-![](./assets/image/image_MlD89JgAIS.png)
+![](./assets/image/image_MlD89JgAIS.webp)
 
 ```html 
 <canvas id="rotateTextCanvas" width="400" height="200"></canvas>
@@ -222,7 +222,7 @@ ctx.fillText(text, x, y [, maxWidth]);
 
 ### 创建交互式文字游戏
 
-![](./assets/image/image_ujCtgcJ0Rf.png)
+![](./assets/image/image_ujCtgcJ0Rf.webp)
 
 ```html 
 <canvas id="gameCanvas" width="600" height="400"></canvas>
@@ -318,7 +318,7 @@ ctx.fillText(text, x, y [, maxWidth]);
 
 ### 创建文字粒子效果
 
-![](./assets/image/image_2Qj55QFKZO.png)
+![](./assets/image/image_2Qj55QFKZO.webp)
 
 ```javascript 
 <canvas id="particleCanvas" width="600" height="400"></canvas>
@@ -394,7 +394,7 @@ ctx.fillText(text, x, y [, maxWidth]);
 
 ### 基于空格和字符的手动换行
 
-![](./assets/image/image_LThRIaWA1A.png)
+![](./assets/image/image_LThRIaWA1A.webp)
 
 ```html 
 <canvas id="canvas" width="400" height="200"></canvas>
@@ -437,7 +437,7 @@ wrapText(ctx, longText, 20, 40, 360, 24);
 
 ### 方法2：更精确的字符级换行（支持中文）
 
-![](./assets/image/image_7WNtKv9ng8.png)
+![](./assets/image/image_7WNtKv9ng8.webp)
 
 ```javascript 
 <canvas id="canvas" width="400" height="200"></canvas>
@@ -504,7 +504,7 @@ wrapText(ctx, longText, 20, 40, 360, 24);
 
 ## 完整示例：带样式的多段落文本
 
-![](./assets/image/image_gBHNlhN_cO.png)
+![](./assets/image/image_gBHNlhN_cO.webp)
 
 ```html 
 <canvas id="canvas" width="500" height="300"></canvas>

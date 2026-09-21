@@ -37,37 +37,37 @@
 
 ## 根据变量的值自动推导类型
 
-![](./assets/image/image_YprqPppcsQ.png)
+![](./assets/image/image_YprqPppcsQ.webp)
 
-![](./assets/image/image_sBFNKd_gB_.png)
+![](./assets/image/image_sBFNKd_gB_.webp)
 
 ## 函数返回值自动推断
 
-![](./assets/image/image_BjVsdUXD0G.png)
+![](./assets/image/image_BjVsdUXD0G.webp)
 
 函数中如果有条件分支，推导出来的返回值类型是所有分支的返回值类型的联合类型
 
-![](./assets/image/image_Z6vRsjKHcf.png)
+![](./assets/image/image_Z6vRsjKHcf.webp)
 
 **ts的类型推导方式是懒推导，也就是说不会实际执行代码。**
 
-![](./assets/image/image_0JY_t7a7qW.png)
+![](./assets/image/image_0JY_t7a7qW.webp)
 
 上图中如果实际执行了，c的类型是能确认为null的。
 
 ## 使用范型推导
 
-![](./assets/image/image_FrU_3OHS3B.png)
+![](./assets/image/image_FrU_3OHS3B.webp)
 
 可以看到按照上面写法，对象合并推导不出来，如果能推导出来u3应该等于 `{name: string, age: number}`。
 
 这时候我们可以借助范型来推导
 
-![](./assets/image/image_S6VitzKCJ0.png)
+![](./assets/image/image_S6VitzKCJ0.webp)
 
 可以给上面代码简写为这样，编辑器也能推导出来
 
-![](./assets/image/image_j2wuFNcMSp.png)
+![](./assets/image/image_j2wuFNcMSp.webp)
 
 ## 实战
 
@@ -75,17 +75,17 @@
 
 从一个对象中，返回指定的属性名称。
 
-![](./assets/image/image_GXTYvKnJX1.png)
+![](./assets/image/image_GXTYvKnJX1.webp)
 
 上面代码中定义了两个范型T和U，T表示对象，U被限定为T的属性名(`U extends keyof T`)，返回值的类型为`{[K in U]: T[K]}`，in的作用就是遍历U这个数组。
 
-![](./assets/image/image_qMvus2_NjQ.png)
+![](./assets/image/image_qMvus2_NjQ.webp)
 
 可以看到数组元素被限制了只能是user对象里的key
 
-![](./assets/image/image_x_DpqE6fqu.png)
+![](./assets/image/image_x_DpqE6fqu.webp)
 
-![](./assets/image/image_GicWagetl6.png)
+![](./assets/image/image_GicWagetl6.webp)
 
 也正确的推导出来了
 
@@ -172,9 +172,9 @@ export default App;
 - `ReturnType` 获取某个函数的返回值
 - `Awaited` 如果函数返回值为Promise，这个可以获取到最终的值类型。
 
-![](./assets/image/image_NE-_VA4CZo.png)
+![](./assets/image/image_NE-_VA4CZo.webp)
 
-![](./assets/image/image_x-IvKOALy3.png)
+![](./assets/image/image_x-IvKOALy3.webp)
 
 可以看到，正确的获取到了getUsers函数的返回值类型。
 
@@ -277,35 +277,35 @@ export default App;
 
 `useRequest.tsx`代码也很简单，首先使用了范型限制fn只能是一个函数，返回值还必须是`Promise`。这个hooks返回值loading和error就不说了，主要是data，这个data要求和传进来的方法返回值一致，前面说过，可以使用`Awaited<ReturnType<T>>`获取函数的返回类型。
 
-![](./assets/image/image_Woo23Xmv2s.png)
+![](./assets/image/image_Woo23Xmv2s.webp)
 
 但是上面代码可能会导致bug，看下面代码，如果请求失败，users应该是空的，直接这样使用就会报错了。改造一下，当error为false的时候data为正常类型，error为true的时候data为null，这里可以使用联合类型。
 
-![](./assets/image/image_j4IfyKU_IM.png)
+![](./assets/image/image_j4IfyKU_IM.webp)
 
-![](./assets/image/image_U1I3eVjbqc.png)
+![](./assets/image/image_U1I3eVjbqc.webp)
 
-![](./assets/image/image_zJgSmPMPJL.png)
+![](./assets/image/image_zJgSmPMPJL.webp)
 
-![](./assets/image/image_8Rzv-m3pXu.png)
+![](./assets/image/image_8Rzv-m3pXu.webp)
 
 加了一个判断后，下面就不会报错了。ts在某些时候，真的可以避免一些低级错误，我相信如果没有这个限制，肯定有人在写代码的时候不加判断直接用users。
 
 如果请求接口的函数需要参数怎么办，下面来实现一下。
 
-![](./assets/image/image_aJJJ1CKI4h.png)
+![](./assets/image/image_aJJJ1CKI4h.webp)
 
 # get-1
 
 **使用Parameters获取传入函数的参数类型**
 
-![](./assets/image/image_eQBofYN05z.png)
+![](./assets/image/image_eQBofYN05z.webp)
 
-![](./assets/image/image_Y8p6IPaHOP.png)
+![](./assets/image/image_Y8p6IPaHOP.webp)
 
 多个参数也是支持的
 
-![](./assets/image/image_HCSciGhrF7.png)
+![](./assets/image/image_HCSciGhrF7.webp)
 
 # zustand
 
@@ -335,7 +335,7 @@ export const useStore = create<State & Action>((set) => ({
 ```
 
 
-![](./assets/image/image_qW0OEglKQD.png)
+![](./assets/image/image_qW0OEglKQD.webp)
 
 ## `create`方法的定义
 
@@ -359,7 +359,7 @@ type Create = {
 
 可以看到create有三个重载方法，最后一个废弃不用了，上面例子使用的是第一个方法，第二个重载方法可以这样使用。
 
-![](./assets/image/image_2MXrc_NqP6.png)
+![](./assets/image/image_2MXrc_NqP6.webp)
 
 这样做的意义和中间件有关系，这个后面再说。
 
@@ -417,11 +417,11 @@ export type StateCreator<
 
 举个例子：
 
-![](./assets/image/image_R24X58U8pv.png)
+![](./assets/image/image_R24X58U8pv.webp)
 
 因为函数上没有\$\$name属性，所以报错了，下面给函数加上属性就可以了
 
-![](./assets/image/image_vXMhftoQVJ.png)
+![](./assets/image/image_vXMhftoQVJ.webp)
 
 ```typescript 
 setState: Get<Mutate<StoreApi<T>, Mis>, 'setState', never>
@@ -441,11 +441,11 @@ type Get<T, K, F> = K extends keyof T ? T[K] : F
 
 看个例子
 
-![](./assets/image/image_nmuoYZhzkN.png)
+![](./assets/image/image_nmuoYZhzkN.webp)
 
 因为T对象中没有count属性，所以返回never，`never`表示不存在的类型。
 
-![](./assets/image/image_bXR13zZ-KO.png)
+![](./assets/image/image_bXR13zZ-KO.webp)
 
 因为T对象中有name属性，所以返回name字段对应的类型string。
 
@@ -502,7 +502,7 @@ type SetStateInternal<T> = (
 
 set竟然可以直接设置值，看完源码后，我才知道可以这样用，一般我都是用函数，然后使用函数返回值更新值。
 
-![](./assets/image/image_CKTjQvEDze.png)
+![](./assets/image/image_CKTjQvEDze.webp)
 
 ### create方法的返回值类型定义
 
@@ -542,15 +542,15 @@ create返回值是一个函数，**这个函数有三个重载方法，并且方
 
 第一个重载方法表示没有参数时直接返回`ExtractState<S>`，ExtractState其实就是获取S对象中getState的返回值类型。
 
-![](./assets/image/image_rj3lksdH5v.png)
+![](./assets/image/image_rj3lksdH5v.webp)
 
 第二个重载方法有一个参数，可以返回自定义属性。
 
-![](./assets/image/image_AH1yT8i9rf.png)
+![](./assets/image/image_AH1yT8i9rf.webp)
 
 第三个重载方法废弃了，就不说了。
 
-![](./assets/image/image_8Sc7DknxEU.png)
+![](./assets/image/image_8Sc7DknxEU.webp)
 
 上图中useStore之所以有setState和getState等属性，就是上面`& S`的作用。
 
@@ -570,9 +570,9 @@ zustand支持使用中间件和编写中间件，看完官方持久化`persist`�
 
 这个重载方法主要是给使用了中间件的情况下使用的，看一个例子。
 
-![](./assets/image/image_w9pGUGG4rG.png)
+![](./assets/image/image_w9pGUGG4rG.webp)
 
-![](./assets/image/image_8jW8fzRKWg.png)
+![](./assets/image/image_8jW8fzRKWg.webp)
 
 上面例子中使用了官方提供的持久化中间件，如果使用第一种重载方法会报错，使用第二种就会报错，下面我们来分析一下为啥会这样。
 
@@ -594,39 +594,39 @@ b(['hello'])
 ```
 
 
-![](./assets/image/image_QiT6T-JW5m.png)
+![](./assets/image/image_QiT6T-JW5m.webp)
 
 这时候我们调用第一个重载方法没有报错，加了范型后就报错了。
 
-![](./assets/image/image_wKETONYdji.png)
+![](./assets/image/image_wKETONYdji.webp)
 
 # get-6
 
 这是**因为不使用范型的时候，编辑器会自动推导类型，** 如果传了一个范型，那么`U extends any[] = []`**会强制使用默认值\[]**，所以传\['hello']会报错。传\[]就不会报错了。**第二个重载方法的意义就是给两个范型拆开，这样设置了T不会应用U。**
 
-![](./assets/image/image_7JwvgMZZyq.png)
+![](./assets/image/image_7JwvgMZZyq.webp)
 
 回到上面问题再看一下create方法的参数类型
 
-![](./assets/image/image_PWBrqa_tS_.png)
+![](./assets/image/image_PWBrqa_tS_.webp)
 
 因为传了一个范型约束，所以第二个参数使用默认值\[]了
 
-![](./assets/image/image_ZF3Ejk9K6N.png)
+![](./assets/image/image_ZF3Ejk9K6N.webp)
 
 然而persist中间件返回值类型Mos不为\[]，所以报错了
 
-![](./assets/image/image_5Ts88TBy2Q.png)
+![](./assets/image/image_5Ts88TBy2Q.webp)
 
 针对这个问题，有两个解决方案
 
 第一个方案是把范型去掉，把范型写在persist上。
 
-![](./assets/image/image_zxWvCOMcR0.png)
+![](./assets/image/image_zxWvCOMcR0.webp)
 
 第二个方案是用第二个重载方法
 
-![](./assets/image/image_7vxs9oiSU-.png)
+![](./assets/image/image_7vxs9oiSU-.webp)
 
 ## 中间件返回值的类型定义
 
@@ -669,7 +669,7 @@ type C<T extends any[] = [], S = {}> = T extends [infer F, ...infer R] ? C<R, S 
 ```
 
 
-![](./assets/image/image_mRipWz6hOQ.png)
+![](./assets/image/image_mRipWz6hOQ.webp)
 
 理解了这个，那上面`Mutate`也就好理解了。
 
@@ -679,15 +679,15 @@ type C<T extends any[] = [], S = {}> = T extends [infer F, ...infer R] ? C<R, S 
 
 当使用中间件的时候，我们先看下persist返回值类型。
 
-![](./assets/image/image__yVMU43W77.png)
+![](./assets/image/image__yVMU43W77.webp)
 
 persist中间件源码中的类型定义
 
-![](./assets/image/image_KRXXg2dT-p.png)
+![](./assets/image/image_KRXXg2dT-p.webp)
 
 根据create方法`initializer`参数定义Mos被自动推导成了`[["zustand/persist", State & Action]]`，Mos对应Mutate里的Ms。
 
-![](./assets/image/image_vLNYJxruCL.png)
+![](./assets/image/image_vLNYJxruCL.webp)
 
 ```typescript 
 Ms extends [[infer Mi, infer Ma], ...infer Mrs]
@@ -705,17 +705,17 @@ Mutate<StoreMutators<S, Ma>[Mi & StoreMutatorIdentifier], Mrs>
 
 接下来开始递归了，StoreMutators\<S, Ma>\[Mi & StoreMutatorIdentifier]，把Mi替换成"zustand/persist"，变成StoreMutators\<S, Ma>\["zustand/persist" & StoreMutatorIdentifier]。
 
-![](./assets/image/image_u6Hz1Z7bEd.png)
+![](./assets/image/image_u6Hz1Z7bEd.webp)
 
 最开始这段代码让很迷惑，因为StoreMutators在项目里定义的是空对象，上面这种写法取不到任何东西。然后我去persist中间件源码里看了一下，原来在persist里给StoreMutators扩展了。
 
 # get-8
 
-![](./assets/image/image_CH2ehwzLX4.png)
+![](./assets/image/image_CH2ehwzLX4.webp)
 
 这几个类型定义可以简单理解为是给Mutate里S添加了persist属性。而persist属性有下面这些方法。
 
-![](./assets/image/image_KSQ9hTjhI2.png)
+![](./assets/image/image_KSQ9hTjhI2.webp)
 
 ```typescript 
 type Write<T, U> = Omit<T, keyof U> & U
@@ -724,13 +724,13 @@ type Write<T, U> = Omit<T, keyof U> & U
 
 **Write表示合并两个类型，如果有重复的key，用后面的覆盖前面。**
 
-![](./assets/image/image_g-wOsva1rM.png)
+![](./assets/image/image_g-wOsva1rM.webp)
 
 可以看到两个对象合并了key，并且name被覆盖成了number类型。
 
 所以当使用persist中间件时，`Mutate<StoreApi<T>, Mos>`最终类型为`StoreApi<T> & { persist: { ... } }`，所以我们能create返回的值里调用persist里的方法。
 
-![](./assets/image/image_2OFBzLACOa.png)
+![](./assets/image/image_2OFBzLACOa.webp)
 
 ## 自定义中间件
 
@@ -765,10 +765,10 @@ export const test = a as unknown as Test;
 ```
 
 
-![](./assets/image/image_f3Vy_TCIMj.png)
+![](./assets/image/image_f3Vy_TCIMj.webp)
 
 在中间件中也可以重写setState方法
 
-![](./assets/image/image_Sf_L7yhahi.png)
+![](./assets/image/image_Sf_L7yhahi.webp)
 
-![](./assets/image/image_0VaXAlbQ09.png)
+![](./assets/image/image_0VaXAlbQ09.webp)

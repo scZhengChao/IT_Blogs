@@ -49,13 +49,13 @@ module.exports = {
 
 插入一个新的Link标签，用新的css链接替换原来的样式，这种方案实现上没有难度，也没有兼容问题，需要新建一套完全一样的样式类名，然后替换其中的色值，缺点是工作量太大，尤其开发中的项目来说，扩展性比较差，后期更换样式类名，需要同步更改主题样式文件：
 
-![](./assets/image/image_NPAB6UCpt6.png)
+![](./assets/image/image_NPAB6UCpt6.webp)
 
 ### CSS Variable
 
 另外一个是用ConfigProvider，需要注意在antd\@4.17.0-alpha.0 版本起才支持，而且webpack中如果使用了 babel-plugin-import，需要将其去除。本质是通过CSS Variable（css变量）实现，将颜色赋值变量，最大的问题是——有兼容性问题，在IE浏览器中不支持。补充：antd好像对CSS Variable做了兼容处理。
 
-![](./assets/image/image_Xg0-8n4OnR.png)
+![](./assets/image/image_Xg0-8n4OnR.webp)
 
 项目内需要引入使用变量样式文件：
 
@@ -118,4 +118,4 @@ less.modifyVars是静态更改主题，适合定制化主题，构建完成之�
 补充
 做了一个简单的demo，分别用三种方式实现主题切换：css标签，css variable，css-vars-ponyfill。GitHub地址：react-antd-theme
 
-![](./assets/image/image_LA07pdYxCI.png)
+![](./assets/image/image_LA07pdYxCI.webp)

@@ -13,7 +13,7 @@ Redux 是基于 Flux 架构的实现，是典型的单向数据流体现：
 
 而 RxJS 则是 for Component 的，一份 UI 对应一份 Service 的分形架构：
 
-![](./assets/image/image_bTwcMrycLE.png)
+![](./assets/image/image_bTwcMrycLE.webp)
 
 上述架构的主要有如下几点特点：
 
@@ -27,4 +27,4 @@ Redux 是基于 Flux 架构的实现，是典型的单向数据流体现：
 
 这个库**主要是用于替代 redux-saga/redux-thunk 等，用于 Redux 中异步 Action 的处理，** 因为是 Redux 的 Middleware，**所以数据流仍然是单向数据流**，这种情况下，针对事件、WebSocket 等非一次性单向的异步情况，很难与 Redux 单向数据流进行整合。
 
-![](./assets/image/image_kY8lh_mYv5.png)
+![](./assets/image/image_kY8lh_mYv5.webp)

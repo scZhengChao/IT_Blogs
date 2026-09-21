@@ -5,13 +5,13 @@
 - [牢记  ](#牢记--)
 - [从小到大排序：](#从小到大排序)
 
-![](./assets/image/image_Xrq1jCrOEC.png)
+![](./assets/image/image_Xrq1jCrOEC.webp)
 
 #### 牢记 &#x20;
 
-![](./assets/image/image_3RWe0w0JmW.png)
+![](./assets/image/image_3RWe0w0JmW.webp)
 
-![](./assets/image/image_Vmh1ARZx6L.png)
+![](./assets/image/image_Vmh1ARZx6L.webp)
 
 # 从小到大排序：
 

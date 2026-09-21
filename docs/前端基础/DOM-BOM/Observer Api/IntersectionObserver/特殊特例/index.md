@@ -43,7 +43,7 @@
 
 &#x20;          我们常见的显示器都是 60hz 的，就意味着浏览器每秒需要绘制**60 次（60fps**），大**概每 16.667ms 绘制一次**。如果你使用**200hz 的显示器，那么浏览器每 5ms 就要绘制一次**。我们把 16.667ms 和 5ms 这种每次绘制间隔的时间段，称之为 frame（帧，和 html 里的 frame 不是一个东西）。浏览器的渲染工作都是以这个帧为单位的，下图是 Chrome 中**每帧里浏览器要干的事情（我在**[**原图**](https://aerotwist.com/blog/the-anatomy-of-a-frame/ "原图")**的基础上加了 Intersection Observations 阶段)：**
 
-![  ](./assets/image/5b109ea63d85df15ac68ae2141682820_-Q_2KpwtCW.png "  ")
+![  ](./assets/image/5b109ea63d85df15ac68ae2141682820_-Q_2KpwtCW.webp "  ")
 
           可以看到，相交检测（Intersection Observations）发生\*\*在 \*\***Paint 之后 Composite 之前**，多久检测一次是根据显示设备的刷新率而定的。
 

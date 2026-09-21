@@ -4,6 +4,6 @@
 
 [ 如何使用 React.cloneElement()函数？ 开发文档 如何使用 React.cloneElement()函数？  原文:https://www . geesforgeks . org/how-use-react-clone element-function/  当父组件想要添加或修改其子组件的道具时，我们可以使用 React.cloneElement()方法。React.cloneElement()函数创建给定元素的克隆，我们还可以在函数中传递道具和 https://www.moonapi.com/news/11256.html](https://www.moonapi.com/news/11256.html " 如何使用 React.cloneElement()函数？ 开发文档 如何使用 React.cloneElement()函数？  原文:https://www . geesforgeks . org/how-use-react-clone element-function/  当父组件想要添加或修改其子组件的道具时，我们可以使用 React.cloneElement()方法。React.cloneElement()函数创建给定元素的克隆，我们还可以在函数中传递道具和 https://www.moonapi.com/news/11256.html")
 
-![](./assets/image/image_8aLHrBWQWs.png)
+![](./assets/image/image_8aLHrBWQWs.webp)
 
 React.cloneElement 的第二个参数是修改的 props，后面的参数是 children：

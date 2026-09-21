@@ -111,7 +111,7 @@ Set-Cookie: example=1; SameSite=None; Partitioned ✅
 
 ### 4.3 **覆盖范围不同**
 
-![](./assets/image/image_7Yo0GEFnAN.png)
+![](./assets/image/image_7Yo0GEFnAN.webp)
 
 ### 4.4 **实际效果矩阵**
 
@@ -150,7 +150,7 @@ setCookie({
 
 ## 6. 实际应用决策树
 
-![](./assets/image/image_Cj6IGujeOx.png)
+![](./assets/image/image_Cj6IGujeOx.webp)
 
 ## 8. 总结
 

@@ -43,7 +43,7 @@
 
 本地环境构建采用`Development`模式，采用`style-loader`处理样式，当 `webpack` 处理 `CSS` 样式文件时，`style-loader` 会将 `CSS` 样式文件转换为 `JavaScript` 模块，并将这些模块嵌入到生成的 `JavaScript bundle` 文件中。**在浏览器加载 ****`JavaScript bundle`**** 文件时，****`style-loader`**** 会在 ****`HTML`**** 页面中动态创建 ****`<style>`**** 标签，并将 ****`CSS`**** 样式插入到这些标签中，从而使样式生效。**
 
-![](./assets/image/image_TWFPMGXpCM.png)
+![](./assets/image/image_TWFPMGXpCM.webp)
 
 实际项目中组件嵌套层级结构和样式引用如以下示例：
 
@@ -110,10 +110,10 @@ const Label = () => {
 
 [ \[Bug\] umi@4 开发模式与生产模式下页面样式的表现不一致 · Issue #8326 · umijs/umi · GitHub What happens? umi@4下在配置中开启antd:{}，在global.less里写一段覆盖antd的样式，在开发模式下显示正常（即global里的样式会覆盖antd的样式），但打包后的代码，实际表现为antd的样式覆盖global的样式 How To Reproduce 开发模式下 生产模式下 Steps to reproduce the behavior: 1. 2. 用creat https://github.com/umijs/umi/issues/8326](https://github.com/umijs/umi/issues/8326 " \[Bug] umi@4 开发模式与生产模式下页面样式的表现不一致 · Issue #8326 · umijs/umi · GitHub What happens? umi@4下在配置中开启antd:{}，在global.less里写一段覆盖antd的样式，在开发模式下显示正常（即global里的样式会覆盖antd的样式），但打包后的代码，实际表现为antd的样式覆盖global的样式 How To Reproduce 开发模式下 生产模式下 Steps to reproduce the behavior: 1. 2. 用creat https://github.com/umijs/umi/issues/8326")
 
-![](./assets/image/image_8EjaspxP49.png)
+![](./assets/image/image_8EjaspxP49.webp)
 
-![](./assets/image/image_6IDi-GufTs.png)
+![](./assets/image/image_6IDi-GufTs.webp)
 
-![](./assets/image/image_c2o26f1vfk.png)
+![](./assets/image/image_c2o26f1vfk.webp)
 
 [ 配置 对于 umi 中能使用的自定义配置，你可以使用项目根目录的 .umirc.ts 文件或者 config/config.ts，值得注意的是这两个文件功能一致，仅仅是存在目录不同，2 选 1 ，.umirc.ts 文件优先级较高。 https://umijs.org/docs/api/config#mfsu](https://umijs.org/docs/api/config#mfsu " 配置 对于 umi 中能使用的自定义配置，你可以使用项目根目录的 .umirc.ts 文件或者 config/config.ts，值得注意的是这两个文件功能一致，仅仅是存在目录不同，2 选 1 ，.umirc.ts 文件优先级较高。 https://umijs.org/docs/api/config#mfsu")

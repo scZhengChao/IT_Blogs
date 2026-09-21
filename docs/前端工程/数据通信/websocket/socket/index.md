@@ -44,7 +44,7 @@ proxy_set_header Connection "upgrade";
 
 # 原理
 
-![](./assets/image/image_bx-Dvlz7au.png)
+![](./assets/image/image_bx-Dvlz7au.webp)
 
 ## 请求头特征
 

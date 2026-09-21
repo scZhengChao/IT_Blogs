@@ -93,7 +93,7 @@ webpack.config.js 文件的配置如下：
 
 我们运行一下 `npx webpack`，看一下打包的结果：
 
-![](./assets/image/image__OkNNg1W5X.png)
+![](./assets/image/image__OkNNg1W5X.webp)
 
 我们可以看出：
 
@@ -102,7 +102,7 @@ utils.js 因为是独立打包的，它生成的 utils.bundle.js 属于 chunk 1
 
 感觉还有些绕？看下面这张图，你肯定一看就懂：
 
-![](./assets/image/image_46G7cyUNUo.png)
+![](./assets/image/image_46G7cyUNUo.webp)
 
 1. 对于一份同逻辑的代码，当我们手写下一个一个的文件，它们无论是 `ES Module` 还是 `commonJS` 或是 `AMD`，他们都是 `module` ；
 2. 当我们写的 `module` 源文件传到 `webpack` 进行打包时，`webpack` 会根据**文件引用关系**生成 `chunk` 文件，`webpack` 会对这个 `chunk` 文件进行一些操作；

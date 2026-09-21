@@ -20,6 +20,6 @@
 
 在开发领域就有了一种技术名词： 权限5张表
 
-![](./assets/image/image_Xd_QVMc3BL.png)
+![](./assets/image/image_Xd_QVMc3BL.webp)
 
-![](./assets/image/image_YwBcL_UE0x.png)
+![](./assets/image/image_YwBcL_UE0x.webp)

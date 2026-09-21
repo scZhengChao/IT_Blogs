@@ -16,11 +16,11 @@
 - 使用通用的 SQL 语言操作，使用方便，可用于复杂查询。
 - 数据存储在磁盘中，安全。
 
-![](./assets/image/image_ihv2lhtOV9.png)
+![](./assets/image/image_ihv2lhtOV9.webp)
 
 # 完整模型图
 
-![](./assets/image/image_LvXEvNYWYJ.png)
+![](./assets/image/image_LvXEvNYWYJ.webp)
 
 # ER图
 
@@ -32,4 +32,4 @@ ER图描述**数据表之间的关系**
 4. 属性：实体对象中是含有属性的，比如商品名、价格等。针对一个实体中的属性，我们称为这个实体的数据，**在E-R图中使用椭圆表示。**
 5. 关系：实体和实体之间的关系：&#x20;
 
-![](./assets/image/image_FYvblOHoFb.png)
+![](./assets/image/image_FYvblOHoFb.webp)

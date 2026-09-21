@@ -9,7 +9,7 @@
 
 在开发网络应用程序的时候，**我们又会遇到Socket这个概念。Socket是一个抽象概念**，**一个应用程序通过一个Socket来建立一个远程连接，而Socket内部通过TCP/IP协议把数据传输到网络：**
 
-![](./assets/image/image_AJYhl_k-x0.png)
+![](./assets/image/image_AJYhl_k-x0.webp)
 
 **Socket、TCP和部分IP的功能都是由操作系统提供的**，**不同的编程语言只是提供了对操作系统调用的简单的封装。** 例如，Java提供的几个Socket相关的类就封装了操作系统提供的接口。
 

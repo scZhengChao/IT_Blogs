@@ -8,13 +8,13 @@
 
 返回值是一个[DOMRect](https://developer.mozilla.org/zh-CN/docs/Web/API/DOMRect "DOMRect")对象，是包含整个元素的最小矩形（包括`padding`和`border-width`）。该对象使用`left`、`top`、`right`、`bottom`、`x`、`y`、`width`和`height`这几个以像素为单位的只读属性描述整个矩形的位置和大小。除了`width`和`height`以外的属性是相对于**视图窗口的左上角**来计算的。
 
-![](./assets/image/image_1DEdhOvv2k.png)
+![](./assets/image/image_1DEdhOvv2k.webp)
 
 该方法返回的[DOMRect](https://developer.mozilla.org/zh-CN/docs/Web/API/DOMRect "DOMRect")对象中\*\*的`width`****和****`height`****属性是包含了****`padding`****和****`border-width`****的，**而不仅仅是内容部分的宽度和高度。在标准盒子模型中，这两个属性值分别与元素的`width`/`height`+`padding`+`border-width`相等。**而如果是**[**box-sizing: border-box**](https://developer.mozilla.org/zh-CN/docs/Web/CSS/box-sizing "box-sizing: border-box")**，两个属性则直接与元素的****`width`****或****`height`\*\***相等。**
 
 **getBoundingClientRect用于获取某个元素相对于视窗的位置集合。**
 
-![  ](./assets/image/f0b33f76d832982fe7cac3e576fb0cd2_fau-e-9Fbf.png "  ")
+![  ](./assets/image/f0b33f76d832982fe7cac3e576fb0cd2_fau-e-9Fbf.webp "  ")
 
 兼容性一片大好：ie5就支持
 

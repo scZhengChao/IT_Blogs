@@ -74,4 +74,4 @@ drop：我要丢弃该commit（缩写:d）
 
 然后`wq`保存退出后是注释修改界面:
 
-![](./assets/image/image_Qiv7j0Qrqc.png)
+![](./assets/image/image_Qiv7j0Qrqc.webp)

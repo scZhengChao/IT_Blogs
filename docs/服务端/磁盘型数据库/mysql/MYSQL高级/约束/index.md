@@ -9,7 +9,7 @@
 
 **需要给列定义约束，让数据合法 \*\*约束其实就是一种限制,用于**修饰表中的列. 通过这种限制来保证表中数据的正确性、有效性和完整性。\*\*
 
-![](./assets/image/image_FiAKV0VHVN.png)
+![](./assets/image/image_FiAKV0VHVN.webp)
 
 ## 主键约束
 

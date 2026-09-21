@@ -2,7 +2,7 @@
 
 Java程序在运行时，**需要在内存中分配空间**。为了提高运算效率，就**对空间进行了不同区域的划分**，
 
-![](./assets/image/image_XsNyqX6Au0.png)
+![](./assets/image/image_XsNyqX6Au0.webp)
 
 ```mermaid 
 graph TD

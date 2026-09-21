@@ -16,7 +16,7 @@
 
 你可以启动项目，画一个这样的图，然后点击输出XML。为了保的 xml 与下面的一致，需要先拖出智爷，再拖出超级皮卡丘，最后连接边。
 
-![](./assets/image/image_mXWZmUdUTq.png)
+![](./assets/image/image_mXWZmUdUTq.webp)
 
 控制台应该输出这样一份 xml
 
@@ -55,13 +55,13 @@
 
 **data 值是原对象经 JSON.stringify 得到的，经转义后就变成了上面的样子**。控制台还打印了一个 mxGraphModel 对象，对比上面的 xml 与 下图的节点对象，可以发现它们只是同一个 `Model` 的不同表现形式，`xml` 正是将[**mxGraph.model**](https://link.segmentfault.com/?enc=vbDMzbljKRonGdft/hqfWQ==.GUORAB30Wttk9m4o9lWQvqg76L00znfQLyhwKwzpEc27sVoNiQkati4Gjdsgawmu/62gGlrRfLaQZZttS968bayFQS0NIsBaIjwrhp4beqhhWxgpnj6AjwgnE6k77GZn "mxGraph.model")格式化而成的。
 
-![](./assets/image/image_k8fM3DzJN4.png)
+![](./assets/image/image_k8fM3DzJN4.webp)
 
 # Model 编程模型
 
 `mxcell` 在 `mxGraphModel` 中实现了定义图模型的元素。
 
-![](./assets/image/image_QwReEq7x9I.png)
+![](./assets/image/image_QwReEq7x9I.webp)
 
 图模型有以下属性（包含关系）：
 

@@ -58,7 +58,7 @@ C:\> scoop install python
 
 情况一：
 
-![](./assets/image/image_8YebSRDjA8.png)
+![](./assets/image/image_8YebSRDjA8.webp)
 
 看到类似`Python 3.x`的输出，就说明Python安装成功！
 
@@ -66,7 +66,7 @@ C:\> scoop install python
 
 情况二：得到一个错误：“无法将“python”项识别为 cmdlet、函数、脚本文件或可运行程序的名称。”：
 
-![](./assets/image/image_HStNc6VLEA.png)
+![](./assets/image/image_HStNc6VLEA.webp)
 
 这是因为`Windows`会根据一个`Path`的环境变量设定的路径去查找`python.exe`，如果没找到，就会报错。如果在安装时漏掉了勾选`Add Python 3.x to PATH`，那就要手动把`python.exe`所在的路径添加到Path中。
 

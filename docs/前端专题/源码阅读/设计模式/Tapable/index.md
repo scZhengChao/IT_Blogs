@@ -172,7 +172,7 @@ const {
 - 同步表示注册的事件函数会同步进行执行
 - 异步表示注册的事件函数会异步进行执行
 
-![](./assets/image/image_4DRgpCqwL6.png)
+![](./assets/image/image_4DRgpCqwL6.webp)
 
 对**同步钩子**来说， `tap` 方法是**唯一注册事件**的方法，通过 `call` 方法触发同步钩子的执行。
 
@@ -189,21 +189,21 @@ Tapable 同时也可以按照**执行机制**进行分类，这里说一下这�
 
 - **Basic Hook** : 基本类型的钩子，执行每一个注册的事件函数，并不关心每个被调用的事件函数返回值如何。
 
-![](./assets/image/image_010XU3RogU.png)
+![](./assets/image/image_010XU3RogU.webp)
 
 - **Waterfall** : 瀑布类型的钩子，如果前一个事件函数的结果 `result !== undefined`，则 result 会作为后一个事件函数的第一个参数（也就是上一个函数的执行结果会成为下一个函数的参数）
 
-![](./assets/image/image_8_Fhqwd_7O.png)
+![](./assets/image/image_8_Fhqwd_7O.webp)
 
 - **Bail** : 保险类型钩子，执行每一个事件函数，遇到第一个结果 `result !== undefined` 则返回，不再继续执行（也就是只要其中一个有结果了，后面的就不执行了）
 
-![](./assets/image/image_qeMYdKBe3X.png)
+![](./assets/image/image_qeMYdKBe3X.webp)
 
 - **Loop** : 循环类型钩子，不停的循环执行事件函数，直到所有函数结果 `result === undefined`（有点像我们小时候打单机游戏一样，只要哪一关不小心死了，就得从头再来一遍，直到所有的关卡都打过才算通关）。
 
-![](./assets/image/image_ACCie_-qJp.png)
+![](./assets/image/image_ACCie_-qJp.webp)
 
-![](./assets/image/image__nET4QrKcY.png)
+![](./assets/image/image__nET4QrKcY.webp)
 
 在最开始的案例中我们用的`SyncHook`，它就是一个同步的钩子。又因为并不关心返回值，所以也算是一个基本类型的 `Hook`。
 
@@ -663,7 +663,7 @@ const SyncHook = require("../node_modules/tapable/lib/SyncHook");
 
 第三步：点击 Run and Debug，选择 Node.js 环境
 
-![](./assets/image/image_yFMV634wl_.png)
+![](./assets/image/image_yFMV634wl_.webp)
 
 > （2）在 IDE 中快速的执行代码文件
 
@@ -673,7 +673,7 @@ const SyncHook = require("../node_modules/tapable/lib/SyncHook");
 
 第二步：选择想要运行的文件，点击右键，选择 Run Code 选项：
 
-![](./assets/image/image_VV042xbLye.png)
+![](./assets/image/image_VV042xbLye.webp)
 
 第三步：在控制台中查看结果：
 

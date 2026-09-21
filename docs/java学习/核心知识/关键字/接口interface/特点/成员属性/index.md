@@ -7,4 +7,4 @@ public static final  int num = 10;
 ```
 
 
-![](./assets/image/image_LuDNz2n-rN.png)
+![](./assets/image/image_LuDNz2n-rN.webp)

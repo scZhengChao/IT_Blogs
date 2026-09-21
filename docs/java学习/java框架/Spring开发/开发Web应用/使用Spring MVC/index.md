@@ -56,7 +56,7 @@ public class UserController {
 
 这个标准的Maven Web工程目录结构如下：
 
-![](./assets/image/image_M8bb6McTEh.png)
+![](./assets/image/image_M8bb6McTEh.webp)
 
 其中，`src/main/webapp`是标准web目录，`WEB-INF`存放`web.xml`，编译的class，第三方jar，以及不允许浏览器直接访问的View模版，`static`目录存放所有静态文件。
 

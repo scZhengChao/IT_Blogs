@@ -11,9 +11,9 @@
 - **存储的元素的顺序和获取的元素顺序是一致的**
 - 可以**存储重复的**
 
-![](./assets/image/image_sJa3mMv2m7.png)
+![](./assets/image/image_sJa3mMv2m7.webp)
 
-![](./assets/image/image_QWo1r3H2yV.png)
+![](./assets/image/image_QWo1r3H2yV.webp)
 
 # 增删改查
 

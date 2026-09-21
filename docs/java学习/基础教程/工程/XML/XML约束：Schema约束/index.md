@@ -28,11 +28,11 @@ Schema 功能更强大，数据类型约束更完善。\*\* 比DTD强大，是DT
 
 效果如下：
 
-![](./assets/image/image_4qeQHZO5Zl.png)
+![](./assets/image/image_4qeQHZO5Zl.webp)
 
 DTD约束无法**对具体数据类型进行约束,所以开发工具没有任何错误提示**，如下效果：
 
-![](./assets/image/image_f7oISYnZ6J.png)
+![](./assets/image/image_f7oISYnZ6J.webp)
 
 **实现步骤**
 
@@ -103,7 +103,7 @@ DTD约束无法**对具体数据类型进行约束,所以开发工具没有任�
 
 步骤3：开发工具提示效果
 
-![](./assets/image/image_pGo-7C3suw.png)
+![](./assets/image/image_pGo-7C3suw.webp)
 
 #### 3 名称空间
 
@@ -156,7 +156,7 @@ xml编写与约束内容已经完成了，根据xml的作用我们了解到，�
 
 **命名空间在约束文件的：targetNamespace中**
 
-![](./assets/image/image_3lePmQw7Ud.png)
+![](./assets/image/image_3lePmQw7Ud.webp)
 
 # 使用别名的案例
 

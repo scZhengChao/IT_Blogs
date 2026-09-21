@@ -1,7 +1,7 @@
 # 三元运算符
 
-![](./assets/image/image_TFzpHSKHRi.png)
+![](./assets/image/image_TFzpHSKHRi.webp)
 
-![](./assets/image/image_kpTCQtzpxp.png)
+![](./assets/image/image_kpTCQtzpxp.webp)
 
-![](./assets/image/image_HLFiVlPymf.png)
+![](./assets/image/image_HLFiVlPymf.webp)

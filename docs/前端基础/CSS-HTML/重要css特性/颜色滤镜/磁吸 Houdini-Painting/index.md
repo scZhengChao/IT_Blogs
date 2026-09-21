@@ -169,7 +169,7 @@ background-image: paint(custom-background);
 
 如下图所示，**我们通过 Painter API 实现了一个支持 background margin 的效果。**
 
-![](./assets/image/image_LO34cNV1-i.png)
+![](./assets/image/image_LO34cNV1-i.webp)
 
 当前是写死了 `color` 和 `margin`，难以扩展，`PaintAPI` 可以支持 `CSS Variables`，我们可以将这两个元素出来。
 
@@ -207,7 +207,7 @@ class CustomBackgroundPainter {
 ```
 
 
-![](./assets/image/image_JqdOUI5jwF.png)
+![](./assets/image/image_JqdOUI5jwF.webp)
 
 ## 磁吸 🧲 效果
 

@@ -10,6 +10,6 @@ mxGraph 所有样式在[这里](https://jgraph.github.io/mxgraph/docs/js-api/fil
 
 比如现在我想将边的样式设置成：红色、折线、粗3pt。在 Style 面板手动修改样式后，再点击 Edit Style 就可以看到对应的样式代码。
 
-![](./assets/image/image_u2qB4HZz_2.png)
+![](./assets/image/image_u2qB4HZz_2.webp)
 
-![](./assets/image/image_DAGDNP84Vq.png)
+![](./assets/image/image_DAGDNP84Vq.webp)

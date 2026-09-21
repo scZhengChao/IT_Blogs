@@ -76,4 +76,4 @@ PreparedStatement 原理
 - **执行时就不用再进行这些步骤了，速度更快**
 - **如果sql模板一样，则只需要进行一次检查、编译**
 
-![](./assets/image/image_UWmppPzmUu.png)
+![](./assets/image/image_UWmppPzmUu.webp)

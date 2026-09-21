@@ -4,7 +4,7 @@
 
 什么是`JavaEE`？JavaEE是Java Platform Enterprise Edition的缩写，即Java企业平台。我们前面介绍的所有基于标准JDK的开发都是`JavaSE`，即`Java Platform Standard Edition`。此外，还有一个小众不太常用的`JavaME：Java` Platform Micro Edition，是Java移动开发平台（非Android），它们三者关系如下：
 
-![](./assets/image/image_BOjxvWiLlc.png)
+![](./assets/image/image_BOjxvWiLlc.webp)
 
 JavaME是一个裁剪后的“微型版”JDK，现在使用很少，我们不用管它。**JavaEE也不是凭空冒出来的，它实际上是完全基于JavaSE**，只是多了**一大堆服务器相关的库以及API接口**。**所有的JavaEE程序，仍然是运行在标准的JavaSE的虚拟机上的。**
 
@@ -14,7 +14,7 @@ JavaME是一个裁剪后的“微型版”JDK，现在使用很少，我们不�
 
 JavaEE最**核心的组件就是基于Servlet标准的Web服务器**，开发者编写的**应用程序是基于Servlet API并运行在Web服务器内部的：**
 
-![](./assets/image/image_9hdlln6IlI.png)
+![](./assets/image/image_9hdlln6IlI.webp)
 
 此外，JavaEE还有一系列技术标准：
 

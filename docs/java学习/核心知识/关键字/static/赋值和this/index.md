@@ -14,9 +14,9 @@
 
 #### 静态方法
 
-![](./assets/image/image_VNy9xLlQgg.png)
+![](./assets/image/image_VNy9xLlQgg.webp)
 
 - **静态方法当中不能访问非静态方法**，只能调用**静态成员方法**；不能用this
 - 非静态的方法可以**访问静态的方法和属性**；
 
-![](./assets/image/image_i_RqPWERck.png)
+![](./assets/image/image_i_RqPWERck.webp)

@@ -79,7 +79,7 @@ p::after{
 ```
 
 
-![](./assets/image/110929133328022_OR4gmtIJRY.png)
+![](./assets/image/110929133328022_OR4gmtIJRY.webp)
 
 ### **2、attr()** 链接
 
@@ -96,7 +96,7 @@ a::after{
 ```
 
 
-![](./assets/image/110937215201245_kb2P05lQxy.png)
+![](./assets/image/110937215201245_kb2P05lQxy.webp)
 
 ### **3、url()/uri()** 用于引用媒体文件
 
@@ -117,7 +117,7 @@ a{
 
 效果：
 
-![](./assets/image/041517505323703_nVVKN9yInR.png)
+![](./assets/image/041517505323703_nVVKN9yInR.webp)
 
 ### **4、counter()** 调用计数器
 
@@ -171,7 +171,7 @@ h2:before{
 
 效果：
 
-![](./assets/image/041646256106350_1byxBq_Pga.png)
+![](./assets/image/041646256106350_1byxBq_Pga.webp)
 
 了解更多可参考：[https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Counters](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Counters "https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Counters")
 
@@ -210,7 +210,7 @@ h2:before{
 
 \#star-six的div是一个正三角行，#star-six::after是一个倒三角形，通过绝对定位，调整其位置即可实现六角星的效果。
 
-![](./assets/image/111044162547286_X6QmVOj5y6.png)
+![](./assets/image/111044162547286_X6QmVOj5y6.webp)
 
 ### 显示打印网页的URL
 
@@ -229,7 +229,7 @@ h2:before{
 ```
 
 
-![](./assets/image/041721073927186_iv873I14_F.png)
+![](./assets/image/041721073927186_iv873I14_F.webp)
 
 ### 图标
 
@@ -332,4 +332,4 @@ h2:before{
 
 拿上面的示例进行尝试，可以看到，我们使用伪元素添加的\[问题]两个字，就无法使用浏览器的搜索工具搜到。
 
-![](./assets/image/image_XTqbHqEd8e.png)
+![](./assets/image/image_XTqbHqEd8e.webp)

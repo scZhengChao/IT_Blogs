@@ -13,7 +13,7 @@
     - 不相同；在此进行hash算法；计算出新的存储位置值；然后原来的值挪到新算出来的位置上；原来的位置放入新存储的值；
     - 原来的值；和新来的值；用链表关联起来； &#x20;
 
-![](./assets/image/image_89QloiQNOa.png)
+![](./assets/image/image_89QloiQNOa.webp)
 
 # 性能优化
 
@@ -21,6 +21,6 @@
 - jdk8之后；数组+ 链表/红黑树
 - 当链表的长度大于8的时候；自动转为红黑树
 
-![](./assets/image/image_uX_Om3Tg0-.png)
+![](./assets/image/image_uX_Om3Tg0-.webp)
 
-![](./assets/image/image_g4ZMqo8URG.png)
+![](./assets/image/image_g4ZMqo8URG.webp)

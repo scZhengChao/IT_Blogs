@@ -271,7 +271,7 @@ docker run --rm -td --name testAcon -v /etc/localtime:/etc/localtime alpine
 
 在使用卷或者绑定挂载进行实验时，你可能会纠结一个问题，就是数据覆盖问题，在映射之前，卷和宿主机目录可能为空或者非空，容器目录可能为空或者非空，那么在映射后，到底以哪里的数据为准呢？我总结了一张表，表中写明了映射前后的数据关系（有些容器目录比较特殊，比如/etc，因为/etc目录中有挂载的hosts文件等）。
 
-![](./assets/image/image_2engVo95tb.png)
+![](./assets/image/image_2engVo95tb.webp)
 
 # mount
 

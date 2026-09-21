@@ -28,7 +28,7 @@
 
 # 1. 整体结构
 
-![](./assets/image/image_xVBZO1B2fQ.png)
+![](./assets/image/image_xVBZO1B2fQ.webp)
 
 从上到下分别为 4 个区域：
 
@@ -39,7 +39,7 @@
 
 # 2. 工具面板
 
-![](./assets/image/image_yH1I9soZs1.png)
+![](./assets/image/image_yH1I9soZs1.webp)
 
 工具面板常用功能：
 
@@ -54,7 +54,7 @@
 
 概览面板分为CPU和NET两个区域，如果在工具面板中勾选Memory，会多出HEAP区域
 
-![](./assets/image/image_kXv57OsC5h.png)
+![](./assets/image/image_kXv57OsC5h.webp)
 
 ## 1. CPU
 
@@ -90,11 +90,11 @@ JS Heap，**JS堆内存使用情况**，如果曲线一直在增长，则说明�
 
 表示**服务器资源的加载情况。**
 
-![](./assets/image/image_sUUfGa2EnK.png)
+![](./assets/image/image_sUUfGa2EnK.webp)
 
 更推荐使用NetWork面板来看
 
-![](./assets/image/image_tqifCnO3zD.png)
+![](./assets/image/image_tqifCnO3zD.webp)
 
 1. 在Waterfall中，**右侧离红线越远，说明请求开始的时间越晚（请求数量过多等原因）**
 2. **蓝色或绿色越宽，**说明**内容下载或等待服务器响应时间越长（需后端优化）**
@@ -107,11 +107,11 @@ JS Heap，**JS堆内存使用情况**，如果曲线一直在增长，则说明�
 
 查看**每秒帧数**。将**鼠标悬停在其中一个绿色方块上会显示该帧的耗时和 FPS，**如出现**红色方块则表示出现掉帧**
 
-![](./assets/image/image_2X13hi3jLT.png)
+![](./assets/image/image_2X13hi3jLT.webp)
 
 ## 3. Timings
 
-![](./assets/image/image_M3iIiIOngK.png)
+![](./assets/image/image_M3iIiIOngK.webp)
 
 1. FP（First Paint）：**首屏绘制，页面刚开始渲染的时间**
 2. FCP（First ContentfulPaint）：**首屏内容绘制，首次绘制任何文本，图像**，非空白 canvas 或 SVG 的时间点
@@ -125,11 +125,11 @@ JS Heap，**JS堆内存使用情况**，如果曲线一直在增长，则说明�
 
 记录了渲染进程中**主线程的执行记录，是我们分析具体函数耗时最常看的面板，**也是我们**常说的火焰图**
 
-![](./assets/image/image_Olm4WwNopY.png)
+![](./assets/image/image_Olm4WwNopY.webp)
 
 首先，面板中会有很多的 Task，如果是**耗时长的 Task（超过50ms），其右上角会标红，**这个时候，我们可以选中标红的 Task。选中后，可以**看到哪些事件耗时了多少**，**点击压缩后的文件名，可以看到具体的代码**
 
-![](./assets/image/image_PJXmecCUqI.png)
+![](./assets/image/image_PJXmecCUqI.webp)
 
 常见事件：
 
@@ -142,15 +142,15 @@ JS Heap，**JS堆内存使用情况**，如果曲线一直在增长，则说明�
 
 简单示例：
 
-![](./assets/image/image_HKmmnbTUBk.png)
+![](./assets/image/image_HKmmnbTUBk.webp)
 
 （1）在一个长任务Task中，**Parse HTML占据了较大的比**重，点击源文件，定位到的内容如下所示：
 
-![](./assets/image/image_-Hw0HOYMI-.png)
+![](./assets/image/image_-Hw0HOYMI-.webp)
 
 （2）**Recalculate Style也占据了较大的比重**，点击源文件，定位到的内容如下所示：
 
-![](./assets/image/image_j1IPcXKG25.png)
+![](./assets/image/image_j1IPcXKG25.webp)
 
 **读取offsetWidth属性会导致浏览器强制进行回流操作**。回流**操作会重新计算页面的布局，导致重新计算样式的时间变长**
 
@@ -170,7 +170,7 @@ JS Heap，**JS堆内存使用情况**，如果曲线一直在增长，则说明�
 
 在勾选后，就会显示折线图，通过该图我们可以看到页**面中的内存使用的情况，比如 JS Heap(堆)，如果曲线一直在增长，则说明可能存在内存泄露。**
 
-![](./assets/image/image_B9N6E7U5hk.png)
+![](./assets/image/image_B9N6E7U5hk.webp)
 
 # 5. 统计面板
 
@@ -178,7 +178,7 @@ JS Heap，**JS堆内存使用情况**，如果曲线一直在增长，则说明�
 
 表示各指标时间占用统计报表，与总览区域里面的cpu使用区域颜色一致
 
-![](./assets/image/image_yefF2u8mQf.png)
+![](./assets/image/image_yefF2u8mQf.webp)
 
 - 蓝色(Loading)：表示网络通信和 HTML 解析时间
 - 黄色(Scripting)：表示 JavaScript 执行时间
@@ -191,7 +191,7 @@ JS Heap，**JS堆内存使用情况**，如果曲线一直在增长，则说明�
 
 可以看到各个事件消耗时间排序
 
-![](./assets/image/image_evuQ6bMdIc.png)
+![](./assets/image/image_evuQ6bMdIc.webp)
 
 这里有两列时间数据，**一是"Self Time"代表任务自身执行所消耗的时间，二是"Total Time"代表此任务及其调用的附属子任务一共消耗的时间。**
 
@@ -203,7 +203,7 @@ JS Heap，**JS堆内存使用情况**，如果曲线一直在增长，则说明�
 
 是按**顺序记录的事件日志**，常见的优化级别中一般用不到它
 
-![](./assets/image/image_BwY0TqrLWA.png)
+![](./assets/image/image_BwY0TqrLWA.webp)
 
 # 6. 示例
 
@@ -240,11 +240,11 @@ JS Heap，**JS堆内存使用情况**，如果曲线一直在增长，则说明�
 
 然后用无痕模式打开 chrome，无痕模式下没有插件，分析性能不会受插件影响。在performance面板中点击 reload 按钮进行性能分析。
 
-![](./assets/image/image_Ri9BR0di47.png)
+![](./assets/image/image_Ri9BR0di47.webp)
 
 **飘红的Task即长任务，点击Task，可以在Bottom-Up中看到各个函数所耗费的时长，** 其中a函数耗费最久，点击右侧的a.html，可以定位到源码对应的位置
 
-![](./assets/image/image_-rbijRkRM8.png)
+![](./assets/image/image_-rbijRkRM8.webp)
 
 这样我们就定位到了耗时长的函数，并进行改进。
 

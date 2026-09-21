@@ -8,7 +8,7 @@
 
 # 一、首先我们要了解 Websocket 握手的原理
 
-![](./assets/image/image_5PW5t_nYtJ.png)
+![](./assets/image/image_5PW5t_nYtJ.webp)
 
 ## 请求头特征
 

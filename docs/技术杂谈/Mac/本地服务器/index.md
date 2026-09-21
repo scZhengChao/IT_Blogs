@@ -26,11 +26,11 @@
 
 系统Apache服务器的默认的文档地址是： `/Library/WebServer/Documents`添加自己的文档（如下图画红框处）到此目录下，注意替换掉原来的index.html文档，这是默认的入口文档。
 
-![](./assets/image/image_1CRsjrnTdU.png)
+![](./assets/image/image_1CRsjrnTdU.webp)
 
 打开浏览器，地址栏输入：`127.0.0.1`，如下图所示：
 
-![](./assets/image/image_gKQUxxO2pf.png)
+![](./assets/image/image_gKQUxxO2pf.webp)
 
 #### 4- 手机/其他电脑 访问本机服务器
 
@@ -54,7 +54,7 @@
 
 # Forbidden 错误解决办法
 
-![](./assets/image/image_V4V2_x21dL.png)
+![](./assets/image/image_V4V2_x21dL.webp)
 
 最后；要保证你更改后的目录要有可读的权限
 

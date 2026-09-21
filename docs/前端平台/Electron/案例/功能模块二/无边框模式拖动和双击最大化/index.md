@@ -12,7 +12,7 @@
 
 frame:false，transparent:true；
 
-![](./assets/image/image_DDcAVaaGZZ.png)
+![](./assets/image/image_DDcAVaaGZZ.webp)
 
 配置后, **自定义导航栏这时候窗口是不可以拖动的**。但是您想拖动的话，这时候您要元素中声明一个：-[webkit](https://so.csdn.net/so/search?q=webkit\&spm=1001.2101.3001.7020 "webkit")-app-region: drag;(元素可拖动模式),但是设置以后出现了新问题drag模式下元素无法监听到鼠标双击或者单击事件。
 

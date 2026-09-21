@@ -9,7 +9,7 @@
 
 > npm view 包名 versions &#x20;
 
-![](./assets/image/image_aj9kt_i470.png)
+![](./assets/image/image_aj9kt_i470.webp)
 
 # 查看包的概要信息
 
@@ -17,4 +17,4 @@
 > 等价于
 > npm info 包名  &#x20;
 
-![](./assets/image/image_U9FYZ2-xVO.png)
+![](./assets/image/image_U9FYZ2-xVO.webp)

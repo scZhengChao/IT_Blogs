@@ -8,7 +8,7 @@ needle
 
 [   https://www.npmjs.com/package/needle](https://www.npmjs.com/package/needle "   https://www.npmjs.com/package/needle")
 
-![](./assets/image/image_DaQ532u29N.png)
+![](./assets/image/image_DaQ532u29N.webp)
 
 配合agent实现代理
 

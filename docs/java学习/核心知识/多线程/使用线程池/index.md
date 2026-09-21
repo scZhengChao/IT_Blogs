@@ -9,7 +9,7 @@ Java语言虽然内置了多线程支持，启动一个新线程非常方便，�
 
 如果可以复用一组线程：
 
-![](./assets/image/image_dXpOl-d1pD.png)
+![](./assets/image/image_dXpOl-d1pD.webp)
 
 那么我们就可以把很多小任务让一组线程来执行，而不是一个任务对应一个新线程。这种**能接收大量小任务并进行分发处理的就是线程池。**
 
@@ -148,11 +148,11 @@ ses.scheduleWithFixedDelay(new Task("fixed-delay"), 2, 3, TimeUnit.SECONDS);
 
 **注意FixedRate和FixedDelay的区别。**FixedRate是指任务总是**以固定时间间隔触发，不管任务执行多长时间：**
 
-![](./assets/image/image_H_pIgfsHNv.png)
+![](./assets/image/image_H_pIgfsHNv.webp)
 
 而FixedDelay是指，**上一次任务执行完毕后，等待固定的时间间隔，再执行下一次任务：**
 
-![](./assets/image/image_ZXRyKtcm58.png)
+![](./assets/image/image_ZXRyKtcm58.webp)
 
 因此，使用`ScheduledThreadPool`时，我们要根据需要选择执行一次、FixedRate执行还是FixedDelay执行。
 

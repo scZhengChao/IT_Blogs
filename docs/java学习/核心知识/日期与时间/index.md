@@ -4,7 +4,7 @@
 
 本节我们将详细讲解Java程序如何正确处理日期与时间。
 
-![](./assets/image/image_ZnHlXAYoeQ.png)
+![](./assets/image/image_ZnHlXAYoeQ.webp)
 
 [基本概念](./基本概念/index.md "基本概念")
 

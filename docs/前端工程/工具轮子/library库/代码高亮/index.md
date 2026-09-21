@@ -12,9 +12,9 @@ https://highlightjs.org/
 ```
 
 
-![  ](./assets/image/f223fa065c6f16b9827addc89d463edf_8HUCHkiHlV.png "  ")
+![  ](./assets/image/f223fa065c6f16b9827addc89d463edf_8HUCHkiHlV.webp "  ")
 
-![  ](./assets/image/e84a8e559c3db088fc19c5d8011b9ada_XEKm1JKu3K.png "  ")
+![  ](./assets/image/e84a8e559c3db088fc19c5d8011b9ada_XEKm1JKu3K.webp "  ")
 
 ```typescript 
 然后点击下面的download按钮，下载，解压，里面会有js文件和css文件。

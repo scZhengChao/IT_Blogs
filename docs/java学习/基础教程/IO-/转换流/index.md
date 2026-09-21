@@ -7,7 +7,7 @@
 - [转换](#转换)
 - [实现了字节流和字符流之间的转换](#实现了字节流和字符流之间的转换)
 
-![](./assets/image/image_ripfzJApOA.png)
+![](./assets/image/image_ripfzJApOA.webp)
 
 # 作用
 
@@ -15,7 +15,7 @@
 
 > \*\*FIleReader 默认是UTF-8编码表；无法读取GBK的文件； \*\*
 
-![](./assets/image/image_0-bCytEMB3.png)
+![](./assets/image/image_0-bCytEMB3.webp)
 
 `InputStreamReader`
 
@@ -52,7 +52,7 @@ public class SteamFile {
 
 # 转换
 
-![](./assets/image/image_HcMkySQoVW.png)
+![](./assets/image/image_HcMkySQoVW.webp)
 
 **字符流 = 字节流 + 编码表**
 

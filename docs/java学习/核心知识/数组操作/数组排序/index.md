@@ -72,11 +72,11 @@ int[] ns = { 9, 3, 6, 5 };
 
 在内存中，这个整型数组表示如下：
 
-![](./assets/image/image__A1x7_kmPq.png)
+![](./assets/image/image__A1x7_kmPq.webp)
 
 当我们调用`Arrays.sort(ns);`后，这个整型数组在内存中变为：
 
-![](./assets/image/image_FXQXoafeQu.png)
+![](./assets/image/image_FXQXoafeQu.webp)
 
 即变量`ns`指向的数组内容已经被改变了。
 
@@ -90,11 +90,11 @@ String[] ns = { "banana", "apple", "pear" };
 
 排序前，这个数组在内存中表示如下：
 
-![](./assets/image/image_jeuO-q_38G.png)
+![](./assets/image/image_jeuO-q_38G.webp)
 
 调用`Arrays.sort(ns);`排序后，这个数组在内存中表示如下：
 
-![](./assets/image/image_deqE_OO9sx.png)
+![](./assets/image/image_deqE_OO9sx.webp)
 
 原来的\*\*3个字符串在内存中均没有任何变化，但是`ns`\*\***数组的每个元素指向变化了。**
 

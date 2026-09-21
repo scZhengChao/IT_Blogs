@@ -59,7 +59,7 @@ System.out.println(zdt); // 2019-09-16T01:32:40+08:00[Asia/Shanghai]
 
 所以，`LocalDateTime`，`ZoneId`，`Instant`，`ZonedDateTime`和`long`都可以互相转换：
 
-![](./assets/image/image_w3laNJZMTj.png)
+![](./assets/image/image_w3laNJZMTj.webp)
 
 转换的时候，只需要留意`long`类型以毫秒还是秒为单位即可。
 

@@ -6,7 +6,7 @@
 
 使用该操作符创建的`Observable`可以在指定时间内发出连续的数字，其实就跟我们使用`setInterval`这种模式差不多。在我们**需要获取一段连续的数字时**，或者**需要定时做一些操作时**都可以使用该操作符实现我们的需求。
 
-![](./assets/image/image_FJLyPeFDr2.png)
+![](./assets/image/image_FJLyPeFDr2.webp)
 
 ```javascript 
 const source = Rx.Observable.interval(1000);

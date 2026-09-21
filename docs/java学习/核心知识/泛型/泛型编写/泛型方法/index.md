@@ -2,7 +2,7 @@
 
 - 泛型方法
 
-![](./assets/image/image_94IvIwuqmZ.png)
+![](./assets/image/image_94IvIwuqmZ.webp)
 
 ```java 
 修饰符 <泛型> 返回类型 方法名（参数，... ）{

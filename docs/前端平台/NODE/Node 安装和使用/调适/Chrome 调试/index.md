@@ -32,17 +32,17 @@ node --inspect=0.0.0.0:9229 index.js
 
 与—inspect 不同，我们可以使用—inspect-brk 停止对首条语句的处理，以便逐步分步执行。打开 Chrome 网络浏览器（或者其他基于 Chromium 内核的浏览器），并在地址栏中输入 chrome://inspect：开启浏览器调试。
 
-![](./assets/image/image_GrXsF8an8U.png)
+![](./assets/image/image_GrXsF8an8U.webp)
 
 几秒后，您的 Node.js 应用就会显示为 Remote Target。如果仍未找到，请选中 Discover network targets，而后单击 Configure 按钮为运行应用的设备添加 IP 地址和端口。
 
 单击目标的 inspect 链接以启动 DevTools。对于熟悉在浏览器上调试客户端应用的朋友，整个操作流程应该非常顺畅。
 
-![](./assets/image/image__Sx_DohjTT.png)
+![](./assets/image/image__Sx_DohjTT.webp)
 
 要直接从 DevTools 加载、编辑和保存文件，**请打开 Sources 窗格，单击 + Add folder to workspace 向工作区添加文件夹**。之后选择 Node.js 文件的位置，而后单击 Agree。现在，我们可以从左侧窗格或按 Ctrl | Cmd + P 并输入文件名，单击任何行号以设置断点。
 
-![](./assets/image/image_SFlf6t2Dgi.png)
+![](./assets/image/image_SFlf6t2Dgi.webp)
 
 右侧面板显示以下内容：
 
@@ -65,4 +65,4 @@ for (let i = 0; i < 1000; i++) {
 
 这里我们当然无需对着 resume 单击 999 次，**而是右键单击该行并选择 Add conditional breakpoint 添加条件断点，而后输入条件即可，例如 i=999：**
 
-![](./assets/image/image_mNGvEuy_v3.png)
+![](./assets/image/image_mNGvEuy_v3.webp)

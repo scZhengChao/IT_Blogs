@@ -109,7 +109,7 @@ resolve: {
 
 # 问题
 
-![](./assets/image/image_gWb4wo6R04.png)
+![](./assets/image/image_gWb4wo6R04.webp)
 
 ### 一、错误栈阅读顺序
 

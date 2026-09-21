@@ -51,6 +51,6 @@ export default ArrayDelSome
 
 运行 `npm run doc`，将会打开一个网页，可以查看我们刚写的工具函数：
 
-![](./assets/image/image_xPj8Fye4Pd.png)
+![](./assets/image/image_xPj8Fye4Pd.webp)
 
 > 注意在生成文当前需要先进行过 **rollup** 的打包，且不能开启去注释之类的插件，因为上面的例子实际是对 `dist/` 目录下的最终文件进行文档编译的。

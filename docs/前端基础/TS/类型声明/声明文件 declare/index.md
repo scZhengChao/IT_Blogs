@@ -37,7 +37,7 @@
 
 当我们想在 TS 文件中使用该 global 对象时：
 
-![](./assets/image/image_HWmUSePe_i.png)
+![](./assets/image/image_HWmUSePe_i.webp)
 
 > TS 会告诉我们找不到 `myLib`。
 
@@ -437,15 +437,15 @@ export default axios;
 
 如果直接在 TS 文件下进行属性赋值和取值的话，TS 会抛出异常的：
 
-![](./assets/image/image_SLMq7bkQE_.png)
+![](./assets/image/image_SLMq7bkQE_.webp)
 
 同样，我们可以利用 `declare module` 来进行第三方 NPM 包的扩展，我们可以看到 axios 请求中第二个参数的类型为 `AxiosRequestConfig` 类型。
 
-![](./assets/image/image_jmxmvxGyQj.png)
+![](./assets/image/image_jmxmvxGyQj.webp)
 
 那么我们仅仅需要对于这个类型进行扩展就 OK 了：
 
-![](./assets/image/image_s4glnumr0w.png)
+![](./assets/image/image_s4glnumr0w.webp)
 
 此时，我们在回到刚才的代码中可以发现无论我们是取值还是赋值，TS 都可以很好的帮我们进行出类型推断。
 

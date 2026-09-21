@@ -63,7 +63,7 @@ loop(total, 0)
 
 我们先看一下下方的图（由于我的图画的实在难看，所以在网上找了一张比较符合的，还望勿喷～）
 
-![](./assets/image/image_OCSorBWusk.png)
+![](./assets/image/image_OCSorBWusk.webp)
 
 从图中可以看出，我们可以将列表分为三个区域：**可视区**、**缓冲区**、**虚拟区**
 
@@ -87,7 +87,7 @@ loop(total, 0)
 3. 列表项尺寸 itemHeight
 4. 滚动位置 scrollTop
 
-![](./assets/image/image_n20P-OGbby.png)
+![](./assets/image/image_n20P-OGbby.webp)
 
 > 虚拟列表通常来说是垂直方向的，但偶尔也有水平方向的场景，所以如果你要实现一个广泛适用的组件，理论上应该用 size 而不是 height，前者语义更好。
 >

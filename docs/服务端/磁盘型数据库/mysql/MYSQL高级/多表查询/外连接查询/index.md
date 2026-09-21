@@ -7,7 +7,7 @@
 - [右外连接：](#右外连接)
 - [练习](#练习)
 
-![](./assets/image/image_xD5TJ_sNGI.png)
+![](./assets/image/image_xD5TJ_sNGI.webp)
 
 **外连接查询有两种方式：**
 
@@ -20,7 +20,7 @@ select 列名 from 左表 left join 右表 on 从表.外键=主表.主键
 ```
 
 
-![](./assets/image/image_KfSmwNTa5q.png)
+![](./assets/image/image_KfSmwNTa5q.webp)
 
 # 右外连接：
 
@@ -31,7 +31,7 @@ select 列名 from 左表 right join 右表 on 从表.外键=主表.主键
 ```
 
 
-![](./assets/image/image_SqZpsh7y5H.png)
+![](./assets/image/image_SqZpsh7y5H.webp)
 
 # 练习
 
@@ -51,4 +51,4 @@ select * from dept d right join emp e on d.id = e.dept_id;
 ```
 
 
-![](./assets/image/image_0ZRIEeXAyK.png)
+![](./assets/image/image_0ZRIEeXAyK.webp)

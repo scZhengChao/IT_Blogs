@@ -34,7 +34,7 @@ path: C:\Program Files\nodejs
 
 1. 下载node 按照上面格式命名
 
-   ![](./assets/image/image_jwYuGR8Qml.png)
+   ![](./assets/image/image_jwYuGR8Qml.webp)
 
 # n
 

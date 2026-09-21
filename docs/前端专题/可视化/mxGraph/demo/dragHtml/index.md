@@ -1,6 +1,6 @@
 # dragHtml
 
-![](./assets/image/image_ZjHhywtg18.png)
+![](./assets/image/image_ZjHhywtg18.webp)
 
 > 拖拽生成节点
 

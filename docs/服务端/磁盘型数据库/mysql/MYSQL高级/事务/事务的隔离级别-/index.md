@@ -10,7 +10,7 @@
 
 MySQL数据库规范规定了\*\*4种隔离级别，用于解决上述出现的事务并发问题; \*\*
 
-![](./assets/image/image_S6sL-eZJgr.png)
+![](./assets/image/image_S6sL-eZJgr.webp)
 
 # 说明：
 
@@ -25,7 +25,7 @@ MySQL数据库规范规定了\*\*4种隔离级别，用于解决上述出现的�
 
 # 查看数据库隔离级别
 
-![](./assets/image/image_9v3RQgNz6j.png)
+![](./assets/image/image_9v3RQgNz6j.webp)
 
 > set global transaction isolation level read uncommitted;    #read uncommitted(最低级别。会出现：脏读)
 

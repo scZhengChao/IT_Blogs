@@ -4,8 +4,8 @@
 
 - [为什么拷贝不出现乱码](#为什么拷贝不出现乱码)
 
-![](./assets/image/image_yO9Lq1C6tT.png)
+![](./assets/image/image_yO9Lq1C6tT.webp)
 
 # 为什么拷贝不出现乱码
 
-![](./assets/image/image_fNdxt3_xgc.png)
+![](./assets/image/image_fNdxt3_xgc.webp)

@@ -27,7 +27,7 @@
 
 [I](https://www.cnblogs.com/ziyunfei/p/5558712.html "I")[ntersectionObserver API](https://www.cnblogs.com/ziyunfei/p/5558712.html "ntersectionObserver API")
 
-![  ](./assets/image/f1ce343e9884757f674472d624d567dc_CoP92li_fK.png "  ")
+![  ](./assets/image/f1ce343e9884757f674472d624d567dc_CoP92li_fK.webp "  ")
 
 ## 构造函数
 
@@ -52,7 +52,7 @@ new IntersectionObserver(callback, options)
 
 &#x20;     当目标元素和根元素相交时，用相交的面积除以目标元素的面积会得到一个 0 到 1（0% 到 100%）的数值：
 
-![  ](./assets/image/931e49103ac533f61050462362de4087_SJrVua11E9.png "  ")
+![  ](./assets/image/931e49103ac533f61050462362de4087_SJrVua11E9.webp "  ")
 
 &#x20;      下面这句话很重要，`IntersectionObserver `API 的基本工作原理就是：**当目标元素和根元素****相交的面积占目标元素面积****的百分比到达或****跨过某些指定的临界值****时就会触发回调函数**。
 
@@ -66,7 +66,7 @@ new IntersectionObserver(callback, options)
 
 &#x20;       \*\*`rootMargin `\*\***可以给根元素添加一个假想的 margin**，从而对真实的根元素区域进行缩放。比如当 root 为 null 时设置 rootMargin: "100px"，实际的根元素矩形四条边都会被放大 100px，像这样：
 
-![  ](./assets/image/cbd66823a418667d3913256d004786f4_rNTfGKLrny.png "  ")
+![  ](./assets/image/cbd66823a418667d3913256d004786f4_rNTfGKLrny.webp "  ")
 
 ## 实例
 

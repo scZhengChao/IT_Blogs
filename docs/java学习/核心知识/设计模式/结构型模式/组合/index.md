@@ -147,7 +147,7 @@ Grace
 
 可见，使用Composite模式时，**需要先统一单个节点以及“容器”节点的接口**：
 
-![](./assets/image/image_YdKhIzK49T.png)
+![](./assets/image/image_YdKhIzK49T.webp)
 
 作为容器节点的`ElementNode`又可以添加任意个`Node`，这样就可以构成层级结构。
 

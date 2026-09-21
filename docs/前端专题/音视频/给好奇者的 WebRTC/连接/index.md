@@ -92,7 +92,7 @@ ICE 就是克服现实世界网络限制的方法。在我们开始讨论 ICE �
 
 下面是通过公共互联网连接的两个不同网络的示意图。在每个网络中，你拥有两个主机。
 
-![](./assets/image/image_ihdqLy05dk.png)
+![](./assets/image/image_ihdqLy05dk.webp)
 
 对于同一网络中的主机来说，互相连接非常容易。例如在 `192.168.0.1 -> 192.168.0.2` 之间通讯就很容易！这两个主机无需任何外部帮助即可相互连接。
 
@@ -112,7 +112,7 @@ NAT（网络地址转换）映射是使得 `WebRTC` 连接成为可能的魔法�
 
 NAT 映射不使用中继，代理或服务器。跟上一个例子一样，我们有 `Agent 1` 和 `Agent 2`，它们位于不同的网络中。然而，流量穿透了路由器。看起来就像这样：
 
-![](./assets/image/image_NQHUwn746H.png)
+![](./assets/image/image_NQHUwn746H.webp)
 
 想要这样通信的话，你需要创建一个 `NAT` 映射。Agent 1 使用端口 7000 与 Agent 2 建立 WebRTC 连接。这将创建一个 `192.168.0.1:7000` 到 `5.0.0.1:7000` 的绑定。然后，Agent 2 将数据包发送到 `5.0.0.1:7000` 时，数据包会被转发给 Agent 1。在这个例子中，**创建一个 NAT 映射，就像是在路由器中做了一次自动化的端口转发。**
 
@@ -309,7 +309,7 @@ TURN 有两种用法。通常情况下，一个 peer 会作为 “TURN 客户端
 
 #### 单个 TURN Allocation 通信 [#](https://webrtcforthecurious.com/zh/docs/03-connecting/#单个-turn-allocation-通信 "#")
 
-![](./assets/image/image_LfqhHjC4vu.png)
+![](./assets/image/image_LfqhHjC4vu.webp)
 
 #### 双重 TURN Allocation 通信 [#](https://webrtcforthecurious.com/zh/docs/03-connecting/#双重-turn-allocation-通信 "#")
 
@@ -373,7 +373,7 @@ mDNS 候选地址类似于主机候选地址，但是其 IP 地址是隐藏的�
 
 看起来像这样
 
-![](./assets/image/image_SPya1uv_Hv.png)
+![](./assets/image/image_SPya1uv_Hv.webp)
 
 ### 候选地址选择 [#](https://webrtcforthecurious.com/zh/docs/03-connecting/#候选地址选择 "#")
 

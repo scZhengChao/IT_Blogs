@@ -4,6 +4,6 @@
 
 &#x20;&#x20;
 
-![](./assets/image/image_qxZdDaqaH0.png)
+![](./assets/image/image_qxZdDaqaH0.webp)
 
 - 构造方法执行前 执行；多个构造方法中的共性方法时；可以抽取逻辑道构造代码块

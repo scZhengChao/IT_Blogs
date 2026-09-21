@@ -4,7 +4,7 @@
 
 讲解： 1、SpringBoot是一个组合注解
 
-![](./assets/image/image_XkJ2Uq6k4Q.png)
+![](./assets/image/image_XkJ2Uq6k4Q.webp)
 
 2、@SpringBootConfiguration注解作用
 

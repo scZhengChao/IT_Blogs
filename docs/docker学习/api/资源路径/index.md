@@ -24,6 +24,6 @@ docker cp  ~/nginx-html nginx1:/usr/share/nginx/html-xxx
 ```
 
 
-![](./assets/image/image_6s32YYDd8a.png)
+![](./assets/image/image_6s32YYDd8a.webp)
 
 **但当目标目录存在的时候，docker 会把他复制到目标目录下面：**

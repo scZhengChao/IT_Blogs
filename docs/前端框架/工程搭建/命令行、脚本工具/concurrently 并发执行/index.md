@@ -153,4 +153,4 @@ command1, arg, command2, arg
 
 #### 示例
 
-![](./assets/image/image_A9qjicYVaw.png)
+![](./assets/image/image_A9qjicYVaw.webp)

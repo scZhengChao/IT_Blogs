@@ -51,9 +51,9 @@ File：它是文件和目录路径名的抽象表示
 - 文件和目录可以通过File封装成对象
 - File封装的对象仅仅是**一个路径名**。**它可以是存在的，也可以是不存在的**。
 
-![](./assets/image/image_-rJATi0_6c.png)
+![](./assets/image/image_-rJATi0_6c.webp)
 
-![](./assets/image/image_ltklJGNhjb.png)
+![](./assets/image/image_ltklJGNhjb.webp)
 
 ## 绝对路径和相对路径
 
@@ -85,7 +85,7 @@ public class Test1 {
 
 ### 创建
 
-![](./assets/image/image_AuW39EGt8c.png)
+![](./assets/image/image_AuW39EGt8c.webp)
 
 ```java 
 package com.file;
@@ -112,7 +112,7 @@ public class Test2 {
 
 ### 删除
 
-![](./assets/image/image_V1RXTboSbj.png)
+![](./assets/image/image_V1RXTboSbj.webp)
 
 `public boolean delete()`
 
@@ -122,7 +122,7 @@ public class Test2 {
 
 ### 判断
 
-![](./assets/image/image_u1h8vrOpoG.png)
+![](./assets/image/image_u1h8vrOpoG.webp)
 
 ```java 
 package com.file;
@@ -157,7 +157,7 @@ String originPath = f.getPath();
 
 ## 高级功能
 
-![](./assets/image/image_2rvHIj4iRO.png)
+![](./assets/image/image_2rvHIj4iRO.webp)
 
 ```java 
 

@@ -10,22 +10,22 @@
 
 事务在操作时的理想状态：**多个事务之间互不影响，如果隔离级别设置不当就可能引发并发访问问题。**
 
-![](./assets/image/image_ZJeFrfwfvL.png)
+![](./assets/image/image_ZJeFrfwfvL.webp)
 
 # 1.脏读
 
 脏读是一个事务，&#x20;
 
-![](./assets/image/image_TnixZXx1Sq.png)
+![](./assets/image/image_TnixZXx1Sq.webp)
 
 2.不可重复读：
 
 在一个事务**内多次读取表中的数据，多次读取的内容不同**，多发生在**其他事务update操作**时;
 
-![](./assets/image/image_p3Bex_lEvg.png)
+![](./assets/image/image_p3Bex_lEvg.webp)
 
 3.幻读（虚读）
 
 一个事务内读取**到了别的事务插入或者删除的数据，导致前后读取记录行数不同,多发生在delete或insert时**；&#x20;
 
-![](./assets/image/image_CzA07jmezD.png)
+![](./assets/image/image_CzA07jmezD.webp)

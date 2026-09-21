@@ -24,7 +24,7 @@ W3C 组织早在 2014 年 5 月就提出过 Service Worker 这样的一个 HTML5
 
 # 兼容性
 
-![](./assets/image/image_3yuAWolM4s.png)
+![](./assets/image/image_3yuAWolM4s.webp)
 
 基本上新版浏览器还是兼容滴
 
@@ -50,16 +50,16 @@ W3C 组织早在 2014 年 5 月就提出过 Service Worker 这样的一个 HTML5
 
 一个网站是否启用Service Worker，可以通过**开发者工具中的Application来查看：**
 
-![](./assets/image/image_Vrglb3fS25.png)
+![](./assets/image/image_Vrglb3fS25.webp)
 
 被Service Worker缓存的文件，可以在**Network中看到Size项为from Service Worker**：
 
-![](./assets/image/image_YBGHgramnG.png)
+![](./assets/image/image_YBGHgramnG.webp)
 
 也可以在Application的**Cache Storage中查看缓存的具体内容：**
 
-![](./assets/image/image_0wtfK19wC1.png)
+![](./assets/image/image_0wtfK19wC1.webp)
 
 如果是具体的断点调试，需要使用对应的线程，**不再是main线程了，这也是webworker的通用调试方法：**
 
-![](./assets/image/image_jx0osbfoup.png)
+![](./assets/image/image_jx0osbfoup.webp)

@@ -42,7 +42,7 @@ jenv add /Library/Java/JavaVirtualMachines/zulu-11.jdk/Contents/Home
 ```
 
 
-![](./assets/image/image_5CHn9CbktG.png)
+![](./assets/image/image_5CHn9CbktG.webp)
 
 #### 移除
 
@@ -50,7 +50,7 @@ jenv add /Library/Java/JavaVirtualMachines/zulu-11.jdk/Contents/Home
 
 这个并没有移除本地jdk资源
 
-![](./assets/image/image_srj02KrwqE.png)
+![](./assets/image/image_srj02KrwqE.webp)
 
 ```bash 
 jenv remove <version>
@@ -68,7 +68,7 @@ jenv versions
 ```
 
 
-![](./assets/image/image_Yb_ui4tWMO.png)
+![](./assets/image/image_Yb_ui4tWMO.webp)
 
 #### 切换
 

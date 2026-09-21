@@ -21,7 +21,7 @@ Class.forName("com.mysql.jdbc.Driver");
 
 &#x20;查看 Driver 类源码
 
-![](./assets/image/image_zZz1hgY2lY.png)
+![](./assets/image/image_zZz1hgY2lY.webp)
 
 > 提示：
 > MySQL 5之后的驱动包，可以**省略注册驱动的步骤
@@ -29,7 +29,7 @@ Class.forName("com.mysql.jdbc.Driver");
 
 ## 获取连接
 
-![](./assets/image/image_ULNpjMw5Ch.png)
+![](./assets/image/image_ULNpjMw5Ch.webp)
 
 参数
 
@@ -47,4 +47,4 @@ Class.forName("com.mysql.jdbc.Driver");
 
 url：连接路径详解
 
-![](./assets/image/image_M9RsYhQ9BK.png)
+![](./assets/image/image_M9RsYhQ9BK.webp)

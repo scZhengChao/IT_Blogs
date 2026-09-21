@@ -35,7 +35,7 @@
 
 - git status 切换分支
 
-![  ](./assets/image/a53b5ee2a4a0d82ce7ccd5ea8c27a048_cJVLvH0MJY.png "  ")
+![  ](./assets/image/a53b5ee2a4a0d82ce7ccd5ea8c27a048_cJVLvH0MJY.webp "  ")
 
 - git checkout -- 文件   把文件在工作区的修改全部撤销；总之就是让这个文件回到最近的git commit 或者git add 的状态
 - git checkout -- .  就是撤销所有的文件

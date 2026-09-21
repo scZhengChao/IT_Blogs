@@ -59,7 +59,7 @@ iOS上**需要调整 ****`webview`**** 的字体大小时，是通过给 ****`bo
 
 调整字体大小本身只是改变body的css属性，因此可以通过覆盖样式来控制。
 
-![  ](./assets/image/62dc7d2b34b6f04a14dc7caed0116cd0_GUEKmsFebe.png "  ")
+![  ](./assets/image/62dc7d2b34b6f04a14dc7caed0116cd0_GUEKmsFebe.webp "  ")
 
 ```handlebars 
 body {     
@@ -74,7 +74,7 @@ body {    
 
 `Android`的可以通过`webview`配置`webview.getSettings().setTextZoom(100)`就可以禁止缩放，按照百分百显示。
 
-![  ](./assets/image/c56dd99a0de2a817580a7d33d24c8958_VCAOI1RfKJ.png "  ")
+![  ](./assets/image/c56dd99a0de2a817580a7d33d24c8958_VCAOI1RfKJ.webp "  ")
 
 **浏览器设置字体大小，影响浏览器打开的页面**。通过js可控制用户修改字体大小，使页面不受影响。
 

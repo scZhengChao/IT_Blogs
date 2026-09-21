@@ -4,7 +4,7 @@
 
 这就是因为容器与数据（容器内文件）耦合带来的后果。
 
-![](./assets/image/image_tCL6RYQxst.png)
+![](./assets/image/image_tCL6RYQxst.webp)
 
 要解决这个问题，必须将数据与容器解耦，这就要用到数据卷了。
 

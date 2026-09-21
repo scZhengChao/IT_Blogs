@@ -45,7 +45,7 @@ ctx.fillStyle = color | gradient | pattern;
 
 #### 线性渐变
 
-![](./assets/image/image_iDAcFX6dqg.png)
+![](./assets/image/image_iDAcFX6dqg.webp)
 
 ```javascript 
 <canvas id="linearGradientCanvas" width="400" height="200"></canvas>
@@ -67,7 +67,7 @@ ctx.fillStyle = color | gradient | pattern;
 
 #### 径向渐变
 
-![](./assets/image/image_yrbrplPJH0.png)
+![](./assets/image/image_yrbrplPJH0.webp)
 
 ```html 
 <canvas id="radialGradientCanvas" width="400" height="200"></canvas>
@@ -91,7 +91,7 @@ ctx.fillStyle = color | gradient | pattern;
 
 ### 3. 图案填充
 
-![](./assets/image/image_816EktcWJW.png)
+![](./assets/image/image_816EktcWJW.webp)
 
 ```html 
 <canvas id="patternCanvas" width="400" height="200"></canvas>
@@ -147,7 +147,7 @@ ctx.fillStyle = color | gradient | pattern;
 
 ### 1. 彩虹渐变效果
 
-![](./assets/image/image_L3Lj5Iynrd.png)
+![](./assets/image/image_L3Lj5Iynrd.webp)
 
 ```javascript 
 <canvas id="rainbowCanvas" width="400" height="200"></canvas>
@@ -171,7 +171,7 @@ ctx.fillStyle = color | gradient | pattern;
 
 ### 2. 棋盘格图案
 
-![](./assets/image/image_fnXruDkKX3.png)
+![](./assets/image/image_fnXruDkKX3.webp)
 
 ```html 
 <canvas id="checkerboardCanvas" width="400" height="400"></canvas>
@@ -203,7 +203,7 @@ ctx.fillStyle = color | gradient | pattern;
 
 ### 3. 渐变按钮效果
 
-![](./assets/image/image_lwvb1xJ7Dx.png)
+![](./assets/image/image_lwvb1xJ7Dx.webp)
 
 ```javascript 
 <canvas id="buttonCanvas" width="200" height="100"></canvas>

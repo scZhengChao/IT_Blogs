@@ -1,6 +1,6 @@
 # mulit-column 多栏布局
 
-![](./assets/image/image_ieLr-vlTEz.png)
+![](./assets/image/image_ieLr-vlTEz.webp)
 
 ```typescript 
 import {memo, useRef, useState} from 'react';

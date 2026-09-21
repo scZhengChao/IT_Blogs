@@ -7,7 +7,7 @@
 - [3.Performancem面板参数](#3Performancem面板参数)
   - [下面举两个例子来了解一下，怎么找出性能问题，并且解决](#下面举两个例子来了解一下怎么找出性能问题并且解决)
 
-![](./assets/image/image_tnZkMF_TXN.png)
+![](./assets/image/image_tnZkMF_TXN.webp)
 
 ##### 1. Performance指标值
 

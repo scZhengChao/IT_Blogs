@@ -6,7 +6,7 @@
 
 ##### [4.3.2.2](http://tnm2.oa.com/host/home/4.3.2.2 "4.3.2.2")操作字符串类型数据
 
-![](./assets/image/image_1kT1W3dAHi.png)
+![](./assets/image/image_1kT1W3dAHi.webp)
 
 需求：
 
@@ -51,7 +51,7 @@
 
 上述操作完毕之后，在客户端查看键，如下所示：
 
-![](./assets/image/image_GZr-CVlT01.png)
+![](./assets/image/image_GZr-CVlT01.webp)
 
 因为默认的key序列化器为`JdkSerializationRedisSerializer`，导致我们存到Redis中后的数据和原始数据有差别。如果我们想要存储的key是正常的key,我们可以使用如下配置类，当前配置类不是必须的，因为 Spring Boot 框架会自动装配 RedisTemplate 对象。
 

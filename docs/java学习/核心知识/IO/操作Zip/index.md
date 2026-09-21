@@ -8,7 +8,7 @@
 
 `ZipInputStream`是一种`FilterInputStream`，它可以直接读取zip包的内容：
 
-![](./assets/image/image_X2hBEkXvfL.png)
+![](./assets/image/image_X2hBEkXvfL.webp)
 
 另一个`JarInputStream`是从`ZipInputStream`派生，它增加的主要功能是直接读取jar文件里面的`MANIFEST.MF`文件。**因为本质上jar包就是zip包，只是额外附加了一些固定的描述文件。**
 

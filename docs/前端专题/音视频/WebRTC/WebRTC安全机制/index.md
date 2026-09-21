@@ -69,7 +69,7 @@ SDP（Session Description Protocal）是用文本描述的各端（PC 端、Mac 
 
 首先我们想知道`WebRTC`的安全机制，我们得先来了解一下WebRTC他是怎样进行通信的，下面我们来看看他的通信流程
 
-![](./assets/image/image_0sacnKBzh_.png)
+![](./assets/image/image_0sacnKBzh_.webp)
 
 这幅图从大的方面可以分为 4 部分，即两个 WebRTC 终端（上图中的两个大方框）、一个 Signal（信令）服务器和一个 STUN/TURN 服务器。
 
@@ -98,7 +98,7 @@ SDP（Session Description Protocal）是用文本描述的各端（PC 端、Mac 
 
 ### WebRTC安全机制流程
 
-![](./assets/image/image_-SDhjaX17C.png)
+![](./assets/image/image_-SDhjaX17C.webp)
 
 上述流程大致为：
 
@@ -147,13 +147,13 @@ STUN协议作用
 
 HMAC运算利用hash算法，以一个消息M和一个密钥K作为输入，生成一个定长的消息摘要作为输出。
 
-![](./assets/image/image_XFQgRq3pWr.png)
+![](./assets/image/image_XFQgRq3pWr.webp)
 
 上图是STUN协议的发送和接收流程
 
 接下来我们来看看他的请求内容是什么
 
-![](./assets/image/image_vk_SN6nsQH.png)
+![](./assets/image/image_vk_SN6nsQH.webp)
 
 我们可以看到这个请求其中有一个属性`MESSAGE-INTEGRITY`,这里面存放了HMAC计算得到的值，他使用SHA1进行哈希，所有输出的消息摘要为20字节
 
@@ -203,7 +203,7 @@ memcmp(
 这里 B 的密码其实就充当了双方的密钥，B要确认他是真的在和 A 通信，如果对方真的是 A 的话，那么她就会有 B 的密码，那他通过 hash 加密的 HMAC 值就会和 B 这边验证计算出来的 HMAC 值一致
 同理，B发送响应的 binding-request，A验证他是不是真的在和 B 通信，下图是响应的消息
 
-![](./assets/image/image_PjQ6NjX9Rf.png)
+![](./assets/image/image_PjQ6NjX9Rf.webp)
 
 ### DTLS协商
 
@@ -224,11 +224,11 @@ memcmp(
 
 在 WebRTC 中，通过引入 DTLS 对 RTP 进行加密，使得媒体通信变得安全。通过 DTLS 协商出加密密钥之后，RTP 也需要升级为 SRTP，通过密钥加密后进行通信。协议栈如下图所示：
 
-![](./assets/image/image_9T-v7kgyZw.png)
+![](./assets/image/image_9T-v7kgyZw.webp)
 
 握手过程如下图：
 
-![](./assets/image/image_nPqZPTGlsS.png)
+![](./assets/image/image_nPqZPTGlsS.webp)
 
 主要就是客户端向服务端发送 `ClientHello` 消息，服务端收到请求后，回 `ServerHello` 消息，并将自己的证书发送给客户端，同时请求客户端证书。客户端收到证书后，将自己的证书发给服务端，并让服务端确认加密算法。
 

@@ -31,11 +31,11 @@
 
            如果你不能确定你的编译过程是否设置正确，你可以通过安装 [Chrome 的 React 开发者工具](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi "Chrome 的 React 开发者工具")来检查。如果你浏览一个基于 React 生产版本的网站，图标背景会变成深色：
 
-![  ](./assets/image/0702144c6a38fdb22234b292c42344f8_IS_ZeSLoA5.png "  ")
+![  ](./assets/image/0702144c6a38fdb22234b292c42344f8_IS_ZeSLoA5.webp "  ")
 
 如果你浏览一个基于 React 开发模式的网站，图标背景会变成红色：
 
-![  ](./assets/image/4609c3aada0206947b6c736432b2bd1d_tSRsceyPrs.png "  ")
+![  ](./assets/image/4609c3aada0206947b6c736432b2bd1d_tSRsceyPrs.webp "  ")
 
 \---一系列分析，构建技术就不赘述了
 

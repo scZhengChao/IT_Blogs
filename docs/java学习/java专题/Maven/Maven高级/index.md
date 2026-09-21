@@ -1,6 +1,6 @@
 # Maven高级
 
-![](./assets/image/image_oyrOJRA-dh.png)
+![](./assets/image/image_oyrOJRA-dh.webp)
 
 [](./分模块开发-/index.md)
 

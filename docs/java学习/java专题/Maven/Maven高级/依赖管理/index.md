@@ -1,6 +1,6 @@
 # 依赖管理
 
-![](./assets/image/image_6Ia6DJpoo0.png)
+![](./assets/image/image_6Ia6DJpoo0.webp)
 
 [](./可选依赖-/index.md)
 

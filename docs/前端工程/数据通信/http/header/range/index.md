@@ -4,15 +4,15 @@
 
 - [总结](#总结)
 
-![](./assets/image/image_b3xdZljBf-.png)
+![](./assets/image/image_b3xdZljBf-.webp)
 
 请求的时候带上 range：
 
-![](./assets/image/image_asBS_lA_7W.png)
+![](./assets/image/image_asBS_lA_7W.webp)
 
 服务端会返回 206 状态码，还有 Content-Range 的 header 代表当前下载的是整个资源的哪一部分：
 
-![](./assets/image/image_0zq-DieIba.png)
+![](./assets/image/image_0zq-DieIba.webp)
 
 这里的\*\* Content-Length 是当前内容的长度\*\*，而 Content-Range 里是**资源总长度**和**当前资源的范围**。
 
@@ -137,7 +137,7 @@
 
 浏览器有一个 SourceBuffer 的 api，我们在 [MDN](https://link.juejin.cn?target=https://developer.mozilla.org/zh-CN/docs/Web/API/SourceBuffer "MDN") 看一下：
 
-![](./assets/image/image_IF1ilr3_-1.png)
+![](./assets/image/image_IF1ilr3_-1.webp)
 
 大概是这样用的：
 
@@ -169,7 +169,7 @@
 
 确实，有这样一种叫做 m3u8 的视频格式，它的存储就是一个个片段 ts 文件来存储的，这样就可以一部分一部分下载。
 
-![](./assets/image/image_t1WGDMu4_Q.png)
+![](./assets/image/image_t1WGDMu4_Q.webp)
 
 不过知乎没用这种格式，还是 mp4 存储的，这种就需要根据 range 来读取部分文件内容来返回了：
 
@@ -225,7 +225,7 @@
 
 通过**自定义列在列表中直接显示了 Content-Range：**
 
-![](./assets/image/image_T8WhHZ857W.png)
+![](./assets/image/image_T8WhHZ857W.webp)
 
 **通过 command + f 搜索了响应的内容：**
 

@@ -99,7 +99,7 @@ $.getJSON("http://local.liaoxuefeng.com:8080/api/users", (data) => console.log(J
 
 因为CORS规则允许来自http\://local.liaoxuefeng.com:8080的访问，因此访问成功，打印出API的返回值：
 
-![](./assets/image/image_l6f4cr34QQ.png)
+![](./assets/image/image_l6f4cr34QQ.webp)
 
 ### 小结
 

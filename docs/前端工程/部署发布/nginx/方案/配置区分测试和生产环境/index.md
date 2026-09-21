@@ -9,17 +9,17 @@
 
 1、新增uat/prod环境变量文件
 
-![](./assets/image/image_tPSm-vsFxb.png)
+![](./assets/image/image_tPSm-vsFxb.webp)
 
-![](./assets/image/image_P0wrI4m8Io.png)
+![](./assets/image/image_P0wrI4m8Io.webp)
 
 2、删除原ngnix.conf文件，新增nginx.temp文件，并使用占位符标识变量，其中的\$uri不是我们自定义的变量，替换时应该略过
 
-![](./assets/image/image_nwcz6vTal8.png)
+![](./assets/image/image_nwcz6vTal8.webp)
 
 3、新增自动化编译脚本：使用envsubst动态配置docker下的nginx
 
-![](./assets/image/image_mpgvHIouXg.png)
+![](./assets/image/image_mpgvHIouXg.webp)
 
 ```javascript 
 cd src && source uat.sh && envsubst '${ALLOW}' <nginx.temp> nginx.conf 
@@ -30,7 +30,7 @@ cd src && source uat.sh && envsubst '${ALLOW}' <nginx.temp> nginx.conf 
 
 4、自动化编译后生成的nginx.conf文件
 
-![](./assets/image/image_-MMuc8EJ_t.png)
+![](./assets/image/image_-MMuc8EJ_t.webp)
 
 # 二
 

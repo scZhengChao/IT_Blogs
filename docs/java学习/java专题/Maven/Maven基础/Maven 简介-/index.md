@@ -16,7 +16,7 @@ Apache Maven 是一个**项目管理和构建工具**，它基于  ，通过一�
   - 提供了一套标准化的构建流程（编译，测试，打包，发布……）
   - 提供了一套依赖管理机制
 
-![](./assets/image/image_kSw3P1NicN.png)
+![](./assets/image/image_kSw3P1NicN.webp)
 
 # Maven 模型：
 
@@ -24,9 +24,9 @@ Apache Maven 是一个**项目管理和构建工具**，它基于  ，通过一�
 - 依赖管理模型(Dependency)
 - 插件(Plugin)
 
-![](./assets/image/image_0p2aGMdNIA.png)
+![](./assets/image/image_0p2aGMdNIA.webp)
 
-![](./assets/image/image_FdM_K8r3D2.png)
+![](./assets/image/image_FdM_K8r3D2.webp)
 
 - 仓库分类：
   - 本地仓库：自己计算机上的一个目录

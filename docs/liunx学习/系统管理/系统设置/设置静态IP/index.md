@@ -32,7 +32,7 @@ ZONE=public
 ```
 
 
-![](./assets/image/image_rPxC_sLQDC.png)
+![](./assets/image/image_rPxC_sLQDC.webp)
 
 ```bash 
 BOOTPROTO=static
@@ -52,7 +52,7 @@ DNS1="192.168.200.2"
 
 上述我们所设置的网段为`200`，并不是随意指定的，需要和我们虚拟机中的**虚拟网络编辑器中的NAT模式配置的网关保持一致。**
 
-![](./assets/image/image_Qn27QufxKl.png)
+![](./assets/image/image_Qn27QufxKl.webp)
 
 2\). 重启网络服务
 
@@ -65,10 +65,10 @@ systemctl restart network
 ```
 
 
-![](./assets/image/image_7jhGNH2Idg.png)
+![](./assets/image/image_7jhGNH2Idg.webp)
 
 \==注意：重启完网络服务后ip地址已经发生了改变，此时FinalShell已经连接不上Linux系统，需要创建一个新连接才能连接到Linux。==
 
 再次连接上Linux之后，我们再次查看IP地址，就可以看到我们所设置的静态IP：
 
-![](./assets/image/image_fcB0k9xGCj.png)
+![](./assets/image/image_fcB0k9xGCj.webp)

@@ -54,7 +54,7 @@ brew cleanup [name]    # 清 理单个已安装软件包的历史版本
 
 > brew config
 
-![](./assets/image/image_q4uzksGFG0.png)
+![](./assets/image/image_q4uzksGFG0.webp)
 
 # 安装卸载软件
 

@@ -10,13 +10,13 @@
 
 ## width: auto/100%
 
-![](./assets/image/image_UfZdI_IME6.png)
+![](./assets/image/image_UfZdI_IME6.webp)
 
 1. 我们给**parent**设置了`padding:20px` 内边距，给两个**child**都设置了`margin:20px`的外边距。**child1**的**width**属性是`auto`,**child2**的**width**属性是`100%`。
 2. 很明显地看到两个child的不同表现，child1的宽度是可以适应的，不会溢出其父元素。
 3. child1最终的宽度值:540px=600px(父元素宽度)−20px(child1外边距)∗2−10px∗2(child1边框值)−0px(child1内边距)child1最终的宽度值: 540px = 600px(父元素宽度) - 20px (child1 外边距) \* 2 - 10px \*2 (child1 边框值) - 0px (child1 内边距) child1最终的宽度值:540px=600px(父元素宽度)−20px(child1外边距)∗2−10px∗2(child1边框值)−0px(child1内边距)
 
-![](./assets/image/image_5zt7LQ-vba.png)
+![](./assets/image/image_5zt7LQ-vba.webp)
 
 1. 而child2的宽度则是和父元素一样大最终溢出了其父元素。
 2. child2最终的宽度值:600px=600px(父元素宽度)child2最终的宽度值: 600px = 600px(父元素宽度) child2最终的宽度值:600px=600px(父元素宽度)

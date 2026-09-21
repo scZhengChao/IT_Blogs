@@ -15,7 +15,7 @@
 
 ### 1. 使用`filter`属性（现代浏览器支持）
 
-![](./assets/image/image_mHRi_r8rtP.png)
+![](./assets/image/image_mHRi_r8rtP.webp)
 
 ```html 
 <canvas id="blurCanvas" width="400" height="200"></canvas>
@@ -38,7 +38,7 @@ blurCtx.fillRect(200, 50, 100, 100);
 
 ### 2. 使用`globalAlpha`实现半透明模糊效果
 
-![](./assets/image/image_LQxjvGKYCI.png)
+![](./assets/image/image_LQxjvGKYCI.webp)
 
 ```html 
 <canvas id="alphaCanvas" width="400" height="200"></canvas>
@@ -72,7 +72,7 @@ o2d.shadowColor='blue/#xxxxx/rgb/rgba'
 ```
 
 
-![](./assets/image/image_ziEh90OSnE.png)
+![](./assets/image/image_ziEh90OSnE.webp)
 
 ```html 
 <canvas id="shadowCanvas" width="400" height="200"></canvas>
@@ -106,7 +106,7 @@ shadowCtx.shadowColor = 'transparent';
 
 ### 2. 使用多层绘制模拟高级阴影
 
-![](./assets/image/image_ZR3UG_J5PA.png)
+![](./assets/image/image_ZR3UG_J5PA.webp)
 
 ```html 
 <canvas id="multiShadowCanvas" width="400" height="200"></canvas>

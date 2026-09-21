@@ -112,6 +112,6 @@ information.innerText = `本应用正在使用 Chrome (v${versions.chrome()}), N
 
 做完这几步之后，你的应用应该长这样：
 
-![](./assets/image/image_HYobEyRWWX.png)
+![](./assets/image/image_HYobEyRWWX.webp)
 
 Electron 应用显示这个应用正在使用 Chrome (v102.0.5005.63)、Node.js (v16.14.2) 和 Electron (v19.0.3)。

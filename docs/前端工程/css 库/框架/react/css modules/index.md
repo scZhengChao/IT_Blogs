@@ -49,7 +49,7 @@ export default function Demo() {
 
 但是在这种样式隔离情况下，我们原本用作覆盖的CSS也被加上了哈希值，就像下图这样，这时没有办法选中UI组件，覆盖也就不会成功。
 
-![](./assets/image/image_LriDDpTfoj.png)
+![](./assets/image/image_LriDDpTfoj.webp)
 
 所以，React给我们提供了一个语法:global。它生效范围内的样式会被当作全局CSS。
 
@@ -92,9 +92,9 @@ SCSS或SASS中，还可以使用嵌套语法：
 
 借助`:global`语法，即使使用CSS Module进行样式隔离也可以如愿实现覆盖功能。
 
-![](./assets/image/image_XAg30XSO6R.png)
+![](./assets/image/image_XAg30XSO6R.webp)
 
-![](./assets/image/image_hhCJ_pmTZM.png)
+![](./assets/image/image_hhCJ_pmTZM.webp)
 
 # 可辨识的  \[filename].module.css/less
 

@@ -10,7 +10,7 @@
 
 例如，我们对1，2，3，4，5这个`Stream`调用`filter()`，传入的测试函数`f(x) = x % 2 != 0`用来判断元素是否是奇数，这样就过滤掉偶数，只剩下奇数，因此我们得到了另一个序列1，3，5：
 
-![](./assets/image/image_P91MVTbNiP.png)
+![](./assets/image/image_P91MVTbNiP.webp)
 
 用IntStream写出上述逻辑，代码如下：
 

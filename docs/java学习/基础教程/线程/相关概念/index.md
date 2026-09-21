@@ -18,11 +18,11 @@
 
 ## 并行
 
-![](./assets/image/image_aAZCnetjoN.png)
+![](./assets/image/image_aAZCnetjoN.webp)
 
 ## 并发
 
-![](./assets/image/image_wSlqwOXj_4.png)
+![](./assets/image/image_wSlqwOXj_4.webp)
 
 # 进程和线程
 
@@ -30,7 +30,7 @@
 
 进程简单地说就是在多任务操作系统中，每个独立执行的程序，所以**进程也就是“正在进行的程序**”。（Windows系统中,我们可以在任务管理器中看到进程）
 
-![](./assets/image/image_QapYOg7672.png)
+![](./assets/image/image_QapYOg7672.webp)
 
 ## 线程
 

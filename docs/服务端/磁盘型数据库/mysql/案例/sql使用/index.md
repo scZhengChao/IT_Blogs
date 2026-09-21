@@ -13,23 +13,23 @@
 
 员工表：
 
-![](./assets/image/image_dmXT8gsa4U.png)
+![](./assets/image/image_dmXT8gsa4U.webp)
 
 部门表：
 
-![](./assets/image/image_5PQdCLEzJT.png)
+![](./assets/image/image_5PQdCLEzJT.webp)
 
 职务表：
 
-![](./assets/image/image_vo-LDhhakw.png)
+![](./assets/image/image_vo-LDhhakw.webp)
 
 工资等级表：
 
-![](./assets/image/image_v08XxWpzuJ.png)
+![](./assets/image/image_v08XxWpzuJ.webp)
 
 数据表关系模型：
 
-![](./assets/image/image_rZciK6K3a7.png)
+![](./assets/image/image_rZciK6K3a7.webp)
 
 ### 数据示例
 

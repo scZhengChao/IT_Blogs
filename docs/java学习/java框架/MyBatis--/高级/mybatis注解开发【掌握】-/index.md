@@ -127,7 +127,7 @@ public interface UserMapper {
 
 # 别名
 
-![](./assets/image/image_2Zy2PeHeO9.png)
+![](./assets/image/image_2Zy2PeHeO9.webp)
 
 > 不用多表查询
 > 多表： 一次查询多张表。xml &#x20;
@@ -148,7 +148,7 @@ public List<User> findAllUser();
 
 # 模糊查询
 
-![](./assets/image/image_X3BFcVhM9f.png)
+![](./assets/image/image_X3BFcVhM9f.webp)
 
 ```java 
 /**

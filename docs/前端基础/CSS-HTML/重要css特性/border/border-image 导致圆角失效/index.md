@@ -62,11 +62,11 @@
 ```
 
 
-![](./assets/image/image_ZUE2tU06rk.png)
+![](./assets/image/image_ZUE2tU06rk.webp)
 
 # 案例
 
-![](./assets/image/image_tQ5hHEE0Jx.png)
+![](./assets/image/image_tQ5hHEE0Jx.webp)
 
 ```javascript title="html"
 <div className={styles.mode_box_item} data-active={cursorType===CursorTypeEnum.eraser} onClick={onChangeEraserMode}>

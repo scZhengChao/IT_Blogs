@@ -9,7 +9,7 @@
 
 一些具体的事件都派生自 `MouseEvent：WheelEvent 和DragEvent`。
 
-![](./assets/image/image_Be6GKBbp7l.png)
+![](./assets/image/image_Be6GKBbp7l.webp)
 
 它的一些相关事件：
 

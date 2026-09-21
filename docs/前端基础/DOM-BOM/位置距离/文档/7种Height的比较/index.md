@@ -102,7 +102,7 @@ console.log(document.documentElement.offsetHeight); //22
 - 要获取文档内容的高度，使用 `document.body.offsetHeight` 或 `document.documentElement.offsetHeight`，在去除浏览器默认样式的情况下，两者相等
 - `window.innerHeight` 与 `window.outerHeight` 关系如下图：
 
-![](./assets/image/image_pu41Z6L1mv.png)
+![](./assets/image/image_pu41Z6L1mv.webp)
 
 #### 应用：
 
@@ -110,4 +110,4 @@ console.log(document.documentElement.offsetHeight); //22
 
 `document.documentElement.offsetHeight` 减去 `window.innerHeight`
 
-![](./assets/image/image_WjPw8WhuEX.png)
+![](./assets/image/image_WjPw8WhuEX.webp)

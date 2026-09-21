@@ -13,39 +13,39 @@ Docker 是流行的容器技术，里面可以跑任何服务。
 我们来试一下：
 首先要下载 Docker，直接安装 Docker Desktop 就行：
 
-![](./assets/image/image_1B9dTGI3Yq.png)
+![](./assets/image/image_1B9dTGI3Yq.webp)
 
 它是用来管理容器和镜像的：
 
-![](./assets/image/image_Hm8n0PIYvJ.png)
+![](./assets/image/image_Hm8n0PIYvJ.webp)
 
 安装它之后，docker 命令也就可用了：
 
-![](./assets/image/image_reJlHvXhkc.png)
+![](./assets/image/image_reJlHvXhkc.webp)
 
 然后我们来跑下 nginx 的镜像。
 
 搜索 nginx（这一步需要科学上网，因为要访问 [hub.docker.com](http://hub.docker.com "hub.docker.com") 这个网站），点击 run：
 
-![](./assets/image/image_glhs3BEFUe.png)
+![](./assets/image/image_glhs3BEFUe.webp)
 
 输入容器名和要映射的端口：
 
-![](./assets/image/image_hm6lD0-J7t.png)
+![](./assets/image/image_hm6lD0-J7t.webp)
 
 这里把宿主机的 81 端口映射到容器内的 80 端口，点击 run。
 
 这时候就可以看到 docker 容器跑起来了，并且打印了日志：
 
-![](./assets/image/image_c-Vd1KFj9O.png)
+![](./assets/image/image_c-Vd1KFj9O.webp)
 
 浏览器访问下 [http://localhost:81](https://link.juejin.cn/?target=http://localhost:81 "http://localhost:81") 可以看到 nginx 欢迎页面：
 
-![](./assets/image/image_oQX-qmUec1.png)
+![](./assets/image/image_oQX-qmUec1.webp)
 
 这很明显是容器里跑的服务。
 
-![](./assets/image/image_zXttosH10i.png)
+![](./assets/image/image_zXttosH10i.webp)
 
 但是现在的页面是默认的，我想用 nginx 来托管我的一些静态 html 页面怎么做呢？
 
@@ -53,15 +53,15 @@ Docker 是流行的容器技术，里面可以跑任何服务。
 
 在 files 面板可以看到容器内的文件：
 
-![](./assets/image/image_OUvca-l7Gw.png)
+![](./assets/image/image_OUvca-l7Gw.webp)
 
 里面的 /usr/share/nginx/html/ 目录下面就是所有的静态文件。
 
 双击点开 index.html 看看：
 
-![](./assets/image/image_tZO2bnZygg.png)
+![](./assets/image/image_tZO2bnZygg.webp)
 
-![](./assets/image/image_gn3HffkXRY.png)
+![](./assets/image/image_gn3HffkXRY.webp)
 
 和我们浏览器看到的页面一毛一样。
 
@@ -77,11 +77,11 @@ docker cp  nginx1:/usr/share/nginx/html ~/nginx-html
 ```
 
 
-![](./assets/image/image_JOoIoXnLcI.png)
+![](./assets/image/image_JOoIoXnLcI.webp)
 
 docker cp 这个命令就是用于在宿主机和容器之间复制文件和目录的。
 
-![](./assets/image/image_-JkOEwD8UA.png)
+![](./assets/image/image_-JkOEwD8UA.webp)
 
 比如我们把这个目录再复制到容器里：
 
@@ -93,7 +93,7 @@ docker cp  ~/nginx-html nginx1:/usr/share/nginx/html-xxx
 
 可以看到容器内就多了这个目录：
 
-![](./assets/image/image_KIPNP6mZZT.png)
+![](./assets/image/image_KIPNP6mZZT.webp)
 
 然后我们在这个目录下添加两个 html 来试试看：
 
@@ -107,15 +107,15 @@ docker cp  ~/nginx-html nginx1:/usr/share/nginx/html
 ```
 
 
-![](./assets/image/image_Ab9AUQmNj8.png)
+![](./assets/image/image_Ab9AUQmNj8.webp)
 
 **但当目标目录存在的时候，docker 会把他复制到目标目录下面：**
 
-![](./assets/image/image_FP-ND0HlyI.png)
+![](./assets/image/image_FP-ND0HlyI.webp)
 
 我们需要先删除容器的这个目录，再复制：
 
-![](./assets/image/image_mc49aJGGbt.png)
+![](./assets/image/image_mc49aJGGbt.webp)
 
 ```bash 
 docker cp  ~/nginx-html nginx1:/usr/share/nginx/html
@@ -143,7 +143,7 @@ docker cp  ~/nginx-html nginx1:/usr/share/nginx/html
 
 我们看下 nginx 配置文件，也就是 /etc/nginx/nginx.conf。
 
-![](./assets/image/image_BD9yxbNCeW.png)
+![](./assets/image/image_BD9yxbNCeW.webp)
 
 复制出来看看：
 
@@ -155,7 +155,7 @@ docker cp  nginx1:/etc/nginx/nginx.conf ~/nginx-html
 
 这是就是 nginx 的默认配置：
 
-![](./assets/image/image_jEN7JkiGoz.png)
+![](./assets/image/image_jEN7JkiGoz.webp)
 
 其实这个\*\* nginx.conf 叫做主配置文件，里面一般做一些全局的配置，\*\* 比如错误日志的目录等等。
 
@@ -175,7 +175,7 @@ docker cp  nginx1:/etc/nginx/conf.d ~/nginx-html
 
 这里面就配置了 localhost:80 的虚拟主机下的所有路由。
 
-![](./assets/image/image_wx-JwlEn8P.png)
+![](./assets/image/image_wx-JwlEn8P.webp)
 
 **虚拟主机是什么呢？**
 
@@ -189,7 +189,7 @@ docker cp  nginx1:/etc/nginx/conf.d ~/nginx-html
 
 比如这个配置：
 
-![](./assets/image/image_AX1cjYafDN.png)
+![](./assets/image/image_AX1cjYafDN.webp)
 
 它就配置了 / 下的所有路由，都是在 root 指定的目录查找。
 
@@ -249,37 +249,37 @@ nginx -s reload
 
 然后来看第一条路由：
 
-![](./assets/image/image_Zori-ReGfB.png)
+![](./assets/image/image_Zori-ReGfB.webp)
 
 location 和路径**之间加了个 =，代表精准匹配，** 也就是只有完全相同的 url 才会匹配这个路由。
 
-![](./assets/image/image__kuZ9tcB5O.png)
+![](./assets/image/image__kuZ9tcB5O.webp)
 
-![](./assets/image/image_Zyb8eP4qZA.png)
+![](./assets/image/image_Zyb8eP4qZA.webp)
 
 **不带 = 代表根据前缀匹配，后面可以是任意路径。**
 
-![](./assets/image/image_5GkC6u2l32.png)
+![](./assets/image/image_5GkC6u2l32.webp)
 
 **这里的 \$uri 是取当前路径。**
 
-![](./assets/image/image_mjOI3QYbbA.png)
+![](./assets/image/image_mjOI3QYbbA.webp)
 
-![](./assets/image/image_hpqs-oPxwe.png)
+![](./assets/image/image_hpqs-oPxwe.webp)
 
 然后**如果想支持正则，就可以加个 \~。**
 
-![](./assets/image/image_NwiJ3LVsLX.png)
+![](./assets/image/image_NwiJ3LVsLX.webp)
 
 这里的正则语法不难看懂，就是 /aaaa/bbb 开头，然后中间是任意字符，最后 .html 结尾的 url。
 
-![](./assets/image/image_oDSvf-msh6.png)
+![](./assets/image/image_oDSvf-msh6.webp)
 
-![](./assets/image/image_MHV6LJyqze.png)
+![](./assets/image/image_MHV6LJyqze.webp)
 
 **但是它是区分大小写的，比如这样就不行了：**
 
-![](./assets/image/image_F10DtPwk98.png)
+![](./assets/image/image_F10DtPwk98.webp)
 
 换成小写就可以：
 
@@ -293,7 +293,7 @@ location 和路径**之间加了个 =，代表精准匹配，** 也就是只有�
 
 ![](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/58600f38f1324bfe89bdb43f89327bc0~tplv-k3u1fbpfcp-zoom-in-crop-mark:1512:0:0:0.awebp?)
 
-![](./assets/image/image_Ymuformwb4.png)
+![](./assets/image/image_Ymuformwb4.webp)
 
 任意的大小写都是可以的。
 
@@ -318,11 +318,11 @@ docker cp ~/nginx-html/conf.d/default.conf nginx1:/etc/nginx/conf.d/default.conf
 ```
 
 
-![](./assets/image/image_yVkJ9Z_USN.png)
+![](./assets/image/image_yVkJ9Z_USN.webp)
 
 这时候就有两个 /444 的路由了：
 
-![](./assets/image/image_zYStgDPWox.png)
+![](./assets/image/image_zYStgDPWox.webp)
 
 这时候浏览器访问，还是匹配上面的那个路由：
 
@@ -349,7 +349,7 @@ docker cp ~/nginx-html/conf.d/default.conf nginx1:/etc/nginx/conf.d/default.conf
 ```
 
 
-![](./assets/image/image_zQmetaEL1H.png)
+![](./assets/image/image_zQmetaEL1H.webp)
 
 这时候同一个 url，匹配的就是下面的路由了：
 
@@ -397,7 +397,7 @@ docker cp ~/nginx-html/conf.d/default.conf nginx1:/etc/nginx/conf.d/default.conf
 ```
 
 
-![](./assets/image/image_EYe4yBs387.png)
+![](./assets/image/image_EYe4yBs387.webp)
 
 都是能正确返回对应的 html 的：
 

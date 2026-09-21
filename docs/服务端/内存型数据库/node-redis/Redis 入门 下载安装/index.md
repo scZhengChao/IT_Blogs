@@ -14,7 +14,7 @@
 
 # Redis【入门】就这一篇！
 
-![  ](./assets/image/7896890-42d0747d8e2a3d8f_2svTR9DboR.png "  ")
+![  ](./assets/image/7896890-42d0747d8e2a3d8f_2svTR9DboR.webp "  ")
 
 ## Redis 概述
 
@@ -45,7 +45,7 @@ Redis 在 Java Web 主要有两个应用场景：
 
 在考虑了这些问题之后，如果觉得有必要使用缓存，那么就使用它！使用 Redis 作为缓存的读取逻辑如下图所示：
 
-![  ](./assets/image/7896890-404e89059b6a96b5_doS_GFoCc5.png "  ")
+![  ](./assets/image/7896890-404e89059b6a96b5_doS_GFoCc5.webp "  ")
 
 从上图我们可以知道以下两点：
 
@@ -56,7 +56,7 @@ Redis 在 Java Web 主要有两个应用场景：
 
 分析了读操作的逻辑，下面我们来看看写操作的流程：
 
-![  ](./assets/image/7896890-82c820c6c6447504_oOxuf-uxa3.png "  ")
+![  ](./assets/image/7896890-82c820c6c6447504_oOxuf-uxa3.webp "  ")
 
 从流程可以看出，更新或者写入的操作，需要多个 Redis 的操作，如果业务数据写次数远大于读次数那么就没有必要使用 Redis。
 
@@ -70,7 +70,7 @@ Redis 在 Java Web 主要有两个应用场景：
 
 ，而这样的场合都是不允许的！所以我们需要使用 Redis 来应对这样的高并发需求的场合，我们先来看看一次请求操作的流程图：
 
-![  ](./assets/image/7896890-6995e2980a8aae6a_txZXV4iAH8.png "  ")
+![  ](./assets/image/7896890-6995e2980a8aae6a_txZXV4iAH8.webp "  ")
 
 我们来进一步阐述这个过程：
 
@@ -83,17 +83,17 @@ Redis 在 Java Web 主要有两个应用场景：
 
 [https://github.com/ServiceStack/redis-windows/tree/master/downloads](https://github.com/ServiceStack/redis-windows/tree/master/downloads "https://github.com/ServiceStack/redis-windows/tree/master/downloads")
 
-![  ](./assets/image/7896890-02ae79ed7bac2f17_-D4J-Cu_by.png "  ")
+![  ](./assets/image/7896890-02ae79ed7bac2f17_-D4J-Cu_by.webp "  ")
 
 把 Redis 下载下来后找到一个合适的地方解压，就能得到如下图所示的目录（这里空格被替换成了%20...）：
 
-![  ](./assets/image/7896890-503eabe717b358ba_j5YqivqM3x.png "  ")
+![  ](./assets/image/7896890-503eabe717b358ba_j5YqivqM3x.webp "  ")
 
 为了方便启动，我们在该目录下新建一个 startup.cmd 的文件，然后将以下内容写入文件：redis-server redis.windows.conf
 
 1这个命令其实就是在调用 redis-server.exe 命令来读取 redis.window\.conf 的内容，我们双击刚才创建好的 startup.cmd 文件，就能成功的看到 Redis 启动：
 
-![  ](./assets/image/7896890-c68cc2678deb3391_hYoE3Str9g.png "  ")
+![  ](./assets/image/7896890-c68cc2678deb3391_hYoE3Str9g.webp "  ")
 
 上图的提示信息告诉了我们：① Redis 当前的版本为 3.0.503；
 
@@ -103,13 +103,13 @@ Redis 在 Java Web 主要有两个应用场景：
 
 我们可以打开同一个文件夹下的 redis-cli.exe 文件，这是 Redis 自带的一个客户端工具，它可以用来连接到我们当前的 Redis 服务器，我们做以下测试：
 
-![  ](./assets/image/7896890-aa1039abf8482a8e_N22B83xa0j.png "  ")
+![  ](./assets/image/7896890-aa1039abf8482a8e_N22B83xa0j.webp "  ")
 
 如此，我们便在 Windows 的环境下安装好了 Redis。
 
 如果想方便的话，可以把 redis 的路径加到系统的环境变量里，这样就省得再输路径了，后面的那个 redis.windows.conf 可以省略，如果省略，会启用默认的。输入之后，会显示如下界面：
 
-![  ](./assets/image/3735003901820bbf1c2073936fde2783_YyXL4vbhxK.png "  ")
+![  ](./assets/image/3735003901820bbf1c2073936fde2783_YyXL4vbhxK.webp "  ")
 
 这时候另启一个 cmd 窗口，原来的不要关闭，不然就无法访问服务端了。
 

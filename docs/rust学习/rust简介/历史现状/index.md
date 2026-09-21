@@ -17,7 +17,7 @@ Rust 语言由 Graydon Hoare 私人研发，他是 Mozilla 做编程语言的工
 
 Rust 是以三年为单位进行社区规划和迭代的。2015 - 2018 年，Rust 达成了生产力的承诺，也就是它的工具文档还有编译器变得更加智能，也对开发者更加友好了。2018 - 2021 年，Rust 做了更多异步生态的完善。之前的 Rust 是没有异步生态的，但是自 2018 年开始，它正式引入了异步功能。
 
-![](./assets/image/image_BKyMb522If.png)
+![](./assets/image/image_BKyMb522If.webp)
 
 ### 1.4.2 Rust 2024
 
@@ -49,9 +49,9 @@ Rust 是一门**真正通过工程实践形成的语言**，它有非常**智能
 
 如下图，**Rust 已经连续七年位居 Stack Overflow 最受开发者喜爱的编程语言榜榜首。** 此外，有一个非常重量级的项目叫做 “Rust for Linux”，除了 C 语言之外，**Rust 是 Linux 内核迄今为止接受的唯一语言。** 这些成绩足以看出 Rust 在开源业界的重量级和影响力。
 
-![](./assets/image/image_WTzv9YmPmK.png)
+![](./assets/image/image_WTzv9YmPmK.webp)
 
-![](./assets/image/image_LM-lcx12n8.png)
+![](./assets/image/image_LM-lcx12n8.webp)
 
 那么为什么 Rust 这么被推崇呢？
 

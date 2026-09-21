@@ -18,7 +18,7 @@
 
 以下是chatGPT的回答
 
-![](./assets/image/image_rTY_YCGXFK.png)
+![](./assets/image/image_rTY_YCGXFK.webp)
 
 ### 为什么上面的代码分为了两个版本？
 
@@ -50,23 +50,23 @@ react的事件系统由两部分组成： &#x20;
 
 1、在`createRoot`方法利用事件代理给根容器绑定事件，具体方法为`listenToAllSupportedEvents`，接收的参数为`root`根容器。\*\*`allNativeEvents`\*\***是所有待绑定的事件**，`listenToAllSupportedEvents`将所有的事件都绑定到了root容器上，除了`selectionchange`，它绑定到了`document`上。
 
-![](./assets/image/image_SxeH3UM1qG.png)
+![](./assets/image/image_SxeH3UM1qG.webp)
 
-![](./assets/image/image_JCvWqAxSCk.png)
+![](./assets/image/image_JCvWqAxSCk.webp)
 
-![](./assets/image/image_wFrLBxrPMU.png)
+![](./assets/image/image_wFrLBxrPMU.webp)
 
 `listenToNativeEvent`方法主要决定了**当前事件是否要捕获**，绑定实现在`addTrappedEventListener`。最终执行了addEventListener。
 
-![](./assets/image/image_BNH4PTxTBE.png)
+![](./assets/image/image_BNH4PTxTBE.webp)
 
-![](./assets/image/image_33lvoTdAuP.png)
+![](./assets/image/image_33lvoTdAuP.webp)
 
 下面来看看事件的**优先级是怎么设置**的，具体逻辑在`createEventListenerWrapperWithPriority`。 `react`事件的优先级有三种，分别是`DiscreteEventPriority`**（优先级最高）代表事件为click**，`ContinuousEventPriority`（**优先级次一点**）代表事件`mousemove`，`DefaultEventPriority`（**默认优先级**），最终会和`lane`模型的优先级对应起来进行调度
 
-![](./assets/image/image_3rnXh6Lpiz.png)
+![](./assets/image/image_3rnXh6Lpiz.webp)
 
-![](./assets/image/image_ZSYWMKl6-q.png)
+![](./assets/image/image_ZSYWMKl6-q.webp)
 
 `createEventListenerWrapperWithPriority`返回的函数，也就是事件触发会触发的函数，最终会执行`dispatchEvent`
 
@@ -76,12 +76,12 @@ react的事件系统由两部分组成： &#x20;
 
 首先会触发监听函数`dispatchEvent`，最后在批量更新函数中执行`dispatchEventsForPlugins`
 
-![](./assets/image/image_p3A1kdC5VP.png)
+![](./assets/image/image_p3A1kdC5VP.webp)
 
 我们来看看batchedUpdates干了什么？
 
-![](./assets/image/image__fprjE89bd.png)
+![](./assets/image/image__fprjE89bd.webp)
 
 在`batchedUpdates`中 将执行上下文置为 批量 并执行`dispatchEventsForPlugins`。
 
-![](./assets/image/image_1zJNPlN6x_.png)
+![](./assets/image/image_1zJNPlN6x_.webp)

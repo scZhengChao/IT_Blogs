@@ -5,9 +5,9 @@
 - [总结](#总结)
   - [接口的有点](#接口的有点)
 
-![](./assets/image/image_80t2hjv8Yy.png)
+![](./assets/image/image_80t2hjv8Yy.webp)
 
-![](./assets/image/image_B_sxOGPTZF.png)
+![](./assets/image/image_B_sxOGPTZF.webp)
 
 # 总结
 

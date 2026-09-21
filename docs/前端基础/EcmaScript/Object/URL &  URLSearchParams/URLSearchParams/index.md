@@ -287,15 +287,15 @@ axios({
 
 axios数据格式：&#x20;
 
-![  ](./assets/image/41085ef9444c6ee61155bae5900a6724_6RunTh3Wgb.png "  ")
+![  ](./assets/image/41085ef9444c6ee61155bae5900a6724_6RunTh3Wgb.webp "  ")
 
 ajax数据格式：&#x20;
 
-![  ](./assets/image/7817f45b296e1e401cf34f7def78e9c4_VuNUq42iY8.png "  ")
+![  ](./assets/image/7817f45b296e1e401cf34f7def78e9c4_VuNUq42iY8.webp "  ")
 
 是的，多了一层包裹，这样和我们后端的对接就出现问题了。哪怕是手动去修改ContentType为application/x-www-form-urlencoded仍然没有解决。
 
-![  ](./assets/image/c0da98121ff0537c791f104b726ae1d4_hc3ko5YCpU.png "  ")
+![  ](./assets/image/c0da98121ff0537c791f104b726ae1d4_hc3ko5YCpU.webp "  ")
 
 那么URLSearchParams能如何解决呢
 

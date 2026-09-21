@@ -104,7 +104,7 @@ export default function MoreState() {
 
 **实际上这样并不好维护，接手项目的人都疯了😄。还有这样的：**
 
-![](./assets/image/image_0toYzV67oz.png)
+![](./assets/image/image_0toYzV67oz.webp)
 
 ## 解决方法
 

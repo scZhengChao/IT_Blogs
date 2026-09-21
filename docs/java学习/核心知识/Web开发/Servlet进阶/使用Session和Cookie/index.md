@@ -106,11 +106,11 @@ public class SignOutServlet extends HttpServlet {
 
 对于Web应用程序来说，我们总是通过`HttpSession`这个高级接口访问当前Session。如果要深入理解Session原理，可以认为Web服务器在内存中自动维护了一个ID到`HttpSession`的映射表，我们可以用下图表示：
 
-![](./assets/image/image_LyEt7ckU7f.png)
+![](./assets/image/image_LyEt7ckU7f.webp)
 
 而服务**器识别Session的关键**就是依靠一个名为`JSESSIONID`的Cookie。在Servlet中第一次调用`req.getSession()`时，Servlet容器自动创建一个Session ID，然后通过一个名为`JSESSIONID`的Cookie发送给浏览器：
 
-![](./assets/image/image_hdREzvqNHy.png)
+![](./assets/image/image_hdREzvqNHy.webp)
 
 这里要注意的几点是：
 
@@ -134,7 +134,7 @@ public class User {
 
 在使用多台服务器构成集群时，使用Session会遇到一些额外的问题。通常，**多台服务器集群使用反向代理作为网站入口：**
 
-![](./assets/image/image_K4BqV3jYXM.png)
+![](./assets/image/image_K4BqV3jYXM.webp)
 
 如果多台Web Server采用无状态集群，那么反向代理总是以轮询方式将请求依次转发给每台Web Server，这会造成一个用户在Web Server 1存储的Session信息，在Web Server 2和3上并不存在，即从Web Server 1登录后，如果后续请求被转发到Web Server 2或3，那么用户看到的仍然是未登录状态。
 
@@ -187,7 +187,7 @@ public class LanguageServlet extends HttpServlet {
 
 我们可以在浏览器看到服务器发送的Cookie：
 
-![](./assets/image/image_HpAighCA0v.png)
+![](./assets/image/image_HpAighCA0v.webp)
 
 如果我们要读取`Cookie`，例如，在`IndexServlet`中，读取名为`lang`的Cookie以获取用户设置的语言，可以写一个方法如下：
 

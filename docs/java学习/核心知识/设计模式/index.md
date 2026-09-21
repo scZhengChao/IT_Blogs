@@ -23,7 +23,7 @@
 
 学习设计模式，关键是学习设计思想，不能简单地生搬硬套，也不能为了使用设计模式而过度设计，要合理平衡设计的复杂度和灵活性，并意识到设计模式也并不是万能的。
 
-![](./assets/image/image_zmN9pBwcs_.png)
+![](./assets/image/image_zmN9pBwcs_.webp)
 
 [创建型模式](./创建型模式/index.md "创建型模式")
 

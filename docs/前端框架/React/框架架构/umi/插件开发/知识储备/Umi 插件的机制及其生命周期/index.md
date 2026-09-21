@@ -7,7 +7,7 @@
 - [PluginAPI 的原理](#PluginAPI-的原理)
 - [preset-umi](#preset-umi)
 
-![](./assets/image/image_w3k9eLy4z0.png)
+![](./assets/image/image_w3k9eLy4z0.webp)
 
 ### 生命周期
 

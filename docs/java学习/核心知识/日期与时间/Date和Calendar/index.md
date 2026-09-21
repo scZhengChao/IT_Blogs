@@ -30,7 +30,7 @@ int n = 123400;
 
 编译器会把上述字符串（**程序源码就是一个字符串**）**编译成字节码**。在程序的运行期，变量`n`指向的**内存实际上是一个4字节区域**：
 
-![](./assets/image/image_tjf7d9km6B.png)
+![](./assets/image/image_tjf7d9km6B.webp)
 
 注意到计算机内存除了二进制的`0`/`1`外没有其他任何格式。上述十六进制是为了简化表示。
 
@@ -85,7 +85,7 @@ String toDisplay(int n) { ... }
 ```
 
 
-![](./assets/image/image_q3quyIvJwt.png)
+![](./assets/image/image_q3quyIvJwt.webp)
 
 因此，在计算机中，**只需要存储一个整数**`1574208900`表示某一时刻。当需要**显示为某一地区的当地时间时，我们就把它格式化为一个字符串：**
 

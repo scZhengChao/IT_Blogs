@@ -42,7 +42,7 @@ ctx.quadraticCurveTo(cpx, cpy, x, y);
 
 ### 1. 基本二次贝塞尔曲线
 
-![](./assets/image/image_z9XRPmllZE.png)
+![](./assets/image/image_z9XRPmllZE.webp)
 
 ```html 
 <canvas id="curveCanvas" width="400" height="300"></canvas>
@@ -78,7 +78,7 @@ ctx.quadraticCurveTo(cpx, cpy, x, y);
 
 ### 2. 动态控制曲线
 
-![](./assets/image/image_gqG6SVIBt1.png)
+![](./assets/image/image_gqG6SVIBt1.webp)
 
 ```html 
 <canvas id="dynamicCanvas" width="400" height="300"></canvas>
@@ -155,7 +155,7 @@ ctx.quadraticCurveTo(cpx, cpy, x, y);
 
 ### 3. 绘制二次贝塞尔曲线组成的图形
 
-![](./assets/image/image_geTR3dKlT4.png)
+![](./assets/image/image_geTR3dKlT4.webp)
 
 ```javascript 
 <canvas id="shapeCanvas" width="400" height="300"></canvas>

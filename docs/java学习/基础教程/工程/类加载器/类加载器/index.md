@@ -29,7 +29,7 @@ public ClassLoader getClassLoader()  //返回该类的类加载器//有些实�
 
 ## 继承关系
 
-![](./assets/image/image_J5rtoonQVA.png)
+![](./assets/image/image_J5rtoonQVA.webp)
 
 代码实现
 

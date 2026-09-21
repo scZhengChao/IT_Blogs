@@ -6,7 +6,7 @@
 
 Java标准库定义的常用异常包括：
 
-![](./assets/image/image_VK33wLJjbk.png)
+![](./assets/image/image_VK33wLJjbk.webp)
 
 当我们在代码中需要抛出异常时，**尽量使用JDK已定义的异常类型**。例如，参数检查不合法，应该抛出`IllegalArgumentException`：
 

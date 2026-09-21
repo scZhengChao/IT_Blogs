@@ -2,8 +2,8 @@
 
 可以实现多个接口；**当接口有冲突的方法时；必须自己重写一个**
 
-![](./assets/image/image_MF2CPQmawm.png)
+![](./assets/image/image_MF2CPQmawm.webp)
 
 - 当父类的方法和 接口冲突时；优**先使用父类**（**只针对方法；不针对常量**；属性依旧有冲突）
 
-![](./assets/image/image_9q39j3s63P.png)
+![](./assets/image/image_9q39j3s63P.webp)

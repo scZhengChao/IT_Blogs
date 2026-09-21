@@ -2,11 +2,11 @@
 
 记录了渲染进程中**主线程的执行记录，是我们分析具体函数耗时最常看的面板，**也是我们**常说的火焰图**
 
-![](./assets/image/image_gadQOtljdg.png)
+![](./assets/image/image_gadQOtljdg.webp)
 
 首先，面板中会有很多的 Task，如果是**耗时长的 Task（超过50ms），其右上角会标红，**这个时候，我们可以选中标红的 Task。选中后，可以**看到哪些事件耗时了多少**，**点击压缩后的文件名，可以看到具体的代码**
 
-![](./assets/image/image_DPZoCz-lhZ.png)
+![](./assets/image/image_DPZoCz-lhZ.webp)
 
 常见事件：
 
@@ -28,19 +28,19 @@
 
 简单示例：
 
-![](./assets/image/image_EFtwudRp5E.png)
+![](./assets/image/image_EFtwudRp5E.webp)
 
 （1）在一个长任务Task中，**Parse HTML占据了较大的比**重，点击源文件，定位到的内容如下所示：
 
-![](./assets/image/image_esTP9PUvVO.png)
+![](./assets/image/image_esTP9PUvVO.webp)
 
 （2）**Recalculate Style也占据了较大的比重**，点击源文件，定位到的内容如下所示：
 
-![](./assets/image/image_s9ckufjlR-.png)
+![](./assets/image/image_s9ckufjlR-.webp)
 
 **读取offsetWidth属性会导致浏览器强制进行回流操作**。回流**操作会重新计算页面的布局，导致重新计算样式的时间变长**
 
-![](./assets/image/image_mQ8EO52xqW.png)
+![](./assets/image/image_mQ8EO52xqW.webp)
 
 在火焰图中选择Task时，统计区域显示与事件相关的其他信息 &#x20;
 

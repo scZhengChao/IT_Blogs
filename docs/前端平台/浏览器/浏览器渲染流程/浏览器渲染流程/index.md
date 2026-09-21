@@ -77,11 +77,11 @@ PS：ISP缓存，本身是一种宽带接入提供商给网页批量访问加速
 
 迭代查询 **：DNS 收到请求时，而不是直接返回查询结果，而是告诉客户端另一台 DNS 服务器地址。然后客户端再向这台的 DNS 服务器提交请求，依次循环。**
 
-![  ](./assets/image/9197808a6131b42d0fa80cf6a9c05588_JqwOAc9Fak.png "  ")
+![  ](./assets/image/9197808a6131b42d0fa80cf6a9c05588_JqwOAc9Fak.webp "  ")
 
 递归查询：当 DNS 服务器收到请求时，**就会检查 DNS 缓存，如果没有就会询问其他服务器，并将返回的查询结果返回客户端。**
 
-![  ](./assets/image/9f71c7a8a61f6b42d96ec45560392f01_C_2jELbyrb.png "  ")
+![  ](./assets/image/9f71c7a8a61f6b42d96ec45560392f01_C_2jELbyrb.webp "  ")
 
 我们前端会在性能优化的使用用到 DNS 的相关知识，我们在这稍微提一下，如何进行 DNS 优化呢？
 

@@ -1,6 +1,6 @@
 # demo
 
-![](./assets/image/image_xJvpTz7aRV.png)
+![](./assets/image/image_xJvpTz7aRV.webp)
 
 ```typescript 
 

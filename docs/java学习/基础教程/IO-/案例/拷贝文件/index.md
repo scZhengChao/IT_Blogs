@@ -7,7 +7,7 @@
 
 分析：复制文件，其实就把文件的内容从一个文件中读取出来(数据源)，然后写入到另一个文件中(目的地)数据源：xxx.jpg --- 读数据 --- FileInputStream&#x20;目的地：模块名称\\\copy.jpg --- 写数据 --- FileOutputStream
 
-![](./assets/image/image_WKoSOKZGiU.png)
+![](./assets/image/image_WKoSOKZGiU.webp)
 
 ```java 
 package com.copy;

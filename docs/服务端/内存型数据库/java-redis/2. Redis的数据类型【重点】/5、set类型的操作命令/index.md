@@ -15,9 +15,9 @@
 
 在Redis中，我们可以将`Set`类型看作为**没有排序的字符集合**，和List类型一样，我们也可以在该类型的数据值上执行添加、删除或判断某一元素是否存在等操作。Set可包含的**最大元素数量是4G**，和List类型不同的是，**Set集合中不允许出现重复的元素。**
 
-![](./assets/image/image_oBQxJrt38Y.png)
+![](./assets/image/image_oBQxJrt38Y.webp)
 
-![](./assets/image/image_Y4HaqABoc2.png)
+![](./assets/image/image_Y4HaqABoc2.webp)
 
 #### 常用命令
 

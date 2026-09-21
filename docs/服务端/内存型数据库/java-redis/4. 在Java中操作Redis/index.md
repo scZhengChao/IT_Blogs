@@ -16,9 +16,9 @@ Redis 的 Java 客户端很多，官方推荐的有三种：
 
 Spring 对 Redis 客户端进行了整合，提供了 Spring Data Redis，在Spring Boot项目中还提供了对应的Starter，即 spring-boot-starter-data-redis。
 
-![](./assets/image/image_DKs1NF4BAb.png)
+![](./assets/image/image_DKs1NF4BAb.webp)
 
-![](./assets/image/image_ut2jCfWKFg.png)
+![](./assets/image/image_ut2jCfWKFg.webp)
 
 [4.2 Jedis(理解)](<./4.2 Jedis(理解)/index.md> "4.2 Jedis(理解)")
 

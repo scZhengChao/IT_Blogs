@@ -7,6 +7,6 @@
 
 如图：
 
-![](./assets/image/image_K88oZf_bJ1.png)
+![](./assets/image/image_K88oZf_bJ1.webp)
 
 这里的mysql就是repository，5.7就是tag，合一起就是镜像名称，代表5.7版本的MySQL镜像。

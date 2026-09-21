@@ -594,7 +594,7 @@ function PlaceTree({ id, parentId, placesById, onComplete }) {
 
 &#x20;     React 也使用树形结构来对你创造的 UI 进行管理和建模。React 根据你的 `JSX 生成 `**`UI 树`**`。`React DOM 根据 UI 树去更新浏览器的 DOM 元素。（React Native 则将这些 UI 树转译成移动平台上特有的元素。）
 
-![](./assets/image/image_YNODklepE6.png)
+![](./assets/image/image_YNODklepE6.webp)
 
 ## state 与树中的某个位置相关联&#x20;
 
@@ -643,7 +643,7 @@ function Counter() {
 
 下面是它们的树形结构的样子：
 
-![](./assets/image/image_8xgNpgGhzp.png)
+![](./assets/image/image_8xgNpgGhzp.webp)
 
 **这是两个独立的 counter，因为它们在树中被渲染在了各自的位置。** 一般情况下你不用去考虑这些位置来使用 React，但知道它们是如何工作会很有用。
 
@@ -981,7 +981,7 @@ const contacts = [
 ```
 
 
-![](./assets/image/image_WUxhmDKMBL.png)
+![](./assets/image/image_WUxhmDKMBL.webp)
 
 尝试在输入框中输入一些内容，然后点击 “Alice” 或 “Bob” 来选择不同的收件人。**你会发现因为 ****`<Chat>`**** 被渲染在了树的相同位置，输入框的 state 被保留下来了。**
 

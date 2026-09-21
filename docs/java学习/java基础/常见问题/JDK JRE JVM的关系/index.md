@@ -26,6 +26,6 @@
   - 其一，开发完的程序，总需要运行一下看看效果。
   - 其二，也是最重要的，JDK中的开发工具其实都是java语言编写的应用程序，为了方便使用才打包成exe文件，如果没有JRE，那么这些工具是运行不了的
 
-![](./assets/image/image_xJGI_x08Cs.png)
+![](./assets/image/image_xJGI_x08Cs.webp)
 
-![](./assets/image/image__j6MeqBzXN.png)
+![](./assets/image/image__j6MeqBzXN.webp)

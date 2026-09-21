@@ -16,7 +16,7 @@
 
 ### 1. 顶部 + 内容
 
-![](./assets/image/image_AuVlWYLC5r.png)
+![](./assets/image/image_AuVlWYLC5r.webp)
 
 ```javascript 
 <!DOCTYPE html>
@@ -64,7 +64,7 @@
 
 ### 2. 顶部 + 内容 + 底部
 
-![](./assets/image/image_d42DHD21Jn.png)
+![](./assets/image/image_d42DHD21Jn.webp)
 
 ```javascript 
 <!DOCTYPE html>
@@ -118,7 +118,7 @@
 
 ### 3. 左侧 + 内容
 
-![](./assets/image/image_RcvZtxGdbP.png)
+![](./assets/image/image_RcvZtxGdbP.webp)
 
 ```javascript 
 <!DOCTYPE html>
@@ -168,7 +168,7 @@
 
 ### 4. 顶部 + 左侧 + 内容
 
-![](./assets/image/image_u-c9a4WIGz.png)
+![](./assets/image/image_u-c9a4WIGz.webp)
 
 ```javascript 
 <!DOCTYPE html>
@@ -229,7 +229,7 @@
 
 ### 5. 顶部 + 左侧 + 内容 + 底部
 
-![](./assets/image/image_uBeWrz3GBD.png)
+![](./assets/image/image_uBeWrz3GBD.webp)
 
 ```javascript 
 <!DOCTYPE html>
@@ -314,7 +314,7 @@
 
 #### 移动端布局
 
-![](./assets/image/image_2l0u350wI2.png)
+![](./assets/image/image_2l0u350wI2.webp)
 
 > 以移动端的效果开始，掘金的移动端的布局就是上面的效果，这里我简单的将页面分为了三个部分，分别是`header`、`navigation`、`content`；
 >
@@ -381,7 +381,7 @@
 
 #### iPad布局
 
-![](./assets/image/image_73zyu1UZSS.png)
+![](./assets/image/image_73zyu1UZSS.webp)
 
 > 这里是需要借助媒体查询来实现的，在媒体查询中只需要调整一下`grid-template-rows`和`grid-template-columns`的值即可；
 >
@@ -433,7 +433,7 @@
 
 #### PC端布局
 
-![](./assets/image/image_fvz1aC5Yft.png)
+![](./assets/image/image_fvz1aC5Yft.webp)
 
 > 和上面处理方式相同，由于`Navigation`移动到了左侧，所以还要额外的修改一下`grid-template-areas`的值；
 >
@@ -474,7 +474,7 @@
 
 #### 完善一些细节
 
-![](./assets/image/image_y8c2Guklr8.png)
+![](./assets/image/image_y8c2Guklr8.webp)
 
 > 最终的布局大概就是上图这样，这里主要处理的各个版块的间距和响应式内容区域的大小，这里的处理方式主要是使用`column-gap`和一个空的区域进行占位来实现的；
 >

@@ -30,11 +30,11 @@
 
 图片可以看出这个页面其实根本就不使用到element-ui css， 我们可以设置延迟加载非关键CSS
 
-![](<../assets/Minimize main-thread work 最小化主/image/image_gul8h4aiPC.png>)
+![](<../assets/Minimize main-thread work 最小化主/image/image_gul8h4aiPC.webp>)
 
 `webpack`设置 `html-critical-webpack-plugin`
 
-![](<../assets/Minimize main-thread work 最小化主/image/image_haEvCLE5ln.png>)
+![](<../assets/Minimize main-thread work 最小化主/image/image_haEvCLE5ln.webp>)
 
 效果
 

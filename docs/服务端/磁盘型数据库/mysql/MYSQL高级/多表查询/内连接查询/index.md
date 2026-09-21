@@ -14,7 +14,7 @@
 
 内连接操作目的是把**多张表中相互关联的数据**查询出来，如右图 A，B两张表重叠部分红色区域即两表直接关联的数据
 
-![](./assets/image/image_zKl96LqKBE.png)
+![](./assets/image/image_zKl96LqKBE.webp)
 
 ### 隐式内连接
 
@@ -63,7 +63,7 @@ FROM
 ```
 
 
-![](./assets/image/image_u5ub2dT4o9.png)
+![](./assets/image/image_u5ub2dT4o9.webp)
 
 ### on
 

@@ -99,7 +99,7 @@ watcher 的作用是 配合 Dep ，进行一个添加并更新，执行跟新后
 
 ### 目录结构
 
-![](./assets/image/image_DbcGxXaPMm.png)
+![](./assets/image/image_DbcGxXaPMm.webp)
 
 ### 代码
 

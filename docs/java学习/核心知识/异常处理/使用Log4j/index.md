@@ -11,7 +11,7 @@ Log4j是一种非常流行的日志框架，最新版本是2.x。
 
 Log4j是一个组件化设计的日志系统，它的架构大致如下：
 
-![](./assets/image/image_JhWcNpxOnC.png)
+![](./assets/image/image_JhWcNpxOnC.webp)
 
 当我们使用Log4j输出一条日志时，Log4j自动通过不同的Appender把同一条日志输出到不同的目的地。例如：
 

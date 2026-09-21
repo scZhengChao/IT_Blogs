@@ -154,9 +154,9 @@ config.plugin('CleanUnusedFile').use(CleanUnusedFile,[{
 
 实际体验中发现：
 
-![](./assets/image/image_Stj3C3MLv2.png)
+![](./assets/image/image_Stj3C3MLv2.webp)
 
-![](./assets/image/image_l_ogsFx-pk.png)
+![](./assets/image/image_l_ogsFx-pk.webp)
 
 `tree shaking` 在网速越来越快的情况下；已经不是那么重要了；
 

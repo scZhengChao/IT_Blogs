@@ -13,9 +13,9 @@
 
 ### 备份数据库
 
-![](./assets/image/image_uC2P1YZs-v.png)
+![](./assets/image/image_uC2P1YZs-v.webp)
 
-![](./assets/image/image_b2QLyQJOEp.png)
+![](./assets/image/image_b2QLyQJOEp.webp)
 
 ### 还原操作
 
@@ -25,10 +25,10 @@
 
 3\) 开始还原
 
-![](./assets/image/image_GuVrZcLuTj.png)
+![](./assets/image/image_GuVrZcLuTj.webp)
 
-![](./assets/image/image_LkAFpmDwNQ.png)
+![](./assets/image/image_LkAFpmDwNQ.webp)
 
 # dos命令
 
-![](./assets/image/image_ROZP-gASjq.png)
+![](./assets/image/image_ROZP-gASjq.webp)

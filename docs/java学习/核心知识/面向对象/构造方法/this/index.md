@@ -4,6 +4,6 @@
 - `this` 和 `super` 都不能在静态方法中使用
 - **this 可以写；可以不写；除非有重名的；**` this.name = name; =⇒ name = name`
 
-![](./assets/image/image__tfEazJKas.png)
+![](./assets/image/image__tfEazJKas.webp)
 
-![](./assets/image/image_PCeKnnOwea.png)
+![](./assets/image/image_PCeKnnOwea.webp)

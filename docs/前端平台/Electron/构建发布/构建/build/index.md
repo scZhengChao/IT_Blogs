@@ -82,15 +82,15 @@ node_modules/electron-builder/node_modules/dmg-builder/out/dmg.js
 既然升级依赖和修复python这两条路都走不通，那只能给Electron-Builder打补丁了。
 首先要找到报错的位置，是在node\_modules/builder-util/src/util.ts:125:16,找到该文件，发现实际的报错并不在这里。直接到electron-builder中找找看，发现package.json中引用了一个包"dmg-builder": "21.2.0"
 
-![](./assets/image/image_G1XiNkKh3o.png)
+![](./assets/image/image_G1XiNkKh3o.webp)
 
 猜想一下，我们打dmg的包，那这个dmg-builder一定会用到了。去到包里面发现，有两个文件会有用到python的可能
 
-![](./assets/image/image_Al3grQULEZ.png)
+![](./assets/image/image_Al3grQULEZ.webp)
 
 搜索发现
 
-![](./assets/image/image_li8t4wnJDo.png)
+![](./assets/image/image_li8t4wnJDo.webp)
 
 早期版本的`Electron-Builder`使用的不是系统暴露出来的`python`命令，而是在代码中写死使用`/usr/bin/python`这个命令。。。看到这里，我只能说，坑爹呀！！！，感觉心里有千万只猛兽踏过。。
 
@@ -106,38 +106,38 @@ npm install patch-package -D
 ```
 
 
-![](./assets/image/image_gf9CsMS6GH.png)
+![](./assets/image/image_gf9CsMS6GH.webp)
 
 - 修改代码
 
 将下图中的`/usr/bin/python`
 
-![](./assets/image/image_OK4NnmdUTe.png)
+![](./assets/image/image_OK4NnmdUTe.webp)
 
 修改你自己系统中的`python2`的路径，只要能调用到`python2`就可以，文中使用`python2`的绝对路径
 
-![](./assets/image/image_EXDxtkvzZo.png)
+![](./assets/image/image_EXDxtkvzZo.webp)
 
 #### 补丁生效
 
 直接这样修改还不行，不能生效，必须执行`patch-package`命令,使用`patch-package + 修改的文件所在的包名`，便可生成补丁。
 
-![](./assets/image/image_pyLEXD3c-M.png)
+![](./assets/image/image_pyLEXD3c-M.webp)
 
 patch成功后，会在项目根目录下生成patches目录，用来存放补丁文件
 
-![](./assets/image/image_sm9FsYrVOp.png)
+![](./assets/image/image_sm9FsYrVOp.webp)
 
 patch文件和git提交记录有点像，记录了文件地址和详细的修改明细
 
-![](./assets/image/image_KMAUDLbdHO.png)
+![](./assets/image/image_KMAUDLbdHO.webp)
 
 #### 完成打包&#xA;
 
 至此，打补丁修复的过程已经完毕，已经可以正常打包。patches下的文件需要提交至git库，别的同事在拉取代码，安装依赖后，通过执行patch-package即可应用patches下的补丁，不用再重复上面的步骤。为方便起见，也可以配置postinstall命令，在执行npm install后可自动运行postinstall。
 在package.json中的scripts中加入"postinstall": "patch-package"
 
-![](./assets/image/image_dJlpzGJwcH.png)
+![](./assets/image/image_dJlpzGJwcH.webp)
 
 ## 注：
 
@@ -145,6 +145,6 @@ patch文件和git提交记录有点像，记录了文件地址和详细的修改
 
 ### 修改环境变量
 
-![](./assets/image/image_3KwnqqL1Fc.png)
+![](./assets/image/image_3KwnqqL1Fc.webp)
 
-![](./assets/image/image_IQgkQcvd5G.png)
+![](./assets/image/image_IQgkQcvd5G.webp)

@@ -31,7 +31,7 @@
 
 https**不是一种新的协议**，只是http的**通信接口部分使用了ssl和tsl协议替代**，加入了**加密、证书、完整性保护的功能**，下面解释一下加密和证书，如下图所示
 
-![  ](./assets/image/3134713249-5ce7ce4d7fa57_articlex_8otv1_gtLn.png "  ")
+![  ](./assets/image/3134713249-5ce7ce4d7fa57_articlex_8otv1_gtLn.webp "  ")
 
 ## **加密：**
 
@@ -47,13 +47,13 @@ https**不是一种新的协议**，只是http的**通信接口部分使用了ss
 
 因为**公开秘钥加密的方式比共享秘钥加密的方式钥消耗cpu资源**，**https采取了混合加密的方式**，来结合两者的优点。在秘钥交换阶段使用公开加密的方式，之后建立连接后使用共享秘钥加密方式进行加密，如下图。
 
-![  ](./assets/image/1767545600-5ce7d2bc4de36_articlex_hmfKPRvYSe.png "  ")
+![  ](./assets/image/1767545600-5ce7d2bc4de36_articlex_hmfKPRvYSe.webp "  ")
 
 ### **为什么要使用证书：**
 
 因为公开加密还存在一些问题就是**无法证明公开秘钥的正确性**，为了解决这个问题，**https采取了****有数字证实认证机构和其相关机构****颁发的公开秘钥证书**，通信过程如下图所示。
 
-![  ](./assets/image/324982101-5ce7d3d37cdf7_articlex_op39wveokn.png "  ")
+![  ](./assets/image/324982101-5ce7d3d37cdf7_articlex_op39wveokn.webp "  ")
 
 **解释一下上图的步骤：**
 
@@ -65,17 +65,17 @@ https**不是一种新的协议**，只是http的**通信接口部分使用了ss
 
 浏览器在安装的时候会内**置可信的数字证书机构的共有秘钥，如下图所示。**
 
-![  ](./assets/image/6484146-5ce7d6533b586_articlex_285mkoGFzV.png "  ")
+![  ](./assets/image/6484146-5ce7d6533b586_articlex_285mkoGFzV.webp "  ")
 
 这就是为什么我们使用自己生成的证书的时候会产生安全警告的原因。
 
-![  ](./assets/image/326337272-5ce7d79d73c82_articlex_H12toXmskN.png "  ")
+![  ](./assets/image/326337272-5ce7d79d73c82_articlex_H12toXmskN.webp "  ")
 
 再附一张https的具体通信步骤和图解。
 
-![  ](./assets/image/1067427710-5ce7dadfef9a3_articlex_oecL0vBfXp.png "  ")
+![  ](./assets/image/1067427710-5ce7dadfef9a3_articlex_oecL0vBfXp.webp "  ")
 
-![  ](./assets/image/4208590513-5ce7daf182e6a_articlex_UC3wPN_zNf.png "  ")
+![  ](./assets/image/4208590513-5ce7daf182e6a_articlex_UC3wPN_zNf.webp "  ")
 
 最后用了人家这么多图给个购买链接吧
 
@@ -137,7 +137,7 @@ https**不是一种新的协议**，只是http的**通信接口部分使用了ss
 
 ## 中间人攻击
 
-![](./assets/image/image_4aoRfronEg.png)
+![](./assets/image/image_4aoRfronEg.webp)
 
 如果在数据传输过程中，中间人劫持到了数据，此时他的确无法得到浏览器生成的密钥X，这个密钥本身被公钥A加密了，只有服务器才有私钥A’解开它，然而中间**人却完全不需要拿到私钥A’就能干坏事了。** 请看：
 
@@ -170,7 +170,7 @@ https**不是一种新的协议**，只是http的**通信接口部分使用了ss
 
 &#x20;     这部分内容建议看下图并结合后面的文字理解，图中**左侧是数字签名的制作过程，右侧是验证过程：**
 
-![](./assets/image/image_7OBXWkHvGh.png)
+![](./assets/image/image_7OBXWkHvGh.webp)
 
 数字签名的制作过程：
 
@@ -221,7 +221,7 @@ https**不是一种新的协议**，只是http的**通信接口部分使用了ss
 
 &#x20;    另外，不知你们是否遇到过网站访问不了、提示需安装证书的情况？这里安装的就是根证书。说明浏览器不认给这个网站颁发证书的机构，**那么你就得手动下载安装该机构的根证书（风险自己承担XD）。安装后，你就有了它的公钥，就可以用它验证服务器发来的证书是否可信了。**
 
-![](./assets/image/image_-NgzAGbBzx.png)
+![](./assets/image/image_-NgzAGbBzx.webp)
 
 ## 每次进行HTTPS请求时都必须在SSL/TLS层进行握手传输密钥吗？
 
@@ -233,7 +233,7 @@ https**不是一种新的协议**，只是http的**通信接口部分使用了ss
 
 可以看下这张图，梳理一下整个流程（SSL、TLS握手有一些区别，不同版本间也有区别，不过大致过程就是这样）：
 
-![](./assets/image/image_wZOIcNqdfq.png)
+![](./assets/image/image_wZOIcNqdfq.webp)
 
 至此，我们已自上而下地打通了HTTPS加密的整体脉络以及核心知识点，不知你是否真正搞懂了HTTPS呢？ &#x20;
 找几个时间，多看、多想、多理解几次就会越来越清晰的！ &#x20;

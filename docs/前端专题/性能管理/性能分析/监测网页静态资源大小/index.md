@@ -67,7 +67,7 @@ console.log('resource', resource)
 
 这样可以获取到非常多关于资源加载的数据：
 
-![](./assets/image/image_rRZhJV9LWr.png)
+![](./assets/image/image_rRZhJV9LWr.webp)
 
 为了方便查看，我们来稍微处理下数据
 
@@ -87,7 +87,7 @@ resource.forEach((item) => {
 ```
 
 
-![](./assets/image/image_tcWirjuykj.png)
+![](./assets/image/image_tcWirjuykj.webp)
 
 这样对于每个资源的类型、名称、加载时长以及大小，都非常清晰
 
@@ -151,7 +151,7 @@ new PerformanceObserver((list) => {
 
 **这里需要注意的是，获取类型除了**\*\*`img`****还得加上****`css`****，因为CSS中可能会有通过****`url()`\*\***加载的背景图。**
 
-![](./assets/image/image_H9p360qHXe.png)
+![](./assets/image/image_H9p360qHXe.webp)
 
 这样，页面上的图片大小以及加载时长一目了然了
 

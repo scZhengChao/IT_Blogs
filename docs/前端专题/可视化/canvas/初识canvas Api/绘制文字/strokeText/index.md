@@ -33,7 +33,7 @@
 
 ### 对比示例
 
-![](./assets/image/image_-BIuThZK_c.png)
+![](./assets/image/image_-BIuThZK_c.webp)
 
 ```html 
 <canvas id="canvas" width="500" height="150"></canvas>
@@ -68,7 +68,7 @@ ctx.strokeText('组合效果', 350, yPos);
 
 ### 1. 文字描边效果增强
 
-![](./assets/image/image_phFOxolGrd.png)
+![](./assets/image/image_phFOxolGrd.webp)
 
 ```html 
 <canvas id="canvas" width="500" height="200"></canvas>
@@ -95,7 +95,7 @@ ctx.fillText('粗边效果', 50, 100);
 
 ### 发光文字效果
 
-![](./assets/image/image_7cZe9M_Cyz.png)
+![](./assets/image/image_7cZe9M_Cyz.webp)
 
 ```html 
 <canvas id="canvas" width="500" height="200"></canvas>
@@ -129,7 +129,7 @@ ctx.fillText(text, 50, 100);
 
 虽然`strokeText`本身不支持自动换行，但我们可以使用与`fillText`相同的换行逻辑：
 
-![](./assets/image/image_9NwqpWbHZZ.png)
+![](./assets/image/image_9NwqpWbHZZ.webp)
 
 ```html 
 <canvas id="canvas" width="400" height="300"></canvas>

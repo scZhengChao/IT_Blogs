@@ -25,7 +25,7 @@ AST是代码的树形结构，生成 AST 分为两个阶段：[**词法分析**]
 
 比如`let a = 1`，对应的AST是这样的
 
-![](./assets/image/image_dLZp1dMwO0.png)
+![](./assets/image/image_dLZp1dMwO0.webp)
 
 ### **语法分析**
 
@@ -158,7 +158,7 @@ async function fn() {
 
 对应的AST结构
 
-![](./assets/image/image_4TyVfoxaBL.png)
+![](./assets/image/image_4TyVfoxaBL.webp)
 
 **通过AST结构对比，插件的核心就是将原始函数的body放到try语句中**
 

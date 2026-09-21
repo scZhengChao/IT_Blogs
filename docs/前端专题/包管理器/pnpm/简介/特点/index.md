@@ -8,7 +8,7 @@
 
 ## 节省磁盘空间
 
-![](./assets/image/ueTMgWb8GEhZrP3qETkGBC_6m2UFavocQ.png)
+![](./assets/image/ueTMgWb8GEhZrP3qETkGBC_6m2UFavocQ.webp)
 
 使用 npm 时，依赖每次被不同的项目使用，都会重复安装一次。  而在使用 pnpm 时，依赖会被存储在内容可寻址的存储中，所以：
 
@@ -25,11 +25,11 @@ pnpm 分三个阶段执行安装：
 2. 目录结构计算。 `node_modules` 目录结构是根据依赖计算出来的。
 3. 链接依赖项。 所有以前安装过的依赖项都会直接从仓库中获取并链接到 `node_modules`。
 
-![](./assets/image/image_jQNxyLMRFQ.png)
+![](./assets/image/image_jQNxyLMRFQ.webp)
 
 这种方法比传统的三阶段安装过程（解析、获取和将所有依赖项写入`node_modules`）快得多。
 
-![](./assets/image/image_uNr2pB-WAF.png)
+![](./assets/image/image_uNr2pB-WAF.webp)
 
 ## 创建一个非扁平的 node\_modules 目录
 
@@ -37,7 +37,7 @@ pnpm 分三个阶段执行安装：
 
 默认情况下，pnpm 使用符号链接将项目的直接依赖项添加到模块目录的根目录中。
 
-![](./assets/image/image_dM4605aEK3.png)
+![](./assets/image/image_dM4605aEK3.webp)
 
 如果您想了解有关 pnpm 创建的独特的 `node_modules` 结构以及为什么它可以与 Node.js 生态系统良好地配合使用的更多细节，请阅读以下内容：
 

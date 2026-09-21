@@ -8,7 +8,7 @@
 
 # 分类
 
-![](./assets/image/image_vFH4f9ONr4.png)
+![](./assets/image/image_vFH4f9ONr4.webp)
 
 [笛卡尔积](./笛卡尔积/index.md "笛卡尔积")
 

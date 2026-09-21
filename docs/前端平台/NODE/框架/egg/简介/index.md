@@ -190,7 +190,7 @@
 
 [http://localhost:7001/swagger-ui.html](http://localhost:7001/swagger-ui.html "http://localhost:7001/swagger-ui.html")
 
-![  ](./assets/image/ec08d2b21a98e1e19e7fc6002571a592_noUE4ImfYh.png "  ")
+![  ](./assets/image/ec08d2b21a98e1e19e7fc6002571a592_noUE4ImfYh.webp "  ")
 
 **增加异常处理中间件：**
 

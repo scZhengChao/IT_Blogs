@@ -44,11 +44,11 @@ select * from emp where salary > (select salary from emp where name='蜘蛛精')
 
 如果子查询是**多行单列，可以认为是一个数组**，父查询使用`in`、`any` 、`all`关键字
 
-![](./assets/image/image_cvIBft42zK.png)
+![](./assets/image/image_cvIBft42zK.webp)
 
 ### 练习
 
-![](./assets/image/image_x_zVRsMgXa.png)
+![](./assets/image/image_x_zVRsMgXa.webp)
 
 例如，还是以之前的部门，员工表为例：
 查询所有 员工其部门信息
@@ -78,7 +78,7 @@ select * from emp where salary > any (select salary from emp where dept_id=1);
 
 > **注意：如果**要访问子查询表的字段，&#x20;
 
-![](./assets/image/image_TpwCRIM5_x.png)
+![](./assets/image/image_TpwCRIM5_x.webp)
 
 ### 练习
 
@@ -167,4 +167,4 @@ GROUP BY
 ```
 
 
-![](./assets/image/image_mXl9Mb2vMR.png)
+![](./assets/image/image_mXl9Mb2vMR.webp)

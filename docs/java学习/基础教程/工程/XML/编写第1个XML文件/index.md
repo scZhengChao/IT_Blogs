@@ -26,7 +26,7 @@ Person p = new Person("1","张三",18,"男");
 
 #### 效果
 
-![](./assets/image/image_wV9V_9wciU.png)
+![](./assets/image/image_wV9V_9wciU.webp)
 
 #### 步骤
 
@@ -34,11 +34,11 @@ Person p = new Person("1","张三",18,"男");
 
    新建一个File命名时，以 .xml结尾。这个文件就是xml文件
 
-![](./assets/image/image_OhdLRC14SB.png)
+![](./assets/image/image_OhdLRC14SB.webp)
 
 1. 通过浏览器解析XML的内容
 
-   ![](./assets/image/image_eOXEg8_j7Z.png)
+   ![](./assets/image/image_eOXEg8_j7Z.webp)
 
 - **注：**XML以后通过Java来进行解析，很少直接在浏览器上显示**。**
 

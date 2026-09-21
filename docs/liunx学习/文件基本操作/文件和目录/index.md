@@ -21,7 +21,7 @@
 
 ### 文件的组织
 
-![](./assets/image/image_yUk5l1Neec.png)
+![](./assets/image/image_yUk5l1Neec.webp)
 
 ### 查看路径
 
@@ -29,7 +29,7 @@
 
 显示当前目录的路径
 
-![](./assets/image/image_adeXVrsN_N.png)
+![](./assets/image/image_adeXVrsN_N.webp)
 
 #### which
 
@@ -37,7 +37,7 @@
 
 总的来说一个命令就是一个可执行程序。
 
-![](./assets/image/image_DCpg-ipH9c.png)
+![](./assets/image/image_DCpg-ipH9c.webp)
 
 ### 浏览和切换目录
 
@@ -53,7 +53,7 @@
 - `-t` 按文件最近一次修改时间排序
 - `-i` 显示文件的 `inode` （ `inode` 是文件内容的标识）
 
-![](./assets/image/image_cMwTpKhLNA.png)
+![](./assets/image/image_cMwTpKhLNA.webp)
 
 #### cd
 
@@ -153,7 +153,7 @@ ln file1 file2  --> 创建 file2 为 file1 的硬链接
 ```
 
 
-![](./assets/image/image_eJ_0QI_C1p.png)
+![](./assets/image/image_eJ_0QI_C1p.webp)
 
 如果我们用 `rm file1` 来删除 `file1` ，对 `file2` 没有什么影响，**对于硬链接来说，删除任意一方的文件，共同指向的文件内容并不会从硬盘上删除。只有同时删除**了 `file1` 与`file2` 后，**它们共同指向的文件内容才会消失。**
 
@@ -167,7 +167,7 @@ ln -s file1 file2
 ```
 
 
-![](./assets/image/image_-3LmewGwkq.png)
+![](./assets/image/image_-3LmewGwkq.webp)
 
 执行 `ls -l` 命名查看当前目录下文件的具体信息
 

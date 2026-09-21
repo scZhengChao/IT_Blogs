@@ -297,7 +297,7 @@ charcount程序同时打印不同UTF-8编码长度的字符数目。对此，map
 
 作为一个实验，我们用charcount程序对英文版原稿的字符进行了统计。虽然大部分是英语，但是也有一些非ASCII字符。下面是排名前10的非ASCII字符：
 
-![](./assets/image/image_Kijl_n711T.png)
+![](./assets/image/image_Kijl_n711T.webp)
 
 下面是不同UTF-8编码长度的字符的数目：
 

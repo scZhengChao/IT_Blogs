@@ -9,10 +9,10 @@
 
 - 索引越界：**访问了数组中不存在的索引对应的元素**，造成索引越界问题
 
-![](./assets/image/image_U65rjWuybb.png)
+![](./assets/image/image_U65rjWuybb.webp)
 
 # 空指针异常
 
-![](./assets/image/image_QsXwNONhOR.png)
+![](./assets/image/image_QsXwNONhOR.webp)
 
 - 空指针异常：**对象不再指向堆内存**，还想继续访问数据，访问失败

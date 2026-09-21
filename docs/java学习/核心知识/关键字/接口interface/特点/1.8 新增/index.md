@@ -25,6 +25,6 @@ public default void show(){};
 
 # 静态方法
 
-![](./assets/image/image_c7cez5sMDf.png)
+![](./assets/image/image_c7cez5sMDf.webp)
 
 - 可以省略public ；不能省略static

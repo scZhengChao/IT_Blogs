@@ -13,7 +13,7 @@
 
 对于静态字段，无论修改哪个实例的静态字段，效果都是一样的：所有实例的静态字段都被修改了，**原因是静态字段并不属于实例：**
 
-![](./assets/image/image_Wrv_bXGPGx.png)
+![](./assets/image/image_Wrv_bXGPGx.webp)
 
 虽然实例可以访问静态字段，但是它们指向的其实都是`Person class`的静态字段。所以，**所有实例共享一个静态字段。**
 

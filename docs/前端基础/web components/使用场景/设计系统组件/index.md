@@ -6,7 +6,7 @@
 - **跨团队协作**，确保设计一致性
 - 需要**长期维护**的设计系统
 
-![](./assets/image/image_w1mEskG_gi.png)
+![](./assets/image/image_w1mEskG_gi.webp)
 
 场景：实现公司统一的设计系统，**确保各产品视觉一致性。**
 

@@ -8,15 +8,15 @@ Java 7开始引入了一种新的Fork/Join线程池，它可以执行一种特�
 
 我们举个例子：如果要计算一个超大数组的和，最简单的做法是用一个循环在一个线程内完成：
 
-![](./assets/image/image_O6AHVfLtkd.png)
+![](./assets/image/image_O6AHVfLtkd.webp)
 
 还有一种方法，可以把数组拆成两部分，分别计算，最后加起来就是最终结果，这样可以用两个线程并行执行：
 
-![](./assets/image/image_mheJ4H6-e5.png)
+![](./assets/image/image_mheJ4H6-e5.webp)
 
 如果拆成两部分还是很大，我们还可以继续拆，用4个线程并行执行：
 
-![](./assets/image/image_Qjm3_BWDFE.png)
+![](./assets/image/image_Qjm3_BWDFE.webp)
 
 这就是Fork/Join任务的原理：**判断一个任务是否足够小，如果是，直接计算，否则，就分拆成几个小任务分别计算。这个过程可以反复“裂变”成一系列小任务。**
 

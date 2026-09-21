@@ -7,7 +7,7 @@
 
 ## 更高效的方式: docker-compose
 
-![](./assets/image/image_NnU1Rbpniw.png)
+![](./assets/image/image_NnU1Rbpniw.webp)
 
 将命令行的选项翻译成配置文件，是更为简单且更容易维护的方式。比如对于 webpack 而言，基本上基于 webpack.config.js 配置文件使用。
 

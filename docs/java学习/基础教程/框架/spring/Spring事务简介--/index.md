@@ -3,7 +3,7 @@ Spring事务简介
 事务作用：在**数据层保障**一系列的数据库操作同成功同失败
 Spring事务作用：在**数据层或业务层保障**一系列的数据库操作同成功同失败
 
-![](./assets/image/image_L7iXN9mD9w.png)
+![](./assets/image/image_L7iXN9mD9w.webp)
 
 [案例：银行账户转账](./案例：银行账户转账/index.md "案例：银行账户转账")
 

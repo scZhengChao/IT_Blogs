@@ -6,7 +6,7 @@
 
 **hooks 为什么只能在组件中使用**
 
-![](./assets/image/image_zMJqGgOAdT.png)
+![](./assets/image/image_zMJqGgOAdT.webp)
 
 ## 为什么不能在条件、循环里面使用 hook
 
@@ -26,7 +26,7 @@ if (isFirst) {
 
 后续组件重新 render 时，if 判断进不去，会发生下面的情况：
 
-![](./assets/image/image_nyjtqhfBir.png)
+![](./assets/image/image_nyjtqhfBir.webp)
 
 上面的图解看出：一旦在条件语句中声明`hooks`，函数组件更新时，`hooks` **链表结构被破坏**，`currentFiber树` 的 `memoizedState` 缓存 `hooks链表` 的信息，和 `workInProgress` **不一致**，如果涉及到读取`state`等操作，就会发生异常。`因此不能在条件、循环语句中使用 hooks。`
 

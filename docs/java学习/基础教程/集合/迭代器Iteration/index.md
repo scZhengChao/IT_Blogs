@@ -15,9 +15,9 @@
 
 # 关系（collection）
 
-![](./assets/image/image_lMxK4fXxWr.png)
+![](./assets/image/image_lMxK4fXxWr.webp)
 
-![](./assets/image/image_1DevBfMTjZ.png)
+![](./assets/image/image_1DevBfMTjZ.webp)
 
 # 常用方法
 
@@ -45,7 +45,7 @@ Collection<String> col = new ArrayList<String>();
 - hasNext 可以理解为指针
 - next 是去移动指针；
 
-![](./assets/image/image_hngB_Z4gIh.png)
+![](./assets/image/image_hngB_Z4gIh.webp)
 
 # 注意事项
 
@@ -66,4 +66,4 @@ for(元素类型 元素：容器){
 ```
 
 
-![](./assets/image/image_WWkR0DnaKx.png)
+![](./assets/image/image_WWkR0DnaKx.webp)

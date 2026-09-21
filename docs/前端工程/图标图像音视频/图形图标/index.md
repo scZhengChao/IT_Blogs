@@ -30,7 +30,7 @@
 ```
 
 
-![  ](./assets/image/185e58fe02f1926e9d0a9fd7ed91d32e__GycrwJTd3.png "  ")
+![  ](./assets/image/185e58fe02f1926e9d0a9fd7ed91d32e__GycrwJTd3.webp "  ")
 
 #  css三角形   
 
@@ -82,7 +82,7 @@
 - 里面的内容会往下挤一点；&#x20;
 - 小三角形效果是通过伪元素inherit继承父元素颜色相同的背景和边框达到的视觉上的效果，其实“小三角形”是“小正方形“，因此可能会遮罩住部分文本元素。    
 
-![  ](./assets/image/3e4653fef8df9f4d0515d4eeb36e7b7e_6WcGQ4hqfz.png "  ")
+![  ](./assets/image/3e4653fef8df9f4d0515d4eeb36e7b7e_6WcGQ4hqfz.webp "  ")
 
 # 固定宽高比
 
@@ -258,4 +258,4 @@
 ```
 
 
-![  ](./assets/image/70c187c26e527a1355e570c1f22e1764_Bh8z2-rCGU.png "  ")
+![  ](./assets/image/70c187c26e527a1355e570c1f22e1764_Bh8z2-rCGU.webp "  ")

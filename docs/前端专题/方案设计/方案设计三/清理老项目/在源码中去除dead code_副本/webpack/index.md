@@ -38,13 +38,13 @@ Tree shaking 是一个术语，通常用于描述移除 JavaScript 上下文中�
 
 这样打包出来的代码就是
 
-![](./assets/image/image_AppVjXdGXv.png)
+![](./assets/image/image_AppVjXdGXv.webp)
 
 我们可以由图上看出，通过未使用的代码都已经通过`/* unused harmony exports */`标记出来了(当然实际情况会复杂一些，这里只是大概介绍，不展开细说)。
 
 那么接下来就，我们可以通过node对文件内容做正则匹配，找到构建产物中的dead code对应的 源码。
 
-![](./assets/image/image_oJP64wEYkO.png)
+![](./assets/image/image_oJP64wEYkO.webp)
 
 这样一来，我们就可以根据命令行输出的内容，对我们项目中的代码进行排查，从而删除无用代码
 
@@ -65,7 +65,7 @@ Tree shaking 是一个术语，通常用于描述移除 JavaScript 上下文中�
 
 这样的话，就可以在dist/index.js中找到我们未使用的变量
 
-![](./assets/image/image_6lMzO3boka.png)
+![](./assets/image/image_6lMzO3boka.webp)
 
 但是还存在两个问题
 

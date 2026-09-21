@@ -63,7 +63,7 @@ ctx.font = value;
 
 ### 1. 基本字体设置
 
-![](./assets/image/image_4i5v_8kBCL.png)
+![](./assets/image/image_4i5v_8kBCL.webp)
 
 ```html 
 <canvas id="fontCanvas" width="600" height="200"></canvas>
@@ -92,7 +92,7 @@ ctx.font = value;
 
 ### 2. 完整字体属性设置
 
-![](./assets/image/image_wWr7nlVpUr.png)
+![](./assets/image/image_wWr7nlVpUr.webp)
 
 ```javascript 
 <canvas id="fullFontCanvas" width="600" height="300"></canvas>
@@ -118,7 +118,7 @@ ctx.font = value;
 
 ### 1. 创建动态文本标签
 
-![](./assets/image/image_c1oHvmTKsq.png)
+![](./assets/image/image_c1oHvmTKsq.webp)
 
 ```javascript 
 <canvas id="labelCanvas" width="400" height="200"></canvas>
@@ -177,7 +177,7 @@ ctx.font = value;
 
 ### 2. 文本对齐示例
 
-![](./assets/image/image_jBMamr0vEn.png)
+![](./assets/image/image_jBMamr0vEn.webp)
 
 ```javascript 
 <canvas id="alignCanvas" width="500" height="200"></canvas>
@@ -218,7 +218,7 @@ ctx.font = value;
 
 ### 3. 测量文本宽度
 
-![](./assets/image/image_fvRknK4TGb.png)
+![](./assets/image/image_fvRknK4TGb.webp)
 
 ```html 
 <canvas id="measureCanvas" width="600" height="200"></canvas>

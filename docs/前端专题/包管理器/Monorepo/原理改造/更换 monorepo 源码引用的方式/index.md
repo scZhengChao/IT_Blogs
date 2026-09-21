@@ -94,7 +94,7 @@ import { someFunction } from 'package-a/count';
 
 在了解两个字段的作用后，我们再来通过一张图来搞清整个源码引用的流程：
 
-![](./assets/image/image_R4KUPUIZ8K.png)
+![](./assets/image/image_R4KUPUIZ8K.webp)
 
 ## 5.1 SDK 构建工具替换、monorepo源码引用
 

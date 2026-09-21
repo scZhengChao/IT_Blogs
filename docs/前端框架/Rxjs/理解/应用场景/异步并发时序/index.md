@@ -15,7 +15,7 @@
 
 所谓竞态问题（`race condition`），就是两个信号试着彼此竞争，互相影响谁先输出，导致无法保证异步操作的完成会按照他们开始时同样的顺序。
 
-![](./assets/image/image_HTWnvL03PF.png)
+![](./assets/image/image_HTWnvL03PF.webp)
 
 举一个例子，我们设计一个美金（`USD`）和欧元（`EUR`）实时转换的应用。美元与欧元之间，一个值的变化会引起另一个值的变化，变化前需要转换。每次转换时，我们通过网络请求获取最新的汇率，并使用这个汇率进行金额转换。
 
@@ -108,7 +108,7 @@
 
 switchMap **只关注最新的数据流，而忽略旧的数据流。** 这是switchMap的弹珠图，注意下面的30，被 50 给截断了。
 
-![](./assets/image/image_bU-Q5xr1_R.png)
+![](./assets/image/image_bU-Q5xr1_R.webp)
 
 接着用switchMap来解决这个问题。在使用switchMap之前，我们需要合并一下数据源。在用 switchMap 操作符处理合并后的数据流。
 
@@ -213,7 +213,7 @@ switchMap **只关注最新的数据流，而忽略旧的数据流。** 这是sw
 
 所以代码里就写成了：先从 A 拿到数据保存到一个变量a中，B事件发生后，拿到来自B的数据再与变量a继续计算。但其实 A、B两个模块并没有前后加载顺序的约定。若哪天模块A的加载不先于B，就会发生bug。
 
-![](./assets/image/image_SAkcjNWjBo.png)
+![](./assets/image/image_SAkcjNWjBo.webp)
 
 ```typescript 
 let dataFromA = null;

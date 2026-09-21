@@ -17,7 +17,7 @@
 
 操作系统会控制其他程序运行，管理系统资源，提供最基本的计算功能，如管理及配置内存、决定系统资源供需的优先次序等，同时还提供一些基本的服务程序。
 
-![](./assets/image/image_aNRQzDNxgR.png)
+![](./assets/image/image_aNRQzDNxgR.webp)
 
 ## 什么是 Linux
 

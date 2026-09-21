@@ -28,17 +28,17 @@
 ```
 
 
-![](./assets/image/image_AYCmyI0KFz.png)
+![](./assets/image/image_AYCmyI0KFz.webp)
 
 ### 消息发送
 
 > 注意：整个过程一定保证mq的容器是启动的
 
-![](./assets/image/image_DsegbXWLNq.png)
+![](./assets/image/image_DsegbXWLNq.webp)
 
 【1】首先配置MQ地址，在publisher服务的application.yml中添加配置：
 
-![](./assets/image/image_eQbKMi48ir.png)
+![](./assets/image/image_eQbKMi48ir.webp)
 
 ```yaml 
 spring:
@@ -60,7 +60,7 @@ spring:
 >
 > 3.发送消息
 
-![](./assets/image/image_bjxluvBsJ7.png)
+![](./assets/image/image_bjxluvBsJ7.webp)
 
 ```java 
 package cn.itcast.mq.helloworld;
@@ -98,7 +98,7 @@ public class SpringAmqpTest {
 
 【1】首先配置MQ地址，在consumer服务的application.yml中添加配置：
 
-![](./assets/image/image_XAStL5YdIm.png)
+![](./assets/image/image_XAStL5YdIm.webp)
 
 ```yaml 
 spring:
@@ -114,7 +114,7 @@ spring:
 
 【2】然后在consumer服务的`cn.itcast.mq.listener`包中新建一个类SpringRabbitListener
 
-![](./assets/image/image_hhDWrwaEwP.png)
+![](./assets/image/image_hhDWrwaEwP.webp)
 
 代码如下：
 
@@ -141,6 +141,6 @@ public class SpringRabbitListener {
 
 启动consumer服务，然后在publisher服务中运行测试代码，发送MQ消息
 
-![](./assets/image/image_s371ZFPsmA.png)
+![](./assets/image/image_s371ZFPsmA.webp)
 
-![](./assets/image/image_LPhZcGshGG.png)
+![](./assets/image/image_LPhZcGshGG.webp)

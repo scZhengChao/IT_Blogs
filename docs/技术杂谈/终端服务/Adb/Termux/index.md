@@ -38,7 +38,7 @@ Google Play商店
 
 Termux 是一个强大的终端仿真器，它提供了所有最流行的 Linux 命令，加上数百个额外的包，以便于安装。它不需要任何特殊的权限，可以使用默认的Google Play商店( [https://play.google.com/store/apps/details?id=com.termux](https://play.google.com/store/apps/details?id=com.termux "https://play.google.com/store/apps/details?id=com.termux") )，或者开源应用仓库 F-Droid  ( [https://f-droid.org/repository/browse/?fdid=com.termux](https://f-droid.org/repository/browse/?fdid=com.termux "https://f-droid.org/repository/browse/?fdid=com.termux") ) 来安装。安装后如图所示：
 
-![](./assets/image/image_4l8ShZeM9M.png)
+![](./assets/image/image_4l8ShZeM9M.webp)
 
 - 1\. 第一部分是 termux 官方网站和相关资源， github 和官方 wiki 有很多资源供进一步学习。
 - 2\. 第二部分介绍了个包管理器命令 pkg，给出了四个命令。最后的 help 是通用的，前面分别是搜索/安装/升级包。跟 linux 的 apt/apt-get, python 的 pip 差不多，实际上直接用 apt 命令也可以的。
@@ -69,7 +69,7 @@ start adbd
   apt upgrade  // 升级软件包\*\*
 - 安装 Python：**pkg install python**
 
-![](./assets/image/image_hzPoGVBwq9.png)
+![](./assets/image/image_hzPoGVBwq9.webp)
 
 安装和自动配置完成后，就可以构建你的应用了。
 

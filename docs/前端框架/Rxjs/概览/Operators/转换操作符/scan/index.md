@@ -10,7 +10,7 @@
 
 假设我们现在有一个需求，我们想要将数据源发送过来的数据累加之后再返回给订阅者，这又该怎么做呢？
 
-![](./assets/image/image_aV-RpdG4e0.png)
+![](./assets/image/image_aV-RpdG4e0.webp)
 
 ```javascript 
 const source = Rx.Observable.interval(1000).take(4);

@@ -17,7 +17,7 @@
 
 **椭圆弧曲线**，顾名思义就是和椭圆有关的。如果在椭圆上选择两个点，就可以截取2条曲线。
 
-![](./assets/image/image_SWnP_0yL4S.png)
+![](./assets/image/image_SWnP_0yL4S.webp)
 
 比如这样，红线处就将椭圆截取成2段弧线。
 
@@ -43,7 +43,7 @@ A(rx, ry, xr, laf, sf, x, y)
 
 也就是说，**确定2个点，再确定椭圆半径，就可画出2个椭圆**
 
-![](./assets/image/image_IST10B1Jo5.png)
+![](./assets/image/image_IST10B1Jo5.webp)
 
 通过开始点和结束点裁切，可以得到4条弧线，也就是说2个点可以确定2个相同旋转角度的椭圆的位置，可以切出4条弧线。
 
@@ -99,9 +99,9 @@ svg 为了方便我们画椭圆弧，也提供了A 参数。
 
 椭圆弧顾名思义有长轴和短轴， OK rx, ry 就表示长轴半径 和短轴半径  x-axis-rotation 顾名思义就是x轴旋转角度， 这个怎么去理解呢。
 
-![](./assets/image/image_6OB0XrLwKO.png)
+![](./assets/image/image_6OB0XrLwKO.webp)
 
-![](./assets/image/image_Qs9cyk3Icr.png)
+![](./assets/image/image_Qs9cyk3Icr.webp)
 
 上面两张图我代码的改动其实就是角度变化。代码如下
 
@@ -116,7 +116,7 @@ svg 为了方便我们画椭圆弧，也提供了A 参数。
 - large-arc-flag决定弧线是大于还是小于180度，0表示小角度弧，1表示大角度弧。
 - sweep-flag表示弧线的方向，0表示从起点到终点沿逆时针画弧，1表示从起点到终点沿顺时针画弧。下面的例子展示了这种情况:
 
-![](./assets/image/image_5Q6U7Aq-8Q.png)
+![](./assets/image/image_5Q6U7Aq-8Q.webp)
 
 ```svg 
 <path d="M80 80 A 45 45, 0, 0, 0, 125 125" fill="green"/><path d="M230 80 A 45 45, 0, 1, 0, 275 125" fill="red"/>
@@ -126,7 +126,7 @@ svg 为了方便我们画椭圆弧，也提供了A 参数。
 
 这里我将椭圆的长轴半径和短轴半径相等， 这时候画出来的其实是一个圆弧。两个唯一的区别就是一个优弧一个劣弧。 并且是同一方向的。 如果需要改变方向就用到sweep-flag， 将它设置为1。然后我在调整下位位置将他们合二为一。
 
-![](./assets/image/image_ByzpWyVhTi.png)
+![](./assets/image/image_ByzpWyVhTi.webp)
 
 ```svg 
 <path d="M230 80 A 45 45, 0, 0, 1, 275 125" fill="green"/><path d="M230 80 A 45 45, 0, 1, 0, 275 125" fill="red"/>
@@ -169,7 +169,7 @@ A后面跟的参数有点多，分别是：
 ```
 
 
-![](./assets/image/image_UFXH0q8oXm.png)
+![](./assets/image/image_UFXH0q8oXm.webp)
 
 2.顺时针旋转30°
 
@@ -178,7 +178,7 @@ A后面跟的参数有点多，分别是：
 ```
 
 
-![](./assets/image/image_0R0Fo8nj9p.png)
+![](./assets/image/image_0R0Fo8nj9p.webp)
 
 3.优弧和劣弧
 
@@ -198,7 +198,7 @@ A后面跟的参数有点多，分别是：
 ```
 
 
-![](./assets/image/image_mVzQ0WxToQ.png)
+![](./assets/image/image_mVzQ0WxToQ.webp)
 
 4.顺时针画弧
 
@@ -207,4 +207,4 @@ A后面跟的参数有点多，分别是：
 ```
 
 
-![](./assets/image/image_-ZeP6swo9V.png)
+![](./assets/image/image_-ZeP6swo9V.webp)

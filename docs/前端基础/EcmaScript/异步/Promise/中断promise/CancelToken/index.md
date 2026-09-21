@@ -51,4 +51,4 @@ const getData = (isCancel) =>{
 
 \*\*比如我多次执行的话，想取消哪次就取消哪次，因为每次的 ​`CancelToken`\*\***实例都是新的！！！**
 
-![](./assets/image/image_kLFTsgjaOX.png)
+![](./assets/image/image_kLFTsgjaOX.webp)

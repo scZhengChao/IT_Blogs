@@ -8,7 +8,7 @@
 
 我们考察这样一个论坛应用程序：
 
-![](./assets/image/image_pZCLR_FVs0.png)
+![](./assets/image/image_pZCLR_FVs0.webp)
 
 各个Servlet设计功能如下：
 
@@ -46,7 +46,7 @@ public class EncodingFilter implements Filter {
 
 添加了Filter之后，整个请求的处理架构如下：
 
-![](./assets/image/image_gCk3FUejtM.png)
+![](./assets/image/image_gCk3FUejtM.webp)
 
 还可以继续添加其他Filter，例如LogFilter：
 
@@ -65,7 +65,7 @@ public class LogFilter implements Filter {
 
 多个Filter会组成一个链，每个请求都被链上的Filter依次处理：
 
-![](./assets/image/image_lqWacb09Nm.png)
+![](./assets/image/image_lqWacb09Nm.webp)
 
 有些细心的童鞋会问，有多个Filter的时候，Filter的顺序如何指定？多个Filter按不同顺序处理会造成处理结果不同吗？
 

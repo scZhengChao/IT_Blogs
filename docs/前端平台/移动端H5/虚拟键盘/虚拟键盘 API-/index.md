@@ -42,7 +42,7 @@
 
 下图显示了当虚拟键盘仅出现在两个屏幕之一上时，双屏设备上发生的情况。两个屏幕上的视口都会变小以容纳虚拟键盘，从而在屏幕上留下不显示虚拟键盘的浪费空间。
 
-![](./assets/image/image_hCfAedn9n5.png)
+![](./assets/image/image_hCfAedn9n5.webp)
 
 虚拟键盘 API 可以用于选择**退出浏览器自动处理虚拟键盘的方式**，**并完全控制它**。使用虚拟键盘 API，当表单控件获得焦点时，键盘**仍然会根据需要出现和消失**，但**视口不会更改**，并且**可以使用 JavaScript 和 CSS 来调整布局**。
 
@@ -144,7 +144,7 @@ if ("virtualKeyboard" in navigator) {
 
 注意，虚拟键盘 API 是一个实验性功能，其支持性有限：
 
-![](./assets/image/image_NV_hPqG2p3.png)
+![](./assets/image/image_NV_hPqG2p3.webp)
 
 ## 问题探讨
 
@@ -155,21 +155,21 @@ if ("virtualKeyboard" in navigator) {
 - 粘性标题
 - 粘性浮动操作按钮
 
-![](./assets/image/image_loWCFqyRmb.png)
+![](./assets/image/image_loWCFqyRmb.webp)
 
 当用户专注于输入时，虚拟键盘就会显示。这时，浏览器将**向上滚动以使输入位于键盘上方**，因此粘性标题和浮动按钮将消失。看起来像是这样的：
 
-![](./assets/image/image_3X_XnlRgYd.png)
+![](./assets/image/image_3X_XnlRgYd.webp)
 
 一般来说，这是**移动浏览器中的默认行为**。从用户体验的角度来看，隐藏部分 UI 可能会很困惑，尤其是那些与键盘处于激活状态时正在执行的当前操作相关的部分。
 
 在幕后，发生的事情类似于下图这样：
 
-![](./assets/image/image_cu-t37kXo1.png)
+![](./assets/image/image_cu-t37kXo1.webp)
 
 用技术术语来说，**可见部分**称为**视觉视口**，隐藏部分+页面上所有元素的其余部分称为**布局视口**。
 
-![](./assets/image/image_NEkihrDSAX.png)
+![](./assets/image/image_NEkihrDSAX.webp)
 
 这时问题就出现了：**当虚拟键盘处于激活状态时，****视觉视口的尺寸会缩小****。**
 
@@ -182,7 +182,7 @@ if ("virtualKeyboard" in navigator) {
 - `keyboard-inset-width`
 - `keyboard-inset-height`
 
-![](./assets/image/image_r2ciLf1YiI.png)
+![](./assets/image/image_r2ciLf1YiI.webp)
 
 通过使用上述变量，可以在虚拟键盘处于激活状态时更改布局。
 
@@ -225,11 +225,11 @@ html {
 
 在较小的视口上，我们可能需要将按钮或页脚固定在 UI 底部：
 
-![](./assets/image/image_9Lk8Ckt1Xw.png)
+![](./assets/image/image_9Lk8Ckt1Xw.webp)
 
 当输入框处于激活状态时，`checkout` 按钮将位于虚拟键盘下方，因此它被隐藏了。
 
-![](./assets/image/image_CNS2ajGFkB.png)
+![](./assets/image/image_CNS2ajGFkB.webp)
 
 可以使用虚拟键盘 API 轻松解决这个问题：
 
@@ -246,7 +246,7 @@ input {
 
 在移动设备上，`bottom` 值将等于键盘高度，从而用该值偏移 `checkout` 按钮。 如果**浏览器不支持该 API，则默认为零。**
 
-![](./assets/image/image_O_oXmFZ3k9.png)
+![](./assets/image/image_O_oXmFZ3k9.webp)
 
 可以看到，由于头部和固定底部的存在空间减少了。如果垂直空间足够，就可以使用垂直媒体查询来显示头部。
 
@@ -271,15 +271,15 @@ body {
 
 `padding-bottom`应该是一个等于或大于固定元素高度的值。
 
-![](./assets/image/image_25EYv5mUIk.png)
+![](./assets/image/image_25EYv5mUIk.webp)
 
 那么当使用虚拟键盘时会发生什么呢？考虑以下示意图：
 
-![](./assets/image/image_HfrYs1GN94.png)
+![](./assets/image/image_HfrYs1GN94.webp)
 
 当虚拟键盘处于激活状态时，使用固定元素的高度作为`padding-bottom`的值是不够的。我们需要将键盘高度也考虑在内。如下所示：
 
-![](./assets/image/image_psrF6P-zQ4.png)
+![](./assets/image/image_psrF6P-zQ4.webp)
 
 为了解决这个问题，就需要检测输入框是否处于焦点状态，并根据焦点状态来改变`padding-bottom`的值。
 
@@ -295,13 +295,13 @@ body:has(input:focus) {
 
 那在桌面浏览器上会发生什么呢？这种情况下，`env()` 函数将回退到 0，并且将得到 `var(--cta-eight)` 的值。
 
-![](./assets/image/image_rb3ET1vtW4.png)
+![](./assets/image/image_rb3ET1vtW4.webp)
 
 #### 浮动操作按钮
 
 在页面右下角有一个浮动操作按钮。
 
-![](./assets/image/image_n_vkptw3iX.png)
+![](./assets/image/image_n_vkptw3iX.webp)
 
 当虚拟键盘激活时，悬浮按钮应该移动到虚拟键盘上方。但是，就像最初的例子中一样，浮动按钮会被键盘遮挡。
 
@@ -317,7 +317,7 @@ body:has(input:focus) {
 
 这里使用了 `1rem` 加上键盘的高度，以避免悬浮按钮直接位于键盘顶部边缘。在使用 CSS 比较函数时，需要注意的是，在 `env()` 函数中使用**无单位的数值**作为**回退值**会导致 Safari 上的整个布局出现问题，所以必须添加 `rem` 单位。
 
-![](./assets/image/image_bANj-H1yWy.png)
+![](./assets/image/image_bANj-H1yWy.webp)
 
 #### 对桌面使用不同的值
 
@@ -336,13 +336,13 @@ body:has(input:focus) {
 - 比较函数将在两个值之间进行比较。由于在桌面上，`env(keyboard-inset-height)` 的计算结果为零，所以最大值是 `2rem`。
 - 在移动设备上，最大值是第二个值。
 
-![](./assets/image/image_ka0Ao0Sjuu.png)
+![](./assets/image/image_ka0Ao0Sjuu.webp)
 
 ### 聊天布局
 
 先来看下面的图：
 
-![](./assets/image/image_XVTAxKYiw4.png)
+![](./assets/image/image_XVTAxKYiw4.webp)
 
 当虚拟键盘激活时，标题和消息输入框都会被隐藏起来。可以使用 `env(keyboard-inset-height)` 作为 `grid-row` 属性的值。
 
@@ -358,17 +358,17 @@ body:has(input:focus) {
 
 以下是经过上述修复后的效果：
 
-![](./assets/image/image_SiafRfqMrr.png)
+![](./assets/image/image_SiafRfqMrr.webp)
 
 ### LinkedIn 帖子表单和导航
 
 虚拟键盘 API 一个很适用的例子就是 Linkedin 帖子的表单和导航的显示方式。
 
-![](./assets/image/image_OxZIZHQwRS.png)
+![](./assets/image/image_OxZIZHQwRS.webp)
 
 帖子表单和导航固定在底部。当用户激活输入框时，它看起来像这样：
 
-![](./assets/image/image_D1ToaMWdXG.png)
+![](./assets/image/image_D1ToaMWdXG.webp)
 
 注意，垂直空间太小。该怎么办呢？通过使用比较函数和虚拟键盘 API，可以在显示键盘时隐藏导航。
 
@@ -399,18 +399,18 @@ body:has(input:focus) {
 
 当虚拟键盘激活时，`max()` 函数的第二个部分将生效，`bottom` 值将变为键盘的高度。
 
-![](./assets/image/image_ojuJoSqlaQ.png)
+![](./assets/image/image_ojuJoSqlaQ.webp)
 
 #### 导航
 
 导航栏的位置是 `bottom: 0`。现在激活的是 `max()` 函数的第一部分。
 
-![](./assets/image/image_y7wZM8mDaH.png)
+![](./assets/image/image_y7wZM8mDaH.webp)
 
 当虚拟键盘激活时，我们将把导航栏移动到键盘下方。这里的 `100px` 是一个随机数，重点是添加一个大于导航栏高度的值。
 
-![](./assets/image/image_aLTjMowP7m.png)
+![](./assets/image/image_aLTjMowP7m.webp)
 
 效果如下：
 
-![](./assets/image/image_cVqnCcqoct.png)
+![](./assets/image/image_cVqnCcqoct.webp)

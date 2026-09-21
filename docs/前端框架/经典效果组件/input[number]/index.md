@@ -57,7 +57,7 @@ input[type="number"] {
 
 # 代码
 
-![](./assets/image/image_RsG-TB0ORE.png)
+![](./assets/image/image_RsG-TB0ORE.webp)
 
 ```typescript 
 import {memo, useEffect, useRef, useState} from 'react';

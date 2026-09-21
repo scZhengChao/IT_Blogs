@@ -9,9 +9,9 @@
 
 **不允许往下派生；**
 
-![](./assets/image/image_HIUb_8fZmr.png)
+![](./assets/image/image_HIUb_8fZmr.webp)
 
-![](./assets/image/image_jZgDncFQAs.png)
+![](./assets/image/image_jZgDncFQAs.webp)
 
 [是什么](./是什么/index.md "是什么")
 

@@ -96,7 +96,7 @@ console.log(name)
 
 先通过 [https://astexplorer.net/](https://astexplorer.net/ "https://astexplorer.net/") 在线转换网站，看一下我们想删除的 AST 节点:
 
-![](./assets/image/image_CCmLpspy9I.png)
+![](./assets/image/image_CCmLpspy9I.webp)
 
 通过上图，需求已经很明朗了。
 

@@ -12,11 +12,11 @@
 
 所谓测试驱动开发，**是指先编写接口，紧接着编写测试。编写完测试后，** 我们才开始真正编写实现代码。在编写实现代码的过程中，一边写，一边测，什么时候测试全部通过了，那就表示编写的实现完成了：
 
-![](./assets/image/image_tdArkYRSoi.png)
+![](./assets/image/image_tdArkYRSoi.webp)
 
 这就是传说中的……
 
-![](./assets/image/image_HbNhhqgt7s.png)
+![](./assets/image/image_HbNhhqgt7s.webp)
 
 当然，这是一种理想情况。大部分情况是我们已经编写了实现代码，需要对已有的代码进行测试。
 
@@ -74,7 +74,7 @@ JUnit是一个**开源的Java语言的单元测试框架**，**专门针对Java�
 
 以Eclipse为例，当我们已经编写了一个`Factorial.java`文件后，我们想对其进行测试，需要编写一个对应的`FactorialTest.java`文件，以`Test`为后缀是一个惯例，并分别将其放入`src`和`test`目录中。最后，在`Project`-`Properties`-`Java Build Path`-`Libraries`中添加`JUnit 5`的库：
 
-![](./assets/image/image__9facJnLJk.png)
+![](./assets/image/image__9facJnLJk.webp)
 
 整个项目结构如下：
 
@@ -113,11 +113,11 @@ public class FactorialTest {
 
 运行单元测试非常简单。选中`FactorialTest.java`文件，点击`Run`-`Run As`-`JUnit Test`，Eclipse会自动运行这个JUnit测试，并显示结果：
 
-![](./assets/image/image_d-epbdlyMP.png)
+![](./assets/image/image_d-epbdlyMP.webp)
 
 如果测试结果与预期不符，`assertEquals()`会抛出异常，我们就会得到一个测试失败的结果：
 
-![](./assets/image/image_fB-6yYz7j_.png)
+![](./assets/image/image_fB-6yYz7j_.webp)
 
 在Failure Trace中，JUnit会告诉我们详细的错误结果：
 

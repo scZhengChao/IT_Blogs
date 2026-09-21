@@ -114,7 +114,7 @@ y
 
 为了真的理解发生了什么，我们需要看一下可观察对象的弹珠图：
 
-![](./assets/image/image_6PYRKuC_1-.png)
+![](./assets/image/image_6PYRKuC_1-.webp)
 
 你有没有注意到第一个可观察对象的值b右边的竖线标记？它标记着带有值a和b的第一个可观察对象(`series1$`)完成的时间点。
 
@@ -237,7 +237,7 @@ result$.subscribe(console.log);
 
 ## Merge弹珠图
 
-![](./assets/image/image_NAr4EZ5RBH.png)
+![](./assets/image/image_NAr4EZ5RBH.webp)
 
 我们可以看到，合并后的源可观察对象的值会立即显示在输出中。结果可观察对象在**所有的**合并后的可观察对象完成之后才会完成。
 
@@ -247,7 +247,7 @@ result$.subscribe(console.log);
 
 如果我们把合并策略与更高阶可观察对象映射的概念相结合，我们就拥有了RxJS mergeMap 操作符。让我们来看看这个操作符的弹珠图：
 
-![](./assets/image/image_IUuc8d7JJE.png)
+![](./assets/image/image_IUuc8d7JJE.webp)
 
 下面是`mergeMap`操作符是如何工作的：
 
@@ -295,7 +295,7 @@ this.form.valueChanges
 
 让我们看看switch的弹珠图：
 
-![](./assets/image/image_snJMtav_C_.png)
+![](./assets/image/image_snJMtav_C_.webp)
 
 注意那些斜线，它们并非意外！在switch策略的情况下，重要的是要在图表中表示更高阶的Observable，也就是图片中最上面一行。
 
@@ -324,7 +324,7 @@ this.form.valueChanges
 
 如果我们现在在被发出的内部`Observable`中切换，而不是连接或合并它们，我们最终会使用`switchMap`操作符：
 
-![](./assets/image/image_Zamy5Q6byN.png)
+![](./assets/image/image_Zamy5Q6byN.webp)
 
 ## 拆分switchMap弹珠图
 
@@ -481,7 +481,7 @@ fromEvent(this.saveButton.nativeElement, 'click')
 
 为了理解exhaust是如何工作的，让我们看一下这张弹珠图：
 
-![](./assets/image/image_agSruG4eEJ.png)
+![](./assets/image/image_agSruG4eEJ.webp)
 
 就像之前一样，这里在首行中我们有一个高阶Observable，它的值本身是Observable，从那个首行中分叉开来。下面是在这张弹珠图中发生的内容：
 
@@ -501,7 +501,7 @@ fromEvent(this.saveButton.nativeElement, 'click')
 
 相反，这些值可能是比如鼠标点击：
 
-![](./assets/image/image_WO8L1WDkwo.png)
+![](./assets/image/image_WO8L1WDkwo.webp)
 
 那么下面是exhaustMap弹珠图中发生的内容：
 

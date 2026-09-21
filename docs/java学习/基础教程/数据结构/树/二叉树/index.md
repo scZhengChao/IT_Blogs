@@ -4,9 +4,9 @@
 
 - [特点](#特点)
 
-![](./assets/image/image_5njvnVQYeM.png)
+![](./assets/image/image_5njvnVQYeM.webp)
 
-![](./assets/image/image_F5FZT_9_IG.png)
+![](./assets/image/image_F5FZT_9_IG.webp)
 
 # 特点
 

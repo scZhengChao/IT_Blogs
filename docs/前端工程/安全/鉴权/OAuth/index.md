@@ -9,15 +9,15 @@
 
 以 github 为例
 
-![  ](./assets/image/2a835da495a99dcade8adc38d0f1fd36_zpw5rkgYXF.png "  ")
+![  ](./assets/image/2a835da495a99dcade8adc38d0f1fd36_zpw5rkgYXF.webp "  ")
 
-![  ](./assets/image/21acf226dcf8f4b6e4e8c69244229e3a_FoLlOvRNMB.png "  ")
+![  ](./assets/image/21acf226dcf8f4b6e4e8c69244229e3a_FoLlOvRNMB.webp "  ")
 
-![  ](./assets/image/c060dc208b3f685fe6665c82c51787ff_DOyQ445xGQ.png "  ")
+![  ](./assets/image/c060dc208b3f685fe6665c82c51787ff_DOyQ445xGQ.webp "  ")
 
 基本大概过程：
 
-![  ](./assets/image/aed52d90e1fddd50fcb32d6e133ddc53_4OLD68Npnh.png "  ")
+![  ](./assets/image/aed52d90e1fddd50fcb32d6e133ddc53_4OLD68Npnh.webp "  ")
 
 ```纯文本 
  代码实现： 
@@ -88,6 +88,6 @@
 
 第三方配置界面：
 
-![  ](./assets/image/1c2c2314527ce5d3f4ca2d6fe1dc5bc2_rQ-f4JLup0.png "  ")
+![  ](./assets/image/1c2c2314527ce5d3f4ca2d6fe1dc5bc2_rQ-f4JLup0.webp "  ")
 
-![  ](./assets/image/fbd429bd23ab40cd10dfa5625b8dcc4a_dGwI2TgMDC.png "  ")
+![  ](./assets/image/fbd429bd23ab40cd10dfa5625b8dcc4a_dGwI2TgMDC.webp "  ")

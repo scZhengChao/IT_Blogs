@@ -142,7 +142,7 @@ fib(10)
 
 &#x20;    上述示例中，每次 fib() 方法被调用，都会**往栈推入一个 fib() 方法调用**，直到执行到 fib(1)。假设，我们执行 fib(3) 则会得到如下调用栈。遵循后入先出原则，fib(1) 会最先执行，fib(3) 会最后执行。
 
-![](./assets/image/image_ucc_z8gzYx.png)
+![](./assets/image/image_ucc_z8gzYx.webp)
 
 上述协调算法是一个纯粹的爹贵算法。**一次更新会直接重新渲染整条 DOM 树**。虽然，上述算法可以很好的工作，但是也存在一些缺陷。
 
@@ -204,7 +204,7 @@ a()
 
 **当 b() 执行完毕，JavaScript 引擎会销毁 b() 的执行上下文。当 a() 执行完毕，a() 的执行上下文也会被销毁。**
 
-![](./assets/image/image_UQ-LQIaZqB.png)
+![](./assets/image/image_UQ-LQIaZqB.webp)
 
 上述过程是同步执行逻辑，那么 JavaScript 是如何处理像 HTTP 请求之类的异步事件的呢？JavaScript 引擎会阻塞掉执行栈，等待异步事件处理完毕吗？
 
@@ -212,7 +212,7 @@ a()
 
 这里就要提到 JavaScript 事件循环的概念，JavaScript 会通过事件循环机制来处理异步事件。
 
-![](./assets/image/image_Xsyi8kdyax.png)
+![](./assets/image/image_Xsyi8kdyax.webp)
 
 &#x20;       JavaScript 中通过**事件队列来处理异步事件**，执行栈空了或执行栈中只有全局执行上下文之后，事件队列中的事件才会被执行。
 
@@ -335,7 +335,7 @@ ReactDOM.render(<App />, document.getElementById('root'))
 
 从上述示例，我们可以看出 Fiber 树是由**父子关系和兄弟关系 Fiber Node 组成的单链表组成**的。这个 Fiber 树可以被深度搜索遍历。
 
-![](./assets/image/image_vR5HC_IAK2.png)
+![](./assets/image/image_vR5HC_IAK2.webp)
 
 ## Render 阶段
 
@@ -417,7 +417,7 @@ describe('ReactUnderstanding', () => {
 
 通过 debug 上述代码，我们可以获取**如下调用栈：**
 
-![](./assets/image/image_oHPVwe5TwA.png)
+![](./assets/image/image_oHPVwe5TwA.webp)
 
 我们可以看到，调用栈会首先执行 `render`()，最终执行到 `createFiberFromTypeAndProps`()，中间还会执行诸如 `workLoopSync`()、`performUnitOfWork`() 和 `beginWork`() 等方法。
 
@@ -439,7 +439,7 @@ describe('ReactUnderstanding', () => {
 
 我们来看下上述操作所触发的调用栈。
 
-![](./assets/image/image_lJsBTdrJKK.png)
+![](./assets/image/image_lJsBTdrJKK.webp)
 
 下图显示了每个 Fiber Node 由 4 个用于完成单元工作的阶段组成。
 
@@ -455,7 +455,7 @@ describe('ReactUnderstanding', () => {
 
 &#x20;     React 在执行完 Render 阶段后会执行 Commit 阶段。在前面的示例中，**当我们触发点击操作，Commit 阶段会切换当前（current）树和进行中（workInProgress）树。**
 
-![](./assets/image/image_JfbWIJM-mm.png)
+![](./assets/image/image_JfbWIJM-mm.webp)
 
 不仅如此，React 在**切换当前树和进行中树时，会复用老的当前树中可复用的 Fiber Node**。
 

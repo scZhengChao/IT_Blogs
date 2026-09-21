@@ -6,7 +6,7 @@
 
 最能体现 `RxJS` 中对 `Stream` 这个具有时间维度属性的方法就是 `merge` ，我们来看它的 Stream 图示：
 
-![](./assets/image/image_qdrWq-hP1Q.png)
+![](./assets/image/image_qdrWq-hP1Q.webp)
 
 因为 `Stream` 具有时间的属性，所以上述两个 `Stream` 合并之后会变成最下面的 `Stream`，红色和蓝色的 1 会插入在中间，如果在数组里对两个数组进行 `merge` 只能是 `concat`：
 
@@ -28,7 +28,7 @@ let arr4 = arr2.concat(arr1) // [1, 1, 20, 40, 60, 80, 100]
 
 实现效果如下：
 
-![](./assets/image/image_f7DCQKEga-.png)
+![](./assets/image/image_f7DCQKEga-.webp)
 
 我们用常规的代码实现如下：
 
@@ -108,7 +108,7 @@ export default function Merge() {
 - 将 `minus-button` 的点击事件转换成 Observable 可观察对象，每次点击就 `mapTo(-1)` ，转为 -1
 - 将这两个 Stream 在时间维度上进行 merge，得到如下效果
 
-![](./assets/image/image_yoPpHMzi1a.png)
+![](./assets/image/image_yoPpHMzi1a.webp)
 
 即我前后点击 +1 与 -1，然后**按照时间维度进行 merge**，会变成最底部的形式，然后只需要执行最后一步，将所有的值加起来就是最终计数器的结果，这个时候用到 `scan` 这个聚合操作符，类似数组中的 `reduce`，执行聚合操作即可，然后将得到的值更新结果。
 

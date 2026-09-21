@@ -51,4 +51,4 @@
 
 &#x20;
 
-![  ](./assets/image/da282fd116ce129477c8a73670c2b26d_DkYDISao_O.png "  ")
+![  ](./assets/image/da282fd116ce129477c8a73670c2b26d_DkYDISao_O.webp "  ")

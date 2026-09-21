@@ -6,13 +6,13 @@
 - [作用](#作用)
   - [3层架构好处：](#3层架构好处)
 
-![](./assets/image/image_E-U8nhWmJp.png)
+![](./assets/image/image_E-U8nhWmJp.webp)
 
-![](./assets/image/image_sGUuKoa8Pt.png)
+![](./assets/image/image_sGUuKoa8Pt.webp)
 
 # 分包
 
-![](./assets/image/image_bRatP279b-.png)
+![](./assets/image/image_bRatP279b-.webp)
 
 # 作用
 

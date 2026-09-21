@@ -87,7 +87,7 @@ public class ApiController {
 
 编写REST接口只需要定义`@RestController`，然后，**每个方法都是一个API接口，输入和输出只要能被Jackson序列化或反序列化为JSON就没有问题**。我们用浏览器测试GET请求，可直接显示JSON响应：
 
-![](./assets/image/image_HWSX7AxSC8.png)
+![](./assets/image/image_HWSX7AxSC8.webp)
 
 要测试POST请求，可以用curl命令：
 

@@ -20,7 +20,7 @@
 
 ## 洋葱模型的执行流程图
 
-![](./assets/image/image_whvg21-it7.png)
+![](./assets/image/image_whvg21-it7.webp)
 
 [koa-compose](./koa-compose/index.md "koa-compose")
 

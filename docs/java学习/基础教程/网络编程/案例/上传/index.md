@@ -102,7 +102,7 @@ public class client {
 
 > 循环 + 防止名字重复
 
-![](./assets/image/image_6duBEvwYRv.png)
+![](./assets/image/image_6duBEvwYRv.webp)
 
 ```java 
 package com.xunhuan;

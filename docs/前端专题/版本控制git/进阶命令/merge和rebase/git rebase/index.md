@@ -15,7 +15,7 @@
 - 官方解释：当执行rebase操作时，git会从**两个分支的共同祖先开始提取待变基分支上的修改**，然后将**待变基分支指向基分支的最新提交**，最后将刚才提取的修改应用到基分支的最新提交的后面。
 - 两个分支master和feature，其中feature是在提交点B处从master上拉出的分支，master上有一个新提交M，feature上有两个新提交C和D。
 
-![](./assets/image/image_r7bhnPDbyj.png)
+![](./assets/image/image_r7bhnPDbyj.webp)
 
 ```bash 
 git checkout feature 
@@ -25,7 +25,7 @@ git checkout feature
 
 下图为**变基后的提交节点图：**
 
-![](./assets/image/image_R3kUw_2B5-.png)
+![](./assets/image/image_R3kUw_2B5-.webp)
 
 - 当在feature分支上执行git rebase master时，git会从master和featuer的共同**祖先B开始提取feature分支上的修改**，也就是C和D两个提交，先提取到。然后将feature分支**指向master分支的最新提交上**，也就是M。最后把提取的C和D接到M后面，但这个过程是**删除原来的C和D，生成新的C’和D’，他们的提交内容一样，但commit id不同，feature自然最后也是指向D’**
 - rebase**字面意思就是"变基"**，可以直接理解为改变基底。**feature分支是基于master分支的B拉出来的分支，feature的基底是B**。而master在B之后有新的提交，就相当于此时要用master**上新的提交来作为feature分支的新基底**。
@@ -36,7 +36,7 @@ git checkout feature
 - 现在假设main分支内新增的内容与你正在开发的新功能有关。
 - 为了把main分支里新增的代码应用在你的feature分支，你有两种方法：merge 和 rebase
 
-![](./assets/image/image_21O1Fjzxfd.png)
+![](./assets/image/image_21O1Fjzxfd.webp)
 
 使用merge：
 
@@ -51,7 +51,7 @@ git merge feature main
 
 - 这会在feature分支中创建一个合并提交，这次提交会连结两个分支的提交历史，在分支图示结构中看起来像下面这样
 
-![](./assets/image/image_19Uf4cfZu2.png)
+![](./assets/image/image_19Uf4cfZu2.webp)
 
 使用rebase：
 
@@ -63,7 +63,7 @@ git checkout feature
 
 - 这些操作会把**feature分支的起始历史放到main分支的最后一次提交之上**，也达成了使用main分支中新代码的目的。但是，相对于merge操作中新建一个合并提交，rebase操作会**通过为原始分支的每次提交创建全新的提交，从而重写原始分支的提交历史**
 
-![](./assets/image/image_6rTbJJnk4l.png)
+![](./assets/image/image_6rTbJJnk4l.webp)
 
 # rebase慎用场景：
 
@@ -75,7 +75,7 @@ git checkout feature
   - 情况二：往公共分支上合代码的时候，使用merge。如果使用rebase，那么其他开发人员想看主分支的历史，就不是原来的历史了，历史已经被你篡改了。比如张三和李四从共同的节点拉出来开发，张三先开发完提交了两次然后merge上去了，李四后来开发完rebase上去（注意：李四需要切换到主分支，然后执行git rebase，然后再git push到远端），则李四的新提交变成了张三之前新提交的新基底，本来李四的提交是最新的，结果最新的提交显示反而是张三的，就乱套了
     - 也就是换基底了。
 
-![](./assets/image/image_3SiDbbjo0r.png)
+![](./assets/image/image_3SiDbbjo0r.webp)
 
 # 实践经验
 

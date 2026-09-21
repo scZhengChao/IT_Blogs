@@ -6,4 +6,4 @@
 
 > 方法重写：command + n
 
-![](./assets/image/image_2ynyBuBJyB.png)
+![](./assets/image/image_2ynyBuBJyB.webp)

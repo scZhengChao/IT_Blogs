@@ -47,11 +47,11 @@ Nest.js在制作时考虑到了模块化结构。你的应用程序应该被**�
 
 这是一个按类型分解的例子：
 
-![](./assets/image/image_rB85qnX8u5.png)
+![](./assets/image/image_rB85qnX8u5.webp)
 
 这是一个按主题分解的例子
 
-![](./assets/image/image_6TGDcNEVm9.png)
+![](./assets/image/image_6TGDcNEVm9.webp)
 
 在 Nest.js中， 一个模块有一个`.module.ts`文件包含`@Module({})`装饰器。但是这不是必须的！不是每一个文件夹都需要一个`.module.ts`文件。您可以创建一个文件夹`utils`来存放您的帮助函数和JSON文件。
 
@@ -63,7 +63,7 @@ Nest.js在制作时考虑到了模块化结构。你的应用程序应该被**�
 
 您可以他们简化您的`API`内容（`body`）和请求验证逻辑。例如，`AuthDto` 自动的整合用户的`email`和`password`进一个`dto`对象进行强制验证。
 
-![](./assets/image/image_aWdRhKjWXd.png)
+![](./assets/image/image_aWdRhKjWXd.webp)
 
 如果您期待`password`必须要大于5位，您可以使用`class-validator`包来自动的抛出一个异常。
 
@@ -169,7 +169,7 @@ export class UserEntity {
 
 与其从不同的文件夹中导入您的类，不如从同一个文件夹来导入他们。
 
-![](./assets/image/image_-F_BvaRgq1.png)
+![](./assets/image/image_-F_BvaRgq1.webp)
 
 ```typescript 
 // index.ts内部
@@ -194,10 +194,10 @@ import { EditPostDto } from './dto/editPost.dto'
 
 在这个例子中，**GetUserIdFromJwt**将把用户“sub”字段与请求对象隔离开来，我们之前已经用jwt策略验证了这一点。
 
-![](./assets/image/image_ioJjWBB8Hw.png)
+![](./assets/image/image_ioJjWBB8Hw.webp)
 
 您也可以直接在路由上使用这段逻辑
 
-![](./assets/image/image_B1i682jV1T.png)
+![](./assets/image/image_B1i682jV1T.webp)
 
 您可以使用自定义装饰器来做这些类似的事情。装饰器的另一个非常方便的用例是分页。

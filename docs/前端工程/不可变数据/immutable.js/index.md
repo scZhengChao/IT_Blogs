@@ -62,7 +62,7 @@ store.dispatch({ type: 'todos/TOGGLE_TODO', index: 1 });
 
 这种模式很好地配合 `React.PureComponent` 做浅比较提升应用的性能。
 
-![](./assets/image/image_PVgKIgzUFX.png)
+![](./assets/image/image_PVgKIgzUFX.webp)
 
 常见的 API 有：
 

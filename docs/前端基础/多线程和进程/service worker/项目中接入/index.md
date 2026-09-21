@@ -65,20 +65,20 @@ new SwPrecacheWebpackPlugin({
 
 - 通过刷新访问我们可以看到，service worker 缓存文件已经生效，在network面板下自定义的缓存文件size项都显示为“from ServiceWorker”, 耗时也明显很低。在cache storage下面也可以看到已经缓存的文件列表，具体如下图所示：
 
-![](./assets/image/image_-BS_xXjFKw.png)
+![](./assets/image/image_-BS_xXjFKw.webp)
 
-![](./assets/image/image_XyWVIHF0DR.png)
+![](./assets/image/image_XyWVIHF0DR.webp)
 
 - 接下来我们更新service-worker.js文件来看下新服务工作线程如何工作,正如前面所讲新服务工作线程将会启动安装，但由于旧服务工作线程控制着页面，所以新服务工作线程将进入waiting状态，**当当前打开的页面关闭时，旧服务工作线程将会被终止，新服务工作线程会得的控制权并触发activate事件**，在开发过程中我们需要通过Chrome Devtools的**skipWaiting或者勾选Updated on reload来强制激活新服务工作线程**，具体如下图所示：
 
-![](./assets/image/image_-0ank3N9nZ.png)
+![](./assets/image/image_-0ank3N9nZ.webp)
 
 - 在开发过程中我们可以通过上述来了解新服务工作线程的更新流程，但\*\*在实际项目中我们可以通过`self.skipWaiting()`\*\***跳过等待过程安装后直接激活**，一般我们在install事件中调用,具体可参见`sw-precache-webpack-plugin`生成的`service-worker`源代码。这会导致新服务工作线程将当前活动的工作线程逐出，`skipWaiting()`意味着新服务工作线程可能会控制使用较旧工作线程加载的页面，也就是页面获取的部分数据由旧工作线程处理，而新服务工作线程处理后来获取的数据，如果有问题就不要使用skipWaiting();
 - 手动清理service worker缓存后刷新页面，在 Network 面板中，我们会看到本应缓存文件的一组初始请求。之后是前面带有齿轮图标的第二轮请求，这些请求似乎要获取相同的资源，“齿轮”图标代表这些请求来自服务工作线程，**如果不unregsiter该服务工作线程，我们会发现即使多次刷新页面，Network 面板依然如此，其实也就是说资源没有再次缓存（** 因为服务工作线程已经安装且控制当前页面，刷新操作不会重新触发install事件，也就不会再次添加资源到缓存，除非unregister或者更新service-worker.js文件），具体如下图所示：
 
-![](./assets/image/image_z8geedJ2Ok.png)
+![](./assets/image/image_z8geedJ2Ok.webp)
 
-![](./assets/image/image_QOv4D-k25r.png)
+![](./assets/image/image_QOv4D-k25r.webp)
 
 ## **异常回滚（注销）**
 

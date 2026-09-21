@@ -12,11 +12,11 @@ CSS盒模型本质上是一个盒子，封装周围的HTML元素，它包括：�
 
 #### W3C的标准盒模型（标准盒模型
 
-![](./assets/image/image_Cw6u8cGorL.png)
+![](./assets/image/image_Cw6u8cGorL.webp)
 
 #### IE盒模型 （怪异盒模型）
 
-![](./assets/image/image_z_CBJU_5Mu.png)
+![](./assets/image/image_z_CBJU_5Mu.webp)
 
 #### box-sizing的使用
 

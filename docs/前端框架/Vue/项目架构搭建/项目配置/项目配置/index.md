@@ -141,7 +141,7 @@ npm install --save-dev @babel/plugin-proposal-optional-chaining
 ```
 
 
-![](./assets/image/image_3Vt1PbfWQ2.png)
+![](./assets/image/image_3Vt1PbfWQ2.webp)
 
 原因：babel版本低于7，执行`npx babel-upgrade --write --install`升级依赖中的`@babel/core`如图：是执行`npx babel-upgrade --write --install`命令之后的变更。
 

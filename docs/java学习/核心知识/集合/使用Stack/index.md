@@ -10,15 +10,15 @@
 
 什么是`LIFO`呢？我们先回顾一下`Queue`的特点`FIFO`：
 
-![](./assets/image/image_FRqKl94S4B.png)
+![](./assets/image/image_FRqKl94S4B.webp)
 
 所谓`FIFO`，是最先进队列的元素一定最早出队列，而`LIFO`是最后进`Stack`的元素一定最早出`Stack`。如何做到这一点呢？只需要把队列的一端封死：
 
-![](./assets/image/image_ZhrCLbzIaX.png)
+![](./assets/image/image_ZhrCLbzIaX.webp)
 
 因此，`Stack`是这样一种数据结构：只能不断地往`Stack`中压入（push）元素，**最后进去的必须最早弹出（pop）来**：
 
-![](./assets/image/image_XkYIRfJcY6.png)
+![](./assets/image/image_XkYIRfJcY6.webp)
 
 `Stack`只有入栈和出栈的操作：
 
@@ -81,23 +81,23 @@ public class Main {
 
 首先我们准备一个空栈：
 
-![](./assets/image/image_ymQBZmCGte.png)
+![](./assets/image/image_ymQBZmCGte.webp)
 
 然后计算12500÷16=781…4，余数是`4`，把余数`4`压栈：
 
-![](./assets/image/image_3YGWbJk3f7.png)
+![](./assets/image/image_3YGWbJk3f7.webp)
 
 然后计算781÷16=48…13，余数是`13`，`13`的十六进制用字母`D`表示，把余数`D`压栈：
 
-![](./assets/image/image_YBRUT5fIPJ.png)
+![](./assets/image/image_YBRUT5fIPJ.webp)
 
 然后计算48÷16=3…0，余数是`0`，把余数`0`压栈：
 
-![](./assets/image/image_o7Tc7M_Uow.png)
+![](./assets/image/image_o7Tc7M_Uow.webp)
 
 最后计算3÷16=0…3，余数是`3`，把余数`3`压栈：
 
-![](./assets/image/image_8WeYINfHkr.png)
+![](./assets/image/image_8WeYINfHkr.webp)
 
 当商是`0`的时候，计算结束，我们把栈的所有元素依次弹出，组成字符串`30D4`，这就是十进制整数`12500`的十六进制表示的字符串。
 
@@ -111,27 +111,27 @@ public class Main {
 
 计算后缀表达式不考虑优先级，直接从左到右依次计算，因此计算起来简单。首先准备一个空的栈：
 
-![](./assets/image/image_as4PXln5kU.png)
+![](./assets/image/image_as4PXln5kU.webp)
 
 然后我们依次扫描后缀表达式`1 2 9 5 - * +`，遇到数字`1`，就直接扔到栈里：
 
-![](./assets/image/image_kMeLMdHOND.png)
+![](./assets/image/image_kMeLMdHOND.webp)
 
 紧接着，遇到数字`2`，`9`，`5`，也扔到栈里：
 
-![](./assets/image/image_uzu8yu8UH4.png)
+![](./assets/image/image_uzu8yu8UH4.webp)
 
 接下来遇到减号时，弹出栈顶的两个元素，并计算`9-5=4`，把结果`4`压栈：
 
-![](./assets/image/image_tUb5YgsYZg.png)
+![](./assets/image/image_tUb5YgsYZg.webp)
 
 接下来遇到`*`号时，弹出栈顶的两个元素，并计算`2*4=8`，把结果`8`压栈：
 
-![](./assets/image/image_Gxt6dxmOBR.png)
+![](./assets/image/image_Gxt6dxmOBR.webp)
 
 接下来遇到`+`号时，弹出栈顶的两个元素，并计算`1+8=9`，把结果`9`压栈：
 
-![](./assets/image/image_qflRxGrXqM.png)
+![](./assets/image/image_qflRxGrXqM.webp)
 
 扫描结束后，没有更多的计算了，弹出栈的唯一一个元素，得到计算结果`9`。
 

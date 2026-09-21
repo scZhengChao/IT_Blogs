@@ -76,12 +76,12 @@ Vue. prototype . getConfigJson () //调用声明的全局方法12345678910111213
 
 ![  ](./assets/image/5e4737c471df6ceec316df60b0536d71_tgPLDGwK-p.svg "  ")
 
-![  ](./assets/image/10435330-7272c0f1091fcd91_O9vfcKQojd.png "  ")
+![  ](./assets/image/10435330-7272c0f1091fcd91_O9vfcKQojd.webp "  ")
 
-![  ](./assets/image/10435330-acf380dfd1bdc3aa_msG6NsFvni.png "  ")
+![  ](./assets/image/10435330-acf380dfd1bdc3aa_msG6NsFvni.webp "  ")
 
-![  ](./assets/image/10435330-6479b313bc932164_ny1x946Af0.png "  ")
+![  ](./assets/image/10435330-6479b313bc932164_ny1x946Af0.webp "  ")
 
-![  ](./assets/image/10435330-4e51802e5b530f4a_ZVA7QcNKp2.png "  ")
+![  ](./assets/image/10435330-4e51802e5b530f4a_ZVA7QcNKp2.webp "  ")
 
 ![  ](./assets/image/9d6bf75a1c3174785f4b62b101340b0a_PdR4XKa3qh.svg "  ")

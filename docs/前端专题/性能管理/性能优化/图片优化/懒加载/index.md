@@ -131,7 +131,7 @@
 
 我们看看浏览器的输出,方便理解：
 
-![](./assets/image/image_LyJIUaHG16.png)
+![](./assets/image/image_LyJIUaHG16.webp)
 
 > \> top是指图片顶部到可视界面顶部的距离
 
@@ -261,4 +261,4 @@ if(rect.top<viewHeight){
 
 ![](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/e5ad730e76e847a8b2e954cb3ba85439~tplv-k3u1fbpfcp-jj-mark:3024:0:0:0:q75.awebp#?w=1852\&h=865\&s=5528630\&e=gif\&f=48\&b=fcfbfb)
 
-![](./assets/image/image_1muc7VAHnV.png)
+![](./assets/image/image_1muc7VAHnV.webp)

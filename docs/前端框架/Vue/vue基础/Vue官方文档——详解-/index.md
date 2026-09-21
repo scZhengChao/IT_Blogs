@@ -14,7 +14,7 @@
 
 ![  ](./assets/image/1935242305-5b03be0574ef1_big64_ZKOtIS6JoQ.jpeg "  ")
 
-![  ](./assets/image/rp_6q_I18AX3V.png "  ")
+![  ](./assets/image/rp_6q_I18AX3V.webp "  ")
 
 # [Vue官方文档——详解](https://segmentfault.com/a/1190000014542373 "Vue官方文档——详解")
 
@@ -30,23 +30,23 @@
 
 **1、生命周期函数中不能使用箭头函数**
 
-![  ](./assets/image/bV9e4M_YMYAMrumXH.png "  ")
+![  ](./assets/image/bV9e4M_YMYAMrumXH.webp "  ")
 
 **2、data函数不能使用箭头函数**
 
-![  ](./assets/image/bV9e5M_9_wHPKrwx8.png "  ")
+![  ](./assets/image/bV9e5M_9_wHPKrwx8.webp "  ")
 
 **3、watch中不能使用箭头函数**
 
-![  ](./assets/image/bV9e6A_ZUT5_HVy_0.png "  ")
+![  ](./assets/image/bV9e6A_ZUT5_HVy_0.webp "  ")
 
 **4、methods中不能使用箭头函数**
 
-![  ](./assets/image/bV9e6P_HDqtNExIIG.png "  ")
+![  ](./assets/image/bV9e6P_HDqtNExIIG.webp "  ")
 
 **5、computed不能使用箭头函数**
 
-![  ](./assets/image/bV9fuE_xZ8p5K4q18.png "  ")
+![  ](./assets/image/bV9fuE_xZ8p5K4q18.webp "  ")
 
 #### 一、全局配置
 
@@ -56,7 +56,7 @@ Vue.config 是一个对象，包含 Vue 的全局配置，vue.config的配置全
 
 官网中给出的常用配置如下：
 
-![  ](./assets/image/bV89Pl_Fi3oH-23Lk.png "  ")
+![  ](./assets/image/bV89Pl_Fi3oH-23Lk.webp "  ")
 
 **(1)、devtools**
 
@@ -114,7 +114,7 @@ function
 
 然后，在组件中的beforeCreate周期时调用methods中的方法，这样操作肯定会报错
 
-![  ](./assets/image/bV893w_3OrnN9oCVM.png "  ")
+![  ](./assets/image/bV893w_3OrnN9oCVM.webp "  ")
 
 最后，得到的报错信息如下：（这样是我们通过errorHandler抓到的错误信息啦，so easy \~\~\~）
 
@@ -126,7 +126,7 @@ function
 
 对于开发版本，会默认向控制台打印：
 
-![  ](./assets/image/bV9bcX_ferZrHoa10.png "  ")
+![  ](./assets/image/bV9bcX_ferZrHoa10.webp "  ")
 
 //设置为
 
@@ -162,11 +162,11 @@ n'
 
 Chrome需要安装插件：
 
-![  ](./assets/image/bV9bqt_7j7c7dZ1I-.png "  ")
+![  ](./assets/image/bV9bqt_7j7c7dZ1I-.webp "  ")
 
 通过插件Vue performance可以看到每个组件的时间分配：
 
-![  ](./assets/image/bV9bq4_mWAv2fpoAW.png "  ")
+![  ](./assets/image/bV9bq4_mWAv2fpoAW.webp "  ")
 
 描述：
 
@@ -187,19 +187,19 @@ Patch:
 
 **1、Vue.extend用于创建一个子类Vue,用\$mount来挂载**
 
-![  ](./assets/image/bV9fvj_G0juutrK5H.png "  ")
+![  ](./assets/image/bV9fvj_G0juutrK5H.webp "  ")
 
 > 注意：Vue.extend()中的data是函数。
 
 **2、Vue.nextTick(\[callback,context])在下次 DOM 更新循环结束之后执行延迟回调。在修改数据之后立即使用这个方法，获取更新后的DOM。**
 
-![  ](./assets/image/bV9goR_PjbVtGeQ6d.png "  ")
+![  ](./assets/image/bV9goR_PjbVtGeQ6d.webp "  ")
 
 **3、Vue.set( target, key, value) :设置对象的属性，确保属性被创建后是响应式的，同时触发视图更新。这个方法主要用于避开 Vue 不能检测属性被添加的限制。**
 
 > Vue.set为什么存在？原因：由于Javascript的限制，Vue不能自动检测以下变动的数组。改变下标的时候vue不能再检测到。因此Vue.set可以检测到并更新视图。
 
-![  ](./assets/image/bV9gEZ_G81L_u9grL.png "  ")
+![  ](./assets/image/bV9gEZ_G81L_u9grL.webp "  ")
 
 > 注意：（1）、普通方式直接改属性值，数据并不会更新，DOM也不会更新。
 
@@ -230,29 +230,29 @@ this
 
 **4、Vue.delete(target,key):删除对象的属性。如果对象是响应式的，确保删除能触发更新视图。这个方法主要用于避开 Vue 不能检测到属性被删除的限制。**
 
-![  ](./assets/image/bV9haZ_16MpRxU6wM.png "  ")
+![  ](./assets/image/bV9haZ_16MpRxU6wM.webp "  ")
 
 **5、Vue.delete(target,key):删除对象的属性。如果对象是响应式的，确保删除能触发更新视图。这个方法主要用于避开 Vue 不能检测到属性被删除的限制。**
 
-![  ](./assets/image/bV9haZ_16MpRxU6wM.png "  ")
+![  ](./assets/image/bV9haZ_16MpRxU6wM.webp "  ")
 
 **6、Vue. directive :注册全局指令**
 
 > 定义的指令中 "el" 属性指所绑定的元素，可以用来直接操作DOM。
 
-![  ](./assets/image/bV9kH0_2JME5CQ1Of.png "  ")
+![  ](./assets/image/bV9kH0_2JME5CQ1Of.webp "  ")
 
 **bind：只调用一次，指令第一次绑定到元素时调用，用这个钩子函数可以定义一个在绑定时执行一次的初始化动作。**
 
-![  ](./assets/image/bV9kJk_SwhTRe2rpn.png "  ")
+![  ](./assets/image/bV9kJk_SwhTRe2rpn.webp "  ")
 
 **inserted:被绑定元素插入父节点是调用（父节点存在即可调用，不必存在于document中）。【插入完之后调用】**
 
-![  ](./assets/image/bV9kKK_H1lNcp9082.png "  ")
+![  ](./assets/image/bV9kKK_H1lNcp9082.webp "  ")
 
 **update:被绑定元素所在模板更新时调用，而无论绑定值是否变化。通过比较更新前后的绑定值，可以忽略不必要的模板更新。【常用】**
 
-![  ](./assets/image/bV9kYn_cBTw57pqPe.png "  ")
+![  ](./assets/image/bV9kYn_cBTw57pqPe.webp "  ")
 
 **componentUpdated：被绑定元素所在模板完成一次更新周期时调用。**
 
@@ -260,17 +260,17 @@ this
 
 **7、Vue.filter注册全局过滤器**
 
-![  ](./assets/image/bV9la2_o07pp6-quP.png "  ")
+![  ](./assets/image/bV9la2_o07pp6-quP.webp "  ")
 
 **过滤器可以管道式链接过滤，管道符："|"**
 
-![  ](./assets/image/bV9lew_T_9Wntp8Uz.png "  ")
+![  ](./assets/image/bV9lew_T_9Wntp8Uz.webp "  ")
 
 **8、Vue.component注册全局组件**
 
 > 全局注册的组件可以在多个构造器中使用，但是局部注册的组件只能在组件注册的作用域里进行使用，其他作用域使用无效。
 
-![  ](./assets/image/bV9lpj_6qUYnp71HG.png "  ")
+![  ](./assets/image/bV9lpj_6qUYnp71HG.webp "  ")
 
 > 从代码中你可以看出，局部注册其实就是写在构造器。但是需要注意，构造器里的components 是加s的，而全局注册是不加s的。
 
@@ -278,11 +278,11 @@ this
 
 比如：使用vue-router,首先npm install vue-router --save-dev,然后在main.js文件中通过import引入vue,vue-router模块和需要使用的组件，必须通过Vue.use()安装相应功能，如：Vue.use(VueRouter)。
 
-![  ](./assets/image/bV9lsU_LGxJr99kew.png "  ")
+![  ](./assets/image/bV9lsU_LGxJr99kew.webp "  ")
 
 **10、Vue.version获取安装的Vue版本号**
 
-![  ](./assets/image/bV9lwF_AqzhIvgyms.png "  ")
+![  ](./assets/image/bV9lwF_AqzhIvgyms.webp "  ")
 
 **11、Vue.compile**
 
@@ -426,7 +426,7 @@ One
 
 **2、props : 父传子信息**
 
-![  ](./assets/image/bV9msy_qXlA6zvA2w.png "  ")
+![  ](./assets/image/bV9msy_qXlA6zvA2w.webp "  ")
 
 **3、propsData**
 
@@ -436,7 +436,7 @@ propsData在实际开发中我们使用的并不多，我们在后边会学到Vu
 
 > computed有 get和 set属性
 
-![  ](./assets/image/bV9naN_-u5HOoS_fL.png "  ")
+![  ](./assets/image/bV9naN_-u5HOoS_fL.webp "  ")
 
 **5、methods**
 
@@ -446,7 +446,7 @@ propsData在实际开发中我们使用的并不多，我们在后边会学到Vu
 
 > watch 监听data属性变化
 
-![  ](./assets/image/bV9nhl_NnMZ7Gllx4.png "  ")
+![  ](./assets/image/bV9nhl_NnMZ7Gllx4.webp "  ")
 
 #### 四、选项/DOM
 
@@ -674,11 +674,11 @@ script
 
 （1）、 createElement参数：{String | Object | Function}，string必选。基础用法如下：
 
-![  ](./assets/image/bV9Fbe_OfSgQw_G49.png "  ")
+![  ](./assets/image/bV9Fbe_OfSgQw_G49.webp "  ")
 
 得到的前端页面结构如下：
 
-![  ](./assets/image/bV9Fb9_bI7UXEdMs-.png "  ")
+![  ](./assets/image/bV9Fb9_bI7UXEdMs-.webp "  ")
 
 （2）、Object参数，可选
 
@@ -834,7 +834,7 @@ body
 
 这样得到的结果如下：（标签属性值已设置）
 
-![  ](./assets/image/bV9Fim_L_Tt0LwL4G.png "  ")
+![  ](./assets/image/bV9Fim_L_Tt0LwL4G.webp "  ")
 
 （3）、createElement函数构建而成的数组
 
@@ -962,13 +962,13 @@ body
 
 这样得到的结果如下：
 
-![  ](./assets/image/bV9Fro_B1PWE2QyEz.png "  ")
+![  ](./assets/image/bV9Fro_B1PWE2QyEz.webp "  ")
 
 （4）、两种组件写法
 
-![  ](./assets/image/bV9Fxq_QlZ0rrv5di.png "  ")
+![  ](./assets/image/bV9Fxq_QlZ0rrv5di.webp "  ")
 
-![  ](./assets/image/creativecommons-cc_0_j4u2ldO8.png "  ")
+![  ](./assets/image/creativecommons-cc_0_j4u2ldO8.webp "  ")
 
 [新浪微博](http://loadhtml/# "新浪微博")
 
@@ -997,9 +997,9 @@ body
 
 [时间排序](http://loadhtml/# "时间排序")
 
-![  ](./assets/image/user-128_Ejru5G1wp9.png "  ")
+![  ](./assets/image/user-128_Ejru5G1wp9.webp "  ")
 
-![  ](./assets/image/20190610_Z_9iGELyzA.png "  ")
+![  ](./assets/image/20190610_Z_9iGELyzA.webp "  ")
 
 [想在上方展示你的广告？](https://segmentfault.com/sponsor "想在上方展示你的广告？")
 

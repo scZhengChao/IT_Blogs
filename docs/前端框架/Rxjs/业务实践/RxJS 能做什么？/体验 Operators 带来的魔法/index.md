@@ -203,7 +203,7 @@ inputSearch.addEventListener("input", debounce((e) => {
 
 实际效果如下：
 
-![](./assets/image/image_Xkfv_Bq-TK.png)
+![](./assets/image/image_Xkfv_Bq-TK.webp)
 
 完整的代码如下：
 
@@ -372,7 +372,7 @@ export default function OperatorsRxJS() {
 
 首先我们将 `input.search` 的 `input` 事件变为 Observable，然后也随之开始了 Stream 图，也就是弹珠图：
 
-![](./assets/image/image_8GFRq_16Rw.png)
+![](./assets/image/image_8GFRq_16Rw.webp)
 
 上述过程如下，通过无次输入事件输入了一个 `hello`，然后最后进行了删除置空操作，将输入框清空：
 
@@ -404,7 +404,7 @@ export default function OperatorsRxJS() {
 
 紧接着我们尝试去除重复的请求，即在经过防抖之后，和**上次请求一样的请求数据其实是不必要的请求**，所以我们使用 `distinctUntilChanged` ，此是如何运作的呢？直接上图！
 
-![](./assets/image/image_MTZROPbkrd.png)
+![](./assets/image/image_MTZROPbkrd.webp)
 
 从整个时间维度来看，剩下的四个事件中，第三和第四个事件的请求数据是一致的，所以第四个事件在经过 `distinctUntilChanged` 处理之后就不会派发新的事件，最后只剩下三个事件。
 
@@ -412,7 +412,7 @@ export default function OperatorsRxJS() {
 
 我们直接使用 RxJS 文档里关于 `switchMap` 的弹珠图来说明什么是竟态，以及如何处理竟态
 
-![](./assets/image/image_63JIlDo0GV.png)
+![](./assets/image/image_63JIlDo0GV.webp)
 
 根据 RxJS 的文档，`switchMap` 主要做的事情有两件：
 
@@ -425,7 +425,7 @@ export default function OperatorsRxJS() {
 
 我们有两个 Stream，第一条为 source Observable，第二条为 map 时操作 i 与待映射的 Stream，上述映射的中间态如下：
 
-![](./assets/image/image_8nTrOcGm2F.png)
+![](./assets/image/image_8nTrOcGm2F.webp)
 
 按照 source Observable 1 3 5 的顺序，然后按照 mapped Observable 的时间跨度进行映射，然后压平之后就会得到如上的结果，然后 switchMap 则会按照原 1 3 5 的顺序，对映射压平之后的上述结果进行一个判断，因为 3 映射之后的第三个 30 在原时序上是小于 5 的，所以超过第一个 50 的 30 会被丢弃，变成如下结果：
 
@@ -456,7 +456,7 @@ export default function OperatorsRxJS() {
 ```
 
 
-![](./assets/image/image_gtCdIZ74by.png)
+![](./assets/image/image_gtCdIZ74by.webp)
 
 我们拿前两个 `searchWikiPedia` 请求为例，经过 `switchMap` 之后，会映射成下面两个紫色的 Stream：
 

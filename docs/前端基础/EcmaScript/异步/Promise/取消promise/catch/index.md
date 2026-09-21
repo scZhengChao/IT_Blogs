@@ -23,7 +23,7 @@
 ```
 
 
-![](./assets/image/image_OJoU65nlFm.png)
+![](./assets/image/image_OJoU65nlFm.webp)
 
 - \*抛出错误 必须catch; \*
 - 注意：传给 Promise的函数不能加async；必须是同步函数

@@ -16,7 +16,7 @@
 1. 必须有**接口，实现类要实现接口**（代理通常是基于接口实现的）。
 2. 创建一个**实现类的对象，该对象为业务对象**，紧接着**为业务对象做一个代理对象**。
 
-![](./assets/image/image_1Ru1wCxrct.png)
+![](./assets/image/image_1Ru1wCxrct.webp)
 
 动态代理的优点
 
@@ -45,4 +45,4 @@
     - 子类： 必须**和被代理类实现相同的父接口**
     - 子类编译后是一个`.class`文件， 需要使用类加载器，加载.class文件到内存中
 
-![](./assets/image/image_-GGrhnoHc5.png)
+![](./assets/image/image_-GGrhnoHc5.webp)

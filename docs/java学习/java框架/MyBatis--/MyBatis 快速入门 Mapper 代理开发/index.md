@@ -24,15 +24,15 @@
    5. **调用对应方法完成sql的执行**
    6. **释放资源**
 
-![](./assets/image/image_x66Wjwo8fu.png)
+![](./assets/image/image_x66Wjwo8fu.webp)
 
-![](./assets/image/image_QpHWm8IsVj.png)
+![](./assets/image/image_QpHWm8IsVj.webp)
 
 入门案例：常见错误
 
 - 在映射文件userManager.xml中的resultType位置没有书写类的全名
 
-![](./assets/image/image_zrC2MXrJY8.png)
+![](./assets/image/image_zrC2MXrJY8.webp)
 
 # 总结
 

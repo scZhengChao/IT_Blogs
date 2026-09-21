@@ -4,9 +4,9 @@
 
     官方文档 写的很详细很清楚
 
-![  ](./assets/image/e68fd1e679e3639f167e4e91f946659a_GEzW_9bsF4.png "  ")
+![  ](./assets/image/e68fd1e679e3639f167e4e91f946659a_GEzW_9bsF4.webp "  ")
 
-![  ](./assets/image/76f7e9b8050865db5c309032a54ffe39_gzCYirnihR.png "  ")
+![  ](./assets/image/76f7e9b8050865db5c309032a54ffe39_gzCYirnihR.webp "  ")
 
 \*\*一：插件： \*\*​
 

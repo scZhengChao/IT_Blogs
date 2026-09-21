@@ -7,9 +7,9 @@
 - 方法可以不写abstract；**默认都是abstract和 public**；属性默认都是；public static final
 - 1.8 新增；default 和 static ；引用调用；
 
-![](./assets/image/image_KEs3n2nE9D.png)
+![](./assets/image/image_KEs3n2nE9D.webp)
 
-![](./assets/image/image_deEMzw0DSP.png)
+![](./assets/image/image_deEMzw0DSP.webp)
 
 [成员方法](./成员方法/index.md "成员方法")
 

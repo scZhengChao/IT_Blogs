@@ -26,7 +26,7 @@
 
 命令模式的`UML`图如下：
 
-![](./assets/image/image_Qdm70mJ4EX.png)
+![](./assets/image/image_Qdm70mJ4EX.webp)
 
 上述这个`UML`图一眼看起来可能会让人摸不着头脑，逐一对其进行分析发现其实也不难理解。首先，`Client`类的依赖关系可以不用看，因为它不是命令模式的核心。
 
@@ -116,7 +116,7 @@ invoker.execCommand();
 
 我所负责的业务需求，只要遇到编辑器这类业务场景（几乎都会有`撤销`，`重做`等需求），我都会使用命令模式进行实现。我就以`Antv/X6`的`@antv/x6-plugin-history`插件的源码给大家举个例子。
 
-![](./assets/image/image__YJYJpV4uw.png)
+![](./assets/image/image__YJYJpV4uw.webp)
 
 ```typescript 
 import { KeyValue, Basecoat, Model, Graph } from "@antv/x6";

@@ -6,7 +6,7 @@
 
 这个操作符还是有点意思的，我们先看看官网的描述：
 
-![](./assets/image/image_ZvRoyQZUnM.png)
+![](./assets/image/image_ZvRoyQZUnM.webp)
 
 concatMap
 

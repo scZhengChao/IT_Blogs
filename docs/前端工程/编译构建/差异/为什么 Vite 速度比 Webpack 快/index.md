@@ -28,11 +28,11 @@
 
 **Webpack启动**
 
-![](./assets/image/image_usOKUNWvB2.png)
+![](./assets/image/image_usOKUNWvB2.webp)
 
 **Vite启动**
 
-![](./assets/image/image_7O1nWFt95t.png)
+![](./assets/image/image_7O1nWFt95t.webp)
 
 ## 2、对ES Modules的支持
 
@@ -46,7 +46,7 @@
 
 **主流浏览器（除IE外）均支持ES Modules，并且可以通过在 script 标签中设置** `type="module"`来加载模块。默认情况下，模块会延迟加载，执行时机在文档解析之后，触发DOMContentLoaded事件前。
 
-![](./assets/image/image_p_cx3k_FWl.png)
+![](./assets/image/image_p_cx3k_FWl.webp)
 
 ## 3、底层语言的差异
 

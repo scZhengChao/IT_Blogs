@@ -33,7 +33,7 @@ DOM是Document Object Model的缩写，DOM模型就是把XML结构作为一个�
 
 如果解析为DOM结构，它大概长这样：
 
-![](./assets/image/image_9CWWR03C6a.png)
+![](./assets/image/image_9CWWR03C6a.webp)
 
 注意到最顶层的document代表XML文档，它是真正的“根”，而`<book>`虽然是根元素，但它是`document`的一个子节点。
 

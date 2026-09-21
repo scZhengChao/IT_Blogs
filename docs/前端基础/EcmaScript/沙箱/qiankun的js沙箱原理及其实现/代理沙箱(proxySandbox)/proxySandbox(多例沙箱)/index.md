@@ -11,7 +11,7 @@
 
 > 激活沙箱后，每次对`window`取值的时候，先从自己沙箱环境的`fakeWindow`里面找，如果不存在，就从`rawWindow`(外部的`window`)里去找；当对沙箱内部的`window`对象赋值的时候，会直接操作`fakeWindow`，而不会影响到`rawWindow`。
 
-![](./assets/image/image_Ej9FqRe9tc.png)
+![](./assets/image/image_Ej9FqRe9tc.webp)
 
 #### **proxySandbox源码**
 

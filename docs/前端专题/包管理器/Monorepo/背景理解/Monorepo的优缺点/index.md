@@ -27,7 +27,7 @@
 
 这里要特别说明的是，`Monorepo` 绝不是简单地将代码搬到一个仓库（即不等于 Monolith）。在 Monorepo 中，**每个子模块仍然是独立的**，有独立的版本，可以独立发包。但是与 `Mulitrepo` 不同，`Monorepo` 中的**子模块可以代码共享**，可以最大程度**复用依赖、复用工作流、复用基础配置，最重要的是 Monorepo 的 build、test 都是增量**的，可以让 CI 构建更快。这些都是 Multirepo 无法做到的。
 
-![](./assets/image/image_EDwiY65rTz.png)
+![](./assets/image/image_EDwiY65rTz.webp)
 
 首先 Monorepo 作为开源趋势之一，与 TypeScript、PNPM 一样火爆，知名开源项目都在逐步迁移到 Monorepo，例如 Vue3、Vite、Umi、Element Plus 等等。基于 Monorepo 还可以结合各种自动化工具提升开发效率。
 

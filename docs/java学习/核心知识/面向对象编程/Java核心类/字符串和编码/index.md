@@ -350,7 +350,7 @@ class Score {
 
 英文字符`'A'`的`ASCII`编码和`Unicode`编码：
 
-![](./assets/image/image_s0HCfmbs4t.png)
+![](./assets/image/image_s0HCfmbs4t.webp)
 
 那我们经常使用的`UTF-8`又是什么编码呢？因为英文字符的`Unicode`编码高字节总是`00`，包含大量英文的文本会浪费空间，所以，出现了`UTF-8`编码，它是**一种变长编码，用来把固定长度**的`Unicode`编码变成1～4字节的变长编码。通过`UTF-8`编码，英文字符`'A'`的`UTF-8`编码变为`0x41`，正好和`ASCII`码一致，而中文`'中'`的`UTF-8`编码为3字节`0xe4b8ad`
 

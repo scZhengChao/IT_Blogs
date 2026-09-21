@@ -10,7 +10,7 @@
 
 这道题能做的前提是给出的参数必须是字符串类型，否则哪怕就是读取也会出错。之后的解题思路是先把短的数字补0，直到和长数字一样长，这样做的目的是为了方便后续的遍历。
 
-![](./assets/image/image_d_nt8uzdMo.png)
+![](./assets/image/image_d_nt8uzdMo.webp)
 
 之后就是从尾到头遍历两个字符串 **，并相加，把结果拼成字符串并返回。** 需要注意的是返回前检查进位是否还有数字，有的话需要加上去，我当时就忘了，多亏面试官提醒
 
@@ -45,4 +45,4 @@ function addLargeNumbers(num1, num2) {
 ```
 
 
-![](./assets/image/image_slGDe2jix0.png)
+![](./assets/image/image_slGDe2jix0.webp)

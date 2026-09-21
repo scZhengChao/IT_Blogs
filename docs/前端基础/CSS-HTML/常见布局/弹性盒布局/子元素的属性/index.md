@@ -28,7 +28,7 @@
 ```
 
 
-![  ](./assets/image/1679823-775519de997dc5be_wZlIHEXugp.png "  ")
+![  ](./assets/image/1679823-775519de997dc5be_wZlIHEXugp.webp "  ")
 
 展示效果不明显，直接盗图
 
@@ -36,7 +36,7 @@
 
 默认值为0，即如果空间有剩余，也不放大。可以是小数，按比例占据剩余空间。
 
-![  ](./assets/image/1679823-7b6f310d3adbfc04_FL5ImjzHRm.png "  ")
+![  ](./assets/image/1679823-7b6f310d3adbfc04_FL5ImjzHRm.webp "  ")
 
 默认情况
 
@@ -49,13 +49,13 @@
 
 *若所有项目的flex-grow的数值都相同，则等分剩余空间*
 
-![  ](./assets/image/1679823-f3bc44487c3b234f_lM2JuCmbqF.png "  ")
+![  ](./assets/image/1679823-f3bc44487c3b234f_lM2JuCmbqF.webp "  ")
 
 等分剩余空间
 
 *若果有一个项目flex-grow为2，其余都为1，则该项目占据剩余空间是其余的2倍*
 
-![  ](./assets/image/1679823-7f6a24a222e3ac35_LrTttWRTl-.png "  ")
+![  ](./assets/image/1679823-7f6a24a222e3ac35_LrTttWRTl-.webp "  ")
 
 不等分占据
 
@@ -80,19 +80,19 @@
 
 **flex-shrink为0；而其他项目都为1，则空间不足时，该项目不缩小**。
 
-![  ](./assets/image/1679823-4b731d6538802584_jtirnjaoEl.png "  ")
+![  ](./assets/image/1679823-4b731d6538802584_jtirnjaoEl.webp "  ")
 
 设置flex-shrink为0的项目不缩小
 
 如果**所有项目都为0，则当空间不足时，** 项目撑破容器而溢出。
 
-![  ](./assets/image/1679823-e75475e14fd014fb_9s4ba_xwlD.png "  ")
+![  ](./assets/image/1679823-e75475e14fd014fb_9s4ba_xwlD.webp "  ")
 
 不缩小
 
 如果设置项目的flex-shrink不为0的非负数效果同设置为1。
 
-![  ](./assets/image/1679823-6ce2b966a4c3dd12_qFaLakMt79.png "  ")
+![  ](./assets/image/1679823-6ce2b966a4c3dd12_qFaLakMt79.webp "  ")
 
 #### **flex-basis属性：定义在分配多余空间之前，项目占据的主轴空间。**
 
@@ -107,11 +107,11 @@
 
 注意设置的flex-basis是分配多余空间之前项目占据的主轴空间，如果空间不足则默认情况下该项目也会缩小。
 
-![  ](./assets/image/1679823-a4b86e5070adf166_9zlfREVFvt.png "  ")
+![  ](./assets/image/1679823-a4b86e5070adf166_9zlfREVFvt.webp "  ")
 
 设置flex-basis为350px，但空间充足
 
-![  ](./assets/image/1679823-a1c9be91ba8d3879_ODDUYZoKCv.png "  ")
+![  ](./assets/image/1679823-a1c9be91ba8d3879_ODDUYZoKCv.webp "  ")
 
 空间不足，项目缩小，小于设定值
 

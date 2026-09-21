@@ -21,7 +21,7 @@
 
 2、启动项目，访问 `http://localhost:80/actuator`
 
-![](./assets/image/image_-WI2mO52NA.png)
+![](./assets/image/image_-WI2mO52NA.webp)
 
 3、暴露所有监控信息为HTTP
 

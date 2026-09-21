@@ -25,7 +25,7 @@
 
 看图：
 
-![](./assets/image/image_nbhaKCfunz.png)
+![](./assets/image/image_nbhaKCfunz.webp)
 
 看到这里，应该就可以理解了：为什么有时候setTimeout推入的事件不能准时执行？因为可能在它推入到事件列表时，主线程还不空闲，正在执行其它代码， 所以自然有误差。
 

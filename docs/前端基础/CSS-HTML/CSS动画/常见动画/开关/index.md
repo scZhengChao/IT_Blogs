@@ -7,7 +7,7 @@
 
 # css3伪元素实现自定义复选框
 
-![  ](./assets/image/a3e45e8e919880a1385f86f493dcb4e6_UdLZ9m4WFB.png "  ")
+![  ](./assets/image/a3e45e8e919880a1385f86f493dcb4e6_UdLZ9m4WFB.webp "  ")
 
 ```typescript 
 <!doctype html>
@@ -80,7 +80,7 @@
 
 ## 我们来实现自定义开关
 
-![  ](./assets/image/0ff2e7f53cd6f29030aecbdca3fab1d7_DVEdV7iX87.png "  ")
+![  ](./assets/image/0ff2e7f53cd6f29030aecbdca3fab1d7_DVEdV7iX87.webp "  ")
 
 ```typescript 
 <!doctype html>

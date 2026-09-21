@@ -29,4 +29,4 @@ barcodeDetector.detect(eleImg)
 
 `formats`表示要解析那种码，如下图所示：
 
-![](./assets/image/image_KayF3ftJ59.png)
+![](./assets/image/image_KayF3ftJ59.webp)

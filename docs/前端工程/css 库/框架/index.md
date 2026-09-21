@@ -153,7 +153,7 @@ vant-ui样式出不来基本是因为这个 
 
 注意cl3 和 cli4 vant-ui样式出不来的问题：
 
-![  ](./assets/image/24642cda6624eeabd630f72bb166a6dd_WBtuwqpsNN.png "  ")
+![  ](./assets/image/24642cda6624eeabd630f72bb166a6dd_WBtuwqpsNN.webp "  ")
 
 [vue](./vue/index.md "vue")
 

@@ -49,4 +49,4 @@ DTO = Data Transfer Object = 数据传输对象，与view的用法相同，不�
 
 # 图解
 
-![](./assets/image/image_HjsgYtqtSx.png)
+![](./assets/image/image_HjsgYtqtSx.webp)

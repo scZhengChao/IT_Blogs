@@ -17,7 +17,7 @@ ArrayBuffer 本身就是一个黑盒，不能直接读写所存储的数据，�
 - **TypedArray**：用来生成内存的视图，通过9个构造函数，可以生成9种数据格式的视图。
 - **DataViews**：用来生成内存的视图，可以自定义格式和字节序。
 
-![](./assets/image/image_6RWepkg3NE.png)
+![](./assets/image/image_6RWepkg3NE.webp)
 
 TypedArray视图和 DataView视图的区别主要是**字节序**，前者的数组成员都是同一个数据类型，后者的数组成员可以是不同的数据类型。
 

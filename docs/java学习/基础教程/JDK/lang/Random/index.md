@@ -1,10 +1,10 @@
 # Random
 
-![](./assets/image/image_o_-JQw9ieW.png)
+![](./assets/image/image_o_-JQw9ieW.webp)
 
-![](./assets/image/image_IY_9WKZR8K.png)
+![](./assets/image/image_IY_9WKZR8K.webp)
 
-![](./assets/image/image_Gc59_Gc8i4.png)
+![](./assets/image/image_Gc59_Gc8i4.webp)
 
 ```java 
 package com.zc;

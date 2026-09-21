@@ -35,7 +35,7 @@
 
 常用的数据结构有：数组，栈，链表，队列，树，图，堆，散列表等，如图所示：&#x20;
 
-![  ](./assets/image/57b7fd89afa9297ab601bdbc6b50c91e_Nx-8zxgswn.png "  ")
+![  ](./assets/image/57b7fd89afa9297ab601bdbc6b50c91e_Nx-8zxgswn.webp "  ")
 
 [堆](./堆/index.md "堆")
 

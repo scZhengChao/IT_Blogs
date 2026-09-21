@@ -38,7 +38,7 @@ let subscription = source
 ```
 
 
-![](./assets/image/image_5Q3RRcPu2g.png)
+![](./assets/image/image_5Q3RRcPu2g.webp)
 
 > 上述为 range 的 Marbles 图示
 

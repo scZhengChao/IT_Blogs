@@ -31,7 +31,7 @@
 ```
 
 
-![](./assets/image/image_SNlpguQcv-.png)
+![](./assets/image/image_SNlpguQcv-.webp)
 
 # 3.3 查看未优化SQL语句的执行效率
 

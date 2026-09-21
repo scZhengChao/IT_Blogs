@@ -16,7 +16,7 @@
 
 很多人使用 Node.js，只会用`require()`加载模块，遇到 ES6 模块就不知道该怎么办。本文就来谈谈，ES6 模块在 Node.js 里面怎么使用。
 
-![](./assets/image/image_5cCT2LMhyo.png)
+![](./assets/image/image_5cCT2LMhyo.webp)
 
 ## 一、两种模块的差异
 

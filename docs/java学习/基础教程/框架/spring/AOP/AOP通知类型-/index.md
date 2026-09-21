@@ -12,15 +12,15 @@ AOP通知描述了抽取的共性功能，根据共性功能抽取的位置不�
 
 前置通知
 
-![](./assets/image/image_L8X0jJcvSH.png)
+![](./assets/image/image_L8X0jJcvSH.webp)
 
 # 后置通知
 
-![](./assets/image/image_hhn4zCMHXb.png)
+![](./assets/image/image_hhn4zCMHXb.webp)
 
 # 环绕通知（重点）
 
-![](./assets/image/image_0M8DhBCdIx.png)
+![](./assets/image/image_0M8DhBCdIx.webp)
 
 @Around注意事项
 
@@ -30,12 +30,12 @@ AOP通知描述了抽取的共性功能，根据共性功能抽取的位置不�
 - 原始方法的返回值如果是void类型，通知方法的返回值类型可以设置成void，也可以设置成Object
 - 由于无法预知原始方法运行后是否会抛出异常，因此环绕通知方法必须抛出Throwable对象
 
-![](./assets/image/image_z7H5VNfOtN.png)
+![](./assets/image/image_z7H5VNfOtN.webp)
 
 返回后通知（了解）
 
-![](./assets/image/image_9SGh_dFaHw.png)
+![](./assets/image/image_9SGh_dFaHw.webp)
 
 # 抛出异常后通知（了解）
 
-![](./assets/image/image_rrvHrsjXxT.png)
+![](./assets/image/image_rrvHrsjXxT.webp)

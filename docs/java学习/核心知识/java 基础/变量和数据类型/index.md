@@ -28,13 +28,13 @@ Java定义的这些基本数据类型有什么区别呢？要了解这些区别�
 
 内存单元从0开始编号，称为内存地址。每个内存单元可以看作一间房间，内存地址就是门牌号。
 
-![](./assets/image/image_h609fSaPru.png)
+![](./assets/image/image_h609fSaPru.webp)
 
 一个字节是1byte，1024字节是1K，1024K是1M，1024M是1G，1024G是1T。一个拥有4T内存的计算机的字节数量就是：
 
 不同的数据类型占用的字节数不一样。我们看一下Java基本数据类型占用的字节数：
 
-![](./assets/image/image_qylG4gp-mY.png)
+![](./assets/image/image_qylG4gp-mY.webp)
 
 `byte`恰好就是一个字节，而`long`和`double`需要8个字节。
 
@@ -158,7 +158,7 @@ PI = 300; // compile error!
 
 在程序运行过程中其值不发生改变的量：字符串、整数、小数、字符、布尔值
 
-![](./assets/image/image_uyiaeINJsl.png)
+![](./assets/image/image_uyiaeINJsl.webp)
 
 ### var关键字
 

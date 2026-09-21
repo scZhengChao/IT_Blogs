@@ -18,29 +18,29 @@
 
 数组和`List`类似，也是有序结构，如果我们使用数组，在添加和删除元素的时候，会非常不方便。例如，从一个已有的数组`{'A', 'B', 'C', 'D', 'E'}`中删除索引为`2`的元素：
 
-![](./assets/image/image_xJEXwfGmuA.png)
+![](./assets/image/image_xJEXwfGmuA.webp)
 
 这个“删除”操作实际上是把`'C'`后面的元素依次往前挪一个位置，而“添加”操作实际上是把指定位置以后的元素都依次向后挪一个位置，腾出来的位置给新加的元素。这两种操作，用数组实现非常麻烦。
 
 因此，在实际应用中，**需要增删元素的有序列表，我们使用最多的是**`ArrayList`。实际上，`ArrayList`在内部使用了数组来存储所有元素。例如，一个`ArrayList`拥有5个元素，实际数组大小为`6`（即有一个空位）：
 
-![](./assets/image/image_XqoTR-9Jbv.png)
+![](./assets/image/image_XqoTR-9Jbv.webp)
 
 当添加一个元素并指定索引到`ArrayList`时，`ArrayList`自动移动需要移动的元素：
 
-![](./assets/image/image__sPBJTD9F6.png)
+![](./assets/image/image__sPBJTD9F6.webp)
 
 然后，往内部指定索引的数组位置添加一个元素，然后把`size`加`1`：
 
-![](./assets/image/image_PMEQ39-D5D.png)
+![](./assets/image/image_PMEQ39-D5D.webp)
 
 **继续添加元素，但是数组已满，没有空闲位置的时候，** \*\*​`ArrayList`\*\***先创建一个更大的新数组，然后把旧数组的所有元素复制到新数组，紧接着用新数组取代旧数组：**
 
-![](./assets/image/image_PvdggQp0ZB.png)
+![](./assets/image/image_PvdggQp0ZB.webp)
 
 现在，新数组就有了空位，可以继续添加一个元素到数组末尾，同时`size`加`1`：
 
-![](./assets/image/image_cGgBv5cGAJ.png)
+![](./assets/image/image_cGgBv5cGAJ.webp)
 
 可见，`ArrayList`把**添加和删除的操作封装起来**，让我们操作`List`类似**于操作数组，却不用关心内部元素如何移动。**
 
@@ -55,7 +55,7 @@
 
 但是，实现`List`接口并非只能通过数组（即`ArrayList`的实现方式）来实现，另一种`LinkedList`通过“链表”也实现了List接口。在`LinkedList`中，它的内部每个元素都指向下一个元素
 
-![](./assets/image/image_nhQWh-0joB.png)
+![](./assets/image/image_nhQWh-0joB.webp)
 
 我们来比较一下`ArrayList`和`LinkedList`：
 

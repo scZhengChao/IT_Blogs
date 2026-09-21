@@ -12,7 +12,7 @@
 
 [ download - npm Download and extract files. Latest version: 8.0.0, last published: 5 years ago. Start using download in your project by running \`npm i download\`. There are 1810 other projects in the npm registry usin https://www.npmjs.com/package/download](https://www.npmjs.com/package/download " download - npm Download and extract files. Latest version: 8.0.0, last published: 5 years ago. Start using download in your project by running `npm i download`. There are 1810 other projects in the npm registry usin https://www.npmjs.com/package/download")
 
-![](./assets/image/image_RrYv4yLxJm.png)
+![](./assets/image/image_RrYv4yLxJm.webp)
 
 ```javascript 
 const fs = require('fs');

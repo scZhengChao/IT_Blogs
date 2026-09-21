@@ -23,7 +23,7 @@ Github（⭐️ 27.5k）：<https://github.com/atlassian/react-beautiful-dnd>
 
 Sortable 是一个 JavaScript 拖拽库，用于在现代浏览器和触摸设备上对拖放列表进行重新排序。支持 Meteor、AngularJS、React、Polymer、Vue、Ember、Knockout 和任何 CSS 库。
 
-![](./assets/image/image_7H4HZayLc-.png)
+![](./assets/image/image_7H4HZayLc-.webp)
 
 Github（⭐️ 25.3k）：<https://github.com/SortableJS/Sortable>
 
@@ -31,7 +31,7 @@ Github（⭐️ 25.3k）：<https://github.com/SortableJS/Sortable>
 
 Dragula 是一个 JavaScript 库，实现了网页上的拖放功能。提供 JavaScript、AngularJS 和 React 版本。
 
-![](./assets/image/image_-s7A1wznbm.png)
+![](./assets/image/image_-s7A1wznbm.webp)
 
 Github（⭐️ 21.3k）：<https://github.com/bevacqua/dragula>
 
@@ -39,7 +39,7 @@ Github（⭐️ 21.3k）：<https://github.com/bevacqua/dragula>
 
 React DnD是 React 和 Redux 核心作者 Dan Abramov 创造的一组React 高阶组件，可帮助我们构建复杂的拖放界面，同时保持组件解耦。它可以在应用程序的不同部分之间通过拖动传输数据，并且组件会更改其外观和应用状态以响应拖放事件。
 
-![](./assets/image/image_kIWXlZqgdB.png)
+![](./assets/image/image_kIWXlZqgdB.webp)
 
 Github（⭐️ 18k）：<https://github.com/react-dnd/react-dnd>
 
@@ -47,7 +47,7 @@ Github（⭐️ 18k）：<https://github.com/react-dnd/react-dnd>
 
 Vue.Draggable 是基于 Sortable.js 的 Vue 拖放组件。它允许拖放和视图模型数组同步，基于并提供 Sortable.js 的所有功能。该库适用于Vue 2，如果想在 Vue 3 中使用该库，可以访问：[https://github.com/SortableJS/vue.draggable.next。](https://github.com/SortableJS/vue.draggable.next。 "https://github.com/SortableJS/vue.draggable.next。")
 
-![](./assets/image/image_oAoHbyf8eN.png)
+![](./assets/image/image_oAoHbyf8eN.webp)
 
 Github（⭐️ 17.7k）：<https://github.com/SortableJS/Vue.Draggable>
 
@@ -55,7 +55,7 @@ Github（⭐️ 17.7k）：<https://github.com/SortableJS/Vue.Draggable>
 
 interact.js 是一个适用于现代浏览器的 JavaScript 拖放库，支持调整大小和多点触控手势，具有惯性和捕捉功能。为了尽可能多地提供控制，它尝试提供一个简单、灵活的API，该 API 提供移动元素所需的所有拖拽API。
 
-![](./assets/image/image_9plMzgzhHa.png)
+![](./assets/image/image_9plMzgzhHa.webp)
 
 Github（⭐️ 11k）：<https://github.com/taye/interact.js>
 

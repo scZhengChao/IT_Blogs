@@ -168,6 +168,6 @@ const queue = new Queue();
 ```
 
 
-![](./assets/image/image_JnRDEZMYJ_.png)
+![](./assets/image/image_JnRDEZMYJ_.webp)
 
 [异步控制器](./异步控制器/index.md "异步控制器")

@@ -530,4 +530,4 @@ calculator.plus(1000); // 尝试加到超过限制的值
 
 最终输出结果如下图所示：
 
-![](./assets/image/image_95O7aXWjge.png)
+![](./assets/image/image_95O7aXWjge.webp)

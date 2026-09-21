@@ -4,7 +4,7 @@
 
 本章我们详细介绍如何使用Java进行网络编程。
 
-![](./assets/image/image_dAdLrPhV89.png)
+![](./assets/image/image_dAdLrPhV89.webp)
 
 [网络编程基础](./网络编程基础/index.md "网络编程基础")
 

@@ -44,7 +44,7 @@
 1. 第一阶段是标记，**从一个 GC root 集合出发**，沿着「指针」找到所有对象，**将其标记为活动对象。**
 2. 第二阶段是清除，将内存中未被**标记的对象删除，释放内存空间。**
 
-![](./assets/image/image_KrgRezMxKA.png)
+![](./assets/image/image_KrgRezMxKA.webp)
 
 从上面的描述来看，**标记-清除算法可以说是非常简单的，现在的各类垃圾回收算法也都是它的思想的延续。**
 
@@ -58,7 +58,7 @@
 2. 先在 from 空间进行内存分配，当空间被占满时，标记活动对象，并将其复制到 to 空间。
 3. 复制完成后，将 from 和 to 空间互换。
 
-![](./assets/image/image_r6C_k943v0.png)
+![](./assets/image/image_r6C_k943v0.webp)
 
 由于直接将活动对象复制到另一半空间，没有了清除阶段的开销，所以能在较短时间内完成回收操作 **，并且每次复制的时候**，**对象都会集中到一起，相当于同时做了整理操作，避免了内存碎片的产生**。
 
@@ -71,11 +71,11 @@
 1. 实时统计**指向对象的引用数（指针数量）。**
 2. 当引用数为 0 时，实时回收对象。
 
-![](./assets/image/image_yVx6o7erJp.png)
+![](./assets/image/image_yVx6o7erJp.webp)
 
 该算法可以即时回收垃圾数据，对程序的影响时间很短，效率很高。高性能、实时回收，**看似完美的方案其实也有个问题，当对象中存在循环引用时，由于引用数不会降到 0，所以对象不会被回收。**
 
-![](./assets/image/image__YuWTiFEVW.png)
+![](./assets/image/image__YuWTiFEVW.webp)
 
 上面三大算法的出现，基本奠定了垃圾回收的根本性内容，后续出现的垃圾回收算法，基本都是基于上面三个算法的取舍和组合。
 
@@ -87,7 +87,7 @@
 2. 将所有活动对象移到内存的一端，集中到一起。
 3. 直接清理掉边界以外的内存，释放连续空间。
 
-![](./assets/image/image_abL_xOUWX6.png)
+![](./assets/image/image_abL_xOUWX6.webp)
 
 可以发现，该算法既**避免了标记-清除法产生内存碎片的问题，又避免了复制算法导致可用内存空间减少的问题**。当然，该算法也不是没有缺点的，由于其清除和整理的操作很麻烦，甚至**需要对整个堆做多次搜索，故而堆越大，耗时越多**。
 
@@ -100,7 +100,7 @@
 
 简单讲就是对象的生存时间有点两极化的情况：
 
-![](./assets/image/image_dJK2sHLJ3x.png)
+![](./assets/image/image_dJK2sHLJ3x.webp)
 
 **「分代收集：」** **所以可以将对象进行分代，从而对不同分代实施不同的垃圾回收算法，以达到更高的效率**（如 Java GC: [https://plumbr.io/handbook/garbage-collection-in-java/generational-hypothesis）。](https://plumbr.io/handbook/garbage-collection-in-java/generational-hypothesis）。 "https://plumbr.io/handbook/garbage-collection-in-java/generational-hypothesis）。")
 
@@ -116,7 +116,7 @@ JavaScript 在执行函数时，会将其上下文压入栈中，ESP 上移，�
 
 所以 JavaScript 引擎是**通过下移 ESP 来完成栈的垃圾回收的。**
 
-![](./assets/image/image_wR01Bnkstu.png)
+![](./assets/image/image_wR01Bnkstu.webp)
 
 ### 3.2 堆中垃圾回收
 

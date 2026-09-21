@@ -10,7 +10,7 @@
 
 比如[阿里云 OSS 的大文件分片上传](https://link.juejin.cn/?target=https://help.aliyun.com/zh/oss/user-guide/multipart-upload "阿里云 OSS 的大文件分片上传")：
 
-![](./assets/image/image_bWskP5hChD.png)
+![](./assets/image/image_bWskP5hChD.webp)
 
 那大文件下载如何优化呢？
 
@@ -25,7 +25,7 @@ nest new download-test
 ```
 
 
-![](./assets/image/image_8pWoSliPSl.png)
+![](./assets/image/image_8pWoSliPSl.webp)
 
 创建个 Nest 项目。
 
@@ -69,13 +69,13 @@ npm run start:dev
 
 浏览器访问下：
 
-![](./assets/image/image_GYAdBMmjQR.png)
+![](./assets/image/image_GYAdBMmjQR.webp)
 
 可以看到，触发了下载。
 
 在 devtools 里可以看到正确设置了 header：
 
-![](./assets/image/image_6nhEpUwfGX.png)
+![](./assets/image/image_6nhEpUwfGX.webp)
 
 header 通过 @Header 装饰器加也可以：
 
@@ -91,7 +91,7 @@ download(@Res() res: Response) {
 ```
 
 
-![](./assets/image/image_uEisNZPiQh.png)
+![](./assets/image/image_uEisNZPiQh.webp)
 
 效果一样。
 
@@ -111,7 +111,7 @@ download(@Res() res: Response) {
 
 **一种是 header 里带上 Content-Length，浏览器下载到这个长度就结束。**
 
-![](./assets/image/image_-bE_KKDaqQ.png)
+![](./assets/image/image_-bE_KKDaqQ.webp)
 
 **另一种是设置 transfer-encoding:chunked，它是不固定长度的，服务器不断返回内容，直到返回一个空的内容代表结束**。
 
@@ -157,9 +157,9 @@ download2(@Res() res: Response) {
 
 现在就不再返回` Content-Length` 了，而是返回了 `Transfer-Encoding:chunked：`
 
-![](./assets/image/image_B1zom0nCf9.png)
+![](./assets/image/image_B1zom0nCf9.webp)
 
-![](./assets/image/image_LK2B0s_5uy.png)
+![](./assets/image/image_LK2B0s_5uy.webp)
 
 这就是流式传输。
 
@@ -167,7 +167,7 @@ download2(@Res() res: Response) {
 
 因为它有很多事件，比如 data、error、end 等，自己处理还是挺麻烦的。
 
-![](./assets/image/image_NHyIwxiY2k.png)
+![](./assets/image/image_NHyIwxiY2k.webp)
 
 可以直接用 Nest 封装的一个类 StreamableFile：
 
@@ -184,15 +184,15 @@ download3() {
 ```
 
 
-![](./assets/image/image_4d3t1XM2kE.png)
+![](./assets/image/image_4d3t1XM2kE.webp)
 
-![](./assets/image/image_ctDzTSHFF7.png)
+![](./assets/image/image_ctDzTSHFF7.webp)
 
 效果一样。
 
 只是这里的 Content-Type 默认是 application/octet-stream 二进制流：
 
-![](./assets/image/image_wK2Mm8bNsY.png)
+![](./assets/image/image_wK2Mm8bNsY.webp)
 
 你也可以改一下：
 
@@ -210,7 +210,7 @@ download3() {
 ```
 
 
-![](./assets/image/image_sBkaQW5TQS.png)
+![](./assets/image/image_sBkaQW5TQS.webp)
 
 这样就实现了流式传输了。
 
@@ -222,25 +222,25 @@ download3() {
 
 在 [wireshark 官网](https://link.juejin.cn?target=https://www.wireshark.org/ "wireshark 官网")下载安装包：
 
-![](./assets/image/image_UUEjUySb_M.png)
+![](./assets/image/image_UUEjUySb_M.webp)
 
 安装后把它跑起来：
 
-![](./assets/image/image_t3OROdlyW1.png)
+![](./assets/image/image_t3OROdlyW1.webp)
 
 选择 loopback 这个网卡，本地回环地址，可以抓到 localhost 的包：
 
-![](./assets/image/image_lmCmDhYN28.png)
+![](./assets/image/image_lmCmDhYN28.webp)
 
 输入过滤器 port 3000，也就是过滤 3000 端口的数据包。
 
 然后回车就会进入抓包界面：
 
-![](./assets/image/image_gKi2x06-0G.png)
+![](./assets/image/image_gKi2x06-0G.webp)
 
 这时候再访问下 [http://localhost:3000/download3](https://link.juejin.cn/?target=http://localhost:3000/download3 "http://localhost:3000/download3")
 
-![](./assets/image/image_4GLotf3k6a.png)
+![](./assets/image/image_4GLotf3k6a.webp)
 
 ## 总结
 

@@ -32,7 +32,7 @@ Node接口中存在以下方法：
 
 我们熟知的Document，Element等都是Node的子类型，因此也能使用上述selectNode的方法。如下图
 
-![](./assets/image/image_mN13k_8Hd2.png)
+![](./assets/image/image_mN13k_8Hd2.webp)
 
 #### 3.3 XPath语法(了解)
 

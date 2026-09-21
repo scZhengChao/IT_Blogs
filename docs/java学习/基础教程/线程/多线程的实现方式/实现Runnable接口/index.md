@@ -34,7 +34,7 @@ public interface Runnable {
 ```
 
 
-![](./assets/image/image_FgEZQsjyw3.png)
+![](./assets/image/image_FgEZQsjyw3.webp)
 
 # 例子
 

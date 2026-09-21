@@ -48,7 +48,7 @@ function simplifiedCo(genFun) {
 
 ### 代码流程图
 
-![](./assets/image/image_fs1B1nq6SE.png)
+![](./assets/image/image_fs1B1nq6SE.webp)
 
 **核心思想**：
 

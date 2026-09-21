@@ -46,7 +46,7 @@ java -cp app.jar:a.jar:b.jar:c.jar com.liaoxuefeng.sample.Main
 
 那么，我们应该如何编写模块呢？还是以具体的例子来说。首先，创建模块和原有的创建Java项目是完全一样的，以`oop-module`工程为例，它的目录结构如下：
 
-![](./assets/image/image_BFpEP9G0b7.png)
+![](./assets/image/image_BFpEP9G0b7.webp)
 
 其中，`bin`目录存放编译后的class文件，`src`目录存放源码，按包名的目录结构存放，仅仅在`src`目录下多了一个`module-info.java`这个文件，这就是模块的描述文件。在这个模块中，它长这样：
 
@@ -92,7 +92,7 @@ $ javac -d bin src/module-info.java src/com/itranswarp/sample/*.java
 
 如果编译成功，现在项目结构如下：
 
-![](./assets/image/image_KSyaqSNWis.png)
+![](./assets/image/image_KSyaqSNWis.webp)
 
 注意到`src`目录下的`module-info.java`被编译到`bin`目录下的`module-info.class`。
 

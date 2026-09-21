@@ -42,7 +42,7 @@ inset(10px 20px 30px 40px round 10px);
 
 ### 浏览器支持
 
-![](./assets/image/image_u0ichsabRq.png)
+![](./assets/image/image_u0ichsabRq.webp)
 
 #### 相关阅读
 
@@ -70,7 +70,7 @@ clip-path属性的参数使用。**来剪裁内容**。
 ```
 
 
-![](./assets/image/image_SDf6vqthjg.png)
+![](./assets/image/image_SDf6vqthjg.webp)
 
 ```css 
 .box{
@@ -83,4 +83,4 @@ clip-path属性的参数使用。**来剪裁内容**。
 ```
 
 
-![](./assets/image/image_VBqVqBrbG7.png)
+![](./assets/image/image_VBqVqBrbG7.webp)

@@ -29,21 +29,21 @@ MyBatis介绍
 
 JDBC 缺点
 
-![](./assets/image/image_YM8DSdQYOU.png)
+![](./assets/image/image_YM8DSdQYOU.webp)
 
 # MyBatis &#x20;
 
-![](./assets/image/image_wcwlrww6tK.png)
+![](./assets/image/image_wcwlrww6tK.webp)
 
 mybatis框架整体架构
 
-![](./assets/image/image_GvZ5W447u4.png)
+![](./assets/image/image_GvZ5W447u4.webp)
 
 # orm
 
 MyBatis的ORM(Object Relational Mapping **对象关系映射**)方式
 
-![](./assets/image/image_kEuEH_l_RC.png)
+![](./assets/image/image_kEuEH_l_RC.webp)
 
 # 总结
 

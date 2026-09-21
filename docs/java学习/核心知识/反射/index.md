@@ -44,7 +44,7 @@ String getFullName(Object obj) {
 
 所以，反射是**为了解决在运行期，对某个实例一无所知的情况下，如何调用其方法。**
 
-![](./assets/image/image_Q0w8zAEBc1.png)
+![](./assets/image/image_Q0w8zAEBc1.webp)
 
 [](./反射概述-/index.md)
 

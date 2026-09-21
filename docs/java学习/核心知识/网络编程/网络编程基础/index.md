@@ -62,7 +62,7 @@ Network = IP & Mask = 101.202.99.0
 
 所以，一台计算机的一个网卡会有3个关键配置：
 
-![](./assets/image/image_f38oVi7eN6.png)
+![](./assets/image/image_f38oVi7eN6.webp)
 
 - IP地址，例如：`10.0.2.15`
 - 子网掩码，例如：`255.255.255.0`

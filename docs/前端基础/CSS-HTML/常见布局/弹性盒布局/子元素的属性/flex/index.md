@@ -48,7 +48,7 @@ flex:1在父元素尺寸不足的时候，会**优先最小化内容尺寸**。
 ```
 
 
-![](./assets/image/image_CtCRhb9Cx1.png)
+![](./assets/image/image_CtCRhb9Cx1.webp)
 
 从例子我们可以看出 flex:1 ，在充分分配容器尺寸的前提下，会优先`牺牲自己`,填充父容器的尺寸
 
@@ -80,7 +80,7 @@ flex:auto在父元素尺寸不足的时候，会优先最大化内容尺寸。
 ```
 
 
-![](./assets/image/image_Hg_FM4T6zZ.png)
+![](./assets/image/image_Hg_FM4T6zZ.webp)
 
 从例子我们可以看出 flex:auto ，在充分分配容器尺寸的前提下，会优先`扩展自己`,填充父容器的尺寸
 
@@ -114,7 +114,7 @@ flex:0 :通常表现为`内容最小化宽度`
 ```
 
 
-![](./assets/image/image_2prObpf-Oi.png)
+![](./assets/image/image_2prObpf-Oi.webp)
 
 从以上的例子可以看出:flex:0的时候元素的内容`宽度`最小化，并没有充分的分配容器的尺寸。
 
@@ -144,7 +144,7 @@ flex:none;表示元素的大小由内容决定，但是flex-grow，flex-shrink�
 ```
 
 
-![](./assets/image/image_OI4n_GpCY6.png)
+![](./assets/image/image_OI4n_GpCY6.webp)
 
 从以上的例子可以看出:flex:none的时候元素的内容直接溢出容器，没有换行，表现为`最大内容宽度`
 

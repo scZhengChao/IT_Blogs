@@ -17,9 +17,9 @@
 
 AOF指的是Append only file,使用AOF持久化方式**时，redis会将每一个收到的写命令都通过write函数追加到文件中(默认是appendonly.aof).当redis重启时会通过重新执行文件中保存的写命令来在内存中重建整个数据库的内容**
 
-![](./assets/image/image_GwXAfzUKjZ.png)
+![](./assets/image/image_GwXAfzUKjZ.webp)
 
-![](./assets/image/image__0TsuUPWsv.png)
+![](./assets/image/image__0TsuUPWsv.webp)
 
 AOF包含一个**格式清晰、易于理解的日志文件用于记录所有的修改操作。也可以通过该文件完成数据的重建。该机制可以带来更高的数据安全性，所有的操作都是异步完成的。**
 
@@ -57,27 +57,27 @@ AOF默认是关闭的，首先需要开启AOF模式
 
 1. 打开AOF的配置文件redis.conf，设置appendonly yes
 
-![](./assets/image/image_BbC4Wj4N4e.png)
+![](./assets/image/image_BbC4Wj4N4e.webp)
 
-![](./assets/image/image_rLER1kEXxO.png)
+![](./assets/image/image_rLER1kEXxO.webp)
 
-![](./assets/image/image_tB693vhrwO.png)
+![](./assets/image/image_tB693vhrwO.webp)
 
 1. 通过./redis-server redis.conf启动服务器，在服务器目录下出现appendonly.aof文件。大小是0个字节。
 
-![](./assets/image/image_D_5HiXGbnO.png)
+![](./assets/image/image_D_5HiXGbnO.webp)
 
-![](./assets/image/image_rmC1HS1Dm3.png)
+![](./assets/image/image_rmC1HS1Dm3.webp)
 
 1. 添加3个键和值
 
-![](./assets/image/image_sUBQwg8PR_.png)
+![](./assets/image/image_sUBQwg8PR_.webp)
 
 1. 打开appendonly.aof文件，查看文件的变化。会发现文件记录了所有操作的过程。
 
-![](./assets/image/image_71SgtWWMvv.png)
+![](./assets/image/image_71SgtWWMvv.webp)
 
-![](./assets/image/image_97lPQyPZim.png)
+![](./assets/image/image_97lPQyPZim.webp)
 
 说明：
 

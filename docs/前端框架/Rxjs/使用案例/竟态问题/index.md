@@ -1,6 +1,6 @@
 # 竟态问题
 
-![](./assets/image/image_iBgSAX6XgB.png)
+![](./assets/image/image_iBgSAX6XgB.webp)
 
 再进一步说明问题
 

@@ -161,7 +161,7 @@
 
 结构图如下：
 
-![  ](./assets/image/4c97f7ce24291da8bb2fe400fd8eab87_sAJ1qAPTzu.png "  ")
+![  ](./assets/image/4c97f7ce24291da8bb2fe400fd8eab87_sAJ1qAPTzu.webp "  ")
 
 策略模式
 
@@ -269,7 +269,7 @@ Function(row, column, cellValue, index)
 
 运行结果如下图：
 
-![  ](./assets/image/dfc49573bb2445f014b8acfbb50bbf38_bWWew0Kstt.png "  ")
+![  ](./assets/image/dfc49573bb2445f014b8acfbb50bbf38_bWWew0Kstt.webp "  ")
 
 ### **4.2 表单验证**
 
@@ -377,7 +377,7 @@ ElementUI 的 Form 表单 具有表单验证功能，用来校验用户输入的
 
 运行结果：
 
-![  ](./assets/image/ae1bbe1fbf31561931ccc8b44dadc2a5_fFbLJn3DIH.png "  ")
+![  ](./assets/image/ae1bbe1fbf31561931ccc8b44dadc2a5_fFbLJn3DIH.webp "  ")
 
 ## **5. 策略模式的优缺点**
 

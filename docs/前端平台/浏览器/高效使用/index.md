@@ -8,4 +8,4 @@
 
 打开浏览器控制台，`Command + Shift + P` 可以打开快捷查找：
 
-![](./assets/image/image_lGRHPrEl3L.png)
+![](./assets/image/image_lGRHPrEl3L.webp)

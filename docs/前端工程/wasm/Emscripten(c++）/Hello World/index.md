@@ -43,7 +43,7 @@ emcc hello.c
 
 我们用 nodejs 运行一下`a.out.js`，可以看到成功输出了 "Hello, world!"。
 
-![](./assets/image/image_b7H62TbYO7.png)
+![](./assets/image/image_b7H62TbYO7.webp)
 
 当然我们也可以创建一个 html 文件，引入这个`a.out.js`文件，也可以看到控制台能够正确输出输出。
 

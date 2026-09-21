@@ -45,7 +45,7 @@ module.exports = {
 
 FlagDependencyExportsPlugin.js
 
-![](./assets/image/image_hUkY9d0YcA.png)
+![](./assets/image/image_hUkY9d0YcA.webp)
 
 2、所有模块都编译完毕后，触发 compilation.hooks.finishModules 钩子，开始执行FlagDependencyExportsPlugin 插件回调
 
@@ -70,7 +70,7 @@ FlagDependencyUsagePlugin.js
 
 2、最终通过 ConcatenatedModule.codeGeneration 生成 ESM 的代码，最后通过 JavaScriptModulesPlugins.renderMain 生成最终的代码
 
-![](./assets/image/image_bGHatcSC5Y.png)
+![](./assets/image/image_bGHatcSC5Y.webp)
 
 [ Tree Shaking | webpack 中文文档 | webpack中文文档 | webpack中文网 webpack 是一个模块打包器。它的主要目标是将 JavaScript 文件打包在一起，打包后的文件用于在浏览器中使用，但它也能够胜任转换、打包或包裹任何资源。 https://www.webpackjs.com/guides/tree-shaking/](https://www.webpackjs.com/guides/tree-shaking/ " Tree Shaking | webpack 中文文档 | webpack中文文档 | webpack中文网 webpack 是一个模块打包器。它的主要目标是将 JavaScript 文件打包在一起，打包后的文件用于在浏览器中使用，但它也能够胜任转换、打包或包裹任何资源。 https://www.webpackjs.com/guides/tree-shaking/")
 

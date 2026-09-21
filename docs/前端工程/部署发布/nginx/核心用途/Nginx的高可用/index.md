@@ -244,7 +244,7 @@ tail -f /var/log/messages # 查看keepalived运行时日志
 ```
 
 
-![](./assets/image/image_7C5oYZBiKo.png)
+![](./assets/image/image_7C5oYZBiKo.webp)
 
 虚拟IP-VIP
 

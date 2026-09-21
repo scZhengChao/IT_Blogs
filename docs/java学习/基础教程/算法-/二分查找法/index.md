@@ -4,7 +4,7 @@
 
 - [首要目标是排序](#首要目标是排序)
 
-![](./assets/image/image_83ZQwua8Qd.png)
+![](./assets/image/image_83ZQwua8Qd.webp)
 
 # 首要目标是排序
 

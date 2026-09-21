@@ -85,11 +85,11 @@ Loading chunk " + e + " failed. 
 
 2.添加版本变量：
 
-![  ](./assets/image/387466-20170807183424174-1863777749_IjC9QMekoc.png "  ")
+![  ](./assets/image/387466-20170807183424174-1863777749_IjC9QMekoc.webp "  ")
 
 3.给编译环境添加env变量：
 
-![  ](./assets/image/387466-20170807183519534-1036585674_Eee-tG_aLu.png "  ")
+![  ](./assets/image/387466-20170807183519534-1036585674_Eee-tG_aLu.webp "  ")
 
 4.通过Webpack的编译插件机制，引入 diy-plugin.js 自定义插件脚本，生成版本信息：
 
@@ -172,17 +172,17 @@ Loading chunk " + e + " failed. 
 
 5.在webpack配置文件中添加 diy-plugin.js 编译钩子：
 
-![  ](./assets/image/387466-20171201101913195-2066411951_gSsksqOT7T.png "  ")
+![  ](./assets/image/387466-20171201101913195-2066411951_gSsksqOT7T.webp "  ")
 
  6. ok，至此结束。 执行编译：
 
 npm run build
 
-![  ](./assets/image/387466-20170807184054096-112524305_wlpe91foxu.png "  ")
+![  ](./assets/image/387466-20170807184054096-112524305_wlpe91foxu.webp "  ")
 
  7. 访问项目，再次编译版本，打开之前的项目界面，点击其他导航菜单，效果如下：
 
-![  ](./assets/image/387466-20170807184524768-667532243_JuXuw-EqR8.png "  ")
+![  ](./assets/image/387466-20170807184524768-667532243_JuXuw-EqR8.webp "  ")
 
 # **2.单文件组件**
 

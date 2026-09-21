@@ -100,6 +100,6 @@ handleScroll(e) {
 
 劣势：没有解决reflow过多的性能问题
 
-![  ](./assets/image/d82a8a58afe5ba0ee01795125b4c8e05_-xJj98XR6W.png "  ")
+![  ](./assets/image/d82a8a58afe5ba0ee01795125b4c8e05_-xJj98XR6W.webp "  ")
 
-![  ](./assets/image/7b889def1f2a39759655f3c0bb741b97_CVGjIC0RgW.png "  ")
+![  ](./assets/image/7b889def1f2a39759655f3c0bb741b97_CVGjIC0RgW.webp "  ")

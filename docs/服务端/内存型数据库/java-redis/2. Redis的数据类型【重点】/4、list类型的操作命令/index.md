@@ -21,7 +21,7 @@
 
 List**中可以包含的最大元素数量是4G个。**
 
-![](./assets/image/image_tKx1ZS2QxG.png)
+![](./assets/image/image_tKx1ZS2QxG.webp)
 
 #### 常用命令
 
@@ -37,7 +37,7 @@ List**中可以包含的最大元素数量是4G个。**
 | \*\*BRPOP\*\*key1 \\\[key2 ] timeout | 移出并获取列表的最后一个元素， 如果列表没有元素会阻塞列表直到等待超时或发现可弹出元素为止，超时时间单位默认是秒                                                                     |
 | LREM key 删除元素个数 value值               | 从表头删除指定个数的元素                                                                                                                 |
 
-![](./assets/image/image_ygkmxjmjuI.png)
+![](./assets/image/image_ygkmxjmjuI.webp)
 
 使用场景：
 

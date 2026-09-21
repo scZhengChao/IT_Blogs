@@ -30,13 +30,13 @@
 
 那资源一多时，代码里就会有一堆 `import`，如下：
 
-![](./assets/image/image_e_HrFWYme7.png)
+![](./assets/image/image_e_HrFWYme7.webp)
 
 手动维护起来比较烦，凭着**重复的工作自动化**的精神，于是找下有没有简单方便的做法
 
 - 首先看到vite提供的 [Glob 导入](https://link.juejin.cn/?target=https://cn.vitejs.dev/guide/features.html#glob-import "Glob 导入")，但看了下结果，不太适合
 
-![](./assets/image/image_RPckuW5EnD.png)
+![](./assets/image/image_RPckuW5EnD.webp)
 
 - 刚好不久前研究了vite，冒出了写个插件的想法，先来看看最终效果：
 
@@ -171,7 +171,7 @@ export default ${finalDataCode}`;
 
 要提供ts类型提示，就要**生成对应的全局类型声明**，因为最终的`json`对象可以在上一步计算得出，那简单点 `typeof jsonObject` 就能得到对应的ts接口类型，这是其一方法；这里我用的是根据`json`对象字符串直接生成类型接口字符串，结果如下（右边`dir2json.d.ts`文件自动生成）：
 
-![](./assets/image/image_CJr38XpMGz.png)
+![](./assets/image/image_CJr38XpMGz.webp)
 
 简要实现如下：
 
@@ -353,7 +353,7 @@ dts文件生成/更新时机是用户保存修改后，新增的`?dir2json`导�
 
 # 源码
 
-![](./assets/image/image_lgCjLyePej.png)
+![](./assets/image/image_lgCjLyePej.webp)
 
 ```javascript 
 import { existsSync } from "node:fs";

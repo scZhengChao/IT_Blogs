@@ -76,7 +76,7 @@
 
 OvernightJS 是一个简单的库，用于为要调用 Express 路由的方法添加 TypeScript 装饰器。此外，该项目还包含了用于管理 json-web-token 和打印日志的包。
 
-![  ](./assets/image/640_7cWrphVoSy.png "  ")
+![  ](./assets/image/640_7cWrphVoSy.webp "  ")
 
 #### **1.1 OvernightJS 特性**
 

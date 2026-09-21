@@ -48,7 +48,7 @@ textarea{
 
 结果...变成了这样
 
-![](./assets/image/image_f_wdZSL7fG.png)
+![](./assets/image/image_f_wdZSL7fG.webp)
 
 因为这时没有内容，所以也就没有了尺寸，所以一般还需要手动加个尺寸
 

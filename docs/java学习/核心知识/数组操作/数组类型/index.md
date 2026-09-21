@@ -152,11 +152,11 @@ public class Main {
 
 对于数组`ns`来说，执行`ns = new int[] { 68, 79, 91, 85, 62 };`时，它指向一个5个元素的数组：
 
-![](./assets/image/image_zMSJrp050w.png)
+![](./assets/image/image_zMSJrp050w.webp)
 
 执行`ns = new int[] { 1, 2, 3 };`时，它指向一个\_新的\_3个元素的数组：
 
-![](./assets/image/image_eN_4e1iU_P.png)
+![](./assets/image/image_eN_4e1iU_P.webp)
 
 但是，原有的5个元素的数组并没有改变，只是无法通过变量`ns`引用到它们而已。
 
@@ -176,11 +176,11 @@ String[] names = {
 
 对于`String[]`类型的数组变量`names`，它实际上包含3个元素，但每个元素都指向某个字符串对象：
 
-![](./assets/image/image_7p488ls5Iv.png)
+![](./assets/image/image_7p488ls5Iv.webp)
 
 对`names[1]`进行赋值，例如`names[1] = "cat";`，效果如下：
 
-![](./assets/image/image_mRriSs-SPg.png)
+![](./assets/image/image_mRriSs-SPg.webp)
 
 这里注意到原来`names[1]`**指向的字符串**\*\*`"XYZ"`****并没有改变**，仅仅**是将`names[1]`****的引用从指向****`"XYZ"`****改成了指向****`"cat"`****，**其**结果是字符串****`"XYZ"`****再也无法通过****`names[1]`\*\***访问到了。**
 

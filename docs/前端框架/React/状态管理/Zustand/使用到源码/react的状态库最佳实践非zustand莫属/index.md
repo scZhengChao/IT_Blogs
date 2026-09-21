@@ -430,7 +430,7 @@ export const useBoundStore = create((...a) => ({
 
 ## 大量的中间件支持
 
-![](./assets/image/image_mfrPPQMjqz.png)
+![](./assets/image/image_mfrPPQMjqz.webp)
 
 库自带的中间件比如immer、combine处理自定义state和create合并，devtools辅助，persist缓存，redux兼容中间件，还有订阅的钩子。其他中间件[docs.pmnd.rs/zustand/int…](https://link.juejin.cn/?target=https://docs.pmnd.rs/zustand/integrations/third-party-libraries "docs.pmnd.rs/zustand/int…") 。
 
@@ -757,7 +757,7 @@ const immerImpl: ImmerImpl = (initializer) => (set, get, store) => {
 
 中间件执行过程：
 
-![](./assets/image/image_ClKh5zDczS.png)
+![](./assets/image/image_ClKh5zDczS.webp)
 
 中间件的实现其实就是通过闭包，一层一层函数嵌套递归，最终将传入的状态值返回更新结果。而每一层函数就是中间件。在zustand中其实就是createState经过中间件的不断的改造，得到新的createState，我们一旦create后，执行createImpl会执行完这里的每个中间件初始化，后续每次set更新state都会进入中间件的执行过程。
 
@@ -850,6 +850,6 @@ function Controls() {
 
 Zustand执行过程：
 
-![](./assets/image/image_08iBfnjIDH.png)
+![](./assets/image/image_08iBfnjIDH.webp)
 
 我们再也不用原来繁杂的用redux、react-redux、toolkit、thunk等来处理状态，当然mobx基于proxy代理也很简单，但是装饰器、类的写法以及防止重渲染逻辑处理，相比zustand更繁琐些。当然zustand的自身优势也非常明显， 比如在渲染器嵌套的情况下，canvas组件是无法获取外部的上下文等，而zustand可以解决这些特殊场景。所以以后react的状态管理用zustand吧。

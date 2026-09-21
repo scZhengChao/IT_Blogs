@@ -301,7 +301,7 @@ buildAll()
 
 此时，在每个包下面会生成`dist`目录，因为我们默认的是`esm-bundler`和`cjs`两种format，所以目录下生成的文件是这样的
 
-![](./assets/image/image_uztI16Kv3n.png)
+![](./assets/image/image_uztI16Kv3n.webp)
 
 那么，如果我们想自定义生成文件的格式该怎么办呢？
 
@@ -427,11 +427,11 @@ const packageFormats = inlineFormats || packageOptions.formats || defaultFormats
 
 以上配置运行后会在每个包下面生成所有包的声明文件，如图：
 
-![](./assets/image/image_fOYrzp0U5c.png)
+![](./assets/image/image_fOYrzp0U5c.webp)
 
 这并不是我们想要的，我们期望在dist目录下仅生成一个 **.d.ts**文件就好了，使用起来也方便。这里我们借助api-extractor\[8]来做这个工作。这个工具主要有三大功能，我们要使用的是红框部分的功能，如图：
 
-![](./assets/image/image_UIghFjaZXB.png)
+![](./assets/image/image_UIghFjaZXB.webp)
 
 关键实现步骤：
 
@@ -732,4 +732,4 @@ echo "module.exports = {extends: ['@commitlint/config-conventional']}" > commitl
 
 这个时候再提交会对commit message进行校验，不符合规范则会出现以下提示：
 
-![](./assets/image/image_2mVJ25qm03.png)
+![](./assets/image/image_2mVJ25qm03.webp)

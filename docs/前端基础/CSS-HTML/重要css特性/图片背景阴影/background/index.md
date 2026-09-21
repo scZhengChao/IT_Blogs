@@ -36,7 +36,7 @@ background:bg-color bg-image position/bg-size bg-repeat bg-origin bg-clip bg-att
 
 \*\*多url的渲染原理是盒模型的背景叠层渲染，**按照rul的引入**顺序从上至下叠层。\*\*url的位置要错开
 
-![](./assets/image/image_VcA7mg3VEN.png)
+![](./assets/image/image_VcA7mg3VEN.webp)
 
 ```typescript 
 .new{
@@ -113,11 +113,11 @@ background-repeat: round space;/*  表示不能整数次平铺时横向适度缩
 
 round
 
-![](./assets/image/image_IQqh_bRysB.png)
+![](./assets/image/image_IQqh_bRysB.webp)
 
 space
 
-![](./assets/image/image_GCNK6FInmh.png)
+![](./assets/image/image_GCNK6FInmh.webp)
 
 ## attachment
 

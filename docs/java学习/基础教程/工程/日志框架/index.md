@@ -11,11 +11,11 @@
 - 可以将系统执行的信息**选择性的记录到指定的位置**（控制台、文件中、数据库中）。
 - 可以随时以**开关的形式控制是否记录日志**，无需修改源代码。
 
-![](./assets/image/image_888t86J5JY.png)
+![](./assets/image/image_888t86J5JY.webp)
 
 # 体系结构规范
 
-![](./assets/image/image_BoWIdkGZRo.png)
+![](./assets/image/image_BoWIdkGZRo.webp)
 
 # 总结
 

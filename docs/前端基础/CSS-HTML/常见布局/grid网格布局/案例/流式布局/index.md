@@ -8,7 +8,7 @@
 
 直接看效果：
 
-![](./assets/image/image_CKQJbUxMWJ.png)
+![](./assets/image/image_CKQJbUxMWJ.webp)
 
 ```javascript 
 <!DOCTYPE html>
@@ -88,7 +88,7 @@
 
 > 这里有两个关键字，一个是`auto-fit`，还有一个是`auto-fill`，在行为上它们是相同的，不同的是它们在网格创建的不同，
 
-![](./assets/image/image_sqQt5gslSB.png)
+![](./assets/image/image_sqQt5gslSB.webp)
 
 > 就像上面图中看到的一样，使用`auto-fit`会将空的网格进行折叠，可以看到他们的结束`colum`的数字都是`6`;
 >

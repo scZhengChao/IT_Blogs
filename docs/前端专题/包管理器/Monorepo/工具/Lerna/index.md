@@ -243,7 +243,7 @@ $ lerna import ~/Users/Product --dest=utilities
 
 导入本地已经存在的包
 
-![](./assets/image/image_Titectwy4x.png)
+![](./assets/image/image_Titectwy4x.webp)
 
 ### lerna run
 

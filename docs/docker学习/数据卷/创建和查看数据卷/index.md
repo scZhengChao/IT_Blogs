@@ -19,7 +19,7 @@ docker volume ls
 
 结果：
 
-![](./assets/image/image__lYfM8j1bm.png)
+![](./assets/image/image__lYfM8j1bm.webp)
 
 说明:
 
@@ -35,7 +35,7 @@ docker volume inspect html
 
 结果：
 
-![](./assets/image/image_Q3nqGbKBWk.png)
+![](./assets/image/image_Q3nqGbKBWk.webp)
 
 可以看到，我们创建的html这个数据卷关联的宿主机目录为`/var/lib/docker/volumes/html/_data`目录。
 

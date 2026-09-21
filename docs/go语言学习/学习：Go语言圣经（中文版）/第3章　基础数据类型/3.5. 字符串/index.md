@@ -99,7 +99,7 @@ s[0] = 'L' // compile error: cannot assign to s[0]
 ```
 
 
-![](./assets/image/image_snpktf7a7P.png)
+![](./assets/image/image_snpktf7a7P.webp)
 
 因为Go**语言源文件总是用UTF8编码，并且Go语言的文本字符串也以UTF8编码的方式处理**，因此我们可以将Unicode码点也写到字符串面值中。
 
@@ -249,7 +249,7 @@ for i := 0; i < len(s); {
 
 每一次调用DecodeRuneInString函数都**返回一个r和长度，r对应字符本身，长度对应r采用UTF8编码后的编码字节数目**。长度可以用于更新第i个字符在字符串中的字节索引位置。但是这种编码方式是笨拙的，我们需要更简洁的语法。幸运的是，**Go语言的range循环在处理字符串的时候，会自动隐式解码UTF8字符串。** 下面的循环运行如图3.5所示；需要注意的是对于非ASCII，索引更新的步长将超过1个字节。
 
-![](./assets/image/image_HuctyZcJ8v.png)
+![](./assets/image/image_HuctyZcJ8v.webp)
 
 ```go 
 for i, r := range "Hello, 世界" {

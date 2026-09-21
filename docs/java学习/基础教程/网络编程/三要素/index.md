@@ -1,6 +1,6 @@
 # 三要素
 
-![](./assets/image/image_uX7xbmkl-x.png)
+![](./assets/image/image_uX7xbmkl-x.webp)
 
 在网络中想要实现编程，必须有：网络三要素
 
@@ -10,7 +10,7 @@
   - TCP协议
   - UDP协议
 
-![](./assets/image/image_T9swQnhEO_.png)
+![](./assets/image/image_T9swQnhEO_.webp)
 
 [ip](./ip/index.md "ip")
 

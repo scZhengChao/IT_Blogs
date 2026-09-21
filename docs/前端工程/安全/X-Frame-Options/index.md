@@ -10,20 +10,20 @@
 
 X-Frame-Options 有两个可能的值：
 
-![](./assets/image/image_00jNnlbxmh.png)
+![](./assets/image/image_00jNnlbxmh.webp)
 
 以及一个被弃用的指令
 
-![](./assets/image/image_DsJFrCTKEM.png)
+![](./assets/image/image_DsJFrCTKEM.webp)
 
 **使用\<meta>标签设置X-Frame-Options是无效的**
 
-![](./assets/image/image_8E54jtkVI6.png)
+![](./assets/image/image_8E54jtkVI6.webp)
 
 ## 修复办法
 
 **多源互认页面只允许被指定的认证源嵌套，在nginx增加配置**
 
-![](./assets/image/image_VYqPq8FCLf.png)
+![](./assets/image/image_VYqPq8FCLf.webp)
 
-![](./assets/image/image_uTnomzXSKZ.png)
+![](./assets/image/image_uTnomzXSKZ.webp)

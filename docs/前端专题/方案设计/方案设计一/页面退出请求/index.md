@@ -185,7 +185,7 @@ navigator.sendBeacon('/log', JSON.stringify({
 
 为了演示说明，以下是 Network 选项卡中同时使用带 keepalive 的 fetch() 和 sendBeacon() 时的情况:
 
-![](./assets/image/image_GKM3Fj1zfJ.png)
+![](./assets/image/image_GKM3Fj1zfJ.webp)
 
 默认情况下，**fetch() 获得一个 “高” 优先级，而 beacon(上图中的 “ping” 类型) 具有 “最低” 优先级。对于那些对页面功能不是很重要的请求**，这是一件好事。直接引用 Beacon规范\[9]:
 

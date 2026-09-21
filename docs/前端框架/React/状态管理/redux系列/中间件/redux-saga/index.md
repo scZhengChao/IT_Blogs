@@ -11,7 +11,7 @@
 
 出现原因： reducer 是纯函数；相同的输入的到相同的输出；
 
-![  ](./assets/image/bea21134270199bf38f35d072cf71b02_wW9kh6VNAA.png "  ")
+![  ](./assets/image/bea21134270199bf38f35d072cf71b02_wW9kh6VNAA.webp "  ")
 
 本身是中间件；让副作用在自己本身的逻辑里进行；派发出去的都是纯对象；
 

@@ -582,7 +582,7 @@ const styles = {
 ```
 
 
-![](./assets/image/image_vwAj4GL3Pl.png)
+![](./assets/image/image_vwAj4GL3Pl.webp)
 
 但是在实际的业务开发中肯定不会是这么简单的，一般都会用到分页，下拉刷新什么的；下面介绍几个比较常用的属性：
 
@@ -853,7 +853,7 @@ export default class RecycleTestComponent extends Component {
 ```
 
 
-![](./assets/image/image_sjvb00aAvk.png)
+![](./assets/image/image_sjvb00aAvk.webp)
 
 #### RecyclerListView所有属性
 

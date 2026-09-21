@@ -102,7 +102,7 @@ fnm env #get all environment variables
 ```
 
 
-![](./assets/image/image_SxRDGgdgYv.png)
+![](./assets/image/image_SxRDGgdgYv.webp)
 
 此处， `FNM_DIR` 变量指示 的位置 fnm 。下一步，转到路径并简单地删除 fnm 文件夹，如下所示：
 

@@ -22,7 +22,7 @@
 ```
 
 
-![](./assets/image/image_bJk6VTItGN.png)
+![](./assets/image/image_bJk6VTItGN.webp)
 
 #### 解决方法
 

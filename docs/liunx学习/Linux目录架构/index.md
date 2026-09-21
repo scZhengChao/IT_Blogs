@@ -20,11 +20,11 @@
 
 **Linux 和 Windows的目录结构对比:**
 
-![](./assets/image/image_SS8ASYiJSO.png)
+![](./assets/image/image_SS8ASYiJSO.webp)
 
 Linux的目录结构，如下：
 
-![](./assets/image/image_Yh5z00A_aC.png)
+![](./assets/image/image_Yh5z00A_aC.webp)
 
 根目录/ 下各个目录的作用及含义说明:
 

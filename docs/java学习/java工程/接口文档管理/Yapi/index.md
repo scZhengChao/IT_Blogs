@@ -20,7 +20,7 @@ YApi 是高效、易用、功能强大的 api 管理平台，**旨在为开发�
 
 YApi让接口开发更简单高效，让接口的管理更具可读性、可维护性，让团队协作更合理。
 
-![](./assets/image/image_voGEWe1DSL.png)
+![](./assets/image/image_voGEWe1DSL.webp)
 
 官方源码地址:[https://github.com/YMFE/yapi](https://github.com/YMFE/yapi "https://github.com/YMFE/yapi")
 
@@ -83,7 +83,7 @@ docker run -it --rm \
 
 效果如下：
 
-![](./assets/image/image_dscOzqzbw9.png)
+![](./assets/image/image_dscOzqzbw9.webp)
 
 最后初始化yaml容器：
 
@@ -110,7 +110,7 @@ docker run -d \
 
 登录后效果：
 
-![](./assets/image/image_8L3QlypHGr.png)
+![](./assets/image/image_8L3QlypHGr.webp)
 
 > 注意：
 >
@@ -122,23 +122,23 @@ docker run -d \
 
 1\). 创建项目
 
-![](./assets/image/image_aXD_ogS0fJ.png)
+![](./assets/image/image_aXD_ogS0fJ.webp)
 
-![](./assets/image/image_76mzDGRAn2.png)
+![](./assets/image/image_76mzDGRAn2.webp)
 
 2\). 添加分类
 
 在当前项目中,有针对用户、股票、日志、权限等相关的操作，我们在进行接口维护时，可以针对接口进行分类，如果没有对应的分类，我们自己添加分类；
 
-![](./assets/image/image_hfXz-meAoE.png)
+![](./assets/image/image_hfXz-meAoE.webp)
 
 3\). 添加接口
 
-![](./assets/image/image_xinFye5lX1.png)
+![](./assets/image/image_xinFye5lX1.webp)
 
 接口基本信息录入之后，点击提交按钮，就可以看到该接口的基本信息：
 
-![](./assets/image/image_vMpfXNu1fZ.png)
+![](./assets/image/image_vMpfXNu1fZ.webp)
 
 说明：
 
@@ -150,7 +150,7 @@ docker run -d \
 
 Yapi也提供了接口测试功能，当我们接口编辑完毕后，后端服务的代码开发完毕，启动服务，就可以使用Yapi进行接口测试了；
 
-![](./assets/image/image__Ox6DEJ3zD.png)
+![](./assets/image/image__Ox6DEJ3zD.webp)
 
 > 注意：访问过程若出现跨域问题，则需要给chrome浏览器安装扩展插件，参考：chrome 安装 yapi 扩展教程.mhtml
 
@@ -158,7 +158,7 @@ Yapi也提供了接口测试功能，当我们接口编辑完毕后，后端服�
 
 ### 3.3 Yapi自动同步swagger
 
-![](./assets/image/image_xqPSO3-32B.png)
+![](./assets/image/image_xqPSO3-32B.webp)
 
 > 注意：yapi平台要同步本地stock\_backend下的swagger信息时，要**保证填写的ip地址能够访问到本地的backend工程**，否则同步失效！！
 
@@ -168,11 +168,11 @@ Yapi也提供了接口测试功能，当我们接口编辑完毕后，后端服�
 
 在Yapi平台中我们不仅可以在线阅读文档，还可以将Yapi中维护的文档直接导出来，可以导出md，json，html格式，在导出时自行选择即可；
 
-![](./assets/image/image_2duOlK6TJ6.png)
+![](./assets/image/image_2duOlK6TJ6.webp)
 
 而在导出的html文件或md文件中，主要描述的就是接口的基本信息， 包括： 请求路径、请求方式、接口描述、请求参数、返回数据等信息。展示形式如下：&#x20;
 
-![](./assets/image/image_29zGrp0ZGv.png)
+![](./assets/image/image_29zGrp0ZGv.webp)
 
 #### 3.3.2 导入接口文档
 
@@ -180,12 +180,12 @@ Yapi也提供了接口测试功能，当我们接口编辑完毕后，后端服�
 
 我们可以将课程资料中提供的json格式的接口文档直接导入Yapi平台中来(文档可通过swagger下载)；
 
-![](./assets/image/image_WZJq7pcuYr.png)
+![](./assets/image/image_WZJq7pcuYr.webp)
 
 导入过程中出现的确认弹窗，选择"确认"。
 
-![](./assets/image/image_C0eujKTINH.png)
+![](./assets/image/image_C0eujKTINH.webp)
 
 导入效果：
 
-![](./assets/image/image_e4soGwkQzz.png)
+![](./assets/image/image_e4soGwkQzz.webp)

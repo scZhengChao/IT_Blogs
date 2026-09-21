@@ -6,7 +6,7 @@
 
 实现效果大致如下：
 
-![](./assets/image/image_3Uym1Gc4Kn.png)
+![](./assets/image/image_3Uym1Gc4Kn.webp)
 
 让我们对这个需求进行一下需求分析，来趴一趴实现这样的一个搜索框需要那些技术点：
 

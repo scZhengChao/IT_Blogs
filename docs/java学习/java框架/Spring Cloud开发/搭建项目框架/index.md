@@ -392,7 +392,7 @@ spring:
 
 在`config-repo`目录下，存放的就是一系列配置文件：
 
-![](./assets/image/image_mzQ66xaUyS.png)
+![](./assets/image/image_mzQ66xaUyS.webp)
 
 至此，配置服务器就完成了，**直接运行**\*\*`ConfigApplication`\*\***即可启动配置服务器。在开发过程中，保持配置服务器在后台运行即可。**
 

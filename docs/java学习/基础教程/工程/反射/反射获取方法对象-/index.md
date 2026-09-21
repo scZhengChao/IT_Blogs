@@ -11,19 +11,19 @@
     ](#利用反射技术获取成员方法对象的方式)
   - [反射得到成员方法可以做什么？](#反射得到成员方法可以做什么)
 
-![](./assets/image/image_RoyLmo_l8i.png)
+![](./assets/image/image_RoyLmo_l8i.webp)
 
 使用反射技术获取方法对象并使用
 
 反射的第一步是先得到类对象，然后从类对象中获取类的成分对象。Class类中用于获取成员方法的方法
 
-![](./assets/image/image_0Jf4Ya7KfF.png)
+![](./assets/image/image_0Jf4Ya7KfF.webp)
 
 获取成员方法的**作用依然是在某个对象中进行执行此方法**
 
 Method类中**用于触发执行的方法**
 
-![](./assets/image/image_93BzjLEN_w.png)
+![](./assets/image/image_93BzjLEN_w.webp)
 
 # 案例
 

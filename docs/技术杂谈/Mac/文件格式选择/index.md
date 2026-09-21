@@ -25,7 +25,7 @@
 
 APFS 基本上在所有方面都快得多——数据处理、复制和粘贴都更快，并且是现在时间机器的默认格式。但APFS对于旧版本macOS的兼容性较差。
 
-![](./assets/image/image_VKNHdjvL8S.png)
+![](./assets/image/image_VKNHdjvL8S.webp)
 
 ## **怎样查看外置设备的文件格式？**
 

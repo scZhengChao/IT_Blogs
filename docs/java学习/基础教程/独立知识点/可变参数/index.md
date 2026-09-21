@@ -5,7 +5,7 @@
 - [什么是](#什么是)
   - [错误写法](#错误写法)
 
-![](./assets/image/image_fAfrbMuxYn.png)
+![](./assets/image/image_fAfrbMuxYn.webp)
 
 # 什么是
 
@@ -36,4 +36,4 @@ public static int getSum(int... arr){
 
 **本质是等价的**（属于同名的写法）
 
-![](./assets/image/image_9e2RqJl-63.png)
+![](./assets/image/image_9e2RqJl-63.webp)

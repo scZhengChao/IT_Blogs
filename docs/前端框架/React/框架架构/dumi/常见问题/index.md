@@ -4,6 +4,6 @@
 
 [issue](https://github.com/ant-design/ant-design-pro/issues/10829 "issue")
 
-![](./assets/image/image_FAcngFXOSO.png)
+![](./assets/image/image_FAcngFXOSO.webp)
 
 [非更目录部署](./非更目录部署/index.md "非更目录部署")

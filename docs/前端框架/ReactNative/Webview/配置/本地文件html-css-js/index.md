@@ -17,7 +17,7 @@
 
 创建一个文件夹`public/webview`,文件夹名字可以随便起,在我项目里面public用于放置需要被copy到apk或ipa包里面的资源
 
-![](./assets/image/image_Hj7kzjuTQY.png)
+![](./assets/image/image_Hj7kzjuTQY.webp)
 
 我们可以看到webview文件夹里面的结构很像以前前端没有工程化的时候的目录结构，对于现在有工程化的项目，那就是把打包好的文件放过来就可以了
 
@@ -60,4 +60,4 @@ const Demo=()=>{
 
 [ rn 使用webview访问本地静态网页（只适配android端）\_react-native放置静态网页在本地-CSDN博客 文章浏览阅读567次。1. 在页面放置webview组件import React, {Component} from 'react'import {WebView} from 'react-native-webview'export default class MyWeb extends Component {  render() {    return (      \<WebView       https://blog.csdn.net/weixin\_42353499/article/details/109285772](https://blog.csdn.net/weixin_42353499/article/details/109285772 " rn 使用webview访问本地静态网页（只适配android端）_react-native放置静态网页在本地-CSDN博客 文章浏览阅读567次。1. 在页面放置webview组件import React, {Component} from 'react'import {WebView} from 'react-native-webview'export default class MyWeb extends Component {  render() {    return (      <WebView       https://blog.csdn.net/weixin_42353499/article/details/109285772")
 
-![](./assets/image/image_64x5poS03Y.png)
+![](./assets/image/image_64x5poS03Y.webp)

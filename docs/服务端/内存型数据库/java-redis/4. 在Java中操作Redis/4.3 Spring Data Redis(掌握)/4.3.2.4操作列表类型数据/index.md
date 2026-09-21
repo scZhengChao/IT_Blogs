@@ -6,7 +6,7 @@
 
 ##### [4.3.2.4](http://tnm2.oa.com/host/home/4.3.2.4 "4.3.2.4")操作列表类型数据
 
-![](./assets/image/image_N9zG9Rj-jw.png)
+![](./assets/image/image_N9zG9Rj-jw.webp)
 
 需求：
 

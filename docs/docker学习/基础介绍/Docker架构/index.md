@@ -19,7 +19,7 @@ Docker中有几个重要的概念：
 
 **容器**呢，就是将这些**文件中编写的程序、函数加载到内存中允许，形成进程，只不过要隔离起来**。因此一个镜像可以启动多次，形成多个容器进程。
 
-![](./assets/image/image_ayQ0AaV68I.png)
+![](./assets/image/image_ayQ0AaV68I.webp)
 
 例如你下载了一个QQ，如果我们将QQ在磁盘上的运行**文件**及其运行的操作系统依赖打包，形成QQ镜像。然后你可以启动多次，双开、甚至三开QQ，跟多个妹子聊天。
 
@@ -34,4 +34,4 @@ Docker是一个`CS`架构的程序，由两部分组成：
 
 如图：
 
-![](./assets/image/image_odw-YWmAIv.png)
+![](./assets/image/image_odw-YWmAIv.webp)

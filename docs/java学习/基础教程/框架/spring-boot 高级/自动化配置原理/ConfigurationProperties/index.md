@@ -6,4 +6,4 @@
 
 由此我们可以想：将来的配置我们可以放在配置文件中，通过这个注解来读取并封装成对象
 
-![](./assets/image/image_1pkKfUNPhl.png)
+![](./assets/image/image_1pkKfUNPhl.webp)

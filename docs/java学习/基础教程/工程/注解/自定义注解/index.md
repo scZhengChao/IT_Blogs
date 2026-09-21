@@ -19,7 +19,7 @@ public @interface 注解名称 {
 ```
 
 
-![](./assets/image/image_LPCZ-tfdx1.png)
+![](./assets/image/image_LPCZ-tfdx1.webp)
 
 ## 属性类型必须
 

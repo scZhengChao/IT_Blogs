@@ -29,13 +29,13 @@
 
 1.进入到根目录下的/usr/local目录，并创建目录soft
 
-![](./assets/image/image_GWlD32EIb9.png)
+![](./assets/image/image_GWlD32EIb9.webp)
 
 ​ 2.将windows系统的jdk软件传递到linux下的soft目录下，并查看soft目录。
 
-![](./assets/image/image_-p5D4o3SO3.png)
+![](./assets/image/image_-p5D4o3SO3.webp)
 
-![](./assets/image/image_k0MOIeauzV.png)
+![](./assets/image/image_k0MOIeauzV.webp)
 
 3.**进入“/soft”目录，解压jdk到该目录下**
 
@@ -44,19 +44,19 @@ tar-zxvf jdk-8u181-linux-x64.tar.gz
 ```
 
 
-![](./assets/image/image_u3o9ebBQqg.png)
+![](./assets/image/image_u3o9ebBQqg.webp)
 
 **查看解压后的目录,目录中有jdk1.8.0\_181为jdk解压的目录**
 
-![](./assets/image/image_rzptzRMNW5.png)
+![](./assets/image/image_rzptzRMNW5.webp)
 
 ​ 4.到目录jdk1.8.0\_181下查看jdk的安装目录结构
 
-![](./assets/image/image_FE368QzEZG.png)
+![](./assets/image/image_FE368QzEZG.webp)
 
 说明：目录结构和在windows系统上安装的目录结构差不多，但是我们发现输入java或者javac命令报错：
 
-![](./assets/image/image_Qx3S3F7BrQ.png)
+![](./assets/image/image_Qx3S3F7BrQ.webp)
 
 报上述错误的原因是没有配置环境变量，接下来我们需要配置环境变量path.类似于windows系统中配置环境变量一样。
 
@@ -87,13 +87,13 @@ export JAVA_HOME CLASSPATH PATH
 
 **命令1：vim /etc/profile**
 
-![](./assets/image/image_0SBDBdoWHu.png)
+![](./assets/image/image_0SBDBdoWHu.webp)
 
-![](./assets/image/image_GZKzuP2gS5.png)
+![](./assets/image/image_GZKzuP2gS5.webp)
 
 **命令2：输入G跳转到文件末尾处，输入o(表示在光标下插入新行)，复制上面的环境变量配置粘贴如图位置，并写入保存**
 
-![](./assets/image/image_tY8KPGVxTW.png)
+![](./assets/image/image_tY8KPGVxTW.webp)
 
 ***
 
@@ -104,11 +104,11 @@ source/etc/profile
 ```
 
 
-![](./assets/image/image_WUb8pc8MVx.png)
+![](./assets/image/image_WUb8pc8MVx.webp)
 
 ​ 7.**判断JDK是否安装成功**
 
-![](./assets/image/image_I356NHcNxb.png)
+![](./assets/image/image_I356NHcNxb.webp)
 
 # **JDK安装小结**
 

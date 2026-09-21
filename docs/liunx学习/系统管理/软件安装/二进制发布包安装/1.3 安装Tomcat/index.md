@@ -10,7 +10,7 @@
 
 Tomcat的安装和上述JDK的安装采用相同的方式，都是使用二进制发布包的形式进行安装，在我们的资料目录下，也已经准备了Tomcat的安装包：
 
-![](./assets/image/image_7t8FTiqNhL.png)
+![](./assets/image/image_7t8FTiqNhL.webp)
 
 具体安装步骤如下：
 
@@ -18,7 +18,7 @@ Tomcat的安装和上述JDK的安装采用相同的方式，都是使用二进�
 
 使用FinalShell自带的上传工具将Tomcat的二进制发布包上传到Linux(与前面上传JDK安装包步骤一致)。
 
-![](./assets/image/image_iemmti4QpG.png)
+![](./assets/image/image_iemmti4QpG.webp)
 
 **2) 进入soft文件夹，解压Tomcat到soft目录下**
 
@@ -35,11 +35,11 @@ tar -zxvf apache-tomcat-8.5.27.tar.gz
 
 解压好之后将之前的压缩文件删除即可。
 
-![](./assets/image/image_dDwEohhmZJ.png)
+![](./assets/image/image_dDwEohhmZJ.webp)
 
 查看tomcat的安装目录，几乎和windows版本一样的。
 
-![](./assets/image/image_ne60Ex_z3X.png)
+![](./assets/image/image_ne60Ex_z3X.webp)
 
 **3). 启动Tomcat**
 
@@ -55,9 +55,9 @@ cd bin
 ```
 
 
-![](./assets/image/image_coXXQ2JX8-.png)
+![](./assets/image/image_coXXQ2JX8-.webp)
 
-![](./assets/image/image_33TpgAcp8y.png)
+![](./assets/image/image_33TpgAcp8y.webp)
 
 #### 1.3.2 Tomcat进程查看
 
@@ -73,7 +73,7 @@ ps -aux | grep tomcat
 ```
 
 
-![](./assets/image/image_y6V0F9KwOc.png)
+![](./assets/image/image_y6V0F9KwOc.webp)
 
 **说明:**
 
@@ -89,7 +89,7 @@ ps -aux | grep tomcat
 
 在Tomcat安装目录下有一个bin目录，这个目录中存放的是tomcat的运行脚本文件，其中有一个脚本就是用于停止tomcat服务的。
 
-![](./assets/image/image_ks6MiUJvW1.png)
+![](./assets/image/image_ks6MiUJvW1.webp)
 
 我们可以切换到bin目录，并执行如下指令，来停止Tomcat服务：
 
@@ -103,7 +103,7 @@ ps -aux | grep tomcat
 
 我们可以先通过`ps -ef |grep tomcat`指令查看`tomcat`进程的信息，从进程信息中获取`tomcat`服务的进程号。然后通过`kill -9 `的形式，来杀死系统进程。
 
-![](./assets/image/image_MqNlKzHXV0.png)
+![](./assets/image/image_MqNlKzHXV0.webp)
 
 通过上述的指令，我们可以获取到tomcat的进程号为 79947。接下来，我们就可以通过指令 ，来杀死tomcat的进程 ：
 

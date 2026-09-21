@@ -11,15 +11,15 @@
 
 1）首先去镜像仓库搜索nginx镜像，比如[**DockerHub**](https://hub.docker.com/ "DockerHub")**:**
 
-![](./assets/image/image_t87GizFtXQ.png)
+![](./assets/image/image_t87GizFtXQ.webp)
 
 2）根据查看到的镜像名称，拉取自己需要的镜像，通过命令：docker pull nginx
 
-![](./assets/image/image_X4XmvL9qdb.png)
+![](./assets/image/image_X4XmvL9qdb.webp)
 
 3）通过命令：docker images 查看拉取到的镜像
 
-![](./assets/image/image_ZvWkqEAcTE.png)
+![](./assets/image/image_ZvWkqEAcTE.webp)
 
 # 查看远程镜像信息
 

@@ -15,11 +15,11 @@
 
 Redis中的Hash类型可以看成是\*\*键和值都是String类型的Map容器，****每一个****`Hash`****可以存储****`4G`\*\***个键值对。**
 
-![](./assets/image/image_wu4eQGEfxK.png)
+![](./assets/image/image_wu4eQGEfxK.webp)
 
 ​ 该类型非常适合于存储对象的信息。如一个用户有姓名，密码，年龄等信息，则可以有username、password和age等键。它的存储结构如下：
 
-![](./assets/image/image_HVpl9dzohJ.png)
+![](./assets/image/image_HVpl9dzohJ.webp)
 
 #### 常用命令
 

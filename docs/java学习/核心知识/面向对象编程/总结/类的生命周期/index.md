@@ -23,7 +23,7 @@
 
 # 生命周期
 
-![](./assets/image/image_POIGT2sRbI.png)
+![](./assets/image/image_POIGT2sRbI.webp)
 
 ### **代码示例**
 

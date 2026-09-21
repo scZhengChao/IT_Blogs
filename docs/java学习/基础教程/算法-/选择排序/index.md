@@ -1,6 +1,6 @@
 # 选择排序
 
-![](./assets/image/image_lbdqfV0-Zj.png)
+![](./assets/image/image_lbdqfV0-Zj.webp)
 
 - **最小放开头**
 - **下一轮比上一轮少一个**

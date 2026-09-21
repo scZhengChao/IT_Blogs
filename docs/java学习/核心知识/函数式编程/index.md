@@ -24,7 +24,7 @@ Java不支持单独定义函数，但可以把静态方法视为独立的函数�
 
 Java平台从Java 8开始，支持函数式编程。
 
-![](./assets/image/image_ZN3UKxns-j.png)
+![](./assets/image/image_ZN3UKxns-j.webp)
 
 [Lambda基础](./Lambda基础/index.md "Lambda基础")
 

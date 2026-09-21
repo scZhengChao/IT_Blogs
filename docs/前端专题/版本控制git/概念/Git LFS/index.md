@@ -213,13 +213,13 @@ git lfs status
 
 - Git 场景
 
-![](./assets/image/image_uZDBa8WdX4.png)
+![](./assets/image/image_uZDBa8WdX4.webp)
 
 普通场景不论是针对小型的代码文本文件、还是比较大型的图片文件，在相关变更从本地提交到远端仓库时，**所有的相关文件资源都会完整的存储在git server**。就图片中的例子而言，如果**图片文件越来越多，改动频次越来越大，仓库的体积将极速膨胀起来。**
 
 - Git LFS处理流程
 
-![](./assets/image/image_6V6mGjyFaw.png)
+![](./assets/image/image_6V6mGjyFaw.webp)
 
 ### **优势和适用场景**
 

@@ -39,7 +39,7 @@
 
 好多地方有ESNext，那么他到底是啥，以前我一直以为是es6就叫做ESNext，但是其实不然，我们看一下vscode的提示
 
-![](./assets/image/image_NFeqQt5vJ3.png)
+![](./assets/image/image_NFeqQt5vJ3.webp)
 
 ECMAScript 6（简称ES6）是于2015年6月正式发布的JavaScript语言的标准，正式名为ECMAScript 2015（ES2015）。 它的目标是使得JavaScript语言可以用来编写复杂的大型应用程序，成为企业级开发语言 。
 ESNext 是一个动态的概念，指的是 ECMAScript 的下一个版本。就是将来即将发布的，尚未正式确定的 ECMAScript 版本，可能包含了新的语言特性，语法，API等。所以我们在配置中写ESNext肯定是包含ES6的语法，因为ES6早就发布了。开发者使用 ESNext 来指代当前和未来 ECMAScript 版本的集合

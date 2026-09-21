@@ -12,7 +12,7 @@
   - **基本数据类型：整数：0；浮点数： 0.0；布尔值：false；字符：空字符**
   - **应用数据类型： null**
 
-![](./assets/image/image_Cz4TAIyoSL.png)
+![](./assets/image/image_Cz4TAIyoSL.webp)
 
 > **系统空闲时间自动清理内存**；进行垃圾回收；
 

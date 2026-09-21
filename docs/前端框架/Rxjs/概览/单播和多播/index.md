@@ -2,7 +2,7 @@
 
 > `Subjects` 是将任意 `Observable` 执行共享给多个观察者的唯一方式
 
-![](./assets/image/image_mCuQystkDX.png)
+![](./assets/image/image_mCuQystkDX.webp)
 
 [单播](./单播/index.md "单播")
 

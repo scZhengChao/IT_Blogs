@@ -9,7 +9,7 @@
 
 ### 响应式编程与事件驱动编程的关系
 
-![](./assets/image/image_QgprAULAu7.png)
+![](./assets/image/image_QgprAULAu7.webp)
 
 **`响应式编程`** 是基于\*\*`事件驱动编程`\*\*的方式来处理 **`数据流`**。
 
@@ -21,7 +21,7 @@
 
 因为事件驱动编程能将不同的关注点分离开来，而响应式编程是基于事件驱动编程的，所以响应式编程自然也能实现关注点分离。
 
-![](./assets/image/image_UCccQuk3sY.png)
+![](./assets/image/image_UCccQuk3sY.webp)
 
 ### 使用rxjs前：代码耦合、状态过多
 

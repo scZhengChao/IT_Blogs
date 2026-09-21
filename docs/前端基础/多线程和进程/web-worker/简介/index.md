@@ -544,12 +544,12 @@ Worker 线程有一些自己的全局属性和方法。
 
 可以看出，web workers 已经被大多数浏览器支持，使用上基本不用考虑兼容问题。
 
-![](./assets/image/image_qbX3nr4tR-.png)
+![](./assets/image/image_qbX3nr4tR-.webp)
 
 1. `sharedWorker`
 
 sharedWorker 在 Safari 以及移动端的兼容性不是很好，使用时还需注意。
 
-![](./assets/image/image_S1fOuNv2E7.png)
+![](./assets/image/image_S1fOuNv2E7.webp)
 
 [web worker](<./web worker/index.md> "web worker")

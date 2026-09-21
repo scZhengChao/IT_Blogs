@@ -55,7 +55,7 @@ git revert是用一次逆向的commit“中和”之前的提交，因此日后�
 
 现在 master 记录如下：
 
-![](./assets/image/image_nSWPKePKKr.png)
+![](./assets/image/image_nSWPKePKKr.webp)
 
 ```javascript 
 git revert 21dcd937fe555f58841b17466a99118deb489212
@@ -65,11 +65,11 @@ git revert 21dcd937fe555f58841b17466a99118deb489212
 
 revert 掉自己提交的 commit。
 
-![](./assets/image/image_hATZDGfglS.png)
+![](./assets/image/image_hATZDGfglS.webp)
 
 因为 revert 会生成一条新的提交记录，这时会让你**编辑提交信息，编辑完后 :wq 保存退出就好了。**
 
-![](./assets/image/image_9JJNkM-Rgx.png)
+![](./assets/image/image_9JJNkM-Rgx.webp)
 
 再来看下最新的 log，生成了一条 revert 记录，虽然自己之前的提交记录还是会保留着，但你修改的代码内容已经被撤回了。
 
@@ -87,11 +87,11 @@ fatal: revert failed
 
 在 git 的 commit 记录里，**还有一种类型是合并提交，想要 revert 合并提交，使用上会有些不一样。**
 
-![](./assets/image/image_5m5TDZ-n0y.png)
+![](./assets/image/image_5m5TDZ-n0y.webp)
 
 现在的 master 分支里多了条合并提交。
 
-![](./assets/image/image_jsm3Rfm9R0.png)
+![](./assets/image/image_jsm3Rfm9R0.webp)
 
 **使用刚刚同样的 revert 方法，会发现命令行报错了。**
 
@@ -137,7 +137,7 @@ $ git revert 83e2776 -m 1
 
 **merge的revert:加上-m表示撤回哪一个分支的。它的数据是1或2.**
 
-![](./assets/image/image_VkjAbN6Ofn.png)
+![](./assets/image/image_VkjAbN6Ofn.webp)
 
 ```javascript 
 git revert -m 1 <commitHash>
@@ -150,7 +150,7 @@ git revert -m 1 <commitHash>
 
 revert 操作实际是**只是进行了一次逆向 commit**，将 merge 的代码进行回滚，但是 commit 的记录还存在。也就是说，dev 上面存在的待提交的代码，其实已经是 master 的过去代码，属于已提交过的状态，所以不会显示 different。
 
-![](./assets/image/image_TDZVut8BGZ.png)
+![](./assets/image/image_TDZVut8BGZ.webp)
 
 还是上面的场景，**在 master 分支 revert 合并提交后，然后切到 feature 分支修复好 bug，再合并到 master 分支时，会发现之前被 revert 的修改内容没有重新合并进来。**
 
@@ -158,11 +158,11 @@ revert 操作实际是**只是进行了一次逆向 commit**，将 merge 的代�
 
 这时就需要 revert 掉之前 revert 的合并提交，有点拗口，接下来看操作吧。（**我觉得这个有点问题；在自己的分支上revert不就行了吗；commit继续前进）**
 
-![](./assets/image/image_OX9Fnv_T_m.png)
+![](./assets/image/image_OX9Fnv_T_m.webp)
 
 现在 master 的记录是这样的。
 
-![](./assets/image/image_6tWO29XUo-.png)
+![](./assets/image/image_6tWO29XUo-.webp)
 
 #### 解决方案
 

@@ -20,7 +20,7 @@
 
 一个返回 Observable 的函数，该 Observable 或者来自源或者来自 `selector` 函数返回的 Observable。
 
-![](./assets/image/image_Comj3-Q8hK.png)
+![](./assets/image/image_Comj3-Q8hK.webp)
 
 该操作符会处理各种错误，但会把所有其它事件转发到结果 `observable`。如果源 `observable` 因出错而终止，它会将该错误映射成新的 `observable`，订阅这个新 `Observable`，并将其所有事件转发到结果 `observable`。
 

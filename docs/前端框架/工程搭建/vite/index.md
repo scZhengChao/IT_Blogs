@@ -403,7 +403,7 @@ function emptyDir(dir) {
 
 [https://github.com/vitejs/vite/tree/d59e1acc2efc0307488364e9f2fad528ec57f204/packages/create-vite](https://github.com/vitejs/vite/tree/d59e1acc2efc0307488364e9f2fad528ec57f204/packages/create-vite "https://github.com/vitejs/vite/tree/d59e1acc2efc0307488364e9f2fad528ec57f204/packages/create-vite")
 
-![](./assets/image/image_Pvp-TPcX1W.png)
+![](./assets/image/image_Pvp-TPcX1W.webp)
 
 ```typescript 
 // determine template

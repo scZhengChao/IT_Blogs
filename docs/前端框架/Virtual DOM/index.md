@@ -44,7 +44,7 @@
 - **Svelte**将组件编译为原生JavaScript代码，直接操作DOM。
 - **Vue Vapor**（Vue的无虚拟DOM版本）在编译时生成响应式代码，跳过虚拟节点（VNode）的创建。
 
-![](./assets/image/image_vKqyamG1iF.png)
+![](./assets/image/image_vKqyamG1iF.webp)
 
 ##### 2.**细粒度响应式更新**
 

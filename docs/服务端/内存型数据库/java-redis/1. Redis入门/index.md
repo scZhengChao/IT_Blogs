@@ -11,21 +11,21 @@
 
 #### 【1】为什么学习Redis
 
-![](./assets/image/image_yJyF7lPH9n.png)
+![](./assets/image/image_yJyF7lPH9n.webp)
 
 Redis是一个基于**内存**的key-value结构数据库。它是「**Re**mote**Di**ctionary**S**ervice」的首字母缩写，也就是「远程字典服务-remote dictionary server」。
 
 - [ ] **基于内存存储，读写性能高**
 
-![](./assets/image/image_RoMKXzVPSZ.png)
+![](./assets/image/image_RoMKXzVPSZ.webp)
 
 - [ ] 适合存储热点数据（热点商品、资讯、新闻）
 
-![](./assets/image/image_hrb1iOcOxP.png)
+![](./assets/image/image_hrb1iOcOxP.webp)
 
 - [ ] 企业应用广泛
 
-![](./assets/image/image_XGS-rkxBfc.png)
+![](./assets/image/image_XGS-rkxBfc.webp)
 
 #### 【2】Redis介绍
 
@@ -54,7 +54,7 @@ Redis是用C语言开发的一个开源的高性能键值对(key-value)数据库
 
 [**https://db-engines.com/**](https://db-engines.com/ "https://db-engines.com/")**(数据库排行榜)**
 
-![](./assets/image/image_7iWC6kHK2o.png)
+![](./assets/image/image_7iWC6kHK2o.webp)
 
 ### 1.2 使用Redis能做什么
 
@@ -63,4 +63,4 @@ Redis是用C语言开发的一个开源的高性能键值对(key-value)数据库
 
   .........
 
-![](./assets/image/image_qO8tgjwS3R.png)
+![](./assets/image/image_qO8tgjwS3R.webp)

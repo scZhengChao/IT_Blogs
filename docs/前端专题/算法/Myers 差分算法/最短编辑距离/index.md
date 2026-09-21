@@ -31,13 +31,13 @@ A 比 B 多了一个字母 a，所以要进行一次删除操作。
 
 > PS：大写字母 K 代表空字符串，懒得写那么多笔画了
 
-![](./assets/image/image_Vpt-2SYPe-.png)
+![](./assets/image/image_Vpt-2SYPe-.webp)
 
 ## 2. DP 的概念
 
 在此之前，防止有些人不了解 DP，我先说一些基础概念。
 
-![](./assets/image/image_cN_suc_UwT.png)
+![](./assets/image/image_cN_suc_UwT.webp)
 
 对于红色的框，它的值，是根据蓝色框里的值得出来的。
 
@@ -49,7 +49,7 @@ A 比 B 多了一个字母 a，所以要进行一次删除操作。
 
 前面的图呢，由于字母都是一样的，我们现在看一下字母不同的情况。
 
-![](./assets/image/image_xopPMe2RGF.png)
+![](./assets/image/image_xopPMe2RGF.webp)
 
 不考虑任何图里的数字，就单独看红色格子，
 
@@ -62,11 +62,11 @@ word2: c
 
 把 a 变为 c，我们只需要经过一次替换操作。所以操作次数是 1。
 
-![](./assets/image/image_VkdWn963vj.png)
+![](./assets/image/image_VkdWn963vj.webp)
 
 再看下一个位置。
 
-![](./assets/image/image_NQFD2MpypQ.png)
+![](./assets/image/image_NQFD2MpypQ.webp)
 
 相当于是，
 
@@ -81,11 +81,11 @@ word2: c
 
 所以是1次替换，1次删除，所以结果是 2。
 
-![](./assets/image/image_NIkFYWvhfm.png)
+![](./assets/image/image_NIkFYWvhfm.webp)
 
 其他格子也是同样的推理，我就不赘述了，结果如下图。
 
-![](./assets/image/image__CdlwB82Tg.png)
+![](./assets/image/image__CdlwB82Tg.webp)
 
 然后你会发现，就是我前面说的那个规律， &#x20;
 红色框的值，应该是（三个蓝色框里的最小值 + 1）。
@@ -113,7 +113,7 @@ dp\[i]\[j] 直接就是 dp\[i - 1]\[j -1] 也就是左上角的格子的值。
 
 最后上代码，
 
-![](./assets/image/image_MdUcCp2bpI.png)
+![](./assets/image/image_MdUcCp2bpI.webp)
 
 ## 4. 完整代码
 

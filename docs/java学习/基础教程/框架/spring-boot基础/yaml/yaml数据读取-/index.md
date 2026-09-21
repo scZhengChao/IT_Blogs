@@ -8,16 +8,16 @@ yaml数据读取
 
 # 1
 
-![](./assets/image/image_yFby63Y-8c.png)
+![](./assets/image/image_yFby63Y-8c.webp)
 
 # 2
 
 封装全部数据到Environment对象
 
-![](./assets/image/image_O1uPMUbIyn.png)
+![](./assets/image/image_O1uPMUbIyn.webp)
 
 # 3
 
 自定义对象封装指定数据
 
-![](./assets/image/image_sczlSXR7QE.png)
+![](./assets/image/image_sczlSXR7QE.webp)

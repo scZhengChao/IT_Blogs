@@ -27,7 +27,7 @@ Stream<T> filter​(Predicate predicate)：用于对流中的数据进行过滤
 ```
 
 
-![](./assets/image/image_8Q5DAi0Xjj.png)
+![](./assets/image/image_8Q5DAi0Xjj.webp)
 
 ```java 
 List<String> str = new ArrayList<String>();

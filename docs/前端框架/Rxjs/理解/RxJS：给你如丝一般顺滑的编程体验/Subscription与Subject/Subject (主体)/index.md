@@ -16,7 +16,7 @@ Subject
 
 接下来就让笔者给大家好好分析这两个概念吧。
 
-![](./assets/image/image_eADUevTfVz.png)
+![](./assets/image/image_eADUevTfVz.webp)
 
 [单播](./单播/index.md "单播")
 

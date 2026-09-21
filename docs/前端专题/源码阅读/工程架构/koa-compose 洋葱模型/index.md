@@ -77,7 +77,7 @@ const TShirtNum = (num, next) => {
 
 > **著名的洋葱圈**
 
-![](./assets/image/image_wxe_z1FMpF.png)
+![](./assets/image/image_wxe_z1FMpF.webp)
 
 ```typescript 
 function compose(arr) {
@@ -108,4 +108,4 @@ console.log(sellTshirt(100));
 
 由于最后执行的是`sellTshirt(100)`,所以需要返回一个函数。在这个函数内部定义一个`dispatch`方法，然后首次执行传入一个`i`为0，代表`arr`中的第一个函数，执行这个函数。在执行这个函数的时候需要多传入一个参数作为`next`, 而这个参数就是`dispatch`，传入的时候，`i`递增，代表arr中可以取下一个函数了。当执行`next`的时候其实就是执行`dispatch`。最后执行的结果为：
 
-![](./assets/image/image_jiw8b-4xpu.png)
+![](./assets/image/image_jiw8b-4xpu.webp)

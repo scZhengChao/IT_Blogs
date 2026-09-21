@@ -88,7 +88,7 @@
 
 先判断是否为`Object`类型，是的话，**看它的**\*\*`type`****是否是原生****`DOM`\*\***标签**，是的话，给它创建`ReactDOMComponent`的实例对象，其他同理。&#x20;
 
-![  ](./assets/image/2da306d799762cd213fac39fb72bb7a4_hhBS4fLwIR.png "  ")
+![  ](./assets/image/2da306d799762cd213fac39fb72bb7a4_hhBS4fLwIR.webp "  ")
 
 这时候有的人可能会有所疑问：这些个`ReactDOMComponent`, `ReactCompositeComponentWrapper`怎么开发的时候都没有见过？    &#x20;
 
@@ -152,7 +152,7 @@ ReactCompositeComponentWrapper&#x20;
 
 首次渲染的过程如下：&#x20;
 
-![  ](./assets/image/629fb5cb1000382cc29a75ffde13ce97_gDuVMczSAA.png "  ")
+![  ](./assets/image/629fb5cb1000382cc29a75ffde13ce97_gDuVMczSAA.webp "  ")
 
 首先从React.render开始，由于我们刚刚说，render函数被调用的时候会返回一个element，所以此时返回给我们的element是：  &#x20;
 
@@ -199,7 +199,7 @@ ReactCompositeComponentWrapper&#x20;
 
 触发组件的更新有两种更新方式：props以及state改变带来的更新。本次主要解析state改变带来的更新。整个过程流程图如下：
 
-![  ](./assets/image/e23fc3e39c4140dd49dd1f83ea78c721_FwwcZjKvmY.png "  ")
+![  ](./assets/image/e23fc3e39c4140dd49dd1f83ea78c721_FwwcZjKvmY.webp "  ")
 
 1、一般改变state，都是从setState开始，这个函数被调用之后，会将我们传入的state放进pendingState的数组里存起来，然后判断当前流程是否处于批量更新，如果是，则将当前组件的instance放进dirtyComponent里，当这个更新流程中所有需要更新的组件收集完毕之后（这里面涉及到事务的概念，感兴趣的可以自己去了解一下）就会遍历dirtyComponent这个数组，调用他们的uptateComponent对组件进行更新。当然，如果当前不处于批量更新的状态，会直接去遍历dirtyComponent进行更新。&#x20;
 

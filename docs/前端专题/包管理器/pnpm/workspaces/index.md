@@ -12,9 +12,9 @@
 
 ### 优化方案构想模型
 
-![](./assets/image/image_79HW9__OUQ.png)
+![](./assets/image/image_79HW9__OUQ.webp)
 
-![](./assets/image/image_5jTtaUklrL.png)
+![](./assets/image/image_5jTtaUklrL.webp)
 
 上面第一张图是目前的现状，如果俯瞰整个项目的话，会先看到的是一个整体，然后在里面再分出各个端的内容，最后通过 webpack 打包多页面的方法，把各端自己的内容串起来，打包出各端的内容。粗略一点理解的话，可以理解成上面 9 各端，最后会打包出 9 个 html 入口文件（现实操作不是这样弄，但可以象征性这样理解）。
 
@@ -93,7 +93,7 @@
    - `web` 目录模拟 web 端项目
 5. 在跟目录下执行 `pnpm add @pn/components @pn/models -r --filter @pn/web` **把 components 和 models 引入到 web 中，这样在 web 里面就可以像 import 第三份库那样直接使用**
 
-![](./assets/image/image_3NBzeOFn-b.png)
+![](./assets/image/image_3NBzeOFn-b.webp)
 
 - 可能有朋友会问，[packages](https://link.juejin.cn/?target=https://github.com/yutucc/demo-pnpm-workspaces/tree/main/packages "packages") 目录下为什么每个包的包名都要加一个 `@pn/` 前缀。实际上这个只是为了区分其它“真正的”第三方库，纯粹是为了打开 `node_modules` 目录时方便查找（反正也不用真发布到 npm 仓库上）
 

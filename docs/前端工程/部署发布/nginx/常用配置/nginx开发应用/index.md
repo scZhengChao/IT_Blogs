@@ -55,7 +55,7 @@
 - 反向代理服务、负载均衡
 - API服务、权限控制，减少应用服务器压力
 
-![  ](./assets/image/45c3eb059a06409cb19c325e4a114a8d_7kE1eTRnyA.png "  ")
+![  ](./assets/image/45c3eb059a06409cb19c325e4a114a8d_7kE1eTRnyA.webp "  ")
 
 # Nginx 配置文件和目录
 
@@ -101,9 +101,9 @@ rpm -ql nginx
 
 实现效果：在浏览器输入 [www.google.com](http://www.google.com) , 浏览器跳转到 [www.google.com](http://www.google.com) 。
 
-![  ](./assets/image/67384c04b062b7f8a1bcd1446fa1a948_F-cKtyhykJ.png "  ")
+![  ](./assets/image/67384c04b062b7f8a1bcd1446fa1a948_F-cKtyhykJ.webp "  ")
 
-![  ](./assets/image/bc423cbe92af836f15c58a634a0d7ecf_d3MgdDvBLN.png "  ")
+![  ](./assets/image/bc423cbe92af836f15c58a634a0d7ecf_d3MgdDvBLN.webp "  ")
 
 resolver 8.8.8.8 
 
@@ -135,9 +135,9 @@ server {
 
        反向代理服务器和目标服务器对外而言就是一个服务器，只是暴露的是代理服务器地址，而隐藏了真实服务器的 IP 地址。
 
-![  ](./assets/image/877a4c8fa690ee1b231696cc26ae3867_oJplhs1QPt.png "  ")
+![  ](./assets/image/877a4c8fa690ee1b231696cc26ae3867_oJplhs1QPt.webp "  ")
 
-![  ](./assets/image/25d9ef266bc80bcfbee09fa00592224b_caODKSSwgd.png "  ")
+![  ](./assets/image/25d9ef266bc80bcfbee09fa00592224b_caODKSSwgd.webp "  ")
 
 ### Location 指令说明：
 
@@ -149,7 +149,7 @@ server {
 
 当我们的网站需要解决高并发、海量数据问题时，就需要使用负载均衡来调度服务器。将请求合理的分发到应用服务器集群中的一台台服务器上。
 
-![  ](./assets/image/d8c917d2cf2e3fa70fd89356a8d9e4f5_f_nhMFY2I2.png "  ")
+![  ](./assets/image/d8c917d2cf2e3fa70fd89356a8d9e4f5_f_nhMFY2I2.webp "  ")
 
 Nginx 可以为我们提供负载均衡的能力，具体配置如下：
 
@@ -308,13 +308,13 @@ proxy\_next\_upstream timeout; #反向代理upstream中设置的服务器组，�
 
 为了加快网站的解析速度，可以把静态页面和动态页面由不同的服务器来解析，加快解析速度，降低原来单个服务器的压力。
 
-![  ](./assets/image/b784a3ba4a5e2a20a7508f7eb716c19d_uNhIZlgxXn.png "  ")
+![  ](./assets/image/b784a3ba4a5e2a20a7508f7eb716c19d_uNhIZlgxXn.webp "  ")
 
 # 高可用
 
 为了提高系统的可用性和容错能力，可以增加 Nginx 服务器的数量，当主服务器发生故障或宕机，备份服务器可以立即充当主服务器进行不间断工作。
 
-![  ](./assets/image/6b920c97f2782c84cbe896dfc9f3c7b1_q6L-QUVaAi.png "  ")
+![  ](./assets/image/6b920c97f2782c84cbe896dfc9f3c7b1_q6L-QUVaAi.webp "  ")
 
 一般情况下，通过 Nginx 主服务器访问后台目标服务集群，当主服务器挂掉后，自动切换至备份服务器，此时由备份服务器充当主服务器的角色，访问后端目标服务器。
 
@@ -542,7 +542,7 @@ systemctl start keepalived.service
 
 # **原理解析**
 
-![  ](./assets/image/090f2d9eb3ad5800142a6c7d9f3804e8_FtL7QafHXv.png "  ")
+![  ](./assets/image/090f2d9eb3ad5800142a6c7d9f3804e8_FtL7QafHXv.webp "  ")
 
 Nginx 启动之后，在 Linux 系统中有两个进程，一个为 Master，一个为 Worker。
 
@@ -584,7 +584,7 @@ Worker 是如何工作的?客户端发送一个请求首先要经过 Master，�
 
 多个 Worker 以争抢的机制来抢夺任务，得到任务的 Worker 会将请求经由 Tomcat 等做请求转发、反向代理、访问数据库等(Nginx 本身是不直接支持 Java 的)。
 
-![  ](./assets/image/894292a945bd56b4bd8a1b153750a675_zSWFCfV6cm.png "  ")
+![  ](./assets/image/894292a945bd56b4bd8a1b153750a675_zSWFCfV6cm.webp "  ")
 
 ## **一个 Master 和多个 Worker 的好处?**
 
@@ -648,7 +648,7 @@ Keepalived+Nginx实现高可用的思路：
 
 第二：Keepalived应该能监控Nginx的生命状态（提供一个用户自定义的脚本，定期检查Nginx进程状态，进行权重变化,，从而实现Nginx故障切换）
 
-![  ](./assets/image/c9e259e81c2cc99f948ef30d3ece4e6e_BNgEE_PTkI.png "  ")
+![  ](./assets/image/c9e259e81c2cc99f948ef30d3ece4e6e_BNgEE_PTkI.webp "  ")
 
 **详见高可用**
 

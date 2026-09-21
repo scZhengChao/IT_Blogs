@@ -41,7 +41,7 @@ AndroidManifest.xml
 
 [ net::ERR\_CLEARTEXT\_NOT\_PERMITTED 处理\_err cleartext not permitted-CSDN博客 文章浏览阅读7.4k次，点赞3次，收藏5次。安卓打包成功apk后显示net::ERR\_CLEARTEXT\_NOT\_PERMITTED1.网上查询各种方法，统一提示“在Android 的mainfest.xml中的application添加一句配置  android:usesCleartextTraffic=“true”   ”。以下是我项目文件mainfest.xml路径\<?xml version https://blog.csdn.net/wangjiecsdn/article/details/105864308](https://blog.csdn.net/wangjiecsdn/article/details/105864308 " net::ERR_CLEARTEXT_NOT_PERMITTED 处理_err cleartext not permitted-CSDN博客 文章浏览阅读7.4k次，点赞3次，收藏5次。安卓打包成功apk后显示net::ERR_CLEARTEXT_NOT_PERMITTED1.网上查询各种方法，统一提示“在Android 的mainfest.xml中的application添加一句配置  android:usesCleartextTraffic=“true”   ”。以下是我项目文件mainfest.xml路径<?xml version https://blog.csdn.net/wangjiecsdn/article/details/105864308")
 
-![](./assets/image/image_MtfyNXNJmc.png)
+![](./assets/image/image_MtfyNXNJmc.webp)
 
 ```javascript 
 <?xml version="1.0" encoding="utf-8"?>

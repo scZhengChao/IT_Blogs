@@ -26,7 +26,7 @@
 
 例如在下图的服务端架构中，客户端将 offer 发送给信令服务器，信令服务器转发给媒体服务器，媒体服务器将 offer 和自身的能力进行比较后得到 answer，信令服务器再将 answer转发给客户端，随后客户端和媒体服务器就可以进行 RTP 通信。
 
-![](./assets/image/image_8iZSf3BJ83.png)
+![](./assets/image/image_8iZSf3BJ83.webp)
 
 # SDP 格式
 
@@ -36,7 +36,7 @@ SDP 协议的设计可以参考 [rfc4566](https://link.juejin.cn?target=https://
 
 SDP 由一个会话级描述（session level description）和多个媒体级描述（media level description）组成。会话级描述的作用域是整个会话，在 SDP 中，从 "v=" 行开始到第一个 "m=" 行之前都是属于会话级描述的内容。媒体级描述对某个媒体流的内容进行描述，例如某个音频流或者某个视频流，从某个 "m=" 行开始到下个 "m=" 行之前是属于一个媒体级描述的内容。如下图所示：
 
-![](./assets/image/image_OYiw1oWrOB.png)
+![](./assets/image/image_OYiw1oWrOB.webp)
 
 会话级描述主要描述了 SDP 的版本号、session 信息、是否启用端口复用等。每一个媒体级描述都描述了某种媒体的信息，包括所支持的 Codec、传输的时候使用的 SSRC、支持的 RTP 扩展头等。在会话级描述和媒体级描述可能会出现相同的内容，当这种情况出现时，以媒体级描述的内容为准。
 
@@ -292,7 +292,7 @@ SDP 协商过程对应的 RFC 文档是 [rfc3264](https://link.juejin.cn?target=
 
 协商的过程如下图所示：
 
-![](./assets/image/image_UgDQibNoQx.png)
+![](./assets/image/image_UgDQibNoQx.webp)
 
 A 向服务器发送 offer 携带自己的 SDP 信息，包括：
 

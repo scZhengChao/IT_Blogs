@@ -34,7 +34,7 @@
 
 如果是windows电脑中，可以打开任务管理器，可以看到有一个后台进程列表。对，那里就是查看进程的地方，而且可以看到每个进程的内存资源信息以及cpu占有率。
 
-![](./assets/image/image_kusK6wpjxI.png)
+![](./assets/image/image_kusK6wpjxI.webp)
 
 所以，应该更容易理解了：进程是cpu资源分配的最小单位（系统会给它分配内存）
 

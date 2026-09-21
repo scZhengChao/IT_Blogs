@@ -6,7 +6,7 @@
 - [JavaSE标准版](#JavaSE标准版)
 - [JavaEE企业版](#JavaEE企业版)
 
-![](./assets/image/image_Xv-Tv_cXKD.png)
+![](./assets/image/image_Xv-Tv_cXKD.webp)
 
 **长期支持版本： 8和 11**
 

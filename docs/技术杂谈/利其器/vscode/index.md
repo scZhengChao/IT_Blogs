@@ -189,7 +189,7 @@ ES7 React/Redux/GraphQL/React-Native snippets     rpec/rpc
 
 如果喜欢在代码中编写注释，那么有时你可能会发现搜索您以前编写的特定注释的位置是令人沮丧的，因为代码可能会变得有些拥挤。
 
-![  ](./assets/image/e40226a2f97fff8758a512db4e07aa7d_XVcD12Vvvk.png "  ")
+![  ](./assets/image/e40226a2f97fff8758a512db4e07aa7d_XVcD12Vvvk.webp "  ")
 
 在setting.json 中 编辑
 

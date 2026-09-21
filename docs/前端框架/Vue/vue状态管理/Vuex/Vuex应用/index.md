@@ -37,7 +37,7 @@ export default {
 
 mapState同时传入全局state和modules模块局部state
 
-![](./assets/image/image_YtZzUJ-amn.png)
+![](./assets/image/image_YtZzUJ-amn.webp)
 
 ## [字符串](https://so.csdn.net/so/search?q=字符串\&spm=1001.2101.3001.7020 "字符串")数组写法
 

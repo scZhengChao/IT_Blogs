@@ -57,6 +57,6 @@ hsl(hue, saturation, lightness)
 
 hsla(50, 0%, 0%, 0.6); &#x20;
 
-![  ](./assets/image/25bc045b77e3dbbd1a7b7323a718f209_yQazrclaiJ.png "  ")
+![  ](./assets/image/25bc045b77e3dbbd1a7b7323a718f209_yQazrclaiJ.webp "  ")
 
-![  ](./assets/image/c6ae58f045eaa36354b6f4bcf7e5c800_cWpmusFReK.png "  ")
+![  ](./assets/image/c6ae58f045eaa36354b6f4bcf7e5c800_cWpmusFReK.webp "  ")

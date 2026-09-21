@@ -345,13 +345,13 @@ exports.b = '修改值-b模块内变量'
 
 输出结果如下：
 
-![](./assets/image/image_zoNIAhzYj5.png)
+![](./assets/image/image_zoNIAhzYj5.webp)
 
 这种AB模块间的互相引用，本应是个死循环，但是实际并没有，因为CommonJS做了特殊处理—**—模块缓存。**
 
 依旧使用断点调试，可以看到变量require上有一个属性`cache`，这就是模块缓存
 
-![](./assets/image/image_7EN-tXYEUm.png)
+![](./assets/image/image_7EN-tXYEUm.webp)
 
 循环引用无非是要解决两个问题，**怎么避免死循环以及输出的值是什么**。CommonJS通过模块缓存来解决：**每一个模块****都先加入缓存再执行****，每次遇到require都先检查缓存，这样就不会出现死循环；借助缓存，输出的值也很简单就能找到了。**
 

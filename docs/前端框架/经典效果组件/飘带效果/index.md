@@ -8,11 +8,11 @@
 
 [css3-ribbon-text.zip](./assets/file/css3-ribbon-text_X30IILv5VT.zip " css3-ribbon-text.zip")
 
-![](./assets/image/image_UEQwKPmwBY.png)
+![](./assets/image/image_UEQwKPmwBY.webp)
 
 # 第六种效果
 
-![](./assets/image/image_tlK8CoXWn1.png)
+![](./assets/image/image_tlK8CoXWn1.webp)
 
 ```javascript 
 <!doctype html>

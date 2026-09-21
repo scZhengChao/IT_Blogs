@@ -6,7 +6,7 @@
 
 作用：条件装配，满足Conditional指定的条件，则进行组件注入，初始化Bean对象到IOC容器  。
 
-![](./assets/image/image_EygQnzSqCV.png)
+![](./assets/image/image_EygQnzSqCV.webp)
 
 演示：
 
@@ -14,11 +14,11 @@
 
 方法中定义：
 
-![](./assets/image/image_MaahXBpWZJ.png)
+![](./assets/image/image_MaahXBpWZJ.webp)
 
 类上定义：
 
-![](./assets/image/image_pXjPT3l0_a.png)
+![](./assets/image/image_pXjPT3l0_a.webp)
 
 **注意：也可以添加到 类上， 满足条件则类及类中的对象生效。**
 

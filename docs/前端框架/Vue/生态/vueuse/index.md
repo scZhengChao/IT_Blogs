@@ -38,7 +38,7 @@ star数：**6.3K**
 
 那位常年被调侃“懂个锤子Vue”的著名开源作者`Evan You`也是此库的金牌赞助商；
 
-![](./assets/image/image_jNYxIBlwTB.png)
+![](./assets/image/image_jNYxIBlwTB.webp)
 
 ## 安装 vueuse
 
@@ -81,7 +81,7 @@ Vue 2 Demo: Vue CLI
 
 那我就举几个有代表性的例子，带你快速理解这些方法大概是做什么的，有什么特点；
 
-![](./assets/image/image_tAv-wpsAjg.png)
+![](./assets/image/image_tAv-wpsAjg.webp)
 
 ### 例子1: useMouse
 

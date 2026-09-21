@@ -6,4 +6,4 @@
 
 使用Spring整合Junit专用的类加载器
 
-![](./assets/image/image_bKoUVcjYrU.png)
+![](./assets/image/image_bKoUVcjYrU.webp)

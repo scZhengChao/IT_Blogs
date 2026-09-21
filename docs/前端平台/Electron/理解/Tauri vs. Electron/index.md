@@ -33,11 +33,11 @@ Tauri 和 Electron 都提供了功能强大的框架，但它们在架构上存�
 
 我们先来看看它们背后是如何运行的。
 
-![](./assets/image/image_rxhxJlYc0V.png)
+![](./assets/image/image_rxhxJlYc0V.webp)
 
 Electron 的架构模型
 
-![](./assets/image/image_Q38Mfp4aIo.png)
+![](./assets/image/image_Q38Mfp4aIo.webp)
 
 #### Electron 的主进程
 
@@ -53,7 +53,7 @@ Electron 的主进程是一个[**Node.js**](https://mp.weixin.qq.com/s?__biz=MjM
 
 Electron 官方也用过一个很形象的比喻来说明这一点：
 
-![](./assets/image/image_Z8ZLst_0nw.png)
+![](./assets/image/image_Z8ZLst_0nw.webp)
 
 #### Tauri 的主进程
 
@@ -148,7 +148,7 @@ Electron 应用界面
 ```
 
 
-![](./assets/image/image_wA1TGnenqZ.png)
+![](./assets/image/image_wA1TGnenqZ.webp)
 
 ##### 内存使用
 
@@ -164,11 +164,11 @@ Node.js 本身就会占用一定内存
 
 在两个应用都打开 6 个窗口后，内存占用大致如下：
 
-![](./assets/image/image_8YnYhnZgHh.png)
+![](./assets/image/image_8YnYhnZgHh.webp)
 
 Electron - 约 409 MB
 
-![](./assets/image/image_SJmGatEI68.png)
+![](./assets/image/image_SJmGatEI68.webp)
 
 Tauri - 约 172 MB
 
@@ -176,7 +176,7 @@ Tauri - 约 172 MB
 
 启动速度通常也是大家关注的点。在这次简单的测试中，**两者启动时间差异非常小**。老实说，如果一个应用只是启动时间相差不到 1,500 毫秒，完全没必要单独以此作为框架选择的决定性因素。
 
-![](./assets/image/image_pYt_obXIRK.png)
+![](./assets/image/image_pYt_obXIRK.webp)
 
 如果你想了解更多不同框架的详细基准测试数据，可以参考 Web to Desktop Framework Comparison 的 GitHub 仓库。[https://github.com/Elanis/web-to-desktop-framework-comparison?ref=hopp#benchmarks](https://github.com/Elanis/web-to-desktop-framework-comparison?ref=hopp#benchmarks "https://github.com/Elanis/web-to-desktop-framework-comparison?ref=hopp#benchmarks")
 

@@ -15,6 +15,6 @@
 - **每次new 都会开辟一个新的空间；哪怕内容是完全相同的**
 - 可以同时声明多个引用；用逗号分隔；
 
-![](./assets/image/image_l3otbt5qU4.png)
+![](./assets/image/image_l3otbt5qU4.webp)
 
-![](./assets/image/image_iBFF44YE2h.png)
+![](./assets/image/image_iBFF44YE2h.webp)

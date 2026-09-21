@@ -16,11 +16,11 @@ Email就是电子邮件。电子邮件的应用已经有几十年的历史了，
 
 传统的邮件是通过邮局投递，然后从一个邮局到另一个邮局，最终到达用户的邮箱：
 
-![](./assets/image/image_CQ0DK022XQ.png)
+![](./assets/image/image_CQ0DK022XQ.webp)
 
 电子邮件的发送过程也是类似的，只不过是电子邮件是**从用户电脑的邮件软件，例如Outlook，发送到邮件服务器上，可能经过若干个邮件服务器的中转，最终到达对方邮件服务器上，收件方就可以用软件接收邮件：**
 
-![](./assets/image/image_Gypf32g83f.png)
+![](./assets/image/image_Gypf32g83f.webp)
 
 我们把类似Outlook这样的邮件软件称为MUA：Mail User Agent，意思是给用户服务的邮件代理；邮件服务器则称为MTA：Mail Transfer Agent，意思是邮件中转的代理；最终到达的邮件服务器称为MDA：Mail Delivery Agent，意思是邮件到达的代理。电子邮件一旦到达MDA，就不再动了。实际上，电子邮件通常就存储在MDA服务器的硬盘上，然后等收件人通过软件或者登陆浏览器查看邮件。
 
@@ -183,7 +183,7 @@ QUIT
 
 如果一切顺利，对方将收到一封文本格式的电子邮件：
 
-![](./assets/image/image_IMQv1zqn29.png)
+![](./assets/image/image_IMQv1zqn29.webp)
 
 ### 发送HTML邮件
 
@@ -207,7 +207,7 @@ message.setText(body, "UTF-8", "html");
 
 HTML邮件可以在邮件客户端直接显示为网页格式：
 
-![](./assets/image/image_6WwuJJSjFv.png)
+![](./assets/image/image_6WwuJJSjFv.webp)
 
 ### 发送附件
 
@@ -236,7 +236,7 @@ message.setContent(multipart);
 
 带附件的邮件在客户端会被提示下载：
 
-![](./assets/image/image_2iNLtZLRRy.png)
+![](./assets/image/image_2iNLtZLRRy.webp)
 
 ### 发送内嵌图片的HTML邮件
 
@@ -273,7 +273,7 @@ imagepart.setHeader("Content-ID", "<img01>");
 
 这个ID和HTML中引用的ID对应起来，邮件客户端就可以正常显示内嵌图片：
 
-![](./assets/image/image_RKChIZatJc.png)
+![](./assets/image/image_RKChIZatJc.webp)
 
 ### 常见问题
 

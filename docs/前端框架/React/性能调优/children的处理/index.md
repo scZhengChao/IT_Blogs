@@ -111,7 +111,7 @@ function App () {
 
 此时页面展示的是：
 
-![](./assets/image/image_HzCrl2aJ1w.png)
+![](./assets/image/image_HzCrl2aJ1w.webp)
 
 为什么会这样呢？打个断点进去看了一下 `React.Children.toArray` 大致都做了什么处理，这里简单总结一下：将 `children` **传过来的每个元素都放到一个数组中再返回，并会过滤掉空数组、Boolean、undefined**
 
@@ -151,7 +151,7 @@ function App () {
 
 那么页面展示的是什么呢？
 
-![](./assets/image/image_oXg60sMBWL.png)
+![](./assets/image/image_oXg60sMBWL.webp)
 
 是的，还是`nothing`，因为这四种情况的值全都被 `React.Children.toArray` 给过滤掉了，最终返回的值为 `[]` ，这也十分符合我们开发时的预期
 

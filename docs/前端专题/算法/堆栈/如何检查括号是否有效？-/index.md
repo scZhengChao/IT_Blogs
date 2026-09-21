@@ -65,7 +65,7 @@ Output: true
 
 对于有效的括号，整个流程可能如下所示：
 
-![](./assets/image/image_12T0WvmPgl.png)
+![](./assets/image/image_12T0WvmPgl.webp)
 
 ## **执行：**
 
@@ -104,4 +104,4 @@ const isValid = function(s) {
 ```
 
 
-![](./assets/image/image_6Fe-GMe95o.png)
+![](./assets/image/image_6Fe-GMe95o.webp)

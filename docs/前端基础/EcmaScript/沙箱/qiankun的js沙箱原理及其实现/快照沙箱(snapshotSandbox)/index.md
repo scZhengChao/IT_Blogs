@@ -13,7 +13,7 @@
 
 > 激活沙箱时，将`window`的快照信息存到`windowSnapshot`中， 如果`modifyPropsMap`有值，还需要还原上次的状态；激活期间，可能修改了`window`的数据；退出沙箱时，将修改过的信息存到`modifyPropsMap`里面，并且把`window`还原成初始进入的状态。
 
-![](./assets/image/image_6l31zMUhYV.png)
+![](./assets/image/image_6l31zMUhYV.webp)
 
 #### **snapshotSandbox源码**
 

@@ -34,9 +34,9 @@ npm install --save-dev typescript @types/react @types/react-dom ts-loader
 ```
 
 
-![  ](./assets/image/1a8695d4e23ae68669e6c215a2a41771_x9tgZL-lNZ.png "  ")
+![  ](./assets/image/1a8695d4e23ae68669e6c215a2a41771_x9tgZL-lNZ.webp "  ")
 
-![  ](./assets/image/163cf8eb969aab19678c6218e7337db2_Ozyv_HwYug.png "  ")
+![  ](./assets/image/163cf8eb969aab19678c6218e7337db2_Ozyv_HwYug.webp "  ")
 
 只要存在tsconfig.json  就ok了
 
@@ -64,13 +64,13 @@ baseUrl
 
 **根目录**
 
-![  ](./assets/image/7d0b400f3ffdde1d9ba98ef8e59f5cad_8JaE0XxSsq.png "  ")
+![  ](./assets/image/7d0b400f3ffdde1d9ba98ef8e59f5cad_8JaE0XxSsq.webp "  ")
 
 注意：不经要有而且还必须是 ‘.’
 
-![  ](./assets/image/79f4b4125e9b74dcc4ef6b75316db4a8_5y7Ytc96Wn.png "  ")
+![  ](./assets/image/79f4b4125e9b74dcc4ef6b75316db4a8_5y7Ytc96Wn.webp "  ")
 
-![  ](./assets/image/da432f2448d74d69f3c9e2b430dcf158_OKLCpb3WJB.png "  ")
+![  ](./assets/image/da432f2448d74d69f3c9e2b430dcf158_OKLCpb3WJB.webp "  ")
 
 ## typescript error  导致  compile failed
 

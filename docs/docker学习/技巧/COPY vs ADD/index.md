@@ -8,7 +8,7 @@
 
 我们创建一个 aaa 目录，下面添加两个文件：
 
-![](./assets/image/image_osslRIFE5D.png)
+![](./assets/image/image_osslRIFE5D.webp)
 
 使用 tar 命令打包：
 
@@ -54,11 +54,11 @@ docker run -d --name sixth-container add-test
 
 可以看到 **，ADD 把 tar.gz 给解压然后复制到容器内了。**
 
-![](./assets/image/image_ek_y_WIJKV.png)
+![](./assets/image/image_ek_y_WIJKV.webp)
 
 而 COPY 没有解压，它把文件整个复制过去了：
 
-![](./assets/image/image_p0uhZ6dmrg.png)
+![](./assets/image/image_p0uhZ6dmrg.webp)
 
 ![](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/b7e0f945732b4a0cb9d506f60f9d370d~tplv-k3u1fbpfcp-zoom-in-crop-mark:1512:0:0:0.awebp?)
 

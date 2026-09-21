@@ -1,6 +1,6 @@
 # 工作流程
 
-![](./assets/image/image_XxA0U3XgRv.png)
+![](./assets/image/image_XxA0U3XgRv.webp)
 
 - Service Worker 文件只在**首次注册的时候执行了一次。**
 - **安装、激活流程也**只是在首次执行 Service Worker 文件的时候进行了一次。

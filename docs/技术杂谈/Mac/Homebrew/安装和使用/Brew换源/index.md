@@ -23,7 +23,7 @@ git remote -v
 ```
 
 
-![](./assets/image/image_vbuz2eDFf6.png)
+![](./assets/image/image_vbuz2eDFf6.webp)
 
 ## 替换为阿里源
 

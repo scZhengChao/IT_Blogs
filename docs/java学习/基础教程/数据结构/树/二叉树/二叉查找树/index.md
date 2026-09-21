@@ -9,6 +9,6 @@
 - 一长一短不健康
 - 以根节点为坐标；\*\*小的放左边；大的放右边；相同就不再存储；\*\***提高查找性能；**
 
-![](./assets/image/image_P1kd-a23Pr.png)
+![](./assets/image/image_P1kd-a23Pr.webp)
 
-![](./assets/image/image_tql-mc2t4I.png)
+![](./assets/image/image_tql-mc2t4I.webp)

@@ -90,7 +90,7 @@ Streaming SSR 是 React18 新支持的功能。**支持在服务端渲染时将�
 
 React 18 弃用了 renderToNodeStream，增加了新的流式返回 API **renderToPipeableStream，通过 Suspense 支持服务端流式渲染和客户端选择性水合（selective hydrate）**。React18 Streaming SSR 处理过程如下图所示。
 
-![](<../assets/基于 React18 Streaming SSR 的页面性能/image/image_skidnWJ1ji.png>)
+![](<../assets/基于 React18 Streaming SSR 的页面性能/image/image_skidnWJ1ji.webp>)
 
 页面分为4个模块，**假设 Comments 模块依赖独立接口，并接口较慢，那么可以将 Comments 组件放在 React.Suspense 里（图1）。**
 

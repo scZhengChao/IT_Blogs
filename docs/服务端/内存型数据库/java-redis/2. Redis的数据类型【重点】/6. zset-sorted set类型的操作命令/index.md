@@ -19,9 +19,9 @@ redis**正是通过分数来为集合中的成员进行从小到大的排序。*
 
 有序集合的成员是唯一的,**但分数(score)却可以重复，每个集合可存储40多亿个成员。**
 
-![](./assets/image/image_xBO0N1FUKc.png)
+![](./assets/image/image_xBO0N1FUKc.webp)
 
-![](./assets/image/image_RIBWyuT351.png)
+![](./assets/image/image_RIBWyuT351.webp)
 
 #### 命令
 

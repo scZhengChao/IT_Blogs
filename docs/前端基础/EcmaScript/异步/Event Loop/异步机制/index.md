@@ -30,7 +30,7 @@
 
 在此流程中，**所有 function call 首先进入 call stack，然后通过 API 执行异步任务。当异步任务完成后，callback 进入任务队列，然后再次进入 call stack**。当任务执行完之后，event loop 会再次去 task queue 重复上面的流程。
 
-![](./assets/image/image_qg79DtjzMz.png)
+![](./assets/image/image_qg79DtjzMz.webp)
 
 #### 任务类型
 
@@ -184,15 +184,15 @@ Nodejs 11.0.0.0 以前的版本一次事件循环：执行完一个**主队列�
 >
 > 具体介绍可以参看《\[翻译]Node 事件循环系列——2、Timer 、Immediate 和 nextTick》\[5]以及《The Node.js Event Loop, Timers, and process.nextTick()》\[6]。
 
-![](./assets/image/image_7ZqRZkmAO2.png)
+![](./assets/image/image_7ZqRZkmAO2.webp)
 
 Nodejs 11.0.0 以后的版本一次事件循环和浏览器一样：
 
 执行**完主队列中的一个任务后，立即执行微任务队列中所有任务，然后再执行主任务队列中下一个任务**
 
-![](./assets/image/image_btRQ9qj_RA.png)
+![](./assets/image/image_btRQ9qj_RA.webp)
 
-![](./assets/image/image_anoG0YjCVX.png)
+![](./assets/image/image_anoG0YjCVX.webp)
 
 举一个小例子
 
@@ -308,7 +308,7 @@ main();
 
 为了方便，**直接将 async 函数返回**，这种情况，**err 函数发生异常，则异常无法被捕获。**
 
-![](./assets/image/image_WGiVg_qPY6.png)
+![](./assets/image/image_WGiVg_qPY6.webp)
 
 应该尽可能避免直接在 async 函数中直接返回没有 await 的异步函数；以上可以通过两种方式解决。
 

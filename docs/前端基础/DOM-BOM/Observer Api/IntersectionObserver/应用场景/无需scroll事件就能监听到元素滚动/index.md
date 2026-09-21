@@ -42,7 +42,7 @@ new IntersectionObserver((event) => {
 
 当弹窗移出屏幕时，可以很轻松的监听到，并把弹窗移动到下方，但是当弹窗滚入的时候就有问题了
 
-![](./assets/image/image_VJSYnryR8C.png)
+![](./assets/image/image_VJSYnryR8C.webp)
 
 可以看到**完全进入之后**，这个时候**由于顶部空间不够**，还需要**继续往下滚才能将弹窗由底部移动到顶部**。但是已经无法再触发 `IntersectionObserver` 和视口交叉的回调事件了，因为元素已经完全在视窗内了。
 也就是说用这种方案，元素一旦滚出去之后，再回来的时候就无法复原了。
@@ -159,13 +159,13 @@ refresh(true);
 
 比如我设置 `rootMargin` 为 "`-50px -30px -20px -30px`"，注意这里 `rootMargin` 和 `margin` 类似，都是按照 **上 右 下 左** 来设置的
 
-![](./assets/image/image_tN7NZyw0XL.png)
+![](./assets/image/image_tN7NZyw0XL.webp)
 
 可以看到这样，当元素距离顶部 `50px` 就触发了事件。而不必等到元素完全滚动到视口。
 
 既然这样，**当我设置 ****`rootMargin`****就是该元素本身的位置，不就可以实现只要元素一滚动，元素就与视口发生了交叉，触发事件**了吗？
 
-![](./assets/image/image_YjrNLMSEIG.png)
+![](./assets/image/image_YjrNLMSEIG.webp)
 
 ### 4.2 循环监听事件
 

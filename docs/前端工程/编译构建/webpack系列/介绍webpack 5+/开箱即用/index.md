@@ -93,7 +93,7 @@ module.exports = {
 
 安装`webpack-dev-server`，使用`webpack serve`启动开发服务器，来看一下控制台的输出是不是我们想要的。
 
-![](./assets/image/image_-B5Mf_vhcY.png)
+![](./assets/image/image_-B5Mf_vhcY.webp)
 
 从`开发环境`中可以看到是想要的结果，都按照预期的处理方式处理了不同的文件。**注意：`rules`****中的每一项的****`type`都要按照固定格式书写来处理不同的模块。**[**具体详细规则点击查阅**](https://link.juejin.cn?target=https://webpack.js.org/configuration/module/#modulerules "具体详细规则点击查阅") 我们再来看一下`生产环境`照样也能按照预期处理。将`mode`改为`production`然后进行打包。可以发现`png`和`gif`被单独打包成了文件。`txt`和`jpg`被处理成了`base64`打包进了main.js中。
 
@@ -134,7 +134,7 @@ export const handler2 = () => {
 
 5.x版本打包结果
 
-![](./assets/image/image_eckKoWMJLx.png)
+![](./assets/image/image_eckKoWMJLx.webp)
 
 斯国一！可以看到`4.x`版本的打包结果里有非常多的代码。`5.x`版本竟然可以将优化做到如此极致。它发现我们的目的就是打印一句话，直接帮我们运算好了最终的结果。**这里有个小细节，为什么可以如此智能？如果有深入了解过**\*\*`tree shaking`****的同学应该知道，****使用****`按需导出`****和****`按需导入`****可以更好的让****`tree shaking`****发挥作用，如果我这里改用****`默认导出`****和****`默认导入`****的话就****`webpack`****就没有那么智能了，所以在书写模块时，尽量使用****`按需导出`****和****`按需导入`****。\*\*
 
@@ -165,7 +165,7 @@ export default obj;
 ```
 
 
-![](./assets/image/image_NMHetF13Ny.png)
+![](./assets/image/image_NMHetF13Ny.webp)
 
 ### 打包缓存
 
@@ -185,7 +185,7 @@ module.exports = {
 ```
 
 
-![](./assets/image/image_d-3YVwBQyu.png)
+![](./assets/image/image_d-3YVwBQyu.webp)
 
 ## top-level-await
 

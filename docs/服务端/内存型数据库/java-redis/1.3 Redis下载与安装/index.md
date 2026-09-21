@@ -21,7 +21,7 @@ Redis安装包分为windows版和Linux版：
 
 下载后得到下面安装包：
 
-![](./assets/image/image_i2u8UDbaHN.png)
+![](./assets/image/image_i2u8UDbaHN.webp)
 
 说明:
 
@@ -51,7 +51,7 @@ rpm -q gcc-c++
 ```
 
 
-![](./assets/image/image_n8vLBKtNSt.png)
+![](./assets/image/image_n8vLBKtNSt.webp)
 
 如果出现如上所示说明已经安装了。**如果没有安装则执行下面命令进行安装即可。**
 
@@ -62,11 +62,11 @@ yum-y install gcc-c++
 
 &#x20;安装过程信息如下，大约需要下载39M。
 
-![](./assets/image/image_nBI5TZkBRn.png)
+![](./assets/image/image_nBI5TZkBRn.webp)
 
 **2.上传"redis"到Linux系统/soft目录下**
 
-![](./assets/image/image_BOzq-7k-la.png)
+![](./assets/image/image_BOzq-7k-la.webp)
 
 **3.进入soft目录,将"redis-4.0.0.tar.gz"解压到当前目录**
 
@@ -76,15 +76,15 @@ tar -zxvf redis-4.0.0.tar.gz
 ```
 
 
-![](./assets/image/image_uNFXFEyHNQ.png)
+![](./assets/image/image_uNFXFEyHNQ.webp)
 
 解压好之后会出现redis-4.0.0目录
 
-![](./assets/image/image_FDihiuCC8z.png)
+![](./assets/image/image_FDihiuCC8z.webp)
 
 切换到redis-4.0.0目录下查看内容，下面内容是redis的源码。
 
-![](./assets/image/image_LPmXGWRlO6.png)
+![](./assets/image/image_LPmXGWRlO6.webp)
 
 **4.进入redis-4.0.0目录，使用make命令对上述源码在c语言的环境下进行编译redis 。make会调用gcc-c++编译redis源码，只有编译之后才可以进行安装。**
 
@@ -94,11 +94,11 @@ make
 ```
 
 
-![](./assets/image/image_Qc6ILNp34Y.png)
+![](./assets/image/image_Qc6ILNp34Y.webp)
 
 如下信息代表编译成功
 
-![](./assets/image/image_JLUuH_5wkx.png)
+![](./assets/image/image_JLUuH_5wkx.webp)
 
 **5.在redis-4.0.0目录中，使用以下命令，将redis安装到/usr/local/soft/redis指定的目录下**
 
@@ -107,11 +107,11 @@ makePREFIX=/usr/local/soft/redisinstall
 ```
 
 
-![](./assets/image/image_7_Rqhxn7DX.png)
+![](./assets/image/image_7_Rqhxn7DX.webp)
 
 ​ 安装成功后在/usr/local/redis/bin目录下可以看到如下结构。
 
-![](./assets/image/image_Bt-xQWsvye.png)
+![](./assets/image/image_Bt-xQWsvye.webp)
 
 **6.复制redis.conf配置文件到/usr/local/soft/redis/bin**
 
@@ -122,11 +122,11 @@ cd/usr/local/soft/redis-4.0.0/
 ```
 
 
-![](./assets/image/image_8PaXMwFRuu.png)
+![](./assets/image/image_8PaXMwFRuu.webp)
 
-![](./assets/image/image_qDmTAC2lFr.png)
+![](./assets/image/image_qDmTAC2lFr.webp)
 
-![](./assets/image/image_exVyGAAW71.png)
+![](./assets/image/image_exVyGAAW71.webp)
 
 安装后重点文件说明：
 
@@ -140,4 +140,4 @@ cd/usr/local/soft/redis-4.0.0/
 
 Redis的Windows版属于绿色软件，直接解压即可使用，解压后目录结构如下：
 
-![](./assets/image/image_vRZRkRy1RF.png)
+![](./assets/image/image_vRZRkRy1RF.webp)

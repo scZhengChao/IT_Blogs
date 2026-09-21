@@ -87,7 +87,7 @@
 
 单帧全彩色高清 1920×1080 视频（每像素 4 字节）为 8294400 字节，在帧率 30 的情况下，每秒高清视频将占用 237 MB。
 
-![](./assets/image/image_eeq8rkis8k.png)
+![](./assets/image/image_eeq8rkis8k.webp)
 
 在这种前提下，1 分钟的资源就需要 13.9 GB 的存储空间，30 分钟视频会议需要大约 417 GB 的存储空间，而一部 2 小时的电影需要几乎 1.63 TB的存储空间。显然这么大的数据是无法接受的，因此不得不对视频资源进行压缩，即编码。
 
@@ -142,7 +142,7 @@ VCL 则包括核心压缩引擎以及块、宏块和片的语法级别定义。�
 
 ![](https://mmbiz.qpic.cn/sz_mmbiz_png/5EcwYhllQOjGm55IArXWDHFB76XuZhSgd9dV2gKFkc9sjNEOkC133OiaUeclh3eENSC0nBemNe1iaiaTtK2bl2rGQ/640?wx_fmt=png\&from=appmsg\&tp=webp\&wxfrom=5\&wx_lazy=1\&wx_co=1)
 
-![](./assets/image/image_8cgjAtNeOC.png)
+![](./assets/image/image_8cgjAtNeOC.webp)
 
 H.265 引入了编码树单元（Coding Tree Unit，CTU）和编码树块（Coding Tree Block，CTB）。在 H.265 中，CTU 的概念与 H.264 的宏块有一定的相似性，但也存在明显区别。H.264 的宏块采用固定的 16×16 的离散余弦变换（DCT），而 H.265 的 CTU 则同时运用了离散余弦变化（DCT）和离散正弦变化（DST），并且像素大小为 4×4 到 64×64 的动态可变块 **，这种设计使得 H.265 在处理不同类型的图像内容时更加灵活高效。** 其中，每个 CTU 也是由一个亮度 CTB（Y）、两个色度 CTB（Cb 和 Cr）以及一些关联的语法元素组成。这些语法元素为解码器提供了必要的信息，以便正确地解析和重建视频图像。通过这种方式，H.265 能够在保证图像质量的前提下，**进一步提高压缩效率，减少视频文件的大小，适应不同的网络环境和存储需求。**
 
@@ -216,7 +216,7 @@ H.265 引入了编码树单元（Coding Tree Unit，CTU）和编码树块（Codi
 
 衡量声音的大小往往会用到“音量 Volume”和“响度 Loudness”，分贝（dB/dBSPL）不能像赫兹、克、米那样给出一个客观的量，而只能给出两个相同物理量的比值，所以是一种相对的概念。人耳对不同频率的“响度”感受存在差异，如下图的“等响曲线”图。其中 phon 是响度级的单位，规定在 1000Hz 时，1dBSPL=1phon。在 40phon 以上的区域，当声压提高十倍时，人类的听觉感知只会提高两倍。为了让响度和听觉感知尽量呈线性关系，需要引入另一个响度单位 sone，40phon 等同于 1sone。
 
-![](./assets/image/image_tiKI9DaIi2.png)
+![](./assets/image/image_tiKI9DaIi2.webp)
 
 **等响曲线图**
 

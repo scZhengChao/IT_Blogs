@@ -2,7 +2,7 @@
 
 XML和JSON是两种经常在网络使用的数据表示格式，本章我们介绍如何使用Java读写XML和JSON。
 
-![](./assets/image/image_Y7KUS7KQIB.png)
+![](./assets/image/image_Y7KUS7KQIB.webp)
 
 [XML简介](./XML简介/index.md "XML简介")
 

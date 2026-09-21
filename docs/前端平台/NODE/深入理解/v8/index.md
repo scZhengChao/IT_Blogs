@@ -24,7 +24,7 @@ javascript  能够从浏览器端走到服务端   -------- 归根结底 �
 
 **2.V8的对象分配**
 
-![  ](./assets/image/1c5e129f7161e85ef1bfc6caffe7f567_Tx-etr14GW.png "  ")
+![  ](./assets/image/1c5e129f7161e85ef1bfc6caffe7f567_Tx-etr14GW.webp "  ")
 
     当我们在代码中申明变量并赋值时；
 
@@ -66,7 +66,7 @@ v8的内存分代： 
 
 \*\*  新生代中的对象为存活时间较短的对象，老生代的对象为存活时间较长和常驻内存的对象：\*\* ​
 
-![  ](./assets/image/86cbe4501d6a126f652c817e5226efa9_R9b1x-4T0J.png "  ")
+![  ](./assets/image/86cbe4501d6a126f652c817e5226efa9_R9b1x-4T0J.webp "  ")
 
 **v8堆整体的大小就是新生代加老生代的大小；**
 
@@ -74,7 +74,7 @@ v8的内存分代： 
 
     Scavenge算法主要采用了Cheney算法：简单说就是一分为二；牺牲空间换时间；对新生代堆里存活时间短，生命周期较短的 情况非常适合；
 
-![  ](./assets/image/a31bc2d0edddde80a9275f19d35b11fa_pk-RY8FKOs.png "  ")
+![  ](./assets/image/a31bc2d0edddde80a9275f19d35b11fa_pk-RY8FKOs.webp "  ")
 
 晋升： 对象由新生代储存 转向 老生代储存 （也就是说由生命周期短的新生代转到了老生代的常驻内存；）
 
@@ -84,17 +84,17 @@ v8的内存分代： 
 
         2.一个是To空间的内存占比超过使用限制；（当要从From空间复制一个对象到To空间时，如果To空间已经使用超过了25%,这个对象直接晋升到老生代空间中；）
 
-![  ](./assets/image/64a4cde46323ee3c22541cc8bd6e425a_wJb-gN0a_z.png "  ")
+![  ](./assets/image/64a4cde46323ee3c22541cc8bd6e425a_wJb-gN0a_z.webp "  ")
 
-![  ](./assets/image/92faeafeb888e0d2c6efe88a97031b66_95QzS-zXC8.png "  ")
+![  ](./assets/image/92faeafeb888e0d2c6efe88a97031b66_95QzS-zXC8.webp "  ")
 
 **适合老生代的垃圾回收算法：**
 
 对于存活比重较大的老生代如果用之前的Scavenge算法有两个问题： 1.依旧有一半的空间会被浪费。2.存活对象比较多 ，复制存活对象的效率很低；
 
-![  ](./assets/image/dff585a1eec5ca4c0231c3a1a0d6522c_brGiPHzQIB.png "  ")
+![  ](./assets/image/dff585a1eec5ca4c0231c3a1a0d6522c_brGiPHzQIB.webp "  ")
 
-![  ](./assets/image/36fde48c893ab2d4aa0bf6333b97f304_Jr68wOmbJe.png "  ")
+![  ](./assets/image/36fde48c893ab2d4aa0bf6333b97f304_Jr68wOmbJe.webp "  ")
 
 小结：具体的见 pdf node的深入浅出；
 

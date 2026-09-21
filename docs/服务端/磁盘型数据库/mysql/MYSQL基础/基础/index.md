@@ -28,4 +28,4 @@ SQL分类
 - **DQL(Data Query Language) 数据查询语言**，用来查询数据库中表的记录(数据)
 - &#x20;，用来定义数据库的访问权限和安全级别，及创建用户
 
-![](./assets/image/image_SS_9mBcrsm.png)
+![](./assets/image/image_SS_9mBcrsm.webp)

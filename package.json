@@ -9,6 +9,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "check:docs": "node scripts/check-docs.mjs",
+    "optimize:images": "node scripts/convert-png-to-webp.mjs",
     "predev": "npm run check:docs",
     "dev": "CHOKIDAR_USEPOLLING=1 CHOKIDAR_INTERVAL=500 rspress dev",
     "prebuild": "npm run check:docs",
@@ -35,6 +36,7 @@
     "fs-extra": "^11.4.0",
     "remark-gfm": "4.0.1",
     "remark-parse": "11.0.0",
+    "sharp": "^0.34.5",
     "unified": "11.0.5"
   }
 }

@@ -87,6 +87,6 @@ export default function App() {
 ```
 
 
-![](./assets/image/image_Yuo2jhUgm3.png)
+![](./assets/image/image_Yuo2jhUgm3.webp)
 
 **父组件 re-render 会导致子组件 re-render**，当某些**复杂内容可以独立于父组件存在**时或者我们并不需要 re-render 的话，我们可以通过 children 或 props 传入，这样就避免了无效的 re-render。如上所示，我们将 SlowComponentt 通过 children 传入 Counter 组件，当我们再次点击计数按钮时，通过 profiler developer tool 可以看出当 Counter 组件的 State 发生变化时，只有 Counter 组件进行 re-render，SlowComponent 没有触发 re-render，而不是每次 Counter 组件的 State 发生变化时都重新渲染，**这是因为 ****`SlowComponent`**** 是 App 组件的子组件了，只有 App 组件发生 re-render 才会执行 re-render。**

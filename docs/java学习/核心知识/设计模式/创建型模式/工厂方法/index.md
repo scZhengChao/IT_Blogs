@@ -10,7 +10,7 @@
 
 工厂方法的目的是使得**创建对象和使用对象是分离**的，并且客户端总是引用抽象工厂和抽象产品：
 
-![](./assets/image/image_Duzlvq7E7p.png)
+![](./assets/image/image_Duzlvq7E7p.webp)
 
 我们以具体的例子来说：假设我们希望实现一个解析字符串到`Number`的`Factory`，可以定义如下：
 

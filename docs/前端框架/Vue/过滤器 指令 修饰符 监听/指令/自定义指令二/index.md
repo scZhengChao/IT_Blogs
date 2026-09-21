@@ -76,7 +76,7 @@
 
 效果和代码如下
 
-![](./assets/image/image_ybbwJiJI6P.png)
+![](./assets/image/image_ybbwJiJI6P.webp)
 
 ```typescript 
 
@@ -210,7 +210,7 @@ export default {
 
 基于 `Canvas` 实现方式的优点就在于能够动态的设置水印内容，相比于上一种基于固定背景图片的方式更灵活，这种方式也是 **语雀** 在使用的方式，具体效果如下：
 
-![](./assets/image/image_wx2uzJ-EL8.png)
+![](./assets/image/image_wx2uzJ-EL8.webp)
 
 **核心步骤**
 

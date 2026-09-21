@@ -10,7 +10,7 @@
 
 清算系统则是处理来自撮合引擎的撮合结果。
 
-![](./assets/image/image_woXLsLG4bK.png)
+![](./assets/image/image_woXLsLG4bK.webp)
 
 最后，把上述几个组件组合起来，我们就得到了一个完善的交易引擎。
 
@@ -26,7 +26,7 @@
 
 因此，要实现交易引擎的集群，可以同时运行多个交易引擎的实例，然后对每个实例输入相同的订单请求序列，就会得到完全相同的一组输出：
 
-![](./assets/image/image_gBc0IvVD8i.png)
+![](./assets/image/image_gBc0IvVD8i.webp)
 
 可见，**交易引擎是一个事件驱动的状态机。**
 

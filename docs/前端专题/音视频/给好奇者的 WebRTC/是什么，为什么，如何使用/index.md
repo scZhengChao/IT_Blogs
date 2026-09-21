@@ -108,7 +108,7 @@ WebRTC 解决了许多问题。初看起来，这似乎是过度设计的。实�
 
 这使得我们可以独立的检查和学习每个部分，而不会毫无头绪。实际上，从另一个角度去看“ WebRTC Agent”，它只是**许多不同协议的协调器。**
 
-![](./assets/image/image_Zkc8doJBAJ.png)
+![](./assets/image/image_Zkc8doJBAJ.webp)
 
 ## WebRTC（API）如何工作 [#](https://webrtcforthecurious.com/zh/docs/01-what-why-and-how/#webrtcapi如何工作 "#")
 

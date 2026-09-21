@@ -45,7 +45,7 @@
 
 ![  ](./assets/image/640_YOpWEm6tLS.jpg "  ")
 
-![  ](./assets/image/640_w55iFAYqJD.png "  ")
+![  ](./assets/image/640_w55iFAYqJD.webp "  ")
 
 ## **二、CSRF**
 

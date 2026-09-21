@@ -32,7 +32,7 @@
 - column：主轴垂直方向，起点在上边沿；
 - column-reserve：主轴垂直方向，起点在下边沿。
 
-![  ](./assets/image/1679823-a91b68309c12e105_z6JNk9edkj.png "  ")
+![  ](./assets/image/1679823-a91b68309c12e105_z6JNk9edkj.webp "  ")
 
 主轴的4个方向
 
@@ -40,7 +40,7 @@
 
 默认情况下，项目都排列在一条轴线上，但有可能一条轴线排不下。
 
-![  ](./assets/image/1679823-68d21ca039ba28db_-p0023J14R.png "  ")
+![  ](./assets/image/1679823-68d21ca039ba28db_-p0023J14R.webp "  ")
 
 一条轴线排不下
 
@@ -54,19 +54,19 @@
 - nowrap（默认）：不换行；
    
 
-![  ](./assets/image/1679823-c51dd7b251cdddec_lwLgHSOlmj.png "  ")
+![  ](./assets/image/1679823-c51dd7b251cdddec_lwLgHSOlmj.webp "  ")
 
 - 不换行nowrap
 - wrap：换行，第一行在上方；
    
 
-![  ](./assets/image/1679823-fd48f147e6dc7ac6_BgLCCtMt-E.png "  ")
+![  ](./assets/image/1679823-fd48f147e6dc7ac6_BgLCCtMt-E.webp "  ")
 
 - 换行，第一行在上
 - wrap-reverse：换行，第一行在下方。
    
 
-![  ](./assets/image/1679823-77847157380e23e4_AOa4tNNZgG.png "  ")
+![  ](./assets/image/1679823-77847157380e23e4_AOa4tNNZgG.webp "  ")
 
 - 换行，第一行在下
 
@@ -93,31 +93,31 @@
 
 - flex-start（默认值）：左对齐；
 
-![  ](./assets/image/1679823-c6c33e14817aaeb7_umRHmyr2r_.png "  ")
+![  ](./assets/image/1679823-c6c33e14817aaeb7_umRHmyr2r_.webp "  ")
 
 - 左对齐
    
 - flex-end：右对齐；
 
-![  ](./assets/image/1679823-958fc54a2805ae83_mlgL5Pb4yP.png "  ")
+![  ](./assets/image/1679823-958fc54a2805ae83_mlgL5Pb4yP.webp "  ")
 
 - 右对齐
    
 - center：居中；
 
-![  ](./assets/image/1679823-0e4934ebf5828c81_ygDxa7TRPg.png "  ")
+![  ](./assets/image/1679823-0e4934ebf5828c81_ygDxa7TRPg.webp "  ")
 
 居中对齐
 
 - space-between：两端对齐，项目之间间隔相等；
 
-![  ](./assets/image/1679823-e3dda677d9efc9dd_OQjdGF_yAe.png "  ")
+![  ](./assets/image/1679823-e3dda677d9efc9dd_OQjdGF_yAe.webp "  ")
 
 两端对齐
 
 - space-around：每个项目两侧的间隔相等，即项目之间的间隔比项目与边框的间隔大一倍。
 
-![  ](./assets/image/1679823-4e4c94cfab42cebd_QrVry-Tl3S.png "  ")
+![  ](./assets/image/1679823-4e4c94cfab42cebd_QrVry-Tl3S.webp "  ")
 
 两侧间隔相等
 
@@ -134,31 +134,31 @@
 
 - flex-start：起点对齐；
 
-![  ](./assets/image/1679823-794781b09ba1222b_rt4KO9YXPQ.png "  ")
+![  ](./assets/image/1679823-794781b09ba1222b_rt4KO9YXPQ.webp "  ")
 
 起点对齐
 
 - flex-end：终点对齐；
 
-![  ](./assets/image/1679823-eadf0e3c23e5f6ff_E-6s-GP73_.png "  ")
+![  ](./assets/image/1679823-eadf0e3c23e5f6ff_E-6s-GP73_.webp "  ")
 
 终点对齐
 
 - center：中点对齐；
 
-![  ](./assets/image/1679823-70da312a8c49de64_ruIFw5ddXe.png "  ")
+![  ](./assets/image/1679823-70da312a8c49de64_ruIFw5ddXe.webp "  ")
 
 中点对齐
 
 - baseline：项目的第一行文字的基线对齐；
 
-![  ](./assets/image/1679823-7add48ac84c6d397_OKKdzkKU1N.png "  ")
+![  ](./assets/image/1679823-7add48ac84c6d397_OKKdzkKU1N.webp "  ")
 
 基线对齐
 
 - stretch（默认值）：如果项目未设置高度或设为auto，将占满整个容器的高度。
 
-![  ](./assets/image/1679823-9711dc77e87507b5_5gezdECDgY.png "  ")
+![  ](./assets/image/1679823-9711dc77e87507b5_5gezdECDgY.webp "  ")
 
 #### **align-content属性：定义多根轴线的对齐方式**
 
@@ -177,40 +177,40 @@
 
 - flex-start：与交叉轴的起点对齐；
 
-![  ](./assets/image/1679823-3d8d3dd45d5a0dad_MEXAe2CmPR.png "  ")
+![  ](./assets/image/1679823-3d8d3dd45d5a0dad_MEXAe2CmPR.webp "  ")
 
 起点对齐
 
 - flex-end：与交叉轴的终点对齐；
 
-![  ](./assets/image/1679823-5f155d8e95a419fe_iOY7FvVfce.png "  ")
+![  ](./assets/image/1679823-5f155d8e95a419fe_iOY7FvVfce.webp "  ")
 
 终点对齐
 
 - center：与交叉轴的中点对齐；
 
-![  ](./assets/image/1679823-b1a3ed27fe64e88d_RrrBZMVRBb.png "  ")
+![  ](./assets/image/1679823-b1a3ed27fe64e88d_RrrBZMVRBb.webp "  ")
 
 中点对齐
 
 - space-between：与交叉轴的两端对齐，轴线之间的间隔平均分布；
 
-![  ](./assets/image/1679823-b013b001bff86782_cxBnmsPgIr.png "  ")
+![  ](./assets/image/1679823-b013b001bff86782_cxBnmsPgIr.webp "  ")
 
 轴线之间等间距
 
 - space-around：每根轴线两侧的间隔相等，即轴线之间的间隔比轴线与边框的间隔大一倍；
 
-![  ](./assets/image/1679823-3dd9a6ed68b35b72_eOSVtJFBEC.png "  ")
+![  ](./assets/image/1679823-3dd9a6ed68b35b72_eOSVtJFBEC.webp "  ")
 
 轴线两侧等间距
 
 - stretch（默认值）：轴线占满整个交叉轴。
 
-![  ](./assets/image/1679823-11a08044da41b365_DHb1VtTwzi.png "  ")
+![  ](./assets/image/1679823-11a08044da41b365_DHb1VtTwzi.webp "  ")
 
 项目未设置高度时
 
 有意思的是，当你**不给项目设置高度但是给容器设置align-content不为stretch时，同一轴线上的项目的高度将等于项目中高度最高的项目。**
 
-![  ](./assets/image/1679823-57180f41a0e740bf_WlW3CnLuTa.png "  ")
+![  ](./assets/image/1679823-57180f41a0e740bf_WlW3CnLuTa.webp "  ")

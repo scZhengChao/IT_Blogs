@@ -106,7 +106,7 @@ class Student extends Person {
 - `this` 和 `super` \*\* 作为函数 只能存在一个\*\*；**都要抢占构造****函数的第一行的位置****；**
 - 构造函数调用时；`this` 和 `super` **不能同时出现**
 
-![](./assets/image/image_CBj14zDe0k.png)
+![](./assets/image/image_CBj14zDe0k.webp)
 
 this和super同属于对象，区别在于：
 

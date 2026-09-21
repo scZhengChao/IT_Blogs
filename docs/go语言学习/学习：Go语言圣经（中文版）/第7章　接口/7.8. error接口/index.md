@@ -83,6 +83,6 @@ fmt.Println(err)         // "no such file or directory"
 
 err的值图形化的呈现在图7.6中。
 
-![](./assets/image/image_wQO471dcrC.png)
+![](./assets/image/image_wQO471dcrC.webp)
 
 **Errno是一个系统调用错误的高效表示方式，它通过一个有限的集合进行描述，并且它满足标准的错误接口**。我们会在第7.11节了解到其它满足这个接口的类型。

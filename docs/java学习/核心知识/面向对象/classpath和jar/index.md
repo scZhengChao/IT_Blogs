@@ -80,7 +80,7 @@ java abc.xyz.Hello
 
 假设我们有一个编译后的`Hello.class`，它的包名是`com.example`，当前目录是`C:\work`，那么，目录结构必须如下：
 
-![](./assets/image/image_CUhtoZVjry.png)
+![](./assets/image/image_CUhtoZVjry.webp)
 
 运行这个`Hello.class`必须在当前目录下使用如下命令：
 
@@ -114,15 +114,15 @@ java -cp ./hello.jar abc.xyz.Hello
 
 假设编译输出的目录结构是这样
 
-![](./assets/image/image_JiwqHVLp4l.png)
+![](./assets/image/image_JiwqHVLp4l.webp)
 
 这里需要特别注意的是，jar包里的第一层目录，不能是`bin`，而应该是`hong`、`ming`、`mr`。如果在Windows的资源管理器中看，应该长这样：
 
-![](./assets/image/image_SAhkgvfarp.png)
+![](./assets/image/image_SAhkgvfarp.webp)
 
 如果长这样：
 
-![](./assets/image/image_Bmh11bpi5s.png)
+![](./assets/image/image_Bmh11bpi5s.webp)
 
 上面的`hello.zip`包含有`bin`目录，说明打包打得有问题，`JVM`仍然无法从`jar`包中查找正确的`class`，原因是`hong.Person`必须按`hong/Person.class`存放，而不是`bin/hong/Person.class`。
 

@@ -191,4 +191,4 @@ each(@statusColor,{
 
 # Type Functions
 
-![](./assets/image/image_NR0FBueahW.png)
+![](./assets/image/image_NR0FBueahW.webp)

@@ -159,10 +159,10 @@ self.addEventListener('connect', e => {
 
 在 `sharedWorker` 线程里使用 `console` 打印信息，不会出现在主线程的的控制台中。如果你想调试 `sharedWorker`，需要在 Chrome 浏览器输入 [chrome://inspect/](https://link.juejin.cn/?target= "chrome://inspect/") ，这里能看到所有正在运行的 `sharedWorker`，然后开启一个独立的 dev-tool 面板。
 
-![](./assets/image/image_-qsiVf4MnJ.png)
+![](./assets/image/image_-qsiVf4MnJ.webp)
 
 # 兼容性
 
 sharedWorker 在 Safari 以及移动端的兼容性不是很好，使用时还需注意。
 
-![](./assets/image/image_GNosq_UOz7.png)
+![](./assets/image/image_GNosq_UOz7.webp)

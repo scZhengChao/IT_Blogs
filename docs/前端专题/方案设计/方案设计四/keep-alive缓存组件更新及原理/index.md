@@ -248,7 +248,7 @@ function pruneCacheEntry (
 
 new Vue阶段图解（可以看看这篇[面试官问我new Vue阶段做了什么？](https://juejin.cn/post/7164563220714225695 "面试官问我new Vue阶段做了什么？")）：包括咱这里提到的渲染。
 
-![](./assets/image/image_2T_I2scF0L.png)
+![](./assets/image/image_2T_I2scF0L.webp)
 
 #### keep-alive本身渲染
 

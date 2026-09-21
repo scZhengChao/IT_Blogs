@@ -12,11 +12,11 @@
 
 方法一  打开终端，输入 xcode-select --install 执行命令，如果安装了会显示 command line tools are already installed
 
-![](./assets/image/image_Q6hW7E1JDz.png)
+![](./assets/image/image_Q6hW7E1JDz.webp)
 
 方法二  打开XCode 新建工程，如果安装了，在新建窗口可以看到
 
-![](./assets/image/image_u_iO9Qf_iJ.png)
+![](./assets/image/image_u_iO9Qf_iJ.webp)
 
 方法三 检查一下/Library/Developer/CommandLineTools文件夹是否存在。
 
@@ -28,7 +28,7 @@
 
 在终端中输入以下命令：xcode-select --install ，按回车。
 
-![](./assets/image/image_uPpNU7focu.png)
+![](./assets/image/image_uPpNU7focu.webp)
 
 ```javascript 
 xcode-select --install  // 安装命令

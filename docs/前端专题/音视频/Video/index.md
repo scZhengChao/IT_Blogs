@@ -18,7 +18,7 @@
 
 关键在于我要在自定义样式；`issues`
 
-![  ](./assets/image/c83788fc5453fdfe8c0241828c94d6b4_l_JGnR3Mrz.png "  ")
+![  ](./assets/image/c83788fc5453fdfe8c0241828c94d6b4_l_JGnR3Mrz.webp "  ")
 
 ```javascript 
 module.exports = {

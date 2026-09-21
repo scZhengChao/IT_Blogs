@@ -1,6 +1,6 @@
 # 非对称加密和解密
 
-![](./assets/image/image_Mus-s5fdsR.png)
+![](./assets/image/image_Mus-s5fdsR.webp)
 
 ```javascript 
 <!DOCTYPE html>

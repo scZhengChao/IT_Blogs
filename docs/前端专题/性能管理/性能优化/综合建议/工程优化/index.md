@@ -47,7 +47,7 @@
 4. **图片优化**
 5. **节流与防抖**
 
-![  ](./assets/image/4246b55ab85dd3c5c918859768385fcc_QXnYHc1QUt.png "  ")
+![  ](./assets/image/4246b55ab85dd3c5c918859768385fcc_QXnYHc1QUt.webp "  ")
 
 # 加载资源优化&#x20;
 
@@ -221,7 +221,7 @@ JS引擎是独立于渲染引擎存在的，就是说插在页面那，就在那
 
 发现有缓存直接用。&#x20;
 
-![  ](./assets/image/e68cd7a3794428335d85c6c5011a6403_meR3YR0HZm.png "  ")
+![  ](./assets/image/e68cd7a3794428335d85c6c5011a6403_meR3YR0HZm.webp "  ")
 
 Expires: 绝对时间，判断客户端日期是否超过这个时间  &#x20;
 
@@ -259,7 +259,7 @@ Etag/If-None-Match&#x20;
 
 在一些浏览器的a标签是默认打开dns预解析的，在https协议下dns预解析是关闭的，加入mate后会打开。&#x20;
 
-![  ](./assets/image/909e9f7231041971510115579eec2b30_ImfTv8Bm6a.png "  ")
+![  ](./assets/image/909e9f7231041971510115579eec2b30_ImfTv8Bm6a.webp "  ")
 
 # 图片优化&#x20;
 

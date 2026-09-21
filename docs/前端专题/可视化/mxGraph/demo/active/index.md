@@ -1,6 +1,6 @@
 # active
 
-![](./assets/image/image_T4K71BDlt2.png)
+![](./assets/image/image_T4K71BDlt2.webp)
 
 ```html 
 <!--根据以下官方例子进行修改-->

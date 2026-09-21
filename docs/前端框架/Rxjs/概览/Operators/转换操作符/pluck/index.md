@@ -8,7 +8,7 @@
 
 就比如某个数据源发送的数据是一个对象，对象上面有一个`name`属性，并且订阅者指向知道这个`name`属性，那么就可以使用该操作符来提取该属性值给用户。
 
-![](./assets/image/image_YN1b-lsPAy.png)
+![](./assets/image/image_YN1b-lsPAy.webp)
 
 ```javascript 
 const source = Rx.Observable.of({name: '张三'}, {name: '李四'});

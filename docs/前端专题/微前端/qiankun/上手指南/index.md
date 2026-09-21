@@ -270,7 +270,7 @@ qiankun-micro-app1
 
 **页面有个图片没有展示出来，接下来就解决这个问题。**
 
-![](./assets/image/image_ade-Oy7HBQ.png)
+![](./assets/image/image_ade-Oy7HBQ.webp)
 
 ### 4.解决静态资源不显示的问题
 
@@ -286,7 +286,7 @@ import './public-path';
 
 [http://localhost:3010/micro-app2](https://link.juejin.cn/?target=http://localhost:3010/micro-app2 "http://localhost:3010/micro-app2")
 
-![](./assets/image/image_evbToaYSuZ.png)
+![](./assets/image/image_evbToaYSuZ.webp)
 
 打开控制台在 Elements 元素，可以看到：
 

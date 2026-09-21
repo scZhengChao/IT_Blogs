@@ -6,13 +6,13 @@
 
 > **mac 的 alt 用 commond代替**
 
-![](./assets/image/image_nsTEvgOp0F.png)
+![](./assets/image/image_nsTEvgOp0F.webp)
 
 # 展开方法列表
 
 command + 7
 
-![](./assets/image/image_-oEW-v7Dpb.png)
+![](./assets/image/image_-oEW-v7Dpb.webp)
 
 快速导包
 

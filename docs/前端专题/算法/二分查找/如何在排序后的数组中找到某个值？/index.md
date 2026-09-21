@@ -33,7 +33,7 @@
 
 如果我们要检查这个数组中是否存在 48：
 
-![](./assets/image/image_cld9fRjvFD.png)
+![](./assets/image/image_cld9fRjvFD.webp)
 
 ## **执行**
 
@@ -80,7 +80,7 @@ function binarySearch(arr, x) {
 
 **用法：**
 
-![](./assets/image/image_oAZUGFQjQB.png)
+![](./assets/image/image_oAZUGFQjQB.webp)
 
 **比较**
 

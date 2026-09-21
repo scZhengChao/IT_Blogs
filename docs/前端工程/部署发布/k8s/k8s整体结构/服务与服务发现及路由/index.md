@@ -19,7 +19,7 @@ Service 在 K8S 中有以下四种类型： `ClusterIP`， `NodePort`， `LoadBa
 
 ClusterIP 主要在每个 node 节点使⽤ ipvs/iptables，将发向 ClusterIP 对应端⼝的数据，转发到 kubeproxy 中。然后 kube-proxy ⾃⼰内部**实现有负载均衡**的⽅法，并可以查询到这个 Service 下**对应 pod 的地址和端⼝**，进⽽把数据转发给**对应的 pod 的地址和端⼝**。
 
-![](./assets/image/image_VxITFfCJ_W.png)
+![](./assets/image/image_VxITFfCJ_W.webp)
 
 了实现图上的功能，主要需要以下⼏个组件的协同⼯作：
 
@@ -39,12 +39,12 @@ Service 实现⽅式有三种：
 
 这种模式，kube-proxy 会监视 Kubernetes Service 对象和 Endpoints，调⽤ netlink 接⼝以相应地创建 ipvs 规则并**定期与 Kubernetes Service 对象和 Endpoints 对象同步 ipvs 规则，以确保ipvs 状态与期望⼀致**。访问服务时，流量将被重定向到其中⼀个后端 Pod。
 
-![](./assets/image/image_mgMR75ObGg.png)
+![](./assets/image/image_mgMR75ObGg.webp)
 
 与iptables相⽐，提供功能类似,但使⽤哈希表作为底层数据结构,并在内核空间中⼯作。ipvs可以更快的重定向流量,并且在同步代理规则时具有更好的性能。
 最终过程如下：
 
-![](./assets/image/image_djLOdGL-xb.png)
+![](./assets/image/image_djLOdGL-xb.webp)
 
 # endpoint
 

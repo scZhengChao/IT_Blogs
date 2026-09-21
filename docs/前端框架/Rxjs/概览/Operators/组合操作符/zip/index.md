@@ -10,7 +10,7 @@
 
 话不多说，上码：
 
-![](./assets/image/image_MqWsPHIG_t.png)
+![](./assets/image/image_MqWsPHIG_t.webp)
 
 ```javascript 
 const s1 = Rx.Observable.interval(1000).take(3);

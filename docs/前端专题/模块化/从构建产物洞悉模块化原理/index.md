@@ -374,7 +374,7 @@ function require(modulePath) {
 
 如果不喜欢看代码的可以看图，重在理解思想即可。
 
-![](./assets/image/image_O9mn_b9uVY.png)
+![](./assets/image/image_O9mn_b9uVY.webp)
 
 ```javascript 
 //模块定义
@@ -453,7 +453,7 @@ const exports = {
 
 接下来我们看看Webpack的打包后的代码（经优化）：
 
-![](./assets/image/image_ffoKBIZgjG.png)
+![](./assets/image/image_ffoKBIZgjG.webp)
 
 ```typescript 
 //模块定义

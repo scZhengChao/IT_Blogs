@@ -1,6 +1,6 @@
 # 经典模拟antd的tab组件
 
-![](./assets/image/image_nmYOPaAlU8.png)
+![](./assets/image/image_nmYOPaAlU8.webp)
 
 ```typescript 
 import {memo, useState} from 'react';

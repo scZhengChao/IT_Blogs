@@ -31,7 +31,7 @@
 
 “小李” 通过一段 Node.js 代码展示了如何解密出 JWT 签名后的 token 数据。
 
-![](./assets/image/image_7AXESukj6w.png)
+![](./assets/image/image_7AXESukj6w.webp)
 
 ```javascript 
 const token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IuW8oOS4iSIsInBhc3N3b3JkIjoxMjM0NTYsImlhdCI6MTY2MTg2OTQxMX0.3-60HUf_cKIo44hWUviNzqdUoUGngGQfrqffg0A6uqM"
@@ -59,7 +59,7 @@ JWT Token 由三部分组成：
 
 之间用 `.` 链接，构成如下所示：
 
-![](./assets/image/image_pCw4Wy3Rtq.png)
+![](./assets/image/image_pCw4Wy3Rtq.webp)
 
 \*\*Header 部分由 JSON 对象 \*\*​**`{ typ, alg }`** 两部分构成，使用 `base64url(header)` 算法转为字符串：
 

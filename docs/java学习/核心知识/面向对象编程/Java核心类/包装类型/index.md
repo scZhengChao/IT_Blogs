@@ -13,7 +13,7 @@
 
 **基础类型是没有方法的**
 
-![](./assets/image/image_tdh8e1XIlW.png)
+![](./assets/image/image_tdh8e1XIlW.webp)
 
 # 特点
 

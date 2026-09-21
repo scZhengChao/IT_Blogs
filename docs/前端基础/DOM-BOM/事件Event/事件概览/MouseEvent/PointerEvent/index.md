@@ -5,7 +5,7 @@
 &#x20;      指针的 击中检测 指浏览器用来检测 指针事件的目标元素的过程。大多数情况下，这个目标元素是由 指针的位置和元素在文章中的位置和分层共同决定的。
 该接口属性继承自` MouseEvent 和 Event`，所以它们有很多相似的属性和方法，只是 `PointerEvent` 的作用对象更具体，具体到鼠标指针。
 
-![](./assets/image/image_wlHlS9acqT.png)
+![](./assets/image/image_wlHlS9acqT.webp)
 
 它的一些相关事件：
 

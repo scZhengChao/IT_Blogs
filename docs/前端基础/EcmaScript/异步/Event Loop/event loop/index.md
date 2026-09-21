@@ -20,7 +20,7 @@
 - 主线程之外，**事件触发线程**管理着一个`任务队列`，只要异步任务有了运行结果，就在`任务队列`之中放置一个事件。
 - 一旦`执行栈`中的所有同步任务执行完毕（此时JS引擎空闲），系统就会读取`任务队列`，将**可运行的异步任务添加到可执行栈中，开始执行。**
 
-![](./assets/image/image_drJ_qVyfDM.png)
+![](./assets/image/image_drJ_qVyfDM.webp)
 
 看到这里，应该就可以理解了：为什么有时候setTimeout推入的事件不能准时执行？因为可能在它推入到事件列表时，主线程还不空闲，正在执行其它代码， 所以自然有误差。
 
@@ -58,4 +58,4 @@
 - 所以它的响应速度相比setTimeout（setTimeout是task）会更快，**因为无需等渲染**
 - **也就是说，在某一个macrotask执行完后，就会将在它执行期间产生的所有microtask都执行完毕（在渲染前）**
 
-![](./assets/image/image_7uCdNE63A6.png)
+![](./assets/image/image_7uCdNE63A6.webp)

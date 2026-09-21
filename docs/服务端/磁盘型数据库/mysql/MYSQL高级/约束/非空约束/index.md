@@ -53,4 +53,4 @@ CREATE TABLE st2 (
 
 面试题：空+唯一 约束与主键约束区别?
 
-![](./assets/image/image_shwTKp1uHS.png)
+![](./assets/image/image_shwTKp1uHS.webp)

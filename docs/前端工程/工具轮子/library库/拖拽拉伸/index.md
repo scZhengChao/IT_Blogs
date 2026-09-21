@@ -296,7 +296,7 @@ var rs = new Resize("dragDiv", {
 
 效果图：
 
-![](./assets/image/image_B33_qIO4-X.png)
+![](./assets/image/image_B33_qIO4-X.webp)
 
 [resize.html](./assets/file/resize_DbVd6pZayK.html "resize.html")
 

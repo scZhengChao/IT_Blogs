@@ -40,7 +40,7 @@ server {
 
 客户端发出的请求`192.168.12.129`最终会转变为：`http://192.168.12.129:80/`，然后再向目标`IP`发起请求，流程如下：
 
-![](./assets/image/image_Sn4jBl1LMY.png)
+![](./assets/image/image_Sn4jBl1LMY.webp)
 
 - 由于`Nginx`监听了`192.168.12.129`的`80`端口，所以最终该请求会找到`Nginx`进程；
 - `Nginx`首先会根据配置的`location`规则进行匹配，根据客户端的请求路径`/`，会定位到`location /{}`规则；

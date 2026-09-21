@@ -35,7 +35,7 @@
 
 对于 **优化构建结果** 我们可以从 `压缩代码`、`按需加载`、`提前加载`、`Code Splitting`、`Tree Shaking`、`Gzip`、`作用提升`几个方面入手。
 
-![](./assets/image/image_DvaKnUR-Fz.png)
+![](./assets/image/image_DvaKnUR-Fz.webp)
 
 ## 压缩代码
 
@@ -328,7 +328,7 @@ console.log(logo);
 ```
 
 
-![](./assets/image/image_w2N-wx_Lyb.png)
+![](./assets/image/image_w2N-wx_Lyb.webp)
 
 配置好 `image-webpack-loader` ，再次构建可以看到图片变成了3kb，压缩效果还是很明显的。
 
@@ -368,7 +368,7 @@ export default () => {
 
 页面首次加载
 
-![](./assets/image/image_ZOOtjl0-OK.png)
+![](./assets/image/image_ZOOtjl0-OK.webp)
 
 点击动态加载按钮
 
@@ -437,7 +437,7 @@ document.getElementById("btn1").onclick = async () => {
 
 这样，页面首次加载的时候，**浏览器空闲的会后会提前加载**`impModule.js`。当我们点击按钮的时候，会直接从缓存中读取该文件，因此速度非常快。
 
-![](./assets/image/image_hMNOZrqU2x.png)
+![](./assets/image/image_hMNOZrqU2x.webp)
 
 ### preload
 
@@ -462,7 +462,7 @@ document.getElementById("btn1").onclick = async () => {
 
 **module：每个import引入的文件就是一个模块 bundle：当module源文件传到webpack进行打包时，webpack会根据文件引用关系生成chunk bundle：是对chunk进行压缩、分割等处理后的产物**
 
-![](./assets/image/image_fSDa2mlKmH.png)
+![](./assets/image/image_fSDa2mlKmH.webp)
 
 ### ~~CommonChunkPlugin (已过时)~~
 
@@ -816,7 +816,7 @@ module.exports = {
 
 [speed-measure-webpack-plugin](https://link.juejin.cn/?target= "speed-measure-webpack-plugin") 这个插件帮助我们分析整个打包的总耗时，以及每一个loader 和每一个 plugins 构建所耗费的时间，从而帮助我们快速定位到可以优化 Webpack 的配置。
 
-![](./assets/image/image_4KYR0oRRGx.png)
+![](./assets/image/image_4KYR0oRRGx.webp)
 
 使用姿势如下
 
@@ -858,7 +858,7 @@ module.exports = {
 
 在重新执行 `build` 命令就会发现浏览器自动打开了个窗口 `http://127.0.0.1:8888/`，展示本项目本次 `build` 的结果的可视化分析：
 
-![](./assets/image/image_jzjf74JmWU.png)
+![](./assets/image/image_jzjf74JmWU.webp)
 
 # 总结
 

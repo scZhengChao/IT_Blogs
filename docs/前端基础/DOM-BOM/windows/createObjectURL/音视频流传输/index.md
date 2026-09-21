@@ -23,4 +23,4 @@
 ```
 
 
-![](./assets/image/image_azu4BS6SiQ.png)
+![](./assets/image/image_azu4BS6SiQ.webp)

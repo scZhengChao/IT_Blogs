@@ -62,7 +62,7 @@ console.log(renderToString(<App/>));
 
 假设下面就是服务端返回的 SSR 出的 html：
 
-![](<../assets/React SSR 全流程原理：从 renderToStri/image/image_CbaOcB4cvl.png>)
+![](<../assets/React SSR 全流程原理：从 renderToStri/image/image_CbaOcB4cvl.webp>)
 
 现在浏览器接收到它后，要再次渲染：
 
@@ -81,7 +81,7 @@ hydrateRoot(document.getElementById('root'), <App/>);
 
 因为浏览器接收到 html 就会把它渲染出来，这时候已经有标签了，只需要把它和组件关联之后，就可以更新和绑定事件了。
 
-![](<../assets/React SSR 全流程原理：从 renderToStri/image/image_1mMO5VJX0g.png>)
+![](<../assets/React SSR 全流程原理：从 renderToStri/image/image_1mMO5VJX0g.webp>)
 
 hydrate **会在渲染的过程中，不创建 html 标签，而是直接关联已有的。这样就避免了没必要的渲染。**
 
@@ -95,21 +95,21 @@ hydrate **会在渲染的过程中，不创建 html 标签，而是直接关联�
 
 其实**服务端渲染就是拼接 html 的过程，组件和元素分别有不同的渲染逻辑：**
 
-![](<../assets/React SSR 全流程原理：从 renderToStri/image/image_RjSAocI8vT.png>)
+![](<../assets/React SSR 全流程原理：从 renderToStri/image/image_RjSAocI8vT.webp>)
 
 组件的话就传入参数执行：
 
-![](<../assets/React SSR 全流程原理：从 renderToStri/image/image_U4_fG2kmRR.png>)
+![](<../assets/React SSR 全流程原理：从 renderToStri/image/image_U4_fG2kmRR.webp>)
 
 元素的话就拼接字符串：
 
-![](<../assets/React SSR 全流程原理：从 renderToStri/image/image_KY6UPB2_LZ.png>)
+![](<../assets/React SSR 全流程原理：从 renderToStri/image/image_KY6UPB2_LZ.webp>)
 
-![](<../assets/React SSR 全流程原理：从 renderToStri/image/image_zadgcBG9Ts.png>)
+![](<../assets/React SSR 全流程原理：从 renderToStri/image/image_zadgcBG9Ts.webp>)
 
 这样递归渲染一遍，结果就是字符串了：
 
-![](<../assets/React SSR 全流程原理：从 renderToStri/image/image_M4qMBqP4dp.png>)
+![](<../assets/React SSR 全流程原理：从 renderToStri/image/image_M4qMBqP4dp.webp>)
 
 服务端渲染的部分还是挺简单的，再来看客户端渲染的 hydrate 部分：
 
@@ -117,7 +117,7 @@ hydrate **会在渲染的过程中，不创建 html 标签，而是直接关联�
 
 我们组件里写的这些是 jsx 代码：
 
-![](<../assets/React SSR 全流程原理：从 renderToStri/image/image_4a7tHXmS4r.png>)
+![](<../assets/React SSR 全流程原理：从 renderToStri/image/image_4a7tHXmS4r.webp>)
 
 它们编译后会变成类似 React.createElement 这种代码，叫做 render function。
 
@@ -125,7 +125,7 @@ render function 执行的结果是 React Element。
 
 类似这样：
 
-![](<../assets/React SSR 全流程原理：从 renderToStri/image/image_CRC3JRYkQp.png>)
+![](<../assets/React SSR 全流程原理：从 renderToStri/image/image_CRC3JRYkQp.webp>)
 
 我们也经常把 React Element 叫做 vdom。
 
@@ -141,7 +141,7 @@ react 会把 vdom 转成 fiber 的结构，这个过程叫做 reconcile：
 
 这里创建的元素是挂载在 fiber.stateNode 上的，并且 dom 元素上也记录着它关联的 fiber 节点：
 
-![](<../assets/React SSR 全流程原理：从 renderToStri/image/image_HreScesdEX.png>)
+![](<../assets/React SSR 全流程原理：从 renderToStri/image/image_HreScesdEX.webp>)
 
 那如果是 hydrate 呢？还需要创建新元素么？
 

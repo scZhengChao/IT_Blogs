@@ -21,7 +21,7 @@ months := [...]string{1: "January", /* ... */, 12: "December"}
 
 **slice的切片操作s\[i:j]，其中0 ≤ i≤ j≤ cap(s)，** 用于创建一个新的slice，引用s的从第i个元素开始到第j-1个元素的子序列。新的slice将只有j-i个元素。如果i位置的索引被省略的话将使用0代替，如果j位置的索引被省略的话将使用len(s)代替。因此，months\[1:13]切片操作将引用全部有效的月份，和months\[1:]操作等价；months\[:]切片操作则是引用整个数组。让我们分别定义表示第二季度和北方夏天月份的slice，它们有重叠部分：
 
-![](./assets/image/image_Mf_xk9QI8w.png)
+![](./assets/image/image_Mf_xk9QI8w.webp)
 
 ```go 
 Q2 := months[4:7]
@@ -241,7 +241,7 @@ func main() {
 
 在下一次迭代时i=4，现在没有新的空余的空间了，因此appendInt函数分配一个容量为8的底层数组，将x的4个元素\[0 1 2 3]复制到新空间的开头，然后添加新的元素i，新元素的值是4。新的y的长度是5，容量是8；后面有3个空闲的位置，三次迭代都不需要分配新的空间。当前迭代中，y和x是对应不同底层数组的view。这次操作如图4.3所示。
 
-![](./assets/image/image_wDl7QZ-2hi.png)
+![](./assets/image/image_wDl7QZ-2hi.webp)
 
 **内置的append函数可能使用比appendInt更复杂的内存扩展策略。因此，通常我们并不知道append调用是否导致了内存的重新分配，因此我们也不能确认新的slice和原始的slice是否引用的是相同的底层数组空间**。同样，我们不能确认在原先的slice上的操作是否会影响到新的slice。因此，通常是将append返回的结果直接赋值给输入的slice变量：
 

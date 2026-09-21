@@ -110,7 +110,7 @@ docker push 192.168.11.254:8081/webdemo/goweb:20230515v2
 
 使用 -p 参数将本地主机的 80 端口映射到容器内部的 9090 端口，使用 -e 参数设置环境变量 PORT 的值为 9090，可以正常启动，说明在启动时已经覆盖掉了默认端口80，且能正常访问：
 
-![](./assets/image/image_lEgSIu5e8v.png)
+![](./assets/image/image_lEgSIu5e8v.webp)
 
 1. 创建configmap
 

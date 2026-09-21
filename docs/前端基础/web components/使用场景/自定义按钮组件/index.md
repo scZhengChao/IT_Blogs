@@ -6,7 +6,7 @@
 - 长期维护的项目，**避免因框架升级导致的组件重写**
 - 多团队协作，统一设计规范
 
-![](./assets/image/image_yKjMl_GfyF.png)
+![](./assets/image/image_yKjMl_GfyF.webp)
 
 ```html 
 <!DOCTYPE html>

@@ -251,7 +251,7 @@ exports.loadPkg = loadPkg
 
 ## 总结
 
-![](./assets/image/image_8IR-pHZ5R7.png)
+![](./assets/image/image_8IR-pHZ5R7.webp)
 
 浏览器支持原生 `type=module` 模块请求加载。`vue-dev-server` 对其拦截处理，返回浏览器支持内容，因为无需打包构建，所以速度很快。
 

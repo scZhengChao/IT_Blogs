@@ -34,11 +34,11 @@ eslint 是一个代码校验工具，用来规范项目代码风格。
 
 通过 `npm install eslint` 后使用 `npx eslint --init` 来根据问答生成 `.eslintrc.js` 配置文件。我的项目是 React + JavaScript，这里选择了 Airbnd 的规则来校验，不同的项目类型可以进行其它的选择。配置详细介绍可以参考这一篇 [规范代码编写风格就用 eslint 和 prettier](https://segmentfault.com/a/1190000041847944 "规范代码编写风格就用 eslint 和 prettier") 。
 
-![](./assets/image/image_Ges6rahsqV.png)
+![](./assets/image/image_Ges6rahsqV.webp)
 
 生成的 `.eslintrc.js` 文件包含当前 eslint 配置的规则，**在命令行中使用** `npx eslint ./xxx.js` 文件时，`eslint` 就会**读取项目的配置文件**对其内容进行匹配，如果没有配置文件，则会出现图中第一次执行的命令的回应。【Oops！Something went wrong! :( ，ESLint couldn't find a configuration file】
 
-![](./assets/image/image_eRXL_X0v7r.png)
+![](./assets/image/image_eRXL_X0v7r.webp)
 
 通过 `npx eslint` 可以检测出文件不符合规范的地方，增加 `--fix` 参数可以自动修复部分错误。但我们开发的过程中也很少会通过命令检测文件代码是否规范，如果有一个时刻检测代码，当代码出现问题标红提示，并且 ctrl + s 保存自动格式化的工具就好了！vscode 插件来满足你以上要求
 
@@ -108,7 +108,7 @@ module.exports = {
 
 在网络上找到一张 git hooks 执行流程图示，从 `git commit` 开始有一**些卡点，我们主要应用的钩子**是 `pre-commit`（通过eslint检测下是否有报错代码）、`commit-msg`（提交的message格式是否正确）
 
-![](./assets/image/image_FxSRcjkh7t.png)
+![](./assets/image/image_FxSRcjkh7t.webp)
 
 #### .git/hooks
 
@@ -116,7 +116,7 @@ module.exports = {
 
 这里修改了 `pre-commit` 的规则，为了演示直接设置校验指定文件，正常应该是检测使用 git add 添加到暂存区的文件，没有通过 eslint 校验时，则不会执行 git commit。
 
-![](./assets/image/image_L9HGGRMMqQ.png)
+![](./assets/image/image_L9HGGRMMqQ.webp)
 
 但我们发现，即使修改了 .git/hooks 文件夹下的文件，也不会显示文件修改，更没法将其添加到暂存区、本地仓库甚至到远程仓库，其他同事拉取代码后提交仍然不会有校验。
 
@@ -130,7 +130,7 @@ module.exports = {
 
 将 .git/hooks 文件中的 .sample 后缀恢复，git commit 校验仍然是生效的，表示我们自定义的 hooks 是成功执行的（更换了hook地址）。
 
-![](./assets/image/image_tQ7LGpVjt5.png)
+![](./assets/image/image_tQ7LGpVjt5.webp)
 
 如果希望达到共享的目的，将 .myhooks 文件夹推送到远程后，需要在协同开发者的笔记本都配置 `git config core.hooksPath .myhooks`，这一步无论是手动敲命令，还是通过工具都有些许麻烦，况且不同项目直接自定义的 `hooks` 文件还有可能不同，造成维护困难。
 
@@ -156,7 +156,7 @@ module.exports = {
 
 此时再执行 `git commit` 操作时，和前面我们看到的校验是一致的。其实 `husky` 的实现原理和我们自定义 `hooks` 的一致，通过命令行去改变执行 `git hooks` 的位置。
 
-![](./assets/image/image_TDgIjSb6Zo.png)
+![](./assets/image/image_TDgIjSb6Zo.webp)
 
 通过 `husky` **可以共享** `git hooks` 的校验规范，但是我们**应该对哪些文件进行校验呢？**
 
@@ -189,7 +189,7 @@ lint-staged 就可以实现**对于暂存区的检测。**
 
 **然后在 ****`.husky/pre-commit`**** 将 ****`npx eslint`**** 修改成 ****`npx lint-staged`****，再次执行 ****`git commit`**** 就可以 ****`eslint`**** 只对暂存区的文件进行校验。**
 
-![](./assets/image/image_5zJSpS79yf.png)
+![](./assets/image/image_5zJSpS79yf.webp)
 
 ### commitlint
 
@@ -217,7 +217,7 @@ module.exports = {
 
 再回到这张图，commit-msg 的钩子 是提交到本地库之前执行的，在这个阶段来校验 commit 信息是否符合规范比较合适。
 
-![](./assets/image/image_HXz7686M80.png)
+![](./assets/image/image_HXz7686M80.webp)
 
 在 `.husky` 文件夹下新增 `commit-msg` 文件，增加校验命令
 
@@ -231,7 +231,7 @@ npx --no -- commitlint --edit ${1}
 - commitment --edit <文件名>：执行 commitment 命令行工具，--edit 表示从文件中提取commmit内容
 - \$1：指向 .git/COMMIT\_EDITMSG 文件，这里存放着最后一次 commit 信息
 
-![](./assets/image/image_2bUefF0-y0.png)
+![](./assets/image/image_2bUefF0-y0.webp)
 
 以上便完成了对于 commit 注释内容的校验。我们在项目中常定义的文件类型，除了 js，\*\*还有 css \*\*，eslint 可以对 js / jsx / vue 等文件类型进行校验，**那么 css 也需要可以规范的工具。**
 
@@ -297,7 +297,7 @@ vscode 需要增加一些配置
 
 在提交文件时就可以看到对于 `css/scss` 等样式表的检测，如果报错会终止提交。
 
-![](./assets/image/image_OSPy7s7ELb.png)
+![](./assets/image/image_OSPy7s7ELb.webp)
 
 ### 总结
 

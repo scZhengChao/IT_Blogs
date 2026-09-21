@@ -23,7 +23,7 @@ SELECT 字段列表 FROM 表名 WHERE 条件列表;
 
 # 条件
 
-![](./assets/image/image_NtXomahszt.png)
+![](./assets/image/image_NtXomahszt.webp)
 
 # 注意
 

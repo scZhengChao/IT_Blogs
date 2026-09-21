@@ -120,7 +120,7 @@
 ```
 
 
-![  ](./assets/image/e02d87bad89613d291839364b46784b5_IJcmIIOsG-.png "  ")
+![  ](./assets/image/e02d87bad89613d291839364b46784b5_IJcmIIOsG-.webp "  ")
 
 ```纯文本 
  检查80端口是否被占用的命令是： netstat -ano | findstr 0.0.0.0:80 或 netstat -ano | findstr "80" 

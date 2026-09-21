@@ -72,7 +72,7 @@ public class HashSet<E> implements Set<E> {
 
 用一张图表示：
 
-![](./assets/image/image_YjxZL1VchI.png)
+![](./assets/image/image_YjxZL1VchI.webp)
 
 我们来看`HashSet`的输出：
 

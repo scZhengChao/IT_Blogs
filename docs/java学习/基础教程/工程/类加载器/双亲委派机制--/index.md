@@ -16,7 +16,7 @@
 
 **这种关系称为类加载器的"双亲委派模型"**
 
-![](./assets/image/image_xOnbRwJDOa.png)
+![](./assets/image/image_xOnbRwJDOa.webp)
 
 # "双亲委派模型"的工作机制：
 

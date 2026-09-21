@@ -83,4 +83,4 @@ public class SetDemo {
 
 ### 匿名内部类
 
-![](./assets/image/image_N1XZDS32nw.png)
+![](./assets/image/image_N1XZDS32nw.webp)

@@ -26,7 +26,7 @@
 
 ### 基本使用示例
 
-![](./assets/image/image_sA1d5K1mFo.png)
+![](./assets/image/image_sA1d5K1mFo.webp)
 
 ```html 
 <canvas id="canvas" width="500" height="200"></canvas>
@@ -73,7 +73,7 @@ ctx.fillText(`宽度: ${metrics.width.toFixed(1)}px`, 50, 80);
 
 ### 高级测量示例
 
-![](./assets/image/image_pP2g8-IvcP.png)
+![](./assets/image/image_pP2g8-IvcP.webp)
 
 ```html 
 <canvas id="canvas" width="600" height="300"></canvas>
@@ -125,7 +125,7 @@ if ('actualBoundingBoxAscent' in metrics) {
 
 ### 1. 文本居中显示
 
-![](./assets/image/image_J4F2Bgb7UH.png)
+![](./assets/image/image_J4F2Bgb7UH.webp)
 
 ```javascript 
 <canvas id="canvas" width="500" height="200"></canvas>
@@ -159,7 +159,7 @@ drawCenteredText('另一行居中文本', 100);
 
 ### 2. 文本自动缩放以适应宽度
 
-![](./assets/image/image_7-ikUNgoC6.png)
+![](./assets/image/image_7-ikUNgoC6.webp)
 
 ```javascript 
 <canvas id="canvas" width="500" height="200"></canvas>
@@ -203,7 +203,7 @@ ctx.fillText(`自动调整后的字体大小: ${optimalSize}px`, 50, 150);
 
 ### 3. 多行文本对齐
 
-![](./assets/image/image_Wke9gRrkiv.png)
+![](./assets/image/image_Wke9gRrkiv.webp)
 
 ```javascript 
 <canvas id="canvas" width="500" height="300"></canvas>

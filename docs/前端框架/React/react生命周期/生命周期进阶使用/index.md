@@ -33,7 +33,7 @@
 
 # 1. 生命周期图示（16.4）
 
-![  ](./assets/image/14cbd04cc37bcd24e6fbd6544261feba_XXoYRT2kbo.png "  ")
+![  ](./assets/image/14cbd04cc37bcd24e6fbd6544261feba_XXoYRT2kbo.webp "  ")
 
 # 2.加载时：
 

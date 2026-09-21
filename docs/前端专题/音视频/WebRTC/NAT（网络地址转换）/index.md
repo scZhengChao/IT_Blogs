@@ -33,10 +33,10 @@ ICE（Interactive Connectivity Establishment）交互式连接创建
 
 视频播放，需要进行换址操作
 
-![](./assets/image/image_UtwH43paZF.png)
+![](./assets/image/image_UtwH43paZF.webp)
 
 ### STUN的整个过程
 
-![](./assets/image/image_EglOjmLU1c.png)
+![](./assets/image/image_EglOjmLU1c.webp)
 
 首先我们的控制端，会先发起一个询址，然后我们的STUN服务会将这个洞打好，然后返回给我们的控制端，这个时候控制端就知道自己的外网的IP和端口，随后我们需要通过一定的介质然后给到傀儡端，这里面跟PeerConnection的SDP传输是一样的，你可以通过任何的介质来传输，像邮件、微信什么都可以，傀儡端拿到了IceEvent之后，它会通过addIceCandidate的方法添加我们的代理，这样的话，我们的傀儡端就知道控制端的一个外网IP了，类似的傀儡端也会拿到自己的IP和端口给到控制端，控制端添加ICE代理，这样子，我们的P2P才是真正的建立成功。

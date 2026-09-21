@@ -7,17 +7,17 @@
 
 # 数据类型
 
-![](./assets/image/image_Ox_07ektr9.png)
+![](./assets/image/image_Ox_07ektr9.webp)
 
-![](./assets/image/image_qV_KqrmqTW.png)
+![](./assets/image/image_qV_KqrmqTW.webp)
 
 #### 进制
 
-![](./assets/image/image_Z7ugCP3S4F.png)
+![](./assets/image/image_Z7ugCP3S4F.webp)
 
-![](./assets/image/image_x2ihRIIPrK.png)
+![](./assets/image/image_x2ihRIIPrK.webp)
 
-![](./assets/image/image_khTyGAsPUU.png)
+![](./assets/image/image_khTyGAsPUU.webp)
 
 - final 表示；大写；且不能 更改；
 

@@ -17,11 +17,11 @@ const titleVertex = graph.insertVertex(nodeRootVertex, null, title,
 
 对于**非输入的文本内容，默认情况下即便文本超出容器宽度也是不会换行的**。我们项目中宽度为 80 的 titleVertex 正是这样一个例子。
 
-![](./assets/image/image__Xhw1baPTl.png)
+![](./assets/image/image__Xhw1baPTl.webp)
 
 要设置换行需要做两件事，第一是通过**这行代码**[**mxGraph.setHtmlLabels(true)**](https://link.segmentfault.com/?enc=jHWQz9skYS17nkjYwVYHyw==.PMl4v37D767YxZYX5R7uy82PY+A16ZsNsceA+rTIfRuXXhB3o3MhFxmBRWlpJbWl1b4Nunn6gp0hGUJUAEk8K90pGV6FRN1YqoJycheDD0O8Idg7/o11xREts8y6y/42 "mxGraph.setHtmlLabels(true)")**，**使用 html 渲染文本(mxGraph 默认使用 svg的text 标签渲染文本)。第二是像上面的 titleVertex 的样式设置一样，**添加一句**[**whiteSpace=wrap**](https://link.segmentfault.com/?enc=IvddyWSWRUwNUHl0f1A0tw==.thF11kf4rHnlwt5182TMTwyeaGoN3MNEENcdaZAeb0VY2Ditd61Rb47VhM9xNe+ZMxH90yLVl7hMAMqqVvbAuzX/yrtcgAY4OaMNMoqdzoNdz3Z8PZG45i17HRWvwER9eN9+VssiiWhoxEeHLq+uvA== "whiteSpace=wrap")**。**
 
-![](./assets/image/image_ueSlYthfef.png)
+![](./assets/image/image_ueSlYthfef.webp)
 
 # demo
 

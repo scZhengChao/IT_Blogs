@@ -28,7 +28,7 @@
 
  为了更直观的感受 Blob 对象，我们先来使用 Blob 构造函数，创建一个 myBlob 对象，具体如下图所示：
 
-![  ](./assets/image/f9123841f757e4f3b1eb306a6b11f6b2_P92PBuc5Y7.png "  ")
+![  ](./assets/image/f9123841f757e4f3b1eb306a6b11f6b2_P92PBuc5Y7.webp "  ")
 
     如你所见，myBlob 对象含有两个属性：**size 和 type**。其中**size属性用于表示数据的大小（以字节为单位）**，**type是 MIME 类型的字符串**。Blob 表示的不一定是 JavaScript 原生格式的数据。比如\*\*File接口基于 \*\***Blob**，**继承了 blob 的功能并将其扩展使其支持用户系统上的文件。**
 
@@ -36,7 +36,7 @@
 
     Blob由一个可选的字符串 type（通常是 MIME 类型）和 blobParts组成：
 
-![  ](./assets/image/2a4eabe6be21401bcf2544862633a460_ibADzJn111.png "  ")
+![  ](./assets/image/2a4eabe6be21401bcf2544862633a460_ibADzJn111.webp "  ")
 
     MIME（Multipurpose Internet Mail Extensions）多用途互联网邮件扩展类型，是设定**某种扩展名的文件用一种应用程序来打开的方式类型，**当**该扩展名文件被访问的时候，浏览器会自动使用指定应用程序来打开**。多用于指定一些客户端自定义的文件名，以及一些媒体文件打开方式。
 
@@ -83,7 +83,7 @@
 
 介绍完 Blob 构造函数，接下来我们来分别介绍 Blob 类的属性和方法：
 
-![  ](./assets/image/cace41e2c1e2f05f8171145c1e04cbe7_HupRebilfc.png "  ")
+![  ](./assets/image/cace41e2c1e2f05f8171145c1e04cbe7_HupRebilfc.webp "  ")
 
 **2.2 属性**
 

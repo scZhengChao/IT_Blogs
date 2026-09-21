@@ -747,11 +747,11 @@ client.debug = null
 
 [**收藏该文**](# "收藏该文")
 
-![  ](./assets/image/icon_weibo_24_RMtr5mylzR.png "  ")
+![  ](./assets/image/icon_weibo_24_RMtr5mylzR.webp "  ")
 
-![  ](./assets/image/wechat_g9FxNJZyFS.png "  ")
+![  ](./assets/image/wechat_g9FxNJZyFS.webp "  ")
 
-![  ](./assets/image/20190614200300_J19Qw7z4xV.png "  ")
+![  ](./assets/image/20190614200300_J19Qw7z4xV.webp "  ")
 
 [古兰精](https://home.cnblogs.com/u/goloving/ "古兰精")
 

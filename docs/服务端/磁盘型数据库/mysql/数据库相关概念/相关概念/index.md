@@ -21,11 +21,11 @@ SQL
 - \*\*定义操作所有关系型数据库的统一标准
   \*\*​
 
-![](./assets/image/image_6j-brWrEin.png)
+![](./assets/image/image_6j-brWrEin.webp)
 
 常见的关系型数据库管理系统
 
-![](./assets/image/image_LhfTAiIRrP.png)
+![](./assets/image/image_LhfTAiIRrP.webp)
 
 - Oracle：收费的大型数据库，Oracle 公司的产品
 - MySQL： **开源免费的中小型数据库。** 后来 Sun公司收购了 MySQL，而 Sun 公司又被 Oracle 收购

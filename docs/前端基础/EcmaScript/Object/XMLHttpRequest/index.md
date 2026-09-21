@@ -15,7 +15,7 @@
 
 附上一张 timing 图
 
-![  ](./assets/image/eece31134324e363bbddde6e540605d0_vJethRRgkn.png "  ")
+![  ](./assets/image/eece31134324e363bbddde6e540605d0_vJethRRgkn.webp "  ")
 
 ```javascript 
     send(){

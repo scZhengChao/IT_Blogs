@@ -31,7 +31,7 @@ TCP运输连接有以下三个阶段：
 
 TCP的运输连接管理就是使运输连接的建立和释放都能正常的进行。
 
-![](./assets/image/image_h2DoFBP3o2.png)
+![](./assets/image/image_h2DoFBP3o2.webp)
 
 ## 2、TCP首部格式
 
@@ -86,7 +86,7 @@ TCP 建立连接的过程叫做**握手**，握手需要在客户和服务器之
 
 **一开始，TCP服务器进程首先创建传输控制块，用来存储TCP连接中的一些重要信息。** 例如TCP连接表、指向发送和接收缓存的指针、指向重传队列的指针，当前的发送和接收序号等。之后就准备接受TCP客户进程的连接请求， 此时TCP服务器进程就要进入监听状态等待TCP客户进程的连接请求。
 
-![](./assets/image/image_jRgN0AgFuo.png)
+![](./assets/image/image_jRgN0AgFuo.webp)
 
 **TCP客户进程也是首先创建传输控制块，然后再打算建立。**  TCP服务器进程是被动等待来自TCP客户端进程的连接请求，因此称为被动打开连接。
 
@@ -192,7 +192,7 @@ TCP，名为传输控制协议，是一种可靠的传输层协议，IP协议号
 
 顺便说一句，原则上任何数据传输都**无法确保绝对可靠**，三次握手只是**确保可靠的基本需要**。
 
-![](./assets/image/image_KgAfLlt9Lh.png)
+![](./assets/image/image_KgAfLlt9Lh.webp)
 
 # 关于四次挥手
 
@@ -204,7 +204,7 @@ TCP，名为传输控制协议，是一种可靠的传输层协议，IP协议号
 
 当客户端收到服务器端的FIN是，回复一个ACK给服务器端。其中ack的值等于FIN+SEQ
 
-![](./assets/image/image_isQitlh0le.png)
+![](./assets/image/image_isQitlh0le.webp)
 
 # 为什么要4次挥手？
 

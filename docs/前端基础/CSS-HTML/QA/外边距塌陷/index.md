@@ -31,6 +31,6 @@
 3. 父元素的**overflow**为**auto**或**scroll**或**hidden**
 4. 父元素的**display**的值为**table-cell**或**inline-block**
 
-![](./assets/image/image_OItAGis4Cc.png)
+![](./assets/image/image_OItAGis4Cc.webp)
 
-![](./assets/image/image_RP4qT5ZGL5.png)
+![](./assets/image/image_RP4qT5ZGL5.webp)

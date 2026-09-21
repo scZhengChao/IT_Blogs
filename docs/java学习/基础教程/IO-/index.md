@@ -2,7 +2,7 @@
 
 > 磁盘： **是一块连续存储的介质**;  分盘只是逻辑上的处理；其实也还是一块磁盘；
 
-![](./assets/image/image_M4L_IDkBsc.png)
+![](./assets/image/image_M4L_IDkBsc.webp)
 
 [File](./File/index.md "File")
 

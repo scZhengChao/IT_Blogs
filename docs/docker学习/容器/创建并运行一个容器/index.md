@@ -22,8 +22,8 @@ docker run --name containerName -p 80:80 -d nginx
 
 现在，将容器的80与宿主机的80关联起来，当我们访问宿主机的80端口时，就会被映射到容器的80，这样就能访问到nginx了：
 
-![](./assets/image/image_tFWJsdXCpz.png)
+![](./assets/image/image_tFWJsdXCpz.webp)
 
 浏览器直接访问：
 
-![](./assets/image/image_HfPg_xXZUB.png)
+![](./assets/image/image_HfPg_xXZUB.webp)

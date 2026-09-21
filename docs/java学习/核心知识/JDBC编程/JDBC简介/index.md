@@ -59,15 +59,15 @@ Lisa,87
 
 假设某个XX省YY市ZZ县第一实验小学有3个年级，要表示出这3个年级，可以在Excel中用一个表格画出来：
 
-![](./assets/image/image_8mcU-Gyle-.png)
+![](./assets/image/image_8mcU-Gyle-.webp)
 
 每个年级又有若干个班级，要把所有班级表示出来，可以在Excel中再画一个表格：
 
-![](./assets/image/image_ZUdfLvQjjS.png)
+![](./assets/image/image_ZUdfLvQjjS.webp)
 
 这两个表格有个映射关系，就是根据Grade\_ID可以在班级表中查找到对应的所有班级：
 
-![](./assets/image/image_KnI0rfx79i.png)
+![](./assets/image/image_KnI0rfx79i.webp)
 
 也就是Grade表的每一行对应Class表的多行，在关系数据库中，**这种基于表（Table）的一对多的关系就是关系数据库的基础**。
 
@@ -89,7 +89,7 @@ SELECT * FROM classes WHERE grade_id = '1';
 
 类似的，Class表的一行记录又可以关联到Student表的多行记录：
 
-![](./assets/image/image_QqIRWKAenS.png)
+![](./assets/image/image_QqIRWKAenS.webp)
 
 由于本教程不涉及到关系数据库的详细内容，如果你想从零学习关系数据库和基本的SQL语句，请参考[SQL课程](https://liaoxuefeng.com/books/sql/index.html "SQL课程")。
 
@@ -176,15 +176,15 @@ mysql> show variables like '%char%';
 
 例如，我们在Java代码中如果要访问MySQL，那么必须编写代码操作JDBC接口。**注意到JDBC接口是Java标准库自带的，所以可以直接编译。**而具体的**JDBC驱动是由数据库厂商提供的**，例如，MySQL的JDBC驱动由Oracle提供。因此，访问某个具体的数据库，**我们只需要引入该厂商提供的JDBC驱动**，就可以通过JDBC接口来访问，**这样保证了Java程序编写的是一套数据库访问代码，却可以访问各种不同的数据库，因为他们都提供了标准的JDBC驱动：**
 
-![](./assets/image/image_OBjNQNmSFV.png)
+![](./assets/image/image_OBjNQNmSFV.webp)
 
 从代码来看，**Java标准库自带的JDBC接口其实就是定义了一组接口，而某个具体的JDBC驱动其实就是实现了这些接口的类**：
 
-![](./assets/image/image_-Ur1uThI1v.png)
+![](./assets/image/image_-Ur1uThI1v.webp)
 
 实际上，**一个MySQL的JDBC的驱动就是一个jar包，它本身也是纯Java编写的**。我们自己编写的代码只需要引用Java标准库提供的java.sql包下面的相关接口，由此再间接地通过MySQL驱动的jar包通过网络访问MySQL服务器，**所有复杂的网络通讯都被封装到JDBC驱动**中，因此，Java程序本身只需要**引入一个MySQL驱动的jar包**就可以正常访问MySQL服务器：
 
-![](./assets/image/image_1tjkYZ-lZT.png)
+![](./assets/image/image_1tjkYZ-lZT.webp)
 
 ### 小结
 

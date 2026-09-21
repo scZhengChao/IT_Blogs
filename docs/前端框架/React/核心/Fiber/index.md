@@ -126,7 +126,7 @@
 
 接下来我们看看`fiber`中保存了什么，如：
 
-![](./assets/image/image_2pmnjnekdf.png)
+![](./assets/image/image_2pmnjnekdf.webp)
 
 然后简单的分为四个部分，分别是`Instance`、`Fiber`、`Effect`、`Priority`
 

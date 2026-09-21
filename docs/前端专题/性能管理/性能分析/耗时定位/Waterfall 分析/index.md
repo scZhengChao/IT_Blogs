@@ -20,7 +20,7 @@
     - [（5）JS 文件本身的问题（加载后解析 / 执行耗时）](#5JS-文件本身的问题加载后解析--执行耗时)
   - [3. 第三步：辅助工具（进阶分析）](#3-第三步辅助工具进阶分析)
 
-![](./assets/image/image_6WVBaAx1tr.png)
+![](./assets/image/image_6WVBaAx1tr.webp)
 
 ## **关键性能指标分析**
 
@@ -85,7 +85,7 @@
 
 #### 1. 第一步：用浏览器 DevTools 定位核心耗时阶段
 
-![](./assets/image/image_ucayyyY2nP.png)
+![](./assets/image/image_ucayyyY2nP.webp)
 
 这是最直接的工具，几乎能定位 80% 的问题：
 
@@ -150,7 +150,7 @@ TTFB 是从发送请求到收到第一个字节的时间，长 TTFB 是 30 秒�
 - 性能监控：Lighthouse（Chrome 内置）→ 生成性能报告，直接指出 JS 加载的问题；
 - 服务器层面：查看 Nginx/Apache 的访问日志，确认 index.js 的请求是否有超时、限流。
 
-![](./assets/image/image_ucayyyY2nP.png)
+![](./assets/image/image_ucayyyY2nP.webp)
 
 | 字段名称                        | 作用说明                        | 该案例耗时    | 状态判断           |
 | --------------------------- | --------------------------- | -------- | -------------- |

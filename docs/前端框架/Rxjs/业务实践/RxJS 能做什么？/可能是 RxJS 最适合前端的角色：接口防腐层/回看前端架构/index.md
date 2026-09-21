@@ -6,7 +6,7 @@
 
 纵观整个前端开发工程体系，最复杂多变不稳定的模块就是来自于与外部应用的交互，无论是 HTTP、WeboSocket 等接口调用方面，需要处理超时重试、去重、防抖、竟态等等，还是接口的更迭导致的不兼容，或者需要兼容多套接口等。这些与外部应用的交互状态如果处理的不好，则会影响我们前端的根基：View 层面的内容。
 
-![](./assets/image/image_iYD2N8nzEd.png)
+![](./assets/image/image_iYD2N8nzEd.webp)
 
 > 图片来自 2021 DevFest 杭州：如何使用 RxJS 构建稳健的前端应用[www.zhihu.com/zvideo/1458…](https://link.juejin.cn?target=https://www.zhihu.com/zvideo/1458183228482318336%EF%BC%8C%E4%BE%B5%E6%9D%83%E5%88%A0%E3%80%82 "www.zhihu.com/zvideo/1458…")
 
@@ -79,7 +79,7 @@ app.get("/api/v3/memory", function (req, res) {
 
 1. 当我们维护一个平台型 toB 应用时，除了服务端的 API，可能还需要对接各种平台的 API，比如云平台的 CEF 的 API，或者使用的 Slardar/Tea API，使用的 Oner 的 API 等，然后这些 API 也可能存在字段更高、调用方式的改变，多版本共存的情况，这就会让我们前端维护的外部状态变得非常复杂
 
-![](./assets/image/image_ubiEDwx1L0.png)
+![](./assets/image/image_ubiEDwx1L0.webp)
 
 > 图片来自 2021 DevFest 杭州：如何使用 RxJS 构建稳健的前端应用[www.zhihu.com/zvideo/1458…](https://link.juejin.cn?target=https://www.zhihu.com/zvideo/1458183228482318336%EF%BC%8C%E4%BE%B5%E6%9D%83%E5%88%A0%E3%80%82 "www.zhihu.com/zvideo/1458…")
 
@@ -87,4 +87,4 @@ app.get("/api/v3/memory", function (req, res) {
 
 当我们在前端架构设计中，如果没有对接口进行合理的架构设计，让接口的逻辑与 UI 逻辑混淆在一起, 那么接口的改动可能引起我们整个应用的崩溃。
 
-![](./assets/image/image_Ldd56V2FFA.png)
+![](./assets/image/image_Ldd56V2FFA.webp)

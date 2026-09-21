@@ -30,7 +30,7 @@ docker build -t cmd-test -f 444.Dockerfile .
 ```
 
 
-![](./assets/image/image_3N7-_m2bhz.png)
+![](./assets/image/image_3N7-_m2bhz.webp)
 
 然后 run 一下：
 

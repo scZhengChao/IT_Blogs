@@ -26,7 +26,7 @@ Zookeeper提供**分布式协调服务，在分布式系统中常被用于配置
 
 实际开发过程中建议使用Apache Curator来替代Zookeeper原生客户端库，Apache Curator通过封装Zookeeper原生API，提供更高抽象层次API让Zookeeper使用起来更加容易和可靠，而且提供专用于实现服务发现的API。
 
-![](./assets/image/image_P2CzHAUE89.png)
+![](./assets/image/image_P2CzHAUE89.webp)
 
 #### Etcd
 
@@ -40,6 +40,6 @@ Consul是一个成熟的服务发现解决方案。其核心是一个基于Raft�
 
 Gossip协议常用于集群组关系管理和故障检测，每个节点都通过一个或多个引导节点加入集群，引导节点有集群中所有节点列表，每个节点都从自己所知节点列表中随机选择一组节点周期性地发送多播消息，最终集群中所有节点都能知道其他节点。这个过程看起来很神奇，实际上Gossip协议能在几秒内将消息传遍有上百节点的集群。Akka、Riak、Cassandra都使用Gossip协议维护集群成员列表和故障探测。
 
-![](./assets/image/image_mEbKWadL7a.png)
+![](./assets/image/image_mEbKWadL7a.webp)
 
 此外Consul和Etcd都非常适合容器环境，因为Docker容器启动、停止都会发送事件（Event），基于事件通知机制非常便于将服务实例从Consul或Etcd上注册、注销。

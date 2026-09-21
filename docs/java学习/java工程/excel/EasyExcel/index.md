@@ -33,7 +33,7 @@
 
 官网地址：[https://www.yuque.com/easyexcel/doc/easyexcel](https://www.yuque.com/easyexcel/doc/easyexcel "https://www.yuque.com/easyexcel/doc/easyexcel")
 
-![](./assets/image/image_2OoV8ss1mw.png)
+![](./assets/image/image_2OoV8ss1mw.webp)
 
 依赖资源：
 
@@ -51,7 +51,7 @@
 
 ### 1.2 Excel相关结构说明
 
-![](./assets/image/image_m_DLbLA1Al.png)
+![](./assets/image/image_m_DLbLA1Al.webp)
 
 ## 2、EasyExcel导出数据快速入门
 
@@ -132,7 +132,7 @@ public class TestEasyExcel {
 ```
 
 
-![](./assets/image/image_V_vkAddcDs.png)
+![](./assets/image/image_V_vkAddcDs.webp)
 
 ### 2.3 自定义表头
 
@@ -174,7 +174,7 @@ public class User implements Serializable {
 ```
 
 
-![](./assets/image/image_n-K5AIsw-N.png)
+![](./assets/image/image_n-K5AIsw-N.webp)
 
 ## 3、EasyExcel导出数据高级设置
 
@@ -217,7 +217,7 @@ public class User implements Serializable {
 ```
 
 
-![](./assets/image/image_Iyp0TjhXIz.png)
+![](./assets/image/image_Iyp0TjhXIz.webp)
 
 ### 3.2 合并表头
 
@@ -263,7 +263,7 @@ public class User implements Serializable {
 
 效果：
 
-![](./assets/image/image_x1wmHyxDYl.png)
+![](./assets/image/image_x1wmHyxDYl.webp)
 
 ### 3.3 忽略指定表头信息
 
@@ -295,7 +295,7 @@ public class User implements Serializable {
 
 效果：
 
-![](./assets/image/image_ksjYaB3Ksv.png)
+![](./assets/image/image_ksjYaB3Ksv.webp)
 
 ### 3.4 设置单元格大小
 
@@ -325,7 +325,7 @@ public class User implements Serializable {
 
 效果：
 
-![](./assets/image/image_t_HtR3O-2P.png)
+![](./assets/image/image_t_HtR3O-2P.webp)
 
 ## 4、EasyExcel导入数据
 

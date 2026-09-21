@@ -44,19 +44,19 @@
 
 ![  ](./assets/image/webp_7ZL4NSkuOE.webp "  ")
 
-![  ](./assets/image/9e74e7e3de210d3aaf0a6e87e158fdbc_9hBfUUywAb.png "  ")
+![  ](./assets/image/9e74e7e3de210d3aaf0a6e87e158fdbc_9hBfUUywAb.webp "  ")
 
 将所必填的信息填写完整，应用名称以及中英文（英文是选填的）的信息，移动应用图标分别为28x28何108x108的png格式图标。
 
-![  ](./assets/image/10fbdacd177370ecdde67609459e85bb_vGWqUMQUDa.png "  ")
+![  ](./assets/image/10fbdacd177370ecdde67609459e85bb_vGWqUMQUDa.webp "  ")
 
 继续点击下一步填写iOS项目的bundle ID以及android项目的包名和应用签名。请注意应用签名获取需要安装一下获取签名信息的APK包，同时你的android应用也需要打包以后安装在手机上面，这样再去获取。具体获取方式见下面的图
 
-![  ](./assets/image/79b4176902f5db8f70d0ea66e0458944_Myle4D7ebU.png "  ")
+![  ](./assets/image/79b4176902f5db8f70d0ea66e0458944_Myle4D7ebU.webp "  ")
 
 下载获取第三方应用的签名信息apk
 
-![  ](./assets/image/7f2247d7c33cf75b15731e5daba3433b_-j2iuEJTmy.png "  ")
+![  ](./assets/image/7f2247d7c33cf75b15731e5daba3433b_-j2iuEJTmy.webp "  ")
 
 下载安装上面的签名信息包apk,然后在上面输入android项目的包名，点击获取签名信息
 
@@ -66,7 +66,7 @@ android项目的包名路径:android/app/build.gradle中的applicationId标签�
 
 把上面的签名信息填写到下面的网页上面,点击提交审核即可。然后就是等待吧，官方说是7个工作日，不过一般也就是几个小时就可以通过审核了吧。
 
-![  ](./assets/image/b6b59fc58a9ebe3aee31c78761842c5e_QxiGTYPD4Q.png "  ")
+![  ](./assets/image/b6b59fc58a9ebe3aee31c78761842c5e_QxiGTYPD4Q.webp "  ")
 
 # 安装配置
 

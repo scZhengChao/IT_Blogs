@@ -12,7 +12,7 @@
 
 你可以想得到的是，全世界有上百种语言，日本把日文编到`Shift_JIS`里，韩国把韩文编到`Euc-kr`里，各国有各国的标准，就会不可避免地出现冲突，结果就是，在多语言混合的文本中，显示出来会有乱码。
 
-![](./assets/image/image_wp1oP6UFP2.png)
+![](./assets/image/image_wp1oP6UFP2.webp)
 
 因此，Unicode字符集应运而生。Unicode把所有语言都统一到一套编码里，这样就不会再有乱码问题了。
 
@@ -45,11 +45,11 @@ Unicode标准也在不断发展，**但最常用的是UCS-16编码**，**用两�
 
 用记事本编辑的时候，从文件读取的UTF-8字符被转换为Unicode字符到内存里，编辑完成后，保存的时候再把Unicode转换为UTF-8保存到文件：
 
-![](./assets/image/image_-Vz_YyZg4b.png)
+![](./assets/image/image_-Vz_YyZg4b.webp)
 
 浏览网页的时候，服务器会把动态生成的`Unicode`内容转换为`UTF-8`再传输到浏览器：
 
-![](./assets/image/image_haynYwDFYJ.png)
+![](./assets/image/image_haynYwDFYJ.webp)
 
 所以你看到很多网页的源码上会有类似`<meta charset="UTF-8" />`的信息，表示该网页正是用的UTF-8编码。
 
@@ -199,13 +199,13 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xff in position 3: invalid 
 
 如果`.py`文件**本身使用UTF-8编码，并且也申明**了`# -*- coding: utf-8 -*-`，打开命令提示符测试就可以正常显示中文：
 
-![](./assets/image/image_5dQ0bgCth5.png)
+![](./assets/image/image_5dQ0bgCth5.webp)
 
 ### 格式化
 
 最后一个常见的问题是如何输出格式化的字符串。我们经常会输出类似`'亲爱的xxx你好！你xx月的话费是xx，余额是xx'`之类的字符串，而xxx的内容都是根据变量变化的，所以，**需要一种简便的格式化字符串的方式。**
 
-![](./assets/image/image_5OCbFOLvoW.png)
+![](./assets/image/image_5OCbFOLvoW.webp)
 
 在`Python`中，采用的格式化方式和C语言是一致的，用`%`实现，举例如下：
 

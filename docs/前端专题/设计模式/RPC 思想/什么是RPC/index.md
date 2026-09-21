@@ -99,7 +99,7 @@ interface Protocol {
 
 接下来的问题就是怎么组合使用这两个模型了。一般来说，**根据人的习惯，都是先想好说什么然后再开口说话的，所以我们把 Protocol 模型放在 Connection 模型之前，** 就可以得到如下的一条调用路径：
 
-![](./assets/image/image_Qd64hY13Ji.png)
+![](./assets/image/image_Qd64hY13Ji.webp)
 
 上面的调用路径虽然看起来简洁，但太过于简单，并没有说明具体是怎样的调用方式。而在实际的 RPC 调用中，可能会存在多种调用方式，比如：TCP Socket 随意读写，HTTP 一次 Request 对应一次 Response，HTTP2 一次 Request 对应多次 Response，所以这里必定还缺了些什么东西来抽象这些具体的 RPC 调用方式。在这里我们使用 Handle 来作为**调用方式**的模型抽象，它代表的是一次 RPC 该如何去调用，其模型如下：
 
@@ -112,7 +112,7 @@ interface Handle {
 
 这样就可以将调用路径改成如下的形式：
 
-![](./assets/image/image_8bnE5n7ivb.png)
+![](./assets/image/image_8bnE5n7ivb.webp)
 
 到这里我们就可以根据上面的调用路径写一下伪代码了，伪代码如下：
 

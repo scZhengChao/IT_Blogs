@@ -367,4 +367,4 @@ $(function () {
 ```
 
 
-![](./assets/image/image_d6_0az2GzD.png)
+![](./assets/image/image_d6_0az2GzD.webp)

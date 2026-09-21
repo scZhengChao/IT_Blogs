@@ -34,7 +34,7 @@ const insertVertex = (dom) => {
 
 因为**默认情况下一个节点只能有一个文本区和一个图片区**，要增加额外的文本和图片就需要组合节点。在`nodeRootVertex`上加上`titleVertex`文本节点和`normalTypeVertex`图片节点，最终达到这个效果。
 
-![](./assets/image/image_jm4GGuCKU5.png)
+![](./assets/image/image_jm4GGuCKU5.webp)
 
 有时需要为不同子节点设置不同的鼠标悬浮图标，如本项目鼠标悬浮到`normalTypeVertex`时鼠标变为手形，参考 AppCanvas.vue 的 setCursor 方法，重写`mxGraph.prototype.getCursorForCell`可以实现这个功能。
 

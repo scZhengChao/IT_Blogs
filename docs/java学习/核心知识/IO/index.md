@@ -20,19 +20,19 @@ O是指Input/Output，即输入和输出。以内存为中心：
 
 IO流是一种顺序读写数据的模式，它的特点是单向流动。数据类似自来水一样在水管中流动，所以我们把它称为IO流。
 
-![](./assets/image/image_faG0ZQRmdJ.png)
+![](./assets/image/image_faG0ZQRmdJ.webp)
 
 ### InputStream / OutputStream
 
 IO流以`byte`（字节）为最小单位，因此也称为\_字节流\_。例如，我们要从磁盘读入一个文件，包含6个字节，就相当于读入了6个字节的数据：
 
-![](./assets/image/image_MpOQHN4QTY.png)
+![](./assets/image/image_MpOQHN4QTY.webp)
 
 这6个字节是按顺序读入的，所以是输入字节流。
 
 反过来，我们把6个字节从内存写入磁盘文件，就是输出字节流：
 
-![](./assets/image/image_0Er_6J6rhK.png)
+![](./assets/image/image_0Er_6J6rhK.webp)
 
 在Java中，`InputStream`代表输入字节流，`OuputStream`代表输出字节流，这是最基本的两种IO流。
 

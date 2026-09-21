@@ -13,4 +13,4 @@ Development 是用于**管理副本集和容器配置**的。K8S 不建议用户
 
 `Deployment`用于管理`Pod`、`ReplicaSet`，可实现**滚动升级和回滚应用、扩容和缩容**。
 
-![](./assets/image/image_cJrb_o90yS.png)
+![](./assets/image/image_cJrb_o90yS.webp)

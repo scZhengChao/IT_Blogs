@@ -1,6 +1,6 @@
 # css函数大全
 
-![](./assets/image/image_F0G6Fj0LpD.png)
+![](./assets/image/image_F0G6Fj0LpD.webp)
 
 [基础](./基础/index.md "基础")
 

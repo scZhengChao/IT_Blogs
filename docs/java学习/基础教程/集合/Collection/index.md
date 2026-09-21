@@ -7,7 +7,7 @@
 
 # 常用方法
 
-![](./assets/image/image_4uEDyJQa3l.png)
+![](./assets/image/image_4uEDyJQa3l.webp)
 
 # 特点
 

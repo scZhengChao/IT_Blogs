@@ -115,7 +115,7 @@ export default function () {
 
 再次打包 `rollup -c`，发现有报错 `(!) Unresolved dependencies`：
 
-![](./assets/image/image_04tRwZd7eH.png)
+![](./assets/image/image_04tRwZd7eH.webp)
 
 这是因为当项目中引入外部资源时，如 npm 包，`rollup` 不知道如何打破常规去处理这些依赖。
 
@@ -438,7 +438,7 @@ export default {
 ```
 
 
-![](./assets/image/image_uqH5mHTLcb.png)
+![](./assets/image/image_uqH5mHTLcb.webp)
 
 #### 5.3 css 压缩
 
@@ -472,7 +472,7 @@ export default {
 ```
 
 
-![](./assets/image/image_OZPKYynlQA.png)
+![](./assets/image/image_OZPKYynlQA.webp)
 
 #### 5.4 抽离单独的 css 文件
 
@@ -492,7 +492,7 @@ export default [
 ```
 
 
-![](./assets/image/image_w8b1HJwvrv.png)
+![](./assets/image/image_w8b1HJwvrv.webp)
 
 ### 6. 引入 Typescript 资源
 
@@ -531,7 +531,7 @@ export default [
 
 成功支持 Ts 文件导出：
 
-![](./assets/image/image_OcUXtFTziF.png)
+![](./assets/image/image_OcUXtFTziF.webp)
 
 #### 6.2 导出类型声明文件
 
@@ -555,7 +555,7 @@ export default [
 
 成功支持类型声明文件导出：
 
-![](./assets/image/image_1EokHZc2Oi.png)
+![](./assets/image/image_1EokHZc2Oi.webp)
 
 ### 7. 打包产物清除调试代码
 

@@ -320,7 +320,7 @@ const router = createRouter({
 
 我们也有可能使用命名视图创建嵌套视图的复杂布局。这时你也需要命名用到的嵌套 `router-view` 组件。我们以一个设置面板为例：
 
-![](./assets/image/image_CF8dpxihrw.png)
+![](./assets/image/image_CF8dpxihrw.webp)
 
 - `Nav` 只是一个常规组件。
 - `UserSettings` 是一个视图组件。

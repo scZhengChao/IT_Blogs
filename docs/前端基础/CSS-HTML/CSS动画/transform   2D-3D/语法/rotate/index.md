@@ -7,7 +7,7 @@
 
 > 注：x/y/z 取0,1之间的数值，代表元素围绕x/y/z轴的旋转的矢量值，0表示x/y/z轴方向不旋转，1反之，+/-表示方向。
 
-![](./assets/image/image_w5wFTcdrVm.png)
+![](./assets/image/image_w5wFTcdrVm.webp)
 
 ```css 
 transform: rotate(angle);   

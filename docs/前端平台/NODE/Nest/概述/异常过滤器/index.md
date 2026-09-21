@@ -2,7 +2,7 @@
 
 **内置的异常层**负责处理**整个应用程序中的所有抛出的异常**。当捕获到未处理的异常时，最终用户将收到友好的响应。
 
-![](./assets/image/image_I45TzTsA81.png)
+![](./assets/image/image_I45TzTsA81.webp)
 
 **开箱即用，此操作由内置的全局异常过滤器执行**，该过滤器处理类型 `HttpException`（及其子类）的异常。每个发生的异常都由全局异常过滤器处理, 当这个异常**无法被识别**时 (既不是 `HttpException` 也不是继承的类 `HttpException` ) , 用户将收到以下 `JSON` 响应:
 

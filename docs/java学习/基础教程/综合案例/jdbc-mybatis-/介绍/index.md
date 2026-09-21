@@ -18,11 +18,11 @@
 
 ### 2、案例效果
 
-![](./assets/image/image_uGf4FpU5WC.png)
+![](./assets/image/image_uGf4FpU5WC.webp)
 
-![](./assets/image/image_vkJQP-hWRi.png)
+![](./assets/image/image_vkJQP-hWRi.webp)
 
-![](./assets/image/image_f66EPkvGDX.png)
+![](./assets/image/image_f66EPkvGDX.webp)
 
 使用到的技术：
 

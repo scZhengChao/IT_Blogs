@@ -69,7 +69,7 @@
 ```
 
 
-![  ](./assets/image/29488254c745ed024f4821ea76aecd0a_ddHzi0725s.png "  ")
+![  ](./assets/image/29488254c745ed024f4821ea76aecd0a_ddHzi0725s.webp "  ")
 
 **18.多进程/多实例构建（打包速度）**
 
@@ -101,7 +101,7 @@
 ```
 
 
-![  ](./assets/image/f757d0cc4ffd245f3e2916aaac42c603_44hPNjD22I.png "  ")
+![  ](./assets/image/f757d0cc4ffd245f3e2916aaac42c603_44hPNjD22I.webp "  ")
 
 ```纯文本 
  // webpack.config.js 
@@ -267,7 +267,7 @@
 ```
 
 
-![  ](./assets/image/5e674b635a7d893267a0a6f130d792ba_a_SU-iFyU0.png "  ")
+![  ](./assets/image/5e674b635a7d893267a0a6f130d792ba_a_SU-iFyU0.webp "  ")
 
 ```纯文本 
  主要在两块配置，分别是 webpack.dll.js 和 webpack.config.js （对应这里我是webpack.base.js）
@@ -512,14 +512,14 @@
 ```
 
 
-![  ](./assets/image/1b3a091b552c8dabb19b4a513fd01beb_QG_mNqtkQa.png "  ")
+![  ](./assets/image/1b3a091b552c8dabb19b4a513fd01beb_QG_mNqtkQa.webp "  ")
 
 ```纯文本 
  介于上述原因，动态Polyfill服务诞生了。通过一张图来了解下Polyfill Service的原理
 ```
 
 
-![  ](./assets/image/ffe583ec20a8022b4499342712718e4a_xgbKIsQXLI.png "  ")
+![  ](./assets/image/ffe583ec20a8022b4499342712718e4a_xgbKIsQXLI.webp "  ")
 
 ```纯文本 
  每次打开页面，浏览器都会向Polyfill Service发送请求，Polyfill Service识别 User Agent，下发不同的 Polyfill，做到按需加载Polyfill的效果。

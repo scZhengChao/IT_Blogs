@@ -2,7 +2,7 @@
 
 在理解了`BehaviorSubject`之后再来理解`ReplaySubject`就比较轻松了，`ReplaySubject`会**保存所有值，然后回放给新的订阅者**，同时它提供了**入参用于控制重放值的数量**（默认重放所有）。
 
-![](./assets/image/image_u483JqpSvz.png)
+![](./assets/image/image_u483JqpSvz.webp)
 
 什么？还不理解？看码：
 

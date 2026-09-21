@@ -20,7 +20,7 @@
 
 由于 Vue 不允许动态添加根级响应式属性，所以你必须在初始化实例前声明所有根级响应式属性，
 
-![  ](./assets/image/607f3da51d9525ee660801a0209d32bb_9AWnLJ8lla.png "  ")
+![  ](./assets/image/607f3da51d9525ee660801a0209d32bb_9AWnLJ8lla.webp "  ")
 
 **4.this.forceUpdate()   强制刷新**
 

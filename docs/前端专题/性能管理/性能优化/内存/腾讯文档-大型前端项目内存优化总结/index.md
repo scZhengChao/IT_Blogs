@@ -74,7 +74,7 @@
 
 举个例子：假设目前有三个变量 ABC，引用的都是同一个内存中的对象。
 
-![](./assets/image/image_aP5cjWeOcf.png)
+![](./assets/image/image_aP5cjWeOcf.webp)
 
 假设这个时候需要修改对象 A 的属性，则需要使用新的属性参数，创建一个新的对象，讲 A 指向新创建的对象，此时内存当中的对象应该是这样的：
 
@@ -102,7 +102,7 @@
 
 在做享元优化的时候，遇到一个特殊的问题，这里也记录下，方便大家后面使用享元的时候注意。我们有一个对象，用来描述单元格的值，以及值的类型。如下所示：
 
-![](./assets/image/image_J3Kn8Hev2S.png)
+![](./assets/image/image_J3Kn8Hev2S.webp)
 
 type 表示类型，value 就是存储的值。 &#x20;
 
@@ -154,11 +154,11 @@ type 的类型有如下几种
 
 #### 一个 demo
 
-![](./assets/image/image_Fk0BqVHC90.png)
+![](./assets/image/image_Fk0BqVHC90.webp)
 
 上图中的代码，占用内存 4.8M。&#x20;
 
-![](./assets/image/image_FEb2-ZDBKT.png)
+![](./assets/image/image_FEb2-ZDBKT.webp)
 
 上图中的代码，占用内存 3.6M。 &#x20;
 
@@ -186,7 +186,7 @@ this.a = null
 
 初始化属性 a 的时候，HiddenClass 的结构会变化，从而增加内存。接着使用 v8 的调试工具 d8 来验证下：&#x20;
 
-![](./assets/image/image_z1oJov5qw7.png)
+![](./assets/image/image_z1oJov5qw7.webp)
 
 从上面的 `debug` 信息中可以看出，初始化的时候，如果赋值为 `null`，会在 `HiddenClass` 的 `DescriptorArray` 中添加记录，用来描述属性 a 的初始值。**所以，在初始化属性的时候，如果参数没有传递该属性的值，那就不要初始化为 null，因为这样会占用内存。** &#x20;
 
@@ -194,7 +194,7 @@ this.a = null
 
 针对上述的情况，我们优化了腾讯文档表格的单元格对象 CellData 的初始化过程。
 
-![](./assets/image/image_a2XVQkEIgG.png)
+![](./assets/image/image_a2XVQkEIgG.webp)
 
 可以发现，优化的效果非常明显。30w 单元格的表格，CellData 的内存占用从 24M 减少到了 12M。 &#x20;
 
@@ -210,13 +210,13 @@ this.a = null
 
 ![](https://mmbiz.qpic.cn/mmbiz_png/q2ntl21QGgXkHVwYQN5TEBNiclVgflqgictF6QwXb12OVUYncE3PUaNrOHvyF6UGtpefpsYz4AVNwyahWdLEuvgA/640?wx_fmt=png\&tp=webp\&wxfrom=5\&wx_lazy=1)
 
-![](./assets/image/image_x1ECcW--uF.png)
+![](./assets/image/image_x1ECcW--uF.webp)
 
 ##### 没有 delete 操作 &#x20;
 
 ![](https://mmbiz.qpic.cn/mmbiz_png/q2ntl21QGgXkHVwYQN5TEBNiclVgflqgicVRYO0s5W6MU7KenaE4gYNvT2tqqLQbKjxXLlYzRPFibWlnNbKOLGYDg/640?wx_fmt=png\&tp=webp\&wxfrom=5\&wx_lazy=1)
 
-![](./assets/image/image_vs5Mx7QK9m.png)
+![](./assets/image/image_vs5Mx7QK9m.webp)
 
 #### v8 HiddenClass 的转化过程
 
@@ -259,7 +259,7 @@ delete obj.a;
 ```
 
 
-![](./assets/image/image_Y3RDI3M1jF.png)
+![](./assets/image/image_Y3RDI3M1jF.webp)
 
 删除属性 a 之后，退化到字典模式：
 

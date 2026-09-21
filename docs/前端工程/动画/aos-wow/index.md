@@ -73,7 +73,7 @@ AOS.init({
 
 动画效果如下：
 
-![  ](./assets/image/f16de209166331c212a42006bcc9326c_ek8oFEOr1-.png "  ")
+![  ](./assets/image/f16de209166331c212a42006bcc9326c_ek8oFEOr1-.webp "  ")
 
 # wow
 

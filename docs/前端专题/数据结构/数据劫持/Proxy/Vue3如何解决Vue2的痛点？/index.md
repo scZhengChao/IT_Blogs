@@ -57,7 +57,7 @@ proxyPerson.name = 'Dignity' // 设置属性值触发set方法
 ```
 
 
-![](./assets/image/image_-Png-GBy6s.png)
+![](./assets/image/image_-Png-GBy6s.webp)
 
 **其实Proxy是搭配Reflect的。**
 
@@ -169,7 +169,7 @@ Vue 内部通过 `Object.defineProperty`方法属性拦截的方式，把`data` 
 
 MVVM 数据双向绑定主要是指：数据变化更新视图，视图变化更新数据。
 
-![](./assets/image/image_eMQt90ZRN7.png)
+![](./assets/image/image_eMQt90ZRN7.webp)
 
 即：
 
@@ -184,4 +184,4 @@ MVVM 数据双向绑定主要是指：数据变化更新视图，视图变化更
 - 实现一个订阅者 Watcher，可以**收到属性的变化通知并执行相应的方法，从而更新视图；**
 - 实现一个解析器 Compile，**可以解析每个节点的相关指令，对模板数据和订阅器进行初始化。**
 
-![](./assets/image/image_1Ba-w9AB3m.png)
+![](./assets/image/image_1Ba-w9AB3m.webp)

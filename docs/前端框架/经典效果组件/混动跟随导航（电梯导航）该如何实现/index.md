@@ -64,4 +64,4 @@ let observer = new IntersectionObserver(
 
 **参考文档**：[juejin.cn/post/739998…](https://juejin.cn/post/7399982698846404649 "juejin.cn/post/739998…")
 
-![](./assets/image/image_VGeZoKM54x.png)
+![](./assets/image/image_VGeZoKM54x.webp)

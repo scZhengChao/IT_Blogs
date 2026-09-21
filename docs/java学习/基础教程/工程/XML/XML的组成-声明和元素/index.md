@@ -28,7 +28,7 @@
 2. 文档声明必须为\<?xml开头，以？>结束
 3. 文档声明必须从文档的1行1列位置开始,==**必须在xml文档中的首行首列**==
 
-   ![](./assets/image/image_XB18HwCiBF.png)
+   ![](./assets/image/image_XB18HwCiBF.webp)
 4. 文档声明中常见的两个属性：
    - version：指定XML文档版本。必须属性，这里一般选择1.0；
    - encoding：指定当前文档的编码，可选属性，默认值是utf-8；
@@ -74,15 +74,15 @@
 
 元素没有结束
 
-![](./assets/image/image_AI7LnMbvt1.png)
+![](./assets/image/image_AI7LnMbvt1.webp)
 
 元素大写小写不一致
 
-![](./assets/image/image_i88840eSeR.png)
+![](./assets/image/image_i88840eSeR.webp)
 
 xml中多个根
 
-![](./assets/image/image_aBrCt5WOGX.png)
+![](./assets/image/image_aBrCt5WOGX.webp)
 
 ### 小结
 

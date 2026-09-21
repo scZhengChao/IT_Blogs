@@ -2,7 +2,7 @@
 
 数据卷（volume）是**一个虚拟目录**，指向**宿主机文件系统中的某个目录**。
 
-![](./assets/image/image_E_Gk5LKlbT.png)
+![](./assets/image/image_E_Gk5LKlbT.webp)
 
 一旦完成数据卷挂载，对**容器的一切操作都会作用在数据卷对应的宿主机目录了。**
 

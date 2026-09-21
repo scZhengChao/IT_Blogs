@@ -53,13 +53,13 @@ docker run -d \
 
 ### 执行上述命令安装Docker镜像仓库
 
-![](./assets/image/image_xwZB7mIvXq.png)
+![](./assets/image/image_xwZB7mIvXq.webp)
 
 ### 查看镜像是否安装成功
 
-![](./assets/image/image_u9YeK2-Zsz.png)
+![](./assets/image/image_u9YeK2-Zsz.webp)
 
-![](./assets/image/image_wjZq30EHgD.png)
+![](./assets/image/image_wjZq30EHgD.webp)
 
 ### 配置Docker信任地址
 
@@ -95,7 +95,7 @@ vim /etc/docker/daemon.json
 ```
 
 
-![](./assets/image/image_MG5xyYwCFb.png)
+![](./assets/image/image_MG5xyYwCFb.webp)
 
 【3】重加载
 
@@ -104,7 +104,7 @@ systemctl daemon-reload
 ```
 
 
-![](./assets/image/image_8oNehaiSvn.png)
+![](./assets/image/image_8oNehaiSvn.webp)
 
 【4】重启docker
 
@@ -114,7 +114,7 @@ systemctl restart docker
 ```
 
 
-![](./assets/image/image_qJ6u5o3Qi8.png)
+![](./assets/image/image_qJ6u5o3Qi8.webp)
 
 【5】浏览器直接访问,可以查看当前私有镜像服务中包含的镜像
 
@@ -123,4 +123,4 @@ systemctl restart docker
 ```
 
 
-![](./assets/image/image_JScMmjAF2Q.png)
+![](./assets/image/image_JScMmjAF2Q.webp)

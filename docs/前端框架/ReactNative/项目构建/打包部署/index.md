@@ -70,13 +70,13 @@ react-native unbundle --entry-file index.js --platform android --devfalse--bundl
 
 输入如上命令以后,出现以下步骤：
 
-![  ](./assets/image/82bdce142bb3e43b7c525e1996c38c21_ZkSBof4Vz7.png "  ")
+![  ](./assets/image/82bdce142bb3e43b7c525e1996c38c21_ZkSBof4Vz7.webp "  ")
 
 注意：输入密钥库口令【很重要，要记住】
 
 生成的的keystore文件默认是在项目的根目录中,如下图所示:
 
-![  ](./assets/image/bbbd0aa01be945cc85aebccad434b713_uwAVlxkPCV.png "  ")
+![  ](./assets/image/bbbd0aa01be945cc85aebccad434b713_uwAVlxkPCV.webp "  ")
 
 **注意：请记得妥善地保管好你的密钥库文件，不要上传到版本库或者其它的地方。**
 
@@ -90,7 +90,7 @@ react-native unbundle --entry-file index.js --platform android --devfalse--bundl
 
 Choose existing…”选择一个已经存在的签名文件
 
-![  ](./assets/image/38f39ba2418fa0621854507967e7de48_8ZCFDcIRtk.png "  ")
+![  ](./assets/image/38f39ba2418fa0621854507967e7de48_8ZCFDcIRtk.webp "  ")
 
 如果已经有签名文件,可以直接选择使用,没有的话就新建一个.
 
@@ -186,13 +186,13 @@ android {
 
 打开编辑项目目录下的android/app/src/main/res/values/strings.xml文件，修改名称
 
-![  ](./assets/image/8ca8763db1542eb400da1255acecd731_diZ83kI2oW.png "  ")
+![  ](./assets/image/8ca8763db1542eb400da1255acecd731_diZ83kI2oW.webp "  ")
 
 # 5修改应用icon
 
 将如下文件夹中的icon替换成需要修改的图标即可,注意icon大小保持一致
 
-![  ](./assets/image/55e30c2471fdcd6eca1faf81bae742ef_ZwUJ8CFZKP.png "  ")
+![  ](./assets/image/55e30c2471fdcd6eca1faf81bae742ef_ZwUJ8CFZKP.webp "  ")
 
 # 6,代码混淆
 
@@ -210,7 +210,7 @@ android {
 
 **true（老版）**
 
-![  ](./assets/image/44945a5518cd4f3fa4da17d58144b984__xZnrO2ed4.png "  ")
+![  ](./assets/image/44945a5518cd4f3fa4da17d58144b984__xZnrO2ed4.webp "  ")
 
 **启用方法是**
 

@@ -134,7 +134,7 @@ export default {
 
 借用 vite 其中某位作者的原话：
 
-![](./assets/image/image_t7WXjuxvF9.png)
+![](./assets/image/image_t7WXjuxvF9.webp)
 
 `简单理解意思就是说在 vite 打包时，是没法知道进度条的 0%-100%，因为您必须先确定要构建的模块的总数`
 
@@ -330,7 +330,7 @@ function runCachedData() {
 
 ## 实现架构图
 
-![](./assets/image/image_v-en5RQ6uI.png)
+![](./assets/image/image_v-en5RQ6uI.webp)
 
 # 源码
 

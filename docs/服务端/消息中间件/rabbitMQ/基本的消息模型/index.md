@@ -13,7 +13,7 @@ RabbitMQ官方提供了5个不同的Demo示例，对应了不同的消息模型�
 
 # 【1】基本消息队列（BasicQueue）
 
-![](./assets/image/image_x4HoGRe0P1.png)
+![](./assets/image/image_x4HoGRe0P1.webp)
 
 > P（producer/ publisher）：生产者，一个发送消息的用户应用程序。我们自己书写代码发送。
 >
@@ -25,9 +25,9 @@ RabbitMQ官方提供了5个不同的Demo示例，对应了不同的消息模型�
 
 # 【2】工作消息队列（WorkQueue）
 
-![](./assets/image/image_DdTb3TULbV.png)
+![](./assets/image/image_DdTb3TULbV.webp)
 
-![](./assets/image/image_8s11mdPnr2.png)
+![](./assets/image/image_8s11mdPnr2.webp)
 
 工作消息队列是基本消息队列的增强版，具有多个消费者消费队列的消息。假设消息队列中积压了多个消息，那么**此时可以使用多个消费者来消费队列中的消息。效率要比基本消息队列模型高。**
 
@@ -47,13 +47,13 @@ RabbitMQ官方提供了5个不同的Demo示例，对应了不同的消息模型�
 
 ### Fanout Exchange：广播
 
-![](./assets/image/image_lyqGLbIInP.png)
+![](./assets/image/image_lyqGLbIInP.webp)
 
 > 将消息交给所有绑定到交换机的队列,**生产者发送的消息，只能发送到交换机**，交换机来决定要发给哪个队列，生产者无法决定。交换机把消息发送给绑定过的所有队列.队列的消费者都能拿到消息。实现**一条消息被多个消费者消费.**
 
 ### Direct Exchange：路由
 
-![](./assets/image/image_aq9jJtT28C.png)
+![](./assets/image/image_aq9jJtT28C.webp)
 
 > 1.在广播模式中，生产者发布消息，所有消费者都可以获取所有消息。
 >
@@ -65,7 +65,7 @@ RabbitMQ官方提供了5个不同的Demo示例，对应了不同的消息模型�
 
 ### Topic Exchange：主题
 
-![](./assets/image/image_IXkTokp4Ew.png)
+![](./assets/image/image_IXkTokp4Ew.webp)
 
 1.Topic类型的Exchange与Direct相比，**都是可以根据RoutingKey把消息路由到不同的队列。只不过Topic类型Exchange可以让队列在绑定Routing key 的时候使用通配符！**
 

@@ -27,7 +27,7 @@ import { fromEvent, map, scan } from "rxjs";
 
 如果**要理解上述结果，我们首先需要从 Stream 这个概念出来**，去**描绘整个处理过程**，而首先需要关注的是 `Stream` 是**一个具有 “时间” 这个维度的一个概念，即类似下面图：**
 
-![](./assets/image/image_YgDO5nGy8K.png)
+![](./assets/image/image_YgDO5nGy8K.webp)
 
 通过 `fromEvent` 创建了一个 Stream，也就是一个 Observable，然后随着时间推移，后续会触发多次 click 事件，即会在 Stream 这条线上，按时间维度触发这些 click 事件，每个事件即为上图中的一个圆，这一系列的事件实际上组成了一个数组。
 

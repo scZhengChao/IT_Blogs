@@ -21,7 +21,7 @@ ignoreMomentLocale: true, // 增加配置
 ```
 
 
-![](./assets/image/image_SHxSk2WwVZ.png)
+![](./assets/image/image_SHxSk2WwVZ.webp)
 
 "@types/react": "^18.0.0",
 

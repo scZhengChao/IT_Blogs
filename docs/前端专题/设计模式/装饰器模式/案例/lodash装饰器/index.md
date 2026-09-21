@@ -15,4 +15,4 @@ npm install --save lodash lodash-decorators
 ```
 
 
-![](<./assets/image/Pasted Graphic_j6cP5xhXEb.png>)
+![](<./assets/image/Pasted Graphic_j6cP5xhXEb.webp>)

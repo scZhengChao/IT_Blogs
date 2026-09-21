@@ -19,11 +19,11 @@ log： 记录的你**提交的一个基线 commit 记录的； 总的来说；�
 
 merge 的 合并 过程
 
-![](./assets/image/image_A0dD7tJfPk.png)
+![](./assets/image/image_A0dD7tJfPk.webp)
 
 rebase 的 合并操作
 
-![](./assets/image/image_kSyMEdqsDg.png)
+![](./assets/image/image_kSyMEdqsDg.webp)
 
 # reflog
 
@@ -39,15 +39,15 @@ rebase 的 合并操作
 
 ### 命令使用
 
-![](./assets/image/image_AG5vK7hh3k.png)
+![](./assets/image/image_AG5vK7hh3k.webp)
 
 分支记录如上，想要 reset 到 b。
 
-![](./assets/image/image_y7FRRaZSbu.png)
+![](./assets/image/image_y7FRRaZSbu.webp)
 
 误操作 reset 过头，b 没了，最新的只剩下 a。
 
-![](./assets/image/image_0HPMKV3AOu.png)
+![](./assets/image/image_0HPMKV3AOu.webp)
 
 这时用 `git reflog` 查看历史记录，把错误提交的那次 commitHash 记下。
 

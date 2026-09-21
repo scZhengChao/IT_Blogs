@@ -38,7 +38,7 @@ Million.js 提供了一个极致优化的虚拟 DOM，可以与 React 兼容。�
 
 一个高中生就这么超越了Meta 的整个顶级工程师团队？带着怀疑看了看 JavaScript 框架性能基准测试对比结果：
 
-![](./assets/image/image_Xme6NEuwvS.png)
+![](./assets/image/image_Xme6NEuwvS.webp)
 
 数据不言自明，在第二张表中，内存消耗的差异更加显著，它清楚的显示了 Million 如何在内方面得到更好的优化。
 
@@ -220,11 +220,11 @@ export default AppBlock
 
 使用纯 React 的打包体积
 
-![](./assets/image/image_j7c66rCqGe.png)
+![](./assets/image/image_j7c66rCqGe.webp)
 
 使用 Million 的打包体积：
 
-![](./assets/image/image_hk50-y-6Zd.png)
+![](./assets/image/image_hk50-y-6Zd.webp)
 
 可以看到，**gzip 捆绑包**大小的差异**小于 5 kB**，这意味着对于多数 React 应用来说，Million 对项目的体积影响可以忽略不计。
 
@@ -255,27 +255,27 @@ function Numbers() {
 
 1. 我们得到了两个虚拟 DOM：current（当前的），代表当前 UI 的样子，和 new（新的），代表想要看到的样子。
 
-![](./assets/image/image_mkZnhnUCDH.png)
+![](./assets/image/image_mkZnhnUCDH.webp)
 
 1. 比较第一个节点，发现没有差异，继续比较下一个。
 
-![](./assets/image/image_JqgeZLu3JV.png)
+![](./assets/image/image_JqgeZLu3JV.webp)
 
 1. 比较第二个节点，发现有一个差异，在 DOM 中进行更新。
 
-![](./assets/image/image_fRFy5Aaik3.png)
+![](./assets/image/image_fRFy5Aaik3.webp)
 
 1. 比较第三个节点，发现它在新的虚拟 DOM 中已经不存在了，在 DOM 中将其删除。
 
-![](./assets/image/image_fE6dJpRlhL.png)
+![](./assets/image/image_fE6dJpRlhL.webp)
 
 1. 比较第四个节点，发现它在新的虚拟 DOM 中已经不存在了，在 DOM 中将其删除。
 
-![](./assets/image/image_2IHjy8fXgr.png)
+![](./assets/image/image_2IHjy8fXgr.webp)
 
 1. 比较第五个节点，发现有差异，在 DOM 中进行更新并完成了整个过程。
 
-![](./assets/image/image_wqjUQc5Iva.png)
+![](./assets/image/image_wqjUQc5Iva.webp)
 
 &#x20;    diff 过程**取决于树的大小**，最终导致**虚拟 DOM 的性能瓶颈**。**组件的节点**越多，diff 所需要的时间就越长。
 
@@ -337,11 +337,11 @@ const CountBlock = block(Count);
 
 1. 这里没有使用 React 来渲染 JSX，而是使用 Million.js 来渲染它，它将占位符节点（用“？”表示）传递到虚拟DOM。这些节点将充当动态内容的占位符，并在静态分析过程中使用。
 
-![](./assets/image/image_yzugJPpH2p.png)
+![](./assets/image/image_yzugJPpH2p.webp)
 
 1. 现在开始静态分析，检查第一个节点是否有占位符，没有找到，继续下一步。
 
-![](./assets/image/image_q6oJus7tfy.png)
+![](./assets/image/image_q6oJus7tfy.webp)
 
 1. 在第二个节点中检查占位符，没有找到，继续下一步。
 
@@ -349,15 +349,15 @@ const CountBlock = block(Count);
 
 1. 检查第三个节点的占位符并找到“？”。将占位符添加到“Edit Map”，它将`prop1`关联到占位符节点。然后从块中删除占位符。
 
-![](./assets/image/image_XQy0wYeubN.png)
+![](./assets/image/image_XQy0wYeubN.webp)
 
 1. 检查第四个节点的占位符并找到“？”。将占位符添加到“Edit Map”，它将 `prop2` 关联到占位符节点。然后从块中删除占位符。
 
-![](./assets/image/image_ZMza_uzm5C.png)
+![](./assets/image/image_ZMza_uzm5C.webp)
 
 1. 检查第五个节点是否有占位符，没有找到，完成检测。
 
-![](./assets/image/image_ZHuFLoKBg1.png)
+![](./assets/image/image_ZHuFLoKBg1.webp)
 
 #### (2）脏检查
 
@@ -365,15 +365,15 @@ const CountBlock = block(Count);
 
 1. 可以只区分 `prop1` 和 `prop2`，而不是按元素进行区分。由于两者都与**在静态分析期间创建的“Edit Map”相关联，** 因此一旦确定差异，就可以直接更新 DOM。
 
-![](./assets/image/image_WawsOKkUzi.png)
+![](./assets/image/image_WawsOKkUzi.webp)
 
 1. 比较当前的 `prop1` 和新的 `prop1` 值，由于它们不同，因此更新了 DOM
 
-![](./assets/image/image_wMAppXeRi0.png)
+![](./assets/image/image_wMAppXeRi0.webp)
 
 1. 比较当前的 `prop2` 和新的 `prop2` 值，由于它们不同，因此更新了 DOM。
 
-![](./assets/image/image_8asDut1qgN.png)
+![](./assets/image/image_8asDut1qgN.webp)
 
 可以看到，脏检查比 diff 步骤需要更少的计算。这是因为**脏检查只关心状态，而不关心虚拟 DOM**，因为每个**虚拟节点可能需要许多级别的递归**来确定它是否已经改变，**状态只需要一个浅层相等检查。**
 

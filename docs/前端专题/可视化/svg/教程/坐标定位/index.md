@@ -9,7 +9,7 @@
 
 对于所有元素，SVG 使用的坐标系统或者说网格系统，和[Canvas](https://developer.mozilla.org/zh-CN/docs/Web/API/Canvas_API "Canvas")用的差不多（所有计算机绘图都差不多）。这种坐标系统是：以页面的左上角为 (0,0) 坐标点，坐标以像素为单位，**x 轴正方向是向右，y 轴正方向是向下。** 注意，这和你小时候所教的绘图方式是相反的。**但是在 HTML 文档中，元素都是用这种方式定位的。**
 
-![](./assets/image/image_f5NFKoN4hB.png)
+![](./assets/image/image_f5NFKoN4hB.webp)
 
 ### [什么是 "像素"?](https://developer.mozilla.org/zh-CN/docs/Web/SVG/Tutorial/Positions#什么是_像素 "什么是 \"像素\"?")
 

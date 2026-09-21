@@ -6,6 +6,6 @@
 
 ![](https://segmentfault.com/img/remote/1460000041550619)
 
-![](./assets/image/image_kZHIVIbTU9.png)
+![](./assets/image/image_kZHIVIbTU9.webp)
 
 代理服务器处理用户请求，和用户请求方向相反，叫做反向代理

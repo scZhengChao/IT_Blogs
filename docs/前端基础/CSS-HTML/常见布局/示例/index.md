@@ -156,7 +156,7 @@ ex5 .parent {
 
 使用`grid-template-columns`状语从句：`grid-column`可以实现如下图产品所示的布局。说明进一步了`repeat`状语从句：`fr`的便捷性。
 
-![](./assets/image/image_IGnOhKGH41.png)
+![](./assets/image/image_IGnOhKGH41.webp)
 
 ### **RAM技巧**
 
@@ -194,7 +194,7 @@ grid-template-columns: repeat(auto-fit, minmax(<base>, 1fr))
 
 我们如果将`auto-fit`对划线`auto-fill`：
 
-![](./assets/image/image_16cPOLdhVD.png)
+![](./assets/image/image_16cPOLdhVD.webp)
 
 ### **卡片弹性适应性**
 

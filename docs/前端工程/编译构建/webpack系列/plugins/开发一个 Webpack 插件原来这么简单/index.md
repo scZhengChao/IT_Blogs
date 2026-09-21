@@ -14,7 +14,7 @@
   - [4、使用插件](#4使用插件)
 - [总结](#总结)
 
-![](./assets/image/image_svZuzqjz3g.png)
+![](./assets/image/image_svZuzqjz3g.webp)
 
 插件是 `webpack` 的重要组成部分，为用户提供了**一种强大方式来直接触及 webpack 的编译过程(**compilation process)。插件能够 [钩入(hook)](https://link.juejin.cn?target=https://www.webpackjs.com/api/compiler-hooks/#hooks "钩入(hook)") 到在每个编译(compilation)中**触发的所有关键事件。在编译的每一步，**插件都**具备完全访问** `compiler` 对象的能力，如果情况合适，还可以访问当前 `compilation` 对象。
 

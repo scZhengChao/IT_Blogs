@@ -109,7 +109,7 @@ public class Main {
 
 我们在网站上下载软件的时候，经常看到下载页显示的哈希：
 
-![](./assets/image/image_wRJZ_OXBEh.png)
+![](./assets/image/image_wRJZ_OXBEh.webp)
 
 如何判断下载到本地的软件是原始的、未经篡改的文件？**我们只需要自己计算一下本地文件的哈希值，再与官网公开的哈希值对比，如果相同，说明文件下载正确，否则，说明文件已被篡改。**
 
@@ -138,7 +138,7 @@ public class Main {
 
 什么是彩虹表？难道是这个：
 
-![](./assets/image/image_A9cm3Z0EmM.png)
+![](./assets/image/image_A9cm3Z0EmM.webp)
 
 上面讲到了，如果只拿到MD5，从MD5反推明文口令，只能使用暴力穷举的方法。
 

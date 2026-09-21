@@ -12,12 +12,12 @@
 - **外键存在一种约束，只能是主表中主键存在的值。** 这样能保证主从表数据之间对应的一致性和完整性了。
 - 因此在订单表中设定一个外键user\_id保存主表中主键的id值，当前订单属于谁，外键值就设置对应主表中用户的id，如此就构建起用户和订单的关系了
 
-![](./assets/image/image_praBNcnALw.png)
+![](./assets/image/image_praBNcnALw.webp)
 
 一对多表设计原则
 
 在从表(多方)创建**一个字段作为外键，从表外键值指向主表(一方)的主键。**
 
-![](./assets/image/image_UcUK4pwnFE.png)
+![](./assets/image/image_UcUK4pwnFE.webp)
 
-![](./assets/image/image_sKyrKMzUr1.png)
+![](./assets/image/image_sKyrKMzUr1.webp)

@@ -264,4 +264,4 @@ onUnmounted(() => {
 
 **`BroadcastChannel`** 是一个非常简单的 `API` ，内部包含了**跨上下文同源通信**的接口。它**没有定义消息传输协议**，故不同上下文中的不同文档需要自己实现。目前来看兼容性方面也基本没有问题。
 
-![](<../assets/多窗口联动神器！BroadcastChannel API 实/image/image_uDokFYpgEJ.png>)
+![](<../assets/多窗口联动神器！BroadcastChannel API 实/image/image_uDokFYpgEJ.webp>)

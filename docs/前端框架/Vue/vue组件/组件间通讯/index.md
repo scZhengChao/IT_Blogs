@@ -27,7 +27,7 @@
 
           组件是 vue.js最强大的功能之一，而组件实例的作用域是相互独立的，这就意味着不同组件之间的数据无法相互引用。一般来说，组件可以有以下几种关系：
 
-![  ](./assets/image/640_FmtuSbd6Oq.png "  ")
+![  ](./assets/image/640_FmtuSbd6Oq.webp "  ")
 
 如上图所示，A 和 B、B 和 C、B 和 D 都是父子关系，C 和 D 是兄弟关系，A 和 C 是隔代关系（可能隔多代）。
 
@@ -174,19 +174,19 @@ Event.$off(事件名,data => {});
 
 假设兄弟组件有三个，分别是A、B、C组件，C组件如何获取A或者B组件的数据
 
-![  ](./assets/image/23df0be5566986294912e35a4cee7398_r_C2n5kHLY.png "  ")
+![  ](./assets/image/23df0be5566986294912e35a4cee7398_r_C2n5kHLY.webp "  ")
 
-![  ](./assets/image/f9425e756f1c51774935ea98fc3948c2_qLB2u-uRRs.png "  ")
+![  ](./assets/image/f9425e756f1c51774935ea98fc3948c2_qLB2u-uRRs.webp "  ")
 
-![  ](./assets/image/0e857316c5b838a2c6143e51b1384dad_c62DuUYhvS.png "  ")
+![  ](./assets/image/0e857316c5b838a2c6143e51b1384dad_c62DuUYhvS.webp "  ")
 
-![  ](./assets/image/07a185d8923ffe5de2008262ea4535e2_B8N2ekoz7S.png "  ")
+![  ](./assets/image/07a185d8923ffe5de2008262ea4535e2_B8N2ekoz7S.webp "  ")
 
 \$on监听了自定义事件 data-a和data-b，因为有时不确定何时会触发事件，一般会在 mounted 或 created 钩子中来监听。
 
 # 方法三、vuex
 
-![  ](./assets/image/967d60f4bfa34ec26862365a17d3f723_WOwe5oQjMb.png "  ")
+![  ](./assets/image/967d60f4bfa34ec26862365a17d3f723_WOwe5oQjMb.webp "  ")
 
 ## 1.简要介绍Vuex原理
 
@@ -210,11 +210,11 @@ Event.$off(事件名,data => {});
 
 可以参考笔记vuex常用插件
 
-![  ](./assets/image/9609e2baf0d24495c68ce8daf5f670c5_0IKO6ROzwn.png "  ")
+![  ](./assets/image/9609e2baf0d24495c68ce8daf5f670c5_0IKO6ROzwn.webp "  ")
 
 这里需要注意的是：由于vuex里，我们保存的状态，都是数组，而localStorage只支持字符串，所以需要用JSON转换：
 
-![  ](./assets/image/c8f5114768cd056fcb13946b1d0bd4e7_sEArHuRcja.png "  ")
+![  ](./assets/image/c8f5114768cd056fcb13946b1d0bd4e7_sEArHuRcja.webp "  ")
 
 # 方法四、 \$attrs　/ \$listeners
 
@@ -229,15 +229,15 @@ Event.$off(事件名,data => {});
 
 接下来我们看个跨级通信的例子：
 
-![  ](./assets/image/cbf37e7a5871543968efe362446f80e6_3jcNvq4QtI.png "  ")
+![  ](./assets/image/cbf37e7a5871543968efe362446f80e6_3jcNvq4QtI.webp "  ")
 
-![  ](./assets/image/30f1fc01313b41b746d57294535209c5_ctOkjiXuq9.png "  ")
+![  ](./assets/image/30f1fc01313b41b746d57294535209c5_ctOkjiXuq9.webp "  ")
 
-![  ](./assets/image/51b5df0f9b473e20009b1f1874389ae3_yyAmC2EwN9.png "  ")
+![  ](./assets/image/51b5df0f9b473e20009b1f1874389ae3_yyAmC2EwN9.webp "  ")
 
-![  ](./assets/image/b568c23e978dae53f1fc2f62d4de95ef_oJtRz-EjsN.png "  ")
+![  ](./assets/image/b568c23e978dae53f1fc2f62d4de95ef_oJtRz-EjsN.webp "  ")
 
-![  ](./assets/image/36d2d47a63b51bfec3bc74680d2821ee_n23HEDkbo7.png "  ")
+![  ](./assets/image/36d2d47a63b51bfec3bc74680d2821ee_n23HEDkbo7.webp "  ")
 
            如上图所示 \$attrs表示没有继承数据的对象，格式为{属性名：属性值}。Vue2.4提供了 \$attrs, \$listeners来传递数据与事件，跨级组件之间的通讯变得更简单。
 
@@ -255,7 +255,7 @@ Event.$off(事件名,data => {});
 
 假设有两个组件： A.vue 和 B.vue，B 是 A 的子组件
 
-![  ](./assets/image/93ebde306591e8c42aadb1dc275837c1_B_wEV-f9Ad.png "  ")
+![  ](./assets/image/93ebde306591e8c42aadb1dc275837c1_B_wEV-f9Ad.webp "  ")
 
               可以看到，在 A.vue 里，我**们设置了一个 provide: name，值为 浪里行舟**，它的作用就是将 **name**这个变量提供给它的所有子组件。而在**B.vue 中，通过 inject 注入了从 A 组件中提供的 name 变量，那么在组件 B 中，就可以直接通过 this.name 访问这个变量**，它的值也是 浪里行舟 **。这就是 provide / inject API 最核心的用法**。
 
@@ -274,13 +274,13 @@ Event.$off(事件名,data => {});
 
 我们来看个例子：孙组件D、E和F获取A组件传递过来的color值，并能实现数据响应式变化，即A组件的color变化后，组件D、E、F不会跟着变（核心代码如下：）
 
-![  ](./assets/image/1749d85ac4b324f5640451d626bbff45_9zDXHLUb0K.png "  ")
+![  ](./assets/image/1749d85ac4b324f5640451d626bbff45_9zDXHLUb0K.webp "  ")
 
-![  ](./assets/image/92299372f246c056c1e913a686fbb850_hIDVFQr8Cj.png "  ")
+![  ](./assets/image/92299372f246c056c1e913a686fbb850_hIDVFQr8Cj.webp "  ")
 
-![  ](./assets/image/fe111486f4b354389c1a0ca713ae831e_kiOck0fd8o.png "  ")
+![  ](./assets/image/fe111486f4b354389c1a0ca713ae831e_kiOck0fd8o.webp "  ")
 
-![  ](./assets/image/9d77bd14fadb8a53def70f7f61f57625_26lm2sEWTJ.png "  ")
+![  ](./assets/image/9d77bd14fadb8a53def70f7f61f57625_26lm2sEWTJ.webp "  ")
 
 虽说provide 和 inject 主要为高阶插件/组件库提供用例，但如果你能在业务中熟练运用，可以达到事半功倍的效果！
 
@@ -291,11 +291,11 @@ Event.$off(事件名,data => {});
 
        需要注意的是：这两种都是直接得到组件实例，使用后可以直接调用组件的方法或访问数据。我们先来看个用ref来访问组件的例子：
 
-![  ](./assets/image/2a176f9bb0e857462a0dcaa36ef1cedc_xUmZEH0zAq.png "  ")
+![  ](./assets/image/2a176f9bb0e857462a0dcaa36ef1cedc_xUmZEH0zAq.webp "  ")
 
 不过，**这两种方法的弊端是，无法在跨级或兄弟间通信**。
 
-![  ](./assets/image/f1d48cc245a60357fad431ade0a9f17b_VJigmZ5cua.png "  ")
+![  ](./assets/image/f1d48cc245a60357fad431ade0a9f17b_VJigmZ5cua.webp "  ")
 
             我们想在 component-a 中，访问到引用它的页面中（这里就是 parent.vue）的两个 component-b 组件，那这种情况下，就得配置额外的插件或工具了，比如 Vuex 和 Bus 的解决方案。
 

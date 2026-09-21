@@ -21,7 +21,7 @@
 
 因此，在JavaEE平台上，**处理TCP连接，解析HTTP协议这些底层工作统统扔给现成的Web服务器去做，**我们只需要把自己的**应用程序跑在Web服务器**上。为了实现这一目的，JavaEE提供了Servlet API，我们使\*\*用Servlet API编写自己的Servlet来处理HTTP请求，\*\***Web服务器实现Servlet API接口**，实现底层功能：
 
-![](./assets/image/image_6fIX8u63pl.png)
+![](./assets/image/image_6fIX8u63pl.webp)
 
 我们来实现一个最简单的Servlet：
 
@@ -132,7 +132,7 @@ import jakarta.servlet.*;
 
 整个工程结构如下：
 
-![](./assets/image/image_-VdODKNtm4.png)
+![](./assets/image/image_-VdODKNtm4.webp)
 
 目录`webapp`目前为空，如果我们需要存放一些资源文件，则需要放入该目录。有的同学可能会问，`webapp`目录下是否需要一个`/WEB-INF/web.xml`配置文件？这个配置文件是低版本Servlet必须的，但是高版本Servlet已不再需要，所以无需该配置文件。
 

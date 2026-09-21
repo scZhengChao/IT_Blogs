@@ -6,4 +6,4 @@ package.json中跟依赖相关的配置属性包含了`dependencies`、`devDepen
 
 dependencies除了dependencies和devDependencies，本文重点介绍的是peerDependencies和peerDependenciesMeta。
 
-![](./assets/image/image_SgZKqm8oih.png)
+![](./assets/image/image_SgZKqm8oih.webp)

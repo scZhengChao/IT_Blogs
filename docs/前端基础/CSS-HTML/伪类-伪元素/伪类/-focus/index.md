@@ -6,7 +6,7 @@
 
 # div或按钮鼠标经过或鼠标点击后效果样式
 
-![](./assets/image/image_tzIbUqBh78.png)
+![](./assets/image/image_tzIbUqBh78.webp)
 
 注意：如果是div，必须加上 [tabindex](https://so.csdn.net/so/search?q=tabindex\&spm=1001.2101.3001.7020 "tabindex")="1"，否则，focus失效
 

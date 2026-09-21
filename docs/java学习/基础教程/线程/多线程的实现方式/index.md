@@ -12,7 +12,7 @@
 
 **cpu 高速切换执行**
 
-![](./assets/image/image_yD4YKnCWYB.png)
+![](./assets/image/image_yD4YKnCWYB.webp)
 
 [继承Thread类](./继承Thread类/index.md "继承Thread类")
 

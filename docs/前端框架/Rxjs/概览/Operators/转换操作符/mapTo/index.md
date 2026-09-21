@@ -8,7 +8,7 @@
 
 就像是一个你讨厌的人让你帮忙传话，他说了一大堆表白的话，然后让你传给某个妹子，你因为讨厌他所以不想帮他，于是跟那个妹子说我喜欢你，最后你们幸福的生活在一起了。
 
-![](./assets/image/image_TsWutcmxo9.png)
+![](./assets/image/image_TsWutcmxo9.webp)
 
 ```javascript 
 const source = Rx.Observable.interval(1000).take(3);

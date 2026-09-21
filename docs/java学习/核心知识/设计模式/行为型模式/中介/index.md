@@ -12,7 +12,7 @@
 
 考虑一个简单的点餐输入：
 
-![](./assets/image/image_9LaMiy8hsN.png)
+![](./assets/image/image_9LaMiy8hsN.webp)
 
 这个小系统有4个参与对象：
 
@@ -25,11 +25,11 @@
 
 所以这是一个多方会谈，逻辑写起来很复杂：
 
-![](./assets/image/image_93L2_8NnGh.png)
+![](./assets/image/image_93L2_8NnGh.webp)
 
 如果我们引入一个中介，把多方会谈变成多个双方会谈，虽然多了一个对象，但对象之间的关系就变简单了：
 
-![](./assets/image/image_oS0RjG54mw.png)
+![](./assets/image/image_oS0RjG54mw.webp)
 
 下面我们用中介模式来实现各个UI组件的交互。首先把UI组件给画出来：
 
@@ -145,7 +145,7 @@ public class Mediator {
 
 运行一下看看效果：
 
-![](./assets/image/image_VvwvnFbRrz.png)
+![](./assets/image/image_VvwvnFbRrz.webp)
 
 使用Mediator模式后，我们得到了以下好处：
 

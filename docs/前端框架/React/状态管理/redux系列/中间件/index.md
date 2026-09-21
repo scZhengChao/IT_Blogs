@@ -68,9 +68,9 @@ const store = createStore(counterReducer,applyMiddleware(thunk,logger))
 
 **和koa，express 的中间件原理非常相似； action等到所有中间件 进行完了 ，在到reducer返回state更新store**
 
-![  ](./assets/image/32e9b1ecaf13b3802d25cd40f0d358b7_WllZiNymrR.png "  ")
+![  ](./assets/image/32e9b1ecaf13b3802d25cd40f0d358b7_WllZiNymrR.webp "  ")
 
-![  ](./assets/image/a64848a2fe2c6eafa7ca9956ad37ef5c_ui1IGYs_V2.png "  ")
+![  ](./assets/image/a64848a2fe2c6eafa7ca9956ad37ef5c_ui1IGYs_V2.webp "  ")
 
 **react默认只支持同步，实现异步任务需要中间件的支持**
 
@@ -87,7 +87,7 @@ const store = createStore(fruitReducer, applyMiddleware(thunk，logger));
 
 **logger**
 
-![  ](./assets/image/4f7cdbfcf07cee1a1263943d85a02d3e_P6zG1yUTaz.png "  ")
+![  ](./assets/image/4f7cdbfcf07cee1a1263943d85a02d3e_P6zG1yUTaz.webp "  ")
 
 **thunk**
 

@@ -13,7 +13,7 @@
 - 不能创建对象
 - 针对list， Set集合进行相关操作；
 
-![](./assets/image/image_eH-Ly5Nga6.png)
+![](./assets/image/image_eH-Ly5Nga6.webp)
 
 #### addAll
 

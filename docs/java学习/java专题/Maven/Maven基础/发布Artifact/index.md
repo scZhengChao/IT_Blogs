@@ -33,7 +33,7 @@
 
 我们以广受好评的开源项目[how-to-become-rich](https://github.com/michaelliao/how-to-become-rich "how-to-become-rich")为例，先创建Maven工程目录结构如下：
 
-![](./assets/image/image_nkCFtJkjce.png)
+![](./assets/image/image_nkCFtJkjce.webp)
 
 在`pom.xml`中添加如下内容：
 
@@ -89,7 +89,7 @@
 
 最后一步，是把这个工程推到GitHub上，并选择`Settings`-`GitHub Pages`，选择`master branch`启用Pages服务：
 
-![](./assets/image/image_FuwCUA-Ypi.png)
+![](./assets/image/image_FuwCUA-Ypi.webp)
 
 这样，把全部内容推送至GitHub后，即可作为静态网站访问Maven的repo，它的地址是[https://michaelliao.github.io/how-to-become-rich/maven-repo/](https://michaelliao.github.io/how-to-become-rich/maven-repo/ "https://michaelliao.github.io/how-to-become-rich/maven-repo/")。版本`1.0.0`对应的jar包地址是：
 
@@ -308,7 +308,7 @@ System.out.println(millionaire.howToBecomeRich());
 
 在发布前，我们必须首先登录后在用户的`Settings`-`Developer settings`-`Personal access tokens`中创建两个Token，一个用于发布，一个用于使用。发布Artifact的Token必须有`repo`、`write:packages`和`read:packages`权限：
 
-![](./assets/image/image_HRgdITvHZ3.png)
+![](./assets/image/image_HRgdITvHZ3.webp)
 
 使用Artifact的Token只需要`read:packages`权限。
 
@@ -348,7 +348,7 @@ System.out.println(millionaire.howToBecomeRich());
 
 注意到`<id>`和`~/.m2/settings.xml`配置中的`<id>`要保持一致，因为发布时Maven根据id找到用于登录的用户名和Token，才能成功上传文件到GitHub。我们直接通过命令`mvn clean package deploy`部署，成功后，在GitHub用户页面可以看到该Artifact：
 
-![](./assets/image/image_MSF7uh7LMt.png)
+![](./assets/image/image_MSF7uh7LMt.webp)
 
 完整的配置请参考[complex](https://github.com/michaelliao/complex/ "complex")项目，这是一个非常简单的支持复数运算的库。
 

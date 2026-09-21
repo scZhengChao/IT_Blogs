@@ -6,7 +6,7 @@
 
 **传统的web开发**
 
-![  ](./assets/image/6e371dbe0706e51e9d320a5d38a68635_o2opEeZtpp.png "  ")
+![  ](./assets/image/6e371dbe0706e51e9d320a5d38a68635_o2opEeZtpp.webp "  ")
 
 ```纯文本 
  每次都返回一个 拼接好的html 静态资源；太过的消耗资源； 导致有了现在ajax技术；spa等
@@ -23,7 +23,7 @@
 
 **客户端渲染CSR**
 
-![  ](./assets/image/28bd51026f6ff7dbbf0d52320e5fd250_Iw0-K4TVqC.png "  ")
+![  ](./assets/image/28bd51026f6ff7dbbf0d52320e5fd250_Iw0-K4TVqC.webp "  ")
 
 ```纯文本 
  请求url时 只给你一个空的html结构； 页面完全有js来 渲染； 动态的请求json 数据；    
@@ -54,7 +54,7 @@
 ```
 
 
-![  ](./assets/image/43a813e55cc6ee7e0722ba8861ae58af_X0yM5iKQbY.png "  ")
+![  ](./assets/image/43a813e55cc6ee7e0722ba8861ae58af_X0yM5iKQbY.webp "  ")
 
 ```纯文本 
  那ssr 有什么弊端： 

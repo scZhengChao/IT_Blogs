@@ -7,7 +7,7 @@
 - [第三种](#第三种)
 - [自定义类型](#自定义类型)
 
-![](./assets/image/image_sawD-C3rC6.png)
+![](./assets/image/image_sawD-C3rC6.webp)
 
 ```typescript 
 const mapTag = '[object Map]';

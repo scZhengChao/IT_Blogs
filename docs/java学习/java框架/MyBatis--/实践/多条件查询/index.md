@@ -14,7 +14,7 @@
 
 需要使用注解：
 
-![](./assets/image/image_htwcPbvVWj.png)
+![](./assets/image/image_htwcPbvVWj.webp)
 
 ```xml title="sql-xml"
     <select id="findBrandByCondition3" resultMap="brandMap">

@@ -64,7 +64,7 @@ public class DataApplication {
 
 2、proxyBeanMethods：代理bean的方法属性（since spring 5.2以后）
 
-![](./assets/image/image_9ZIxo8rSu6.png)
+![](./assets/image/image_9ZIxo8rSu6.webp)
 
 功能：
 
@@ -84,7 +84,7 @@ System.out.println(user1 == user3);  // true
 
 1. 修改 proxyBeanMethods=false，则每调用一次Spring就会创建一个新的Bean对象
 
-![](./assets/image/image_6ynUpkkWll.png)
+![](./assets/image/image_6ynUpkkWll.webp)
 
 在执行结果则为 false， 证明两次获取的bean不是同一个bean。
 

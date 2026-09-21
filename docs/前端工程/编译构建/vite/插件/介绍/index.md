@@ -280,7 +280,7 @@ pnpm i tsup -D
 
 1. 输出：
 
-![](./assets/image/image_K33rszfvjE.png)
+![](./assets/image/image_K33rszfvjE.webp)
 
 **到这里你就可以 ****`边开发边运行`**** 了，尤雨溪看了都说爽歪歪 \~**
 
@@ -358,7 +358,7 @@ pnpm run release
 
 ## 4. 插件钩子函数 hooks 的执行顺序（如下图）
 
-![](./assets/image/image_vrqWdYgBVD.png)
+![](./assets/image/image_vrqWdYgBVD.webp)
 
 ## 5. 插件的执行顺序
 

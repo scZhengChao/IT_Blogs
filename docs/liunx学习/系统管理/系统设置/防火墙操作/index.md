@@ -10,17 +10,17 @@
 
 前面我们已经验证了Tomcat服务已经正常启动，接下来我们就可以尝试访问一下。访问地址：`http://192.168.138.130:8080`，我们发现是访问不到的。
 
-![](./assets/image/image_ucjIMWUT9F.png)
+![](./assets/image/image_ucjIMWUT9F.webp)
 
 那为什么tomcat启动成功了，但就是访问不到呢？原因就在于`Linux`**系统的防火墙，系统安装完毕后，系统启动时，防火墙自动启动，防火墙拦截了所有端口的访问。**
 
 防火墙类似于一个关卡检查人员，当你访问其他人的电脑，或者其他人访问你的电脑，都要进行拦截并进行处理，有的阻止，有的放行。默认情况下防火墙在开机以后就自动启动了。例如下面就是windows的防火墙：
 
-![](./assets/image/image_9jaKWo9ltB.png)
+![](./assets/image/image_9jaKWo9ltB.webp)
 
 防火墙引发的问题
 
-![](./assets/image/image_LvbVq08lXm.png)
+![](./assets/image/image_LvbVq08lXm.webp)
 
 接下来我们就需要学习一下，如何操作防火墙，具体指令如下：
 
@@ -59,7 +59,7 @@ systemctl stop firewalld
 
 关闭之后，再次访问Tomcat，就可以访问到了。
 
-![](./assets/image/image_wJ2sRN3KAQ.png)
+![](./assets/image/image_wJ2sRN3KAQ.webp)
 
 注意: 上面我们也提到了，**直接关闭系统的防火墙，是不建议的，因为这样会造成系统不安全。**
 
@@ -91,4 +91,4 @@ firewall-cmd --reload
 
 执行上述的操作之后，就开放了当前系统中的8080端口号，再次访问Tomcat。
 
-![](./assets/image/image_xBvplWNI_g.png)
+![](./assets/image/image_xBvplWNI_g.webp)

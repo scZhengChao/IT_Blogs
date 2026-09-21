@@ -137,4 +137,4 @@ export default App;
 
 正如你所看到的，成功接入路由。
 
-![](./assets/image/image_jNig407oYD.png)
+![](./assets/image/image_jNig407oYD.webp)

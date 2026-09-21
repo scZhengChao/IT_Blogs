@@ -16,4 +16,4 @@
 - 主外键一体：
   主表的主键和从表的主键，形成主外键关系，如右图二
 
-![](./assets/image/image_DNRo41DY_U.png)
+![](./assets/image/image_DNRo41DY_U.webp)

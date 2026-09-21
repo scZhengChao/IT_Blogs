@@ -9,7 +9,7 @@
 
 **int。和 double**
 
-![](./assets/image/image_hAVjPwdI6F.png)
+![](./assets/image/image_hAVjPwdI6F.webp)
 
 # 默认值：
 

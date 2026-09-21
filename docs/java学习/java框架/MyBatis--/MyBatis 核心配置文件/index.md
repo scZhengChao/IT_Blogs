@@ -47,7 +47,7 @@
 - 通过`properties`标签 `resource`属性引入加载外部`properties`文件;
 - 使用`${key}`获取设置的属性值；
 
-![](./assets/image/image_Kzh4BkyZZR.png)
+![](./assets/image/image_Kzh4BkyZZR.webp)
 
 ##### 总结
 
@@ -65,11 +65,11 @@
 
 &#x20;\*\*`settinngs`\*\***是 ****`MyBatis`**** 中极为重要的调整设置，它们会改变 ****`MyBatis`**** 的运行时行为。**
 
-![](./assets/image/image_33nP-fP3Jx.png)
+![](./assets/image/image_33nP-fP3Jx.webp)
 
 说明：&#x20;`settings`参数有很多，我们先学习驼峰匹配`mapUnderscoreToCamelCase`,翻译过来就是映射下划线到驼峰式命名。
 
-![](./assets/image/image_9bbucKVz9k.png)
+![](./assets/image/image_9bbucKVz9k.webp)
 
 ##### 总结
 
@@ -90,13 +90,13 @@
 
 类型别名是给**类的全限定名称(包名.类名) 取一个短名称。存在**的意义仅在于用来**减少类完全限定名的冗余。** (仅仅用于xml)
 
-![](./assets/image/image_n-ki0JMVaA.png)
+![](./assets/image/image_n-ki0JMVaA.webp)
 
 可以通过设置一些短名来代替全限定名
 
 方式：使用`typeAliases`标**签的子标签package包扫描映射别名(推荐)；**
 
-![](./assets/image/image_ofNBCCvJxW.png)
+![](./assets/image/image_ofNBCCvJxW.webp)
 
 **Mybatis内置别名**
 
@@ -106,7 +106,7 @@
 > 基本类型别名是  **\_基本类型**  名称;
 > 包装类型别名时\*\* 包装类首字母小写\*\*;
 
-![](./assets/image/image_8JaGnDdrrL.png)
+![](./assets/image/image_8JaGnDdrrL.webp)
 
 # 4 typeHandlers和environments(了解)
 
@@ -114,7 +114,7 @@
 
 &#x20;MyBatis 在设置预处理语句（PreparedStatement）中的参数或从结果集中取出一个值时， 都会用**类型处理器**将获取到的\*\*值以合适的方式转换成 Java 类型。\*\*下表描述了一些默认的类型处理器。
 
-![](./assets/image/image_v8E57qg2l1.png)
+![](./assets/image/image_v8E57qg2l1.webp)
 
 #### 2)environments【了解】&#xD;
 
@@ -217,7 +217,7 @@ Mappers标签作用：提供了关联加载xml映射文件的配置功能；
 
 > 说明:如果基于注解开发的开发的话,推荐使用方式2开发
 
-![](./assets/image/image_et0dOu9Lbi.png)
+![](./assets/image/image_et0dOu9Lbi.webp)
 
 # 总结
 
