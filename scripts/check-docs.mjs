@@ -11,6 +11,7 @@ const expectedChildren = new Map();
 let localReferences = 0;
 const built = process.argv.includes('--built');
 const output = path.resolve('doc_build');
+const bundledImage = /\.(?:avif|gif|jpe?g|png|svg|webp)$/i;
 
 /** Each index must expose its direct pages and child directory entrances. */
 for (const file of data.pages) {
@@ -68,7 +69,12 @@ for (const file of data.pages) {
     if (!isPage(target) && !attachment) {
       errors.push(`${file}:${ref.line}: attachment outside local assets/: ${target}`);
     }
-    if (built && attachment && !fs.existsSync(path.join(output, target))) {
+    if (
+      built
+      && attachment
+      && !bundledImage.test(target)
+      && !fs.existsSync(path.join(output, target))
+    ) {
       errors.push(`${file}:${ref.line}: attachment output missing: ${target}`);
     }
   }

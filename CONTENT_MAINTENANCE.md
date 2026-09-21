@@ -51,3 +51,11 @@ node scripts/check-docs.mjs --built
 - 更新 1,335 篇 Markdown 的 3,992 处本地图片引用；代码示例和外部 PNG URL 保持原样。
 - 文档源目录由约 1.3 GB 降至 462 MB；生产产物由约 2.8 GB 降至 1,045,489,057 字节（997.06 MiB）。
 - 全量文档检查及生产构建通过，产物中无 PNG；浏览器验证普通路径、含空格路径及透明 WebP 均可正常加载和解码。
+
+## 发布体积优化（2026-09-21）
+
+- Rspress 构建只复制 PDF、压缩包、代码示例等非图片附件；Markdown 图片仅保留 `static/image/` 下的哈希资源。
+- 生产产物由 997.06 MiB 降至 751.70 MiB，文件数由 20,912 降至 16,627；原路径重复图片由 4,285 个降至 0。
+- 使用 `git filter-repo` 清除全部历史 PNG、误提交的 `node_modules/`、`doc_build/`、旧 `docs/assets/` 和 `.DS_Store`。
+- Git pack 由 1.34 GiB 降至 386.50 MiB；历史完整性检查通过，当前 4,092 个 WebP 均保留。
+- 历史重写会改变全部提交哈希，远端同步必须使用带旧提交校验的 `--force-with-lease`，其他克隆需要重新拉取。

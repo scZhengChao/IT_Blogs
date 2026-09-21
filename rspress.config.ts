@@ -37,6 +37,14 @@ export default defineConfig({
           from: '**/assets/**/*',
           context: path.resolve(process.cwd(), 'docs'),
           noErrorOnMissing: true,
+          globOptions: {
+            // Markdown images are emitted as hashed static assets by Rspress.
+            // Copy only opaque downloads to avoid shipping every image twice.
+            ignore: [
+              '**/*.{avif,gif,jpeg,jpg,png,svg,webp}',
+              '**/*.{AVIF,GIF,JPEG,JPG,PNG,SVG,WEBP}',
+            ],
+          },
           // Attachments are opaque downloads and must not be parsed or minified.
           info: {
             minimized: true,
