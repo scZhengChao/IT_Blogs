@@ -11,6 +11,9 @@ import { contentRedirectsPlugin } from './scripts/rspress-content-redirects';
 export default defineConfig({
   root: 'docs',
 
+  // GitHub project pages are served from https://scZhengChao.github.io/IT_Blogs/.
+  base: '/IT_Blogs/',
+
   title: 'IT Notes',
 
   description: 'Engineering knowledge base',
